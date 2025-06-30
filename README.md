@@ -28,10 +28,9 @@ These maps are not intended for scholarly use and I am not asserting that only t
 ![Samsara as a process](./samsara-process.drawio.svg)
 
 
-| Syntax | Description |
+| Number | Aspects |
 | ----------- | ----------- |
-| Header | Title |
-| Paragraph | Text |
+| Ones | [Comprehend](./ones/comprehend_contact_detail.md) |
 
 
 [^1]: https://suttaplayer.github.io/#DN/DN34_1_5?cursorLinePosition=8&markTextRanges=355-526
