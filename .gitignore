@@ -1,1 +1,11 @@
+# Jekyll/GitHub Pages build artifacts
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
 tmp/
+
+# Bundler artifacts
+.bundle/
+vendor/bundle/
+Gemfile.lock
