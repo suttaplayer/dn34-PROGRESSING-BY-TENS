@@ -33,6 +33,7 @@ These maps are not intended for scholarly use and I am not asserting that only t
 | Ones | [Comprehend Contact](./ones/comprehend_contact.md) |
 | Twos | [Comprehend Name-&-Form](./twos/comprehend_name-&-form.md) |
 | Threes | [Comprehend Feeling](./threes/comprehend_feeling.md) |
+| Fours | [Comprehend Nutriments](./fours/comprehend_nutriments.md) |
 
 
 ## References
