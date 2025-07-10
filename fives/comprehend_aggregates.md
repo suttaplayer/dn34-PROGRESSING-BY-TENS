@@ -7,8 +7,6 @@
 
 > 'Birth is stress, aging is stress, death is stress; sorrow, lamentation, pain, distress, & despair are stress; association with what is not loved is stress, separation from what is loved is stress, not getting what is wanted is stress. **In short, the five clinging-aggregates are stress.**[^2]
 
-> 'And what is the diversity in stress? There is major stress & minor, slowly fading & quickly fading. This is called the diversity in stress.
-> 
 > 'And what is the result of stress? There are some cases in which a person overcome with pain, his mind exhausted, grieves, mourns, laments, beats his breast, & becomes bewildered. Or one overcome with pain, his mind exhausted, comes to search outside, 'Who knows a way or two to stop this pain?' I tell you, monks, that **stress results either in bewilderment or in search**. This is called the result of stress.[^2]
 
 ---
