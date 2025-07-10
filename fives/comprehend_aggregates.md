@@ -156,6 +156,15 @@
 
 ---
 
+'Dependent on the eye & forms there arises consciousness at the eye. The meeting of the three is contact. With contact as a requisite condition, there arises what is felt either as pleasure, pain, or neither pleasure nor pain. If, when touched by a **feeling of pleasure**, one **relishes it, welcomes it, or remains fastened to it**, then one's **passion-obsession** gets obsessed. If, when touched by a **feeling of pain**, one **sorrows, grieves, & laments, beats one's breast, becomes distraught**, then one's **resistance-obsession** gets obsessed. If, when touched by a **feeling of neither pleasure nor pain**, one **does not discern, as it has come to be, the origination, passing away, allure, drawback, or escape from that feeling**, then one's **ignorance-obsession** gets obsessed. That a person—without abandoning passion-obsession with regard to a feeling of pleasure, without abolishing resistance-obsession with regard to a feeling of pain, without uprooting ignorance-obsession with regard to a feeling of neither pleasure nor pain, without abandoning ignorance and giving rise to clear knowing—would put an end to suffering & stress in the here & now: Such a thing isn't possible.[^60]
+
+---
+
+> 'As he is touched by that painful feeling, he is resistant. Any **resistance-obsession with regard to that painful feeling obsesses him**. Touched by that painful feeling, **he delights in sensuality**. Why is that? **Because** the uninstructed run-of-the-mill person **does not discern any escape** from painful feeling **aside from sensuality**. **As he is delighting in sensuality**, any **passion-obsession with regard to that feeling of pleasure** obsesses him. He does not discern, as it has come to be, the origination, passing away, allure, drawback, or escape from that feeling. **As he does not discern the origination, passing away, allure, drawback, or escape** from that feeling, then any **ignorance-obsession with regard to that feeling of neither-pleasure-nor-pain obsesses him**.
+> 
+> 'Sensing a **feeling** of **pleasure**, he **senses it as though joined with it**. Sensing a **feeling** of **pain**, he **senses it as though joined with it**. Sensing a **feeling** of **neither-pleasure-nor-pain**, he **senses it as though joined with it**. This is called an uninstructed run-of-the-mill person joined with birth, aging, & death; with sorrows, lamentations, pains, distresses, & despairs. **He is joined, I tell you, with suffering & stress.**[^61]
+---
+
 > 'Monks, **form is inconstant**. Whatever cause & condition there is for the arising of form, that, too, is inconstant. **Being brought into play by what is inconstant, how could form be constant?**
 > 
 > '**Feeling is inconstant…**
@@ -669,3 +678,5 @@
 [^57]: [https://suttaplayer.github.io/#SN/SN12_23](https://suttaplayer.github.io/#SN/SN12_23?highlightLineRanges=22-28&cursorLinePosition=28&markTextRanges=1919-1954)
 [^58]: [https://suttaplayer.github.io/#DN/DN22](https://suttaplayer.github.io/#DN/DN22?cursorLinePosition=116&highlightLineRanges=116-118&markTextRanges=23948-23962,23983-24003,24006-24048,24050-24113)
 [^59]: [https://suttaplayer.github.io/#DN/DN33_1-5](https://suttaplayer.github.io/#DN/DN33_1-5?cursorLinePosition=191.21&highlightLineRanges=191&markTextRanges=14050-14085,14098-14129,14142-14176)
+[^60]: [https://suttaplayer.github.io/#MN/MN148](https://suttaplayer.github.io/#MN/MN148?cursorLinePosition=62&highlightLineRanges=62&markTextRanges=11308-11326,11333-11383,11397-11413,11452-11466,11473-11539,11553-11572,11611-11646,11653-11768,11782-11800)
+[^61]: [https://suttaplayer.github.io/#SN/SN36_6](https://suttaplayer.github.io/#SN/SN36_6?cursorLinePosition=14&highlightLineRanges=14-16&markTextRanges=1503-1571,1607-1631,1647-1653,1695-1721,1744-1764,1767-1799,1806-1862,1999-2079,2109-2197,2212-2218,2223-2230,2236-2269,2282-2288,2293-2296,2302-2335,2348-2354,2359-2383,2389-2422,2573-2621)
