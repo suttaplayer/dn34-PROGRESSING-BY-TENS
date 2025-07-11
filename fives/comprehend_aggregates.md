@@ -114,25 +114,25 @@
 
 ---
 
-'Now, **craving** is dependent on feeling,
-
-**seeking** is dependent on craving,
-
-**acquisition** is dependent on seeking,
-
-**ascertainment** is dependent on acquisition,
-
-**desire and passion** is dependent on ascertainment,
-
-**attachment** is dependent on desire and passion,
-
-**possessiveness** is dependent on attachment,
-
-**stinginess** is dependent on possessiveness,
-
-**defensiveness** is dependent on stinginess,
-
-and because of defensiveness, dependent on defensiveness, various **evil, unskillful phenomena come into play**: the taking up of sticks and knives; conflicts, quarrels, and disputes; accusations, divisive speech, and lies.[^63]
+> 'Now, **craving** is dependent on feeling,
+> 
+> **seeking** is dependent on craving,
+> 
+> **acquisition** is dependent on seeking,
+> 
+> **ascertainment** is dependent on acquisition,
+> 
+> **desire and passion** is dependent on ascertainment,
+> 
+> **attachment** is dependent on desire and passion,
+> 
+> **possessiveness** is dependent on attachment,
+> 
+> **stinginess** is dependent on possessiveness,
+> 
+> **defensiveness** is dependent on stinginess,
+> 
+> and because of defensiveness, dependent on defensiveness, various **evil, unskillful phenomena come into play**: the taking up of sticks and knives; conflicts, quarrels, and disputes; accusations, divisive speech, and lies.[^63]
 
 ---
 
@@ -178,13 +178,18 @@ and because of defensiveness, dependent on defensiveness, various **evil, unskil
 
 ---
 
-'Dependent on the eye & forms there arises consciousness at the eye. The meeting of the three is contact. With contact as a requisite condition, there arises what is felt either as pleasure, pain, or neither pleasure nor pain. If, when touched by a **feeling of pleasure**, one **relishes it, welcomes it, or remains fastened to it**, then one's **passion-obsession** gets obsessed. If, when touched by a **feeling of pain**, one **sorrows, grieves, & laments, beats one's breast, becomes distraught**, then one's **resistance-obsession** gets obsessed. If, when touched by a **feeling of neither pleasure nor pain**, one **does not discern, as it has come to be, the origination, passing away, allure, drawback, or escape from that feeling**, then one's **ignorance-obsession** gets obsessed. That a person—without abandoning passion-obsession with regard to a feeling of pleasure, without abolishing resistance-obsession with regard to a feeling of pain, without uprooting ignorance-obsession with regard to a feeling of neither pleasure nor pain, without abandoning ignorance and giving rise to clear knowing—would put an end to suffering & stress in the here & now: Such a thing isn't possible.[^60]
+> 'On seeing a form with the eye, he is infatuated with pleasing forms, and gets upset over unpleasing forms. He dwells with body-mindfulness unestablished, with limited awareness. He doesn't discern, as it has come to be, the awareness-release & discernment-release where those evil, unskillful qualities cease without remainder. **Engaged thus in predilection & opposition**, **he relishes any feeling he feels**—**pleasure, pain, neither-pleasure-nor-pain**—welcomes it, & remains fastened to it. **As he relishes that feeling, welcomes it, & remains fastened to it, delight arises. Now, any delight in feeling is clinging or sustenance.** From his clinging or sustenance as a requisite condition comes becoming. From becoming as a requisite condition comes birth. From birth as a requisite condition, then aging-&-death, sorrow, lamentation, pain, distress, and despair come into play. Such is the origination of this entire mass of stress & suffering.[^65]
+
+---
+
+> 'Dependent on the eye & forms there arises consciousness at the eye. The meeting of the three is contact. With contact as a requisite condition, there arises what is felt either as pleasure, pain, or neither pleasure nor pain. If, when touched by a **feeling of pleasure**, one **relishes it, welcomes it, or remains fastened to it**, then one's **passion-obsession** gets obsessed. If, when touched by a **feeling of pain**, one **sorrows, grieves, & laments, beats one's breast, becomes distraught**, then one's **resistance-obsession** gets obsessed. If, when touched by a **feeling of neither pleasure nor pain**, one **does not discern, as it has come to be, the origination, passing away, allure, drawback, or escape from that feeling**, then one's **ignorance-obsession** gets obsessed. That a person—without abandoning passion-obsession with regard to a feeling of pleasure, without abolishing resistance-obsession with regard to a feeling of pain, without uprooting ignorance-obsession with regard to a feeling of neither pleasure nor pain, without abandoning ignorance and giving rise to clear knowing—would put an end to suffering & stress in the here & now: Such a thing isn't possible.[^60]
 
 ---
 
 > 'As he is touched by that painful feeling, he is resistant. Any **resistance-obsession with regard to that painful feeling obsesses him**. Touched by that painful feeling, **he delights in sensuality**. Why is that? **Because** the uninstructed run-of-the-mill person **does not discern any escape** from painful feeling **aside from sensuality**. **As he is delighting in sensuality**, any **passion-obsession with regard to that feeling of pleasure** obsesses him. He does not discern, as it has come to be, the origination, passing away, allure, drawback, or escape from that feeling. **As he does not discern the origination, passing away, allure, drawback, or escape** from that feeling, then any **ignorance-obsession with regard to that feeling of neither-pleasure-nor-pain obsesses him**.
 > 
 > 'Sensing a **feeling** of **pleasure**, he **senses it as though joined with it**. Sensing a **feeling** of **pain**, he **senses it as though joined with it**. Sensing a **feeling** of **neither-pleasure-nor-pain**, he **senses it as though joined with it**. This is called an uninstructed run-of-the-mill person joined with birth, aging, & death; with sorrows, lamentations, pains, distresses, & despairs. **He is joined, I tell you, with suffering & stress.**[^61]
+
 ---
 
 > 'Monks, **form is inconstant**. Whatever cause & condition there is for the arising of form, that, too, is inconstant. **Being brought into play by what is inconstant, how could form be constant?**
@@ -300,9 +305,9 @@ and because of defensiveness, dependent on defensiveness, various **evil, unskil
 > 
 > stress,         what remains & falls away.
 > 
-> Nothing but stress   comes to be.
+> **Nothing but stress   comes to be.**
 > 
-> Nothing ceases   but stress.'[^8]
+> **Nothing ceases   but stress.'**[^8]
 
 ---
 
@@ -336,6 +341,9 @@ and because of defensiveness, dependent on defensiveness, various **evil, unskil
 
 ---
 
+> 'When there is consciousness, there would be Māra (Mortality) or what mortalizes or what is mortalized. **Therefore**, Rādha, **see consciousness as 'Māra' or 'mortalizing' or 'mortalized.' See it as a disease, a cancer, an arrow, a misery, a great misery.** Those who see it this way see it rightly.[^64]
+
+---
 > 'Monks, **form is inconstant, changeable, alterable. Feeling.… Perception.… Fabrications.… Consciousness is inconstant, changeable, alterable.**
 > 
 > '**One who has conviction & belief that these phenomena are this way is called a faith-followe**r: one who has entered the orderliness of rightness, entered the plane of people of integrity, transcended the plane of the run-of-the-mill. He is incapable of doing any deed by which he might be reborn in hell, in the animal womb, or in the realm of hungry ghosts. He is incapable of passing away until he has realized the fruit of stream-entry.
@@ -640,7 +648,7 @@ and because of defensiveness, dependent on defensiveness, various **evil, unskil
 
 ## Classifications & Relationships
 
-<embed src="./comprehend_aggregates_classes.drawio.svg" type="image/svg+xml" width="835" height="972" alt="Aggregates in context">
+<embed src="./comprehend_aggregates_classes.drawio.svg" type="image/svg+xml" width="1670" height="1153" alt="Aggregates in context">
 
 
 ## References
@@ -708,3 +716,5 @@ and because of defensiveness, dependent on defensiveness, various **evil, unskil
 [^61]: [https://suttaplayer.github.io/#SN/SN36_6](https://suttaplayer.github.io/#SN/SN36_6?cursorLinePosition=14&highlightLineRanges=14-16&markTextRanges=1503-1571,1607-1631,1647-1653,1695-1721,1744-1764,1767-1799,1806-1862,1999-2079,2109-2197,2212-2218,2223-2230,2236-2269,2282-2288,2293-2296,2302-2335,2348-2354,2359-2383,2389-2422,2573-2621)
 [^62]: [https://suttaplayer.github.io/#MN/MN43](https://suttaplayer.github.io/#MN/MN43?cursorLinePosition=185&markTextRanges=15779-15785,15796-15821,15824-15858,15861-15895&highlightLineRanges=185)
 [^63]: [https://suttaplayer.github.io/#DN/DN15](https://suttaplayer.github.io/#DN/DN15?cursorLinePosition=94&highlightLineRanges=94-112&markTextRanges=7167-7173,7201-7207,7235-7245,7273-7285,7317-7334,7368-7377,7416-7429,7460-7469,7504-7516,7613-7653)
+[^64]: [https://suttaplayer.github.io/#SN/SN23_1](https://suttaplayer.github.io/#SN/SN23_1?cursorLinePosition=14&highlightLineRanges=14&markTextRanges=768-776,786-912)
+[^65]: [https://suttaplayer.github.io/#MN/MN38](https://suttaplayer.github.io/#MN/MN38?highlightLineRanges=336&cursorLinePosition=336&markTextRanges=20631-20671,20674-20705,20707-20747,20749-20785,20788-20998)

@@ -36,6 +36,8 @@
 > • '**Five strings of sensuality**: forms cognizable via the eye—**agreeable, pleasing, charming, endearing, enticing**, linked with sensual desire; sounds cognizable via the ear… aromas cognizable via the nose… flavors cognizable via the tongue… tactile sensations cognizable via the body—agreeable, pleasing, charming, endearing, enticing, linked with sensual desire.[^21]
 
 
+> '**Whatever pleasure & happiness arise** in dependence on feeling: **That is the allure of feeling**.
+
 ### Other Considerations
 
 > '**Having intentionally done**—with body, with speech, or with mind—**an action that is to be felt as pleasure, one experiences pleasure.** Having intentionally done—with body, with speech, or with mind—a**n action that is to be felt as pain, one experiences pain.** Having intentionally done—with body, with speech, or with mind—**an action that is to be felt as neither-pleasure-nor-pain, one experiences neither-pleasure-nor-pain.**'[^8] 
@@ -164,3 +166,4 @@
 [^27]: [https://suttaplayer.github.io/#MN/MN137](https://suttaplayer.github.io/#MN/MN137?highlightLineRanges=24&cursorLinePosition=24.1&markTextRanges=3378-3398,3415-3442,3458-3477,3494-3520,3536-3557,3574-3602)
 [^28]: [https://suttaplayer.github.io/#SN/SN47_42](https://suttaplayer.github.io/#SN/SN47_42?cursorLinePosition=14.01&highlightLineRanges=14&markTextRanges=677-796)
 [^29]: [https://suttaplayer.github.io/#MN/MN137](https://suttaplayer.github.io/#MN/MN137?highlightLineRanges=26-36,42-46,52-54&cursorLinePosition=26.2&markTextRanges=3660-3977,4111-4405,4531-4857,4990-5496,5624-5924,6059-6400,6737-6852,6924-7037,7109-7226,7297-7418,7490-7613,8551-8676,8770-8853)
+[^30]: [https://suttaplayer.github.io/#SN/SN36_238](https://suttaplayer.github.io/#SN/SN36_23?cursorLinePosition=16&highlightLineRanges=16&markTextRanges=1118-1152,1181-1208)
