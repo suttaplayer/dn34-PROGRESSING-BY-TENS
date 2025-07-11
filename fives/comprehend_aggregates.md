@@ -114,6 +114,28 @@
 
 ---
 
+'Now, **craving** is dependent on feeling,
+
+**seeking** is dependent on craving,
+
+**acquisition** is dependent on seeking,
+
+**ascertainment** is dependent on acquisition,
+
+**desire and passion** is dependent on ascertainment,
+
+**attachment** is dependent on desire and passion,
+
+**possessiveness** is dependent on attachment,
+
+**stinginess** is dependent on possessiveness,
+
+**defensiveness** is dependent on stinginess,
+
+and because of defensiveness, dependent on defensiveness, various **evil, unskillful phenomena come into play**: the taking up of sticks and knives; conflicts, quarrels, and disputes; accusations, divisive speech, and lies.[^63]
+
+---
+
 > '**And what is the** noble truth of the **origination of stress**? **The craving that makes for further becoming**—**accompanied by passion & delight, relishing now here & now there**—i e, sensuality-craving, becoming-craving, and non-becoming-craving.
 > 
 > 'And where does this craving, when arising, arise? And where, when dwelling, does it dwell? Whatever is endearing & alluring in terms of the world: that is where this craving, when arising, arises. That is where, when dwelling, it dwells.[^58]
@@ -386,6 +408,10 @@
 > unshaken,
 > 
 > that's how you develop the heart.[^34]
+
+---
+
+> '**Passion**, friend, **is a making of measurement**. **Aversion is a making of measurement**. **Delusion is a making of measurement**. In a monk whose effluents are ended, these have been abandoned, their root destroyed, made like a palmyra stump, deprived of the conditions of development, not destined for future arising.[^62]
 
 ---
 
@@ -680,3 +706,5 @@
 [^59]: [https://suttaplayer.github.io/#DN/DN33_1-5](https://suttaplayer.github.io/#DN/DN33_1-5?cursorLinePosition=191.21&highlightLineRanges=191&markTextRanges=14050-14085,14098-14129,14142-14176)
 [^60]: [https://suttaplayer.github.io/#MN/MN148](https://suttaplayer.github.io/#MN/MN148?cursorLinePosition=62&highlightLineRanges=62&markTextRanges=11308-11326,11333-11383,11397-11413,11452-11466,11473-11539,11553-11572,11611-11646,11653-11768,11782-11800)
 [^61]: [https://suttaplayer.github.io/#SN/SN36_6](https://suttaplayer.github.io/#SN/SN36_6?cursorLinePosition=14&highlightLineRanges=14-16&markTextRanges=1503-1571,1607-1631,1647-1653,1695-1721,1744-1764,1767-1799,1806-1862,1999-2079,2109-2197,2212-2218,2223-2230,2236-2269,2282-2288,2293-2296,2302-2335,2348-2354,2359-2383,2389-2422,2573-2621)
+[^62]: [https://suttaplayer.github.io/#MN/MN43](https://suttaplayer.github.io/#MN/MN43?cursorLinePosition=185&markTextRanges=15779-15785,15796-15821,15824-15858,15861-15895&highlightLineRanges=185)
+[^63]: [https://suttaplayer.github.io/#DN/DN15](https://suttaplayer.github.io/#DN/DN15?cursorLinePosition=94&highlightLineRanges=94-112&markTextRanges=7167-7173,7201-7207,7235-7245,7273-7285,7317-7334,7368-7377,7416-7429,7460-7469,7504-7516,7613-7653)
