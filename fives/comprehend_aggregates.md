@@ -55,7 +55,7 @@
 
 ---
 
-> 'In-&-out breaths are bodily; these are **things tied up with the body**. That's why in-&-out breaths **are bodily fabrications**. Having first directed one's thoughts and made an evaluation, one then breaks out into speech. That's why **directed thought & evaluation are verbal fabrications**. Perceptions & feelings are mental; these are **things tied up with the mind**. That's why perceptions & feelings **are mental fabrications**.'[^33]
+> 'In-&-out breaths are bodily; these are **things tied up with the body**. That's why in-&-out breaths **are bodily fabrications**. Having first directed one's thoughts and made an evaluation, **one** then **breaks out into speech**. That's **why directed thought & evaluation are verbal fabrications**. Perceptions & feelings are mental; these are **things tied up with the mind**. That's why perceptions & feelings **are mental fabrications**.'[^33]
 
 ---
 
@@ -685,7 +685,7 @@
 [^30]: [https://suttaplayer.github.io/#KN/Iti/iti85](https://suttaplayer.github.io/#KN/Iti/iti85?cursorLinePosition=3&highlightLineRanges=3&markTextRanges=548-659)
 [^31]: [https://suttaplayer.github.io/#MN/MN9](https://suttaplayer.github.io/#MN/MN9?cursorLinePosition=207&highlightLineRanges=207,222&markTextRanges=25070-25144,26911-26980)
 [^32]: [https://suttaplayer.github.io/#SN/SN22_57](https://suttaplayer.github.io/#SN/SN22_57?cursorLinePosition=16.24&highlightLineRanges=16&markTextRanges=1240-1364)
-[^33]: [https://suttaplayer.github.io/#MN/MN44](https://suttaplayer.github.io/#MN/MN44?cursorLinePosition=85&highlightLineRanges=85&markTextRanges=6184-6274,6277-6368,6412-6434,6437-6509,6546-6568)
+[^33]: [https://suttaplayer.github.io/#MN/MN44](https://suttaplayer.github.io/#MN/MN44?cursorLinePosition=85&highlightLineRanges=85&markTextRanges=6184-6274,6338-6340,6347-6368,6378-6434,6437-6509,6546-6568)
 [^34]: [https://suttaplayer.github.io/#MN/MN131](https://suttaplayer.github.io/#MN/MN131?cursorLinePosition=60&highlightLineRanges=60,64,68-76,88-110&markTextRanges=1082-1107,1125-1148,1150-1160,1191-1197,1228-1237,1268-1278,1309-1321,1325-1361,1749-1769,1792-1829,1869-1875,1915-1924,1964-1974,2014-2026,2030-2078,2739-2823,2838-2849,2949-2963,3072-3088,3203-3220,3326-3387)
 [^35]: [https://suttaplayer.github.io/#MN/MN138](https://suttaplayer.github.io/#MN/MN138?cursorLinePosition=42&highlightLineRanges=42-50&markTextRanges=9807-9855,10099-10205,10208-10237,10284-10308,10358-10391,10431-10518,10566-10607,10623-10629,10661-10670,10702-10713,10745-10757)
 [^36]: [https://suttaplayer.github.io/#SN/SN12_51](https://suttaplayer.github.io/#SN/SN12_51?cursorLinePosition=36&highlightLineRanges=36&markTextRanges=4167-4225,4289-4403)
