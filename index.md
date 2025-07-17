@@ -50,8 +50,9 @@ These maps are not intended for scholarly use and I am not asserting that only t
 
 ## Process Map of Samsara
 
-<embed src="./samsara-process.drawio.svg" type="image/svg+xml" width="1701" height="1101" alt="Samsara as a process">
+<!-- <embed src="./samsara-process.drawio.svg" type="image/svg+xml" width="1701" height="1101" alt="Samsara as a process"> -->
 
+![Samsara as a process](./samsara-process.drawio.svg)
 
 | Number | Aspects |
 | ----------- | ----------- |
