@@ -1,0 +1,30 @@
+```
+In DASUTTARA SUTTA  Dīgha Nikāya 34, Venerable Sāriputta's presents a framework 
+of Dhammas that progress by tens that cover categories from helpful, developed, 
+comprehended etc. This prompts is intended to cover only the following dhamma 
+from that framework.
+
+Thus, was it said:
+    > Which three dhammas are on the side of distinction? Three roots of what is skillful: lack of greed as a root of what is skillful, lack of aversion as a root of what is skillful, lack of delusion as a root of what is skillful.
+
+Analyse the detailed meaning of this statement which was said in brief with the consideration of the following requirements:
+* Provide a response using the format "Situation, Complication, Resolution" (SCR)
+* Avoid quotations that repeat or duplicate the essence of a quotation previously captured. 
+* Provide no more than the 20 best quotations for the entire topic
+```
+
+Here is an analysis of the detailed meaning of the statement regarding the three roots of what is skillful, presented in the Situation, Complication, Resolution (SCR) format:
+
+**Situation**
+The sources identify **greed, aversion, and delusion as "three roots of what is unskillful"**. These are not merely external behaviors but are described as **"inside stains, inside enemies, inside foes, inside murderers, inside adversaries"**. When these qualities arise in a person, they **"arise for his harm, suffering, & discomfort"**. The mind, when **"defiled by passion"** (greed/aversion) or **"defiled by ignorance"** (delusion), is not released, and discernment does not develop. Unskillful thinking, specifically thinking imbued with sensuality, ill-will, or harmfulness, "produce blindness, produce lack of vision, produce lack of knowledge, lead to the cessation of discernment, side with vexation, and are not conducive to Unbinding". Furthermore, if one relies on a doctrine of inaction, believing that everything happens without cause or condition, "there is no desire, no effort (at the thought), 'This should be done. This shouldn't be done,'" leading to bewilderment and lack of protection.
+
+**Complication**
+The presence of these unskillful roots leads to significant complications. "Whatever a greedy person fabricates by means of body, speech, or intellect, that too is unskillful". This principle extends to actions stemming from aversion and delusion, indicating that **these roots directly underpin unskillful conduct**. They are also referred to as the **"three fires"** (the fire of passion, the fire of aversion, and the fire of delusion). An increase in these three qualities—passion, aversion, and delusion—is a direct sign of **"decline in skillful qualities,"** which is explicitly called "decline by the Blessed One". Fundamentally, these unskillful roots "lead to passion, not to dispassion; to being fettered, not to being unfettered; to accumulating, not to shedding; to self-aggrandizement, not to modesty; to discontent, not to contentment; to entanglement, not to reclusiveness; to laziness, not to aroused persistence; to being burdensome, not to being unburdensome". They are thus seen as antithetical to the path of wholesome development and spiritual progress.
+
+**Resolution**
+The statement highlights **"lack of greed as a root of what is skillful, lack of aversion as a root of what is skillful, lack of delusion as a root of what is skillful"**. These three are explicitly identified as **"dhammas that are on the side of distinction"**.
+*   **Actions based on these roots are skillful:** "Whatever an ungreedy person fabricates by means of body, speech, or intellect, that too is skillful". The same applies to those free from aversion and delusion. Such individuals do not wrongly inflict suffering on others through beating, imprisonment, or blame, for instance. As a result, "many skillful qualities—born of lack of greed, caused by lack of greed, originated through lack of greed, conditioned by lack of greed—come into play".
+*   **Consequences of non-delusion:** Actions "fashioned by non-delusion… is skillful, it's blameless, it ripens in pleasure, it leads to the cessation of action, it doesn't lead to the origination of action".
+*   **Path to Unbinding:** The Dhamma is taught "for the abandoning of passion, for the abandoning of aversion, for the abandoning of delusion". When these unskillful roots are abandoned, they are "destroyed, made like a palmyra stump, deprived of the conditions of development, not destined for future arising". The result is that one "dwells in ease right in the here & now—feeling unthreatened, placid, unfeverish—and is unbound right in the here & now".
+*   **Qualities of Distinction:** These skillful qualities lead "to dispassion, not to passion; to being unfettered, not to being fettered; to shedding, not to accumulating; to modesty, not to self-aggrandizement; to contentment, not to discontent; to reclusiveness, not to entanglement; to aroused persistence, not to laziness; to being unburdensome, not to being burdensome".
+*   **Release and Enlightenment:** **"From the fading of passion is there awareness-release. From the fading of ignorance is there discernment-release"**. This **dispassion** is considered **"supreme"** as it involves "the subduing of intoxication, the elimination of thirst, the uprooting of attachment, the breaking of the round, the destruction of craving, dispassion, cessation, the realization of Unbinding". The Noble Eightfold Path, which includes right view, resolve, speech, action, livelihood, effort, mindfulness, and concentration, is developed precisely "for direct knowledge of, comprehension of, the total ending of, & the abandoning of these four floods" (which include views and ignorance, encompassing these roots). This path is taught to "purify vision" and "put an end to suffering & stress". Ultimately, cultivating these leads to **"gnosis right here & now"** or, for those with remaining clinging, "non-return", culminating in one who "enters & remains in the effluent-free awareness-release & discernment-release, having directly known & realized them for oneself right in the here & now".

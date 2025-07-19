@@ -1,0 +1,31 @@
+```
+In DASUTTARA SUTTA  Dīgha Nikāya 34, Venerable Sāriputta's presents a framework 
+of Dhammas that progress by tens that cover categories from helpful, developed, 
+comprehended etc. This prompts is intended to cover only the following dhamma 
+from that framework.
+
+Thus, was it said:
+    > Which two dhammas are hard to penetrate? The cause & condition for the defilement of beings and the cause & condition for the purification of beings
+
+Analyse the detailed meaning of this statement which was said in brief with the consideration of the following requirements:
+* Provide a response using the format "Situation, Complication, Resolution" (SCR)
+* Avoid quotations that repeat or duplicate the essence of a quotation previously captured. 
+* Provide no more than the 20 best quotations for the entire topic
+```
+
+In the DASUTTARA SUTTA (Dīgha Nikāya 34), Venerable Sāriputta presents a comprehensive framework of Dhammas, including specific aspects that are "hard to penetrate." Among these are "The cause & condition for the defilement of beings and the cause & condition for the purification of beings". This statement highlights a fundamental challenge in understanding the path to liberation.
+
+Here is an analysis of the detailed meaning of this statement in the "Situation, Complication, Resolution" (SCR) format:
+
+**Situation**
+The "Dhamma progressing by tens" framework points out fundamental truths about existence. It states that "The cause & condition for the defilement of beings and the cause & condition for the purification of beings" are among the "two dhammas that are hard to penetrate". This refers to the profound difficulty sentient beings face in recognizing the root causes of their suffering and, conversely, the pathways leading to their ultimate purification and liberation. The Blessed One has consistently taught the Dhamma as "deep, hard to see, hard to realize, peaceful, refined, beyond the scope of conjecture, subtle, to-be-experienced by the wise". This inherent complexity suggests that the mechanisms of defilement and purification are not immediately obvious or easily grasped by the unenlightened mind.
+
+**Complication**
+The primary reason these causes and conditions are hard to penetrate lies in the prevailing **ignorance (avijjā)** and **attachment (upādāna)** that blind beings to the true nature of reality.
+*   **Causes of Defilement:** The sources identify **greed, aversion, and delusion** as the fundamental "roots of what is unskillful," driving actions and leading to suffering. These "three fires" fuel misconduct of body, speech, and mind. Ignorance, in particular, "precedes the arrival of unskillful qualities," and when it "obstructs" a fool, combined with "craving," it prevents them from being "entirely freed from birth, aging, death, sorrow, lamentation, pain, distress, & despair". Beings are "defiled with causality, with requisite condition," yet fail to discern their inner blemishes or generate the "desire, endeavor, or arouse persistence for the abandoning of that blemish". This leads to perpetuating "passion, aversion, with delusion—blemished & with a mind defiled".
+*   **Why it's Hard to Penetrate:** The world is described as "shrouded" by **ignorance** and prevented from shining due to **stinginess and heedlessness**. For those "overcome with aversion & passion," who are "cloaked in the mass of darkness," the profound Dhamma is "not easily realized". People often hold **wrong views**, such as believing pleasure and pain are caused by past actions, a supreme being, or are without cause, which fosters "inaction" and leaves them "bewildered & unprotected". This "lack of understanding and not penetrating this Dhamma" leaves beings "like a tangled skein, a knotted ball of string, like matted rushes and reeds," unable to escape transmigration. Furthermore, "what's well-spoken isn't easy to understand by one who enjoys contradiction, who's defiled in mind, intent on confrontation", indicating that mental predispositions further complicate this understanding.
+
+**Resolution**
+Penetrating the causes of defilement and purification involves a profound shift in understanding and practice, guided by the Dhamma. The **"Noble Eightfold Path"** is explicitly stated as the "middle way... leading to stilling, to direct knowledge, to self-awakening, to unbinding".
+*   **Path to Purification:** Purification begins with **abandoning passion, aversion, and delusion**. The "fading of passion" leads to "awareness-release," and the "fading of ignorance" leads to "discernment-release". This involves developing **"clear knowing"** which "precedes the arrival of skillful qualities," followed by "shame & compunction". A crucial step is discerning "what is unskillful, discerns the root of what is unskillful, discerns what is skillful, and discerns the root of what is skillful," which leads to **"right view"** and "verified confidence in the Dhamma".
+*   **Means of Penetration:** The **"four establishings of mindfulness"** (focused on body, feelings, mind, and mental qualities) are described as the "direct path for the purification of beings, for the overcoming of sorrow & lamentation, for the disappearance of pain & distress, for the attainment of the right method, & for the realization of unbinding". Well-purified **virtue** and **views made straight** form the "basis of skillful mental qualities" upon which mindfulness can be developed to "go beyond Māra's realm". The development of the **"seven factors for awakening"** (mindfulness, analysis of qualities, persistence, rapture, calm, concentration, equanimity) "lead to awakening," releasing the mind from the "effluent of sensuality, the effluent of becoming, the effluent of ignorance". Ultimately, through knowing and seeing the "origination" and "disappearance" of phenomena (form, feeling, perception, fabrications, consciousness), one attains the "ending of effluents". This profound understanding leads to disenchantment, dispassion, and release, resulting in the realization that "Birth is ended, the holy life fulfilled, the task done. There is nothing further for this world".

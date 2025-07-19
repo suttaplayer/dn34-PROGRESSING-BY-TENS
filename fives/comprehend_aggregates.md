@@ -77,7 +77,7 @@
 
 > 'And what is perception? These six bodies of perception—**perception of form**, perception of **sound**, perception of **smell**, perception of **taste**, perception of **tactile sensation**, perception of **ideas**: **This is called perception.**[^46]
 
-> 'And what are fabrications? These six bodies of intention—**intention with regard to form**, intention with regard to **tsound**, intention with regard to **smell**, intention with regard **to taste**, intention with regard to **tactile sensation**, intention with regard to **ideas**: **These are called fabrications.**[^46]
+> 'And what are fabrications? These six bodies of intention—**intention with regard to form**, intention with regard to **sound**, intention with regard to **smell**, intention with regard **to taste**, intention with regard to **tactile sensation**, intention with regard to **ideas**: **These are called fabrications.**[^46]
 
 > 'And what is consciousness? These six bodies of consciousness—**eye-consciousness**, **ear**-consciousness, **nose**-consciousness, **tongue**-consciousness, **body**-consciousness, **intellect**-consciousness: **This is called consciousness.**[^46]
 
