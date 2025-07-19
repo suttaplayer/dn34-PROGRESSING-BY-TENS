@@ -1,0 +1,45 @@
+@startuml
+title Workflow of Heedfulness with Skillful Qualities
+
+start
+
+:Understand "Heedfulness with regard to skillful qualities" as foundational;
+
+if (Heedfulness Cultivated?) then (Yes)
+  :Actively abandon unskillful qualities;
+  :Actively cultivate skillful qualities
+  (e.g., good conduct, persistence, mindfulness, concentration, discernment);
+  :Maintain steadfast effort & not shirk duties;
+  :Aspire for purity of virtue and view;
+
+  fork
+    :Develop Four Establishings of Mindfulness;
+  fork again
+    :Achieve "Knowing & Seeing" nature of phenomena;
+  fork again
+    :Abandon Craving and Action (Kamma);
+  fork again
+    :Guard oneself well;
+  fork again
+    :Support Right View with Virtue, Learning, Discussion, Tranquility, Insight;
+  end fork
+
+  :Achieve "Unfabricated" (Ending of passion, aversion, delusion);
+  :Attain Awareness-release and Discernment-release;
+
+  :End Suffering and Stress;
+  :Realize Unbinding / Ultimate Peace and Freedom;
+else (No / Heedlessness)
+  :Mind tends to laziness or restlessness;
+  :Concentration fails to develop correctly;
+  :Defilement by passion and ignorance;
+  :Increase in unskillful qualities
+  (e.g., unvirtuous, envious, stingy, ignorance, unskillful thinking, wrong views);
+  :Actions driven by "unknowing" state;
+
+  :Experience Increased Suffering and Undesirable States;
+  :Perpetuate Cycle of Wandering-on;
+endif
+stop
+
+@enduml

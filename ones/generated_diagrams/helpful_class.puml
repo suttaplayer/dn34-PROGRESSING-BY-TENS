@@ -1,0 +1,109 @@
+@startuml
+' This diagram is high-level due to limited detail and to maintain readability.
+
+class Heedfulness {
+  + isFoundational
+  + isRootAndConvergencePoint
+  + activelyAbandonsUnskillful
+  + activelyCultivatesSkillful
+}
+
+class SkillfulQualities {
+  + leadsToPositiveOutcomes
+  + leadsToProgressTowardsLiberation
+  + isBlameless
+  + isPraised
+  + leadsToWelfareAndHappiness
+}
+
+class UnskillfulQualities {
+  + leadsToNegativeConsequences
+  + preventsRelease
+  + increasesSuffering
+}
+
+class Liberation {
+  + endingOfPassion
+  + endingOfAversion
+  + endingOfDelusion
+  + ultimatePeace
+  + freedomFromSuffering
+}
+
+class Practitioner {
+  + cultivatesHeedfulness
+}
+
+class Ignorance {
+  + precedesUnskillfulQualities
+  + greatDelusion
+}
+
+class Passion
+class Aversion
+class Delusion
+
+class Mindfulness {
+  + established
+}
+
+class Concentration {
+  + developsThroughMindfulness
+}
+
+class Discernment {
+  + developsThroughConcentration
+}
+
+class Virtue
+class Persistence
+class RightView
+
+class Effluents {
+  + defilementsOfAwareness
+}
+
+class Suffering {
+  + stress
+}
+
+class Craving
+class Action
+
+Heedfulness "1" -- "many" SkillfulQualities : "cultivates >"
+Heedfulness "1" -- "many" UnskillfulQualities : "prevents >"
+Heedfulness --> Liberation : "leads to"
+
+SkillfulQualities --> Liberation : "leads to"
+UnskillfulQualities --> Suffering : "leads to"
+
+Practitioner --> Heedfulness : "cultivates"
+
+Ignorance --> UnskillfulQualities : "precedes >"
+Ignorance --> Suffering : "perpetuates >"
+
+Passion --> Liberation : "overcome for >"
+Aversion --> Liberation : "overcome for >"
+Delusion --> Liberation : "overcome for >"
+
+Mindfulness o-- Heedfulness : "part of"
+Mindfulness --> Concentration : "develops >"
+Concentration --> Discernment : "develops >"
+Discernment --> Liberation : "leads to"
+
+Virtue o-- SkillfulQualities : "part of"
+Persistence o-- SkillfulQualities : "part of"
+RightView o-- SkillfulQualities : "part of"
+RightView --> Liberation : "leads to"
+
+Effluents --> Discernment : "weaken"
+Liberation <-- Effluents : "is ending of"
+
+Craving --> Action : "causes >"
+Action --> Suffering : "causes >"
+
+Liberation <-- Craving : "is ending of"
+Liberation <-- Action : "is ending of"
+Liberation <-- Suffering : "is ending of"
+
+@enduml

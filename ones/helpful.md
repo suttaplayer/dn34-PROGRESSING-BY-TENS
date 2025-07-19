@@ -1,4 +1,4 @@
-# one > Helpful > Heedfulness with regard to skillful qualities
+# One > Helpful > Heedfulness with regard to skillful qualities
 
 ## Situation
 
@@ -148,7 +148,7 @@ Through the consistent practice of heedfulness with regard to skillful qualities
 > **only then**
 > **teach others**.
 > He wouldn't stain his name
-> : he is wise.
+> he is wise.
 > If you'd mold yourself
 > the way you teach others,
 > then, well-trained,
@@ -172,6 +172,12 @@ Through the consistent practice of heedfulness with regard to skillful qualities
 > **seeing danger in heedlessness**, they
 > –**incapable of falling away**–
 > **are right in the presence of Unbinding**.[^28]
+
+# Diagrams
+![Activity diagram](./generated_diagrams/helpful_activity.svg)
+
+![class diagram](./generated_diagrams/helpful_class.svg)
+
 
 # References
 
