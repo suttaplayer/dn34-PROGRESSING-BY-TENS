@@ -1,0 +1,169 @@
+Loaded cached credentials.
+```plantuml
+@startuml
+' This class diagram identifies key entities and their relationships based on the provided text.
+' It focuses on the interplay between a practitioner (Monk), qualities (skillful/unskillful), and practices.
+
+class Monk {
+  - name: String
+  - state: String (e.g., "in training", "arahant")
+}
+
+abstract class Quality {
+  - description: String
+  - outcome: String
+}
+
+class SkillfulQuality extends Quality {
+  + attributes: List<String> (e.g., "blameless", "praised", "leads to welfare & happiness")
+}
+
+class UnskillfulQuality extends Quality {
+  + attributes: List<String> (e.g., "blameworthy", "criticized", "leads to harm & suffering")
+}
+
+class Heedfulness {
+  + purpose: String (e.g., "attaining awakening", "freedom from bondage", "guarding mind")
+  + status: String (e.g., "exercised", "foremost")
+}
+
+class Mind {
+  - state: String (e.g., "impassioned", "averse", "deluded", "guarded", "unaffected")
+}
+
+abstract class Practice {
+  - type: String
+}
+
+class Ardency extends Practice {
+  + focus: String (e.g., "non-arising of unskillful", "arising of skillful", "enduring feelings")
+}
+
+class Mindfulness extends Practice {
+  + focus: String (e.g., "in-&-out breathing", "body", "feelings", "mind", "mental qualities")
+}
+
+class Awareness extends Practice {
+  + focus: String (e.g., "bodily actions", "verbal actions", "mental actions")
+}
+
+class Conduct extends Practice {
+  - type: String (e.g., "bodily", "verbal", "mental", "livelihood")
+  - purity: String (e.g., "pure", "misconduct")
+}
+
+class View extends Practice {
+  - type: String (e.g., "right", "wrong")
+}
+
+abstract class Root {
+  - type: String
+}
+
+class SkillfulRoot extends Root {
+  + components: List<String> (e.g., "lack of greed", "lack of aversion", "lack of delusion")
+}
+
+class UnskillfulRoot extends Root {
+  + components: List<String> (e.g., "passion", "aversion", "delusion")
+}
+
+class Defilement {
+  - name: String
+  - impact: String (e.g., "overwhelm awareness", "weaken discernment", "obstruction")
+}
+
+class SenseFaculty {
+  - name: String (e.g., "eye", "ear", "nose", "tongue", "body", "intellect")
+}
+
+class SpiritualFaculty {
+  - name: String (e.g., "conviction", "persistence", "discernment", "concentration", "shame", "compunction")
+}
+
+class Dhamma {
+  + principles: List<String> (e.g., "leads to dispassion", "unfettered", "shedding")
+}
+
+class Determination {
+  - name: String (e.g., "discernment", "truth", "relinquishment", "calm")
+}
+
+' Relationships
+Monk "1" -- "*" Practice : practices >
+Monk "1" -- "*" Quality : cultivates/abandons >
+Monk "1" -- "1" Mind : has >
+
+Heedfulness "1" -- "1" Mind : guards >
+Heedfulness "1" -- "*" SkillfulQuality : is foremost among / roots >
+
+SkillfulQuality "1" -- "1" SkillfulRoot : rooted in >
+UnskillfulQuality "1" -- "1" UnskillfulRoot : rooted in >
+
+Mind "1" -- "*" Defilement : can be affected by >
+Mind "1" -- "1" UnskillfulRoot : cause of unskillful habits >
+Mind "1" -- "1" SkillfulRoot : cause of skillful habits >
+
+Practice <|-- Ardency
+Practice <|-- Mindfulness
+Practice <|-- Awareness
+Practice <|-- Conduct
+Practice <|-- View
+
+Root <|-- SkillfulRoot
+Root <|-- UnskillfulRoot
+
+Quality <|-- SkillfulQuality
+Quality <|-- UnskillfulQuality
+
+Monk "1" -- "*" SenseFaculty : guards doors to >
+Monk "1" -- "*" SpiritualFaculty : develops >
+
+SpiritualFaculty "1" -- "1" Heedfulness : developed by >
+
+Defilement "1" -- "1" UnskillfulQuality : is a type of / leads to >
+' Note: Heedlessness is explicitly mentioned as a defilement in MN_nblm.txt, 333.
+
+Dhamma "1" -- "*" Quality : defines >
+
+' Specific relationships mentioned:
+' Clear knowing (Discernment, a SpiritualFaculty) leads to Right View
+SpiritualFaculty "1" --> "1" View : leads to (if Discernment) >
+
+' Arahant is a type of Monk
+Monk <|-- Arahant
+Arahant "1" -- "1" Heedfulness : incapable of being heedless >
+
+' MonkInTraining is a type of Monk
+Monk <|-- MonkInTraining
+MonkInTraining "1" -- "1" Heedfulness : has task to do with >
+
+' Obstacles are a type of Defilement
+Defilement <|-- Obstacle
+class Obstacle {
+  - name: String (e.g., "sensual desire", "ill will", "sloth & drowsiness", "restlessness & anxiety", "uncertainty")
+}
+Obstacle "1" -- "1" Mind : overwhelms awareness / weakens discernment >
+
+' Example of specific Defilements
+class SensualDesire extends Defilement
+class IllWill extends Defilement
+class Ignorance extends Defilement
+class HeedlessnessDefilement extends Defilement ' To distinguish from the positive Heedfulness
+
+Defilement <|-- SensualDesire
+Defilement <|-- IllWill
+Defilement <|-- Ignorance
+Defilement <|-- HeedlessnessDefilement
+
+' Effluents are a type of Defilement
+Defilement <|-- Effluent
+class Effluent {
+  - type: String (e.g., "sensuality", "becoming", "ignorance")
+}
+Effluent "1" -- "1" Mind : defiles awareness / abandoned from >
+
+Monk "1" -- "*" Determination : has >
+
+@enduml
+```

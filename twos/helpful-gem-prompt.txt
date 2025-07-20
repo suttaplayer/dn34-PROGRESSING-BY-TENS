@@ -1,3 +1,11 @@
+Given the following Markdown document, please generate a PlantUML code block:
+1.  An **activity diagram** that represents the workflows, processes, or sequence of actions described in the document. Focus on key steps, decisions, and parallel activities.
+
+Ensure the PlantUML block is syntactically correct and enclosed within `@startuml` and `@enduml` tags. Use clear, descriptive names for elements. If information for a particular diagram type is scarce, generate a basic, high-level representation, or indicate within the PlantUML comments (`' This diagram is high-level due to limited detail.`) if full detail isn't possible.
+
+---
+Markdown Document Starts Here:
+
 # Two > Helpful > Mindfulness & alertness
 
 ## Quotations

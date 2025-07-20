@@ -1,0 +1,111 @@
+@startuml
+title Cultivating a Luminous Mind: Mindfulness & Alertness
+
+start
+
+partition "Initial State of Mind" {
+  :Mind is Luminous;
+  fork
+    :Mind is undeveloped, unpliant, leads to great harm; 
+    :Mind is untamed, unguarded, unprotected, unrestrained; 
+    :Mind is sullied; 
+    -- Prevents knowing own/others' benefit and realizing superior human state -- 
+  fork again
+    :Mind is developed, pliant, leads to great benefit; 
+    :Mind is tamed, guarded, protected, restrained; 
+    :Mind is freed from incoming defilements; 
+  end fork
+}
+
+partition "Cultivation of Mindfulness & Alertness" {
+  :Discern the luminous mind defiled by incoming defilements; 
+  :Recognize oneself as a "well-instructed disciple of the noble ones"; 
+
+  note right
+    The Dhamma is for one whose
+    mindfulness is established, not confused.
+    
+  end note
+  
+  :Practice Heedfulness; 
+  note right
+    Heedfulness is a bright quality that guards the world, along with compunction. 
+    It is also knowing/knowledge. 
+    Heedlessness is a defilement of the mind. 
+  end note
+
+  :Guard mind from passion, aversion, delusion, intoxication; 
+
+  :Practice Mindfulness of In-&-Out Breathing; 
+  fork
+    :Breathe in/out long or short; 
+    :Breathe in/out sensitive to entire body; 
+    :Breathe in/out calming bodily fabrication; 
+  fork again
+    :Develop it acutely for ending effluents; 
+    :Practice mindful & astute concentration; 
+    :Know feelings, perceptions, thoughts as they arise, persist, subside (Nanda's practice); 
+  end fork
+
+  :Remain focused on Body, Feelings, Mind, Mental Qualities in & of themselves; 
+  -- Be ardent, alert, & mindful, subduing greed & distress -- 
+
+  :Practice Mindfulness immersed in the body; 
+  note left
+    This develops restraint over senses;
+    eye does not pull toward pleasing forms.
+    
+  end note
+  
+  :Guard the doors of senses with mindfulness as protector/chief; 
+  note right
+    Essential for perfect & pure holy life,
+    along with moderation in eating and wakefulness.
+    
+  end note
+
+  :Be always mindful as one goes forward/back, stands, sits, sleeps, determines action; 
+  :Make oneself alert in all actions (looking, bending, carrying, eating, talking, etc.); 
+
+  :Develop concentration through mindfulness of in-&-out breathing; 
+  -- Leads to peaceful & exquisite abiding -- 
+  -- Immediately disperses & allays evil, unskillful mental qualities -- 
+
+  :Develop mindfulness as a factor for awakening; 
+  -- Dependent on seclusion, dispassion, cessation, resulting in letting go -- 
+  -- Discern mind is released, sloth/drowsiness uprooted, restlessness/anxiety subdued, persistence aroused, attention focused -- 
+}
+
+partition "Desired Outcomes" {
+  :Mind is pliant, malleable, luminous, not brittle; 
+  :Mind is rightly concentrated for the ending of effluents; 
+  :Achieve Purity of Mind; 
+  :Realize a superior human state, noble distinction of knowledge & vision; 
+  :Attain "Unprovoked (release)"; 
+  :End the effluents; 
+  :Mind is released from effluents through lack of clinging; 
+  :Overcome sorrow & lamentation, disappear pain & distress; 
+  :Attain the right method and realize unbinding; 
+  :Achieve gnosis right in the here-&-now, or non-return; 
+  :Mindfulness serves every purpose; 
+  :Pains arising in body do not invade or remain in the mind; 
+}
+
+partition "Hindrances and Lack of Practice" {
+  :Dwelling in Heedlessness; 
+  -- Mind is stained with forms cognizable via the eye (if no restraint); 
+  -- No joy, rapture, calm -- 
+  -- Dwells in pain, mind unconcentrated -- 
+  -- Phenomena don't become manifest -- 
+  -- Reckoned simply as one who dwells in heedlessness -- 
+  :Mindfulness is confused; 
+  :Lack of guarding the doors of senses; 
+  :Not devoted to wakefulness; 
+  :Not endowed with mindfulness & alertness; 
+  :Experiencing doubt, inattention, sloth-&-drowsiness, panic, excitement, boredom, excess/slack persistence, perception of multiplicity, excessive absorption in forms; 
+  -- These defilements cause concentration to fall away and light/forms to disappear -- 
+}
+
+end
+
+@enduml

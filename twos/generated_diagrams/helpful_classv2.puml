@@ -1,0 +1,149 @@
+@startuml
+title Class Diagram: Cultivating a Luminous Mind
+
+skinparam class {
+  BackgroundColor LightBlue
+  BorderColor DarkBlue
+  ArrowColor DarkGreen
+  FontName SansSerif
+  FontSize 12
+  AttributeFontColor DarkGreen
+  StereotypeFontColor DarkRed
+}
+
+' Define main entities
+class Mind {
+  + state: Luminous, Sullied, Freed 
+  + malleability: Pliant, Unpliant 
+  + development: Developed, Undeveloped 
+  + control_state: Tamed, Untamed, Guarded, Unguarded 
+  + current_qualities: Impassioned, Averse, Deluded, Intoxicated 
+  + concentration_state: Concentrated, Unconcentrated, Unified, Scattered 
+  + release_state: Released, Unreleased 
+}
+
+class Practitioner {
+  + instruction_level: WellInstructed, Uninstructed 
+  + disposition: Ardent, Resolute 
+  + practice_level: In Training, Arahant 
+}
+
+class Mindfulness {
+  + is_established: Boolean 
+  + proficiency: Excellent 
+  + scope: Body, Feelings, Mind, Mental Qualities 
+  + type: In-&-Out Breathing, Immersed in Body 
+}
+
+class Alertness {
+  + awareness_of_phenomena: Boolean (arising, persisting, subsiding) 
+  + manifested_in_actions: Boolean (e.g., going, looking, eating) 
+}
+
+class Heedfulness {
+  + is_bright_quality: Boolean 
+  + guards_world: Boolean 
+  + prevents_defilements: Boolean 
+  + represents_knowledge: Boolean 
+}
+
+class Concentration {
+  + type: Immeasurable, Right, Themeless, Five-Factored 
+  + quality: Peaceful, Exquisite 
+}
+
+class Jhāna {
+  + stage_number: 1, 2, 3, 4 
+  + characteristics: String (e.g., "rapture & pleasure born of seclusion") 
+}
+
+class SenseFaculties {
+  + types: Eye, Ear, Nose, Tongue, Body, Intellect 
+  + state: Guarded, Unguarded 
+}
+
+class Dhamma {
+  + teaching_quality: Well-Taught, Timeless, Inviting Verification 
+  + ultimate_purpose: Purification, Unbinding 
+}
+
+class Unbinding {
+  + is_cessation_of_stress: Boolean 
+  + is_end_of_effluents: Boolean 
+  + outcomes: Gnosis, Non-return 
+}
+
+class Effluent {
+  + types: Sensuality, Becoming, Ignorance 
+}
+
+class Knowledge {
+  + types: Clear Knowing, Direct Knowledge, Insight Knowledge 
+  + scope: Ending Effluents, Awareness of Others 
+}
+
+class Virtue {
+  + purity_qualities: Untorn, Unbroken, Liberating 
+}
+
+class Craving {
+  + types: For Sensuality, Becoming, Non-Becoming 
+  + role: Seamstress (stitches to becoming), Moisture (for consciousness) 
+}
+
+class Ignorance {
+  + lacks_knowledge_of: Stress, Origination/Cessation/Path of Stress 
+  + causes_defilement: Boolean 
+}
+
+class Stress {
+  + aspects: Origination, Cessation, Path of Practice 
+}
+
+
+' Define relationships
+
+Practitioner "1" --o "1" Mind : possesses / develops > 
+Practitioner "1" --> "*" Mindfulness : cultivates 
+Practitioner "1" --> "*" Alertness : cultivates 
+Practitioner "1" --> "*" Heedfulness : practices 
+
+Mindfulness "1" --> "1" Alertness : enables 
+Mindfulness "1" --|> "0..*" Concentration : leads_to_concentration 
+Mindfulness "1" --> "1" SenseFaculties : guards 
+Mindfulness "1" --> "1" Dhamma : is_governing_principle_for 
+
+Alertness "1" --> "1" Mind : supports_mind_state 
+
+Heedfulness "1" --|> "0..*" Knowledge : is_a_form_of_knowledge 
+Heedfulness "1" --> "1" Defilement : prevents 
+Heedfulness "1" --> "1" Effluent : leads_to_ending 
+Heedfulness "1" <|-down- "1" Heedlessness : opposite_of 
+
+Concentration "1" *-- "1..4" Jhāna : comprises 
+Concentration "1" --> "1" Knowledge : leads_to 
+Concentration "1" --> "1" Effluent : ends 
+
+Mind "1" --> "*" Effluent : is_defiled_by 
+
+Effluent "1" --> "1" Ignorance : is_origination_of 
+
+Knowledge "1" --> "1" Unbinding : results_in 
+Knowledge "1" --> "1" Effluent : ends 
+
+Virtue "1" --> "1" Concentration : supports 
+
+Craving "1" --> "1" Stress : causes 
+Craving "1" --> "1" Ignorance : rooted_in 
+Craving "1" --> "1" Karma : fuels 
+
+Ignorance "1" --> "1" Stress : causes 
+
+Stress "1" <--> "1" Unbinding : resolved_by 
+
+Dhamma "1" --> "1" Unbinding : leads_to 
+
+' Note on diagram level: This class diagram is a high-level representation, focusing on the primary entities and their direct relationships as described or strongly implied by the document. A deeper dive into all aspects (e.g., all types of karma, every specific meditation object) would result in a much larger and more complex diagram.
+' The document focuses heavily on the interconnectedness of these concepts, often describing processes or causal links that form implicit relationships between entities.
+
+@enduml

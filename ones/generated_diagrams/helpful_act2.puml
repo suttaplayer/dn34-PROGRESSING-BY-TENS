@@ -1,0 +1,67 @@
+@startuml
+title Heedfulness and the Cultivation of Skillful Qualities
+
+start
+
+:Begin Spiritual Practice;
+
+:Cultivate Heedfulness;
+note right
+  Root of all skillful qualities
+  Foremost among them
+end note
+
+partition "The Four Right Exertions" {
+  :Generate Desire, Endeavor, Persistence, Intent;
+
+  fork
+    :For Non-Arising of Unarisen Unskillful Qualities;
+    :For Abandoning of Arisen Unskillful Qualities;
+    note right
+      e.g., Bodily, Verbal, Mental Misconduct;
+      Wrong View;
+      Defilements (Greed, Aversion, Delusion, etc.);
+      Obstacles (Sensual Desire, Ill Will, Sloth, Restlessness, Uncertainty);
+    end note
+  fork again
+    :For Arising of Unarisen Skillful Qualities;
+    :For Maintenance, Development, & Culmination of Arisen Skillful Qualities;
+    note right
+      e.g., Good Conduct;
+      Right View;
+      Conviction, Shame, Compunction, Persistence, Discernment;
+      Mindfulness & Alertness;
+      Restraint of Sense Faculties;
+      Enduring Painful Feelings;
+    end note
+  end fork
+}
+
+:Unskillful Qualities Decline;
+:Skillful Qualities Increase;
+
+if (Mind is Guarded from Effluents?) then (Yes)
+  :Five Faculties (Conviction, Persistence, Mindfulness, Concentration, Discernment) Develop;
+else (No)
+  :Continue Cultivating Heedfulness;
+  note right
+    For monks in higher training
+  end note
+  -> :Generate Desire, Endeavor, Persistence, Intent;
+endif
+
+:Clear Knowing Arises;
+:Right View Arises;
+:Eightfold Path Develops;
+note right
+  Right Resolve, Speech, Action, Livelihood, Effort, Mindfulness, Concentration
+end note
+
+:Abandon Ignorance, Desire, Greed;
+
+:Attain Awakening / Unexcelled Freedom from Bondage;
+:Ending of Suffering & Stress;
+
+stop
+
+@enduml
