@@ -1,0 +1,87 @@
+@startuml
+title Mindfulness & Alertness: Path to Liberation
+
+start
+
+partition "Situation & Challenges" {
+  :Recognize Luminous Mind Defiled by Incoming Defilements;
+  :Recognize Causes of Suffering (Greed, Aversion, Delusion);
+  :Recognize Body as Afflicted, Weak, & Encumbered;
+  :Recognize World on Fire with Aging & Death;
+}
+
+partition "Complications Without Cultivation" {
+  if (Uninstructed Person?) then (Yes)
+    :Doesn't Discern Luminous Mind;
+    :No Development of Mind;
+  else (No)
+  endif
+
+  if (Mind Defiled by Passion/Ignorance?) then (Yes)
+    :Mind Not Released;
+    :Discernment Does Not Develop;
+  else (No)
+  endif
+
+  if (Assembly Trained in Bombast?) then (Yes)
+    :Fails to Grasp Deep Discourses;
+    :Lack of Attentive Engagement;
+  else (No)
+  endif
+
+  if (Imbalance in Mental Development?) then (Yes)
+    :Tendency to Laziness (Concentration only);
+    :Tendency to Restlessness (Energy only);
+    :Mind Not Rightly Concentrated (Equanimity only);
+  else (No)
+  endif
+
+  if (Remaining Lazy & Heedless?) then (Yes)
+    :Counterproductive to Holy Life;
+  else (No)
+  endif
+
+  if (Four Establishings of Mindfulness Neglected?) then (Yes)
+    :True Dhamma Does Not Last Long;
+  else (No)
+  endif
+}
+
+partition "Resolution: Cultivation of Mindfulness & Alertness" {
+  :Recognize Mindfulness & Alertness as Direct Path;
+
+  fork
+    partition "Cultivate Mindfulness" {
+      :Remain Focused on Body (ardent, alert, mindful);
+      :Remain Focused on Feelings (ardent, alert, mindful);
+      :Remain Focused on Mind (ardent, alert, mindful);
+      :Remain Focused on Mental Qualities (ardent, alert, mindful);
+      :Subdue Greed & Distress;
+    }
+  fork again
+    partition "Cultivate Alertness" {
+      :Recognize Feelings as they Arise, Persist, Subside;
+      :Recognize Thoughts as they Arise, Persist, Subside;
+      :Recognize Perceptions as they Arise, Persist, Subside;
+      :Act with Alertness in All Daily Activities;
+    }
+  end fork
+
+  :Arouse Persistence (Abandon Unskillful, Take on Skillful);
+  :Discern Skillful & Unskillful (Attain Right View);
+  :Develop Immeasurable Concentration (Mindful & Astute);
+  :Realize Five Realizations of Concentration;
+  :Develop Seven Factors for Awakening (Mindfulness, Analysis, Persistence, Rapture, Calm, Concentration, Equanimity);
+}
+
+partition "Ultimate Outcome: Liberation" {
+  :Achieve Lack of Clinging or Sustenance;
+  :Consciousness Becomes Unagitated;
+  :No Seed for Future Birth, Aging, Death, or Stress;
+  :Mind Nurtured with Discernment;
+  :Mind Rightly Released from Effluents (Sensuality, Becoming, Ignorance);
+  :Attain Arahantship (Birth Ended, Task Done);
+}
+
+stop
+@enduml

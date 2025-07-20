@@ -160,7 +160,6 @@ Through the consistent practice of heedfulness with regard to skillful qualities
 > 'Monks, when **right view** is **supported by five factors**, it **has** awareness-release as its fruit, **awareness-release as its reward**; has discernment-release as its fruit, **discernment-release as its reward**. Which five?
 > 'There is the case where right view is supported by **virtue**, supported by **learning**, supported by **discussion**, supported by **tranquility**, supported by **insight**.[^27]
 
-
 > Those with calm minds–
 > masterful,
 > mindful,
@@ -173,13 +172,27 @@ Through the consistent practice of heedfulness with regard to skillful qualities
 > –**incapable of falling away**–
 > **are right in the presence of Unbinding**.[^28]
 
-# Diagrams
-![Activity diagram](./generated_diagrams/helpful_activity.svg)
+## Diagrams
 
-![class diagram](./generated_diagrams/helpful_class.svg)
+### Known issues
+I would have included the following quote:
+> 'Without abandoning three things, one is incapable of abandoning apathy, being hard to correct, & evil friendship. Which three? Being shameless, lacking compunction, & being heedless. Without abandoning these three things, one is incapable of abandoning apathy, being hard to correct, & evil friendship.
+>
+>'Monks, being shameless & lacking compunction, one is heedless.
+>
+>'Being heedless, one is incapable of abandoning apathy, being hard to correct, & evil friendship.
+
+* Sense of shame and compunction not addressed in AI diagrams
+
+* TODO Draw diagram
+
+The following AI generates diagrams are available:
+1. [AI Generated Activity Diagram](./generated_diagrams/helpful_activity.svg)
+1. [AI Generated Class Diagram](./generated_diagrams/helpful_class.svg)
 
 
-# References
+
+## References
 
 [^1]: [https://suttaplayer.github.io/#AN/AN10_15](https://suttaplayer.github.io/#AN/AN10_15?cursorLinePosition=4&highlightLineRanges=4,6&markTextRanges=661-786)
 [^2]: [https://suttaplayer.github.io/#SN/SN3_17](https://suttaplayer.github.io/#SN/SN3_17?cursorLinePosition=4.42&highlightLineRanges=4,10&markTextRanges=147-270,673-811)

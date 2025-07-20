@@ -1,0 +1,128 @@
+@startuml
+' This class diagram identifies key entities, their attributes, and relationships
+' as mentioned or implied in the provided Markdown document.
+
+class Mind {
+  + luminous: boolean
+  + defiled: boolean
+  + unafflicted: boolean
+  + released: boolean
+  + rightlyConcentrated: boolean
+  + unagitated: boolean
+}
+
+class Defilement {
+  + greed: boolean
+  + aversion: boolean
+  + delusion: boolean
+  + passion: boolean
+  + ignorance: boolean
+}
+
+class Practitioner {
+  + cultivatesMindfulness: boolean
+  + cultivatesAlertness: boolean
+  + developsSkillfulQualities: boolean
+  + abandonsUnskillfulQualities: boolean
+}
+
+class Mindfulness {
+  + ardent: boolean
+  + alert: boolean
+  + focusedOnBody: boolean
+  + focusedOnFeelings: boolean
+  + focusedOnMind: boolean
+  + focusedOnMentalQualities: boolean
+}
+
+class Alertness {
+  + recognizesFeelings: boolean
+  + recognizesThoughts: boolean
+  + recognizesPerceptions: boolean
+  + actsInDailyActivities: boolean
+}
+
+class FourEstablishingsOfMindfulness {
+  + purificationOfBeings: boolean
+  + overcomingSorrow: boolean
+  + attainmentOfRightMethod: boolean
+  + realizationOfUnbinding: boolean
+}
+
+class Dhamma {
+  + deepMeaning: boolean
+  + transcendent: boolean
+  + connectedWithEmptiness: boolean
+}
+
+class SkillfulQualities {
+}
+
+class UnskillfulQualities {
+}
+
+class Concentration {
+  + immeasurable: boolean
+  + blissful: boolean
+  + noble: boolean
+  + peaceful: boolean
+  + exquisite: boolean
+}
+
+class Discernment {
+  + develops: boolean
+  + leadsToRelease: boolean
+  + discernsSkillful: boolean
+  + discernsUnskillful: boolean
+}
+
+class SevenFactorsForAwakening {
+  + analysisOfQualities: boolean
+  + persistence: boolean
+  + rapture: boolean
+  + calm: boolean
+  + equanimity: boolean
+}
+
+class Effluent {
+  + sensuality: boolean
+  + becoming: boolean
+  + ignorance: boolean
+}
+
+class Awakening {
+  + endOfBirth: boolean
+  + holyLifeFulfilled: boolean
+  + taskDone: boolean
+}
+
+' Relationships
+
+Mind "1" -- "*" Defilement : "is defiled by"
+Mind "1" -- "*" Effluent : "is released from"
+
+Practitioner "1" -- "1" Mind : "has"
+Practitioner "1" -- "1" Mindfulness : "cultivates"
+Practitioner "1" -- "1" Alertness : "cultivates"
+Practitioner "1" -- "*" SkillfulQualities : "develops"
+Practitioner "1" -- "*" UnskillfulQualities : "abandons"
+
+Mindfulness "1" -- "1" FourEstablishingsOfMindfulness : "is practiced through"
+Mindfulness "1" *-- "1" SevenFactorsForAwakening : "is a factor in"
+
+Alertness "1" -- "1" Discernment : "supports"
+
+Concentration "1" -- "1" Discernment : "nurtures"
+Concentration "1" *-- "1" SevenFactorsForAwakening : "is a factor in"
+
+Discernment "1" *-- "1" SevenFactorsForAwakening : "is a factor in"
+
+SevenFactorsForAwakening "1" -- "1" Awakening : "leads to"
+
+Dhamma "1" -- "1" FourEstablishingsOfMindfulness : "is preserved by"
+
+' Notes for contextual elements not modeled as classes with direct relationships
+note "The body is afflicted, weak, & encumbered." as BodyContext
+note "The world is on fire with aging & death." as WorldContext
+
+@enduml

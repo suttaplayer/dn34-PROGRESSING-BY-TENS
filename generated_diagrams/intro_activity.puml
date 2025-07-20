@@ -1,0 +1,43 @@
+@startuml
+title Transmigration and the Path to Cessation
+
+start
+
+:Inconceivable Beginning;
+
+partition "The Cycle of Transmigration" {
+  repeat
+    :Beings hindered by ignorance & fettered by craving;
+    :Transmigrating & Wandering On;
+    :Recollect Past Lives;
+
+    note right
+      This group details the process by which
+      new existence arises and perpetuates stress
+      within the larger cycle of transmigration.
+    end note
+
+    group Perpetuation of Stress (Complication)
+      :Sustained by or clinging to six properties;
+      :Alighting of an embryo;
+      :Name-&-Form arises;
+      :Six Sense Media arise;
+      :Contact arises;
+      :Feeling arises;
+      :Perpetuates Stress;
+    end group
+  repeat while (Cycle Continues) is (Yes)
+}
+
+partition "Path to Cessation (Resolution)" {
+  :One experiencing feeling;
+  :Declare: 'This is Stress';
+  :Declare: 'This is the Origination of Stress';
+  :Declare: 'This is the Cessation of Stress';
+  :Declare: 'This is the Path of Practice leading to the Cessation of Stress';
+  :Achieve complete cessation of stress;
+}
+
+stop
+
+@enduml

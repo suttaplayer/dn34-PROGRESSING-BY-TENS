@@ -1,0 +1,141 @@
+@startuml
+' This diagram is high-level due to limited detail in some areas.
+
+class Being {
+  + name: string
+  + clan: string
+  + appearance: string
+  + food: string
+  + pleasure_pain_experience: string
+  + end_of_life: string
+}
+
+class Transmigration {
+}
+
+class Ignorance {
+}
+
+class Craving {
+}
+
+class Kamma {
+}
+
+class Consciousness {
+  + growth: boolean
+  + increase: boolean
+  + proliferation: boolean
+}
+
+class Becoming {
+}
+
+class SixProperties {
+}
+
+class Embryo {
+}
+
+class NameForm {
+}
+
+class SixSenseMedia {
+}
+
+class Contact {
+}
+
+class Feeling {
+}
+
+class Perception {
+}
+
+class Thinking {
+}
+
+class Complication {
+}
+
+class Objectification {
+}
+
+class Stress {
+}
+
+class OriginationOfStress {
+}
+
+class CessationOfStress {
+}
+
+class PathOfPractice {
+}
+
+class PastLife {
+  + name: string
+  + clan: string
+  + appearance: string
+  + food: string
+  + pleasure_pain_experience: string
+  + end_of_life: string
+}
+
+abstract class FiveClingingAggregates {
+}
+
+class Form {
+}
+
+class Fabrications {
+}
+
+class Discernment {
+}
+
+' Relationships
+
+Being "1" -- "*" Transmigration : experiences
+Transmigration "1" -- "1" Ignorance : hindered by
+Transmigration "1" -- "1" Craving : fettered by
+
+Kamma "1" -- "1" Becoming : is field for
+Consciousness "1" -- "1" Becoming : is seed for
+Craving "1" -- "1" Becoming : is moisture for
+
+SixProperties "1" -- "1" Embryo : sustains
+
+Embryo "1" --> "1" NameForm : leads to
+NameForm "1" --> "1" SixSenseMedia : leads to
+SixSenseMedia "1" --> "1" Contact : leads to
+Contact "1" --> "1" Feeling : leads to
+
+Feeling "1" --> "1" Perception : leads to
+Perception "1" --> "1" Thinking : leads to
+Thinking "1" --> "1" Complication : leads to
+Complication "1" --> "1" Objectification : assails with
+
+Feeling "1" -- "1" Stress : declared as
+
+Stress "1" -- "1" OriginationOfStress : has
+Stress "1" -- "1" CessationOfStress : has
+Stress "1" -- "1" PathOfPractice : has
+
+Being "1" -- "*" PastLife : recollects
+
+FiveClingingAggregates <|-- Form
+FiveClingingAggregates <|-- Feeling
+FiveClingingAggregates <|-- Perception
+FiveClingingAggregates <|-- Fabrications
+FiveClingingAggregates <|-- Consciousness
+
+Being "1" *-- "5" FiveClingingAggregates : composed of
+
+Consciousness "1" -- "1" Discernment : conjoined with
+Consciousness "1" -- "1" Feeling : conjoined with
+Consciousness "1" -- "1" Perception : conjoined with
+Consciousness "1" -- "1" Fabrications : conjoined with
+Consciousness "1" -- "1" Form : lands on / supported by
+
+@enduml
