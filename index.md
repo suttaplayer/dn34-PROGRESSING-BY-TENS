@@ -108,7 +108,7 @@ The following AI generates diagrams are available:
 
 | Aspects | Ones | Twos | Threes | Fours | Fives | Sixes | Sevens | Eights | Nines | Tens |
 | :----------- | :----- | :----- | :----- | :----- | :----- | :----- | :----- | :----- | :----- | :----- |
-| **Helpful** |[Heedfulness](./ones/helpful.md) | [Mindfulness & alertness](./twos/helpful.md) | [xxx](./threes/helpful.md) | [xxx](./fours/helpful.md) | [xxx](./fives/helpful.md) | [xxx](./sixes/helpful.md) | [xxx](./sevens/helpful.md) | [xxx](./eights/helpful.md) | [xxx](./nines/helpful.md) | [xxx](./tens/helpful.md)|
+| **Helpful** |[Heedfulness](./ones/helpful.md) | [Mindfulness & alertness](./twos/helpful.md) | [Three Factors of Stream Entry](./threes/helpful.md) | [xxx](./fours/helpful.md) | [xxx](./fives/helpful.md) | [xxx](./sixes/helpful.md) | [xxx](./sevens/helpful.md) | [xxx](./eights/helpful.md) | [xxx](./nines/helpful.md) | [xxx](./tens/helpful.md)|
 
 
 ## References
