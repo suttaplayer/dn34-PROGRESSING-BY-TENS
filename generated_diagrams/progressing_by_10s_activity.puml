@@ -1,0 +1,261 @@
+In DASUTTARA SUTTA  Dīgha Nikāya 34, Venerable Sāriputta's presents a framework 
+of Dhammas that progress by tens that cover categories from helpful, developed, 
+comprehended etc. There are 100 sets of dhammas. 
+
+using the guide_causation_expression.md source as a reference, identify the best causal based approach for reviewing and practicing these dhammas. then generate that approach using a plantuml activity diagram code block of the workflow, activity, processes and sequence of actions. Focus on key steps, decisions, and parallel activities.
+
+Ensure the PlantUML block is syntactically correct and enclosed within `@startuml` and `@enduml` tags. Use clear, descriptive names for elements.
+
+V1
+
+
+To effectively review and practice the Dhammas presented by Venerable Sāriputta in the DASUTTARA SUTTA (Dīgha Nikāya 34), a causal-based approach is highly beneficial. This approach centers on understanding how actions, mental qualities, and conditions lead to specific results, allowing for the purposeful cultivation of skillful states and the abandonment of unskillful ones for the ultimate goal of liberation.
+
+Drawing from the `Causation Expressions in Dhamma: An Identifier's Guide`, the most relevant causal expressions for this practice are:
+
+*   **Purpose & Means**: Phrases like "_ should be done / made to arise / developed / pursued / comprehended / abandoned / directly known" are crucial for outlining the steps of practice. The Dhamma is taught "for the purpose of crossing over, not for the purpose of holding onto". The Noble Eightfold Path, for instance, is the "way leading to the cessation of effluents".
+*   **Cessation**: Expressions such as "from the fading of _ is there _-release" and "from the cessation of _ comes the cessation of _" directly highlight how suffering and defilements are overcome. The cessation of stress occurs with the "remainderless fading and cessation of these conditioning factors".
+*   **Conditions & Prerequisites**: Terms like "__ as a requisite condition," "conditioned by __," and "dependent on __" are fundamental to understanding the interconnectedness of phenomena and how certain states enable others. For example, ignorance is a requisite condition for fabrications.
+*   **Direct Causation**: Phrases like "_ is a cause / causes for the origination of _" and "_ leads to _" are key to identifying the roots of both suffering (e.g., greed, aversion, delusion causing actions) and well-being (e.g., right view leading to discernment).
+
+A causal-based approach to practicing the Dhammas presented in the DASUTTARA SUTTA involves a continuous cycle of **learning, comprehending the causal relationships, actively applying practices for cessation and development, and realizing the resulting liberation**. This aligns with the Dhamma's teaching, which is taught "with a cause," "not without a cause," and "with marvels," indicating its demonstrable and verifiable nature.
+
+Here is a PlantUML activity diagram illustrating this causal-based workflow:
+
+```plantuml
+@startuml
+title Causal-Based Dhamma Practice Workflow for Dasuttara Sutta
+
+skinparam style strict
+
+start
+
+partition "1. Laying the Foundation (Receptivity & Heedfulness)" {
+  :Hear the True Dhamma (e.g., from people of integrity);
+  :Lend Ear & Pay Close Attention;
+  :Cultivate Conviction (as prerequisite for practice);
+  :Live with Heedfulness (as root of skillful qualities);
+  :Achieve Twofold Seclusion (in body & mind);
+}
+
+partition "2. Comprehending Causal Chains (Dhamma Analysis)" {
+  :Comprehend Dhammas: Stress, Origination, Cessation, Path;
+  note right
+    "What is the cause, what is the reason, why...?"
+    "From _ comes _"
+    "__ as a requisite condition"
+  end note
+  :Discern Skillful & Unskillful Qualities and Their Roots (e.g., Greed, Aversion, Delusion as causes of actions);
+  :Understand Dependent Co-arising (how phenomena "come into play");
+  :Identify Sectarian Views that lead to "inaction" or "wrong views";
+}
+
+partition "3. Applying Causal Practice (Abandonment & Development)" {
+  split
+    :Abandon Unskillful Qualities (e.g., "conceit 'I am'", "craving", "fetters", "sensual desires");
+    note right
+      "__ is abandoned/destroyed/cut through"
+      "ebbing causes __ to ebb"
+    end note
+    :Cultivate Disenchantment (leads to dispassion);
+    :Cultivate Dispassion (leads to cessation);
+  split again
+    :Develop Skillful Qualities (e.g., Virtue, Concentration, Discernment, Persistence, Mindfulness);
+    note right
+      "__ should be developed / made to arise / pursued"
+      "train oneself / yourselves"
+    end note
+    :Develop the Noble Eightfold Path ("the way leading to the cessation of _");
+    :Develop the Four Establishings of Mindfulness;
+    :Practice Jhāna & Internal Tranquility of Awareness;
+    :Cultivate Goodwill & Equanimity (as "awareness-release");
+  end split
+
+  :Practice Consistently in Line with the Dhamma;
+  note right
+    "by means of _" / "through _"
+  end note
+}
+
+partition "4. Realizing the Outcome (Unbinding)" {
+  :Attain Gnosis / Direct Knowledge of Phenomena (knowing & seeing "as they have come to be");
+  :Realize Unbinding (Nibbāna) / Effluent-Free Awareness-Release & Discernment-Release;
+  note right
+    "From the cessation of _ comes the cessation of _"
+    "__ is the ending of __"
+    "through lack of clinging or sustenance"
+  end note
+}
+
+stop
+@enduml
+```
+
+This causal-based approach highlights that Dhamma practice is not a mere collection of rules, but a process where understanding the causes of suffering and the causes of liberation drives intentional action. It's like learning the mechanics of a complex machine: you don't just follow instructions blindly, you understand how each part functions and influences the others, allowing you to operate and maintain it effectively to achieve its intended purpose.
+
+----
+
+
+
+V2
+
+You're looking for a more granular and causally-linked activity diagram that incorporates the specific categories of Dhammas from Venerable Sāriputta's Dasuttara Sutta (Dīgha Nikāya 34). The previous diagram provided a general causal framework; this one will integrate the 100 sets (10 categories across 10 numerical groups) by showing how each category contributes to the progression towards unbinding.
+
+The causal-based approach, drawing from the "Causation Expressions in Dhamma: An Identifier's Guide", emphasizes understanding how certain conditions and actions lead to specific results. Phrases like "for the purpose of", "by means of", "__ as a requisite condition", and "__ is the way leading to the cessation of __" are central to this understanding.
+
+In the Dasuttara Sutta, Venerable Sāriputta presents Dhammas categorized by their function in practice:
+*   **Very Helpful (VH)**: Qualities that serve as foundational conditions or prerequisites for the path. These lay the groundwork, like "Heedfulness with regard to skillful qualities" or "Associating with people of integrity".
+*   **Should be Developed (SD)**: Practices and qualities that need to be cultivated actively. Examples include "Mindfulness immersed in the body" and the "Noble Eightfold Path".
+*   **Should be Comprehended (SC)**: Aspects of reality or phenomena that must be thoroughly understood. This includes "Contact accompanied by effluents & subject to clinging" and the "Five clinging-aggregates".
+*   **Should be Abandoned (SA)**: Unskillful qualities that must be eradicated. For instance, "the conceit 'I am'" or the "Five hindrances".
+*   **On the Side of Decline (SDcl)**: Qualities that lead to regression or hinder progress. Examples are "Inappropriate attention" and the "Three roots of unskillful" (greed, aversion, delusion).
+*   **On the Side of Distinction (SDst)**: Qualities that mark progress and lead to advancement. This includes "Appropriate attention" and "Five faculties" (conviction, persistence, mindfulness, concentration, discernment).
+*   **Hard to Penetrate (HP)**: Subtle truths or states that are challenging to grasp deeply. For example, the "Cause & condition for the defilement... and purification of beings".
+*   **Should be Made to Arise (SMA)**: Specific knowledges or states that need to be generated or brought into being through practice. This includes "Knowledge of the unprovoked" and "Right concentration with knowledges".
+*   **Should be Directly Known (SDK)**: Fundamental realities or phenomena to be directly experienced through insight. Key examples are the "Four Noble Truths" and the "Five Openings to Release".
+    *   *(Note: The provided source for Dasuttara Sutta does not explicitly detail the "Should be Directly Known" Dhamma sets for Sixes and Sevens in this excerpt, though it presents other categories for them.)*
+*   **Should be Realized (SR)**: The ultimate goals, fruits, or states of liberation to be attained. Examples are "Unprovoked release of awareness" and the "Four fruits of the contemplative life".
+
+The following PlantUML activity diagram illustrates a causal-based approach to reviewing and practicing these Dhammas. It structures the practice into sequential phases, showing how the different categories of Dhammas interrelate and lead to progress.
+
+```plantuml
+@startuml
+title Causal-Based Review & Practice of Dasuttara Sutta Dhammas
+
+skinparam style strict
+skinparam activityBorderColor black
+skinparam activityBackgroundColor white
+skinparam arrowColor #333333
+skinparam partitionBorderColor darkgray
+skinparam partitionBackgroundColor #f0f0f0
+
+start
+
+partition "1. Laying the Foundation: Fostering Conditions for Growth" {
+  :Hearing & Learning the True Dhamma;
+  :Cultivate Conviction & Receptivity;
+  :Live with Heedfulness as a governing principle;
+  :Seek Good Company & Right Direction;
+  note right
+    **Very Helpful (VH)** Dhammas, such as:
+    - Heedfulness with skillful qualities
+    - Mindfulness & Alertness
+    - Associating with people of integrity
+    - Four wheels (e.g., civilized land, directing self rightly)
+    - Five factors for exertion (e.g., conviction, persistence)
+    - Ten qualities creating a protector (e.g., virtue, good friends)
+    These are the initial conditions that facilitate practice.
+  end note
+}
+
+--> "Foundation Firmly Laid"
+
+partition "2. Cultivating the Path: Developing Skillful Qualities" {
+  split
+    :Engage in Self-Correction & Abandon Harmful States;
+    note right
+      **Should be Abandoned (SA)** & **Side of Decline (SDcl)** Dhammas:
+      - Conceit 'I am'
+      - Inappropriate attention
+      - Ignorance & craving for becoming
+      - Three cravings (sensuality, becoming, non-becoming)
+      - Four floods & yokes
+      - Five hindrances & mental blockages
+      - Six classes of craving & types of disrespect
+      - Seven untrue dhammas
+      - Eight forms of wrongness
+      - Nine dhammas rooted in craving & grounds for hatred
+      - Ten forms of wrongness & unskillful actions
+      This systematic abandoning clears the mind and path.
+    end note
+  split again
+    :Actively Develop & Make Skillful Qualities Arise;
+    note left
+      **Should be Developed (SD)** & **Should be Made to Arise (SMA)** Dhammas:
+      - Mindfulness immersed in the body
+      - Appropriate attention
+      - Tranquility & Insight
+      - Three concentrations
+      - Four establishings of mindfulness (direct path to unbinding)
+      - Noble Eightfold Path (way to cessation of effluents)
+      - Right concentration with knowledges
+      - Seven Factors for Awakening (leads to clear knowing & release)
+      This continuous cultivation reinforces wholesome states.
+    end note
+  end split
+}
+
+--> "Path is Actively Walked"
+
+partition "3. Deepening Understanding: Experiencing Dhamma Directly" {
+  :Comprehend the Nature of Conditioned Phenomena;
+  note right
+    **Should be Comprehended (SC)** Dhammas:
+    - Contact accompanied by effluents & clinging
+    - Name & Form
+    - Three feelings
+    - Four nutriments
+    - Five clinging-aggregates (seeing their origination/cessation leads to release)
+    - Six internal sense media
+    This leads to discernment of reality.
+  end note
+
+  :Directly Know the Core Truths & Their Cessation;
+  note left
+    **Should be Directly Known (SDK)** Dhammas:
+    - All beings maintained by nutriment
+    - Fabricated & Unfabricated Properties
+    - Three Properties (sensuality, form, formless)
+    - **Four Noble Truths** (fundamental to holy life, leads to unbinding)
+    - Five Openings to Release
+    - Nine Step-by-Step Dwellings
+    - Ten Grounds for Abolishing (wrong views/actions)
+    Experiential knowledge is key for liberation.
+    *(SDK for Sixes & Sevens not explicitly detailed in provided source)*
+  end note
+
+  :Penetrate Subtle & Profound Aspects;
+  note right
+    **Hard to Penetrate (HP)** Dhammas:
+    - Unmediated concentration of awareness
+    - Cause & condition for defilement/purification
+    - Three properties for escape
+    - Five properties leading to escape
+    - Six properties that are means of escape
+    - Eight inopportune situations for holy life
+    These require deep insight and sustained practice.
+  end note
+}
+
+--> "Insight Matured"
+
+partition "4. Achieving Liberation: The Ultimate Realization" {
+  :Realize the Fruits of the Holy Life;
+  note right
+    **Should be Realized (SR)** Dhammas:
+    - Unprovoked Release of Awareness
+    - Clear Knowing & Release
+    - Three Forms of Clear Knowing
+    - **Four Fruits of the Contemplative Life** (e.g., Arahantship)
+    - Five Dhamma Aggregates (virtue, concentration, discernment, release, knowledge & vision of release)
+    - Effluent-free Awareness-Release & Discernment-Release (ending I-making/mine-making)
+    - Seven Strengths of one whose effluents are ended
+    - Eight Emancipations
+    - Nine Step-by-Step Cessations
+    - Ten Qualities of One Beyond Training
+    These are the ultimate goals of the path.
+  end note
+}
+
+end
+@enduml
+```
+
+This diagram illustrates how the Dhamma sets from the Dasuttara Sutta, when viewed through a causal lens, form a cohesive path. It begins with establishing the right conditions, progresses through active cultivation and purification (often in parallel), leads to deeper experiential understanding, and culminates in the realization of unbinding.
+
+Think of this process like **a gardener cultivating a rare, valuable plant that yields medicine for all suffering.**
+
+1.  **Establishing Foundations:** This is preparing the soil – ensuring it's **very helpful** (e.g., enriched with good company, proper heedfulness) and removing initial weeds by focusing on what's on the **side of distinction** (e.g., appropriate attention). You plant the seed (the initial Dhamma teachings) in this fertile ground.
+2.  **Active Cultivation & Purification:** This is the daily tending. Simultaneously, you are **abandoning** all the pests and diseases (unskillful qualities, hindrances, things on the **side of decline**) that would harm the plant's growth. In parallel, you are diligently **developing** and **making arise** essential nutrients and practices (mindfulness, concentration, noble path, factors for awakening) that enable the plant to grow strong and healthy.
+3.  **Deepening Understanding:** As the plant grows, you study its biology. You **comprehend** its internal structures (like clinging aggregates, feelings) and **directly know** its fundamental truths (like the Four Noble Truths, fabricated/unfabricated nature of reality). You also learn to **penetrate** the subtle, hard-to-see mechanisms of its growth (e.g., the properties of escape). This deep knowledge guides your further cultivation efforts.
+4.  **Achieving Liberation:** Finally, the plant blossoms and yields its fruit – the ultimate **realization** of unbinding. This is the cessation of suffering, the end of all ties, and the attainment of ultimate freedom, the medicine for all suffering. The plant, having completed its growth cycle, perfectly fulfills its purpose, offering its profound cure to the world.

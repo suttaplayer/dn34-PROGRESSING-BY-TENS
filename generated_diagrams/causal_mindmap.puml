@@ -1,0 +1,265 @@
+generate a PlantUML code block of:
+*  A **mindmap diagram** that represents all causal relationships between mental qualities, core concepts & practices.
+
+Ensure the PlantUML block is syntactically correct and enclosed within '@startmindmap' and '@endmindmap' tags. Use clear, descriptive names for elements.
+
+
+
+generate a PlantUML code block of:
+*  A **class diagram** that represents all causal relationships between practices and the resultant mental qualities that either developed or abandoned
+
+Ensure the PlantUML block is syntactically correct and enclosed within '@startuml' and '@enduml' tags. Use clear, descriptive names for elements.
+---
+
+@startmindmap
+* Causal Relationships between Mental Qualities
+    * Unskillful Mental Qualities (Defilements and Hindrances)
+        * Mind (undeveloped/untamed/unguarded/unprotected/unrestrained)
+            * Leads to **great harm** 
+            * Is **unpliant** 
+            * Is **sullied**, preventing clear knowledge of benefit 
+            * Is **defiled by incoming defilements** 
+            * Is **not released** when defiled by passion/aversion 
+            * If **sluggish**, hard to raise up with calm/concentration/equanimity 
+            * If **restless**, hard to still with analysis/persistence/rapture 
+            * **Defilement of mind** leads to beings being defiled 
+        * Greed / Passion / Sensual Desire / Craving
+            * Is a **cause for the origination of actions** 
+            * Is a **"root of what is unskillful"** 
+            * **Carries little blame but is slow to fade** 
+            * When action is fashioned by greed, it ripens in **pain** 
+            * Is an **"effluent"** that weakens discernment 
+            * Causes **pain and distress** 
+            * **Subjugates the mind** 
+            * Is an **"ensnarer"** preventing escape from transmigration 
+            * Manifests as **18 internal & 18 external craving-verbalizations** 
+            * Is the **"seamstress"** that stitches one to becoming 
+            * Is the **origination of the four nutriments** 
+            * Is **inconstant, changeable, alterable** 
+            * Is the **root and cause of stress** 
+            * Leads to **clinging / sustenance** 
+            * **Relishing feelings** leads to delight which leads to clinging 
+            * **Desire-passion for clinging-aggregates** is origination of stress 
+            * **Desire-passion for 6 sense bases** is defilement of mind 
+            * If **unabandoned**, leads to sorrow, lamentation, pain, grief, despair 
+            * **Infatuation with form** (from pleasure) leads to captivation and defilement 
+        * Aversion / Ill Will
+            * Is a **cause for the origination of actions** 
+            * Is a **"root of what is unskillful"** 
+            * **Carries great blame and is quick to fade** 
+            * When action is fashioned by aversion, it ripens in **pain** 
+            * Is a **"hindrance"** that weakens discernment 
+            * Causes **pain and distress** 
+            * **Subjugates the mind** 
+            * **Returning anger/quarreling** is "pushing away" 
+        * Delusion / Ignorance / Uncertainty
+            * Is a **cause for the origination of actions** 
+            * Is a **"root of what is unskillful"** 
+            * **Carries great blame and is slow to fade** 
+            * When action is fashioned by delusion, it ripens in **pain** 
+            * Is an **"effluent"** 
+            * Causes **pain and distress** 
+            * **Prevents discernment from developing** 
+            * **Ignorance rising** causes fabrications to rise 
+            * Is a **requisite condition for fabrications** 
+            * **Lack of knowledge re: stress** is ignorance 
+            * Can cause **concentration to fall away** 
+            * **Ignorance and craving for becoming** lead to a new body and continued suffering 
+        * Conceit
+            * Is **"I-making" or "mine-making" obsession** 
+            * Can be related to **restlessness** 
+        * Restlessness & Anxiety
+            * Is a **"hindrance"** that weakens discernment 
+            * **Over-aroused persistence** leads to restlessness 
+            * A **restless mind** is hard to still 
+            * **Subjugates the mind** 
+        * Sloth & Drowsiness
+            * Is a **"hindrance"** that weakens discernment 
+            * **Overly slack persistence** leads to laziness 
+            * A **sluggish mind** is hard to raise up 
+            * **Subjugates the mind** 
+        * Stinginess
+            * An **"impurity"**; if unabandoned, leads to hell 
+            * If **unabandoned**, prevents jhāna/higher fruits 
+        * Wrong View
+            * Leads to **harm & suffering** 
+            * Is purged away by right view 
+            * One of three actions for **making evil kamma** 
+        * Impurity / Defilements (general)
+            * **Luminous mind defiled** by incoming defilements 
+            * **Defiled mind** is not pliant/malleable/luminous, but brittle and not rightly concentrated 
+            * **Doubt** is a defilement of the mind 
+            * **Desire-passion for sense bases/aggregates** is a defilement of the mind 
+            * **Unskillful thoughts (sensuality, ill-will, harmfulness)** produce blindness, lack of vision/knowledge, cessation of discernment, vexation, not conducive to Unbinding 
+    * Skillful Mental Qualities (Virtues and Faculties)
+        * Mind (developed/tamed/guarded/protected/restrained)
+            * Is **pliant and leads to great benefit** 
+            * Is **luminous and freed from defilements** 
+            * Allows **discernment of benefit** 
+            * Is **rightly concentrated** for ending effluents 
+            * When **cleansed**, joy arises and defilements are abandoned 
+            * Can be **reined in, exerted, gladdened, watched over** for "cooled state" 
+            * **Purity of mind** leads to **direct knowing** 
+            * **Purification of mind** leads to beings being purified 
+            * **Protected mind** protects bodily/verbal/mental actions 
+        * Shame & Compunction
+            * Are **"bright qualities"** that guard the world 
+            * Enable **recognition of familial respect** 
+            * Essential for **apprenticeship to Teacher** with respect 
+            * Monk feels **shame at misconduct** 
+            * One of six qualities for **arahantship** 
+            * Follows **clear knowing** in attaining skillful qualities 
+        * Dispassion / Lack of Greed / Renunciation
+            * Is a **"root of what is skillful"** 
+            * Leads to **skillful fabrications** 
+            * **Fading of passion** leads to **awareness-release** 
+            * **Disenchantment** leads to dispassion, then cessation, knowledge, self-awakening, unbinding 
+            * **Abandoning desire-passion** leads to escape from aggregates 
+            * Mind **inclined to renunciation** becomes malleable for direct knowing 
+            * **Thinking imbued with renunciation** produces non-blindness, vision, knowledge, fosters discernment, conducive to Unbinding 
+            * **Ending of passion** is the **"unfabricated"** 
+        * Lack of Aversion / Non-Ill-Will / Goodwill
+            * Is a **"root of what is skillful"** 
+            * **Fading of aversion** leads to **discernment-release** 
+            * **Cultivated goodwill-awareness-release** prevents ill will from overpowering mind 
+            * **Pervading world with goodwill** calms mind, brings joy, abandons defilements 
+            * **Thinking imbued with non-ill-will** produces non-blindness, vision, knowledge, fosters discernment, conducive to Unbinding 
+            * **Goodwill** subdues hatred 
+        * Discernment / Wisdom
+            * Is a **"root of what is skillful"** 
+            * **Fading of ignorance** leads to discernment development 
+            * **Mind well shored-up by discernment** leads to declaration of ending birth/holy life fulfilled 
+            * **Knowing/seeing things as they come to be** leads to disenchantment 
+            * **Discernment of arising & passing away** leads to right ending of stress 
+            * **Clear knowing** is leader in attaining skillful qualities 
+            * **Acquiring/increasing discernment** is supported by virtuous practice 
+            * Leads to **awareness-release & discernment-release** 
+            * **Thinking imbued with harmlessness** fosters discernment 
+            * **Discernment** instructs a person 
+            * **Right discernment** sees dependent co-arising and phenomena 
+            * **Right discernment** comprehends body/feelings and realizes deathless 
+            * **Direct knowledge** leads to unbinding and ends effluents 
+        * Conviction / Faith
+            * Is a **person's companion** 
+            * Leads to **mind heading straight**, joy, rapture, calm, concentration 
+            * Is a **prerequisite for discernment** 
+            * Leads to **abandoning not-insignificant pain** 
+            * Is one of **"qualities creating a protector"** 
+            * **Guarded mind** leads to culmination of faculty of conviction 
+            * **Well-planted seed (Dhamma-practicing disciple)** thrives with well-proclaimed Dhamma 
+        * Persistence / Effort
+            * **Aroused for abandoning unskillful and taking on skillful qualities** 
+            * **Manly firmness, persistence, striving** leads to attaining what can be reached 
+            * **Right effort** is a requisite for concentration 
+            * **Developing persistence** leads to a brightened mind and supranormal powers 
+            * **Persistence** raises sluggish mind 
+        * Mindfulness
+            * Is **established and unmuddled** 
+            * Is the **governing principle** of the holy life 
+            * **Always mindful in movement** leads to mindfulness & alertness 
+            * **Mindfulness of in-&-out breathing** is of great fruit and benefit, leads to the deathless 
+            * **Mindfulness immersed in the body** encompasses skillful qualities, Māra cannot gain entry 
+            * **Mindfulness** causes pain not to invade mind 
+            * **Mindfulness** prevents passion with forms 
+            * Leads to **mind gathered, unified, concentrated** 
+            * Leads to **crossing over attachment** 
+            * Leads to **abandoning defilements** like doubt 
+        * Concentration / Calm
+            * **Developed mind** is pliant, malleable, luminous, and rightly concentrated for ending effluents 
+            * **Concentrated mind** knows & sees things as they come to be 
+            * Leads to **insight knowledge**, mind-made body, supranormal powers, mind reading, ending effluents 
+            * **Concentration founded on desire/persistence/intent/discrimination** develops bases of power 
+            * **Themeless concentration** causes unskillful thinking to cease 
+            * **Calm as a factor for awakening** stills restless mind 
+            * **Internal tranquility of awareness** leads to insight 
+            * **Mind centered & unified** is aroused to practice 
+            * **Jhānas** provide pleasant abiding 
+            * **Right concentration** is singleness of mind 
+        * Virtue
+            * **Consummate in virtue** leads to freedom from remorse 
+            * **Well-purified virtue** is basis for skillful mental qualities 
+            * **Good conduct** leads to welfare & happiness 
+            * **Virtuous person** is a "quality creating a protector" 
+            * **Right speech, action, livelihood** are part of Noble Eightfold Path 
+        * Heedfulness
+            * Leads to **stability of True Dhamma** 
+            * **Guards mind** from passion/aversion/delusion/intoxication 
+            * **Monks in higher training** have a task with heedfulness for supreme goal 
+            * **Heedfulness, mindfulness, protection of awareness** should be practiced regarding sense strings 
+            * **One quality established (heedfulness)** leads to five faculties developed 
+    * Kamma / Action and its Results
+        * **Kamma** is the field, **consciousness** the seed, **craving** the moisture 
+            * Leads to **production of renewed becoming** in future 
+        * **Greed, Aversion, Delusion** are causes for origination of actions 
+        * **Intention** is kamma 
+        * **Contact** is cause for kamma coming into play 
+        * **Actions** differentiate beings 
+        * **Injurious fabrications** lead to dark kamma / painful feelings / hell 
+        * **Non-injurious fabrications** lead to bright kamma / pleasant feelings / devas 
+        * **Injurious & non-injurious fabrications** lead to dark & bright kamma / mingled pleasure & pain / humans 
+        * **Kamma that is neither dark nor bright** (Noble Eightfold Path) leads to the **ending of kamma** 
+    * Causal Chains / Dependent Origination
+        * **Ignorance** --> **Fabrications** 
+        * **Fabrications** --> **Consciousness** 
+        * **Consciousness** <--> **Name-&-form** (mutual requisite condition) 
+        * **Name-&-form** --> **Six sense media** 
+        * **Six sense media** --> **Contact** 
+        * **Contact** --> **Feeling** 
+        * **Feeling** --> **Craving** 
+        * **Craving** --> **Clinging / Sustenance** 
+        * **Clinging / Sustenance** --> **Becoming** 
+        * **Becoming** --> **Birth** 
+        * **Birth** --> **Aging-&-death**, sorrow, lamentation, pain, distress, despair 
+        * **Cessation of Ignorance** --> Cessation of fabrications 
+        * **Cessation of conditioning factors** leads to **cessation of stress** 
+    * Paths to Liberation / Cessation
+        * **Noble Eightfold Path**
+            * Leads to **cessation of stress** 
+            * Leads to **cessation of effluents** 
+            * Leads to **abandoning passion, aversion, delusion** 
+            * Leads to **cessation of kamma** 
+            * Is **"sublime vehicle," "Dhamma-vehicle," "unexcelled victory"** 
+            * Components:
+                * **Right View** (forerunner) 
+                * **Right Resolve** 
+                * **Right Speech** 
+                * **Right Action** 
+                * **Right Livelihood** 
+                * **Right Effort** 
+                * **Right Mindfulness** 
+                * **Right Concentration** 
+        * **Four Establishings of Mindfulness**
+            * Are **direct path** for purification, overcoming sorrow, realizing unbinding 
+            * Leads to **gnosis right here & now** or **non-return** 
+            * Bind awareness to **break household habits** 
+            * When developed, **mind released from effluents** 
+            * Leads to **comprehension of body/feelings** etc. and **realization of deathless** 
+        * **Jhāna** (Heightened mental states)
+            * Leads to **purity of mind** 
+            * Leads to **ending of effluents** 
+            * Cultivation of **jhana** is essential for supranormal powers 
+            * Different jhānas correspond to **cessation of various perceptions/fabrications** 
+        * **Awareness-release & Discernment-release**
+            * Leads to **cutting craving, ripping fetter, ending suffering & stress** 
+            * **Awareness-release through goodwill** is escape from ill will 
+            * **Theme-less awareness-release** (not attending to themes) 
+            * **Unprovoked awareness-release** is supreme, empty of passion/aversion/delusion 
+        * **Tranquility (Samatha) & Insight (Vipassanā)**
+            * Are **swift pair of messengers** to unbinding 
+            * **Greatly helpful for cessation of perception & feeling** 
+            * Are **path leading to unfabricated** 
+        * **Reflecting on Impermanence / Not-self / Stress**
+            * Leads to **disenchantment, dispassion, cessation** 
+            * Leads to **release from what has come into being** 
+            * **Perception of inconstancy** leads to uprooting conceit 'I am' --> unbinding 
+            * **Perception of not-self in what is stressful** leads to heart devoid of 'I-making'/'mine-making', transcended pride, peace, well released 
+        * **Abandoning (general)**
+            * **Abandoning wrong conduct/livelihood** leads to cessation of unskillful habits 
+            * **Abandoning passion, aversion, delusion** leads to mind well released 
+            * **Abandoning defilements of awareness** leads to mind inclined to renunciation 
+            * **Abandoning unskillful qualities** and **committing to skillful qualities** leads to growth in Dhamma 
+            * **Lack of clinging/sustenance** leads to unagitated state, no seed for future birth/aging/death/stress 
+            * **Abandoning 'I am' thinking** leads to no smoldering 
+            * **Abandoning 'I am because of this' thinking** leads to no flaring up 
+            * **Abandoning effluents** leads to effluent-free awareness/discernment release 
+@endmindmap

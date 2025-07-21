@@ -1,0 +1,235 @@
+@startuml
+!pragma layout smetana
+
+title Causal Relationships: Practices & Mental Qualities
+
+package "Practices & Paths" {
+  class Training
+  class NobleEightfoldPath
+  class RightView
+  class RightResolve
+  class RightSpeech
+  class RightAction
+  class RightLivelihood
+  class RightEffort
+  class RightMindfulness
+  class RightConcentration
+  class RightKnowledge
+  class Recollection
+  class MindfulnessOfBreathing
+  class JhanaPractice
+  class SenseRestraint
+  class CultivatingGoodwill
+  class SelfReflection
+  class Heedfulness
+  class Disenchantment
+  class Insight
+  class Tranquility
+  class AbandoningCraving
+  class AbandoningIgnorance
+  class AbandoningEffluents
+  class EnduringPainfulFeelings
+}
+
+package "Unskillful Mental Qualities & States" {
+  class Ignorance
+  class Fabrications
+  class Consciousness
+  class NameForm
+  class SixSenseMedia
+  class Contact
+  class Feeling
+  class Craving
+  class Clinging
+  class Becoming
+  class Birth
+  class AgingDeath
+  class StressSuffering
+  class Greed
+  class Aversion
+  class Delusion
+  class Conceit
+  class RestlessnessAnxiety
+  class SlothDrowsiness
+  class ImpuritiesDefilements
+  class WrongView
+  class Mind_Undeveloped
+  class FutureBecoming
+  class UnskillfulActions
+  class UnskillfulThinking
+  class IllWill
+}
+
+package "Skillful Mental Qualities & States" {
+  class Mind_Developed
+  class ShameCompunction
+  class SkillfulQualities_General
+  class Dispassion
+  class LackOfAversionGoodwill
+  class DiscernmentWisdom
+  class ConvictionFaith
+  class PersistenceEffort
+  class Mindfulness
+  class ConcentrationCalm
+  class Alertness
+  class FreedomFromRemorse
+  class Joy
+  class Rapture
+  class EaseHappiness
+  class UnbindingRelease
+  class RightConduct
+  class Purity
+  class NonDecline
+  class RightRelease
+}
+
+/'package "Roots of Unskillful Actions" {'/
+/'  Greed'/
+/'  Aversion'/
+/'  Delusion'/
+/'}'/
+
+/'package "Dependent Co-arising: Cessation" {'/
+/'  Fabrications'/
+/'  Consciousness'/
+/'  NameForm'/
+/'  SixSenseMedia'/
+/'  Contact'/
+/'  Feeling'/
+/'  Craving'/
+/'  Clinging'/
+/'  Becoming'/
+/'  Birth'/
+/'  AgingDeath'/
+/'  StressSuffering'/
+/'}'/
+
+' Unskillful Causal Links (Qualities causing other Qualities/States)
+Ignorance "is requisite condition for" o-- Fabrications
+Fabrications "is requisite condition for" o-- Consciousness
+Consciousness "is requisite condition for" o-- NameForm
+NameForm "is requisite condition for" o-- SixSenseMedia
+SixSenseMedia "is requisite condition for" o-- Contact
+Contact "is requisite condition for" o-- Feeling
+Feeling "is requisite condition for" o-- Craving
+Craving "is requisite condition for" o-- Clinging
+Clinging "is requisite condition for" o-- Becoming
+Becoming "is requisite condition for" o-- Birth
+Birth "is requisite condition for" o-- AgingDeath
+AgingDeath "origination of" o-- StressSuffering
+
+Ignorance "leads to" --> ImpuritiesDefilements : "effluents"
+Greed "causes" --> UnskillfulActions
+Aversion "causes" --> UnskillfulActions
+Delusion "causes" --> UnskillfulActions
+
+Mind_Undeveloped <.. Ignorance : "defiled by"
+Mind_Undeveloped <.. Greed : "defiled by"
+Mind_Undeveloped <.. Aversion : "defiled by"
+Conceit "leads to" --> StressSuffering
+Craving "is seamstress for" --> Becoming
+Craving "is root of" o-- StressSuffering
+Clinging "causes" --> StressSuffering
+RestlessnessAnxiety "impedes" <.. DiscernmentWisdom
+SlothDrowsiness "impedes" <.. DiscernmentWisdom
+
+
+' Practices leading to abandonment of Unskillful qualities
+NobleEightfoldPath --x Greed : "abandons"
+NobleEightfoldPath --x Aversion : "abandons"
+NobleEightfoldPath --x Delusion : "abandons"
+RightView --x WrongView : "purges away"
+RightEffort --x UnskillfulActions : "non-arising & abandoning"
+Training --x Greed : "abandons"
+Training --x Aversion : "abandons"
+Training --x Delusion : "abandons"
+Recollection --x ImpuritiesDefilements : "abandons"
+MindfulnessOfBreathing --x Conceit : "uproots"
+MindfulnessOfBreathing --x UnskillfulThinking : "cuts off"
+CultivatingGoodwill --x IllWill : "escape from"
+SenseRestraint --x Greed : "prevents from assailing"
+SenseRestraint --x Aversion : "prevents from assailing"
+SenseRestraint --x Delusion : "prevents from assailing"
+SelfReflection --x Greed : "weakens/abandons"
+SelfReflection --x Aversion : "weakens/abandons"
+SelfReflection --x Delusion : "weakens/abandons"
+SelfReflection --x UnskillfulActions : "abandons"
+Heedfulness --x ImpuritiesDefilements : "prevents"
+Disenchantment "leads to" --> Dispassion
+Dispassion --x Greed : "fading of passion"
+AbandoningCraving --x Becoming : "cessation of"
+AbandoningCraving --x StressSuffering : "cessation of"
+AbandoningIgnorance --x Fabrications : "cessation of"
+AbandoningEffluents --x FutureBecoming : "not destined for future arising"
+DiscernmentWisdom --x ImpuritiesDefilements : "ends effluents"
+DiscernmentWisdom --x Conceit : "breaks through"
+EnduringPainfulFeelings --> PersistenceEffort : "exercises ardency for"
+
+
+' Practices leading to development of Skillful qualities
+Training --> Mind_Developed : "develops"
+Training --> RightConduct : "develops"
+Training --> ShameCompunction : "develops"
+Training --> Mindfulness : "develops"
+Training --> Alertness : "develops"
+Training --> Purity : "develops"
+Training --> FreedomFromRemorse : "develops"
+FreedomFromRemorse --> Joy : "arises from"
+Joy --> Rapture : "arises from"
+Rapture --> EaseHappiness : "arises from"
+EaseHappiness --> ConcentrationCalm : "leads to"
+NobleEightfoldPath --> SkillfulQualities_General : "develops"
+NobleEightfoldPath --> DiscernmentWisdom : "develops"
+NobleEightfoldPath --> ConcentrationCalm : "develops"
+NobleEightfoldPath --> Mindfulness : "develops"
+NobleEightfoldPath --> PersistenceEffort : "develops"
+NobleEightfoldPath --> RightConduct : "develops"
+MindfulnessOfBreathing --> Mindfulness : "develops"
+MindfulnessOfBreathing --> ConcentrationCalm : "develops"
+JhanaPractice --> Mind_Developed : "cultivates"
+JhanaPractice --> ConcentrationCalm : "cultivates"
+JhanaPractice --> DiscernmentWisdom : "leads to direct knowledge"
+CultivatingGoodwill --> LackOfAversionGoodwill : "develops"
+Heedfulness --> SkillfulQualities_General : "is the root of"
+RightEffort --> SkillfulQualities_General : "arises & develops"
+RightView --> SkillfulQualities_General : "culmination of development"
+RightConduct ..> "nurtures" ConcentrationCalm
+ConcentrationCalm ..> "nurtures" DiscernmentWisdom
+Mind_Developed --> Purity
+Tranquility --> ConcentrationCalm : "develops"
+Insight --> DiscernmentWisdom : "develops"
+
+' Internal causal links (Noble Eightfold Path sequence)
+RightView "forerunner for" o-- RightResolve
+RightResolve "forerunner for" o-- RightSpeech
+RightSpeech "forerunner for" o-- RightAction
+RightAction "forerunner for" o-- RightLivelihood
+RightLivelihood "forerunner for" o-- RightEffort
+RightEffort "forerunner for" o-- RightMindfulness
+RightMindfulness "forerunner for" o-- RightConcentration
+RightConcentration "forerunner for" o-- RightKnowledge
+RightKnowledge "leads to" --> RightRelease
+
+' Skillful Qualities leading to Unbinding/Release
+DiscernmentWisdom --> UnbindingRelease
+Dispassion --> UnbindingRelease
+AbandoningEffluents --> UnbindingRelease
+Purity --> UnbindingRelease
+Mind_Developed --> UnbindingRelease : "leads to ending effluents"
+RightRelease --> UnbindingRelease
+NobleEightfoldPath --> UnbindingRelease
+UnbindingRelease --> NonDecline
+
+' Prerequisites/Supports for Skillful Qualities
+"Apprenticeship" o-- ConvictionFaith
+"Apprenticeship" o-- ShameCompunction
+"Apprenticeship" o-- LoveAndRespect
+Recollection ..> "leads to" Mind_Developed
+ConvictionFaith "prerequisite for" o-- DiscernmentWisdom
+PersistenceEffort "prerequisite for" o-- DiscernmentWisdom
+Mindfulness "prerequisite for" o-- DiscernmentWisdom
+ConcentrationCalm "prerequisite for" o-- DiscernmentWisdom
+
+hide methods
+hide fields
+@enduml
