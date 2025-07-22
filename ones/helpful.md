@@ -1,224 +1,264 @@
 # One > Helpful > Heedfulness with regard to skillful qualities
 
-## Situation
+## AI Prompt
+> 1. Define heedfulness & skillful qualities
+> 2. Seeing what benefit should heedfulness & skillful qualities be cultivated?
+> 3. List the causal relationships associated with both heedfulness & skillful qualities
+> 4. What is the relationship between heedfulness, skillful qualities and appropriate attention?
+>
+> Append a quotation sheet for all references to .txt sources that correspond to the citations in your response above
 
-The phrase "Heedfulness with regard to skillful qualities" is presented as a dhamma that is **"very helpful"**. This highlights its foundational importance in one's spiritual and personal development. The sources emphasize that heedfulness is the **root and convergence point for all skillful qualities**. It is likened to an elephant's footprint encompassing all other animal footprints, signifying its supremacy in supporting beneficial actions and outcomes in both the present life and future existences.
+## 1. Definition of Heedfulness and Skillful Qualities
 
-Skillful qualities, or "dhamma," are those that lead to positive outcomes and progress towards liberation. These include:
-*   **Good bodily, verbal, and mental conduct**. The rewards of such conduct include self-approval, praise from observant people, a good reputation, a clear death, and rebirth in a good destination or heavenly world.
-*   Qualities that are **blameless, praised by the observant, and lead to welfare and happiness**.
-*   The **fading of passion and ignorance**, leading to awareness-release and discernment-release.
-*   Qualities such as **conviction, aroused persistence, established mindfulness, concentration, and discernment**.
-*   **Virtue, concentration, discernment, and release**.
-*   **Clear knowing and release**.
+**Heedfulness (Appamāda)** is a central quality in the Dhamma, described as the **foremost among all skillful qualities** [^AN_157], [^AN_158], [^AN_159], [^AN_160], [^AN_161]. It encompasses a state of being **diligent, alert, and mindful**, and involves guarding one's mind from defilements and actions that lead to harm [^AN_71], [^AN_157], [^SN_601]. It is a quality that **keeps both kinds of benefits secure: benefits in this life and in lives to come** [^KN_Iti_283], [^SN_489]. The sources use analogies such as an **elephant's footprint encompassing all other legged animals' footprints**, rafters converging at a **roof-peak**, or the **moon's light overpowering constellation light** to illustrate heedfulness's supremacy among skillful qualities [^AN_157], [^AN_158], [^AN_160].
 
-Essentially, heedfulness involves actively keeping one's persistence aroused for **abandoning unskillful qualities and taking on skillful qualities**, being steadfast and solid in effort, and not shirking duties related to skillful development. It underpins the aspiration for purity of virtue and view.
+**Skillful qualities (Kusala Dhamma)** are mental states and intentions that are conducive to **benefit, happiness, and liberation**. They represent actions and states of being that lead away from suffering and towards well-being and the ultimate goal of unbinding [^AN_34], [^AN_35], [^AN_37], [^AN_38]. Examples of skillful qualities include:
+*   **Good bodily, verbal, and mental conduct** [^AN_7], [^AN_8], [^AN_34], [^AN_35], [^DN_245].
+*   **Shame (hiri) and compunction (ottappa)**, which are described as "bright qualities" that guard the world [GUARDIANS OF THE WORLD]  [^AN_127], [^AN_128].
+*   **Dispassion (lack of greed), lack of aversion (goodwill), and lack of delusion (discernment/wisdom)**, which are considered the "roots of what is skillful" [^AN_34], [^AN_35], [^MN_320], [^DN_245].
+*   **Conviction (faith), persistence (effort), mindfulness, and concentration (calm)**, which are part of the "five faculties" that contribute to development and liberation [^AN_595], [^AN_596].
 
-## Complication
+## 2. Benefits of Cultivating Heedfulness and Skillful Qualities
 
-The sources extensively detail the negative consequences of heedlessness and the cultivation of unskillful qualities, presenting a clear contrast to the "situation" of heedfulness. Heedlessness is explicitly linked to laziness and lack of progress. Without heedfulness, the mind can tend towards laziness or restlessness, and concentration may not develop correctly for the ending of effluents.
+Cultivating heedfulness and skillful qualities brings about profound benefits, both in this life and for future well-being:
 
-Unskillful qualities and their detrimental effects are described as follows:
-*   **Defilement by passion and ignorance** prevents the mind from being released and discernment from developing.
-*   Being **unvirtuous, envious, or stingy** leads to dire outcomes, such as being placed in hell.
-*   **Ignorance** is identified as a precursor to all unskillful qualities, leading to a lack of shame and compunction. It is described as a **"great delusion"** that perpetuates the cycle of wandering.
-*   **Unskillful thinking**, such as that imbued with sensuality, ill-will, or harmfulness, produces blindness, lack of vision, lack of knowledge, and hinders discernment, ultimately not being conducive to Unbinding.
-*   Actions driven by an **"unknowing"** state lead to repeated stress and suffering.
-*   Holding **wrong views**, or failing to abandon such views and intentions, can lead to severe consequences, even rebirth in hell.
-*   Conversely, **when unskillful qualities increase and skillful qualities decrease**, it indicates a state that should be avoided. The Tathāgata (Buddha) explicitly warns against remaining "lazy & heedless" in the well-taught Dhamma and Vinaya, as it would be unfitting for a practitioner.
+### For Heedfulness
+*   It **secures both benefits in this life and in lives to come** [^KN_Iti_283], [^KN_Iti_284], [^SN_489], [^SN_490].
+*   It **prevents regret** [^AN_92], [^MN_480].
+*   It leads to **joy, rapture, calm, pleasure, and a centered mind**, making phenomena manifest and leading to the ending of effluents [^SN_615].
+*   The **five faculties** (conviction, persistence, mindfulness, concentration, discernment) are **developed and developed well** when heedfulness is established [^SN_601].
+*   It leads to the **stability, non-confusion, and non-disappearance of the True Dhamma** [^AN_73].
+*   The **wise praise heedfulness** in doing acts of merit [^KN_Iti_284], [^SN_490].
+*   It enables one to **remove their own "arrow"** (suffering) through clear knowing [^KN_StNp_294].
 
-This shows that neglecting heedfulness is a direct path to experiencing increased suffering and undesirable states, forming a strong impetus for its cultivation.
+### For Skillful Qualities
+*   When skillful mental qualities **increase**, the holy life **is fruitful** [^AN_37].
+*   **Good bodily, verbal, and mental conduct** lead to **welfare and happiness**, praise from observant people, a good reputation, and a good destination after death [^AN_2], [^AN_7], [^AN_23].
+*   Developing skillful qualities leads to **growth, increase, and abundance in the Dhamma-Vinaya** [^MN_334].
+*   Skillful actions are **blameless, ripen in pleasure, lead to the cessation of action**, and do not lead to the origination of further action [^AN_45].
+*   The mind, when pure, becomes **pliant, malleable, luminous, and not brittle**, and is rightly concentrated for the ending of effluents [^AN_42], [^AN_43].
+*   **Skillful thinking** produces **non-blindness, vision, knowledge, fosters discernment, sides with non-vexation, and is conducive to Unbinding** [^KN_Iti_289].
+*   Cultivating **generosity, virtue, and goodwill** are acts of merit that **yield bliss and lead to reappearance in a world of bliss** [^KN_Iti_283], [^KN_Iti_288].
 
-## Resolution
+## 3. Causal Relationships Associated with Heedfulness and Skillful Qualities
 
-The resolution lies in the dedicated development and pursuit of heedfulness, which directly leads to the actualization of skillful qualities and, ultimately, to liberation from suffering. The path is clear:
-*   By being **heedful, mindful, and virtuous**, with well-concentrated resolves, one can put an end to suffering and stress, thereby leaving the cycle of wandering-on through birth.
-*   The **direct path to the purification of beings**, the overcoming of sorrow and lamentation, the disappearance of pain and distress, the attainment of the right method, and the realization of unbinding is through the development of the four establishings of mindfulness. Mindfulness, as a key aspect of heedfulness, leads to concentration and discerns things as they have come to be, including their inconstancy and stressful nature.
-*   The **ending of effluents**—the defilements of awareness that weaken discernment—is achieved by one who **"knows & sees"** the nature of phenomena like form, feeling, perception, fabrications, and consciousness. This direct knowledge is a fruit of diligent and skillful practice rooted in heedfulness.
-*   The ultimate aim of skillful qualities is the **"unfabricated,"** which is defined as the **"ending of passion, the ending of aversion, the ending of delusion"**. Heedfulness guides one towards this state, ensuring that the mind is not overcome by passion, aversion, or delusion, but rather heads straight based on the Dhamma.
-*   Cultivating heedfulness means constantly striving for the **abandoning of unskillful qualities** and the **cultivation of skillful qualities**. This leads to the **ending of craving and action (kamma)**, which in turn results in the cessation of stress.
-*   A wise person who embraces heedfulness is one who **guards themselves well**, settling into what is correct before guiding others, thus not staining their reputation. This self-protection and integrity are hallmarks of a heedful life.
-*   When right view is supported by five factors, it culminates in **awareness-release and discernment-release**. These forms of release are achieved through the ending of effluents, realized by direct knowledge in the here-and-now.
+The sources describe several causal relationships involving heedfulness and skillful qualities, often using expressions such as "is a cause/causes for the origination of," "from _ comes _," "leads to _," "is rooted in _," and "is abandoned".
 
-Through the consistent practice of heedfulness with regard to skillful qualities, individuals progress towards a state of ultimate peace and freedom, moving beyond the cycles of suffering to achieve unbinding.
+### Causal Relationships for Heedfulness
+* Heedfulness is the foundation for all skillful qualities: All skillful qualities are **rooted in heedfulness, converge in heedfulness, and heedfulness is reckoned the foremost among them** [^AN_157], [^AN_158], [^AN_159], [^AN_160], [^AN_161].
+* Heedfulness enables the development of faculties: When **heedfulness is established**, the **five faculties** (conviction, persistence, mindfulness, concentration, discernment) **are developed and developed well** [^SN_601].
+* Heedfulness leads to progress in the holy life: A monk who is **heedful, ardent, and resolute** can release their unreleased mind or bring their as-yet unended effluents to a total end [^AN_87], [^AN_88], [^KN_Iti_286].
+* Lack of heedfulness leads to decline and suffering: Being **addicted to heedlessness** characterizes dullards and fools, hindering their progress [^KN_Dhp_279], [^SN_481].
+* Specific hindrances lead to heedlessness: **Being shameless, lacking compunction, and being heedless** prevent one from abandoning apathy, being hard to correct, and evil friendship [^AN_171]. Conversely, having shame and compunction makes one heedful [^AN_174]. Not guarding the sense faculties leads to dwelling in heedlessness [^SN_544].
+* Heedfulness ensures the True Dhamma's endurance: Heedfulness, when exercised, leads to the **stability, non-confusion, and non-disappearance of the True Dhamma** [^AN_73].
+
+### Causal Relationships for Skillful Qualities:
+* Roots of Skillful Qualities: **Lack of greed, lack of aversion, and lack of delusion are roots of what is skillful** [^AN_34], [^AN_35], [^MN_320], [^DN_245]. Many skillful qualities **come into play** when born of these roots [^AN_34], [^AN_35].
+* Skillful conduct leads to positive outcomes: **Good bodily, verbal, and mental conduct** should be done [^AN_2], [^AN_7], [^AN_8] and, when adopted and carried out, they **lead to welfare and happiness** [^AN_23]. They also result in not faulting oneself, praise from observant people, a good reputation, and reappearance in a heavenly world after death [^AN_2].
+* Persistence for Skillful Qualities: One's **persistence is aroused for abandoning unskillful qualities and taking on skillful qualities** [^AN_15], [^AN_75], [^AN_179].
+* Mind's purity and development: A **developed mind** becomes pliant, malleable, luminous, and not brittle, and is rightly concentrated for the ending of effluents [^AN_42], [^AN_43]. The **mind's purification leads to the purification of beings** [^SN_531].
+* Cessation of unskillful qualities: The **Noble Eightfold Path** leads to the **abandoning of passion, aversion, and delusion** [^AN_38]. **From the fading of passion comes awareness-release; from the fading of ignorance comes discernment-release** [^AN_4].
+
+## 4. Relationship between Heedfulness, Skillful Qualities, and Appropriate Attention
+
+**Appropriate attention (yoniso manasikāra)** is a critical element in the cultivation of both heedfulness and skillful qualities.
+Definition: Appropriate attention is described as a dhamma that is **on the side of distinction** [^DN_260]. It involves attending to ideas and phenomena in a way that fosters skillful mental qualities and abandons unskillful ones [^MN_313], [^MN_314].
+
+### Relationship to Skillful Qualities
+Nine dhammas are rooted in appropriate attention: These lead to a sequential development of **joy, rapture, calm, pleasure, concentration, knowing & seeing what has come to be, disenchantment, dispassion, and ultimately release** [^DN_274].
+*   It is one of the **four factors of stream-entry**, alongside association with people of integrity, hearing the True Dhamma, and practice of the Dhamma in accordance with the Dhamma [^DN_252], [^SN_608].
+*   **Right view**, which is knowledge of stress, its origination, cessation, and the path to cessation [^MN_461], arises from two conditions: **the voice of another and appropriate attention** [^MN_364]. Right view is considered the forerunner of the Noble Eightfold Path, which is itself the **path of practice leading to the cessation of stress** [^MN_461], [^MN_463], [^MN_434].
+*   Appropriate attention is specifically the **cause for unarisen delusion not arising and for arisen delusion being abandoned** [^AN_32].
+*   Conversely, **inappropriate attention** is **on the side of decline** [^DN_259] and is the **cause for unarisen passion, aversion, or delusion to arise and for arisen ones to grow** [^AN_30], [^AN_31]. It prevents the abandonment of effluents [^MN_311], [^MN_312].
+*   **Fostering appropriate attention** to mental qualities that act as a foothold for the factors of awakening (mindfulness, analysis of qualities, persistence, rapture, calm, concentration, equanimity) is the **"food"** for their arising and growth [^SN_568], [^SN_569], [^SN_570], [^SN_571], [^SN_572]. Not fostering attention to them starves them [^SN_575], [^SN_576], [^SN_577], [^SN_578].
+
+### Relationship to Heedfulness
+*   Heedfulness is the broader quality of diligence and carefulness in one's practice. **Appropriate attention is the specific mental process or method by which heedfulness is applied and exercised.** One is heedful *by* attending appropriately to what is skillful and unskillful, and by directing one's mind in a way that cultivates beneficial states and abandons harmful ones. It enables one to discern the consequences of actions and thoughts, a key aspect of mindful self-reflection central to heedfulness. Therefore, appropriate attention is a vital internal tool for maintaining and developing heedfulness, much like a gardener uses a precise tool to tend to their plants, ensuring the healthy growth of desired qualities and the removal of weeds.
+
+
+## AI Diagram
+
+> Using the source helpful.md as the base content, create a plantuml activity diagram to represent any
+> workflows, processes, or sequence of actions described in the document. Focus on key steps, decisions, and parallel activities.
+
+[AI Generated Activity Diagram](./generated_diagrams/helpful_activity.svg)
+
+> Using the source helpful.md as the base content, create a plantuml class diagram that identifies the 
+> main entities, their attributes, and relationships (associations, aggregations, compositions, inheritances) mentioned or implied in the document.
+
+[AI Generated Class Diagram](./generated_diagrams/helpful_class.svg)
+
 
 ## Quotations
 
-> 'To the extent that there are animals—footless, two-footed, four-footed, many footed; with form or formless; percipient, non-percipient, or neither percipient nor non-percipient—the Tathāgata, worthy & rightly self-awakened, is reckoned the foremost among them. In the same way, all skillful qualities are rooted in heedfulness, converge in heedfulness, and heedfulness is reckoned the foremost among them.
-> 'Just as the footprints of all legged animals are encompassed by the footprint of the elephant, and the elephant's footprint is reckoned the foremost among them in terms of size; **in the same way, all skillful qualities are rooted in heedfulness, converge in heedfulness, and heedfulness is reckoned the foremost among them**.[^1]
+[^AN_1]: 'Thus you should train yourselves: 'We will relentlessly exert ourselves, (thinking,) 'Gladly would we let the flesh & blood in our bodies dry up, leaving just the skin, tendons, & bones, but if we have not attained what can be reached through manly firmness, manly persistence, manly striving, there will be no relaxing our persistence.' That's how you should train yourselves.'
 
-> Near Sāvatthī. As he was sitting to one side, King Pasenadi Kosala said to the Blessed One: '**Is there, lord, any one quality that keeps both kinds of benefits secure—benefits in this life & benefits in lives to come?**'[^2]
+[^AN_2]: 'Monks, these two are fools. Which two? The one who doesn't see his transgression as a transgression, and the one who doesn't rightfully pardon another who has confessed his transgression. These two are fools. 'These two are wise people. Which two? The one who sees his transgression as a transgression, and the one who rightfully pardons another who has confessed his transgression. These two are wise people.'
 
-> 'Heedfulness, great king. Just as the footprints of all living beings with legs can be encompassed by the footprint of the elephant, and the elephant's footprint is declared to be supreme among them in terms of its great size; **in the same way, heedfulness is the one quality that keeps both kinds of benefits secure—benefits in this life & benefits in lives to come.**'[^2]
+[^AN_4]: 'Defiled by passion, the mind is not released. Defiled by ignorance, discernment does not develop. Thus from the fading of passion is there awareness-release. From the fading of ignorance is there discernment-release.'
 
-> 'As for the qualities of which you may know, '**These qualities lead to dispassion**, not to passion; **to being unfettered**, not to being fettered; **to shedding**, not to accumulating; **to modesty**, not to self-aggrandizement; **to contentment**, not to discontent; **to reclusiveness**, not to entanglement; **to aroused persistence**, not to laziness; **to being unburdensome**, not to being burdensome': You may categorically hold, 'This is the Dhamma, this is the Vinaya, this is the Teacher's instruction.'
+[^AN_7]: 'The wanderers of other sects are lost, Sāriputta, in that they don't get to hear this Dhamma sequence.'
 
-> 'Given that I have declared, Ānanda, that **good bodily conduct, good verbal conduct, & good mental conduct should be done, these are the rewards** one can expect when doing what should be done: **One doesn't fault oneself**; **observant people**, on close examination, **praise one**; **one's good reputation gets spread about**; **one dies unconfused**`; and—on the break-up of the body, **after death—one reappears in a good destination, a heavenly world**. Given that I have declared, Ānanda, that good bodily conduct, good verbal conduct, & good mental conduct should be done, these are the rewards one can expect when doing what should be done.'[^4]
+[^AN_8]: 'There is the case where in any assembly when discourses that are literary works—the works of poets, artful in sound, artful in rhetoric, the work of outsiders, words of disciples—are recited, the monks don't listen, don't lend ear, don't set their hearts on knowing them; don't regard them as worth grasping or mastering. But when the discourses of the Tathāgata—deep, deep in their meaning, transcendent, connected with emptiness—are recited, they listen, they lend ear, they set their hearts on knowing them, they regard them as worth grasping & mastering. And when they have mastered that Dhamma, they cross-question one another about it and dissect it: 'How is this? What is the meaning of this?' They make open what isn't open, make plain what isn't plain, dispel doubt on its various doubtful points. This is called an assembly trained in cross-questioning and not in bombast.'
 
-> 'So, as I said, Kālāmas: 'Don't go by reports, by legends, by traditions, by scripture, by logical conjecture, by inference, by analogies, by agreement through pondering views, by probability, or by the thought, 'This contemplative is our teacher.' **When you know for yourselves that**, '**These qualities are skillful**; **these qualities are blameless**; **these qualities are praised by the observant**; **these qualities**, when adopted & carried out, **lead to welfare & to happiness**'—then you should enter & remain in them.' Thus was it said. And in reference to this was it said.[^5]
+[^AN_15]: 'Causes' [Title]: 'Monks, these three are causes for the origination of actions. Which three? Greed is a cause for the origination of actions. Aversion is a cause for the origination of actions. Delusion is a cause for the origination of actions.'
 
-> 'Defiled by **passion**, the **mind is not released**. Defiled by **ignorance**, **discernment does not develop**. Thus **from the fading of passion is there awareness-release**. **From the fading of ignorance is there discernment-release**.'[^6]
+[^AN_23]: 'Having approached the contemplatives & brahmans who hold that… 'Whatever a person experiences… is all caused by what was done in the past,' I said to them: 'Is it true that you hold that… whatever a person experiences… is all caused by what was done in the past?' Thus asked by me, they admitted, 'Yes.' Then I said to them, 'Then in that case, a person is a killer of living beings because of what was done in the past. A person is a thief… uncelibate… a liar… a divisive speaker… a harsh speaker… an idle chatterer… greedy… malicious… a holder of wrong views because of what was done in the past.' When one falls back on what was done in the past as being essential, monks, there is no desire, no effort (at the thought), 'This should be done. This shouldn't be done.' When one can't pin down as a truth or reality what should & shouldn't be done, one dwells bewildered & unprotected. One cannot righteously refer to oneself as a contemplative. This was my first righteous refutation of those contemplatives & brahmans who hold to such teachings, such views.'
 
-> '**One who is aroused to practice is one of conviction**, not without conviction. One aroused to practice is one **with persistence aroused**, not lazy. One aroused to practice is one **of established mindfulness**, not muddled mindfulness. One aroused to practice **is centered in concentration**, not uncentered. One aroused to practice **is discerning**, not undiscerning.[^7]
+[^AN_30]: 'Of course you are uncertain, Kālāmas. Of course you are in doubt. When there are reasons for doubt, uncertainty is born. So in this case, Kālāmas, don't go by reports, by legends, by traditions, by scripture, by logical conjecture, by inference, by analogies, by agreement through pondering views, by probability, or by the thought, 'This contemplative is our teacher.' When you know for yourselves that, 'These qualities are unskillful; these qualities are blameworthy; these qualities are criticized by the observant; these qualities, when adopted & carried out, lead to harm & to suffering'—then you should abandon them.'
 
-> '**This Dhamma is for one whose persistence is aroused**, not for one who is lazy.' Thus was it said. With reference to what was it said? There is the case where a monk keeps his persistence aroused **for abandoning unskillful mental qualities and taking on skillful mental qualities**. He is steadfast, solid in his effort, not shirking his duties with regard to skillful mental qualities. 'This Dhamma is for one whose persistence is aroused, not for one who is lazy.' Thus was it said. And with reference to this was it said.'[^8]
+[^AN_31]: 'Yes, lord.' 'So what do you think, Kālāmas: Are these qualities skillful or unskillful?' 'Unskillful, lord.' 'Blameworthy or blameless?' 'Blameworthy, lord.' 'Criticized by the observant or praised by the observant?' 'Criticized by the observant, lord.' 'When adopted & carried out, do they lead to harm & to suffering, or not?' 'When adopted & carried out, they lead to harm & to suffering. That is how it appears to us.' 'So, as I said, Kālāmas: 'Don't go by reports, by legends, by traditions, by scripture, by logical conjecture, by inference, by analogies, by agreement through pondering views, by probability, or by the thought, 'This contemplative is our teacher.' When you know for yourselves that, 'These qualities are unskillful; these qualities are blameworthy; these qualities are criticized by the observant; these qualities, when adopted & carried out, lead to harm & to suffering'—then you should abandon them.' Thus was it said. And in reference to this was it said.
 
-> 'A monk intent on heightened mind should attend periodically to three themes: He should attend periodically to the theme of concentration; he should attend periodically to the theme of uplifted energy; he should attend periodically to the theme of equanimity. **If the monk intent on heightened mind were to attend solely to the theme of concentration, it's possible that his mind would tend to laziness**. **If he were to attend solely to the theme of uplifted energy, it's possible that his mind would tend to restlessness**. If he were to attend solely to the theme of equanimity, it's possible that his mind would not be rightly concentrated for the ending of the effluents. But when he attends periodically to the theme of concentration, attends periodically to the theme of uplifted energy, attends periodically to the theme of equanimity, his mind is pliant, malleable, luminous, & not brittle. It is rightly concentrated for the ending of the effluents.[^9]
+[^AN_32]: 'Yes, lord.' 'So what do you think, Kālāmas: Are these qualities skillful or unskillful?' 'Skillful, lord.' 'Blameworthy or blameless?' 'Blameless, lord.' 'Criticized by the observant or praised by the observant?' 'Praised by the observant, lord.' 'When adopted & carried out, do they lead to welfare & to happiness, or not?' 'When adopted & carried out, they lead to welfare & to happiness. That is how it appears to us.' 'So, as I said, Kālāmas: 'Don't go by reports, by legends, by traditions, by scripture, by logical conjecture, by inference, by analogies, by agreement through pondering views, by probability, or by the thought, 'This contemplative is our teacher.' When you know for yourselves that, 'These qualities are skillful; these qualities are blameless; these qualities are praised by the observant; these qualities, when adopted & carried out, lead to welfare & to happiness'—then you should enter & remain in them.' Thus was it said. And in reference to this was it said.
 
-> 'Monks, when one is endowed with three qualities, without abandoning three impurities, then as if one had been carried off, one would thus be placed in hell. Which three? **One is unvirtuous** and hasn't abandoned the impurity of being unvirtuous. **One is envious** and hasn't abandoned the impurity of envy. **One is stingy** and hasn't abandoned the impurity of stinginess. When one is endowed with these three qualities, **without abandoning these three impurities, then as if one had been carried off, one would thus be placed in hell**.[^10]
+[^AN_34]: 'Monks, it's through his way of participating in a discussion that a person can be known as fit to talk with or unfit to talk with. If a person, when asked a question, doesn't stand by what is possible and impossible, doesn't stand by agreed-upon assumptions, doesn't stand by teachings known to be true, doesn't stand by standard procedure, then—that being the case—he is a person unfit to talk with. But if a person, when asked a question, stands by what is possible and impossible, stands by agreed-upon assumptions, stands by teachings known to be true, stands by standard procedure, then—that being the case—he is a person fit to talk with.'
 
-> This was said by the Blessed One, said by the Arahant, so I have heard: 'Monks, **ignorance precedes** the arrival of **unskillful qualities**; **lack of shame & lack of compunction follow after**. **Clear knowing precedes** the arrival of **skillful qualities**; **shame & compunction follow after**.'[^11]
+[^AN_35]: 'Monks, it's through his way of participating in a discussion that a person can be known as fit to talk with or unfit to talk with. If a person, when asked a question, wanders from one thing to another, pulls the discussion off the topic, shows anger & aversion and sulks, then—that being the case—he is a person unfit to talk with. But if a person, when asked a question, doesn't wander from one thing to another, doesn't pull the discussion off the topic, doesn't show anger or aversion or sulk, then—that being the case—he is a person fit to talk with.'
 
-> **This ignorance is a great delusion**
-> whereby they **have wandered-on**
-> a long, long time.
-> While beings immersed in **clear knowing**
-> **don't go to further becoming**.[^12]
+[^AN_37]: 'Monks, it's through his way of participating in a discussion that a person can be known as drawing near or not drawing near. One who lends ear draws near; one who doesn't lend ear doesn't draw near. Drawing near, one clearly knows one quality, comprehends one quality, abandons one quality, and realizes one quality. Clearly knowing one quality, comprehending one quality, abandoning one quality, and realizing one quality, one touches right release. For that's the purpose of discussion, that's the purpose of counsel, that's the purpose of drawing near, that's the purpose of lending ear: i e, the liberation of the mind through lack of clinging or sustenance.'
 
-> This was said by the Blessed One, said by the Arahant, so I have heard: 'Monks, there are these three kinds of unskillful thinking that produce blindness, produce lack of vision, produce lack of knowledge, lead to the cessation of discernment, side with vexation, and are not conducive to Unbinding. Which three? **Thinking imbued with sensuality.… Thinking imbued with ill-will.… Thinking imbued with harmfulness produces blindness**, produces **lack of vision**, produces **lack of knowledge**, leads to the **cessation of discernment**, sides with **vexation**, and is **not conducive to Unbinding**. These are the three kinds of unskillful thinking that produce blindness, produce lack of vision, produce lack of knowledge, lead to the cessation of discernment, side with vexation, and are not conducive to Unbinding.[^13]
+[^AN_38]: Without envy they speak from right knowledge. They would delight in what's well-said and not disparage what's not. They don't study to find fault, don't grasp at little mistakes. don't put down, don't crush, don't speak random words. For the purpose of knowledge, for the purpose of (inspiring) clear confidence, counsel that's true: That's how noble ones give counsel. That's the noble ones' counsel. Knowing this, the intelligent should give counsel without arrogance.
 
-> '**From acquisition as cause**
-> **the many forms of stress**
-> **come into being** in the world.
-> **Whoever, unknowing,**
-> **makes acquisitions**
-> —the dullard—
-> **comes to stress**
-> **again & again**.
-> Therefore, **discerning**,
-> **you shouldn't create acquisitions**
-> as you **stay focused on**
-> the **birth & origin of stress**.'[^14]
+[^AN_42]: 'And what is verbal sagacity? There is the case where a monk abstains from telling lies, abstains from divisive speech, abstains from harsh speech, abstains from idle chatter. This is called verbal sagacity. 'And what is mental sagacity? There is the case where a monk who—with the ending of effluents—enters & remains in the effluent-free awareness-release & discernment-release, having directly known & realized it for himself right in the here & now. This is called mental sagacity. 'These, monks, are the three forms of sagacity.'
 
-> Then the monk **withKokālika died** of that disease **and**, having died, he **reappeared in the Paduma hell for engendering hatred in his heart against Sāriputta & Moggallāna**.[^16]
+[^AN_43]: 'And what is verbal sagacity? There is the case where a monk abstains from telling lies, abstains from divisive speech, abstains from harsh speech, abstains from idle chatter. This is called verbal sagacity. 'And what is mental sagacity? There is the case where a monk who—with the ending of effluents—enters & remains in the effluent-free awareness-release & discernment-release, having directly known & realized it for himself right in the here & now. This is called mental sagacity. 'These, monks, are the three forms of sagacity.'
 
-> 'When, for one who speaks of what has been seen, unskillful qualities increase and skillful qualities decrease, then that sort of thing should not be spoken about. **But when, for one who speaks of what has been seen, unskillful qualities decrease and skillful qualities increase, then that sort of thing should be spoken about**.
-> 
-> 'When, for one who speaks of what has been **heard…** what has been **sensed…** what has been cognized, unskillful qualities increase and skillful qualities decrease, then that sort of thing should not be spoken about. But when, for one who speaks of what has been **cognized**, **unskillful qualities decrease and skillful qualities increase, then that sort of thing should be spoken about**.'[^17]
+[^AN_45]: 'These are the four developments of concentration. 'And it was in connection with this that I stated in Puṇṇaka's Question in the Way to the Far Shore : 'He who has fathomed the far & near in the world, for whom there is nothing perturbing in the world— his vices evaporated, undesiring, untroubled, at peace— he, I tell you, has crossed over birth & aging.'
 
-> He who, in this
-> Dhamma & Vinaya,
-> **remains heedful**,
-> **leaving the wandering-on**
-> through birth,
-> **will make an end**
-> **of stress**.[^18]
+[^AN_71]: 'Monks, a lay follower should not engage in five types of business. Which five? Business in weapons, business in living beings, business in meat, business in intoxicants, and business in poison. 'These are the five types of business a lay follower should not engage in.'
 
-> The Blessed One said: '**This is the direct path for the purification of beings**, for the **overcoming of sorrow & lamentation**, for the **disappearance of pain & distress**, for the **attainment of the right method**, & for the **realization of unbinding**—**in other words, the four establishings of mindfulness**. Which four?[^19]
+[^AN_73]: 'Then the thought occurred to Gavesin the lay follower: 'I am the benefactor of these 500 lay followers, their leader, the one who has inspired them. I practice in full in terms of my virtue, just as they practice in full in terms of their virtue. I practice the celibate life, the life apart, abstaining from intercourse, the act of villagers, just as they practice the celibate life, the life apart, abstaining from intercourse, the act of villagers. I eat only one meal a day, refraining in the night, abstaining from a meal at the wrong time, just as they eat only one meal a day, refraining in the night, abstaining from a meal at the wrong time. In that we're exactly even; there's nothing extra (for me). How about something extra!'
 
-> 'Develop concentration, monks. A concentrated monk discerns things as they have come to be. **And what does he discern as it has come to be?**
-'**He discerns**, **as it has come to be**, that '**The eye is inconstant**' … '**Forms** are inconstant' … '**Eye-consciousness** is inconstant' … '**Eye-contact** is inconstant' … '**Whatever arises in dependence on eye-contact**—experienced either as pleasure, as pain, or as neither-pleasure-nor-pain—**that too is inconstant**.'[^20]
+[^AN_75]: 'Now it may be that you are thinking, 'Nakula's mother will not be able to support the children or maintain the household after I'm gone,' but you shouldn't see things in that way. I am skilled at spinning cotton, at carding matted wool. I can support the children and maintain the household after you are gone. So don't be worried as you die, householder. Death is painful for one who is worried. The Blessed One has criticized being worried at the time of death.'
 
-> The Blessed One said, 'And which are the phenomena conducive to fettering? And which is the fetter?
-> 'The **eye**, monks, **is a phenomenon conducive to fettering**. Whatever **desire-passion** is there, **that is the fetter** there.
-> 'The **ear** is a phenomenon conducive to fettering. Whatever desire-passion is there, that is the fetter there.
-> 'The **nose** is a phenomenon conducive to fettering. Whatever desire-passion is there, that is the fetter there.
-> 'The **tongue** is a phenomenon conducive to fettering. Whatever desire-passion is there, that is the fetter there.
-> 'The **body** is a phenomenon conducive to fettering. Whatever desire-passion is there, that is the fetter there.
-> 'The **intellect** is a phenomenon conducive to fettering. Whatever desire-passion is there, that is the fetter there.
+[^AN_87]: The treasure of conviction, the treasure of virtue, the treasure of a sense of shame & compunction, the treasure of listening, generosity, & discernment as the seventh treasure. Whoever, man or woman, has these treasures is said not to be poor, has not lived in vain. So conviction & virtue, faith & Dhamma-vision should be cultivated by the intelligent, remembering the Buddhas' instruction.
 
-> The Blessed One said, 'And which, monks, are clingable phenomena? Which is the clinging?
-> 'The **eye is a clingable phenomenon**. Whatever **desire-passion** is there, **that is the clinging** there.
-> 'The **ear** is a clingable phenomenon. Whatever desire-passion is there, that is the clinging there.
-> 'The **nose** is a clingable phenomenon. Whatever desire-passion is there, that is the clinging there.
-> 'The **tongue** is a clingable phenomenon. Whatever desire-passion is there, that is the clinging there.
-> 'The **body** is a clingable phenomenon. Whatever desire-passion is there, that is the clinging there.
-> 'The **intellect** is a clingable phenomenon. Whatever desire-passion is there, that is the clinging there.
+[^AN_88]: 'But who's there, O One of the Auspicious Face?' 'I'm your brother, sister: the great king Vessavaṇṇa.' 'Excellent, O One of the Auspicious Face! Excellent! Then let this Dhamma sequence that I've chanted be your guest gift.' 'Excellent, sister! And let this also be my guest gift. This morning a Saṅgha of monks headed by Sāriputta & Moggallāna will be coming to Veḷukaṇṭaka before breakfast. Having served them, dedicate the offering to me. That will also be my guest gift.' So Nandamātar, as the night was ending, prepared exquisite staple & non-staple foods in her home.
 
-> Staying near Sāvatthī … 'Monks, the ending of effluents is for one who knows & sees, I tell you, not for one who does not know & does not see. **For one who knows what & sees what** is there the ending of effluents? '**Such is form, such its origination, such its disappearance**. **Such is feeling**, such its origination, such its disappearance. **Such is perception**, such its origination, such its disappearance. **Such are fabrications**, such their origination, such their disappearance. **Such is consciousness**, such its origination, such its disappearance.' The ending of effluents is for one who knows in this way & sees in this way.[^21]
+[^AN_92]: 'Just as the royal frontier fortress has many weapons stored, both arrows & things to be hurled, for the protection of those within and to ward off those without; in the same way, the disciple of the noble ones has heard much, has retained what he has heard, has stored what he has heard. Whatever teachings are admirable in the beginning, admirable in the middle, admirable in the end, that—in their meaning & expression—proclaim the holy life that is entirely perfect, surpassingly pure: Those he has listened to often, retained, discussed, accumulated, examined with his mind, and well-penetrated in terms of his views. With learning as his weapons, the disciple of the noble ones abandons what is unskillful, develops what is skillful, abandons what is blameworthy, develops what is blameless, and looks after himself with purity. With this fourth true quality is he endowed.'
 
-> 'Even though this wish may occur to a monk who dwells without devoting himself to development—'**O that my mind might be released from effluents through lack of clinging!'—still his mind is not released** from effluents through lack of clinging. **Why is that?** **From lack of developing**, it should be said. Lack of developing what? **The four establishing of mindfulness**, the **four right exertions**, the **four bases of power**, the **five faculties**, the **five strengths**, the **seven factors for awakening**, the **noble eightfold path**.'[^22]
+[^AN_127]: 'Monks, these two bright qualities guard the world. Which two? Shame & compunction. If these two bright qualities did not guard the world, there would be no recognition of 'mother' here, no recognition of 'mother's sister,' 'uncle's wife,' 'teacher's wife,' or 'wives of those who deserve respect.' The world would be immersed in promiscuity, like rams with goats, roosters with pigs, or dogs with jackals. But because these two bright qualities guard the world, there is recognition of 'mother,' 'mother's sister,' 'uncle's wife,' 'teacher's wife,' & 'wives of those who deserve respect.'
 
-> The Blessed One said, 'Which, monks, is the unfabricated? **Whatever is the ending of passion**, **the ending of aversion**, **the ending of delusion**: **This is called the unfabricated**.[^23]
+[^AN_128]: 'Monks, these two bright qualities guard the world. Which two? Shame & compunction. If these two bright qualities did not guard the world, there would be no recognition of 'mother' here, no recognition of 'mother's sister,' 'uncle's wife,' 'teacher's wife,' or 'wives of those who deserve respect.' The world would be immersed in promiscuity, like rams with goats, roosters with pigs, or dogs with jackals. But because these two bright qualities guard the world, there is recognition of 'mother,' 'mother's sister,' 'uncle's wife,' 'teacher's wife,' & 'wives of those who deserve respect.'
 
-> [1] 'There is the case where you recollect the Tathāgata: 'Indeed, the Blessed One is worthy & rightly self-awakened, consummate in clear-knowing & conduct, well-gone, an expert with regard to the cosmos, unexcelled trainer of people fit to be tamed, teacher of devas & human beings, awakened, blessed.' **At any time when** a disciple of the noble ones **is recollecting the Tathāgata**, **his mind is not overcome with passion**, **not overcome with aversion**, **not overcome with delusion**. **His mind heads straight**, based on the Tathāgata. And when the mind is headed straight, the disciple of the noble ones **gains a sense of the goal**, gains a **sense of the Dhamma**, gains **joy connected with the Dhamma**. In one who is joyful, **rapture arises**. In one whose mind is enraptured, **the body grows calm**. One whose body is calmed **experiences ease**. In one at ease, **the mind becomes concentrated**.[^24]
+[^AN_157]: 'Just as the great rivers—such as the Ganges, the Yamunā, the Aciravatī, the Sarabhū, & the Mahī—all go to the ocean, incline to the ocean, slope to the ocean, tend toward the ocean, and the ocean is reckoned the foremost among them; in the same way, all skillful qualities are rooted in heedfulness, converge in heedfulness, and heedfulness is reckoned the foremost among them.'
 
-> '**From the abandoning of craving**, **action [kamma] is abandoned**. **From the abandoning of action, stress is abandoned**.
-> 'Thus, Udāyin, from the ending of craving comes the ending of action; from the ending of action, the ending of stress.'[^25]
+[^AN_158]: 'Just as the great rivers—such as the Ganges, the Yamunā, the Aciravatī, the Sarabhū, & the Mahī—all go to the ocean, incline to the ocean, slope to the ocean, tend toward the ocean, and the ocean is reckoned the foremost among them; in the same way, all skillful qualities are rooted in heedfulness, converge in heedfulness, and heedfulness is reckoned the foremost among them.'
 
-> **If you hold yourself dear**
-> then guard, **guard yourself well**.
-> The wise person would **stay awake**
-> **nursing himself**
-> **i**n any of **the three watches of the night**,
-> **the three stages of life**.
-> First
-> he'd **settle himself**
-> **in what is correct**,
-> **only then**
-> **teach others**.
-> He wouldn't stain his name
-> he is wise.
-> If you'd mold yourself
-> the way you teach others,
-> then, well-trained,
-> go ahead & tame–
-> for, as they say,
-> what's hard to tame is you
-> yourself.[^26]
+[^AN_159]: 'Just as the great rivers—such as the Ganges, the Yamunā, the Aciravatī, the Sarabhū, & the Mahī—all go to the ocean, incline to the ocean, slope to the ocean, tend toward the ocean, and the ocean is reckoned the foremost among them; in the same way, all skillful qualities are rooted in heedfulness, converge in heedfulness, and heedfulness is reckoned the foremost among them.'
 
-> 'Monks, when **right view** is **supported by five factors**, it **has** awareness-release as its fruit, **awareness-release as its reward**; has discernment-release as its fruit, **discernment-release as its reward**. Which five?
-> 'There is the case where right view is supported by **virtue**, supported by **learning**, supported by **discussion**, supported by **tranquility**, supported by **insight**.[^27]
+[^AN_160]: 'Just as the great rivers—such as the Ganges, the Yamunā, the Aciravatī, the Sarabhū, & the Mahī—all go to the ocean, incline to the ocean, slope to the ocean, tend toward the ocean, and the ocean is reckoned the foremost among them; in the same way, all skillful qualities are rooted in heedfulness, converge in heedfulness, and heedfulness is reckoned the foremost among them.'
 
-> Those with calm minds–
-> masterful,
-> mindful,
-> absorbed in jhāna–
-> clearly see Dhamma rightly,
-> not intent on sensual pleasures.
-> **Delighting in heedfulness**,
-> **calm**,
-> **seeing danger in heedlessness**, they
-> –**incapable of falling away**–
-> **are right in the presence of Unbinding**.[^28]
+[^AN_161]: 'Just as the great rivers—such as the Ganges, the Yamunā, the Aciravatī, the Sarabhū, & the Mahī—all go to the ocean, incline to the ocean, slope to the ocean, tend toward the ocean, and the ocean is reckoned the foremost among them; in the same way, all skillful qualities are rooted in heedfulness, converge in heedfulness, and heedfulness is reckoned the foremost among them.'
 
-## Diagrams
+[^AN_171]: 'He has heard much, has retained what he has heard, has stored what he has heard. Whatever teachings are admirable in the beginning, admirable in the middle, admirable in the end, that—in their meaning & expression—proclaim the holy life that is entirely perfect, surpassingly pure: Those he has listened to often, retained, discussed, accumulated, examined with his mind, & well-penetrated in terms of his views.'
 
-### Known issues
-I would have included the following quote:
-> 'Without abandoning three things, one is incapable of abandoning apathy, being hard to correct, & evil friendship. Which three? Being shameless, lacking compunction, & being heedless. Without abandoning these three things, one is incapable of abandoning apathy, being hard to correct, & evil friendship.
->
->'Monks, being shameless & lacking compunction, one is heedless.
->
->'Being heedless, one is incapable of abandoning apathy, being hard to correct, & evil friendship.
+[^AN_174]: 'And further, abandoning the telling of lie, the disciple of the noble ones abstains from telling lies. In doing so, he gives freedom from danger, freedom from animosity, freedom from oppression to limitless numbers of beings. In giving freedom from danger, freedom from animosity, freedom from oppression to limitless numbers of beings, he gains a share in limitless freedom from danger, freedom from animosity, and freedom from oppression. This is the fourth gift, the fourth great gift… and this is the seventh bonanza of merit.…'
 
-* Sense of shame and compunction not addressed in AI diagrams
+[^AN_179]: Then Anāthapiṇḍika the householder, surrounded by about 500 lay followers, went to the Blessed One and, on arrival, having bowed down to him, sat to one side. So the Blessed One said to Venerable Sāriputta: 'Sāriputta, when you know of a householder clothed in white, that he is restrained in terms of the five training rules and that he obtains at will, without difficulty, without hardship, four pleasant mental abidings in the here & now, then if he wants he may state about himself: 'Hell is ended for me; animal wombs are ended; the state of the hungry ghosts is ended; planes of deprivation, the bad destinations, the lower realms are ended! I am a stream-winner, never again destined for the lower realms, certain, headed for self-awakening!''
 
-* TODO Draw diagram
+[^AN_595]: When this was said, Asibandhakaputta the headman said to the Blessed One: 'Magnificent, lord! Magnificent! Just as if he were to place upright what was overturned, to reveal what was hidden, to show the way to one who was lost, or to carry a lamp into the dark so that those with eyes could see forms, in the same way has the Blessed One—through many lines of reasoning—made the Dhamma clear. I go to the Blessed One for refuge, to the Dhamma, & to the Saṅgha of monks. May the Blessed One remember me as a lay follower who has gone for refuge from this day forward, for life.'
 
-The following AI generates diagrams are available:
-1. [AI Generated Activity Diagram](./generated_diagrams/helpful_activity.svg)
-1. [AI Generated Class Diagram](./generated_diagrams/helpful_class.svg)
+[^AN_596]: Then he went to the Blessed One and, on arrival, having bowed down to him, sat to one side. As he was sitting there he said to the Blessed One, 'Just now, lord, when the king's assembly had gathered and was sitting together in the royal palace, this topic of conversation arose: 'Money is allowable for the Sakyan-son contemplatives. The Sakyan-son contemplatives consent to money. The Sakyan-son contemplatives accept money.' When this was said, I said to them, 'Don't say that, masters. Money is not allowable for the Sakyan-son contemplatives. The Sakyan-son contemplatives do not consent to money. The Sakyan-son contemplatives do not accept money. The Sakyan-son contemplatives have given up gold & jewelry, have renounced money.' And I was able to convince the assembly. Answering in this way, lord, am I speaking in line with what the Blessed One has said, am I not misrepresenting the Blessed One with what is unfactual, am I answering in line with the Dhamma so that no one whose thinking is in line with the Dhamma will have grounds for criticizing me?'
 
+[^DN_159]: 'And what have I taught and declared to be categorical teachings? (The statement that) 'This is stress' I have taught and declared to be a categorical teaching. (The statement that) 'This is the origination of stress' … 'This is the cessation of stress' … 'This is the path of practice leading to the cessation of stress' I have taught and declared to be a categorical teaching. And why have I taught and declared these teachings to be categorical? Because they are conducive to the goal, conducive to the Dhamma, and basic to the holy life. They lead to disenchantment, to dispassion, to cessation, to calm, to direct knowledge, to self-awakening, to unbinding. That's why I have taught and declared them to be categorical.'
 
+[^DN_160]: 'There are some contemplatives & brahmans with a doctrine & view like this: 'After death, the self is exclusively happy and free from disease.' I approached them and asked them, 'Is it true that you have a doctrine & view like this: 'After death, the self is exclusively happy and free from disease'?' When asked this, they replied, 'Yes.' So I asked them, 'But do you dwell having known or seen an exclusively happy world?' When asked this, they said, 'No.' So I asked them, 'But have you ever been aware of a self exclusively happy for a day or a night, or for half a day or half a night?' When asked this, they said, 'No.' So I asked them, 'But do you know that 'This is the path, this is the practice for the realization of an exclusively happy world'?' When asked this, they said, 'No.' So I asked them, 'But have you heard the voices of devas reborn in an exclusively happy world, saying, 'Practice well, my dears. Practice straightforwardly, my dears, for the realization of an exclusively happy world, because it was through such a practice that we ourselves have been reborn in an exclusively happy world'?' When asked this, they said, 'No.'
 
-## References
+[^DN_161]: 'So what do you think, Poṭṭhapāda? When this is the case, don't the words of that man turn out to be unconvincing?' 'Yes, lord.…' 'In the same way, there are some contemplatives & brahmans with a doctrine & view like this: 'After death, the self is exclusively happy and free from disease.' … Don't the words of those contemplatives & brahmans turn out to be unconvincing?' 'Yes, lord.…' 'Poṭṭhapāda, it's as if a man at a crossroads were to build a staircase for ascending to a palace, and other people were to say to him, 'Well, my good man, this palace for which you are building a staircase: Do you know whether it's east, west, north, or south of here? Whether it's high, low, or in between?' and, when asked this, he would say, 'No.' Then they would say to him, 'So you don't know or see the palace for which you are building a staircase?' When asked this, he would say, 'Yes.'
 
-[^1]: [https://suttaplayer.github.io/#AN/AN10_15](https://suttaplayer.github.io/#AN/AN10_15?cursorLinePosition=4&highlightLineRanges=4,6&markTextRanges=661-786)
-[^2]: [https://suttaplayer.github.io/#SN/SN3_17](https://suttaplayer.github.io/#SN/SN3_17?cursorLinePosition=4.42&highlightLineRanges=4,10&markTextRanges=147-270,673-811)
-[^3]: [https://suttaplayer.github.io/#AN/AN8_53](https://suttaplayer.github.io/#AN/AN8_53?cursorLinePosition=10.09&highlightLineRanges=10&markTextRanges=1069-1102,1121-1139,1165-1175,1199-1208,1239-1252,1274-1289,1313-1334,1354-1374)
-[^4]: [https://suttaplayer.github.io/#AN/AN2_18](https://suttaplayer.github.io/#AN/AN2_18?cursorLinePosition=14&highlightLineRanges=14&markTextRanges=1539-1639,1688-1712,1715-1730,1755-1764,1773-1805,1808-1826,1862-1926)
-[^5]:[https://suttaplayer.github.io/#AN/AN3_66](https://suttaplayer.github.io/#AN/AN3_66?cursorLinePosition=96.03&highlightLineRanges=96&markTextRanges=7457-7489,7493-7520,7524-7551,7554-7597,7600-7614,7645-7674)
-[^6]: [https://suttaplayer.github.io/#AN/AN2_30](https://suttaplayer.github.io/#AN/AN2_30?cursorLinePosition=4&highlightLineRanges=4&markTextRanges=63-69,76-95,109-117,120-147,155-207,210-266)
-[^7]: [https://suttaplayer.github.io/#AN/AN11_12](https://suttaplayer.github.io/#AN/AN11_12?cursorLinePosition=8.22&highlightLineRanges=8&markTextRanges=1281-1331,1389-1412,1456-1481,1533-1560,1603-1615)
-[^8]: [https://suttaplayer.github.io/#AN/AN8_30](https://suttaplayer.github.io/#AN/AN8_30?cursorLinePosition=32.04&highlightLineRanges=32&markTextRanges=8982-9032,9176-9257)
-[^9]: [https://suttaplayer.github.io/#AN/AN3_103](https://suttaplayer.github.io/#AN/AN3_103?cursorLinePosition=4.27&highlightLineRanges=4&markTextRanges=311-451,454-568)
-[^10]: [https://suttaplayer.github.io/#AN/AN3_10](https://suttaplayer.github.io/#AN/AN3_10?cursorLinePosition=4.3&highlightLineRanges=4&markTextRanges=222-238,295-308,353-365,464-575)
-[^11]: [https://suttaplayer.github.io/#KN/Iti/iti40](https://suttaplayer.github.io/#KN/Iti/iti40?cursorLinePosition=3.29&highlightLineRanges=3&markTextRanges=97-114,131-150,153-200,203-224,241-258,261-292)
-[^12]: [https://suttaplayer.github.io/#KN/StNp/StNp3_12](https://suttaplayer.github.io/#KN/StNp/StNp3_12?cursorLinePosition=101&highlightLineRanges=101-109&markTextRanges=3706-3739,3755-3770,3818-3830,3833-3860)
-[^13]: [https://suttaplayer.github.io/#KN/Iti/iti87](https://suttaplayer.github.io/#KN/Iti/iti87?cursorLinePosition=3.43&highlightLineRanges=3&markTextRanges=364-446,458-471,483-499,515-538,552-559,569-594)
-[^14]: [https://suttaplayer.github.io/#KN/StNp/StNp3_12](https://suttaplayer.github.io/#KN/StNp/StNp3_12?cursorLinePosition=63&highlightLineRanges=63-85&markTextRanges=2528-2553,2556-2579,2582-2596,2613-2631,2634-2651,2669-2683,2686-2698,2713-2722,2726-2758,2768-2782,2789-2812)
-[^15]: [https://suttaplayer.github.io/#MN/MN12](https://suttaplayer.github.io/#MN/MN12?cursorLinePosition=49.03&highlightLineRanges=49&markTextRanges=9604-9648,9672-9677,9704-9707,9710-9755,9778-9794)
-[^16]: [https://suttaplayer.github.io/#KN/StNp/StNp3_10](https://suttaplayer.github.io/#KN/StNp/StNp3_10?cursorLinePosition=13.04&highlightLineRanges=3,9,13&markTextRanges=301-340,1820-1980)
-[^17]: [https://suttaplayer.github.io/#AN/AN4_183](https://suttaplayer.github.io/#AN/AN4_183?cursorLinePosition=8.5&highlightLineRanges=6,8,10&markTextRanges=1474-1634,1681-1685,1702-1707,1895-1902,1905-1965,1968-2013)
-[^18]: [https://suttaplayer.github.io/#DN/DN16_3](https://suttaplayer.github.io/#DN/DN16_3?highlightLineRanges=234-244&markTextRanges=30525-30539,30543-30566,30585-30600,30603-30611&cursorLinePosition=236)
-[^19]: [https://suttaplayer.github.io/#MN/MN10](https://suttaplayer.github.io/#MN/MN10?cursorLinePosition=8&highlightLineRanges=8&markTextRanges=333-387,398-431,442-473,484-513,526-549,551-603)
-[^20]: [https://suttaplayer.github.io/#SN/SN35_99](https://suttaplayer.github.io/#SN/SN35_99?cursorLinePosition=4.66&highlightLineRanges=4,6&markTextRanges=149-194,198-208,211-230,239-259,265-269,290-306,326-336,356-399,474-495)
-[^21]: [https://suttaplayer.github.io/#SN/SN12_23](https://suttaplayer.github.io/#SN/SN12_23?cursorLinePosition=4.23&highlightLineRanges=4&markTextRanges=200-233,270-327,330-344,393-410,459-479,532-552)
-[^22]: [https://suttaplayer.github.io/#SN/SN22_101](https://suttaplayer.github.io/#SN/SN22_101?cursorLinePosition=6.19&highlightLineRanges=6&markTextRanges=617-721,764-775,777-799,846-881,888-907,914-932,939-952,955-972,979-1005,1012-1031)
-[^23]: [https://suttaplayer.github.io/#SN/SN43](https://suttaplayer.github.io/#SN/SN43?cursorLinePosition=11.22&highlightLineRanges=11&markTextRanges=321-353,356-377,380-401,404-434)
-[^24]: [https://suttaplayer.github.io/#AN/AN11_12](https://suttaplayer.github.io/#AN/AN11_12?cursorLinePosition=12.35&highlightLineRanges=12,16,20&markTextRanges=2022-2037,2071-2096,2099-2135,2138-2163,2166-2191,2194-2216,2312-2336,2345-2365,2374-2402,2427-2440,2480-2494,2522-2537,2556-2584,2893-2912,3946-3965)
-[^25]: [https://suttaplayer.github.io/#SN/SN46_26](https://suttaplayer.github.io/#SN/SN46_26?highlightLineRanges=11-14&markTextRanges=1162-1221,1224-1274&cursorLinePosition=11)
-[^26]: [https://suttaplayer.github.io/#KN/Dhp/Ch12](https://suttaplayer.github.io/#KN/Dhp/Ch12?cursorLinePosition=3&highlightLineRanges=3-41&markTextRanges=24-48,63-81,107-116,119-133,136-137,146-175,179-202,206-210,218-231,234-251,255-263,266-277)
-[^27]: [https://suttaplayer.github.io/#AN/AN5_25](https://suttaplayer.github.io/#AN/AN5_25?cursorLinePosition=4.04&highlightLineRanges=4,6&markTextRanges=68-77,82-106,112-115,148-178,181-184,219-251,319-324,340-347,363-372,388-398,414-420)
-[^28]: [https://suttaplayer.github.io/#KN/Iti/iti45](https://suttaplayer.github.io/#KN/Iti/iti45?cursorLinePosition=5&highlightLineRanges=5-25&markTextRanges=746-770,774-777,781-809,819-843,847-884)
+[^DN_245]: 'Three forms of good conduct: good bodily conduct, good verbal conduct, good mental conduct.
+
+[^DN_252]: 'Ānanda, as far as the sphere of the Ariyans extends, as far as merchants' roads extend, this will be the supreme city: Pāṭaliputta, where the seedpods of the Pāṭali plant break open. There will be three dangers for Pāṭaliputta: from fire, from water, or from the breaking of alliances.'
+
+[^DN_259]: 'One dhamma is on the side of decline. One dhamma is on the side of distinction. One dhamma is hard to penetrate. One dhamma should be made to arise. One dhamma should be directly known. One dhamma should be realized.'
+
+[^DN_260]: 'Which six dhammas are on the side of distinction? Six types of respect: There is the case, friends, where a monk dwells with respect & deference for the Teacher… for the Dhamma… for the Saṅgha… for the training… for heedfulness… for welcoming manners. These six dhammas are on the side of distinction.'
+
+[^DN_274]: 'Seven noble treasures: the treasure of conviction, the treasure of virtue, the treasure of a sense of shame, the treasure of a sense of compunction, the treasure of listening, the treasure of generosity, the treasure of discernment.'
+
+[^KN_Dhp_279]: Those who always stay wakeful, training by day & by night, keen on Unbinding: their effluents come to an end.
+
+[^KN_Iti_283]: This was said by the Blessed One, said by the Arahant, so I have heard: 'Monks, brahmans & householders are very helpful to you, as they provide you with the requisites of robes, alms food, lodgings, & medical requisites for the sick. And you, monks, are very helpful to brahmans & householders, as you teach them the Dhamma admirable in the beginning, admirable in the middle, admirable in the end; as you expound the holy life both in its particulars & in its essence, entirely complete, surpassingly pure. In this way the holy life is lived in mutual dependence, for the purpose of crossing over the flood, for making a right end to stress.'
+
+[^KN_Iti_284]: 'The Tathāgata is one who does in line with (tathā) what he teaches, one who teaches in line with what he does. Because he is one who does in line with what he teaches, one who teaches in line with what he does, he is thus called the Tathāgata. 'In this world with its devas, Māras, & Brahmas, in this generation with its contemplatives & brahmans, its royalty & common people, the Tathāgata is the unconquered conqueror, total seer, the wielder of power. Thus he is called the Tathāgata.' This is the meaning of what the Blessed One said. So with regard to this it was said:
+
+[^KN_Iti_286]: 'Monks, there are these seven obsessions. Which seven?
+
+[^KN_Iti_288]: 'Just now, venerable sir, after having risen as night approached dawn and having chanted the Pārāyana, I fell silent. Then the great king Vessavaṇṇa, knowing that my chant was ended, applauded me: 'Excellent, sister! Excellent!' 'But who's there, O One of the Auspicious Face?' 'I'm your brother, sister: the great king Vessavaṇṇa.' 'Excellent, O One of the Auspicious Face! Excellent! Then let this Dhamma sequence that I've chanted be your guest gift.' 'Excellent, sister! And let this also be my guest gift. Tomorrow a Saṅgha of monks headed by Sāriputta & Moggallāna will be coming to Veḷukaṇṭaka before breakfast. Having served them, dedicate the offering to me. That will also be my guest gift.' So in other words, may the merit of this gift be for the happiness of the great king Vessavaṇṇa.'
+
+[^KN_Iti_289]: 'Very well then, brahman, in that case I will cross-question you. Answer as you see fit. What do you think? There is the case where a Tathāgata appears in the world, a worthy one, rightly-self-awakened, consummate in clear-knowing & conduct, Well-Gone, an expert with regard to the cosmos, unexcelled trainer of people fit to be tamed, teacher of devas & human beings, awakened, blessed. He says: 'Here! This is the path, this is the practice which, having practiced, I make known the unexcelled gaining of a footing in the holy life, having directly known & realized it for myself. Come! You, too, practice in such a way that you will remain in the unexcelled gaining of a footing in the holy life, having directly known & realized it for yourselves.' Thus the Teacher teaches the Dhamma, and others practice, for authenticity [tathattā]. And there are countless hundreds of them, countless thousands of them, countless hundreds of thousands of them. This being the case, is this practice of merit—this business of going-forth—one that benefits countless beings, or only one being?'
+
+[^KN_Khp_229]: Whatever wealth—here or beyond— whatever exquisite treasure in the heavens, does not, for us, equal the Tathāgata. This, too, is an exquisite treasure in the Buddha. By this truth may there be well-being. The exquisite deathless—ending, dispassion— discovered by the Sakyan Sage in concentration:
+
+[^KN_StNp_294]: Cut through our uncertainty. Tell me this, make known, One of discernment deep, that he was totally unbound.
+
+[^KN_Thag_266]: Listening well increases learning. What is learned increases discernment. Through discernment one knows the goal. When known, the goal brings bliss. Stay in isolated lodgings;
+
+[^KN_Thig_269]: Whatever fabrications are lowly, middling, or exalted: No underbrush for them in me —not a bit, not the least little bit— is found. All effluents are ended for me— heedful, doing jhāna. The three knowledges are attained; the Buddha's bidding, done.
+
+[^KN_Thig_270]: They abandon passion & anger. That's why I hold contemplatives dear. They rid themselves of the three evil roots, doing pure actions. All their evil's abandoned. That's why I hold contemplatives dear. Clean their bodily action, so is verbal action.
+
+[^KN_Ud_279]: It's through discussion that a person's discernment may be known, and then only after a long period, not a short period; by one who is attentive, not by one who is inattentive; by one who is discerning, not by one who is not discerning.
+
+[^MN_311]: 'So, monks, you, too, should abandon unskillful qualities and commit yourselves to skillful qualities, and in that way you, too, will come to growth, increase, & abundance in this Dhamma-Vinaya. Suppose, monks, that—not far from a village or town—there were a large sal-forest choked with castor-oil weeds. And suppose that some man would appear, desiring its benefit, desiring its welfare, desiring its safety from burdens. Having cut down the crooked sal-saplings that robbed the sap, he would throw them out and clean up the interior of the forest; and he would tend well to the straight, well-born sal-saplings, so that at a later time the sal-forest would come to growth, increase, & abundance. In the same way, monks, you, too, should abandon unskillful qualities and commit yourselves to skillful qualities, and in that way you, too, will come to growth, increase, & abundance in this Dhamma-Vinaya.'
+
+[^MN_312]: 'Monks, there are these five aspects of speech by which others may address you: timely or untimely, true or false, affectionate or harsh, beneficial or unbeneficial, with a mind of goodwill or with inner hate. Others may address you in a timely way or an untimely way. They may address you with what is true or what is false. They may address you in an affectionate way or a harsh way. They may address you in a beneficial way or an unbeneficial way. They may address you with a mind of goodwill or with inner hate. In any event, you should train yourselves: 'Our minds will be unaffected and we will say no evil words. We will remain sympathetic to that person's welfare, with a mind of goodwill, and with no inner hate. We will keep pervading him with an awareness imbued with goodwill and, beginning with him, we will keep pervading the all-encompassing world with an awareness imbued with goodwill—abundant, enlarged, immeasurable, free from hostility, free from ill will.' That's how you should train yourselves.'
+
+[^MN_313]: 'In the same way, monks, there are these five aspects of speech by which others may address you: timely or untimely, true or false, affectionate or harsh, beneficial or unbeneficial, with a mind of goodwill or with inner hate. Others may address you in a timely way or an untimely way. They may address you with what is true or what is false. They may address you in an affectionate way or a harsh way. They may address you in a beneficial way or an unbeneficial way. They may address you with a mind of goodwill or with inner hate. In any event, you should train yourselves: 'Our minds will be unaffected and we will say no evil words. We will remain sympathetic to that person's welfare, with a mind of goodwill, and with no inner hate. We will keep pervading him with an awareness imbued with goodwill and, beginning with him, we will keep pervading the all-encompassing world with an awareness imbued with goodwill equal to the great earth—abundant, enlarged, immeasurable, free from hostility, free from ill will.' That's how you should train yourselves.'
+
+[^MN_314]: 'Suppose that a man were to come along carrying lac, yellow orpiment, indigo, or crimson, saying, 'I will draw pictures in space, I will make pictures appear.' Now, what do you think? Would he draw pictures in space & make pictures appear?' 'No, lord. Why is that? Because space is formless & without surface. It's not easy to draw pictures there and to make them appear. The man would reap only a share of weariness & disappointment.' 'In the same way, monks, there are these five aspects of speech by which others may address you: timely or untimely, true or false, affectionate or harsh, beneficial or unbeneficial, with a mind of goodwill or with inner hate. Others may address you in a timely way or an untimely way. They may address you with what is true or what is false. They may address you in an affectionate way or a harsh way. They may address you in a beneficial way or an unbeneficial way. They may address you with a mind of goodwill or with inner hate. In any event, you should train yourselves: 'Our minds will be unaffected and we will say no evil words. We will remain sympathetic to that person's welfare, with a mind of goodwill, and with no inner hate. We will keep pervading him with an awareness imbued with goodwill and, beginning with him, we will keep pervading the all-encompassing world with an awareness imbued with goodwill equal to space—abundant, enlarged, immeasurable, free from hostility, free from ill will.' That's how you should train yourselves.'
+
+[^MN_320]: 'So, my friend, I will give you an analogy, for there are cases where it's through analogies that observant people can understand the meaning of what is being said. Suppose that while King Pasenadi Kosala was staying at Sāvatthī, some urgent business were to arise at Sāketa; and that between Sāvatthī and Sāketa seven relay chariots were made ready for him. Coming out the door of the inner palace in Sāvatthī, he would get in the first relay chariot. By means of the first relay chariot he would reach the second relay chariot. Getting out of the first relay chariot he would get in the second relay chariot. By means of the second relay chariot he would reach the third… by means of the third he would reach the fourth… by means of the fourth, the fifth… by means of the fifth, the sixth… by means of the sixth he would reach the seventh relay chariot. Getting out of the sixth relay chariot he would get in the seventh relay chariot. By means of the seventh relay chariot he would finally arrive at the door of the inner palace at Sāketa. As he arrived there, his friends & companions, relatives & kin would ask him, 'Great king, did you come from Sāvatthī to the door of the inner palace in Sāketa by means of this chariot?' Answering in what way, my friend, would King Pasenadi Kosala answer them correctly?'
+
+[^MN_334]: 'What do you think, Aggivessana? When you say, 'Form is my self,' do you wield power over that form: 'May my form be thus, may my form not be thus'?' When this was said, Saccaka the Nigaṇṭha-son was silent. A second time, the Blessed One said to Saccaka the Nigaṇṭha-son: 'What do you think, Aggivessana? When you say, 'Form is my self,' do you wield power over that form: 'May my form be thus, may my form not be thus'?' When this was said, Saccaka the Nigaṇṭha-son was silent a second time. Then the Blessed One said to him, 'Answer now, Aggivessana. This is not the time to be silent. When anyone doesn't answer when asked a legitimate question by the Tathāgata up to three times, his head splits into seven pieces right here.'
+
+[^MN_364]: 'And under what does Nigaṇṭha Nāṭaputta classify intention?' 'Under the mental rod, lord.' 'Householder, householder, pay attention, and answer (only) after having paid attention! What you said after isn't consistent with what you said before, nor is what you said before consistent with what you said after. And yet you made this statement: 'Lord, I will confer taking a stand on the truth. Let us have some discussion here.' 'Lord, even though the Blessed One says that, still the bodily rod is more greatly reprehensible for the doing of evil kamma, for the production of evil kamma, not so much the verbal rod, not so much the mental rod.'
+
+[^MN_390]: 'Monks, I don't say of all monks that they have a task to do with heedfulness; nor do I say of all monks that they have no task to do with heedfulness. 'Monks who are arahants, whose mental effluents are ended, who have reached fulfillment, done the task, laid down the burden, attained the true goal, totally destroyed the fetter of becoming, and who are released through right gnosis: I don't say of them that they have a task to do with heedfulness. Why is that? They have done their task with heedfulness. They are incapable of being heedless. But as for monks in higher training, who have not yet reached their hearts' goal, who still aspire for the unexcelled freedom from bondage: I say of them that they have a task to do with heedfulness. Why is that? (I think) 'Perhaps these venerable ones, when making use of suitable resting places, associating with admirable friends, balancing their (mental) faculties, will reach & remain in the supreme goal of the holy life for which clansmen rightly go forth from home into homelessness, knowing & realizing it for themselves in the here & now.' Envisioning this fruit of heedfulness for these monks, I say that they have a task to do with heedfulness.'
+
+[^MN_434]: 'What do you think? Can an action to be experienced in the here & now be turned, through striving & exertion, into an action to be experienced in the future life?' 'No, friend.' 'Can an action to be experienced in the future life be turned, through striving & exertion, into an action to be experienced in the here & now?' 'No, friend.' 'What do you think? Can an action to be experienced as pleasure be turned, through striving & exertion, into an action to be experienced as pain?'
+
+[^MN_461]: 'And what is right view? Knowledge in terms of stress, knowledge in terms of the origination of stress, knowledge in terms of the cessation of stress, knowledge in terms of the way of practice leading to the cessation of stress: This is called right view.'
+
+[^MN_463]: 'Learn the summary & analysis of the auspicious day, monk. Master the summary & analysis of the auspicious day, monk. Remember the summary & analysis of the auspicious day, monk. Connected with the goal are the summary & analysis of the auspicious day, monk, and basic to the holy life.'
+
+[^MN_480]: 'And what is right view? Knowledge in terms of stress, knowledge in terms of the origination of stress, knowledge in terms of the cessation of stress, knowledge in terms of the way of practice leading to the cessation of stress: This is called right view. 'And what is right resolve? The resolve for renunciation, for freedom from ill will, for harmlessness: This is called right resolve. 'And what is right speech? Abstaining from lying, from divisive speech, from abusive speech, & from idle chatter: This is called right speech.'
+
+[^SN_481]: 'So what do you think, headman? If a man is one who steals… indulges in illicit sex… tells lies, then taking into consideration time spent doing & not doing, whether by day or by night, which time is more: the time he spends telling lies or the time he spends not telling lies?' 'If a man is one who tells lies, lord, then taking into consideration time spent doing & not doing, whether by day or by night, then the time he spends telling lies is less, and the time he spends not telling lies is certainly more. If it's true that 'Whatever one keeps doing frequently, by that is one led (to a state of rebirth),' then no one is destined for a plane of deprivation or destined to hell in line with Nigaṇṭha Nāṭaputta's words.'
+
+[^SN_489]: 'That's the way it is, great king! That's the way it is! Those who engage in bodily misconduct, verbal misconduct, & mental misconduct are not dear to themselves. Even though they may say, 'We are dear to ourselves,' still they aren't dear to themselves. Why is that? Of their own accord, they act toward themselves as an enemy would act toward an enemy; thus they aren't dear to themselves. But those who engage in good bodily conduct, good verbal conduct, & good mental conduct are dear to themselves. Even though they may say, 'We aren't dear to ourselves,' still they are dear to themselves. Why is that? Of their own accord, they act toward themselves as a dear one would act toward a dear one; thus they are dear to themselves.'
+
+[^SN_490]: 'That's the way it is, great king! That's the way it is! Those who engage in bodily misconduct, verbal misconduct, & mental misconduct are not dear to themselves. Even though they may say, 'We are dear to ourselves,' still they aren't dear to themselves. Why is that? Of their own accord, they act toward themselves as an enemy would act toward an enemy; thus they aren't dear to themselves. But those who engage in good bodily conduct, good verbal conduct, & good mental conduct are dear to themselves. Even though they may say, 'We aren't dear to ourselves,' still they are dear to themselves. Why is that? Of their own accord, they act toward themselves as a dear one would act toward a dear one; thus they are dear to themselves.'
+
+[^SN_531]: 'Do you see that from the cessation of birth there is the cessation of aging-&-death?'
+
+[^SN_544]: 'For us, lord, the teachings have the Blessed One as their root, their guide, & their arbitrator. It would be good if the Blessed One himself would elaborate on the meaning of this statement. Having heard it from the Blessed One, the monks will remember it.'
+
+[^SN_568]: Then Venerable Mahā Moggallāna addressed the monks, 'Friend monks!' 'Yes, friend,' the monks responded to him. Venerable Mahā Moggallāna said, 'Friends, I will teach you a discourse on being soggy and a discourse on not being soggy. Listen & pay careful attention. I will speak.'
+
+[^SN_569]: 'It's in this way, friends, that one is not soggy.' Then the Blessed One got up and said to Venerable Mahā Moggallāna, 'Good, good, Moggallāna. What you have said to the monks about the discourse on being soggy and the discourse on not being soggy is good.' That is what Venerable Mahā Moggallāna said, and the Teacher approved. Gratified, the monks delighted in Venerable Mahā Moggallāna's words.
+
+[^SN_570]: 'When a monk discerns, as it has come to be, the origination & passing away of the six media of sensory contact, my friend, it is to that extent that his vision is said to be well-purified.'
+
+[^SN_571]: The first monk, dissatisfied with this monk's answer to his question, went to still another monk and, on arrival, said to him, 'To what extent, my friend, is a monk's vision said to be well-purified?' 'When a monk discerns, as it has come to be, the origination & passing away of the four great elements [earth, water, wind, & fire], my friend, it is to that extent that his vision is said to be well-purified.'
+
+[^SN_572]: 'In the same way, monk, however those intelligent men of integrity were focused when their vision became well purified is the way in which they answered. 'Suppose, monk, that there were a royal frontier fortress with strong ramparts, strong walls & arches, and six gates. In it would be a wise, competent, intelligent gatekeeper to keep out those he didn't know and to let in those he did. A swift pair of messengers, coming from the east, would say to the gatekeeper, 'Where, my good man, is the commander of this fortress?' He would say, 'There he is, sirs, sitting in the central square.' The swift pair of messengers, delivering their accurate report to the commander of the fortress, would then go back by the route by which they had come. Then a swift pair of messengers, coming from the west… the north… the south, would say to the gatekeeper, 'Where, my good man, is the commander of this fortress?' He would say, 'There he is, sirs, sitting in the central square.' The swift pair of messengers, delivering their accurate report to the commander of the fortress, would then go back by the route by which they had come.'
+
+[^SN_575]: 'There are three fabrications, householder: bodily-fabrications, verbal fabrications, & mental fabrications.'
+
+[^SN_576]: 'In-&-out breaths are bodily fabrications. Directed thought & evaluation are verbal fabrications. Perceptions & feelings are mental fabrications.'
+
+[^SN_577]: 'When a monk is attaining the cessation of perception & feeling, verbal fabrications cease first, then bodily fabrications, then mental fabrications.'
+
+[^SN_578]: 'When a monk is emerging from the cessation of perception & feeling, mental fabrications arise first, then bodily fabrications, then verbal fabrications.'
+
+[^SN_601]: 'And which is the path leading to the unfabricated? Mindfulness immersed in the body: This is called the path leading to the unfabricated.'
+
+[^SN_608]: 'Now, lord, we must go. Many are our duties, many our responsibilities.' 'Then do, great king, what you think it is now time to do.' So King Pasenadi Kosala, delighting in and approving of the Blessed One's words, got up from his seat, bowed down to the Blessed One and—keeping him to his right—departed.
+
+[^SN_615]: 'This, monks, is the exposition, following which, the five hindrances become ten. 'And which is the exposition, following which, the seven factors for awakening become fourteen? 'Any mindfulness concerning internal qualities is mindfulness as a factor for awakening. Any mindfulness concerning external qualities is mindfulness as a factor for awakening. Thus what comes under the heading of 'mindfulness as a factor for awakening' becomes, by means of this exposition, twofold. 'Whenever one, with discernment, investigates, carefully attends to, and makes an examination of internal qualities, that is analysis of qualities as a factor for awakening. Whenever one, with discernment, investigates, carefully attends to, and makes an examination of external qualities, that is analysis of qualities as a factor for awakening. Thus what comes under the heading of 'analysis of qualities as a factor for awakening' becomes, by means of this exposition, twofold.'
+
+[^SN_626]: 'And further, the disciple of the noble ones lives at home with an awareness cleansed of the stain of stinginess, freely generous, openhanded, delighting in being magnanimous, responsive to requests, delighting in the distribution of alms. This is the fourth bonanza of merit, bonanza of skillfulness, nourishment of bliss. 'These are four bonanzas of merit, bonanzas of skillfulness, nourishments of bliss.'
+
+[^SN_627]: 'Mahānāma, when a discerning lay follower who is diseased, in pain, severely ill has been reassured by another discerning lay follower with these four reassurances, he should be asked: 'Friend, are you concerned for your mother & father?' If he should say, 'I am concerned for my mother & father,' he should be told, 'You, my dear friend, are subject to death. If you feel concern for your mother & father, you're still going to die. If you don't feel concern for your mother & father, you're still going to die. It would be good if you abandoned concern for your mother & father.'
