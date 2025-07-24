@@ -1,120 +1,130 @@
-The provided sources describe the practice of Dhamma as a path to liberation, emphasizing ethical conduct, mental cultivation, and the development of wisdom through diligent effort. The workflow for cultivating heedfulness and skillful qualities, as well as overcoming obstacles, can be visualized as a continuous process involving self-reflection, deliberate actions, and internal transformation.
+// Using the source "one_helpful.md" as the base content, create a plantuml activity diagram to represent any
+// workflows, processes, or sequence of actions described in the document. Focus on key steps, decisions, and parallel activities.
 
-Here is a PlantUML activity diagram representing these workflows, processes, and sequences of actions:
 
-```plantuml
 @startuml
-title Workflow of Cultivating Heedfulness and Skillful Qualities
+title Workflow for Cultivating Heedfulness & Skillful Qualities
 
 start
 
-partition "Practitioner" {
-  :Understand Dhamma Principles (Skillful vs. Unskillful);
-  note right: The Dhamma provides a guide for personal development\nfor the ending of suffering and the realization of unbinding.
+group Initial State
+  :Experience Stress & Suffering;
+  note right
+    This state is characterized by being "beset by birth, aging, & death; by sorrows, lamentations, pains, distresses, & despairs; beset by stress, overcome with stress" [AN_nblm.txt, 14, 15].
+  end note
+  :Do you desire to end suffering?;
+end group
 
-  group "Exercise Heedfulness (Appamāda)" as heedfulness_loop
-    note right: Heedfulness is the foremost among all skillful qualities.
-    :Guard mind from defilements and actions leading to harm;
-    :Ensure benefits in this life and lives to come;
-    :Prevent regret;
-    :Foster stability of True Dhamma;
-    :Develop / maintain Shame & Compunction;
-    :Guard sense faculties;
-    note right: Lack of heedfulness hinders progress.
+if (Desire to end suffering?) then (Yes)
+  group Cultivation Process
+    partition "Foundation: Cultivating Heedfulness (Appamada)" {
+      :**Cultivate Heedfulness**;
+      note right
+        **Heedfulness (Appamada)** is described as a single quality that guards the mind and is reckoned as the foremost among all skillful qualities [AN_nblm.txt, 175, 176][KN_Iti_nblm.txt, 306][SN_nblm.txt, 502]. It involves being **attentive** and **resolute**, and cherishing it as one's highest wealth [AN_nblm.txt, 54][MN_nblm.txt, 393][KN_Dhp_nblm.txt, 302].
+
+        **Conditions for Heedfulness**:
+        *   **Shame and compunction** precede clear knowing [KN_Iti_nblm.txt, 310][SN_nblm.txt, 568].
+        *   **Clear knowing** precedes shame and compunction [SN_nblm.txt, 568].
+        *   **Guarding the mind** with regard to effluents [SN_nblm.txt, 598].
+        *   Developing mindfulness of death acutely for the sake of ending effluents [AN_nblm.txt, 111, 112].
+      end note
+
+      fork
+        :Abandon Bodily Misconduct;
+        :Abandon Verbal Misconduct;
+        :Abandon Mental Misconduct;
+        :Abandon Wrong View;
+      fork again
+        :Develop Good Bodily Conduct;
+        :Develop Good Verbal Conduct;
+        :Develop Good Mental Conduct;
+        :Develop Right View;
+      end fork
+      note right
+        Heedfulness requires abandoning misconduct and developing good conduct in these areas [AN_nblm.txt, 54, 55, 618].
+      end note
+
+      :Guard mind from passion, aversion, delusion, intoxication;
+      :Be mindful & alert in all daily activities (e.g., walking, standing, eating);
+      :Pursue mindfulness of in-&-out breathing;
+      :Live ardently & resolutely for ending effluents;
+      note right
+        Heedfulness encompasses guarding mind-states, mindfulness in daily life, and a resolute pursuit of liberation [AN_nblm.txt, 55, 114][MN_nblm.txt, 380, 392, 394, 404, 455, 480][SN_nblm.txt, 552, 601][KN_Iti_nblm.txt, 309].
+      end note
+    }
+
+    partition "Development: Cultivating Skillful Qualities" {
+      :**Cultivate Skillful Qualities**;
+      note right
+        **Skillful qualities** are mental qualities and actions that lead to welfare and happiness, are blameless, and are praised by observant people [AN_nblm.txt, 2, 27, 614].
+
+        **Roots of Skillful Qualities**:
+        *   **Lack of greed**
+        *   **Lack of aversion**
+        *   **Lack of delusion** [AN_nblm.txt, 32][DN_nblm.txt, 241][MN_nblm.txt, 353, 617]
+
+        **Conditions for Skillful Qualities**:
+        *   **Clear knowing** [KN_Iti_nblm.txt, 310][SN_nblm.txt, 568].
+        *   **Associating with people of integrity**, hearing the True Dhamma, appropriate attention, and practicing the Dhamma [DN_nblm.txt, 244][SN_nblm.txt, 607].
+        *   **Conviction** in the Teacher's message, leading to hearing, remembering, penetrating meaning, pondering, desire, willingness, contemplation, and exertion [MN_nblm.txt, 430, 454].
+        *   **Tranquility (samatha)** and **insight (vipassanā)**, which help abandon passion and ignorance respectively [AN_nblm.txt, 3][DN_nblm.txt, 269][SN_nblm.txt, 565, 566].
+      end note
+
+      fork
+        :Practice Skillful Bodily Action (e.g., abstaining from taking life, stealing, sexual misconduct);
+        :Practice Skillful Verbal Action (e.g., abstaining from lying, divisive/harsh speech, idle chatter);
+        :Practice Skillful Mental Action (e.g., non-covetousness, goodwill, right view);
+      fork again
+        :Develop Heightened Virtue (e.g., dwelling restrained by Pāṭimokkha rules);
+        :Develop Heightened Concentration (Jhāna) (e.g., secluded from sensuality, entering meditative absorptions);
+        :Develop Heightened Discernment (e.g., understanding arising/passing away, investigating truths);
+      fork again
+        :Develop Mindfulness (e.g., the four establishings of mindfulness, in-&-out breathing);
+        :Address Defilements (e.g., contemplation of unattractiveness for lust, goodwill for ill will);
+        :Engage in Community & Learning (e.g., associating with admirable friends, listening to/discussing Dhamma);
+      fork again
+        :Practice Generosity (e.g., being freely generous, openhanded);
+        :Maintain Aroused Persistence (e.g., steadfast effort to abandon unskillful & take on skillful);
+      end fork
+      note right
+        The cultivation of skillful qualities involves a wide range of interconnected practices across conduct, mental states, and learning [1].
+      end note
+    }
   end group
 
-  :Apply Appropriate Attention (Yoniso Manasikāra);
-  note right: Appropriate attention is the specific mental process by which heedfulness is applied.
-  fork
+  group Outcome: End of Suffering
+    :Experience Decline in Unskillful Qualities;
+    :Experience Increase in Skillful Qualities;
+    note left
+      This directly results from cultivating skillful qualities [AN_nblm.txt, 36, 615].
+    end note
 
-  partition "Internal Focus: Mental Qualities" {
-    :Identify Current Mental Qualities;
-    if (Quality is Unskillful?) then (Yes)
-      :Recognize drawbacks, degradation, defilement;
-      :Generate desire, endeavor, persistence for abandoning;
-      :Abandon Unskillful Qualities\n(e.g., Greed, Aversion, Delusion,\nHindrances, Conceit, Restlessness, Sloth);
-      note right: Roots of unskillful actions: Greed, Aversion, Delusion.
-      :Confess and disclose faults if committed;
-    else (No - Quality is Skillful)
-      :Recognize benefit, happiness, liberation;
-      :Generate desire, endeavor, persistence for developing;
-      :Cultivate Skillful Qualities\n(e.g., Dispassion, Non-Ill-Will, Discernment,\nConviction, Persistence, Mindfulness, Concentration, Equanimity);
-      note right: Roots of skillful actions: Lack of Greed, Aversion, Delusion.
-      :Maintain proper pitch of persistence (not over-aroused or slack);
-      :Practice Recollection (Buddha, Dhamma, Saṅgha, own virtues, breathing);
-      :Practice Jhāna;
-      :Practice Sense Restraint;
-      :Be devoted to Wakefulness;
-      :Develop Tranquility & Insight;
-      :Cultivate Goodwill (pervade all directions);
-    endif
-  }
-  fork again
+    :Attain purity of mind, calm, & joy;
+    :Develop discernment & abandon ignorance;
+    :Abandon passion, aversion, & delusion;
 
-  partition "Outcome on Mind / Progress" {
-    if (Unskillful Qualities Abandoned) then (Yes)
-      :Mind becomes less defiled;
-      :Progress towards purification;
-    else (No)
-    endif
-    if (Skillful Qualities Cultivated) then (Yes)
-      :Mind becomes pliant, malleable, luminous, not brittle;
-      :Joy, rapture, calm, pleasure arise;
-      :Mind becomes rightly concentrated for ending effluents;
-      :Leads to growth and abundance in Dhamma-Vinaya;
-    else (No)
-    endif
-  }
-  end fork
+    :Achieve **Awareness-Release**;
+    :Achieve **Discernment-Release**;
+    note right
+      This is the "liberation of the mind through lack of clinging or sustenance" [MN_nblm.txt, 421].
+      It is enabled by abandoning passion and ignorance [AN_nblm.txt, 4][DN_nblm.txt, 239].
+    end note
 
-  :Continuously Cultivate Noble Eightfold Path (Right View as forerunner);
-  note right: Integrates virtue, concentration, and discernment.
+    :Realize **Unbinding** (Nibbana);
+    note right
+      Marked by the understanding that "Birth is ended, the holy life fulfilled, the task done. There is nothing further for this world." [MN_nblm.txt, 354].
+    end note
 
-  :Deepen Discernment (Wisdom);
-  note right: Knowledge of stress, its origination, cessation, and path to cessation.
-  :Explore meaning of Dhamma, quiz teachers for clarification;
-  :Realize the Four Noble Truths;
-
-  :Engage in Right Interaction with Others;
-  note right: Teach Dhamma without harm, lead by example, encourage others.
-
-  :End Suffering & Stress;
-  :Realize Unbinding / Liberation;
-}
+    :Experience the **Ending of Craving**;
+    :Experience the **Ending of Suffering & Stress**;
+    note right
+      "From the ending of craving is the cessation of stress" [AN_nblm.txt, 88][KN_Dhp_nblm.txt, 305].
+      This process leads to the purification of beings, overcoming sorrow, and realizing unbinding [DN_nblm.txt, 222][AN_nblm.txt, 61].
+    end note
+  end group
+else (No)
+  :Continue experiencing Stress & Suffering;
+endif
 
 stop
-
 @enduml
-```
-
-### Explanation of the Workflow:
-
-This activity diagram illustrates the cyclical and progressive nature of Dhamma practice, focusing on the interdependent roles of heedfulness, skillful qualities, and appropriate attention.
-
-1.  **Understanding Dhamma Principles**: The process begins with the **Practitioner** gaining a fundamental understanding of Dhamma principles, particularly discerning between skillful (kusala) and unskillful (akusala) qualities. This initial understanding sets the stage for all subsequent actions.
-
-2.  **Exercising Heedfulness (Appamāda)**: This is presented as an **overarching and continuous state or attitude**. Heedfulness is considered the **foremost among all skillful qualities** and is crucial for:
-    *   Guarding one's mind from defilements and actions that lead to harm.
-    *   Securing benefits both in this life and in lives to come.
-    *   Preventing regret and fostering the stability of the True Dhamma.
-    *   Cultivating internal qualities like shame and compunction, and guarding sense faculties. The sources explicitly state that **lack of heedfulness hinders progress**.
-
-3.  **Applying Appropriate Attention (Yoniso Manasikāra)**: This is the **critical method** by which heedfulness is applied. It involves a decision point where the practitioner identifies the nature of their current mental qualities (skillful or unskillful).
-    *   **If Unskillful**: The practitioner recognizes the drawbacks of these qualities, generates desire and persistence to abandon them, and actively works to remove them. This may involve **confessing faults if committed**. Examples of unskillful qualities include greed, aversion, delusion, and hindrances, which are seen as "roots of what is unskillful". Abandoning these qualities leads to the mind becoming less defiled and progressing towards purification.
-    *   **If Skillful**: The practitioner recognizes the benefits of these qualities and generates desire and persistence to cultivate them. This involves various practices such as:
-        *   **Maintaining the right pitch of persistence** (avoiding being over-aroused or overly slack).
-        *   Engaging in **recollection** of the Buddha, Dhamma, Saṅgha, one's own virtues, and mindfulness of breathing.
-        *   Practicing **Jhāna** and being devoted to **wakefulness**.
-        *   Exercising **sense restraint** and developing **tranquility and insight**.
-        *   Cultivating **goodwill** and pervading all directions with it.
-        *   Skillful qualities, such as lack of greed, aversion, and delusion, are considered the "roots of what is skillful". Cultivating these leads to the **Mind becoming pliant, malleable, luminous, and not brittle**, as well as the arising of joy, rapture, and calm. It leads to the mind being rightly concentrated for the ending of effluents and overall **growth and abundance in the Dhamma-Vinaya**.
-
-4.  **Continuously Cultivate the Noble Eightfold Path**: This path, consisting of **right view, right resolve, right speech, right action, right livelihood, right effort, right mindfulness, and right concentration**, is continuously practiced. Right view is considered the forerunner, setting the direction for the entire path.
-
-5.  **Deepen Discernment (Wisdom)**: The practitioner deepens their wisdom through **knowing stress, its origination, cessation, and the path to its cessation**. This involves actively exploring the meaning of the Dhamma, questioning learned monks, and ultimately realizing the **Four Noble Truths**.
-
-6.  **Engage in Right Interaction with Others**: A crucial aspect of the practice is how one interacts with the world. This includes **teaching Dhamma without causing harm**, leading by example, encouraging others, and maintaining amiable relations within the spiritual community.
-
-7.  **Realize Unbinding / Liberation**: The ultimate outcome of this consistent and diligent practice is the **ending of suffering and stress** and the realization of unbinding. This is the profound state of liberation achieved through the purification of the mind and the abandonment of all defilements.
-
-This diagram illustrates that the path is not linear but involves continuous feedback loops, with heedfulness and appropriate attention serving as constant internal tools to guide the practitioner toward skillful states and away from unskillful ones, ultimately leading to liberation.

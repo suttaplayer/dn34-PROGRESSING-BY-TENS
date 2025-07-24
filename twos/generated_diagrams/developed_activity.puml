@@ -1,0 +1,102 @@
+The sources describe a comprehensive workflow and sequence of actions leading to the cessation of suffering and stress, ultimately culminating in unbinding (Nibbāna). This process largely revolves around the **development and pursuit of the Noble Eightfold Path**, supported by foundational practices and the cultivation of tranquility (samatha) and insight (vipassanā).
+
+Here is an activity diagram representing this workflow:
+
+```plantuml
+@startuml
+title The Path to Ending Suffering & Stress
+
+start
+
+partition "Initial State & Motivation" {
+  :Life is beset by birth, aging, death, sorrows, distress, and stress;
+  note right: The individual is "beset by stress, overcome with stress" and hopes that "the end of this entire mass of suffering & stress might be known!".
+  :Desire arises to know, see, attain, realize, and break through to what has been unknown, unseen, unattained, unrealized, and not broken through to.
+}
+
+partition "Foundational Practices & Mind Development" {
+  :Abandon unskillful qualities;
+  note right: This includes bodily misconduct, verbal misconduct, and mental misconduct. These are characterized by greed, aversion, or delusion.
+
+  :Develop skillful qualities;
+  note right: This involves good bodily conduct, good verbal conduct, and good mental conduct. It is rooted in non-greed, non-aversion, and non-delusion. The mind, when developed, is pliant and leads to great benefit.
+
+  :Abandon the five hindrances;
+  note right: These hindrances are sensual desire, ill will, sloth & drowsiness, restlessness & anxiety, and uncertainty. They "overwhelm awareness and weaken discernment". Removing them makes understanding possible.
+
+  :Cleanse the defiled mind;
+  note left: This is referred to as the "uposatha of the noble ones".
+  '(O) Mind Cleansing Options
+  fork
+    :Recollect the Tathāgata;
+    note right: As one recollects, the mind becomes calmed, joy arises, and defilements are abandoned.
+    detach
+  fork again
+    :Recollect the Dhamma;
+    note right: The mind is cleansed and joy arises, leading to the abandonment of defilements.
+    detach
+  fork again
+    :Recollect one's own virtues;
+    note right: Recollecting virtues like being "untorn, unbroken, unspotted," leads to a cleansed mind, joy, and abandoned defilements.
+    detach
+  fork again
+    :Recollect the devas;
+    note right: This process calms the mind, brings joy, and helps abandon mental defilements.
+    detach
+  end fork
+  '(X) Cleansing complete
+  note right: A sullied mind cannot know its own benefit or realize a superior human state.
+}
+
+partition "The Noble Eightfold Path: Gradual Development" {
+  note right: This is "kamma that is neither dark nor bright with neither dark nor bright result, leading to the ending of kamma". It is also described as a "direct path for the purification of beings", involving "gradual training, gradual action, gradual practice". The holy life is lived with "discernment as its surpassing state, with release as its heartwood, and with mindfulness as its governing principle".
+
+  :1. Develop **Right View**;
+  note right: This is "knowledge with regard to stress, knowledge with regard to the origination of stress, knowledge with regard to the cessation of stress, knowledge with regard to the way of practice leading to the cessation of stress". Right view is considered "the forerunner".
+
+  :2. Develop **Right Resolve**;
+  note right: This includes resolve for renunciation, non-ill will, and harmlessness. In one of right view, right resolve comes into being.
+
+  :3. Develop **Right Speech**;
+  note right: Abstaining from lying, divisive speech, harsh speech, and idle chatter. In one of right resolve, right speech comes into being.
+
+  :4. Develop **Right Action**;
+  note right: Abstaining from taking life, taking what is not given, and sexual misconduct. In one of right speech, right action comes into being.
+
+  :5. Develop **Right Livelihood**;
+  note right: Abandoning dishonest livelihood and maintaining one's life with right livelihood. In one of right action, right livelihood comes into being.
+
+  :6. Develop **Right Effort**;
+  note right: This involves generating desire, endeavoring, arousing persistence, upholding, and exerting intent for the non-arising of evil/unskillful qualities not yet arisen, abandoning those that have arisen, causing skillful qualities to arise, and maintaining their increase and culmination. In one of right livelihood, right effort comes into being.
+
+  :7. Develop **Right Mindfulness**;
+  note right: This involves remaining focused on the body, feelings, mind, and mental qualities "ardent, alert, & mindful—subduing greed & distress with reference to the world". It includes mindfulness of in-and-out breathing to gather, settle, unify, and concentrate the mind. In one of right effort, right mindfulness comes into being.
+
+  :8. Develop **Right Concentration**;
+  note right: This is "singleness of mind". It involves entering the jhānas—states secluded from sensuality and unskillful qualities, accompanied by rapture, pleasure, unification of awareness, equanimity, and pure mindfulness. This makes the mind "pliant, malleable, luminous, and not brittle". In one of right mindfulness, right concentration comes into being.
+
+  fork
+    :Develop **Tranquility (Samatha)**;
+    note right: This fosters the development of the mind and helps abandon passion. It leads to blissful concentration and a mind that is pliant, malleable, luminous, and rightly concentrated for the ending of effluents. It is achieved through practices like the four jhānas and developing immeasurable concentration based on goodwill, compassion, empathetic joy, and equanimity.
+  fork again
+    :Develop **Insight (Vipassanā)**;
+    note right: This fosters the development of discernment and helps abandon ignorance, contributing to clear knowing and release. It is achieved through discerning the Four Noble Truths, investigating fabrications (seeing them as inconstant, stressful, and not-self), and practices like mindfulness of in-and-out breathing.
+  end fork
+  :Tranquility and Insight are developed **in tandem**;
+  note right: When developed together, "the path is born" leading to the abandonment of fetters and destruction of obsessions.
+}
+
+partition "Culmination & Final Release" {
+  :Attain **Right Knowledge**;
+  note right: Comes into being from Right Concentration. This is the knowledge and vision of things "as they have come to be".
+
+  :Attain **Right Release**;
+  note right: This signifies the mind being released from passion, aversion, and delusion. The effluents (sensuality, becoming, and ignorance) are abandoned, their root destroyed, made "like a palmyra stump, deprived of the conditions of development, not destined for future arising". The result is the discernment that "Birth is ended, the holy life fulfilled, the task done. There is nothing further for this world".
+
+  :Realize **Unbinding (Nibbāna)**;
+  note right: This is the ultimate goal: the cessation of all suffering and stress. It is referred to as "the Deathless".
+}
+
+end
+@enduml
+```

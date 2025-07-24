@@ -1,0 +1,56 @@
+Here is a high-level PlantUML activity diagram illustrating where **"Mindfulness & alertness"** qualities fit within the context of the training, representing workflows and processes described in the sources.
+
+```plantuml
+@startuml
+title Mindfulness & Alertness in the Path of Training
+
+start
+
+:Disciple in Training;
+
+partition "1. Training in Heightened Virtue (Sīla)" {
+  :Cultivate Admirable Friendship;
+  :Hear Dhamma & cultivate Appropriate Attention;
+  :Practice Virtue (restraint from misconduct, seeing danger in slightest fault);
+  :Guard Sense Faculties (restraint from grasping at themes & variations);
+  :Know Moderation in Eating;
+}
+
+-> :Builds Foundation for Mental Purity;
+
+partition "2. Training in Heightened Mind (Samādhi)" {
+  :Devote to **Wakefulness** (cleansing mind day & night);
+  note right: This is a **prerequisite** for cultivating **Mindfulness & Alertness**.
+
+  :Cultivate **Mindfulness & Alertness (M&A)**;
+  note right: Defined as **full awareness and presence** during activities and when observing internal phenomena,\nmaking the mind **pliant, malleable, luminous, and not brittle**.
+  note right: **Lack of M&A** is a "food" for inappropriate attention, leading to a chain of unskillful qualities and hindrances.
+
+  fork
+    :Apply M&A in **Daily Activities**\n(e.g., walking, eating, talking, any bodily movement);
+  fork again
+    :Apply M&A in **Meditative Practices**;
+    partition "Meditative Practices Enabled by M&A" {
+      :Practice **Mindfulness of In-and-Out Breathing**\n(Calming bodily & mental fabrications, focusing on impermanence);
+      :Practice **Four Establishings of Mindfulness**\n(Focus on body, feelings, mind, mental qualities to subdue greed/distress, being ardent, alert, mindful);
+      :**Overcome Five Hindrances**\n(Sensual desire, ill will, sloth & drowsiness, restlessness & anxiety, uncertainty);\nnote right: The mind becomes conducive to concentration once hindrances are overcome.
+      :Attain **Jhānas** (states of deep mental absorption)\n(Remaining equanimous, mindful, and alert within these states);
+    }
+  end fork
+}
+
+-> :Deepens Mental Stability & Purity;
+
+partition "3. Training in Heightened Discernment (Paññā)" {
+  :Cultivate **Seven Factors for Awakening**\n(Mindfulness is a key factor, intrinsic to Right Mindfulness & Right Concentration);
+  :Directly **Know & Realize the Dhamma**\n(e.g., Four Noble Truths, Dependent Co-arising);
+  :Abandon **Unskillful Thinking**\n(via scrutiny of drawbacks, relaxing thought-fabrication);
+}
+
+-> :Leads to Profound Insight & Wisdom;
+
+:Realize **Awareness-Release & Discernment-Release (Unbinding)**\n(Ending of effluents, culminating in clear knowing, freedom from clinging);
+
+end
+@enduml
+```

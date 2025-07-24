@@ -1,0 +1,119 @@
+// create a very high-level plantuml activity diagram of where heedfulness & skillful qualities fit in context to the training representing any
+// workflows, processes, or sequence of actions described in the document. Focus on key steps, decisions, and parallel activities.
+
+
+The sources describe a comprehensive framework for spiritual development, where **heedfulness** and the cultivation of **skillful qualities** are central to overcoming suffering and achieving unbinding. The process is often depicted as a "training" or "holy life" that involves a continuous, step-by-step effort to purify the mind and gain deep insight.
+
+Here is a high-level PlantUML activity diagram illustrating where heedfulness and skillful qualities fit within this training:
+
+```plantuml
+@startuml
+title High-Level Dhamma Training: Heedfulness & Skillful Qualities
+
+start
+
+:Experiencing Suffering & Stress;
+note right
+  The starting point for practice, driven by the inherent nature of existence
+  and the desire to end suffering and achieve well-being [7-9].
+end note
+
+:Develop Desire to End Suffering;
+note right
+  This motivation drives the individual to embark on the path
+  and cultivate beneficial qualities [7].
+end note
+
+partition "Seeking Guidance & Engagement" {
+  :Associate with Admirable Friends / Teacher / Sangha;
+  note right
+    Seeking and maintaining connection with those who embody the Dhamma
+    and can provide proper instruction [1, 10-14].
+  end note
+
+  :Listen to the Dhamma & Engage in Discussion;
+  note right
+    Actively receiving well-taught Dhamma, attending to its meaning,
+    and engaging in discussions to dispel perplexity [15-22].
+  end note
+
+  :Undertake Training Rules;
+  note right
+    Formal commitment to the discipline of the holy life,
+    seeing danger in the slightest faults [2, 3, 23, 24].
+  end note
+}
+
+partition "Core Practice: Cultivating Heedfulness & Skillful Qualities" {
+  fork
+    :Continuously **Cultivate Heedfulness** (Appamada);
+    note right
+      Heedfulness is **foremost among all skillful qualities** [25, 26]
+      and acts as a **governing principle** throughout the entire training [6].
+      It involves being attentive, resolute, and guarding the mind from defilements
+      and negligence [27-36].
+      It is essential for attaining unexcelled freedom from bondage [27].
+    end note
+  fork again
+    partition "Systematic Development of Three Trainings" {
+      split
+        :Develop **Heightened Virtue** (Sīla);
+        note right
+          This involves abstaining from unskillful bodily, verbal,
+          and mental misconduct, and cultivating their skillful counterparts [37-43].
+          It also includes **guarding the doors of the sense faculties**
+          and seeing danger in the slightest fault [44-47].
+        end note
+      split again
+        :Develop **Heightened Mind** (Concentration / Samadhi);
+        note right
+          This involves secluding the mind from sensuality and unskillful qualities
+          to enter and remain in the **jhānas** (states of deep concentration),
+          which makes the mind pliant, malleable, and luminous [37, 48-60].
+        end note
+      split again
+        :Develop **Heightened Discernment** (Paññā);
+        note right
+          This is the capacity to directly know and see things as they have come to be,
+          especially the **Four Noble Truths** (stress, its origin, cessation, and the path to cessation) [61-71].
+          It also involves discerning Dependent Co-arising [72, 73]
+          and the roots of skillful (lack of greed, aversion, delusion)
+          and unskillful (greed, aversion, delusion) qualities [74, 75].
+        end note
+      end split
+      
+      :Cultivate Skillful Qualities & Abandon Unskillful Qualities with Relentless Effort;
+      note right
+        This is the continuous application of **ardent persistence**
+        for the non-arising of unarisen unskillful qualities,
+        the abandoning of arisen unskillful qualities,
+        the arising of unarisen skillful qualities,
+        and the maintenance and development of arisen skillful qualities [15, 76-84].
+        This process is rooted in **lack of greed, aversion, and delusion** [74, 75, 85].
+      end note
+    }
+  end fork
+}
+
+:Mind Becomes Purified, Concentrated, & Rightly Released;
+note right
+  Through this sustained practice, the mind is cleansed of defilements
+  (effluents like sensuality, becoming, and ignorance [65, 86, 87]),
+  becoming luminous, clear, and steady, leading to a state of ease [49, 59, 88-90].
+end note
+
+:Realize **Effluent-Free Awareness-Release** & **Discernment-Release**;
+note right
+  The mind is liberated from the effluents, and direct knowledge (gnosis)
+  of the ending of suffering is attained [65, 81, 87, 90-99].
+end note
+
+:Achieve **Unbinding** (Nibbāna);
+note right
+  The ultimate goal of the holy life: the complete ending of craving,
+  the cessation of all stress, and the fulfillment of the task [32, 65, 91, 100-104].
+end note
+
+stop
+@enduml
+```
