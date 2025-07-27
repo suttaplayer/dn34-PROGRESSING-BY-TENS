@@ -1,6 +1,6 @@
-# One > Helpful > Heedfulness with regard to skillful qualities
+Drawing on the provided sources, here is a comprehensive response to your query regarding "Heedfulness with regard to skillful qualities."
 
-## Definition
+## 1. Definition
 
 **Heedfulness (Appamāda)** is described as the **path to the Deathless** and is considered the **foremost among all skillful qualities**. It is a quality that, when cultivated and pursued, **secures both kinds of benefit: benefit in this life and in lives to come**. Heedfulness embodies being **mindful, clean in action, acting with due consideration, restrained, and self-controlled**. It specifically involves **guarding one's mind with regard to effluents and qualities accompanied by effluents**.
 
@@ -62,14 +62,165 @@ The cultivation of heedfulness and skillful qualities involves various practices
 *   **Reflection and Examination**: Directing thoughts to the Dhamma in detail, evaluating it, and mentally examining it leads to a **sensitivity to its meaning, joy, rapture, calm, and concentration**. Deeply penetrating the Dhamma with discernment is crucial for this process.
 *   **Associating with Wise and Learned Individuals**: Regularly approaching monks who are learned and know the tradition, asking questions, and quizzing them helps to **make open what isn't open, make plain what isn't plain, and dispel doubt**. This interaction fosters discernment and understanding.
 
+## PART-B: PlantUML Diagrams
 
-## AI Diagram
+### 1. Activity Diagram
+```plantuml
+@startuml
+start
+:Initial State:
+(A) Clear Knowing, Sense of Shame, Compunction, Admirable Friendship, Appropriate Attention, Purified Virtue, Straightened Views;
 
-* [AI Generated Activity Diagram](./generated_diagrams/helpful_activity.svg)
-* [AI Generated Class Diagram](./generated_diagrams/helpful_class.svg)
+fork
+  :Guard Sense Faculties (Restraint);
+  :Practice Moderation in Eating;
+  :Be Devoted to Wakefulness;
+fork again
+  :Perform Recollection Practices (Buddha, Dhamma, Sangha, Virtue, Generosity, Devas);
+  :Balance Mental Qualities (Concentration, Uplifted Energy, Equanimity);
+fork end
 
-![AI Generated Activity Diagram](./generated_diagrams/helpful_activity.svg)
-![AI Generated Class Diagram](./generated_diagrams/helpful_class.svg)
+:Persist in Abandoning Unskillful Qualities;
+:Persist in Developing Skillful Qualities;
 
+if (Joy arises?) then (Yes)
+  :Rapture arises;
+  :Body grows calm;
+  :Experience pleasure;
+  :Mind becomes concentrated;
+else (No)
+  :Dwell in pain;
+  :Mind uncentered;
+  :Phenomena not manifest;
+  :Reckoned heedless;
+endif
 
-## Quotations
+:Discern things as they are (e.g., inconstancy);
+
+:Achieve Release / Ending of Effluents / Unbinding;
+
+:Attain the Deathless;
+stop
+@enduml
+```
+
+### 2. Class Diagram
+```plantuml
+@startuml
+class Person {
+  + mindful: bool
+  + alert: bool
+  + ardent: bool
+  + resolute: bool
+  + discerning: bool
+  + convinced: bool
+  + persistent: bool
+  + cultivates(quality)
+  + abandons(quality)
+  + guards_senses()
+  + recollects(entity)
+  + balances_mental_qualities()
+}
+
+class SkillfulQuality {
+}
+
+class UnskillfulQuality {
+}
+
+class Dhamma {
+  + purpose: string
+  + teaches()
+}
+
+class Teacher {
+  + teaches_Dhamma()
+}
+
+class Mind {
+  + state: string
+  + is_luminous: bool
+  + is_defiled: bool
+  + is_calm: bool
+  + is_concentrated: bool
+  + is_released: bool
+  + is_unreleased: bool
+}
+
+class StateOfBeing {
+}
+
+SkillfulQuality <|-- Heedfulness
+SkillfulQuality <|-- Virtue
+SkillfulQuality <|-- Concentration
+SkillfulQuality <|-- Discernment
+SkillfulQuality <|-- Mindfulness
+SkillfulQuality <|-- Persistence
+SkillfulQuality <|-- Conviction
+SkillfulQuality <|-- Shame
+SkillfulQuality <|-- Compunction
+SkillfulQuality <|-- Generosity
+SkillfulQuality <|-- Lack_of_Greed
+SkillfulQuality <|-- Lack_of_Aversion
+SkillfulQuality <|-- Lack_of_Delusion
+
+UnskillfulQuality <|-- Passion
+UnskillfulQuality <|-- Aversion
+UnskillfulQuality <|-- Delusion
+UnskillfulQuality <|-- Sensual_Desire
+UnskillfulQuality <|-- Ill_Will
+UnskillfulQuality <|-- Sloth_Drowsiness
+UnskillfulQuality <|-- Restlessness_Anxiety
+UnskillfulQuality <|-- Uncertainty
+UnskillfulQuality <|-- Misconduct
+UnskillfulQuality <|-- Effluent
+
+Dhamma <|-- Noble_Eightfold_Path
+Dhamma <|-- Four_Establishings_of_Mindfulness
+Dhamma <|-- Recollection_Practices
+
+StateOfBeing <|-- Deathless
+StateOfBeing <|-- Unbinding
+StateOfBeing <|-- Welfare
+StateOfBeing <|-- Happiness
+StateOfBeing <|-- Suffering
+StateOfBeing <|-- Stress
+StateOfBeing <|-- Joy
+StateOfBeing <|-- Rapture
+StateOfBeing <|-- Calm
+StateOfBeing <|-- Concentration
+
+Person "1" --> "0..*" SkillfulQuality : cultivates
+Person "1" --> "0..*" UnskillfulQuality : abandons
+
+Heedfulness "1" --> "0..*" StateOfBeing : leads_to
+Heedfulness "1" --> "0..*" SkillfulQuality : develops (Five Faculties)
+
+"Clear Knowing" "1" -- "1" Heedfulness : is_condition_for
+"Shame" "1" -- "1" Heedfulness : is_condition_for
+"Compunction" "1" -- "1" Heedfulness : is_condition_for
+"Admirable Friendship" "1" -- "1" Heedfulness : is_condition_for
+"Appropriate Attention" "1" -- "1" Heedfulness : is_condition_for
+"Purified Virtue" "1" -- "1" Heedfulness : is_condition_for
+"Straightened Views" "1" -- "1" Heedfulness : is_condition_for
+
+UnskillfulQuality "0..*" --> "1" Mind : defiles
+SkillfulQuality "0..*" --> "1" Mind : purifies
+
+Noble_Eightfold_Path "1" -- "1" Dhamma : is_a_component_of
+Four_Establishings_of_Mindfulness "1" -- "1" Dhamma : is_a_component_of
+Recollection_Practices "1" -- "1" Dhamma : is_a_component_of
+
+Teacher "1" --> "1" Dhamma : teaches
+
+Person "1" --> "0..*" Dhamma : follows
+
+Mind "1" --> "0..*" StateOfBeing : can_be
+
+Mind "1" --> "0..*" SkillfulQuality : is_affected_by
+Mind "1" --> "0..*" UnskillfulQuality : is_affected_by
+
+Mind --> "1" Person : has
+
+@enduml
+```

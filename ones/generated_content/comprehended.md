@@ -1,4 +1,4 @@
-# One > Comprehended > Contact accompanied by effluents & subject to clinging
+Here is a comprehensive response to your query regarding "Contact accompanied by effluents & subject to clinging" from Dasuttara Sutta (DN 34), drawing on the provided sources and following your specified structure:
 
 ## 1. Definition
 
@@ -56,16 +56,148 @@ To grow disenchanted with "Contact accompanied by effluents & subject to clingin
 *   **Noble Eightfold Path**: This path is the practice leading to the cessation of contact and feeling. It is developed for direct knowledge, comprehension, and the abandoning of the four floods (sensuality, becoming, views, ignorance).
 *   **Association and Hearing Dhamma**: **Associating with people of integrity** and **hearing the true Dhamma** can help one understand that these clinging-based phenomena are "diseases, cancers, arrows," leading to their cessation.
 
+---
 
-## AI Diagram
+## PART-B: PlantUML Diagrams
 
-* [AI Generated Activity Diagram](./generated_diagrams/comprehended_activity.svg)
-* [AI Generated Class Diagram](./generated_diagrams/comprehended_class.svg)
+### 1. Activity Diagram
 
-![AI Generated Activity Diagram](./generated_diagrams/comprehended_activity.svg)
-![AI Generated Class Diagram](./generated_diagrams/comprehended_class.svg)
+```plantuml
+@startuml
+title Transformation from Clinging to Release
 
+start
 
-## Quotations
+partition "Starting State: Conditions for Stress" {
+    :Contact arises (dependent on Six Sense Media, Name-&-Form);
+    :Feeling arises from Contact;
+    :Craving arises from Feeling;
+    :Clinging arises from Craving;
+    :Effluents are present;
+}
 
-[^4]: 'The six classes of feeling should be known.' Thus it was said. In reference to what was it said? Dependent on the eye & forms there arises consciousness at the eye. The meeting of the three is contact. With contact as a requisite condition there is feeling. 
+if (Discerns allure, drawbacks, and escape of phenomena?) then (No)
+    :Relishes, welcomes, or remains fastened to feelings/sense objects;
+    :Passion, resistance, ignorance obsessions get obsessed;
+    :Unskillful qualities increase;
+    :Leads to further Suffering & Stress;
+    stop
+else (Yes)
+    :Associates with people of integrity;
+    :Hears True Dhamma;
+    :Develops Concentration;
+    :Develops Noble Eightfold Path;
+    :Focuses on inconstancy, stress, and not-self nature of phenomena;
+    :Subdues and abandons desire-passion;
+    :Abandons passion-obsession, abolishes resistance-obsession, uproots ignorance-obsession;
+    :Ignorance abandoned, clear knowing arises;
+    :Mind is released through discernment;
+    :Attains Unbinding (cessation of suffering & stress);
+    end
+endif
+
+@enduml
+```
+
+### 2. Class Diagram
+
+```plantuml
+@startuml
+title Entities and Relationships related to Contact
+
+class Contact {
+  + six_classes
+}
+
+class Effluent {
+  + types: Sensuality, Becoming, Ignorance
+  + defiles()
+  + leads_to_further_becoming()
+  + causes_trouble()
+  + ripens_in_stress()
+  + leads_to_future_birth_aging_death()
+}
+
+class Clinging {
+  + types: Sensuality, View, Habit_Practice, Self_Doctrine
+  + is_relishing_welcoming_fastening()
+}
+
+class FiveClingingAggregates {
+  + types: Form, Feeling, Perception, Fabrications, Consciousness
+  + is_stressful()
+}
+
+class SenseMedia {
+  + six_classes
+}
+
+class NameForm {
+}
+
+class Feeling {
+  + three_types: pleasant, painful, neither_pleasant_nor_painful
+}
+
+class Craving {
+}
+
+class Becoming {
+}
+
+class Birth {
+}
+
+class SufferingStress {
+  + components: Aging_Death, Sorrow, Lamentation, Pain, Distress, Despair
+}
+
+class Disciple {
+}
+
+class NobleEightfoldPath {
+  + components: RightView, RightResolve, RightSpeech, RightAction, RightLivelihood, RightEffort, RightMindfulness, RightConcentration
+}
+
+class Concentration {
+  + themes: concentration, uplifted_energy, equanimity
+}
+
+class PersonOfIntegrity {
+}
+
+class TrueDhamma {
+}
+
+class Unbinding {
+}
+
+Contact "1" -- "*" Effluent : is_accompanied_by
+Contact "1" -- "*" Clinging : is_subject_to
+
+SenseMedia "1" --> "1" Contact : as_requisite_condition_for
+NameForm "1" --> "1" Contact : as_requisite_condition_for
+
+Contact "1" --> "1" Feeling : as_requisite_condition_for
+Feeling "1" --> "1" Craving : as_requisite_condition_for
+Craving "1" --> "1" Clinging : as_requisite_condition_for
+Clinging "1" --> "1" Becoming : as_requisite_condition_for
+Becoming "1" --> "1" Birth : as_requisite_condition_for
+Birth "1" --> "1" SufferingStress : as_requisite_condition_for
+
+Clinging "1" -- "*" FiveClingingAggregates : is_desire_passion_for
+
+Disciple "1" --> "1" NobleEightfoldPath : practices
+Disciple "1" --> "1" Concentration : develops
+Disciple "1" --> "1" PersonOfIntegrity : associates_with
+Disciple "1" --> "1" TrueDhamma : hears
+
+Disciple "1" --> "1" SufferingStress : ends
+Disciple "1" --> "1" Effluent : abandons
+Disciple "1" --> "1" Clinging : abandons
+Disciple "1" --> "1" Unbinding : attains
+
+Unbinding "1" -- "1" SufferingStress : is_cessation_of
+
+@enduml
+```

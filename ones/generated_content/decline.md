@@ -1,4 +1,4 @@
-# One > Decline > Inappropriate attention
+Here is a comprehensive response regarding "Inappropriate attention" drawn from the provided sources:
 
 ## 1. Definition
 
@@ -60,14 +60,136 @@ Avoiding inappropriate attention involves cultivating its opposite, "appropriate
 *   **Follow the Path of Cultivation:** This path begins with **associating with people of integrity**, which leads to hearing the true Dhamma, developing conviction, and subsequently, appropriate attention. This chain continues through mindfulness, alertness, restraint of senses, right conduct, establishings of mindfulness, and factors for awakening, culminating in clear knowing and release.
 *   **Abandon Hindering Qualities:** Being able to abandon "muddled truth, unalertness, and scattered awareness" makes one capable of abandoning inappropriate attention.
 
+***
 
-## AI Diagram
+## PART-B: PlantUML Diagrams
 
-* [AI Generated Activity Diagram](./generated_diagrams/decline_activity.svg)
-* [AI Generated Class Diagram](./generated_diagrams/decline_class.svg)
+### 1. Activity Diagram
 
-![AI Generated Activity Diagram](./generated_diagrams/decline_activity.svg)
-![AI Generated Class Diagram](./generated_diagrams/decline_class.svg)
+```plantuml
+@startuml
+start
 
+split
+    :Not associating with people of integrity;
+    :Not hearing true Dhamma;
+    :Lack of Conviction;
+    :Inappropriate Attention;
+    :Lack of Mindfulness & Alertness;
+    :Lack of Restraint of Senses;
+    :Three Forms of Misconduct;
+    :Five Hindrances;
+    :Ignorance;
+split again
+    :Associating with people of integrity;
+    :Hearing true Dhamma;
+    :Conviction;
+    :Appropriate Attention;
+    :Mindfulness & Alertness;
+    :Restraint of Senses;
+    :Three Forms of Right Conduct;
+    :Four Establishings of Mindfulness;
+    :Seven Factors for Awakening;
+    :Clear Knowing & Release;
+split end
 
-## Quotations
+stop
+@enduml
+```
+
+### 2. Class Diagram
+
+```plantuml
+@startuml
+
+class Person {
+    + discernment
+    + mind_state
+    + attend_inappropriately()
+    + attend_appropriately()
+}
+
+class Mind {
+    + sullied
+    + luminous
+    + defiled
+    + freed
+    + pliant
+    + malleable
+    + brittle
+    + concentrated
+    + scattered
+}
+
+class Attention {
+    + type: (Inappropriate, Appropriate)
+}
+
+class Idea {
+    + fit_for_attention: boolean
+    + unfit_for_attention: boolean
+}
+
+class Effluent {
+    + type: (Sensuality, Becoming, Ignorance)
+    + state: (unarisen, arisen, abandoned, increasing)
+}
+
+class View {
+    + type: (SelfIdentityView)
+    + state: (arisen, fettered)
+}
+
+class Condition {
+    + type 
+    LackOfConviction, 
+    NotHearingTrueDhamma, 
+    NotAssociatingWithIntegrity, 
+    MuddledTruth, 
+    Unalertness, 
+    ScatteredAwareness, 
+    Conviction, 
+    HearingTrueDhamma, 
+    AssociatingWithIntegrity
+}
+
+class Outcome {
+    + type
+    InabilityToUnderstandDhamma, 
+    Suffering, 
+    Decline, 
+    ClearKnowing, 
+    Release, 
+    LessPassion, 
+    LessAversion, 
+    LessDelusion
+}
+
+Person "1" -- "1" Mind : has >
+Person "1" -- "1" Attention : uses >
+Attention "1" -- "many" Idea : processes >
+Mind "1" -- "many" Effluent : is affected by >
+Mind "1" -- "many" View : affected by >
+
+Attention "Inappropriate" --> Effluent : causes (arise/increase)
+Attention "Inappropriate" --> View : causes (arise)
+View "fettered" --o Person : fetters >
+Attention "Inappropriate" --> Outcome : results in (negative) >
+
+Condition "LackOfConviction" --> Attention : leads to (inappropriate) >
+Condition "NotHearingTrueDhamma" --> Condition : leads to (LackOfConviction) >
+Condition "NotAssociatingWithIntegrity" --> Condition : leads to (NotHearingTrueDhamma) >
+Condition "MuddledTruth" --> Attention : sustains (inappropriate) >
+Condition "Unalertness" --> Attention : sustains (inappropriate) >
+Condition "ScatteredAwareness" --> Attention : sustains (inappropriate) >
+
+Attention "Appropriate" --> Effluent : causes (abandoned)
+Attention "Appropriate" --> Outcome : results in (positive) >
+Attention "Appropriate" --> Mind : cultivates (pliant, malleable, luminous, concentrated) >
+
+Condition "Conviction" --> Attention : leads to (appropriate) >
+Condition "HearingTrueDhamma" --> Condition : leads to (Conviction) >
+Condition "AssociatingWithIntegrity" --> Condition : leads to (HearingTrueDhamma) >
+
+@enduml
+```

@@ -1,4 +1,4 @@
-# One > Abandoned > The conceit ‘I am’
+Here is a comprehensive response to your query regarding "The conceit ‘I am’" from the provided sources:
 
 ## 1. Definition
 
@@ -96,14 +96,183 @@ The abandonment of the conceit 'I am' is a crucial step towards liberation from 
     *   Not measuring or judging other individuals is also suggested, as "He's conceited, anyone who takes the measure of other individuals".
     *   An ardent and compunctious person is capable of self-awakening and unbinding.
 
+## PART-B: PlantUML Diagrams
 
-## AI Diagram
+### 1. PlantUML Activity Diagram
 
-* [AI Generated Activity Diagram](./generated_diagrams/abandoned_activity.svg)
-* [AI Generated Class Diagram](./generated_diagrams/abandoned_class.svg)
+```plantuml
+@startuml
+start
+:Uninstructed Person **assumes self** in aggregates;
+:Unskillful Mental Qualities arise (passion, aversion, delusion);
+:Clinging to aggregates/views occurs;
+:Suffering & Stress, Renewed Becoming, and Agitation arise;
+note left
+Problems resulting from the conceit 'I am'.
+end note
 
-![AI Generated Activity Diagram](./generated_diagrams/abandoned_activity.svg)
-![AI Generated Class Diagram](./generated_diagrams/abandoned_class.svg)
+if (Does Person discern drawbacks of conceit?) then (Yes)
+  :Generate desire & persistence for abandoning blemishes;
+  :Abandon Inappropriate Attention;
+  :Abandon Unskillful Thoughts;
+  :Develop **Perception of Inconstancy**;
+  :Develop **Perception of Not-Self**;
+  :See Aggregates as Inconstant, Stressful, Not-Self;
+  :Cultivate Disenchantment;
+  :Cultivate Dispassion;
+  :Develop **Mindfulness** (e.g., of in-&-out breathing, 4 Establishings);
+  :Develop **Concentration** (e.g., Immeasurable, Themeless);
+  :Abandon desire-passion for sense media/aggregates;
+  :Abandon Acquisitions;
+  :Purify Virtue & Straighten Views;
+  :Follow **Noble Eightfold Path**;
+  :Gain **Direct Knowledge** & **Right Discernment**;
+  :The conceit 'I am' is **abandoned** / **uprooted**;
+  :Effluents are **ended**;
+  :Released from Suffering & Stress;
+  :Attain **Unbinding**;
+else (No)
+  :Continue in Ignorance;
+  :Experience continued Suffering & Stress;
+  :Proceed to Further Becoming;
+endif
+stop
+@enduml
+```
 
+### 2. PlantUML Class Diagram
 
-## Quotations
+```plantuml
+@startuml
+' Define classes
+class Mind {
+  +luminous
+  +sullied
+  +defiled
+  +calmed
+  +unified
+  +concentrated
+  +pliant
+  +malleable
+  +not_brittle
+  +unreleased
+  --
+  +discern()
+  +know()
+  +see()
+}
+
+class Person {
+  +instructed: Boolean
+  +virtuous: Boolean
+  +discerning: Boolean
+  +heedful: Boolean
+  +ardent: Boolean
+  +resolute: Boolean
+  +released: Boolean
+  --
+  +assumes_self_in_aggregates()
+  +abandons_conceit()
+}
+
+class Conceit_IAm {
+  +supposition: Boolean
+  +perturbation: Boolean
+  +wavering: Boolean
+  +objectification: Boolean
+  +act_of_conceit: Boolean
+  +is_disease: Boolean
+  +is_cancer: Boolean
+  +is_arrow: Boolean
+  +is_fetter: Boolean
+  +lingering_residual: Boolean
+  --
+  +is_abandoned()
+  +is_overcome()
+}
+
+class Effluent {
+  +sensuality_effluent: Boolean
+  +becoming_effluent: Boolean
+  +ignorance_effluent: Boolean
+  --
+  +is_ended()
+}
+
+class Five_Clinging_Aggregates {
+  +form
+  +feeling
+  +perception
+  +fabrications
+  +consciousness
+  --
+  +is_inconstant: Boolean
+  +is_stressful: Boolean
+  +is_not_self: Boolean
+}
+
+class Suffering_Stress {
+  +is_ended: Boolean
+}
+
+class Unbinding_Nibbana {
+  +is_achieved: Boolean
+}
+
+class Dhamma {
+  +well_taught: Boolean
+  +conducive_to_goal: Boolean
+  +basic_to_holy_life: Boolean
+  --
+  +teach()
+  +guide()
+}
+
+class Noble_Eightfold_Path {
+  --
+  +leads_to_unbinding()
+  +leads_to_conceit_cessation()
+}
+
+class Practice {
+  +mindfulness
+  +concentration
+  +discernment_development
+  +inconstancy_perception
+  +not_self_perception
+  +abandoning_acquisitions
+  +virtue_purification
+  +view_straightening
+  +abandoning_defilements
+  --
+  +supports_path()
+  +leads_to_abandonment()
+}
+
+' Define relationships
+
+Person "1" -- "1" Mind : has
+Mind -- Effluent : defiled_by >
+Effluent <|-- Conceit_IAm : is_a
+Conceit_IAm "1" -- "1" Suffering_Stress : leads_to >
+Conceit_IAm "1" -- "1" Noble_Eightfold_Path : overcome_by <
+
+Person "1" -- "*" Five_Clinging_Aggregates : clings_to >
+Five_Clinging_Aggregates "1" -- "1" Conceit_IAm : manifests_as >
+
+Dhamma "1" -- "1" Noble_Eightfold_Path : teaches >
+Dhamma "1" -- "*" Practice : includes >
+
+Noble_Eightfold_Path "1" -- "1" Unbinding_Nibbana : leads_to >
+Noble_Eightfold_Path "1" -- "1" Suffering_Stress : ends >
+
+Practice "1" -- "1" Mind : calms/concentrates >
+Practice "1" -- "1" Conceit_IAm : abandons >
+Practice "1" -- "1" Effluent : ends >
+Practice "1" -- "1" Person : practiced_by <
+
+Person "1" -- "1" Unbinding_Nibbana : attains <
+Person "1" -- "1" Suffering_Stress : overcome_by <
+
+@enduml
+```

@@ -1,5 +1,3 @@
-# One > Developed > Mindfulness immersed in the body connected with joy
-
 ## 1. Definition
 
 **"Mindfulness immersed in the body connected with joy"** is a quality that should be developed. While the specific compound phrase is rare, its components are extensively defined in the sources.
@@ -39,7 +37,7 @@ The cultivation of "mindfulness immersed in the body connected with joy" and rel
 *   **Appropriate attention to the five clinging-aggregates:** Viewing them as inconstant, stressful, and not-self can lead to the fruit of stream-entry.
 *   **Recollection practices:** Recollecting the Buddha, Dhamma, Saṅgha, one's own virtues, generosity, and devas, can prevent the mind from being overcome with passion, aversion, or delusion, leading to joy, rapture, calm, ease, and concentration.
 
-### Effects from Mindfulness immersed in the body
+### Effects from Mindfulness immersed in the body connected with joy
 
 *   **Mind becomes concentrated:** Joy, rapture, and calm lead to the mind becoming concentrated. When the mind is concentrated, phenomena become manifest.
 *   **Abandonment of defilements/effluents:** A concentrated mind discerns things as they have come to be, leading to the **ending of effluents**. The mind is released from the effluent of sensuality, becoming, and ignorance.
@@ -96,14 +94,171 @@ The development of "mindfulness immersed in the body connected with joy" and ass
     *   One should also direct the mind to **immeasurable concentration** based on goodwill, compassion, empathetic joy, or equanimity, developing it mindfully and astutely. This involves realizing one enters and emerges from concentration mindfully.
     *   The practice of mindfulness of in-and-out breathing brings the **four establishings of mindfulness to their culmination**, which then bring the **seven factors for awakening to their culmination**, and these in turn bring **clear knowing and release to their culmination**.
 
+## PART-B: PlantUML Diagrams
 
-## AI Diagram
+### 1. PlantUML Activity Diagram
 
-* [AI Generated Activity Diagram](./generated_diagrams/developed_activity.svg)
-* [AI Generated Class Diagram](./generated_diagrams/developed_class.svg)
+```plantuml
+@startuml
+start
 
-![AI Generated Activity Diagram](./generated_diagrams/developed_activity.svg)
-![AI Generated Class Diagram](./generated_diagrams/developed_class.svg)
+partition "Prerequisites for Practice" {
+  :Cultivate Virtue;
+  :Guard Sense Faculties;
+  :Know Moderation in Eating;
+  :Be Devoted to Wakefulness;
+  :Be Mindful & Alert in all actions;
+  :Seek Secluded Dwelling;
+}
 
+partition "Development of Mindfulness Immersed in the Body (MBIB)" {
+  :Sit with body erect, mindfulness to fore;
+  :Practice Mindfulness of Breathing (16 steps);
+  :Reflect on Body Parts;
+  if (Memories & Resolves related to household life abandoned?) then (yes)
+    :Mind gathers, settles, unifies, concentrates;
+  else (no)
+    :Continue practice;
+  endif
+}
 
-## Quotations
+partition "Attaining Concentration (Jhanas)" {
+  :Abandon Five Hindrances;
+  :Enter First Jhana (Rapture & Pleasure born of seclusion);
+  :Still Directed Thoughts & Evaluations;
+  :Enter Second Jhana (Rapture & Pleasure born of concentration);
+  :Fade Rapture;
+  :Enter Third Jhana (Equanimity, Mindfulness, Pleasure with body);
+  :Abandon Pleasure & Pain;
+  :Enter Fourth Jhana (Purity of Equanimity & Mindfulness, neither pleasure nor pain);
+}
+
+partition "Progression to Release" {
+  :Attain concentrated, purified, bright mind;
+  :Direct mind to higher knowledges (e.g., mind-made body, mind reading, past lives);
+  :Reflect on Aggregates (inconstant, stressful, not-self);
+  :Incline mind to Deathless property;
+  :Develop Immeasurable Concentration (Goodwill, Compassion, Empathetic Joy, Equanimity);
+  :Mind Released from Effluents;
+  :Achieve Awareness-Release & Discernment-Release;
+}
+
+:End Suffering & Stress;
+:Realize Unbinding;
+
+stop
+@enduml
+```
+
+### 2. PlantUML Class Diagram
+
+```plantuml
+@startuml
+
+class Quality {
+  + name: String
+}
+
+class Practice {
+  + name: String
+  + description: String
+}
+
+class MentalState {
+  + name: String
+  + description: String
+}
+
+class Hindrance {
+  + name: String
+}
+
+class NobleTruth {
+  + name: String
+}
+
+class Jhāna {
+  + level: Integer
+  + characteristics: String
+}
+
+class Release {
+  + type: String
+}
+
+class NobleEightfoldPathFactor {
+  + name: String
+}
+
+class Benefit {
+  + description: String
+}
+
+Quality <|-- Practice
+Quality <|-- MentalState
+Quality <|-- Hindrance
+Quality <|-- NobleTruth
+Quality <|-- NobleEightfoldPathFactor
+Quality <|-- Benefit
+
+Practice --|> MentalState : leads to
+MentalState --|> MentalState : leads to (progression)
+Hindrance "5" --* Practice : must abandon
+Practice --* Jhāna : includes
+Jhāna "1..4" --* MentalState : characterized by
+MentalState --|> Benefit : results in
+Jhāna --|> Benefit : results in
+Jhāna --|> Release : leads to
+NobleEightfoldPathFactor --* Practice : applied within
+NobleEightfoldPathFactor --|> Benefit : results in
+NobleTruth --* NobleEightfoldPathFactor : part of Right View
+Release --|> Benefit : results in
+
+' Specific instances/associations
+MindfulnessImmersedInBody "1" --|> Practice
+MindfulnessImmersedInBody --|> MentalState : associated with Joy, Rapture, Calm, Pleasure
+
+package states <<frame>> {
+    object Jhānas {
+    Jhāna "1" : Rapture & Pleasure born of seclusion
+    Jhāna "2" : Rapture & Pleasure born of concentration
+    Jhāna "3" : Equanimity, Mindfulness, Pleasure with body
+    Jhāna "4" : Purity of Equanimity & Mindfulness, neither pleasure nor pain
+    }
+    
+    object MentalStates {
+    MentalState "1" : Concentration
+    MentalState "2" : Luminous Mind
+    MentalState "3" : Pliancy
+    MentalState "4" : Malleability
+    MentalState "5" : Unagitated Mind
+    }
+    
+    object Hindrances {
+    Hindrance "1" : Sensual Desire
+    Hindrance "2" : Ill Will
+    Hindrance "3" : Sloth & Drowsiness
+    Hindrance "4" : Restlessness & Anxiety
+    Hindrance "5" : Uncertainty
+    }
+    
+    object Releases {
+    Release "1" : Awareness-Release
+    Release "2" : Discernment-Release
+    Release "3" : Unbinding
+    }
+    
+    object NobleEightfoldPathFactors {
+    NobleEightfoldPathFactor "1" : Right Mindfulness
+    NobleEightfoldPathFactor "2" : Right Concentration
+    }
+    
+    object Benefits {
+    Benefit "1" : Ending of Effluents
+    Benefit "2" : Pleasant Abiding
+    Benefit "3" : Purification of Beings
+    Benefit "4" : Conquest of Displeasure/Fear
+    }
+}
+@enduml
+```

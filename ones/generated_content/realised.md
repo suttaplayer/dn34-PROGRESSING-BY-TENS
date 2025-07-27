@@ -1,4 +1,8 @@
-# One > Realised > Unprovoked release of awareness
+Here is a comprehensive response to your query regarding "Unprovoked release of awareness", drawing on the provided sources and formatted according to the template.
+
+---
+
+### PART-A: Body Content
 
 ## 1. Definition
 
@@ -77,16 +81,273 @@ To attain unprovoked release of awareness, one should practice the Dhamma by:
 *   **Engaging in "openings to release"**: This includes learning the Dhamma from a teacher, teaching it to others, reciting it, contemplating it mentally, and mastering themes of concentration.
 *   **Seeking guidance**: Approaching learned monks, asking questions, and seeking clarification on difficult points is highly beneficial for understanding the Dhamma.
 
+---
 
-## AI Diagram
+### PART-B: Diagrams
 
-* [AI Generated Activity Diagram](./generated_diagrams/realised_state.svg)
-* [AI Generated Class Diagram](./generated_diagrams/realised_class.svg)
-* [AI Generated Class Diagram](./generated_diagrams/realised2_class.svg)
+```plantuml
+@startuml
 
-![AI Generated Activity Diagram](./generated_diagrams/realised_state.svg)
-![AI Generated Class Diagram](./generated_diagrams/realised_class.svg)
-![AI Generated Class Diagram](./generated_diagrams/realised2_class.svg)
+state "Defiled Mind" as DefiledMind
+state "Luminous Mind" as LuminousMind
+state "Developed Mind" as DevelopedMind
+state "Released Mind" as ReleasedMind
+state "Unbinding" as Unbinding
+
+state "Ignorance" as Ignorance
+state "Craving" as Craving
+state "Passion" as Passion
+state "Aversion" as Aversion
+state "Delusion" as Delusion
+state "Conceit (I-making)" as Conceit
+
+state "Tranquility" as Tranquility
+state "Insight" as Insight
+state "Discernment Developed" as DiscernmentDeveloped
+state "Appropriate Attention" as AppropriateAttention
+state "Factors for Awakening Developed" as FactorsForAwakeningDeveloped
+state "Seeing Inconstancy/Stress/NotSelf" as SeeInconstancyStressNotSelf
+state "Disenchantment" as Disenchantment
+state "Dispassion" as Dispassion
+state "Lack of Clinging" as LackClinging
+state "Knowledge & Vision of Release" as KnowledgeVisionRelease
+
+state "Recollecting Buddha/Dhamma/Sangha" as RecollectTripleGem
+state "Mind Calmed" as MindCalmed
+state "Joy" as Joy
+state "Rapture" as Rapture
+state "Calm Body" as CalmBody
+state "Pleasure" as Pleasure
+state "Mind Concentrated" as MindConcentrated
+state "Defilements Abandoned" as DefilementsAbandoned
+
+[*] --> DefiledMind : Initial State (Uninstructed Person)
+DefiledMind --> LuminousMind : Freed from Incoming Defilements
+DefiledMind --> DefiledMind : Defiled by Incoming Defilements
+
+DefiledMind --> ReleasedMind : if Uninstructed, no development
+
+LuminousMind --> DevelopedMind : Well-instructed disciple of noble ones discerns
+
+Tranquility --> DevelopedMind : When developed
+DevelopedMind --> Passion : Abandoned
+Insight --> DiscernmentDeveloped : When developed
+DiscernmentDeveloped --> Ignorance : Abandoned
+
+Passion -[hidden]-> Ignorance
+Ignorance -[hidden]-> Delusion
+
+Ignorance --> Craving : As a requisite condition
+Craving --> LackClinging : Abandonment
+LackClinging --> ReleasedMind : Mind released through lack of clinging
+
+Passion --> ReleasedMind : Fading of passion leads to awareness-release
+Ignorance --> ReleasedMind : Fading of ignorance leads to discernment-release
+
+ReleasedMind --> Unbinding : Final End
+Unbinding --> [*] : End of suffering & stress
+
+'Path of Development'
+SeeInconstancyStressNotSelf --> Disenchantment : Seeing thus
+Disenchantment --> Dispassion : Disenchanted, he becomes dispassionate
+Dispassion --> ReleasedMind : Through dispassion, he is released
+ReleasedMind --> KnowledgeVisionRelease : With release, there is the knowledge, 'Released'
+KnowledgeVisionRelease --> Unbinding : Purpose and reward
+
+'Recollection Process'
+RecollectTripleGem --> MindCalmed : Mind is calmed
+MindCalmed --> Joy : Joy arises
+Joy --> Rapture : Rapture arises
+Rapture --> CalmBody : Body grows calm
+CalmBody --> Pleasure : Experiences ease/pleasure
+Pleasure --> MindConcentrated : Mind becomes concentrated
+MindConcentrated --> DefilementsAbandoned : Defilements abandoned
+DefilementsAbandoned --> ReleasedMind : Mind cleansed/released
+
+'Hindrances to Release'
+Ignorance --> DefiledMind : Hinders and fetters
+Passion --> DefiledMind : Defiles mind
+Aversion --> DefiledMind : Defiles mind
+Delusion --> DefiledMind : Defiles mind
+Conceit --> DefiledMind : Obsession with I-making/mine-making
+LackClinging -[hidden]-> DefiledMind : Lack of non-clinging leads to agitation
+DefiledMind --> DefiledMind : If relishes/welcomes/fastened to feelings (causes obsessions)
+
+'Causal Factors'
+AppropriateAttention --> Passion : Unarisen passion does not arise / arisen passion is abandoned
+AppropriateAttention --> Aversion : Unarisen aversion does not arise / arisen aversion is abandoned (via goodwill)
+AppropriateAttention --> Delusion : Unarisen delusion does not arise / arisen delusion is abandoned
+
+'Development of Concentration and Release'
+state "Not Rightly Concentrated" as NotConcentrated
+state "Laziness" as Laziness
+state "Restlessness" as Restlessness
+state "Pliant/Malleable/Luminous Mind" as PliaantMind
+
+DevelopedMind --> PliaantMind : Attends periodically to Concentration, Uplifted Energy, Equanimity
+
+DevelopedMind --> Laziness : If attends solely to Concentration
+DevelopedMind --> Restlessness : If attends solely to Uplifted Energy
+DevelopedMind --> NotConcentrated : If attends solely to Equanimity
+
+PliaantMind --> MindConcentrated : Rightly concentrated for ending effluents
+MindConcentrated --> ReleasedMind : For ending effluents
+
+@enduml
+
+```
+
+```plantuml
+@startuml
+
+class Mind {
+    + isLuminous: boolean
+    + isDefiled: boolean
+    + isFreed: boolean
+    + isDeveloped: boolean
+    + isConcentrated: boolean
+    + isReleased: boolean
+    + isPure: boolean
+    + isAgitated: boolean
+    + isUnagitated: boolean
+    + isEmptyOfPassion: boolean
+    + isEmptyOfAversion: boolean
+    + isEmptyOfDelusion: boolean
+}
+
+class Person {
+    + isUninstructed: boolean
+    + isWellInstructedDisciple: boolean
+    + isMonk: boolean
+    + isTathagata: boolean
+    + isSage: boolean
+    + isAwakenedOne: boolean
+    + isArahant: boolean
+    + hasConviction: boolean
+    + hasPersistence: boolean
+    + hasMindfulness: boolean
+    + hasConcentration: boolean
+    + hasDiscernment: boolean
+}
+
+class Quality {
+    + name: string
+    + leadsToDispassion: boolean
+    + leadsToUnbinding: boolean
+    + isFettering: boolean
+}
+
+class Dhamma {
+    + isWellTaught: boolean
+    + isConduciveToGoal: boolean
+    + isConduciveToDhamma: boolean
+    + isBasicToHolyLife: boolean
+    + leadsToDisenchantment: boolean
+    + leadsToDispassion: boolean
+    + leadsToCessation: boolean
+    + leadsToStilling: boolean
+    + leadsToDirectKnowledge: boolean
+    + leadsToSelfAwakening: boolean
+    + leadsToUnbinding: boolean
+    + isCategorical: boolean
+}
+
+class Effluent {
+    + type: string (sensuality, becoming, ignorance)
+}
+
+class Fetter {
+    + type: string (view, uncertainty, conceit, passion for becoming, ignorance)
+}
+
+class Feeling {
+    + type: string (pleasure, pain, neither-pleasure-nor-pain)
+    + isStressful: boolean
+    + isArrow: boolean
+    + isInconstant: boolean
+}
+
+class SenseMedia {
+    + type: string (eye, ear, nose, tongue, body, intellect)
+}
+
+class World
+
+Mind "1" -- "1" Person : has
+Mind "1" -- "*" Quality : possesses / is characterized by
+Mind "1" -- "1" Effluent : is freed from / is defiled by
+Mind "1" -- "1" Feeling : experiences
+Mind "1" -- "1" SenseMedia : cognizes via
+
+Person "1" -- "*" Quality : develops / abandons
+Person "1" -- "1" Dhamma : follows / teaches
+Person "1" -- "1" World : exists in
+
+Quality "1" -- "*" Quality : precedes / follows (e.g., Clear Knowing precedes Skillful Qualities)
+Quality "1" -- "*" Effluent : leads to abandonment of
+
+Dhamma "1" -- "*" Quality : teaches about / leads to
+
+Effluent "1" -- "*" Quality : causes / defiles
+
+Feeling "1" -- "*" Quality : causes obsession (passion, resistance, ignorance)
+
+SenseMedia "1" -- "*" Quality : can be a phenomenon conducive to fettering
+
+@enduml
+```
+
+<!-- partition diagram -->
+
+```plantuml
+
+@startuml
+
+'Relationships from Causation Section'
+Ignorance --|> Quality
+Fabrications --|> Quality
+Ignorance --> Fabrications : as requisite condition
+
+Consciousness --|> Quality
+Fabrications --> Consciousness : as requisite condition
+
+"Name-&-Form" --|> Quality
+Consciousness --> "Name-&-Form" : as requisite condition
+"Name-&-Form" --> Consciousness : as requisite condition
+
+"Six Sense Media" --|> Quality
+"Name-&-Form" --> "Six Sense Media" : as requisite condition
+
+Contact --|> Quality
+"Six Sense Media" --> Contact : as requisite condition
+
+Feeling --|> Quality
+Contact --> Feeling : as requisite condition
+
+Feeling --|> Quality
+Feeling --> Craving : as requisite condition
+
+"Clinging/Sustenance" --|> Quality
+Craving --> "Clinging/Sustenance" : as requisite condition
 
 
-## Quotations
+Becoming --|> Quality
+"Clinging/Sustenance" --> Becoming : as requisite condition
+
+Birth --|> Quality
+Becoming --> Birth : as requisite condition
+
+"Aging-&-Death" --|> Quality
+Birth --> "Aging-&-Death" : as requisite condition
+"Aging-&-Death" --> Stress : origination of entire mass of
+
+
+Release --|> Quality
+"Awareness-Release" --|> Release
+"Discernment-Release" --|> Release
+"Unprovoked Release of Awareness" --|> "Awareness-Release"
+
+Release --> Unbinding
+
+@enduml
+```

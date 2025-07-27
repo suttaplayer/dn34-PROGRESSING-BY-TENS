@@ -1,4 +1,4 @@
-# One > Distinction > Appropriate attention
+Here is a comprehensive response to your query regarding "Appropriate attention," drawing on the provided sources:
 
 ## 1. Definition
 
@@ -75,14 +75,184 @@ To embrace appropriate attention, one should cultivate the following practices:
 *   **Apply Specific Antidotes to Defilements**: Attend appropriately to **the theme of the unattractive** to abandon passion. Attend appropriately to **goodwill as an awareness-release** to abandon aversion.
 *   **Avoid Contempt and Scattering**: Do not hold the Dhamma talk, the speaker, or oneself in contempt. Listen to the Dhamma with an **unscattered mind, gathered into one**.
 
+## PART-B
 
-## AI Diagram
+```plantuml
+@startuml
+title Workflow of Appropriate Attention Leading to Release
 
-* [AI Generated Activity Diagram](./generated_diagrams/distinction_activity.svg)
-* [AI Generated Class Diagram](./generated_diagrams/distinction_class.svg)
+start
 
-![AI Generated Activity Diagram](./generated_diagrams/distinction_activity.svg)
-![AI Generated Class Diagram](./generated_diagrams/distinction_class.svg)
+:Discerns what ideas are fit for attention & attends to them;
+note right
+Or attends to another theme connected to skillfulness
 
+end note
 
-## Quotations
+if (Unskillful thoughts arise?) then (yes)
+  :Attends to relaxing of thought-fabrication;
+endif
+
+:Mind is calmed;
+:Joy is born;
+:Rapture arises;
+:Body grows calm;
+:Feels pleasure;
+:Mind becomes concentrated;
+note right
+Plaint, malleable, luminous, not brittle
+end note
+
+:Knows & sees what has come to be;
+
+:Is disenchanted;
+
+:Becomes dispassionate;
+
+:Is released;
+note right
+From effluents, suffering & stress
+
+end note
+
+stop
+@enduml
+```
+
+```plantuml
+@startuml
+title Class Diagram: Qualities and Their Relationships
+
+class Disciple {
+  + hasConviction
+  + hasPersistenceAroused
+  + hasEstablishedMindfulness
+  + isCenteredInConcentration
+  + isDiscerning
+  + isHeedful
+  + isArdent
+  + isResolute
+}
+
+class Mind {
+  + isLuminous
+  + isDefiled
+  + isPliant
+  + isMalleable
+  + isBrittle
+  + isConcentrated
+  + isReleased
+  + isUnreleased
+  + isClean
+  + isTurbid
+  + isMuddy
+}
+
+class Attention {
+  + type: "Appropriate" | "Inappropriate"
+}
+
+class Effluents {
+  + type: "Sensuality" | "Becoming" | "Ignorance"
+  - isArisen: boolean
+  - isAbandoned: boolean
+}
+
+class Delusion {
+  - isArisen: boolean
+  - isAbandoned: boolean
+}
+
+class Passion {
+  - isArisen: boolean
+  - isAbandoned: boolean
+}
+
+class Aversion {
+  - isArisen: boolean
+  - isAbandoned: boolean
+}
+
+class SkillfulQualities {
+  + increase(): void
+  + decline(): void
+}
+
+class UnskillfulQualities {
+  + increase(): void
+  + decline(): void
+}
+
+class MentalStates {
+  + Joy
+  + Rapture
+  + Calm
+  + Pleasure
+  + Concentration
+  + Disenchantment
+  + Dispassion
+  + Release
+}
+
+class NobleEightfoldPath {
+  + RightView
+  + RightResolve
+  + RightSpeech
+  + RightAction
+  + RightLivelihood
+  + RightEffort
+  + RightMindfulness
+  + RightConcentration
+}
+
+class FourNobleTruths {
+  + Stress
+  + OriginationOfStress
+  + CessationOfStress
+  + PathToCessationOfStress
+}
+
+class Fetters {
+  + SelfIdentificationView
+  + Doubt
+  + GraspingAtHabitsAndPractices
+}
+
+Disciple "1" -- "1" Mind : possesses
+Mind "1" -- "1" Attention : influenced by
+Attention "Appropriate" --> Mind : purifies Mind \n makes luminous, pliant, malleable, concentrated
+Attention "Inappropriate" --> Mind : defiles Mind
+
+Attention "Appropriate" --> Delusion : abandons Delusion
+Attention "Appropriate" --> Passion : abandons Passion
+Attention "Appropriate" --> Aversion : abandons Aversion
+
+Attention "Appropriate" --> MentalStates : leads to (sequence) \n Joy -> Rapture -> Calm -> Pleasure -> Concentration -> Knowing/Seeing -> Disenchantment -> Dispassion -> Release
+
+Attention "Appropriate" --> SkillfulQualities : develops
+Attention "Inappropriate" --> UnskillfulQualities : increases
+
+Disciple "1" -- "1" SkillfulQualities : cultivates
+SkillfulQualities "1" --> NobleEightfoldPath : contributes to development of
+
+Disciple "1" -- "4" FourNobleTruths : applies appropriate attention to discern
+FourNobleTruths "1" --> Fetters : understanding leads to abandonment of Fetters
+
+Mind "1" -- "0..*" Effluents : can be defiled by
+Mind "1" -- "0..*" Effluents : can be released from
+
+Effluents "1" <-- "1" Delusion : origination from
+Effluents "1" <-- "1" Passion : origination from
+Effluents "1" <-- "1" Aversion : origination from
+
+"Appropriate attention" --> "RightView" : causes arising of
+"RightView" "1" -- "5" SkillfulQualities : supported by Virtue, Learning, Discussion, Tranquility, Insight
+
+Attention "Appropriate" -- "7" "Seven Factors for Awakening" : leads to their mastery and pleasant abiding
+Disciple "1" -- "4" "Four Establishings of Mindfulness" : practices
+"Four Establishings of Mindfulness" <-- Attention : cultivated with Appropriate Attention
+"Four Establishings of Mindfulness" -- "7" "Seven Factors for Awakening" : brings to completion
+"Seven Factors for Awakening" -- "2" "Clear Knowing & Release" : brings to completion
+
+@enduml
+```

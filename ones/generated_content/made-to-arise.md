@@ -1,4 +1,6 @@
-# One > Made To Arise > Knowledge of the unprovoked
+In response to your query regarding "Knowledge of the unprovoked" from the Dasuttara Sutta (DN 34), drawing on the provided sources, here is a comprehensive response:
+
+***
 
 ### 1. Definition
 
@@ -76,14 +78,207 @@ To cultivate "knowledge of the unprovoked" and achieve the associated state of r
 *   **Non-Objectification and Reclusiveness:** Embrace non-objectification, which means not delighting in or enjoying objectification. Practice seclusion and reclusiveness, conversing only as necessary when visited.
 *   **Mindfulness of Body, Feelings, Mind, and Mental Qualities:** Remain focused on these in and of themselves, ardently, alertly, and mindfully, subduing greed and distress with reference to the world.
 
+***
 
-## AI Diagram
+### PART-B: Diagrams
 
-* [AI Generated State Diagram](./generated_diagrams/made-to-arise_state.svg)
-* [AI Generated Class Diagram](./generated_diagrams/made-to-arise_class.svg)
+```plantuml
+@startuml
 
-![AI Generated State Diagram](./generated_diagrams/made-to-arise_state.svg)
-![AI Generated Class Diagram](./generated_diagrams/made-to-arise_class.svg)
+state "Uninstructed Person" as Uninstructed {
+    state "Doesn't Discern Skillful/Unskillful" as UD_NoDiscern
+    state "Attends Inappropriately" as UD_InappropriateAttention
+    state "Relishes & Grasps 'Self'" as UD_ClingsSelf
+    state "Relishes Equanimity" as UD_ClingsEquanimity
+    state "Mind Defiled by Pass/Aversion/Delusion" as UD_DefiledMind
+    state "Unbound by Conceit-Obsession" as UD_Conceit
+    state "Suffering & Stress" as UD_Suffering
+    state "Future Birth & Aging" as UD_FutureBecoming
 
+    UD_NoDiscern --> UD_InappropriateAttention : leads to
+    UD_InappropriateAttention --> UD_DefiledMind : causes unarisen effluents to arise\n/arisen effluents to increase
+    UD_DefiledMind --> UD_Suffering : results in
+    UD_ClingsSelf --> UD_Suffering : leads to sorrow, lamentation, pain, distress, despair
+    UD_ClingsEquanimity --> UD_FutureBecoming : consciousness sustained by clinging
+    UD_Conceit --> UD_Suffering : no awareness/discernment release
 
-## Quotations
+    UD_Suffering --> UD_FutureBecoming : leads to renewed becoming
+}
+
+state "Instructed Disciple" as Instructed {
+    state "Discerns Skillful/Unskillful" as ID_Discerns
+    state "Attends Appropriately" as ID_AppropriateAttention
+    state "Develops Tranquility & Insight" as ID_TranquilityInsight
+    state "Mind Developed" as ID_MindDeveloped
+    state "Discernment Developed" as ID_DiscernmentDeveloped
+    state "Abandons Pass/Aversion/Delusion" as ID_DefilementsAbandoned
+    state "No I-making/Mine-making Conceit" as ID_NoConceit
+    state "Awareness-Release" as ID_AwarenessRelease
+    state "Discernment-Release" as ID_DiscernmentRelease
+    state "Unprovoked Awareness-Release" as ID_UnprovokedAwarenessRelease
+    state "Total Unbinding/End of Stress" as ID_Unbound
+
+    ID_Discerns --> ID_AppropriateAttention : leads to
+    ID_AppropriamentAttention --> ID_DefilementsAbandoned : prevents unarisen effluents / abandons arisen effluents
+    ID_TranquilityInsight --> ID_MindDeveloped : mind developed
+    ID_TranquilityInsight --> ID_DiscernmentDeveloped : discernment developed
+    ID_MindDeveloped --> ID_DefilementsAbandoned : passion abandoned
+    ID_DiscernmentDeveloped --> ID_DefilementsAbandoned : ignorance abandoned
+    ID_DefilementsAbandoned --> ID_AwarenessRelease : awareness-release from fading of passion
+    ID_DefilementsAbandoned --> ID_DiscernmentRelease : discernment-release from fading of ignorance
+    ID_NoConceit --> ID_AwarenessRelease : enables awareness-release
+    ID_NoConceit --> ID_DiscernmentRelease : enables discernment-release
+    ID_AwarenessRelease -right-> ID_UnprovokedAwarenessRelease : (empty of pass/aversion/delusion)
+    ID_DiscernmentRelease -right-> ID_UnprovokedAwarenessRelease
+    ID_UnprovokedAwarenessRelease --> ID_Unbound : leads to total unbinding
+
+    ID_Unbound -up-> ID_Unbound : loops with no further becoming
+
+    state "Balance Concentration, Energy, Equanimity" as ID_BalancePractice
+    ID_BalancePractice --> ID_MindDeveloped : mind pliant, malleable, luminous, not brittle, rightly concentrated
+    ID_MindDeveloped --> ID_UnprovokedAwarenessRelease
+}
+
+Uninstructed --> Instructed : through "development of the mind" for noble ones
+Uninstructed --> UD_Suffering : (default path for uninstructed)
+
+UD_ClingsEquanimity -[dotted]-> UD_FutureBecoming : (potential path even for those who reach equanimity but cling)
+
+@enduml
+
+```
+
+```plantuml
+@startuml
+!theme toy
+
+class Person {
+    +Mind mind
+    +Practice practice
+    +Knowledge knowledge
+    +Discernment discernment
+    +Virtue virtue
+}
+
+class Mind {
+    +bool isLuminous
+    +bool isDefiled
+    +bool isFreed
+    +bool isPliant
+    +bool isMalleable
+    +bool isConcentrated
+    +bool isUnconcentrated
+    +bool isReleased
+    +bool isUnreleased
+    +bool isUnprovoked
+    +bool isPerturbed
+    --
+    +cleanse(defilements)
+    +develop()
+    +attend(ideas)
+}
+
+class Qualities {
+    --
+    <<abstract>>
+}
+
+class UnskillfulQuality <<(U,red)>> extends Qualities {
+    +Passion passion
+    +Aversion aversion
+    +Delusion delusion
+    +Conceit conceit
+    +Clinging clinging
+    +Ignorance ignorance
+    --
+    +arise()
+    +increase()
+}
+
+class SkillfulQuality <<(S,green)>> extends Qualities {
+    +Tranquility samatha
+    +Insight vipassana
+    +Concentration
+    +UpliftedEnergy
+    +Equanimity
+    +Persistence
+    +Mindfulness
+    +RightAttention
+    +NonObjectification
+    --
+    +develop()
+    +decline()
+    +increase()
+    +abandon()
+}
+
+class Practice {
+    +attendToIdeas(ideas)
+    +developTranquility()
+    +developInsight()
+    +balanceThemes(concentration, energy, equanimity)
+    +abandonConceit()
+    +engageInDiscussion()
+    +cultivateNonObjectification()
+}
+
+class AwarenessRelease {
+    +bool isEffluentFree
+    +bool isEmptyOfPassion
+    +bool isEmptyOfAversion
+    +bool isEmptyOfDelusion
+}
+
+class DiscernmentRelease {
+    +bool isEffluentFree
+    +bool isEmptyOfPassion
+    +bool isEmptyOfAversion
+    +bool isEmptyOfDelusion
+}
+
+class Suffering {
+    +AgingAndDeath
+    +SorrowLamentation
+    +PainDistressDespair
+    +FutureBirth
+}
+
+class Dhamma {
+    +isWellTaught
+    +leadsToDisenchantment
+    +leadsToUnbinding
+    --
+    +teach()
+}
+
+Person "1" -- "1" Mind : has
+Person "1" -- "1" Practice : engages in
+Person "1" -- "1" Knowledge : has
+Person "1" -- "1" Discernment : has
+Person "1" -- "1" Virtue : has
+
+Mind "1" -- "*" Qualities : manifests
+Qualities <|-- UnskillfulQuality
+Qualities <|-- SkillfulQuality
+
+UnskillfulQuality "1" -- "*" Suffering : leads to
+SkillfulQuality "1" -- "*" AwarenessRelease : promotes
+SkillfulQuality "1" -- "*" DiscernmentRelease : promotes
+
+Practice "1" -- "*" Mind : impacts
+Practice "1" -- "*" SkillfulQuality : cultivates
+Practice "1" -- "*" UnskillfulQuality : abandons
+
+AwarenessRelease "1" -- "1" DiscernmentRelease : often intertwined
+AwarenessRelease <|-- "UnprovokedAwarenessRelease"
+
+Dhamma "1" -- "0..*" Person : teaches to
+
+Mind --> Ignorance : hindered by
+Ignorance --> UnskillfulQuality : causes arising of
+Clinging --> Mind : causes agitation in
+
+Suffering "1" -- "*" Person : affects
+
+@enduml
+```
