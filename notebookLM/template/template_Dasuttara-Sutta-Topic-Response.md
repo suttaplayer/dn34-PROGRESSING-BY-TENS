@@ -1,6 +1,6 @@
 # PART-A: Body Content
 
-In reference to the topic "<user-specified-topic>" from Dasuttara Sutta (DN 34). Use all sources to:
+In reference to the topic "<user-specified-topic>" from Dasuttara Sutta (DN 34). Use all .txt sources to:
 
 1. Provide a comprehensive definition of these qualities (ie. answer what)
 
@@ -54,6 +54,8 @@ Notes:
 
 5. Sections 3 & 4 should be a key contributors to shaping the State diagram in PART-B
 
+6. Use guide_*.md sources to help with prompt/query execute but do not use as sources for citation 
+
 
 
 
@@ -62,12 +64,16 @@ Notes:
 
 Using only information from PART-A of this response, create a separate:
 
-1. plantuml state diagram to represent any workflows, processes, or sequence of actions mentioned or implied in PART-A. Focus on key steps, states, decisions, loops and parallel activities
+1. plantuml state diagram(s) to represent any workflows, processes, or sequence of actions mentioned or implied in PART-A. Focus on key steps, states, decisions, loops and parallel activities
 
-2. plantuml class diagram that identifies the main entities, their attributes/operations, and relationships (associations, aggregations, compositions, inheritances) mentioned or implied in PART-A
+2. plantuml class diagram(s) that identifies the main entities, their attributes/operations, and relationships (associations, aggregations, compositions, inheritances) mentioned or implied in PART-A
 
 
 
 Note:
 
-* Do not add any notes to the diagrams as they are companions to PART-A text
+1. Do not add any notes to the diagrams as they are companions to PART-A text
+2. When generating the diagrams consider:
+    * Cognitive Load: Too many elements overwhelm the human brain's ability to process information simultaneousl (ie. no more than 9 node elements)
+    * Visual Clutter: A large number of nodes makes the diagram visually cluttered and difficult to parse quickly (ie. no more than 18 link elements).
+    * Focus: It becomes hard to identify the main purpose or key interactions when there are too many distractions (ie. create high-level, sub-diagrams or specific focus diagrams when beneficial).
