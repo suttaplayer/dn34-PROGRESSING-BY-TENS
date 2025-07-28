@@ -12,6 +12,8 @@ In reference to the topic "<user-specified-topic>" from Dasuttara Sutta (DN 34).
 
 5. Explain (beyond rehashing the requisites from the causation section) how to attend to these qualities and other factors for a favourable outcome (ie. answer how)
 
+6. List all similes that are relevent to qualities in the topic and explain how it can be understood (ie. answers just as -> in the same way)
+
 
 
 Use the following structure for PART-A response:
@@ -41,6 +43,11 @@ Use the following structure for PART-A response:
 ## 5. How To
 
 
+## 6. Similes
+
+
+<gemini-model-id>, <generation-date>
+
 
 Notes:
 
@@ -50,11 +57,13 @@ Notes:
 
 3. Provide "no more than two citations" per key point
 
-4. All causation related querying should use the saved note "Causation Expressions: A Reference Guide" to search the source texts using key causal identifiers as a guide
+4. Use same vocabulary as found in source due to semantic significance (eg. do not refer to Triple Gem as Jewels) 
 
-5. Sections 3 & 4 should be a key contributors to shaping the State diagram in PART-B
+5. All causation related querying should use the saved note "Causation Expressions: A Reference Guide" to search the source texts using key causal identifiers as a guide
 
-6. Use guide_*.md sources to help with prompt/query execute but do not use as sources for citation 
+6. Sections 3 & 4 should be a key contributors to shaping the State diagram in PART-B
+
+7. Use guide_*.md sources to help with prompt/query execution but do not use as sources for citation 
 
 
 
@@ -76,4 +85,8 @@ Note:
 2. When generating the diagrams consider:
     * Cognitive Load: Too many elements overwhelm the human brain's ability to process information simultaneousl (ie. no more than 9 node elements)
     * Visual Clutter: A large number of nodes makes the diagram visually cluttered and difficult to parse quickly (ie. no more than 18 link elements).
-    * Focus: It becomes hard to identify the main purpose or key interactions when there are too many distractions (ie. create high-level, sub-diagrams or specific focus diagrams when beneficial).
+    * Focus: It becomes hard to identify the main purpose or key interactions when there are too many distractions 
+3. If it would be beneficial to create multiple diagrams, consider:
+    * creating a high-level contextual diagram
+    * creating a sub-diagram (ie. the orchestration of a composite state or a class)
+    * creating a view/focus specific diagrams
