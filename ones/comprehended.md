@@ -1,71 +1,165 @@
 # One > Comprehended > Contact accompanied by effluents & subject to clinging
 
-## 1. Definition
+ 1. Definition
 
-The phrase "Contact accompanied by effluents & subject to clinging" refers to a specific dhamma or quality that **should be comprehended**.
+**Contact accompanied by effluents & subject to clinging** refers to sensory experience (the meeting of a sense organ, its corresponding object, and consciousness) that is still tainted by mental defilements (effluents) and serves as a basis for attachment (clinging).
 
-*   **Contact (phassa)**: This refers to the meeting of three things, such as the eye, forms, and eye-consciousness. There are six classes of contact: eye-contact, ear-contact, nose-contact, tongue-contact, body-contact, and intellect-contact.
-*   **Effluents (āsava)**: These are defilements that lead to further becoming, cause trouble, ripen in stress, and result in future birth, aging, and death. The three kinds of effluents are sensuality, becoming, and ignorance.
-*   **Clinging (upādāna)**: This is described as the desire and passion regarding the five clinging-aggregates. There are four types of clinging: sensuality clinging, view clinging, habit & practice clinging, and doctrine of self clinging. Clinging manifests as relishing, welcoming, and remaining fastened to feelings.
-*   **Five Clinging-Aggregates**: These are form, feeling, perception, fabrications, and consciousness. These aggregates are inherently stressful.
+In the context of Dhamma, there are six media of sensory contact: the eye, ear, nose, tongue, body, and intellect. For each sense, consciousness arises dependent on the sense organ and its object (e.g., eye and forms), and the meeting of these three is termed "contact". These contacts are inherently inconstant, changeable, and alterable. When such contact is experienced without proper understanding and accompanied by mental effluents like sensuality, becoming, and ignorance, it perpetuates the cycle of stress and suffering. Clinging, which is directly caused by craving and manifests as desire and passion for the five clinging-aggregates (form, feeling, perception, fabrications, consciousness), arises when one relishes and remains fastened to feelings experienced through contact. For the uninstructed individual, this clinging leads to the assumption of a self within these inconstant phenomena, thereby perpetuating agitation and suffering. To **comprehend** this Dhamma is to discern its true nature as inconstant, stressful, and not-self, understanding its role in the perpetuation of suffering.
 
-## 2. Allure & Drawbacks
+## 2. Considerations
 
-These qualities, particularly contact, need to be comprehended because of their inherent allure and drawbacks, which can lead to suffering if not properly understood.
+Comprehending **Contact accompanied by effluents & subject to clinging** is paramount for ending suffering and attaining liberation because it directly addresses the fundamental mechanism through which suffering arises and proliferates. By deeply discerning the origination, passing away, allure, and drawbacks of contact, and the escape from it, one understands how stress comes into play.
 
-*   **Allure**: Pleasure and happiness can arise in dependence on contact. When individuals relish, welcome, and remain fastened to pleasing forms, sounds, aromas, flavors, tactile sensations, and ideas, delight arises, leading to impulsion and being fettered. This delight in the six media of sensory contact is a source of stress.
-*   **Drawbacks**: The primary drawback is that phenomena like form, feeling, perception, fabrications, and consciousness (which arise from contact) are **inconstant, stressful, and subject to change**. If one relishes pleasant feelings, sorrows over painful feelings, or fails to discern the true nature of neutral feelings, it leads to obsessions with passion, resistance, or ignorance, making it impossible to end suffering and stress. Not discerning the allure, drawbacks, and escape from the six sense media means one has not escaped the cycle of suffering in the cosmos.
+This profound comprehension leads to the **cessation of passion, aversion, and delusion**, which are the very effluents that accompany contact and perpetuate clinging. When a practitioner ceases to relish, welcome, or remain fastened to feelings experienced through contact, the obsessions of passion, resistance, and ignorance are not aroused, thereby making the ending of suffering and stress possible. This transformative understanding, described as "breaking through contact", is crucial for abandoning ignorance and giving rise to clear knowing, leading to an "effluent-free awareness-release & discernment-release".
+
+The consistent comprehension of reality as impermanent, stressful, and not-self, particularly with regard to the five clinging-aggregates (which are intimately linked to contact and its consequences), is directly beneficial for realizing higher stages of attainment and ultimately unbinding. The ultimate result of such deep comprehension is a profound liberation, where "birth is ended, the holy life fulfilled, the task done. There is nothing further for this world". This consistent insight allows the practitioner to avoid the pitfalls of heedlessness, complacency, and false confidence, ensuring genuine progress on the path to freedom.
 
 ## 3. Causation
 
-### Causes/conditions for Contact
-*   Contact comes into play from the **six sense media** as a requisite condition.
-*   Contact also arises from **name-&-form** as a requisite condition.
+**Contact** is a fundamental link in the chain of dependent co-arising, arising dependent on the **six sense media** (eye, ear, nose, tongue, body, intellect). Specifically, for each sense, consciousness arises dependent on the sense organ and its object (e.g., eye and forms), and **the meeting of these three is contact**.
 
-### Effects from Contact
-*   From contact as a requisite condition comes **feeling**.
-*   From feeling as a requisite condition comes **craving**.
-*   Contact is the origination for **kamma (action)**.
-*   Contact is the origination of **perceptions, thoughts, and resolves**.
-*   Various **views** (e.g., eternalism, annihilationism) come from contact as a requisite condition.
-*   **Agitation and vacillation** come from contact as a requisite condition when one is immersed in craving.
+Contact becomes "accompanied by effluents & subject to clinging" through a causal sequence:
+*   **From contact as a requisite condition comes feeling** (pleasant, painful, or neither-pleasant-nor-painful).
+*   **From feeling as a requisite condition comes craving**.
+*   **Craving is the direct cause of clinging**. Desire and passion with regard to the five clinging-aggregates are themselves clinging.
+*   **Effluents (passion, aversion, delusion)** are fundamental roots of unskillful actions and can be aroused at the point of feeling.
+    *   If one **relishes, welcomes, or remains fastened to a pleasant feeling, passion-obsession gets obsessed**.
+    *   If one sorrows, grieves, and laments over a painful feeling, resistance-obsession gets obsessed.
+    *   If one **does not discern the origination, passing away, allure, drawback, or escape from a neutral feeling, ignorance-obsession gets obsessed**.
+*   **Ignorance** is the pervasive root of craving and leads to fabrications, thereby underpinning the entire cycle of suffering. This process is further fueled by **inappropriate attention** and a lack of association with people of integrity. The world is "smothered & enveloped" by craving, preventing liberation from transmigration.
 
-### Other
-*   The cessation of contact leads to the cessation of **feeling**.
-*   The origination of the world is dependent on the eye and forms, leading to eye-consciousness, contact, feeling, craving, clinging, becoming, birth, and consequently, aging-and-death, sorrow, lamentation, pain, distress, and despair.
-*   The six contact-media are considered dependently co-arisen phenomena.
+## 4. Complications
 
-## 4. Arising & Passing Away
+The failure to comprehend **Contact accompanied by effluents & subject to clinging** perpetuates suffering and significantly hinders liberation.
+*   If a person does not discern the impermanence and nature of feelings arising from contact, and the allure, drawback, and escape from them, then the **obsessions of passion, resistance, and ignorance will continue to overwhelm the mind, making the ending of suffering and stress impossible in the here and now**. This sustained ignorance, described as a "great delusion", leads to a continuation of the cycle of birth, aging, and death.
+*   Even if one has made some spiritual progress, subtle forms of clinging, such as the "I am" conceit, desire, and obsession, can persist unless one deeply focuses on the arising and passing away of the five clinging-aggregates. This indicates that superficial understanding is insufficient for complete liberation.
+*   Without proper comprehension, one may engage in **inappropriate attention**, allowing the mind to become impassioned and cling to phenomena, leading to an increase in stress and remaining "far from unbinding".
+*   Consciousness, if allowed to stand attached and watered with delight, will continue to exhibit **growth, increase, and proliferation**, ensuring renewed becoming rather than cessation.
+*   Such a lack of comprehension can lead to **wrong views** and prevents one from genuinely progressing on the path to self-awakening. It signifies not counting as a true contemplative or brahman and failing to attain the goal of the holy life.
 
-These qualities manifest themselves as momentary phenomena that are in a continuous cycle of arising and passing away.
+## PART-B: Causal and Relational Diagrams
 
-*   Contact, like other phenomena such as eye, forms, consciousness, feeling, perception, and intention, is described as **inconstant, changeable, and alterable**.
-*   The process involves intellect and ideas leading to intellect-consciousness; the meeting of these three is **contact**. From contact, feeling arises, which then leads to perception, thinking, and finally, complications that manifest as perceptions and categories of objectification in relation to past, present, and future ideas.
-*   When one is contacted, one feels, intends, and perceives; these phenomena are described as **wavering and fluctuating**, inconstant, changeable, and of a nature to become otherwise.
-*   One is "immersed in ignorance" if they do not discern contact's origination, passing away, and its origination & passing away. Conversely, clear knowing arises for an instructed disciple who discerns these aspects of contact.
-*   When feelings arise from contact, a lack of discernment (relishing pleasure, sorrowing over pain, or not understanding neutral feelings) leads to **passion, resistance, or ignorance obsessions**, preventing the cessation of suffering.
+## Diagram: Causal Flow
+```plantuml
+@startuml
+scale 0.8
 
-## 5. How To
+title Causal Flow of Contact, Effluents & Clinging
 
-To grow disenchanted with "Contact accompanied by effluents & subject to clinging" and ultimately end suffering, one must engage in a process of direct knowing and practice.
+state "Ignorance" as Ignorance <<root of defilements>>
+state "Six Sense Media" as SSM <<Basis for Contact>>
+state "Contact" as Contact <<Should be Comprehended>>
+state "Feeling" as Feeling
+state "Craving" as Craving
+state "Clinging" as Clinging
+state "Effluents (Passion, Aversion, Ignorance Obsessions)" as Effluents
+state "Amassed Stress & Suffering" as Stress <<Result>>
 
-*   **Discernment**: One must discern, as they have come to be, the origination, passing away, allure, drawbacks, and escape from these qualities (like contact, feelings, aggregates, and effluents). The Dhamma is taught for the purification of beings and the realization of unbinding by knowing and seeing things as they are.
-*   **Focus on Impermanence**: An instructed disciple should keep focusing on the **inconstancy, stressfulness, and not-self** nature of form, feeling, perception, fabrications, and consciousness.
-*   **Abandon Desire-Passion**: The subduing and abandoning of desire-passion for contact (and related phenomena like forms, feelings, perceptions, fabrications, and consciousness) is the **escape** from them. When one does not relish or remain fastened to sensual objects and ideas, delight does not arise, which leads to the **cessation of suffering and stress**. This involves abandoning passion-obsession, abolishing resistance-obsession, and uprooting ignorance-obsession.
-*   **Develop Concentration**: A monk should develop concentration to discern the inconstant nature of the eye, forms, eye-consciousness, eye-contact, and feelings arising from it.
-*   **Noble Eightfold Path**: This path is the practice leading to the cessation of contact and feeling. It is developed for direct knowledge, comprehension, and the abandoning of the four floods (sensuality, becoming, views, ignorance).
-*   **Association and Hearing Dhamma**: **Associating with people of integrity** and **hearing the true Dhamma** can help one understand that these clinging-based phenomena are "diseases, cancers, arrows," leading to their cessation.
+state "Comprehension of Contact" as Comprehension <<Antidote>>
+state "Non-relishing, Non-welcoming, Non-fastening" as NonAttachment <<Key Practice>>
+state "No Obsessions" as NoObsessions <<Effect of Non-Attachment>>
+state "Ending of Stress & Unbinding" as Unbinding <<Goal>>
 
+[*] --> Ignorance : Undiscerning
+Ignorance --> SSM : Perpetuates Conditions
+SSM --> Contact : Gives rise to
+Contact --> Feeling : Requisite Condition
+Feeling --> Craving : Requisite Condition
+Craving --> Clinging : Direct Cause
+Craving --> Effluents : Fuels obsessions
+Clinging --> Stress : Leads to
+Effluents --> Stress : Aggravates
 
-## AI Diagram
+note right of Effluents
+  Relishing pleasant feeling -> Passion obsession
+  Grieving painful feeling -> Resistance obsession
+  Not discerning neutral feeling -> Ignorance obsession
+ 
+end note
 
-* [AI Generated Activity Diagram](./generated_diagrams/comprehended_activity.svg)
-* [AI Generated Class Diagram](./generated_diagrams/comprehended_class.svg)
+note bottom of Stress
+  Perpetuates transmigration
+ 
+end note
 
-![AI Generated Activity Diagram](./generated_diagrams/comprehended_activity.svg)
-![AI Generated Class Diagram](./generated_diagrams/comprehended_class.svg)
+state "The Path to Cessation" {
+  Comprehension --> NonAttachment : By discerning origination, passing away, allure, drawbacks, escape
+  NonAttachment --> NoObsessions : Prevents obsessions from arising
+  NoObsessions --> Unbinding : Leads to effluent-free release
+}
 
+Comprehension -[dotted]-> Contact : Understanding nature
+Comprehension -[dotted]-> Effluents : Weakens hold
+Comprehension -[dotted]-> Clinging : Weakens hold
 
-## Quotations
+Stress -[dashed]-> [*] : Cycle of suffering (without comprehension)
+Unbinding -[dashed]-> End : Final Release
 
-[^4]: 'The six classes of feeling should be known.' Thus it was said. In reference to what was it said? Dependent on the eye & forms there arises consciousness at the eye. The meeting of the three is contact. With contact as a requisite condition there is feeling. 
+@enduml
+```
+
+## Diagram: Relational Context
+```plantuml
+@startuml
+scale 0.7
+
+title Relational Context: Contact, Effluents & Clinging
+
+rectangle "Causative Factors" {
+  state "Six Sense Media" as SSM [[#Six Sense Media]]
+  state "Ignorance" as Ignorance <<Root of Defilements>> [[#Ignorance]]
+}
+
+rectangle "The Phenomenon" {
+  state "Contact" as Contact <<Should be Comprehended>> [[#Contact]]
+}
+
+rectangle "Consequences (without Comprehension)" {
+  state "Feelings" as Feelings [[#Feelings]]
+  state "Craving" as Craving [[#Craving]]
+  state "Clinging" as Clinging [[#Clinging]]
+  state "Effluents (Passion, Aversion, Ignorance Obsessions)" as Effluents [[#Effluents]]
+  state "Stress & Suffering" as Stress <<Perpetuates Becoming>> [[#Stress]]
+}
+
+rectangle "Path to Liberation (Comprehension)" {
+  state "Right View / Discernment" as Discernment <<Antidote>> [[#Right View]]
+  state "Noble Eightfold Path" as NEP [[#Noble Eightfold Path]]
+  state "Ending of Obsessions" as EndingObsessions
+  state "Release / Unbinding" as Release <<Goal>> [[#Unbinding]]
+}
+
+SSM --> Contact : Gives rise to
+Ignorance --> Craving : Root
+Ignorance --> Effluents : Root of Unskillful
+
+Contact --> Feelings : Requisite Condition
+Feelings --> Craving : Requisite Condition
+Craving --> Clinging : Direct Cause
+Craving --> Effluents : Fuels obsessions (via relishing/welcoming feelings)
+Clinging --> Stress : Leads to
+
+Contact -[dotted]-> Effluents : Accompanied by (if not comprehended)
+Contact -[dotted]-> Clinging : Subject to (if not comprehended)
+
+Comprehension --|> Contact : Deep understanding
+Discernment --> NEP : Forerunner
+NEP --> EndingObsessions : Leads to abandonment of hindrances, obsessions
+EndingObsessions --> Release : Effluent-free awareness/discernment release
+
+note right of Contact
+  Comprehending contact means discerning its origination,
+  passing away, allure, drawbacks, and escape.
+ 
+end note
+
+note left of Release
+  Birth is ended, holy life fulfilled.
+ 
+end note
+
+Stress -[dashed]-> Ignorance : Perpetuates cycle (if not addressed)
+Release -[dashed]-> Ignorance : Breaks cycle (No further becoming)
+
+@enduml
+```

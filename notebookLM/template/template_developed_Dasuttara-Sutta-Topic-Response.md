@@ -1,47 +1,173 @@
-### PART-A: Body Content
-In reference to a specific topic within the "Developed" category (e.g., "Developed Mind", "Developed Faculties") as part of a "best practitioners reference guide". Use all .txt sources to:
-1.  Provide a comprehensive definition of the 'developed' state of these qualities or practitioners (i.e., answer what).
-2.  List why these 'developed' qualities or practitioners need to be considered; explain their overall favorable/unfavorable impact and the ultimate positive/negative states or benefits/losses that result from their development (i.e., answer why).
-3.  List causes/conditions and effect pairs related to the development of these qualities or practitioners (i.e., answer when).
-4.  Describe where within the tenfold path (i.e., training process) and/or one's observation of arising & passing away (i.e., experience of momentary phenomena) do other skillful or unskillful qualities manifest themselves in relation to these qualities being hindered or supported in their development (i.e., answer where).
-5.  Explain (beyond rehashing the requisites from the causation section) how to attend to the cultivation and maintenance of these developed qualities or characteristics of practitioners for a favorable outcome (i.e., answer how).
+**NotebookLM Context**
+In the **Dasuttara Sutta (DN 34)**, Venerable Sāriputta delivers a masterful (albeit broad & brief) coverage of dhammas using a **"progressing by tens" framework**. The framework spans 10 incremental sets starting from sets of 1, then sets of 2, and so on until the sets of 10. Each numbered set covers 10 categories (eg. "helpful", "developed", "comprehended", etc).
 
+**This very document is a template** that is used for the purpose of instructing NotebookLM on tasks that are related to a particular numbered set and category combination referred to as a chapter. 
+
+Herein, represents a single chapter of a large body of work which details a particular dhamma topic of which Venerable Sāriputta said in brief. This body of work will be studied by determined & committed practitioners that intend to practice well, straightforwardly, methodically and masterfully. 
+
+**This specific chapter**, and the respective **framework reference** is **determined via the user specified arguments** in the initiating query/prompt:
+    eg. 
+    Consider the following query/prompt user arguments:
+        1. **user-specified-progression-index**=5
+        2. **user-specified-category**="helpful"
+        3. **user-specified-ref**="Five factors for exertion"
+
+    Thus using (5 & "helpful") as the key, it stands to reason that the query/prompt is referring to the following passage (from Dasuttara Sutta DN 34):
+
+    > 'Which five dhammas are very helpful? Five factors for exertion: There is the case, friends, where a monk has conviction, is convinced of the Tathāgata's awakening: 'Indeed, the Blessed One is worthy & rightly self-awakened, consummate in clear-knowing & conduct, well-gone, an expert with regard to the cosmos, unexcelled trainer of people fit to be tamed, teacher of devas & human beings, awakened, blessed.' ...
+
+
+**NotebookLM Resources**
+There are three types of sources that are part of this NotebookLM notebook: 
+1. core source, 
+2. guide sources & 
+3. templates. 
+
+The non-plantuml guide sources are indexed and aggregated content which was derived from the core sources. Their purpose is for NotebookLM to use them as quick-references as they are NOT comprehensive and NotebookLM will still need to search beyond these guides. Thus, using these guides, seek out the actual citation from the core sources. Hence, 
+* Draw citations from the following core sources:
+    AN_nblm.txt  DN_nblm.txt  KN_Dhp_nblm.txt  KN_Iti_nblm.txt  KN_Khp_nblm.txt  KN_StNp_nblm.txt  KN_Thag_nblm.txt  KN_Thig_nblm.txt  KN_Ud_nblm.txt  MN_nblm.txt  SN_nblm.txt
+* Leverage indexed and aggregated keys from guide sources:
+    guide_antidotes.md             guide_core_concepts.md                     guide_mental_qualites.md              guide_practices.md
+    guide_causation_expression.md  guide_dhamma_outcomes_and_consequences.md  guide_path_stages_and_progressions.md 
+* Apply diagram modeling guidelines from plantuml guide source:
+    guide_plantuml_state_diagram.md     guide_plantuml_class_diagram.md
+
+
+NotebookLM Task:
+    **Determine the scope of work** for this chapter by:
+        * Consider the following exception:
+             if (<user-specified-progression-index> == 2 and <user-specified-ref> = "Mindfulness & alertness") then 
+                <user-specified-progression-index> = 1  // treat as a singleton concept
+                <chapter-progression-text> = "Mindfulness & alertness"
+                <chapter-progression-scope-array> = ["Mindfulness & alertness"]
+             endif
+        * Calculate value of <chapter-progression-text>
+            * Using <user-specified-progression-index> and <user-specified-category> to query the text in DN 34:
+                <chapter-progression-text> = resultant-query-text  
+                if (<user-specified-ref> is not found in <chapter-progression-text>) then 
+                    throw UserSpecifiedRefMismatchError
+                endif
+        * Calculate value of <chapter-progression-scope-array>
+            * Parse <chapter-progression-text> into an array of strings
+                <chapter-progression-scope-array> = resultant-array-of-strings
+                if (<user-specified-progression-index> !== <chapter-progression-scope-array>.len()) then
+                    throw UserSpecifiedProgressionIndexMismatchError
+                endif
+
+
+**PART-A: Body Content**  
+NotebookLM Task:
+    * Produce a comprehensive analysis & insights on <chapter-progression-scope-array>
+        1. Use sub-headings & lists over large body paragraphs to make the content easier to navigate and consume
+        2. Provide "no more than two citations" per key point
+        3. Use same vocabulary as found in sources due to semantic significance (eg. do not refer to Triple Gem as Jewels)
+        4. Draw all citations from the following core sources only
+        5. Do not cite any reference to guide or template sources
+        6. The structure of this chapter has been designed to give the practitioner a valuable map that answers what, why, when, where & how.  Avoid overlap of content where possible between sections.
+        7. The generated content in PART-A::Sections 3 & 4 should be a key contributor to shaping the State diagram in PART-B.
+
+---
 Use the following structure for PART-A response:
-#### 1. Definition
-Instruct the AI to define the specific 'developed' quality or the characteristics of a 'best practitioner', drawing from sources that describe states of cultivation, refinement, and attainment. Emphasize the qualities of a mind that is 'developed' (e.g., **pliant, malleable, luminous**) and the attributes of a 'consummate' or 'fully accomplished' practitioner, such as an **Arahant** or a **well-instructed disciple of the noble ones**.
+# <user-specified-progression-index> > <user-specified-category> > <user-specified-ref>
 
-#### 2. Considerations
-Instruct the AI to explain the significance of cultivating and possessing these developed qualities or being a 'best practitioner'. Focus on the **favorable outcomes and benefits** as detailed in `guide_dhamma_outcomes_and_consequences.md`, such as **Unbinding (Nibbāna)**, **Release (Vimutti)** (e.g., awareness-release, discernment-release), **Purity (Suddhi)** (e.g., cleansing of mind, ending of effluents), and the **growth of skillful mental qualities** (e.g., increased discernment, concentration, virtue). Highlight how these developments contribute to the **ending of suffering and stress**, and the **stability, non-confusion, and non-disappearance of the True Dhamma**.
+## 1. Definition
+NotebookLM Task:
+    Answer 'the what' question by:
+        * Providing a comprehensive definition of <chapter-progression-text> in the context of active cultivation, growth, and the ongoing process of transformation within the holy life
+        * Letting the practitioner discern the inherent nature of the quality to be cultivated and its ultimate purpose in progressing along the path
 
-#### 3. Causation
-##### Causes/conditions For Development
-Instruct the AI to identify factors, practices, or preceding states that are **necessary or essential conditions** for the 'development' of the qualities or the 'best practitioner' characteristics. Reference `guide_causation_expression.md` for terms like "**_ as a requisite condition**", "**From _ comes _**", and "**_ is rooted in _**". Include practices from `guide_practices.md` that lead to development, such as **appropriate attention**, **recollecting the Buddha, Dhamma, Saṅgha, one's virtues, generosity, and devas**, **aroused persistence**, **established mindfulness**, and **discernment**.
+## 2. Considerations
+NotebookLM Task:
+    Answer 'the why' question by:
+        * with respect to <chapter-progression-text>:
+            * Explain the significance of diligently cultivating and progressively deepening these dhammas for a masterful practice
+            * Elucidate the transformative benefits and the sequence of refined states that result from their diligent development, countering heedlessness, complacency, and any false sense of confidence 
+        * Letting the practitioner discern the profound impact and enduring advantages gained by consistently developing <user-specified-ref>
 
-##### Effects From Development
-Instruct the AI to detail the **direct results and outcomes** that arise when these qualities are 'developed' or when one embodies the characteristics of a 'best practitioner'. Utilize `guide_causation_expression.md` for expressions such as "**_ brings _ into play**", "**_ produces _**", "**_ ripens in _**", "**_ leads to _**", and "**_ makes _**". Focus on changes in mind (e.g., becoming pliant, malleable, luminous, concentrated), conduct, the attainment of **release** (e.g., effluent-free awareness-release and discernment-release), and the ability to **help others**.
+    * Consider using guide_mental_qualites.md
+    * Consider using guide_dhamma_outcomes_and_consequences.md
+    * Consider using guide_path_stages_and_progressions.md
 
-##### Other Causal Factors
-Instruct the AI to include any **broader conditions or influencing factors** (e.g., hindrances, external support) that either enable or impede the development process, drawing on `guide_causation_expression.md`'s "Conditions & Prerequisites" section, particularly "**hindered by _ & fettered by _**". For example, **ignorance and craving** are key hindrances.
+## 3. Causation
+NotebookLM Task:
+    Answer 'the when' question by:
+        * In a structured list(s) format (for each element in <chapter-progression-scope-array>): 
+            * List all requisite and result pairs identifying how development unfolds and how it is supported by, or enables, other conditions and progressive states
+            * List other related causal factors, practices, or preceding states that are essential for the initiation and effective progression of cultivation
+        * Letting the practitioner discern the opportune moments and the necessary enabling conditions for effectively undertaking and sustaining the development of <user-specified-ref>
 
-#### 4. Complications
-Instruct the AI to describe the challenges, obstacles, or negative states that hinder the development of these qualities or prevent one from becoming a 'best practitioner'. This may include **unskillful mental qualities** (e.g., passion, aversion, delusion), **wrong views**, **laziness**, **unconcentrated mind**, or **inappropriate attention**. Also, explain the adverse consequences of **neglecting or failing to develop** these qualities, linking to **unfavorable outcomes and losses** as described in `guide_dhamma_outcomes_and_consequences.md`, such as **continued suffering and stress**, inability to purify vision, or inability to attain unbinding.
+    * Consider using guide_causation_expression.md
+    * Consider using guide_antidotes.md
+    * Consider using guide_path_stages_and_progressions.md
+    * Consider using guide_practices.md
 
-#### 5. How To
-Instruct the AI to provide practical advice and methods for cultivating and maintaining these 'developed' qualities, or for progressing towards becoming a 'best practitioner'. This section should go beyond simply listing requisites. Encourage drawing on `guide_practices.md` for **foundational principles** (e.g., abandoning unskillful, developing skillful), **mental cultivation** (e.g., restraint of sense faculties, mindfulness of breathing, recollections, concentration themes), and the **stages of attainment**. Emphasize **training oneself**, developing specific faculties (e.g., **conviction, persistence, mindfulness, concentration, discernment**), **practicing virtue**, and **associating with people of integrity**. The ultimate aim is to **know the goal and experience the Dhamma, leading to bliss**, and to **put an end to suffering & stress**.
+## 4. Complications
+NotebookLM Task:
+    Answer 'the where' question by:
+        * with respect to <chapter-progression-text>:
+            * Describe where in the training and/or in momentary phenomena, the challenges, hindrances, or unskillful states impede or undermine the development of <chapter-progression-text>
+            * Explain how the lack of development or regression in <user-specified-ref> perpetuates unfavorable outcomes and suffering, addressing the practitioner's difficulty in reconciling training and momentary phenomena
+        * Letting the practitioner discern the specific pitfalls and resistances encountered during the cultivation process that <user-specified-ref> helps to overcome or prevent
+
+    * Consider using guide_dhamma_outcomes_and_consequences.md
+    * Consider using guide_antidotes.md
+    * Consider using guide_path_stages_and_progressions.md
+
+## 5. How To
+NotebookLM Task:
+    Answer 'the how' question by:
+        * Providing practical advice and methods for initiating, sustaining, and deepening the cultivation of <user-specified-ref>, guiding the practitioner towards becoming a 'masterful practitioner'. This section should go beyond simply listing requisites mentioned in Section 3. 
+        * Letting the practitioner discern how to effectively incorporate <user-specified-ref> into their ongoing practice.
+
+    * Consider using guide_antidotes.md
+    * Consider using guide_practices.md
+    * Consider using guide_mental_qualites.md
+
+## 6. Similes
+NotebookLM Task:
+    Answer 'is there a helpful analogy' question by:
+        * In a structured list(s) format (for each element in <chapter-progression-scope-array>): 
+            * Describe the relevant simile and its featured quality
+            * Explain how this simile helps the practitioner discern the dynamic nature, progressive stages, or transformative potential of cultivating <user-specified-ref>
 
 ---
 
-### PART-B: Diagrams
-Using only information from PART-A of this response, create a separate:
-1.  plantuml state diagram(s) to represent any workflows, processes, or sequence of actions mentioned or implied in PART-A related to the development of qualities or the progression of a practitioner. Focus on key steps, states, transitions, and the transformation from an undeveloped to a developed state. Consider using composite states for complex stages (e.g., "Training Stages") to manage cognitive load and visual clutter as per `guide_plantuml_state_diagram.md`.
-    *   **Hint:** A high-level state diagram could represent the progression from an 'Undeveloped' state through 'Training Stages' (e.g., Virtue, Concentration, Discernment) leading to 'Developed' states or 'Liberation'.
+Use the following structure for PART-B response:
 
-2.  plantuml class diagram(s) that identifies the main entities (e.g., 'Practitioner', 'Skillful Qualities', 'Unskillful Qualities', 'Mind', 'Dhamma', 'Outcomes'), their attributes/operations, and relationships (associations, aggregations, compositions, inheritances) mentioned or implied in PART-A regarding the 'developed' state or 'best practitioners'. Use aliases for clarity as per `guide_plantuml_class_diagram.md`.
-    *   **Hint:** Consider a 'Practitioner' class with attributes like 'virtueLevel', 'concentrationLevel', 'discernmentLevel', and relationships to 'SkillfulQualities' (which they cultivate) and 'UnskillfulQualities' (which they abandon).
+**PART-B: PlantUML Diagrams**  
+NotebookLM Common Diagram Requirements:
+1. Use the generated content from PART-A of this response as the primary source for generating diagrams
+2. Do not add any notes to the diagrams as they are companions to PART-A text
+3. Do not add or append any citation references with block_id's within "[]" to elements or links
+4. When generating the diagrams, consider:
+    * element_threshold = 9; links_threshold = 18
+    * if (number_of_elements > element_threshold) or number_of_links > links_threshold) then create another diagram  
+    * Cognitive Load: Too many elements overwhelm the human brain's ability to process information simultaneously
+    * Visual Clutter: A large number of nodes makes the diagram visually cluttered and difficult to parse quickly
+    * Focus: It becomes hard to identify the main purpose or key interactions when there are too many distractions 
+5. If generating multiple diagrams, consider:
+    * creating a high-level contextual diagram
+    * creating a sub-diagram (ie. the orchestration of a composite state or a class)
+    * creating a view/focus specific diagrams
 
-Note:
-1.  Do not add any notes to the diagrams as they are companions to PART-A text.
-2.  When generating the diagrams consider:
-    *   Cognitive Load: Too many elements overwhelm the human brain's ability to process information simultaneously (i.e., no more than 9 node elements).
-    *   Visual Clutter: A large number of nodes makes the diagram visually cluttered and difficult to parse quickly (i.e., no more than 18 link elements).
-    *   Focus: It becomes hard to identify the main purpose or key interactions when there are too many distractions (i.e., create high-level, sub-diagrams or specific focus diagrams when beneficial).
+## 7. Behavioural Model
+NotebookLM Task:
+    * Generate 1 or more PlantUML state diagram(s) to represent the progressive stages of development of <user-specified-ref>. Focus on key cultivation steps, internal states of mindful practice, and the transitions between states as skillful qualities are developed or unskillful ones are abandoned. Emphasize iterative refinement, virtuous cycles, and the flow of practice as described in PART-A. 
+        * Let the practitioner discern the operational flow of <user-specified-ref> in a behavioral context, showing how practice leads to transformation.
+
+        * Consider using guide_plantuml_state_diagram.md
+        * Consider using guide_mental_qualites.md
+        * Consider using guide_path_stages_and_progressions.md
+        * Consider using guide_antidotes.md
+        * Consider using guide_practices.md
+
+## 8. Structural Model
+NotebookLM Task:
+    * Generate 1 or more PlantUML class diagram(s) that identifies the main qualities, faculties, or mental states involved in the development of <user-specified-ref>. Show how they relate, support, or combine to form a developed practitioner. Illustrate key attributes that characterize the cultivated state and how different aspects of development interlink. 
+        * Let the practitioner discern how <user-specified-ref> operates in a conceptual/structural context, revealing the relationships and composition of developed states
+
+        * Consider using guide_plantuml_class_diagram.md
+        * Consider using guide_mental_qualites.md
+        * Consider using guide_path_stages_and_progressions.md
+        * Consider using guide_antidotes.md
+        * Consider using guide_practices.md

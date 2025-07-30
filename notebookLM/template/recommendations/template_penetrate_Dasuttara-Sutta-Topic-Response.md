@@ -96,7 +96,7 @@ Training --> DirectKnowledge : Develops virtue, mind, discernment
 DirectKnowledge --> Released : Gnoses of emancipation, ends effluents
 Released --> [*]
 
-state "Training" {
+state Training {
     state Virtue
     state Concentration
     state Discernment
@@ -194,12 +194,12 @@ UnskillfulQualities "1" --> "1" Suffering : leads_to
 Release "1" -- "0..1" Practitioner : attained_by
 Suffering "1" -- "0..1" Practitioner : experienced_by
 
-SkillfulQualities <|-- "RightView" as RightView
-SkillfulQualities <|-- "RightEffort" as RightEffort
-SkillfulQualities <|-- "RightMindfulness" as RightMindfulness
-SkillfulQualities <|-- "RightConcentration" as RightConcentration
+SkillfulQualities <|-- "RightView" 
+SkillfulQualities <|-- "RightEffort" 
+SkillfulQualities <|-- "RightMindfulness"
+SkillfulQualities <|-- "RightConcentration"
 
-UnskillfulQualities <|-- "Ignorance" as Ignorance
+UnskillfulQualities <|-- "Ignorance" 
 
 RightView "1" -- "1" Dhamma : is_knowledge_of
 

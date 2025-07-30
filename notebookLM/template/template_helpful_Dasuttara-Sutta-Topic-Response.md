@@ -1,202 +1,178 @@
-### PART-A: Body Content
-In reference to the topic "Helpful" qualities as defined by the Dhamma, particularly drawing on the provided sources.
+**NotebookLM Context**
+In the **Dasuttara Sutta (DN 34)**, Venerable Sāriputta delivers a masterful (albeit broad & brief) coverage of dhammas using a **"progressing by tens" framework**. The framework spans 10 incremental sets starting from sets of 1, then sets of 2, and so on until the sets of 10. Each numbered set covers 10 categories (eg. "helpful", "developed", "comprehended", etc).
 
-#### 1. Definition
-**"Helpful" qualities** are those that are **conducive to benefit (hita) and happiness (sukha)** for oneself and others. This category includes qualities that align with the **Dhamma and Vinaya (discipline)** and are explicitly taught by the **Tathāgata** as clear and beneficial. They are **connected with the goal (attha) and fundamental to the holy life (brahmacariya)**.
+**This very document is a template** that is used for the purpose of instructing NotebookLM on tasks that are related to a particular numbered set and category combination referred to as a chapter. 
 
-Examples of qualities frequently described as helpful or leading to beneficial outcomes in the sources include:
-*   **Heedfulness (Appamāda)**, which is considered the **root of all skillful qualities**.
-*   **Discernment (Paññā)**, which is the **treasure of human beings** and leads to the arising of the goal.
-*   **Virtue (Sīla)**, described as **good all the way through old age**.
-*   **Conviction (Saddhā)**, which is **good when established**.
-*   **Generosity (Cāga)**, characterized as being **freely generous and openhanded**.
-*   **Right View (Sammā Diṭṭhi)**, identified as the **forerunner of the path**.
-*   **Right Effort (Sammā Vāyāma)**, involving **aroused persistence, steadfast and solid in effort**.
-*   **Right Mindfulness (Sammā Sati)**, being **highly meticulous and remembering**.
-*   **Right Concentration (Sammā Samādhi)**, which leads to the mind becoming **pliant, malleable, and luminous**.
-*   **Goodwill (Mettā)**, which, when developed, is described as an **awareness-release**.
-*   **Associating with people of integrity** and **listening to the True Dhamma**.
-*   **Practicing the Dhamma in accordance with the Dhamma**.
+Herein, represents a single chapter of a large body of work which details a particular dhamma topic of which Venerable Sāriputta said in brief. This body of work will be studied by determined & committed practitioners that intend to practice well, straightforwardly, methodically and masterfully. 
 
-#### 2. Considerations
-Engaging with "helpful" qualities is paramount for the **purification of beings, overcoming sorrow and lamentation, disappearing pain and distress, attaining the right method, and realizing unbinding**. These qualities secure **benefit in this life and in lives to come**, often leading to **rebirth in good destinations or heavenly worlds**. The holy life itself is lived for the ultimate purpose of **direct knowledge and full comprehension**.
+**This specific chapter**, and the respective **framework reference** is **determined via the user specified arguments** in the initiating query/prompt:
+    eg. 
+    Consider the following query/prompt user arguments:
+        1. **user-specified-progression-index**=5
+        2. **user-specified-category**="helpful"
+        3. **user-specified-ref**="Five factors for exertion"
 
-The favorable impacts and benefits include:
-*   **Gaining a sense of the goal and the Dhamma**, which gives rise to **joy, rapture, calm, and concentration**.
-*   Leading to **dispassion, cessation, and liberation from suffering and stress**. This involves the **ending of effluents** and the attainment of **effluent-free awareness-release and discernment-release**.
-*   **Making the mind pliant, malleable, luminous, and not brittle**, allowing it to be **rightly concentrated for ending effluents**.
-*   **Increasing one's virtue, concentration, discernment, release, and knowledge & vision of release**, and enabling one to **encourage others** in these qualities.
-*   Contributing to the **stability, non-confusion, and non-disappearance of the True Dhamma**.
-*   **Protecting against various dangers and defilements**, such as Māra's realm, and counteracting passion, aversion, and delusion.
-*   Enabling one to **"cross over birth and aging"** by being at peace, with vices evaporated, undesiring, and untroubled.
-*   **Amassing much merit and helping the True Dhamma to remain**.
+    Thus using (5 & "helpful") as the key, it stands to reason that the query/prompt is referring to the following passage (from Dasuttara Sutta DN 34):
 
-#### 3. Causation
-##### Causes/conditions For
-*   **Heedfulness** serves as the **root of all skillful qualities**.
-*   **Conviction** (in the Buddha, Dhamma, and Saṅgha) leads to **visiting** teachers and companions and fosters **persistence**.
-*   **Listening to the True Dhamma** is a condition for **learning**, which in turn leads to **discernment**.
-*   The **discernment of Dhamma** (dialogues, narratives, etc.) makes one **"one with a sense of Dhamma"**.
-*   **Appropriate attention** is a cause for **distinction**.
-*   **Recollecting the Tathāgata, Dhamma, Saṅgha, one's virtues, generosity, and devas** causes the mind to become **cleansed, calmed, straight, joyful, leading to rapture, calm body, ease, and concentration**.
-*   **Aroused persistence, established mindfulness, and discernment** are prerequisites for **further developing qualities** such as the six recollections.
-*   **Tranquility and insight** are significantly helpful in the **attainment of the cessation of perception & feeling**.
-*   The **Dhamma-stream** carries one along toward higher states, even if one is initially unvirtuous or restless.
+    > 'Which five dhammas are very helpful? Five factors for exertion: There is the case, friends, where a monk has conviction, is convinced of the Tathāgata's awakening: 'Indeed, the Blessed One is worthy & rightly self-awakened, consummate in clear-knowing & conduct, well-gone, an expert with regard to the cosmos, unexcelled trainer of people fit to be tamed, teacher of devas & human beings, awakened, blessed.' ...
 
-##### Effects From
-*   From the **increase of skillful qualities** comes **fruitful habit and practice**.
-*   From **developing generosity, a life in tune, and goodwill** comes reappearance in a **world of bliss unalloyed**.
-*   From **right view** comes the **purging away of wrong view**, and **skillful qualities go to culmination**.
-*   From **disenchantment** comes **dispassion**, which leads to **cessation, stilling, direct knowledge, self-awakening, and unbinding**.
-*   From the **lack of clinging or sustenance** comes **non-agitation** and **no seed for the conditions of future birth, aging, death, or stress**.
-*   From **abandoning passion, aversion, and delusion** comes **purification and release**.
-*   From **practicing the Dhamma in accordance with the Dhamma** comes **knowing freedom from disease and seeing unbinding**.
-*   From **developing mindfulness of in-&amp;-out breathing** comes a **peaceful & exquisite, refreshing & pleasant abiding that immediately disperses & allays any evil, unskillful (mental) qualities**.
 
-##### Other Causal Factors
-*   **Greed, aversion, and delusion** are **causes for the origination of actions**.
-*   **Inappropriate attention** leads to **decline** in skillful qualities.
-*   **Clinging (upadana)** is the **origination of stress**.
-*   **Ignorance (avijjā)** is a **requisite condition for fabrications**.
-*   **Not discerning the allure, drawbacks, and escape** from phenomena leads to **obsession** [476, 477, Conversation History].
+**NotebookLM Resources**
+There are three types of sources that are part of this NotebookLM notebook: 
+1. core source, 
+2. guide sources & 
+3. templates. 
 
-#### 4. Complications
-Difficulties in cultivating "helpful" qualities arise from the presence and increase of **unskillful qualities**. These complications include:
-*   **Passion, aversion, and delusion**, which are roots of unskillful actions, defile the mind, and impede development. They lead to **self-detriment, detriment of others, and mental stress & sorrow**.
-*   **Inappropriate attention** which contributes to decline.
-*   **Conceit 'I am' (ahaṅkāra)**, which should be abandoned to progress on the path.
-*   **Laziness (kosajja)** and **overly slack persistence**, which prevent proper concentration and progress.
-*   **Restlessness (uddhacca)** and **over-aroused persistence**, which also hinder concentration.
-*   **Uncertainty (vicikicchā)** and **muddled mindfulness**, which overwhelm awareness and weaken discernment.
-*   **Self-aggrandizement, discontent, entanglement, and being burdensome** are qualities that contradict modesty, contentment, reclusiveness, or being unburdensome, respectively, and are not part of the Dhamma.
-*   **Wrong view (micchā diṭṭhi)** hinders the attainment of results from the holy life.
-*   **Not discerning the allure, drawbacks, and escape** from qualities prevents genuine comprehension [476, 477, Conversation History].
-*   **Misrepresenting the Blessed One** or His teachings with unfactual statements.
+The non-plantuml guide sources are indexed and aggregated content which was derived from the core sources. Their purpose is for NotebookLM to use them as quick-references as they are NOT comprehensive and NotebookLM will still need to search beyond these guides. Thus, using these guides, seek out the actual citation from the core sources. Hence, 
+* Draw citations from the following core sources:
+    AN_nblm.txt  DN_nblm.txt  KN_Dhp_nblm.txt  KN_Iti_nblm.txt  KN_Khp_nblm.txt  KN_StNp_nblm.txt  KN_Thag_nblm.txt  KN_Thig_nblm.txt  KN_Ud_nblm.txt  MN_nblm.txt  SN_nblm.txt
+* Leverage indexed and aggregated keys from guide sources:
+    guide_antidotes.md             guide_core_concepts.md                     guide_mental_qualites.md              guide_practices.md
+    guide_causation_expression.md  guide_dhamma_outcomes_and_consequences.md  guide_path_stages_and_progressions.md 
+* Apply diagram modeling guidelines from plantuml guide source:
+    guide_plantuml_state_diagram.md     guide_plantuml_class_diagram.md
 
-Such complications are described as preventing the **purification of vision**, leading to **suffering and stress**, and causing **effluents to grow**.
 
-#### 5. How To
-To cultivate and attend to "helpful" qualities for favorable outcomes:
-*   **Train yourself in the Dhamma** by making efforts to **abandon unskillful qualities and take on skillful qualities**. This applies to one's bodily, verbal, and mental conduct.
-*   **Develop virtue, concentration, and discernment** as central to the holy life, aiming for **direct knowledge and full comprehension**.
-*   **Be heedful (appamāda)**, as it is the **root of all skillful qualities**. This includes guarding the mind regarding defilements and preventing regret.
-*   **Cultivate conviction** by **recollecting the qualities of the Buddha, Dhamma, and Saṅgha**. This practice helps to straighten the mind, bringing joy, rapture, calm, and concentration.
-*   **Practice sense restraint** by not grasping at themes that lead to unskillful qualities and by **guarding the doors of the senses**.
-*   **Develop mindfulness** by remaining **ardent, alert, & mindful** in focusing on the body, feelings, mind, and mental qualities. Specifically, practice **mindfulness of in-&amp;-out breathing** to disperse unskillful qualities.
-*   **Develop concentration (samādhi)** by attending periodically to **themes of concentration, uplifted energy, and equanimity** to make the mind pliant and luminous for ending effluents.
-*   **Cultivate discernment (paññā)** through the **knowledge of the Four Noble Truths**, which involves discerning stress, its origination, cessation, and the path to cessation.
-*   **Associate with people of integrity (kalyāṇamitta)** and **listen to the True Dhamma**. This helps one to understand what is skillful and unskillful.
-*   **Practice the Dhamma in accordance with the Dhamma** to directly know and see freedom from disease and unbinding.
-*   **Live modestly, contentedly, reclusively, with aroused persistence, established mindfulness, a concentrated mind, and discernment**.
-*   **Cultivate awareness-release through goodwill** to overcome ill will.
+NotebookLM Task:
+    **Determine the scope of work** for this chapter by:
+        * Consider the following exception:
+             if (<user-specified-progression-index> == 2 and <user-specified-ref> = "Mindfulness & alertness") then 
+                <user-specified-progression-index> = 1  // treat as a singleton concept
+                <chapter-progression-text> = "Mindfulness & alertness"
+                <chapter-progression-scope-array> = ["Mindfulness & alertness"]
+             endif
+        * Calculate value of <chapter-progression-text>
+            * Using <user-specified-progression-index> and <user-specified-category> to query the text in DN 34:
+                <chapter-progression-text> = resultant-query-text  
+                if (<user-specified-ref> is not found in <chapter-progression-text>) then 
+                    throw UserSpecifiedRefMismatchError
+                endif
+        * Calculate value of <chapter-progression-scope-array>
+            * Parse <chapter-progression-text> into an array of strings
+                <chapter-progression-scope-array> = resultant-array-of-strings
+                if (<user-specified-progression-index> !== <chapter-progression-scope-array>.len()) then
+                    throw UserSpecifiedProgressionIndexMismatchError
+                endif
 
-The ultimate aim of these practices is to **know the goal and experience the Dhamma, leading to bliss**, and to **put an end to suffering & stress**.
+
+**PART-A: Body Content**  
+NotebookLM Task:
+    * Produce a comprehensive analysis & insights on <chapter-progression-scope-array>
+        1. Use sub-headings & lists over large body paragraphs to make the content easier to navigate and consume
+        2. Provide "no more than two citations" per key point
+        3. Use same vocabulary as found in sources due to semantic significance (eg. do not refer to Triple Gem as Jewels)
+        4. Draw all citations from the following core sources only
+        5. Do not cite any reference to guide or template sources
+        6. The structure of this chapter has been designed to give the practitioner a valuable map that answers what, why, when, where & how.  Avoid overlap of content where possible between sections.
+        7. The generated content in PART-A::Sections 3 & 4 should be a key contributor to shaping the State diagram in PART-B.
+
+---
+Use the following structure for PART-A response:
+# <user-specified-progression-index> > <user-specified-category> > <user-specified-ref>
+
+## 1. Definition
+NotebookLM Task:
+    Answer 'the what' question by:
+        * Providing a comprehensive definition of <chapter-progression-text>
+        * Considering that practitioner's typically have a lack of knowledge and awarenss of how things actually are
+        * Letting the practitioner discern what the problem is, and the role <user-specified-ref> plays in relation to the problem
+
+## 2. Considerations
+NotebookLM Task:
+    Answer 'the why' question by:
+        * with respect to <chapter-progression-text>:
+            * Explain the significance of cultivating and possessing these dhammas for a masterful practice
+            * Explain what will be the favourable outcomes or benefits that result from engaging in these dhammas
+        * Considering that practitioner's are typical heedlessness, complacenct and a have false sense of confidence 
+        * Letting the practitioner discern why <user-specified-ref> needs to acquired to be of benefit
+
+    * Consider using guide_mental_qualites.md
+    * Consider using guide_dhamma_outcomes_and_consequences.md
+    * Consider using guide_path_stages_and_progressions.md
+
+## 3. Causation
+NotebookLM Task:
+    Answer 'the when' question by:
+        * In a structured list(s) format (for each element in <chapter-progression-scope-array>):
+            * List all requisite and result pairs identifying direct results and outcomes
+            * List other related causal factors, practices, or preceding states that are necessary or essential conditions
+        * Considering that practitioner's are typical confused about when a training or mental quality should be attended to
+        * Letting the practitioner discern when <user-specified-ref> should be undertaken to be of benefit
+
+    * Consider using guide_causation_expression.md
+    * Consider using guide_antidotes.md
+    * Consider using guide_path_stages_and_progressions.md
+    * Consider using guide_practices.md
+
+## 4. Complications
+NotebookLM Task:
+    Answer 'the where' question by:
+        * with respect to <chapter-progression-text>:
+            * Describe where in the training and/or in momentary phenomena, the challenges, obstacles, or negative states that hinder one's practice occur resulting in unfavorable outcomes and losses
+        * Considering that it's often difficult for a practitioner to reconcile Dhamma practice because there is both attention to training and momentary phenomena required
+        * Letting the practitioner discern where in the landscape/territory the dangers are that <user-specified-ref> serves to address
+
+    * Consider using guide_dhamma_outcomes_and_consequences.md
+    * Consider using guide_antidotes.md
+    * Consider using guide_path_stages_and_progressions.md
+
+## 5. How To
+NotebookLM Task:
+    Answer 'the how' question by:
+        * Providing practical advice and methods for cultivating and maintaining <user-specified-ref>, or for progressing towards becoming a 'masterful practitioner'. This section should go beyond simply listing requisites mentioned in Section 3.
+        * Let the practitioner discern how to incorporate <user-specified-ref> into their practice
+
+    * Consider using guide_antidotes.md
+    * Consider using guide_practices.md
+    * Consider using guide_mental_qualites.md
+
+## 6. Similes
+NotebookLM Task:
+    Answer 'is there a helpful analogy' question by:
+        * In a structured list(s) format (for each element in <chapter-progression-scope-array>):
+            * Describe the relevant simile and featured quality in the simile
+            * Explain how this can be understood
+        * Considering that practitioner's are typical despite given a simile can still be confused about its application
+        * Letting the practitioner discern how to relate to it
 
 ---
 
-### PART-B: Diagrams
+Use the following structure for PART-B response:
 
-#### 1. PlantUML State Diagram
-This diagram illustrates a high-level progression of cultivating helpful qualities, particularly focusing on the development of the mind as described in the sources, moving from foundational practices towards ultimate liberation.
+**PART-B: PlantUML Diagrams**  
+NotebookLM Common Diagram Requirements:
+1. Use the generated content from PART-A of this response as the primary source for generating diagrams
+2. Do not add any notes to the diagrams as they are companions to PART-A text
+3. Do not add or append any citation references with block_id's within "[]" to elements or links
+4. When generating the diagrams, consider:
+    * element_threshold = 9; links_threshold = 18
+    * if (number_of_elements > element_threshold) or number_of_links > links_threshold) then create another diagram  
+    * Cognitive Load: Too many elements overwhelm the human brain's ability to process information simultaneously
+    * Visual Clutter: A large number of nodes makes the diagram visually cluttered and difficult to parse quickly
+    * Focus: It becomes hard to identify the main purpose or key interactions when there are too many distractions 
+5. If generating multiple diagrams, consider:
+    * creating a high-level contextual diagram
+    * creating a sub-diagram (ie. the orchestration of a composite state or a class)
+    * creating a view/focus specific diagrams
 
-```plantuml
-@startuml
-title "Path of Cultivating Helpful Qualities"
-header <gemini-model-id> <generation-date>
+## 7. Behavioural Model
+NotebookLM Task:
+    * Generate 1 or more plantuml state diagram(s) to represent any workflows, processes, or sequence of actions mentioned or implied in PART-A. Focus on key steps, states, decisions, loops, parallel activities and composite states
+        * Let the practitioner discern how <user-specified-ref> operates in a behavioural context
 
-[*] --> "Cultivating Foundation\n(Conviction, Virtue, Heedfulness)" as Foundation
+        * Consider using guide_plantuml_state_diagram.md
+        * Consider using guide_mental_qualites.md
+        * Consider using guide_path_stages_and_progressions.md
+        * Consider using guide_antidotes.md
+        * Consider using guide_practices.md
 
-Foundation --> "Developing Recollections\n(Buddha, Dhamma, Saṅgha, etc.)" as Recollections
+## 8. Structural Model
+NotebookLM Task:
+    * Generate 1 or more plantuml class diagram(s) that identifies the main entities, their attributes/operations, and relationships (associations, aggregations, compositions, inheritances) mentioned or implied in PART-A
+        * Let the practitioner discern how <user-specified-ref> operates in a conceptual/structural context
 
-Recollections --> "Purifying the Mind\n(Joy, Rapture, Calm, Concentration)" as MindPurity
-
-MindPurity --> "Realizing Insight\n(Discernment, Direct Knowledge)" as Insight
-
-Insight --> "Attaining Unbinding\n(Freedom from suffering & stress)" as Unbinding
-
-Unbinding --> [*]
-
-@enduml
-```
-
-#### 2. PlantUML Class Diagram
-This diagram outlines the main entities involved in the development of "helpful" qualities and their relationships to unskillful qualities and resulting outcomes.
-
-```plantuml
-@startuml
-title "Helpful Qualities and Their Interactions"
-header <gemini-model-id> <generation-date>
-
-class "Practitioner" as P {
-    -- Actions --
-    + Cultivates()
-    + Abandons()
-    + Discerns()
-}
-
-class "Skillful Qualities" as SQ {
-    + Heedfulness
-    + Discernment
-    + Virtue
-    + Conviction
-    + Generosity
-    + RightView
-    + ... (other helpful qualities)
-    -- Properties --
-    + LeadsToBenefit
-    + LeadsToHappiness
-    + CounterDefilements
-}
-
-class "Unskillful Qualities" as UQ {
-    - Passion
-    - Aversion
-    - Delusion
-    - Laziness
-    - Restlessness
-    - WrongView
-    - ... (other unskillful qualities)
-    -- Properties --
-    - LeadsToSuffering
-    - HindersProgress
-}
-
-class "Favorable Outcomes" as FO {
-    + Unbinding
-    + Purity
-    + Dispassion
-    + BlissUnalloyed
-    + NoFutureBecoming
-    + DhammaStability
-}
-
-class "Unfavorable Outcomes" as UO {
-    - Suffering
-    - Stress
-    - Sorrow
-    - FutureBirth
-    - Decline
-    - DefilementIncrease
-}
-
-P "1" -- "*" SQ : develops >
-P "1" -- "*" UQ : overcomes >
-
-SQ "1" --> "*" FO : results in >
-SQ "1" --> "*" UQ : counters >
-
-UQ "1" --> "*" UO : results in >
-UQ "1" --> "*" SQ : hinders <
-
-@enduml
-```
-
----
-
-**Notes for Template Usage:**
-1.  Focus on the topic's primary subject matter but ensure that all accompanying qualities from the topic are given some coverage.
-2.  Use sub-headings & lists over large body paragraphs to make the content easier to navigate and consume.
-3.  Provide "no more than two citations" per key point.
-4.  All causation related querying should use the saved note "Causation Expressions: A Reference Guide" to search the source texts using key causal identifiers as a guide.
-5.  Sections 3 & 4 should be key contributors to shaping the State diagram in PART-B.
-6.  Use `guide_*.md` sources to help with prompt/query execution but do not use as sources for citation.
+        * Consider using guide_plantuml_class_diagram.md
+        * Consider using guide_mental_qualites.md
+        * Consider using guide_path_stages_and_progressions.md
+        * Consider using guide_antidotes.md
+        * Consider using guide_practices.md

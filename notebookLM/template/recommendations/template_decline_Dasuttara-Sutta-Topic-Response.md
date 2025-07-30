@@ -244,8 +244,8 @@ Outcomes "HinderedProgress" <-- UnskillfulQualities : results_from
 Outcomes "DhammaDecline" <-- UnskillfulQualities : results_from
 
 Practitioner "1" -- "1" Progress : has_status
-Progress <|-- Outcomes "HinderedProgress"
-Progress <|-- Outcomes "DhammaDecline"
+Progress <|-- Outcomes :"HinderedProgress"
+Progress <|-- Outcomes :"DhammaDecline"
 
 class SkillfulQualities {
     + Discernment_Development

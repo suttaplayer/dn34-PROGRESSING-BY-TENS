@@ -12,7 +12,7 @@ Examples of qualities that are explicitly stated as needing to be abandoned, des
 *   **I-making & Mine-making Conceit-obsession**: These must be eliminated to enter and remain in awareness-release and discernment-release.
 *   **Wrong View (Micchā Diṭṭhi)**: If not relinquished, it can lead to negative destinations like hell or animal wombs.
 *   **Unskillful Qualities**: A broad category encompassing any mental quality that increases suffering or leads to harm. This includes bodily, verbal, and mental misconduct.
-*   **Sorrow, Lamentation, Pain, Distress, & Despair**: These are direct consequences of clinging and impermanence, which are overcome through abandonment.
+*   **Sorrow, Lamentation, Pain, Distress, & Despair**: These are direct consequences of clinging and inconstancy, which are overcome through abandonment.
 
 #### 2. Considerations
 The abandonment of unskillful qualities is foundational and essential for progressing on the path to liberation and achieving the ultimate goals of the holy life.

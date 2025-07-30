@@ -140,7 +140,7 @@ To attain and cultivate "Directly Known" qualities and phenomena:
 *   Develop the **perception of inconstancy**.
 *   **Guard the doors of the senses** by not grasping at themes that lead to unskillful qualities.
 *   Practice **mindfulness of in-and-out breathing** to disperse unskillful qualities.
-*   Reflect on the impermanence of self-related notions: **'It should not be, it should not be mine; it will not be, it will not be mine'**.
+*   Reflect on the inconstancy of self-related notions: **'It should not be, it should not be mine; it will not be, it will not be mine'**.
 *   Live modestly, contentedly, reclusively, with aroused persistence, established mindfulness, a concentrated mind, and discernment.
 
 The ultimate aim of these practices is to **know the goal and experience the Dhamma, leading to bliss**, and to **put an end to suffering and stress**.
@@ -157,7 +157,8 @@ This diagram illustrates the progression towards "Directly Known" states, highli
 title "Progression to Direct Knowledge and Release"
 header <gemini-model-id> - <generation-date>
 
-[*] --> "Uninstructed Person" as Uninstructed
+state "Uninstructed Person" as Uninstructed
+[*] --> Uninstructed
 
 state "Uninstructed Person" as Uninstructed {
     state "Ignorance & Defilements" as IgnoranceDefilements
@@ -172,7 +173,8 @@ state "Uninstructed Person" as Uninstructed {
     LackOfDevelopment --> IgnoranceDefilements : "perpetuates"
 }
 
-Uninstructed --> "Seeking Dhamma" as SeekingDhamma : "Arousal to Practice"
+state "Seeking Dhamma" as SeekingDhamma
+Uninstructed --> SeekingDhamma : "Arousal to Practice"
 
 state "Seeking Dhamma" as SeekingDhamma {
     state "Associating with Integrity" as AssociateIntegrity
@@ -182,7 +184,8 @@ state "Seeking Dhamma" as SeekingDhamma {
     SeekingDhamma --> AssociateIntegrity
     AssociateIntegrity --> HearTrueDhamma : "leads to"
     HearTrueDhamma --> DevelopConviction : "leads to"
-    DevelopConviction --> "Practicing Dhamma" as PracticeDhamma : "fosters persistence"
+    state "Practicing Dhamma" as PracticeDhamma
+    DevelopConviction --> PracticeDhamma : "fosters persistence"
 }
 
 state "Practicing Dhamma" as PracticeDhamma {
@@ -198,7 +201,8 @@ state "Practicing Dhamma" as PracticeDhamma {
     MindfulnessPersistence --> CultivateVirtue : "reinforces"
 }
 
-PracticeDhamma --> "Direct Knowledge" as DirectKnowledge : "through diligent effort"
+state "Direct Knowledge" as DirectKnowledge
+PracticeDhamma --> DirectKnowledge : "through diligent effort"
 
 state "Direct Knowledge" as DirectKnowledge {
     state "Knowledge of Four Noble Truths" as FourNobleTruths
@@ -213,7 +217,8 @@ state "Direct Knowledge" as DirectKnowledge {
     AggregatesKnowledge --> FourNobleTruths : "interconnected"
 }
 
-DirectKnowledge --> "Awareness-Release & Discernment-Release" as Release : "leads to"
+state "Awareness-Release & Discernment-Release" as Release
+DirectKnowledge --> Release : "leads to"
 
 state "Awareness-Release & Discernment-Release" as Release {
     state "Ending of Suffering & Stress" as EndingSuffering
