@@ -1,0 +1,40 @@
+@startuml
+title Heedfulness with regard to skillful qualities
+hide empty members
+
+abstract class "Skillful Quality" as SQ
+
+abstract class "Skillful Mental Quality" as SMQ extends SQ
+abstract class "Skillful Verbal Conduct" as SVC extends SQ
+abstract class "Skillful Bodily Conduct" as SBC extends SQ
+
+class "Appropriate Attention" as AA extends SMQ
+
+class "Admirable Friendship" as AF extends SQ
+class "Hearing the True Dhamma" as HTTD extends SQ
+class "Sense of Shame" as SOS extends SMQ
+class "Sense of Compunction" as SOC extends SMQ
+class "Mindfulness & Alertness" as MA extends SMQ
+class "Restraint of the Senses" as ROTS
+
+Conviction --|> SQ
+AF --> HTTD: leads to
+HTTD --> Conviction: leeds to
+AF --- SOS
+
+Heedfulness -- SQ: rooted in <
+Heedfulness --|> SQ: is the foremost
+
+Heedfulness .. (AF, SOS): born of
+Heedfulness .. (Conviction, SOC): born of
+
+Conviction --> AA: leads to
+AA --> MA: leads to
+MA --> ROTS: leads to
+ROTS --> SVC: leads to
+ROTS --> SBC: leads to
+ROTS --> SMQ: leads to
+@enduml
+
+
+
