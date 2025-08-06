@@ -1,0 +1,46 @@
+{
+  "name": "@undermodel/text-utils",
+  "version": "1.0.0",
+  "description": "Common text utilities library shared across all JULS projects",
+  "type": "module",
+  "types": "./@types/index.d.ts",
+  "module": "./bundle/es/index.js",
+  "main": "./bundle/umd/index.cjs",
+  "exports": {
+    ".": {
+      "import": "./bundle/es/index.js",
+      "require": "./bundle/umd/index.cjs"
+    },
+    "./unbundled-es": "./esm/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/undermodel/juls.git",
+    "directory": "packages/text-utils"
+  },
+  "author": "ashinW",
+  "license": "MIT",
+  "private": false,
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "build": "../../../node_modules/.bin/tsc",
+    "pretty": "../../../node_modules/.bin/prettier --write ./**/*.{t,j}s",
+    "bundle": "../../../node_modules/.bin/rollup -c",
+    "test-api": "cd ./test/ && node text-utils-test-suite.js",
+    "test-umd-api": "cd ./test/ && node text-utils-umd-test-suite.cjs",
+    "dry": "npm publish --dry-run",
+    "pub": "npm publish --access public"
+  },
+  "prettier": {
+    "trailingComma": "es5",
+    "tabWidth": 2,
+    "semi": false,
+    "singleQuote": true,
+    "useTabs": true,
+    "arrowParens": "always",
+    "endOfLine": "lf"
+  }
+}

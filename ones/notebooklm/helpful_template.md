@@ -34,8 +34,8 @@ NotebookLM Notes:
 ## 1. Definition
 
 NotebookLM Task:
-    * Explain heedfulness with regard to skillful qualities.
-    * Explain why heedfulness is a dhamma that cannot be developed, but yet is critically helpful.
+    * Explain heedfulness with regard to skillful qualities
+    * Explain why heedfulness is a dhamma that has been classified as helpful and which cannot be developed
     
 
 
@@ -46,7 +46,7 @@ NotebookLM Task:
         > But as for monks in higher training, who have not yet reached their hearts' goal, who still aspire for the unexcelled freedom from bondage: I say of them that they have a task to do with heedfulness. 
 
         > Then the Blessed One addressed the monks, 'Now, then, monks, I exhort you: All fabrications are subject to ending & decay. Reach consummation through heedfulness.' That was the Tathāgata's last statement.
-    * Explain in reference to the above quotes, why heedfulness is required and what role it plays at the various progression levels from uninstructed, stream-enterer, once-returner & non-returner
+    * Explain in reference to the above quotes, why heedfulness is required and what role it plays at the various progression levels from confviction|dhamma-follower, stream-enterer, once-returner & non-returner
 
 
 ## 3. Causation
@@ -93,16 +93,8 @@ NotebookLM Task:
 
 ### Practices
 NotebookLM Task:
-    * With reference to:
-        *  MN 39; contemplative's practices from "PURITY OF CONDUCT" to "THE THREE KNOWLEDGES"
-    * Explain the touchpoints that heedfulness has with each of the above practices
-
-### Stages
-NotebookLM Task:
-    * With reference to:
-        *  MN 24; stages from "purity in terms of virtue" to "total unbinding"
-    * Explain the touchpoints that heedfulness has with each of the above stages
-
+    * With reference to the Noble Eightfold Path factors:
+        * Explain the key factors which are relevant to heedfulness and analyse those touchpoints
 
 ## 6. Simile
 NotebookLM Task:

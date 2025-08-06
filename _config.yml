@@ -2,3 +2,5 @@ title: PROGRESSING BY TENS
 description: A study of the Dasuttara Sutta (DN 34)
 url: "https://suttaplayer.github.io"
 baseurl: "/dn34-PROGRESSING-BY-TENS"
+plugins:
+  - jekyll-plantuml-lite
