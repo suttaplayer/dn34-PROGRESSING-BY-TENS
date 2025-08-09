@@ -69,7 +69,60 @@ How do you overcome **stagnation and complacency** in the training to complete t
 11. In parallel to step 10 you should reflect on your failings & attainments, and the failings & attainments of others. Then depending your reaction to the statement "Gladly would I let the flesh & blood in my body dry up..." you will know, your personal assessment of your own heedfulness
 12. Repeat step 7
 
-![solution diagram 1](./helpful_sol.svg)
+```plantuml
+@startuml
+title Conviction in admirable friendship & dhamma conditions heedfulness (MN 95)
+start
+while (effluent-free?) is (no)
+    repeat :seek better admirable friendship;
+    repeat while (observes purifed qualities in teacher) is (no)
+    repeat
+        fork
+            :places **conviction (in teacher)**;
+            :visits;
+            :grows close;
+            :lends ear;
+            :hears the dhamma;
+        fork again
+            -> **{has conviction in the admirable friend}**;
+            :develops a **sense of shame**;
+        end fork {and}
+        while (remembering the dhamma?) is (yes) 
+            fork
+                :remembers the dhamma;
+                :penetrates the meaning of those dhammas;
+                :comes to an agreement through **pondering** 
+                **those dhammas**;
+            fork again
+            -> **{has conviction in the dhamma}**;
+                :develops a **sense of compunction**;
+            end fork {and}
+            if (fear causation?) is (no) then
+              break;
+            endif
+            fork
+                :desire arises;
+                :becomes willing;
+                :contemplates the dhamma;
+                :exerts oneself;
+            fork again
+                :reflect on failings of oneself & others;
+                floating note right: AN 8:7
+                :reflect on attainments of oneself & others;
+                if (Gladly would I let the flesh & blood in my body dry up...\nthere will be no relaxing my persistence) is (yes) then 
+                  :discerns heedfulness;
+                  floating note right: AN 2:5
+                else (no)
+                  :discerns heedlessness;
+                endif
+                
+            end fork
+        end while
+    repeat while (admirable friend arouses sense of shame?) is (yes)
+endwhile
+stop
+@enduml
+```
 
 
 **Causation**
@@ -95,7 +148,117 @@ How do you overcome **stagnation and complacency** in the training to complete t
     *   Purifying bodily actions through **"repeated reflection"** to ensure they do not lead to self-affliction or the affliction of others, and are skillful with pleasant consequences.
 
 
-![solution diagram 2](./helpful_sol_001.svg)
+```plantuml
+@startuml
+title Having a sense of shame & having a sense of compunction, one is heedful
+hide empty members
+left to right direction
+
+class "Admirable Friendship" as AF
+class "Sense of Shame" as SOS
+class "Sense of Compunction" as SOC
+
+class Mind {
+  + **heedfullness** percentage
+  + **appropriate attention** percentage
+
+  + greed\passion percentage
+  + aversion percentage
+  + delusion percentage
+
+  + **has sense of shame & compunction()**
+  + **comes to an agreement()**
+  + **reflects()**
+
+  + enter and remain in concentration()
+  + arouse sensual desire/lust()
+  + indulge in sensuality()
+  + is inclined towards renunciation()
+}
+
+abstract class Being {
+  + release()
+}
+
+class Practitioner extends Being {
+  + **seeks admirable friendship()**
+  + exercises generosity()
+}
+
+AF --> Dhamma: teaches
+Practitioner --> Being
+Practitioner -r-> AF: acquires\n{w/ conviction} >
+Practitioner -r-> Dhamma: remembers, ..., ponders\n{w/ conviction} >
+SOS .u. (AF, Practitioner): {born out disappointing teacher}
+SOC .d. (Dhamma, Practitioner): {born out of fearing causation}
+
+class SkillfulMentalQualities {
+  + **conviction** percentage
+  + persistence percentage
+  + mindfulness percentage
+  
+  + desire percentage
+  + willing percentage
+  + contemplation percentage
+  + **exertion** percentage
+  
+  + **right view** percentage
+  + right resolve percentage
+  + right speech percentage
+  + right action percentage
+  + right livelihood percentage
+  ...
+}
+
+class UnskillfulMentalQualities {
+  + ignorance percentage
+}
+
+Being *--> SkillfulMentalQualities
+Being *--> UnskillfulMentalQualities
+
+
+class Action <<kamma>> {}
+Being *-l-> "*" Action: heir to their >
+Being *--> Mind
+Mind::heedfullness ..> SOS: arises from >
+Mind::heedfullness ..> SOC: arises from >
+Mind::reflects ..> Action: reflects on failings & attainments WRT >
+
+Mind o-r-> Concentration: experiences meditative dwellings via >
+
+class Concentration {
+  + tranquility:
+    + first jhana
+    + second jhana
+    + third jhana
+    + forth jhana
+    + themeless
+}
+
+class Training {
+  + exerts(relentless_percentage)
+  + practice heightened virtue()
+  + practice heightened mind()
+  + practice heightened discernment()
+  
+  + seclusion()
+  + solitude()
+  + self-control()
+  + self-restraint()
+
+  + abandon()
+  + resume()
+}
+
+Practitioner --> Training: follows instructions for >
+
+class "Sensual desire/Lust" as sdl
+sdl .. (Practitioner, Being): {entangled with others}
+Training::seclusion ..> sdl: lack of seclusion/solitude & restraint leads to >
+Mind --> Training: needs to be >
+@enduml
+```
 
 
 ## Rationale
@@ -104,7 +267,32 @@ Heedfulness serves as the **governing principle** for the holy life, with traini
 ## Resulting Context
 By consistently applying heedfulness, you foster the **growth, increase, and abundance of skillful mental qualities**, leading to a **calm, pliant, malleable, luminous, and rightly concentrated mind**. This diligence allows for the **discernment of phenomena as they truly are**, ultimately leading to the **ending of effluents** and **total unbinding**. Heedfulness ensures that you are **incapable of falling away** from the path and are **right in the presence of Unbinding**.
 
-![resulting context diagram](./helpful_rc.svg)
+```plantuml
+@startuml
+title Heedfulness results in appropriate attention, right view & exertion (AN 10:76)
+start
+while (having a **sense of shame or compunction**?) is (yes)
+    :becomes **more heedful** (ie. less heedless);
+    :develops non-apathy;
+    :becomes easy to correct;
+    :seek more admirable friendship;
+    :develops conviction;
+    :develops non-stinginess;
+    :arouses persistence;
+    :develops non-restlessness;
+    :develops restraint;
+    :develops virtue;
+    :develops desire to see noble ones;
+    :develops desire to hear noble dhamma;
+    :having a mind not bent on critism;
+    :develops mindfulness & alertness;
+    :develops unscattered awareness;
+    :develops **appropriate attention**;
+    :acquires **right view** & the right path;
+end while
+stop
+@enduml
+```
 
 
 ## Related Patterns
@@ -144,8 +332,56 @@ The Buddha however exclaims: 'It won't be long, monks, before Citta misses [the 
 Then not long after that, Citta Hatthisārīputta, having shaved off his hair & beard, put on the ochre robes and went forth from the household life into homelessness. **Then—dwelling alone, secluded, heedful, ardent, & resolute**, Venerable Citta Hatthisārīputta in no long time entered & remained in the supreme goal of the holy life for which clansmen rightly go forth from home into homelessness, directly knowing & realizing it for himself in the here & now. He knew: 'Birth is ended, the holy life fulfilled, the task done. There is nothing further for the sake of this world.' **And thus Venerable Citta Hatthisārīputta became another one of the arahants.**
 
 
-![example diagram](./helpful_eg.svg)
+```plantuml
+@startuml
+/' hide footbox '/
+!pragma teoz true
+participant citta
+participant cittasMind
+participant training
 
+== 1st time as a monk ==
+hnote across: greed = true, aversion = true, delusion = true
+group is able to maintain heightened mind states
+    citta -> cittasMind: enter and remain in concentration()
+    cittasMind -> cittasMind: enter first... forth jhana
+    cittasMind -> cittasMind: enter themeless jhana
+end
+
+group but neglects seclusion & solitude, abandons training
+    citta -> "other people": gets entangled
+    "other people" -> cittasMind: arouse sensual desire/lust()
+    cittasMind -> cittasMind: has sense of shame & compunction() = false
+    citta -> training: abandon()
+
+end
+
+group and reverts to being a householder
+    {start} citta -> cittasMind: indulge in sensuality()
+    cittasMind -> cittasMind: is inclined towards renunciation() = false
+    {end} citta <-- cittasMind
+    {start} <-> {end}: some time passes\n& hr starts to\nmiss renunciation
+    cittasMind -> cittasMind: is inclined towards renunciation() = true
+end 
+== 2nd time as a monk ==
+group now dwelling secluded, heedful, ardent & resolute
+  citta -> training: resume()
+  training -> training: seclusion()
+  training -> training: solitude()
+  training -> training: restraint()
+  training -> training: self control()
+
+  citta -> training: exerts(100%)
+  training -> training: practice heightened virtue()
+  training -> training: practice heightened mind()
+  training -> training: practice heightened discernment()
+  
+  citta -> cittasMind: enter and remain in concentration()
+  hnote across: greed = false, aversion = false, delusion = false\nall skillful qualities = 100%, all unskillful qualities = 0%
+  citta <- cittasMind: release()
+end
+@enduml
+```
 
 ## Simile
 

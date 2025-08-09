@@ -10,8 +10,8 @@
 1. Always have a start & end state unless not applicable
 1. Model composite states in a separate diagram when the base diagram already exceeds 9 states
 1. Use name aliasing to handle state names with special characters
-1. Honour the original source representation in state names (eg. "Awareness-Release")
-1. [<= 25 characters]: Use underscore on word boundaries in state and member names (eg. "Unprovoked Awareness-Release" -> "Unprovoked_Awareness-Release")
+1. Honour the original source representation in names (eg. "Awareness-Release"). That is, do not use underscores or CamelCase in naming
+1. [<= 25 characters]: Use a space on word boundaries (but preserve hyphens) in state and member names to make them easier to read (eg. "Unprovoked Awareness-Release" -> "Unprovoked Awareness-Release")
 1. [> 25 characters]: Break state name on word boundaries using multiple line notation for long state names  > 25 characters (eg. "Unprovoked\nAwareness-Release")
 1. Add 1 member per line in compartments
 
@@ -19,12 +19,12 @@
 ## Add title and header
 ```plantuml
 @startuml
-header <gemini-model-id>, <generation-date> 
+header Created on: <generation-date> 
 title Name & form is to be comprehended
 @enduml
 ```
 ### How this example is to be read & understood
-* The diagram has a header where notebooklm has replaced <gemini-model-id> with the model identifier & <generation-date> with date in dd-MMM-YYYY format
+* The diagram has a header where notebooklm has replaced <generation-date> with today's date in dd-MMM-YYYY format
 * The diagram has a title named "Mindfulness immersed in the body"
 
 
@@ -133,7 +133,7 @@ Intoxication --> Competitiveness
 * There is a transition that occurs from the Intoxication sub-state to the Competitiveness sub-state
 
 
-# Use synchronisation bar for forks and joins
+## Use synchronisation bar for forks and joins
 ```plantuml
 @startuml
 state nm_fork <<fork>>

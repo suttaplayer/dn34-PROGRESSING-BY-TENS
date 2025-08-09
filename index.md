@@ -49,35 +49,34 @@ These maps are not intended for scholarly use and I am not asserting that only t
 > for releasing from all ties.[^1]
 
 ---
-
-{% plantuml %}
+<!-- 
 @startuml
 package "Dhamma Practice in Daily Life" {
-    usecase dl as "daily_life
-    --
-    **repeat** {                                   
-          - attend to **hygiene**                 
-      - attend to **travel**               
-      - attend to **meals**                
-      - attend to **livelihood**           
-      - attend to **companionship**
-      - attend to **entertainment** 
-      - attend to **rest**                    
-    } **until (end of life)**                 "
-    
+    usecase dl as "     Daily life     " <<stress>>
+    note bottom of dl 
+        **repeat** {
+        - attend to **hygiene**
+        - attend to **travel**
+        - attend to **meals**
+        - attend to **livelihood**
+        - attend to **companionship**
+        - attend to **entertainment**
+        - attend to **rest**
+        } **until (end of life)**
+    end note
     (Development) as developed <<duty>>
     ([[./3.comprehended-index.html Comprehension]]) as comprehended <<duty>>
     (Abandonment) as abandoned <<duty>>
     (Realisation) as realised <<duty>>
-    dl <|-u- (comprehended): apply upon hygiene,\ntravel, meals, livelihood
-    dl <|-r- (abandoned): transition from companionship
-    dl <|-d- (developed): transition from entertainment
-    dl <|-l- (realised): transition from rest
+    dl <|-u- (comprehended): transition\nfrom ignorance wrt\nhygiene, travel, meals, livelihood\nto knowledge\nvia
+    dl <|-r- (abandoned): transition\nfrom evil companionship\nto admirable friendship\nvia
+    dl <|-d- (developed): transition\nfrom entertainment\nto concentration\nvia
+    dl <|-l- (realised): transition\nfrom rest\nto awakened\nvia
     
     usecase madeToArise as "dhammas that should be\nmade to arise"
     developed ..> madeToArise: reflect & investigate with
 
-    usecase helpful as "dhammas that are\n[[./1.helpful-index.html helpful]]"
+    usecase helpful as "dhammas that are\n[[./1.helpful-index.html Helpful]]"
     comprehended .r.> helpful: assisted by
     
     usecase decline as "dhammas that\nside with decline"
@@ -93,8 +92,8 @@ package "Dhamma Practice in Daily Life" {
 
 practitioner -l-> (dl): does
 @enduml
-{% endplantuml %}
-
+ -->
+ ![progressive framework](./index.svg)
 
 
 ## Table of Contents

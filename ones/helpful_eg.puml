@@ -1,0 +1,48 @@
+@startuml
+/' hide footbox '/
+!pragma teoz true
+participant citta
+participant cittasMind
+participant training
+
+== 1st time as a monk ==
+hnote across: greed = true, aversion = true, delusion = true
+group is able to maintain heightened mind states
+    citta -> cittasMind: enter and remain in concentration()
+    cittasMind -> cittasMind: enter first... forth jhana
+    cittasMind -> cittasMind: enter themeless jhana
+end
+
+group but neglects seclusion & solitude, abandons training
+    citta -> "other people": gets entangled
+    "other people" -> cittasMind: arouse sensual desire/lust()
+    cittasMind -> cittasMind: has sense of shame & compunction() = false
+    citta -> training: abandon()
+
+end
+
+group and reverts to being a householder
+    {start} citta -> cittasMind: indulge in sensuality()
+    cittasMind -> cittasMind: is inclined towards renunciation() = false
+    {end} citta <-- cittasMind
+    {start} <-> {end}: some time passes\n& hr starts to\nmiss renunciation
+    cittasMind -> cittasMind: is inclined towards renunciation() = true
+end 
+== 2nd time as a monk ==
+group now dwelling secluded, heedful, ardent & resolute
+  citta -> training: resume()
+  training -> training: seclusion()
+  training -> training: solitude()
+  training -> training: restraint()
+  training -> training: self control()
+
+  citta -> training: exerts(100%)
+  training -> training: practice heightened virtue()
+  training -> training: practice heightened mind()
+  training -> training: practice heightened discernment()
+  
+  citta -> cittasMind: enter and remain in concentration()
+  hnote across: greed = false, aversion = false, delusion = false\nall skillful qualities = 100%, all unskillful qualities = 0%
+  citta <- cittasMind: release()
+end
+@enduml

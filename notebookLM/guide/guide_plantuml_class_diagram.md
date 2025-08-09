@@ -9,21 +9,22 @@
 1. Consider including left to right direction or top to bottom direction at the beginning of the diagram definition to optimize visual flow for complex relationship structures
 1. Model packages for cohesive sets of classes as a separate diagram when the base diagram already has more than 9 nodes
 1. Use name aliasing to handle class names with special characters
-1. Honour the original source representation in class names (eg. "Awareness-Release")
-1. [<= 25 characters]: Use underscore on word boundaries in class and member names (eg. "Unprovoked Awareness-Release" -> "Unprovoked_Awareness-Release")
+1. Honour the original source representation in names (eg. "Awareness-Release"). That is, do not use underscores or CamelCase in naming unless essential (eg. "Mind::heedfullness_percentage .l.> SOS: arises from >" results in a plantuml syntax error if underscore is absent in relationships between specific members)
+1. [<= 25 characters]: Use a space on word boundaries (but preserve hyphens) in class and member names to make them easier to read (eg. "Unprovoked Awareness-Release" -> "Unprovoked Awareness-Release")
 1. [> 25 characters]: Break class name on word boundaries using multiple line notation for long class names  > 25 characters (eg. "Unprovoked\nAwareness-Release")
 1. Add 1 member per line in compartments
 
 
 ## Add title and header
+
 ```plantuml
 @startuml
-header <gemini-model-id>, <generation-date> 
+header Created on: <generation-date> 
 title Mindfulness immersed in the body is to be developed
 @enduml
 ```
 ### How this example is to be read & understood
-* The diagram has a header where notebooklm has replaced <gemini-model-id> with the model identifier & <generation-date> with date in dd-MMM-YYYY format
+* The diagram has a header where notebooklm has replaced <generation-date> with today's date in dd-MMM-YYYY format
 * The diagram has a title named "Mindfulness immersed in the body"
 
 
@@ -42,15 +43,16 @@ class "Unprovoked\nAwareness-Release" as UAR
 @startuml
 hide empty members
 abstract class Quality
-abstract Unskillful_Quality extends Quality
-abstract Unskillful_Mental_Quality extends Unskillful_Quality
-class Passion extends Unskillful_Mental_Quality
+abstract "Unskillful Quality" extends Quality
+abstract "Unskillful Mental Quality" extends "Unskillful Quality"
+class Passion extends "Unskillful Mental Quality"
 @enduml
 ```
+
 ### How this example is to be read & understood
-* There are abstract classes named Quality, Unskillful_Quality, Unskillful_Mental_Quality
+* There are abstract classes named Quality, "Unskillful Quality", "Unskillful Mental Quality"
 * There is a class named Passion
-* Passion extends Unskillful_Mental_Quality, which in turn extends Unskillful_Quality, which in turn extends Quality
+* Passion extends "Unskillful Mental Quality", which in turn extends "Unskillful Quality", which in turn extends Quality
 
 
 ## Use sterotype as the similes associated with the class when relevant
@@ -61,6 +63,7 @@ class Consciousness <<seed>>
 class Craving <<moisture>>
 @enduml
 ```
+
 ### How this example is to be read & understood
 * There is a class named Kamma that is sterotyped as "field" (with respect to the simile)
 * There is a class named Consciousness that is sterotyped as "seed" (with respect to the simile)
@@ -75,11 +78,12 @@ class Being {
 }
 @enduml
 ```
+
 ### How this example is to be read & understood
 * There is a class named Being that is governed by the constraint (ie. class invariant) that it subsists on nutriment
 
 
-## Show class member features using compartments with underscores as opposed to camel-case
+## Show class member features using compartments with the same naming/casing conventions as found in the sources
 ```plantuml
 @startuml
 class "Six Internal Media" as sim
@@ -90,44 +94,46 @@ class sim {
   tongue
   body
   intellect
-  is_intact()
-  engages_external_media()
+  is intact()
+  engages external media()
 }
 @enduml
 ```
+
 ### How this example is to be read & understood
 * There is a class named Six Internal Media which has the following members:
   * Attributes: eye, ear, nose, tongue, body, intellect
-  * Methods: is_intact(), engages_external_media()
+  * Methods: is intact(), engages external media()
 
 
 ## Apply UML visibility modifiers (+ for public, - for private, # for protected) to attributes and operations when the accessibility or nature of the quality/action is explicitly described or strongly implied in the sources (e.g., publicly taught Dhamma vs. internally cultivated qualities)
 ```plantuml
 @startuml
-class Dhamma_Teacher {
-  - internal_realization()
-  # clarify_monastic_rules()
-  + teach_Dhamma()
+class Dhamma Teacher {
+  - internal realization()
+  # clarify monastic rules()
+  + teach Dhamma()
 }
 class Disciple {
-  - cultivate_mind()
-  # adhere_to_training_rules()
-  + practice_Dhamma()
+  - cultivate mind()
+  # adhere to training rules()
+  + practice Dhamma()
 }
-Dhamma_Teacher --> "*" Disciple: instructs
+Dhamma Teacher --> "*" Disciple: instructs
 @enduml
 ```
+
 ### How this example is to be read & understood
-* There are classes named Dhamma_Teacher & Disciples
-* The Dhamma_Teacher class has the following operations with the indicated visibility modifiers:
-  * public teach_Dhamma()
-  * private internal_realization()
-  * protected clarify_monastic_rules()
+* There are classes named Dhamma Teacher & Disciples
+* The Dhamma Teacher class has the following operations with the indicated visibility modifiers:
+  * public teach Dhamma()
+  * private internal realization()
+  * protected clarify monastic rules()
 * The Disciple class has the following operations with the indicated visibility modifiers: 
-  * public practice_Dhamma()
-  * private cultivate_mind() 
-  * protected adhere_to_training_rules()
-* The Dhamma_Teacher instructs many Disciples
+  * public practice Dhamma()
+  * private cultivate mind() 
+  * protected adhere to training rules()
+* The Dhamma Teacher instructs many Disciples
 
 
 ## Use Extends, Composition, Aggregation, Dependency and Association for relationships 
@@ -151,6 +157,7 @@ Vehicle -- Driver: operates <
 Driver --> Hand
 @enduml
 ```
+
 ### How this example is to be read & understood
 * There is an abstract class named Vehicle
 * There are classes named Car, Road, Driver, Wheel, Hand & Finger
@@ -159,7 +166,7 @@ Driver --> Hand
 * Roads are built for Vehicles. This relationship indicates that one class depends on another, often at a conceptual or usage level, without implying structural containment or direct ownership (e.g., 'Virtue' might depend on 'Shame' and 'Compunction' as guarding qualities, but Shame and Compunction are not structural parts of Virtue)
 * A Driver operates a Vehicle
 * A Driver is unidirectionally associated with a Hand
-* A Hand embodies 5 Fingers. This signifies a 'part-of' relationship where the component cannot exist independently of the whole within the modeled context (e.g., the 'Hair_of_the_Head' is part of 'Body' and does not typically exist independently once detached and decaying in this specific conceptual model of a living being)
+* A Hand embodies 5 Fingers. This signifies a 'part-of' relationship where the component cannot exist independently of the whole within the modeled context (e.g., the 'Hair of the Head' is part of 'Body' and does not typically exist independently once detached and decaying in this specific conceptual model of a living being)
 
 
 ## Show navigation direction on associations & constraints for clarity of how the association is to be read
@@ -174,6 +181,7 @@ Driver - Car : is driven by <
 Car -- Person : {>= 18 years old} owns <
 @enduml
 ```
+
 ### How this example is to be read & understood
 * There are classes named Car, Driver & Person
 * A Car is driven by a Driver
@@ -192,6 +200,7 @@ sim "{intact}" -- "{in range}" sem: engagement
 Consciousness ..  (sim, sem): appearing
 @enduml
 ```
+
 ### How this example is to be read & understood
 * There are classes named Six Internal Media, Six External Media & Consciousness
 * There is an association named "engagement" between the Six Internal Media & Six External Media, where the:
@@ -204,7 +213,7 @@ Consciousness ..  (sim, sem): appearing
 ```plantuml
 @startuml
 hide empty members
-enum Internal_Media {
+enum Internal Media {
   EYE
   EAR
   NOSE
@@ -213,8 +222,8 @@ enum Internal_Media {
   INTELLECT
 }
 
-Contact .left.> Internal_Media: is classified by >
-Consciousness ..> Internal_Media: is classified by >
+Contact .left.> Internal Media: is classified by >
+Consciousness ..> Internal Media: is classified by >
 Contact [internal media] -- Consciousness: is the meeting of the three via >
 
 class "Six Internal Media" as sim
@@ -222,13 +231,14 @@ class "Six External Media" as sem
 Consciousness .. (sim, sem)
 @enduml
 ```
+
 ### How this example is to be read & understood
 * There are classess named Six Internal Media, Six External Media, Consciousness & Contact
-* There is an enumeration type named Internal_Media with the following values: 
+* There is an enumeration type named Internal Media with the following values: 
   * EYE, EAR, NOSE, TONGUE, BODY, INTELLECT
-* Contact is classified by Internal_Media as a dependency, suggesting that there are the following classes of Contact:
+* Contact is classified by Internal Media as a dependency, suggesting that there are the following classes of Contact:
   * Eye Contact, Ear Contact, Nose Contact, Tongue Contact, Body Contact & Intellect Contact
-* Consciousness is also classified by Internal_Media as a dependency, suggesting that there are the following classes of Consciousness:
+* Consciousness is also classified by Internal Media as a dependency, suggesting that there are the following classes of Consciousness:
   * Eye Consciousness, Ear Concsciousness, Nose Consciousness, Ear Consciousness, Nose Consciousness, Tongue Consciousness, Body Consciousness & Intellect Consciousness
 * There is an association between the Six Internal Media & Six External Media from which Consciousness is born 
 * Contact is the meeting of the three via Consciousness. Note, this is a qualified association which has internal media as its accessor
@@ -250,12 +260,13 @@ Teacher --> "0..*" Disciples: instructs >
 Person --> "1..*" Quality: is endowed with >
 @enduml
 ```
+
 ### How this example is to be read & understood
 * There are classes named Car, Wheel, Saṅgha, Teacher & Person
 * A Car has 1 spare wheel which must be inflated
-* A Saṅgha typically consists_of * (many) Monks
+* A Saṅgha typically consists of * (many) Monks
 * A Teacher instructs 0..* (zero to many) Disciples
-* A Person is endowed_with 1..* (one or more) Quality
+* A Person is endowed with 1..* (one or more) Quality
 
 
 ## Show relationships between specific members when necessary by using class-level associations or dependencies with explanatory labels that clarify the specific member interaction, avoiding direct lines within compartments
@@ -263,20 +274,21 @@ Person --> "1..*" Quality: is endowed with >
 ```plantuml
 @startuml
 class Practitioner {
-  - develop_concentration()
+  - develop concentration()
 }
 
 class Mind {
-  # is_calm
-  # is_joyful
+  # is calm
+  # is joyful
 }
 
-Practitioner::develop_concentration .up.> Mind::is_calm: depends on
-Practitioner::develop_concentration .down.> Mind::is_joyful: depends on
+Practitioner::develop concentration .up.> Mind::is calm: depends on
+Practitioner::develop concentration .down.> Mind::is joyful: depends on
 @enduml
 ```
+
 ### How this example is to be read & understood
 * There are classes named Practitioner & Mind
-* The Practitioner supports a private member operation named develop_concentration()
-* The Mind has two protected attributes named: is_calm and is_joyful
-* The Practitioner's ability to develop_concentration is dependent on the Mind possessing the qualities of being is_calm and is_joyful. This reflects how concentration is fostered through calm and joy arising from mental cultivation
+* The Practitioner supports a private member operation named develop concentration()
+* The Mind has two protected attributes named: is calm and is joyful
+* The Practitioner's ability to develop concentration is dependent on the Mind possessing the qualities of being is calm and is joyful. This reflects how concentration is fostered through calm and joy arising from mental cultivation
