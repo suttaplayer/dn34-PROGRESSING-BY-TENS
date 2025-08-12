@@ -4,7 +4,7 @@
 1. Add title to the diagram
 1. Add creation identifiers to the header
 1. Do not apply any Skinparam, inline color or styling
-1. Do not add any diagram notes
+1. Do not add any general diagram notes; notes with sutta acronym references (eg. "MN 95") beside the relevant concept are welcomed
 1. Use start, stop & end where applicable
 1. Honour the original source representation in names (eg. "Awareness-Release"). That is, do not use underscores or CamelCase in naming
 1. [<= 25 characters]: Use a space on word boundaries (but preserve hyphens) in state and member names to make them easier to read (eg. "Unprovoked Awareness-Release" -> "Unprovoked Awareness-Release")

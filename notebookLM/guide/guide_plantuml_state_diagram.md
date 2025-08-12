@@ -4,11 +4,10 @@
 1. Add title to the diagram
 1. Add creation identifiers to the header
 1. Do not apply any Skinparam, inline color or styling
-1. Do not add any diagram notes
+1. Do not add any general diagram notes; notes with sutta acronym references (eg. "MN 95") beside the relevant concept are welcomed
 1. Always add 'hide empty description' pragma (to reduce visual clutter and focus on state transitions and key internal details)
 1. Consider including left to right direction or top to bottom direction at the beginning of the diagram definition to optimize visual flow for complex state transitions
 1. Always have a start & end state unless not applicable
-1. Model composite states in a separate diagram when the base diagram already exceeds 9 states
 1. Use name aliasing to handle state names with special characters
 1. Honour the original source representation in names (eg. "Awareness-Release"). That is, do not use underscores or CamelCase in naming
 1. [<= 25 characters]: Use a space on word boundaries (but preserve hyphens) in state and member names to make them easier to read (eg. "Unprovoked Awareness-Release" -> "Unprovoked Awareness-Release")

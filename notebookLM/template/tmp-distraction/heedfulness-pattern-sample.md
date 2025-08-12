@@ -8,7 +8,7 @@ This pattern captures a **fundamental best practice** for spiritual practitioner
 You are a practitioner on the holy path, aiming for **unbinding** and the **ending of suffering and stress**. You understand the importance of **skillful qualities** but find it challenging to maintain consistent effort and prevent regression in your practice, potentially feeling **lazy** or **heedless**.
 
 ## Problem
-How do you overcome **stagnation and complacency** in the training to complete the task of the holy life, ensuring **continuous and effective spiritual progress** towards liberation? [User Query]
+How do you maintain **unwavering diligence and vigilance** in abandoning **unskillful qualities** and developing **skillful ones**, especially when faced with tendencies towards **laziness** or **heedlessness**, to ensure consistent progress towards **unbinding** and the **ending of suffering and stress**?
 
 ## Forces
 *   **Ease and Comfort**: There is a natural inclination towards ease, rest, and avoiding effort, which can lead to **laziness** and **heedlessness** in practice.
