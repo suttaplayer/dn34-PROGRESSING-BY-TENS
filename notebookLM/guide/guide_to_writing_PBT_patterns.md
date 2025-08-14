@@ -48,7 +48,7 @@ search results may include:
 * "[dont] ever let yourself get complacent when the ending of effluents is still unattained"
 * "Now the thought may occur to you, 'We are endowed with shame & compunction. That much is enough, that much means we're done, so that the goal of our contemplative state has been reached. There's nothing further to be done,' and you may rest content with just that. So I tell you, monks. I exhort you, monks. Don't let those of you who seek the contemplative state fall away from the goal of the contemplative state when there is more to be done."
 
-
+conviction -> shame
 ## 2. Section: Problem
 the second step is to identify the **real** problem that the solution addresses.  
 using the 1. Ven. Sāriputta (an expert) has provided the answer & 2. the search results from the previous step we can progress towards the problem statement. but first reflect that Ven. Sāriputta often thinks in dhamma discussion: 'If, when asked, he answers correctly, well & good. If not, then I will answer correctly (for him).'
@@ -88,12 +88,16 @@ i, through 20 years of concentration practice have acquired discernment through 
 1. **identify causal chains related to the scope**
 (a) use the source "guide_causation_expression.md" for some candidate causation expressions as a means for searching in relation to both the problem and solution.
 (b) search for cause/effect relationships related the subject(s) depending on the progression (ie. ones, twos,...)
-(c) for each cause/effect expand the search by repeating step (b) with the related cause/effect. do this again such that you have researched a pool of cause/effect relations that a three degress of freedom from the original subject
+(c) for each cause/effect expand the search by repeating step (b) with the related cause/effect. do this again such that you have researched a pool of cause/effect relations with a few degress of freedom from the original subject
 (d) compile the list of search results as this represents the causal pool 
 
 consider the following search results (ie. causal pool):
 * "all skillful qualities are rooted in heedfulness, converge in heedfulness, and heedfulness is reckoned the foremost among them"
 * "Monks, having a sense of shame & having a sense of compunction, one is heedful"
+* "For him, dwelling thus heedfully, joy is born. In one who has joy, rapture is born. The body of one enraptured at heart grows calm. When the body is calm, one feels pleasure. Feeling pleasure, the mind becomes centered. When the mind is centered, phenomena become manifest. When phenomena are manifest, he is reckoned as one who dwells in heedfulness"
+* "Being heedful, one is capable of abandoning apathy, being hard to correct, & evil friendship"
+* "'And what is heedfulness? There is the case where a monk guards his mind with regard to effluents and qualities accompanied by effluents. When his mind is guarded with regard to effluents and mental qualities accompanied by effluents, the faculty of conviction goes to the culmination of its development. The faculty of persistence… mindfulness… concentration… discernment goes to the culmination of its development"
+* "The monk delighting in heedfulness, seeing danger in heedlessness –incapable of falling back– stands right on the verge of Unbinding."
 * "'There is the case, friends, where a monk lives in apprenticeship to the Teacher or to a respectable companion in the holy life in whom he has established a strong sense of shame & compunction, love, & respect."
 * "Any individual of whom one has come to know, 'When I partake of this individual, unskillful qualities decrease and skillful qualities increase,' that sort of individual is to be partaken of"
 * "Monks, as long as the monks have conviction… shame… compunction… learning… aroused persistence… established mindfulness… discernment, the monks' growth can be expected, not their decline"
@@ -110,6 +114,8 @@ consider the following search results (ie. causal pool):
 * "Thus for him, having thus developed the noble eightfold path, the four establishings of mindfulness go to the culmination of their development. The four right exertions… the four bases of power… the five faculties… the five strengths… the seven factors for awakening go to the culmination of their development."
 * "seeking is dependent on craving, acquisition is dependent on seeking, ascertainment is dependent on acquisition, desire and passion is dependent on ascertainment,"
 * "I tell you, monks, that stress results either in bewilderment or in search."
+* "when associating with people of integrity is made full, it fills [the conditions for] hearing the true Dhamma… conviction… appropriate attention… mindfulness & alertness… restraint of the senses… the three forms of right conduct… the four establishings of mindfulness… the seven factors for awakening. When the seven factors for awakening are made full, they fill [the conditions for] clear knowing & release"
+
 
 (e) expanding the causal pool using direct experience
 1. now, because of direct experience, i know why the buddha uses the term "voice of another". note, as the practice progresses the admirable friend's voice continues to resonate and echo like a songs of dhamma stuck on repeat in the practitioners mind; consider this as signal. the admirable friend need not be a physical person. it could a book, audio/video dhamma talks, it could even be a notebooklm <smile> notebook. i also know through direct experience that clinging to doctrine-of-self is the attachment to voices other than the buddhas instruction; consider this as noise. hence, regardless of whether you physically live with a teacher or not, the practice is one of continous seeking resulting in perfecting the signal to noise ratio! further, admirable friendship *means* copy, cloning and imitating the qualities of the admirable friend, not the companionship quality in-of-itself (ie. "Associating with an admirable friend even a fool becomes wise")
@@ -131,6 +137,21 @@ note, through direct experience, i have come to see that many of the lists that 
 
 * shame -> heedful
 * compunction -> heedful
+* heedful -> joy
+* joy -> rapture
+* rapture -> calm
+* calm -> pleasure
+* pleasure -> mind becomes centered
+* mind becomes centered -> phenomena become manifest
+* heedful -> ardent
+* heedful -> easy to correct
+* heedful -> admirable friendship
+* heedful -> conviction
+* conviction -> persistence
+* persistence -> mindfulness
+* mindfulness -> concentration
+* concentration -> discernment
+* heedful -> release
 * admirable friendship -> shame
 * admirable friendship -> compunction
 * admirable friendship -> respect
@@ -152,9 +173,9 @@ note, through direct experience, i have come to see that many of the lists that 
 * visits -> grows close
 * grows close -> lends ear
 * lends ear -> hears the Dhamma
-* Hearing the Dhamma -> remembers it
+* hearing the Dhamma -> remembers it
 * remembers it -> penetrates the meaning
-* penetrates the meaning -> comes to an agreement through pondering
+* penetrates the meaning -> comes to an agreement through pondering those Dhammas
 * comes to an agreement through pondering -> desire
 * desire -> willing
 * willing -> contemplates
@@ -168,8 +189,8 @@ note, through direct experience, i have come to see that many of the lists that 
 * NOT desire -CANNOT-> remembers it
 * NOT discernment -CANNOT-> remembers it
 * NOT fear -> heedlessness
-* NOT fear -> commitment
-* NOT fear -> reflection
+* NOT fear -CANNOT-> commitment
+* NOT fear -CANNOT-> reflection
 * commitment -> noble eightfold path
 * reflection -> noble eightfold path
 * noble eightfold path -> four establishings of mindfulness
@@ -184,6 +205,15 @@ note, through direct experience, i have come to see that many of the lists that 
 * ascertainment -> desire and passion
 * appropriate attention -> right view
 * admirable friendship -> right view
+* admirable friendship -> hearing the true dhamma
+* hearing the true dhamma -> conviction
+* conviction -> appropriate attention
+* appropriate attention -> mindfulness & alertness
+* mindfulness & alertness -> restraint of the senses
+* restraint of the senses -> the three forms of right conduct
+* the three forms of right conduct -> the four establishings of mindfulness
+* the four establishings of mindfulness -> the seven factors for awakening
+* the seven factors for awakening -> clear knowing & release
 * NOT living in a civilized land -CANNOT-> heedfulness
 * NOT admirable friendship -CANNOT-> heedfulness
 * NOT virtue -CANNOT-> heedfulness
@@ -216,26 +246,26 @@ Using the cause/effect pairs from the previous step we observe:
 
 ```plantuml
 @startuml
-start
-while (effluent-free?) is (no)
-    (S)
-    floating note right: await stress on contact
-    detach
-    start
+:; <<time-event>>
+floating note right: repeat on every contact-event
+if (effluent-free?) then (no: there is stress)
     if (result of stress?) then (bewilderment)
-      break;
+      stop
     else (search)
-      if (That much is enough\ntraining?) then (complacency)
-        break;
-      else (pursue heedfulness)
+      if (the thought occurs:\nThat much training is enough?) then (yes: complacency)
+        stop
+      else (no: has a task to do with heedfulness)
       end if
     end if
-    partition "converge on Heedfulness" {
-      repeat :seek better admirable friendship\nor abandon ignoble voices;
+    partition "all skillful qualities are rooted in heedfulness, converge in heedfulness" {
+      :seek better admirable friendship or abandon ignoble voices;
       fork
           :conviction;
           fork
-            :learning ... comes to an agreement\n through pondering views;
+            :visits, grows close, lends ear
+            hears the Dhamma, remembers it, learns it;
+          fork again
+            :penetrates the meaning,\ncomes to an agreement through pondering those Dhammas;
           fork again
             :persistence;
           end fork
@@ -245,8 +275,8 @@ while (effluent-free?) is (no)
             :generosity;
           end fork
       fork again
-          :sense of shame;
-          :sense of compunction;
+          :shame;
+          :compunction;
       fork again
           :remove possible obstructions;
       end fork
@@ -257,10 +287,18 @@ while (effluent-free?) is (no)
           :exertion;
       fork again
           :reflection;
+      fork again
+          partition "Appropriate Attention" {
+            :skillful qualities increase;
+            :unskillful qualities decrease;
+          }
+      fork again
+        #lightgreen:heedfulness; <<object-signal>>
+        ->//fear that recognizes dangers//\n//but knows how to avoid them//;
       end fork
-      repeat while (has task to do with heedfulness?) is (yes)
     }
-end while (awakened to truth)
+else (yes: awakened to truth)
+end if
 stop
 @enduml
 ```
@@ -268,21 +306,26 @@ stop
 4. **Section: Solution > Step-by-Step**
 (a) using only the process model details above, collapse process it into a flatterned activity structure suitable for text-to-speech read-aloud
 
-1. if the practitioner is effluent-free then they have awakened to truth and exit, otherwise continue the process
-2. seek a better admirable friendship or abandon ignoble voices
-3. develop conviction in the admirable friendship
-4. develop a sense of shame & a ssense of compunction
-5. remove possible obstruction to learning Dhamma
-6. learn Dhamma, remember it, penerate it and come to an agreement through pondering views
-7. develop persistence with regards to skillful qualities
-8. develop virtue (ie. right speech, action & livelihood)
-9. develop generosity (ie. part of right view)
-10. develop desire to complete the holy life
-11. reflect on one's own failings and attainments and also those of others
-12. become willing to do what it takes to complete the holy life
-13. contemplate on areas of improvement such that one's endurance grows
-14. relentlessly exert oneself to complete the holy life
-15. if there remains a task to do with regards to heedfulness, then goto step 2, otherwise goto step 1
+This process repeats upon every contact-event
+1. if the practitioner is effluent-free then they have awakened to truth and exit, otherwise continue the process with the arisen stress
+1. if the reaction to stress is bewilderment then exit, otherwise continue the process
+1. if the thought occurs that "this much training is enough" then exit, otherwise continue the process knowing that there is a task to do with heedfulness
+1. all subsequent activities in the process are rooted in heedfulness, converge in heedfulness
+1. seek better admirable friendship or abandon those ignoble voices discourage vigilance and encourage deferment
+1. develop conviction in the admirable friendship
+1. visits, grows close, lends ear to the admirable friendship
+1. develop a sense of shame of failing to follow their instructions, & a sense of compunction of failing to act in line with causation
+1. remove possible obstruction to learning Dhamma
+1. learn Dhamma, remember it, penerate it and come to an agreement through pondering the teachings
+1. develop persistence with regards to developing skillful qualities and abandoning unskillful qualities
+1. develop virtue (ie. right speech, action & livelihood)
+1. develop generosity (ie. part of right view)
+1. develop desire to complete the holy life
+1. reflect on one's own failings and attainments and also the failings and attainments of others in terms of causation
+1. experiences a feeling of fear recognising dangers, but at the same time knowing how to avoid them arises: this is heedfulness; it's an event, not an activity
+1. become willing to do what it takes to complete the holy life
+1. contemplate on the direct application of Dhammas with respect to the duties of contemplation, abandoning, development & realisation
+1. relentlessly exert oneself to complete the holy life
 
 
 5. **Section: Solution > Concepts & Relationship** 
@@ -293,7 +336,8 @@ stop
 * seek_admirable_friendship()
 * abandon_ignoble_voices()
 * develop_conviction()
-* learn_to_true_dhamma()
+* visits_grows_close_lends_ear()
+* learn_remember_penetrate_the_true_Dhammaa()
 * persistence()
 * come_to_an_agreement_through_pondering_views()
 * develop_virtue()
@@ -309,14 +353,14 @@ stop
 * reflect()
 * skillful_qualities_increase()
 * unskillful_qualities_decrease()
-* has_task_to_do_with_heedfulness()
+* has_a_task_to_do_with_heedfulness()
 
 (b) using only the process model identify the obvious classes associated with each responsibility
-
 
 **obvious classes [pass 1]**: (in order of unique appearance)
 * Effluent
 * Admirable Friendship
+* Clinging
 * Conviction
 * Dhamma
 * Noble Eightfold Path
@@ -326,14 +370,23 @@ stop
 * Obstruction
 * Four Bases of Power
 * Reflection
+* Appropriate Attention
 * Heedfulness
 
-(b) 
+(c) as you brainstorm the assignment of responsibilities to the above classes gaps will appear. there are often many abstractions that are implicitly involved in the orchestration. these abstractions need to be identified and often further domain research is required
 
 search results may include:
 * "I don't envision a single thing that is as quick to reverse itself as the mind—so much so that there is no satisfactory simile for how quick to reverse itself it is."
+* "Intention, I tell you, is kamma. Intending, one does kamma by way of body, speech, & intellect."
+* "The intention & aspiration of living beings hindered by ignorance & fettered by craving is established in or tuned to a lower property"
 
-(d) using ... collaborators
+add the following abstractions:
+* Skillful_Mental_Qualities
+* Unskillful_Mental_Qualities
+* Intention
+* Fetter
+
+(d) using responsibilities and abstractions from the previous sections identify the collaborators that participate in fulfilling each responsibility
 
 **collaborators**
 * Effluent::is_effluent_free()
@@ -344,7 +397,9 @@ search results may include:
     * Mind
 * Conviction::develop_conviction()
     * Practitioner
-* Dhamma::learn_to_true_dhamma()
+* Admirable Friehship::visits_grows_close_lends_ear()    
+    * Practitioner
+* Dhamma::learn_remember_penetrate_the_true_Dhammaa()
     * Admirable Friendship, Practitioner
 * Noble Eightfold Path::develops_persistence()
     * Practitioner
@@ -368,43 +423,52 @@ search results may include:
 * Four Bases of Power::exert()
     * Practitioner
 * Reflection::reflect()
-    * Mind, Dhamma, Action
+    * Mind, Dhamma, intention
+* Appropriate Attention::skillful_qualities_increase()
+    * Mind
+* Appropriate Attention::unskillful_qualities_decrease()
+    * Mind
 * Heedfulness::has_task_to_do_with_heedfulness()
     * Mind
 
-(b) generate a plantuml class diagram using the above details adding relationship details as required
+(b) generate a plantuml class diagram using the above details adding relationship details and synthesising as required 
 
 ```plantuml
 @startuml
 hide empty members
 
-interface SkillfulMentalQualities {
+interface Skillful_Mental_Qualities {
     develop()
 }
-interface UnskillfulMentalQualities {
+interface Unskillful_Mental_Qualities {
     abandon()
 }
 
-class Mind {
-    ponder_views()
+class Mind <<client>>{
+  ponder_views()
 }
-class Practitioner 
-class Heedfulness implements SkillfulMentalQualities {
+
+class Appropriate_Attention {
+  skillful_qualities_increase()
+  unskillful_qualities_decrease()
+}
+class Practitioner <<server>>
+class Heedfulness implements Skillful_Mental_Qualities {
     has_task_to_do()
 }
 
-class Action <<kamma>>
-class Conviction implements SkillfulMentalQualities
+class Intention <<kamma>>
+class Conviction implements Skillful_Mental_Qualities
 class Dhamma {
     remember()
     learn()
     penetrate()
     come_to_an_agreement()
 }
-class Sense_of_Shame implements SkillfulMentalQualities
-class Sense_of_Compunction implements SkillfulMentalQualities
-class Obstruction implements UnskillfulMentalQualities
-class Noble_Eightfold_Path implements SkillfulMentalQualities {
+class Sense_of_Shame implements Skillful_Mental_Qualities
+class Sense_of_Compunction implements Skillful_Mental_Qualities
+class Obstruction implements Unskillful_Mental_Qualities
+class Noble_Eightfold_Path implements Skillful_Mental_Qualities {
   right speech
   right action
   right livelihood
@@ -415,7 +479,7 @@ class Noble_Eightfold_Path implements SkillfulMentalQualities {
   develop_persistence()
 }
 
-class Four_Bases_of_Power implements SkillfulMentalQualities {
+class Four_Bases_of_Power implements Skillful_Mental_Qualities {
     develop_desire()
     become_willing()
     contemplate()
@@ -425,23 +489,31 @@ class Four_Bases_of_Power implements SkillfulMentalQualities {
 class Reflection {
     reflect()
 }
-class Effluent implements UnskillfulMentalQualities {
+class Effluent <<payload>> implements Unskillful_Mental_Qualities {
     is_effluent_free()
 }
 class Admirable_Friendship {
     seek()
+    visit()
+    grow_close()
+    lend_ear()
 }
-class Clinging implements UnskillfulMentalQualities {
+class Clinging implements Unskillful_Mental_Qualities {
   doctrine-of-self
   abandon_ignoble_voice()
 }
+class Fetter implements Unskillful_Mental_Qualities
+Effluent o--> "0..3" Fetter: bundled state of determinate >
+Effluent .. (Practitioner, Fetter): {<<server>> born out of}
 
+Mind *--> Appropriate_Attention: applies >
 Mind *--> "*" Obstruction: removes >
-Mind o--> Effluent: is hindered by ignorance\n& fettered by craving >
+Mind --> Effluent: is hindered by ignorance\n& fettered by craving >
 Mind --> Clinging: abandons ignoble voices >
-Mind --> "*" Action: reflects on >
-Reflection .. (Dhamma, Action): {born out of contemplating\ncausation wrt ones own actions}
+Mind --> "*" Intention: acts via &\nreflects on >
+Reflection .. (Dhamma, Intention): {born out of contemplating\ncausation wrt ones own actions}
 Reflection -- Mind: periodically <
+Intention .. (Mind, Effluent): {born out of}
 
 Mind *--> Heedfulness: cultivates >
 Heedfulness *--> Sense_of_Shame: is establish on >
@@ -450,14 +522,15 @@ Heedfulness --> Obstruction: is subject to >
 Admirable_Friendship <-- Practitioner: takes refuge in <
 Conviction .. (Admirable_Friendship, Practitioner): {born out of respect}
 Admirable_Friendship <-- Conviction: confidence in teacher <
-Sense_of_Shame .. (Admirable_Friendship, Conviction): {born out of fear of dissappointing}
+Sense_of_Shame .. (Admirable_Friendship, Conviction): {born out of fear\nof dissappointing}
 Dhamma <-- Conviction: confidence in causation <
 Sense_of_Compunction .. (Dhamma, Conviction): {born out of fear of causation}
 Admirable_Friendship --> Dhamma: teaches >
-Practitioner --> Dhamma: takes refuge in >
 
+Practitioner *--> "*" Fetter: fettered by >
+Practitioner --> Dhamma: takes refuge in >
 Practitioner *--> Conviction: develops >
-Practitioner *--> Four_Bases_of_Power: brings to culmination >
+Practitioner *--> Four_Bases_of_Power: develops\n& brings to culmination >
 Practitioner *--> Noble_Eightfold_Path: develops >
 Practitioner o--> Mind: trains their >
 @enduml
@@ -468,9 +541,16 @@ in the forth step we will use all previous sourced research material:
 1. search results from section 1
 2. search results from section 3.1
 
-(a) generate the context from the above details. there should be no more than 3-4 sentences to help the practitioner determine whether they satisfy the requisite conditions for the pattern.
+(a) having created the solution identify the determinats that would results in the process failing. these are the solution's requisite conditions. these requisites form the basis of the pattern's context. this task may required further research.
 
-make reference to the four wheels here because that is the quickest way of dismissing this pattern.
+the key requisite conditions for heedfulness are:
+* Four wheels: living in a civilized land, associating with people of integrity, directing oneself rightly, & having done merit in the past
+* There are these five inhabitants of the states of deprivation, inhabitants of hell, who are in agony & incurable. Which five? One who has killed his or her mother, one who has killed his or her father, one who has killed an arahant, one who—with a corrupted mind—has caused the blood of a Tathāgata to flow, and one who has caused a split in the Saṅgha
+* Obstructions: He is endowed with a (present) kamma obstruction, a defilement obstruction, a result-of-(past)-kamma obstruction; he lacks conviction, has no desire (to listen), and has dull discernment
+
+
+(b) generate the context from the above details including the requisite conditions identified. there should be no more than a few sentences to help the practitioner determine whether they satisfy the requisite conditions for the pattern before reading too much further.
+
 
 
 ## 5. Section: Forces
@@ -480,5 +560,76 @@ in the fifth step we will use all previous sourced research material:
 
 (a) generate the forces from the above details. this should be documented as a list of design constraints, influences, trade-offs and other considerations that were made with respect to the solution. 
 
-make reference to the buddhas urging, encouraging, arousing with statements like: "Don't be heedless. Don't later fall into remorse.", "Reach consummation through heedfulness." because heedfulness couldn't directly taught, it's simply for those that are fit to be tamed. forces like people of no integrity not being able to identify the qualities of other individuals. there seeking teachers and finding better ones as your qualities increase is the only way forward.
+key forces for heedfulness are:
+* wrt heedfulness, the buddha was only able to urge, encourage & arouse (ie. not instruct) with statements like: 
+    * "Don't be heedless. Don't later fall into remorse.", 
+    * "Reach consummation through heedfulness." 
+    because heedfulness couldn't directly taught. consider: how do you get someone to have a positive sense of fear for something they have no fear about
+* even buddha the was only able to teach "those that are fit to be tamed"
+* people of no integrity not being able to identify others of no integrity or others with integrity. note, one's own actions as the arbitrator will dictate the quality of the admirable friendship you will encounter. therefore, keep increasing one's own skillful qualities is the only way forward which may or may not result in seeking many admirable friendships 
+* heedfulness establishes appropriate attention. Heedfulness's role is to take the fuel from conviction (via shame & compunction) and direct it at appropriate attention and exertion, then through repeated appropriate attention and exertion the task is completed 
 
+
+## 6. Section: Rationale
+in this sixth step we will use the generated output from the following:
+1. solution::step-by-step section
+2. context section
+3. forces section
+4. problem section
+generate the rationale explaining why the generated solution best address the problem within this context
+
+key points worthy of mentioning:
+* the solution addresses the problem:
+    1. by using craving to end craving via positive applications of seeking ... to desire
+    2. by showing how complacency by-passes continued convergence in heedfulness
+    3. by showing continous seeking admirable friendship & abandoning ignoble voices of another grows heedfulness
+    4. by various causal-chains have been unified into a single process
+    5. by connecting heedfulness to appropriate attention which results in right view
+    6. by applying four bases of power (speciically exertion/commitment) and reflection nurture the practice to end the effluents
+
+
+## 7. Section: Resulting Context
+in the seventh step we revisit the dhamma subject(s) (in the solution excerpt) that flow down stream. this gives the practitioner a roadmap of the pathways ahead. however, unlike the solution, the resulting context honours the original causal chain from the texts without wedging them into a process. to a large extent we can leverage the cause and effect pairs captured in the "Solution > Cause-&-Effect" section.
+
+(a) [for each dhamma subject in the solution (ie. progression index)] model those follow on causal-chains that are relevant to this problem or solution for up to 3-7 levels. go through the list one by one and avoid any circular references and avoid repeating aspects that are already in the solution
+
+(b) generate a plantuml mindmap diagram using the above details
+
+```plantuml
+@startmindmap
+top to bottom direction
+* heedful
+  * joy
+    * rapture
+      * calm
+        * pleasure
+          * mind becomes centered
+            * phenomena become manifest
+              *_ ...
+  *_ ardent
+  *_ easy to correct
+  * admirable friendship
+    * respect
+    * noble eightfold path
+      * four establishings of mindfulness
+        * four right exertions
+          * four bases of power 
+            * five faculties
+              * five strengths
+                * seven factors for awakening
+                  *_ ...
+  * conviction
+    * persistence
+      * mindfulness
+        * concentration
+          *_ discernment
+    * appropriate attention
+      * mindfulness & alertness
+        * restraint of the senses
+          * the three forms of right conduct
+            * the four establishings of mindfulness
+              *_ ...
+      *_ right view
+  *_ release
+@endmindmap
+```
