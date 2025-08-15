@@ -353,6 +353,7 @@ This process repeats upon every contact-event
 * reflect()
 * skillful_qualities_increase()
 * unskillful_qualities_decrease()
+* is_enough_training()
 * has_a_task_to_do_with_heedfulness()
 
 (b) using only the process model identify the obvious classes associated with each responsibility
@@ -387,6 +388,8 @@ add the following abstractions:
 * Fetter
 
 (d) using responsibilities and abstractions from the previous sections identify the collaborators that participate in fulfilling each responsibility
+
+through direct experience one notices which qualities are associated with the Being and which are associated with the mind. on knows that there is noble growth and certain qualities despite changes in circumstances do not regress. however, other qualities despited appearing to be well grounded regress with the sitation changes. heedfulness is an a example of such a quality. a practitioner can appear ever so commited; they may go on meditation retreats, practice diligently but when they return home a friends visits them and heedfulness is gone. therefore, we realise that heedfulness like other states based on fear reside in the mind. 
 
 **collaborators**
 * Effluent::is_effluent_free()
@@ -428,8 +431,12 @@ add the following abstractions:
     * Mind
 * Appropriate Attention::unskillful_qualities_decrease()
     * Mind
+* Heedfulness::is_enough_training()
+    * Mind
 * Heedfulness::has_task_to_do_with_heedfulness()
     * Mind
+
+
 
 (b) generate a plantuml class diagram using the above details adding relationship details and synthesising as required 
 
@@ -437,10 +444,10 @@ add the following abstractions:
 @startuml
 hide empty members
 
-interface Skillful_Mental_Qualities {
+interface Skillful_Mental_Quality {
     develop()
 }
-interface Unskillful_Mental_Qualities {
+interface Unskillful_Mental_Quality {
     abandon()
 }
 
@@ -448,27 +455,28 @@ class Mind <<client>>{
   ponder_views()
 }
 
-class Appropriate_Attention {
-  skillful_qualities_increase()
-  unskillful_qualities_decrease()
+class Appropriate_Attention implements Skillful_Mental_Quality {
+  skillful_Quality_increase()
+  unskillful_Quality_decrease()
 }
 class Practitioner <<server>>
-class Heedfulness implements Skillful_Mental_Qualities {
+class Heedfulness implements Skillful_Mental_Quality {
+    is_enough_training()
     has_task_to_do()
 }
 
 class Intention <<kamma>>
-class Conviction implements Skillful_Mental_Qualities
+class Conviction implements Skillful_Mental_Quality
 class Dhamma {
     remember()
     learn()
     penetrate()
     come_to_an_agreement()
 }
-class Sense_of_Shame implements Skillful_Mental_Qualities
-class Sense_of_Compunction implements Skillful_Mental_Qualities
-class Obstruction implements Unskillful_Mental_Qualities
-class Noble_Eightfold_Path implements Skillful_Mental_Qualities {
+class Sense_Of_Shame implements Skillful_Mental_Quality
+class Sense_Of_Compunction implements Skillful_Mental_Quality
+class Obstruction implements Unskillful_Mental_Quality
+class Noble_Eightfold_Path implements Skillful_Mental_Quality {
   right speech
   right action
   right livelihood
@@ -479,30 +487,30 @@ class Noble_Eightfold_Path implements Skillful_Mental_Qualities {
   develop_persistence()
 }
 
-class Four_Bases_of_Power implements Skillful_Mental_Qualities {
+class Four_Bases_Of_Power implements Skillful_Mental_Quality {
     develop_desire()
     become_willing()
     contemplate()
     exert()
 }
 
-class Reflection {
+class Reflection implements Skillful_Mental_Quality {
     reflect()
 }
-class Effluent <<payload>> implements Unskillful_Mental_Qualities {
+class Effluent <<payload>> implements Unskillful_Mental_Quality {
     is_effluent_free()
 }
-class Admirable_Friendship {
+class Admirable_Friendship implements Skillful_Mental_Quality {
     seek()
     visit()
     grow_close()
     lend_ear()
 }
-class Clinging implements Unskillful_Mental_Qualities {
+class Clinging implements Unskillful_Mental_Quality {
   doctrine-of-self
   abandon_ignoble_voice()
 }
-class Fetter implements Unskillful_Mental_Qualities
+class Fetter implements Unskillful_Mental_Quality
 Effluent o--> "0..3" Fetter: bundled state of determinate >
 Effluent .. (Practitioner, Fetter): {<<server>> born out of}
 
@@ -516,21 +524,23 @@ Reflection -- Mind: periodically <
 Intention .. (Mind, Effluent): {born out of}
 
 Mind *--> Heedfulness: cultivates >
-Heedfulness *--> Sense_of_Shame: is establish on >
-Heedfulness *--> Sense_of_Compunction: is establish on >
+Heedfulness *--> Sense_Of_Shame: is establish on >
+Heedfulness *--> Sense_Of_Compunction: is establish on >
 Heedfulness --> Obstruction: is subject to >
 Admirable_Friendship <-- Practitioner: takes refuge in <
 Conviction .. (Admirable_Friendship, Practitioner): {born out of respect}
 Admirable_Friendship <-- Conviction: confidence in teacher <
-Sense_of_Shame .. (Admirable_Friendship, Conviction): {born out of fear\nof dissappointing}
+Sense_Of_Shame .. (Admirable_Friendship, Conviction): {born out of fear\nof dissappointing}
 Dhamma <-- Conviction: confidence in causation <
-Sense_of_Compunction .. (Dhamma, Conviction): {born out of fear of causation}
+Sense_Of_Compunction .. (Dhamma, Conviction): {born out of fear of causation}
 Admirable_Friendship --> Dhamma: teaches >
 
+Practitioner *--> Kammic_Field: heir to >
+Intention *--> Kammic_Field: kammic seed planted in >
 Practitioner *--> "*" Fetter: fettered by >
 Practitioner --> Dhamma: takes refuge in >
 Practitioner *--> Conviction: develops >
-Practitioner *--> Four_Bases_of_Power: develops\n& brings to culmination >
+Practitioner *--> Four_Bases_Of_Power: develops\n& brings to culmination >
 Practitioner *--> Noble_Eightfold_Path: develops >
 Practitioner o--> Mind: trains their >
 @enduml
@@ -589,7 +599,12 @@ key points worthy of mentioning:
 
 
 ## 7. Section: Resulting Context
-in the seventh step we revisit the dhamma subject(s) (in the solution excerpt) that flow down stream. this gives the practitioner a roadmap of the pathways ahead. however, unlike the solution, the resulting context honours the original causal chain from the texts without wedging them into a process. to a large extent we can leverage the cause and effect pairs captured in the "Solution > Cause-&-Effect" section.
+in the seventh step we revisit the dhamma subject(s) (in the solution excerpt) that flow down stream. this gives the practitioner a roadmap of the pathways ahead. we do this by modeling:
+1. follow on causal-chains
+2. behaviour in terms of available transitions
+
+**follow on causal-chains**
+unlike the solution, the resulting context honours the original causal chain from the texts without wedging them into a process. to a large extent we can leverage the cause and effect pairs captured in the "Solution > Cause-&-Effect" section.
 
 (a) [for each dhamma subject in the solution (ie. progression index)] model those follow on causal-chains that are relevant to this problem or solution for up to 3-7 levels. go through the list one by one and avoid any circular references and avoid repeating aspects that are already in the solution
 
@@ -632,4 +647,95 @@ top to bottom direction
       *_ right view
   *_ release
 @endmindmap
+```
+
+**behaviour in terms of available transitions**
+the idea here is that often 1 or more composite object exhibit a given states in orchestration before transitions can occur. it gives the practitioner a more nuanced understanding of how things have come to be or function.
+
+(c) [for each dhamma subject in the solution (ie. progression index)] review the solution and the mindmap above and consider each of the first level follow causal-chains. identify the containing object and the various state changes of the subject in order to progress through both the solution and the first level follow on causal-chains. finally model the conditions and constraints that govern those transitions.
+
+(d) generate a plantuml state diagram using the above details
+
+```plantuml
+@startuml
+title Key states from Heedfulness
+left to right direction
+
+state "<<transient>>\n Practitioner's Mind State" as Mind {
+  Mind:previouse_heedful_state
+  state "Effluents" as Effluents {
+    state "in" as meff_in <<inputPin>>
+    state "out" as meff_out <<exitPoint>>
+    Effluents:effluent-free
+  }
+  state "Intention" as int {
+    state "out" as mint_out <<exitPoint>>
+  }
+  int -> int: skillful or\nunskillful intentions
+  Effluents <- Effluents: skillful or\nunskillful intentions
+  state "Less_Heedful" as less_h {
+    less_h:skillful qualities decrease
+    less_h:unskillful qualities increase
+  }
+  state "More_Heedful" as more_h {
+    more_h:skillful qualities increase
+    more_h:unskillful qualities decrease
+  }
+  state "Most_Heedful" as most_h {
+    most_h:admirable_friendship=100%
+    most_h:sense_of_shame=100%
+    most_h:sense_of_compunction=100%
+    most_h:heedfulness=100%
+    most_h:doctrine-of-self-clinging=0%
+  }
+  
+  less_h --> less_h: unskillful intention
+  less_h --> more_h : skillful intention\n{sense of shame & compunction}
+  more_h --> less_h : unskillful intention\n{thinks: that's enough training}
+  more_h --> more_h: skillful intention
+  more_h --> most_h: skillful intention\neffluent-free=yes\n{release}
+  
+  state "Skillful_Qualities" as msq
+  state "Unskillful_Qualities" as muq
+
+  msq -[#green,dashed]-> less_h
+  muq -[#red,dashed]-> less_h
+  msq -[#green,dashed]-> more_h
+  muq -[#red,dashed]-> more_h
+
+  msq:admirable_friendship
+  msq:sense_of_shame
+  msq:sense_of_compunction
+  msq:heedfulness
+  msq:appropriate_attention
+  muq:doctrine-of-self-clinging
+}
+state "<<persistent>>\nPractitioner's Being State" as pbs {
+  state "Skillful_Qualities" as bsq {
+    bsq: Four_Bases_Of_Power
+    bsq: Noble_Eightfold_Path
+    bsq: Five_Faculties
+  }
+
+  state "Unskillful_Qualities" as buq {
+    state Fetters 
+    state Craving
+    state Obstructions
+  }
+  Craving -> meff_in: incoming defilements
+  Fetters -> meff_in: incoming defilements
+  Fetters <- meff_out: outgoing defilements
+  Obstructions -[#red,dashed]-> less_h
+
+  state "Kammic_Field" as kf {
+    state "in" as bkf_in <<inputPin>>
+    kf:number of seeds remaining
+  }
+  mint_out -> bkf_in
+  kf --> bsq: update
+  kf --> buq: update
+  [*] --> kf
+  kf --> [*] :total unbinding\n[number of seeds remaining==0]
+}
+@enduml
 ```
