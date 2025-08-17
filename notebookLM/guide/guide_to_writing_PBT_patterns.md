@@ -83,7 +83,7 @@ consider the following:
 * humans follow processes, do activities and reach milestones. the dhamma however, is most often expressed in terms of causation, this causes that, leads to, results in, benefit, reward etc.
 * consider a student being told that they need to do the noble eightful path. they having been told that, they are immediately lost. the student needs to transform an event based model (ie. when this, then that) with principles and transform it into a concrete process that they can follow, complete activities and achieve milestones. due to dull discernment, it often results in failure!
 
-i, through 20 years of concentration practice have acquired discernment through direct knowledge/experience. when i read the sutta texts i can infer (because of direct knowledge) what can be both implicitly and explicitly inferred. i, as a software engineer/architect have also developed a high degree of logic and reasoning. so this background of mine positions me well to perform the monumental task of modeling inter-connected (yet decoupled) casual chains as a process. however, other than direct knowledge/experience, notebooklm too has super human inference, logic and reasoning skills. notebooklm too should be able to identify links between disparate causal chains and/or activities that are not explicitly stated. i have studied and learnt dhamma through the very same sources that i have added to this notebooklm project. yes, direct experience in terms of when and where phenomena occur helps, but this activity is largely an exercise in language. i would argument that because notebooklm is an LLM, it is better positioned than me to perform this task.
+when i read the sutta texts i can infer (because of direct knowledge) what can be both implicitly and explicitly inferred. i, as a software engineer/architect have also developed a high degree of logic and reasoning. so this background of mine positions me well to perform the monumental task of modeling inter-connected (yet decoupled) casual chains as a process. however, other than direct knowledge/experience, notebooklm too has super human inference, logic and reasoning skills. notebooklm too should be able to identify links between disparate causal chains and/or activities that are not explicitly stated. i have studied and learnt dhamma through the very same sources that i have added to this notebooklm project. yes, direct experience in terms of when and where phenomena occur helps, but this activity is largely an exercise in language. i would argument that because notebooklm is an LLM, it is better positioned than me to perform this task.
 
 1. **identify causal chains related to the scope**
 (a) use the source "guide_causation_expression.md" for some candidate causation expressions as a means for searching in relation to both the problem and solution.
@@ -93,7 +93,9 @@ i, through 20 years of concentration practice have acquired discernment through 
 
 consider the following search results (ie. causal pool):
 * "all skillful qualities are rooted in heedfulness, converge in heedfulness, and heedfulness is reckoned the foremost among them"
+* This one quality, monks, when developed & pursued, keeps both kinds of benefit secure: benefit in this life & in lives to come.
 * "Monks, having a sense of shame & having a sense of compunction, one is heedful"
+* Monks, these two bright qualities guard the world. Which two? Shame & compunction.
 * "For him, dwelling thus heedfully, joy is born. In one who has joy, rapture is born. The body of one enraptured at heart grows calm. When the body is calm, one feels pleasure. Feeling pleasure, the mind becomes centered. When the mind is centered, phenomena become manifest. When phenomena are manifest, he is reckoned as one who dwells in heedfulness"
 * "Being heedful, one is capable of abandoning apathy, being hard to correct, & evil friendship"
 * "'And what is heedfulness? There is the case where a monk guards his mind with regard to effluents and qualities accompanied by effluents. When his mind is guarded with regard to effluents and mental qualities accompanied by effluents, the faculty of conviction goes to the culmination of its development. The faculty of persistence… mindfulness… concentration… discernment goes to the culmination of its development"
@@ -115,7 +117,9 @@ consider the following search results (ie. causal pool):
 * "seeking is dependent on craving, acquisition is dependent on seeking, ascertainment is dependent on acquisition, desire and passion is dependent on ascertainment,"
 * "I tell you, monks, that stress results either in bewilderment or in search."
 * "when associating with people of integrity is made full, it fills [the conditions for] hearing the true Dhamma… conviction… appropriate attention… mindfulness & alertness… restraint of the senses… the three forms of right conduct… the four establishings of mindfulness… the seven factors for awakening. When the seven factors for awakening are made full, they fill [the conditions for] clear knowing & release"
-
+* There is the case where a monk is consummate in virtue, guards the doors to his sense faculties, knows moderation in eating, & is devoted to wakefulness.
+* Monks, I speak of robes in two ways: to be partaken of and not to be partaken of. I also speak of alms food… lodgings… villages & towns… countrysides… individuals in two ways: to be partaken of and not to be partaken of.
+* Any robe of which one has come to know, 'When I partake of this robe, unskillful qualities decrease and skillful qualities increase,' that sort of robe is to be partaken of.
 
 (e) expanding the causal pool using direct experience
 1. now, because of direct experience, i know why the buddha uses the term "voice of another". note, as the practice progresses the admirable friend's voice continues to resonate and echo like a songs of dhamma stuck on repeat in the practitioners mind; consider this as signal. the admirable friend need not be a physical person. it could a book, audio/video dhamma talks, it could even be a notebooklm <smile> notebook. i also know through direct experience that clinging to doctrine-of-self is the attachment to voices other than the buddhas instruction; consider this as noise. hence, regardless of whether you physically live with a teacher or not, the practice is one of continous seeking resulting in perfecting the signal to noise ratio! further, admirable friendship *means* copy, cloning and imitating the qualities of the admirable friend, not the companionship quality in-of-itself (ie. "Associating with an admirable friend even a fool becomes wise")
@@ -163,6 +167,9 @@ note, through direct experience, i have come to see that many of the lists that 
 * mindfulness -> discernment
 * conviction -> virtue
 * virtue -> shame
+* virtue -> sense restraint
+* sense-restraint -> moderation in eating
+* moderation in eating -> wakefulness
 * learning -> generosity 
 * generosity -> discernment
 * conviction -> persistence
@@ -223,7 +230,7 @@ note, there will be small deviations amongst these pairs across suttas but nothi
 
 consolidate this cause/effect list
 
-3. **Section: Solution > Process Visualisation** 
+3. **Section: Solution > Process View** 
 
 (a) reviewing the consolidated cause/effect pairs in terms of timing, conditional logic and loops, for the entire scope of the problem/solution, an identifiable process will emerge 
 
@@ -245,41 +252,49 @@ Using the cause/effect pairs from the previous step we observe:
 (b) tallying these points together and resolving timing with concurrency, loops & conditions; generate a plantuml activity diagram of the orchestration:
 
 ```plantuml
-@startuml
-:; <<time-event>>
-floating note right: repeat on every contact-event
-if (effluent-free?) then (no: there is stress)
-    if (result of stress?) then (bewilderment)
-      stop
-    else (search)
-      if (the thought occurs:\nThat much training is enough?) then (yes: complacency)
-        stop
-      else (no: has a task to do with heedfulness)
-      end if
-    end if
-    partition "all skillful qualities are rooted in heedfulness, converge in heedfulness" {
-      :seek better admirable friendship or abandon ignoble voices;
+@startuml helpful-sol-process
+header 16-Aug-2025
+title Heedful, ardent & resolute (Process view) 
+start
+while (effluent-free?) is (no: [non-Arahant]\n**there is stress**)
+  ' -> **there is stress**;
+  if (result of stress?) then (    [Uninstructed] **bewilderment**    )
+    end
+  else (search)
+  end if
+  if (the thought occurs:\nThat much progress is enough?) then (  yes: [One-in-training] **complacent**    )
+    end
+  end if
+  fork
+    partition "Apprenticeship - task to do" {
+      :seek to improve admirable friendship or abandon ignoble voices;
+      :conviction;
       fork
-          :conviction;
-          fork
-            :visits, grows close, lends ear
-            hears the Dhamma, remembers it, learns it;
-          fork again
-            :penetrates the meaning,\ncomes to an agreement through pondering those Dhammas;
-          fork again
-            :persistence;
-          end fork
-          fork
-            :virtue;
-          fork again
-            :generosity;
-          end fork
+        :visits, grows close, lends ear, hears the Dhamma, 
+        remembers it, learns it;
+        :penetrates the meaning,\ncomes to an agreement through pondering those Dhammas;
+      fork again
+        :persistence;
       fork again
           :shame;
           :compunction;
       fork again
           :remove possible obstructions;
       end fork
+      fork
+        :generosity;
+      fork again
+        :virtue;
+      fork again
+        :restraint, moderation in eating & wakefulness;
+      fork again
+        :concentration;
+      fork again
+        :discernment;
+      end fork
+    }
+  fork again
+    partition "In the field - task to do" {
       fork
           :desire;
           :willing;
@@ -293,36 +308,45 @@ if (effluent-free?) then (no: there is stress)
             :unskillful qualities decrease;
           }
       fork again
-        #lightgreen:heedfulness; <<object-signal>>
-        ->//fear that recognizes dangers//\n//but knows how to avoid them//;
+          #lightgreen:heedfulness; <<object-signal>>
+          ->//fear that recognizes dangers//\n//but knows how to avoid them//;
+          :partake in:
+          food, clothing, shelter, 
+          villages, towns, countrysides, &
+          individuals;
       end fork
     }
-else (yes: awakened to truth)
-end if
+  end fork
+end while (yes - [Arahant])
 stop
 @enduml
 ```
 
 4. **Section: Solution > Step-by-Step**
-(a) using only the process model details above, collapse process it into a flatterned activity structure suitable for text-to-speech read-aloud
+(a) using only the process model details above, collapse the process into a flattened activity structure suitable for text-to-speech read-aloud
 
-This process repeats upon every contact-event
-1. if the practitioner is effluent-free then they have awakened to truth and exit, otherwise continue the process with the arisen stress
+1. this process repeats continuously while the practitioner is not effluent-free and proceeds with stress at the context, otherwise they have awakened to truth and the process exits
 1. if the reaction to stress is bewilderment then exit, otherwise continue the process
-1. if the thought occurs that "this much training is enough" then exit, otherwise continue the process knowing that there is a task to do with heedfulness
-1. all subsequent activities in the process are rooted in heedfulness, converge in heedfulness
-1. seek better admirable friendship or abandon those ignoble voices discourage vigilance and encourage deferment
+1. if the thought occurs to the practitioner that "this much progress is enough", then exit, otherwise continue the process knowing that there is a task to do with heedfulness
+1. the process now splits in to two segments. the first is the "Apprenticeship" task that is cultivated through the training process. the second is the "In the field" task whatever the practices in heedfulness get applied in whatever is being partaken in. these two segments may occur with an attention to one or both at the same time
+1. the first segment focuses on the Apprenticeship task
+1. seek to improve admirable friendship or abandon those ignoble voices (which discourage vigilance and encourage deferment)
 1. develop conviction in the admirable friendship
-1. visits, grows close, lends ear to the admirable friendship
-1. develop a sense of shame of failing to follow their instructions, & a sense of compunction of failing to act in line with causation
+1. visits, grows close, lend ear to the admirable friendship. then hear the Dhamma, remembers it and learns it
+1. develop a sense of shame of failing to follow the admirable friends instructions, & a sense of compunction of failing to act in line with causation
 1. remove possible obstruction to learning Dhamma
-1. learn Dhamma, remember it, penerate it and come to an agreement through pondering the teachings
-1. develop persistence with regards to developing skillful qualities and abandoning unskillful qualities
+1. penerate the Dhamma and come to an agreement through pondering those teachings
+1. develop persistence here to consider possibilities outside the practitioner's habitual views, habits & practices and roles that they self-identify with
+1. develop generosity
 1. develop virtue (ie. right speech, action & livelihood)
-1. develop generosity (ie. part of right view)
+1. develop sense restraint, moderation in eating & wakefulness
+1. develop concentration (ie. right effort, mindfulness & concentration)
+1. develop discernment (ie. right view, resolve)
+1. the second segment focuses on the In the field task
 1. develop desire to complete the holy life
-1. reflect on one's own failings and attainments and also the failings and attainments of others in terms of causation
-1. experiences a feeling of fear recognising dangers, but at the same time knowing how to avoid them arises: this is heedfulness; it's an event, not an activity
+1. reflect on one's own failings and attainments, and also the failings and attainments of others in terms of causation
+1. is sensitive to heedfulness, a feeling of fear recognising dangers, but at the same time knowing how to avoid them arises: thus, heedfulness is an event, not an activity. it shapes what and how the practitioner partakes
+1. attend appropriately by increasing skillful qualities and decreasing unskillful qualities whilst partaking
 1. become willing to do what it takes to complete the holy life
 1. contemplate on the direct application of Dhammas with respect to the duties of contemplation, abandoning, development & realisation
 1. relentlessly exert oneself to complete the holy life
@@ -335,25 +359,32 @@ This process repeats upon every contact-event
 * is_effluent_free()
 * seek_admirable_friendship()
 * abandon_ignoble_voices()
+* result_of_stress()
 * develop_conviction()
-* visits_grows_close_lends_ear()
-* learn_remember_penetrate_the_true_Dhammaa()
-* persistence()
-* come_to_an_agreement_through_pondering_views()
-* develop_virtue()
-* develops_persistence()
-* develop_generosity()
+* is_enough_progress()
+* visits_grows_close_lends_ear_hears_the_Dhamma()
+* remembers_learns_penetrate_the_meaning_of_true_Dhammaa()
+* develop_persistence()
 * develop_sense_of_shame()
 * develop_sense_of_compunction()
 * remove_obstructions()
+* come_to_an_agreement_through_pondering_teachings()
+* develop_virtue_aggregate()
+* develop_sense_restraint_moderation_in_eating_wakefulness()
+* develop_concentration_aggregate()
+* develop_discernment_aggregate()
 * develop_desire()
 * become_willing()
-* contemplate()
-* exert()
-* reflect()
+* contemplate_weigh_up_analyse()
+* apply_exertion()
+* apply_reflection()
+* attend_appropriately()
 * skillful_qualities_increase()
 * unskillful_qualities_decrease()
-* is_enough_training()
+* develop_heefulness()
+* partake_in_food_clothing_shelter()
+* partake_in_villages_towns_countrysides()
+* partake_in_individuals()
 * has_a_task_to_do_with_heedfulness()
 
 (b) using only the process model identify the obvious classes associated with each responsibility
@@ -363,16 +394,20 @@ This process repeats upon every contact-event
 * Admirable Friendship
 * Clinging
 * Conviction
+* Practitioner
 * Dhamma
-* Noble Eightfold Path
-* Mind
+* Five Faculties
 * Sense of Shame
 * Sense of Compunction
 * Obstruction
+* Mind
+* Practitioner
+* Noble Eightfold Path
 * Four Bases of Power
 * Reflection
 * Appropriate Attention
 * Heedfulness
+* Livelihood
 
 (c) as you brainstorm the assignment of responsibilities to the above classes gaps will appear. there are often many abstractions that are implicitly involved in the orchestration. these abstractions need to be identified and often further domain research is required
 
@@ -380,12 +415,14 @@ search results may include:
 * "I don't envision a single thing that is as quick to reverse itself as the mind—so much so that there is no satisfactory simile for how quick to reverse itself it is."
 * "Intention, I tell you, is kamma. Intending, one does kamma by way of body, speech, & intellect."
 * "The intention & aspiration of living beings hindered by ignorance & fettered by craving is established in or tuned to a lower property"
-
-add the following abstractions:
+* Five lower fetters & five higher fetters. And which are the five lower fetters? Self-identification views, uncertainty, grasping at habits & practices, sensual desire, & ill will. These are the five lower fetters. And which are the five higher fetters? Passion for form, passion for what is formless, conceit, restlessness, & ignorance.
+add the following supporting abstractions:
 * Skillful_Mental_Qualities
 * Unskillful_Mental_Qualities
 * Intention
+* Kammic_Field
 * Fetter
+* Person_Of_Integrity
 
 (d) using responsibilities and abstractions from the previous sections identify the collaborators that participate in fulfilling each responsibility
 
@@ -394,157 +431,370 @@ through direct experience one notices which qualities are associated with the Be
 **collaborators**
 * Effluent::is_effluent_free()
     * Mind
-* Admirable Friendship::seek()
+* Admirable Friendship::seek_admirable_friendship()
     * Practitioner
-* Clinging::abandon_ignoble_voice
+* Clinging::abandon_ignoble_voice()
     * Mind
+* Mind::result_of_stress()
+    * Practitioner
 * Conviction::develop_conviction()
     * Practitioner
-* Admirable Friehship::visits_grows_close_lends_ear()    
+* Practitioner::is_enough_progress()
+    * Mind
+* Admirable Friehship::visits_grows_close_lends_ear_hears_the_Dhamma()    
+    * Practitioner, Dhamma
+* Dhamma::remembers_learns_true_Dhamma(), penetrates_the_meaning_of_true_Dhamma()
     * Practitioner
-* Dhamma::learn_remember_penetrate_the_true_Dhammaa()
-    * Admirable Friendship, Practitioner
-* Noble Eightfold Path::develops_persistence()
-    * Practitioner
-* Dhamma::come_to_an_agreement_through_pondering_views()
-    * Practitioner, Conviction
-* Noble Eightfold Path::develop_virtue()
-    * Practitioner 
-* Noble Eightfold Path::develop_generosity()
+* Five Facutlies::develop_persistence()
     * Practitioner
 * Sense of Shame::develop_sense_of_shame()
     * Conviction, Admirable Friendship, Heedfulness
+* Sense of Compunction::develop_sense_of_compunction()
     * Conviction, Dhamma, Heedfulness
 * Obstruction::remove_obstructions()
     * Mind, Heedfulness
+* Mind::come_to_an_agreement_through_pondering_teachings()
+    * Dhamma, Practitioner, Conviction
+* Noble Eightfold Path::exercises_generosity()
+    * Practitioner
+* Noble Eightfold Path::develop_virtue_aggregate()
+    * Practitioner 
+* Noble Eightfold Path::develop_sense_restraint_moderation_in_eating_wakefulness()
+    * Practitioner 
+* Noble Eightfold Path::develop_concentration_aggregate()
+    * Practitioner 
+* Noble Eightfold Path::develop_discernment_aggregate()
+    * Practitioner 
 * Four Bases of Power::develop_desire()
     * Practitioner
 * Four Bases of Power::becomes_willing()
     * Practitioner
-* Four Bases of Power::contemplate()
+* Four Bases of Power::contemplate_weigh_up_analyse()
     * Practitioner
-* Four Bases of Power::exert()
+* Four Bases of Power::apply_exertion()
     * Practitioner
-* Reflection::reflect()
+* Reflection::apply_reflection()
     * Mind, Dhamma, intention
+* Appropriate Attention::attend_appropriately()
+    * Mind
 * Appropriate Attention::skillful_qualities_increase()
     * Mind
 * Appropriate Attention::unskillful_qualities_decrease()
     * Mind
-* Heedfulness::is_enough_training()
+* Heedfulness::is_sensitive_to_heedfulness()
     * Mind
-* Heedfulness::has_task_to_do_with_heedfulness()
-    * Mind
+* Livelihood::partake_in_food_clothing_shelter()
+    * Practitioner
+* Livelihood::partake_in_villages_towns_countrysides()
+    * Practitioner
+* Livelihood::partake_in_individuals()
+    * Practitioner
 
 
 
-(b) generate a plantuml class diagram using the above details adding relationship details and synthesising as required 
+(b) generate plantuml class diagram(s) using the above details adding relationship details and synthesising as required. when there is a topic like heedfulness which touch on the start to the end of the practice then you will likely need to decompose the diagram in to sub-diagrams. in this instance use the paritioned segments from the process view for the sub diagrams.
 
 ```plantuml
-@startuml
+@startuml helpful-sol-class-base
+header 16-Aug-2025
+title Heedful, ardent & resolute (Base view) 
+
 hide empty members
 
-interface Skillful_Mental_Quality {
-    develop()
-}
-interface Unskillful_Mental_Quality {
-    abandon()
-}
-
-class Mind <<client>>{
-  ponder_views()
+enum Practitioner_Level {
+    UNINSTRUCTED
+    CONVICTION_DHAMMA_FOLLOWER
+    STREAM_ENTERER
+    ONCE_RETURNER
+    NON_RETURNER
+    ARAHANT
 }
 
-class Appropriate_Attention implements Skillful_Mental_Quality {
-  skillful_Quality_increase()
-  unskillful_Quality_decrease()
-}
-class Practitioner <<server>>
-class Heedfulness implements Skillful_Mental_Quality {
-    is_enough_training()
-    has_task_to_do()
+enum Result_Of_Stress {
+    BEWILDERMENT
+    SEARCH
 }
 
-class Intention <<kamma>>
-class Conviction implements Skillful_Mental_Quality
-class Dhamma {
-    remember()
-    learn()
-    penetrate()
-    come_to_an_agreement()
-}
-class Sense_Of_Shame implements Skillful_Mental_Quality
-class Sense_Of_Compunction implements Skillful_Mental_Quality
-class Obstruction implements Unskillful_Mental_Quality
-class Noble_Eightfold_Path implements Skillful_Mental_Quality {
-  right speech
-  right action
-  right livelihood
-  right_effort
+class Effluent {
+    + is_effluent_free()
+} 
 
-  develop_generosity()
-  develop_virtue()
-  develop_persistence()
+class Practitioner {
+    + is_arahant()
+    + is_uninstructed()
+    + is_one_in_training()
+
+    + result_of_stress()
+    + is_enough_progress()
+    + dwell_heedful_ardent_resolute()
 }
 
-class Four_Bases_Of_Power implements Skillful_Mental_Quality {
-    develop_desire()
-    become_willing()
-    contemplate()
-    exert()
+class Fetter {
+    + sensual_desire
+    + ill_will
+    + passion_for_form
+    + passion_for_formless
+    + ignorance
 }
 
-class Reflection implements Skillful_Mental_Quality {
-    reflect()
-}
-class Effluent <<payload>> implements Unskillful_Mental_Quality {
-    is_effluent_free()
-}
-class Admirable_Friendship implements Skillful_Mental_Quality {
-    seek()
-    visit()
-    grow_close()
-    lend_ear()
-}
-class Clinging implements Unskillful_Mental_Quality {
-  doctrine-of-self
-  abandon_ignoble_voice()
-}
-class Fetter implements Unskillful_Mental_Quality
-Effluent o--> "0..3" Fetter: bundled state of determinate >
-Effluent .. (Practitioner, Fetter): {<<server>> born out of}
-
-Mind *--> Appropriate_Attention: applies >
-Mind *--> "*" Obstruction: removes >
-Mind --> Effluent: is hindered by ignorance\n& fettered by craving >
-Mind --> Clinging: abandons ignoble voices >
-Mind --> "*" Intention: acts via &\nreflects on >
-Reflection .. (Dhamma, Intention): {born out of contemplating\ncausation wrt ones own actions}
-Reflection -- Mind: periodically <
-Intention .. (Mind, Effluent): {born out of}
-
-Mind *--> Heedfulness: cultivates >
-Heedfulness *--> Sense_Of_Shame: is establish on >
-Heedfulness *--> Sense_Of_Compunction: is establish on >
-Heedfulness --> Obstruction: is subject to >
-Admirable_Friendship <-- Practitioner: takes refuge in <
-Conviction .. (Admirable_Friendship, Practitioner): {born out of respect}
-Admirable_Friendship <-- Conviction: confidence in teacher <
-Sense_Of_Shame .. (Admirable_Friendship, Conviction): {born out of fear\nof dissappointing}
-Dhamma <-- Conviction: confidence in causation <
-Sense_Of_Compunction .. (Dhamma, Conviction): {born out of fear of causation}
-Admirable_Friendship --> Dhamma: teaches >
-
-Practitioner *--> Kammic_Field: heir to >
-Intention *--> Kammic_Field: kammic seed planted in >
-Practitioner *--> "*" Fetter: fettered by >
-Practitioner --> Dhamma: takes refuge in >
-Practitioner *--> Conviction: develops >
-Practitioner *--> Four_Bases_Of_Power: develops\n& brings to culmination >
-Practitioner *--> Noble_Eightfold_Path: develops >
-Practitioner o--> Mind: trains their >
+Practitioner *--> "0..10" Fetter: is complacent about ignorance &\ncraving for becoming >
+Effluent .. (Practitioner, Fetter): {born out of}
+Practitioner o-> Mind
+Mind --> Effluent: is subject to and produces > 
+Practitioner *--> "level" Practitioner_Level: is at the level of >
+Practitioner ..> Result_Of_Stress: responds to stress in terms of >
 @enduml
 ```
+
+```plantuml
+@startuml helpful-sol-class-apprenticeship
+header 16-Aug-2025
+title Heedful, ardent & resolute (Apprenticeship view) 
+hide empty members
+
+interface Admirable_Friendship {
+    + seek()
+    + visits_grows_close_lends_ear_hears_the_Dhamma()
+}
+
+class Practitioner {
+    + exercises_generosity()
+}
+
+class Dhamma {
+    + remembers_and_learns()
+    + penetrates_the_meaning()
+}
+
+class Clingable<Doctrine_Of_Self> <<unskillful, regressive>>{
+    + abandon()
+}
+
+class Five_Faculties <<skillful, non-regressive>> {
+    + conviction
+    + persistence
+    + develop_conviction()
+    + develop_persistence()
+}
+
+class Mind {
+    + come_to_an_agreement_through_pondering_teachings()
+}
+
+class Guarding_Qualities <<skillful, regressive>> {
+    + sense_of_shame
+    + sense_of_compunction
+}
+
+class Obstruction <<unskillful, regressive>>{
+    + abandon()
+}
+
+class No_Falling_Away_Qualities <<skillful, regressive>> {
+    + sense restraint
+    + moderation in eating
+    + wakefulness
+}
+
+class Noble_Eightfold_Path <<skillful, non-regressive>> {
+    + right_action, right_speech, right_livelihood
+    + right_effort, right_mindfulness, right_concentration
+    + right_view, right_resolve
+    + develop_virtue()
+    + develop_concentration()
+    + develop_discernment()
+}
+
+Person_Of_Integrity ..|> Admirable_Friendship: is a human representation of >
+Practitioner o--> Mind: is training >
+Mind o--> Clingable: seeks to abandon ignoble voices >
+Mind o-u-> Guarding_Qualities: guarded by >
+Mind o-u-> No_Falling_Away_Qualities: kept in check by >
+Mind o--> Dhamma: establishes mindfulness in >
+Practitioner o--> "*" Obstruction: hinders attending to Dhamma >
+Practitioner --> Admirable_Friendship: seeks to improve >
+
+Practitioner *--> Five_Faculties: grows in conviction & persistence >
+Practitioner *--> Noble_Eightfold_Path: develops >
+Guarding_Qualities .l. (Five_Faculties, Dhamma): {born out of\nconviction in causation}
+Guarding_Qualities .r. (Five_Faculties, Admirable_Friendship): {born out of\nconviction/respect}
+Dhamma .. (Practitioner, Admirable_Friendship): {born out of}
+
+Practitioner --> Person_Of_Integrity: grows close through generosity >
+@enduml
+```
+
+
+```plantuml
+@startuml helpful-sol-class-in-the-field
+header 16-Aug-2025
+title Heedful, ardent & resolute (In the field view) 
+hide empty members
+
+class Practitioner
+
+class Heedfulness <<skillful, regressive>> {
+    + is_sensitive_to_heedfulness()
+}
+
+class Four_Bases_Of_Power <<skillful, non-regressive>> {
+    + desire
+    + willing
+    + contemplate
+    + exertion
+
+    + develop_desire()
+    + become_willing()
+    + contemplate_weigh_up_analyse()
+    + apply_exertion()
+}
+
+class Reflection <<skillful, regressive>> {
+    + ones_own_failures_attainments
+    + others_failures_attainments
+    + apply_reflection()
+}
+
+class Appropriate_Attention <<skillful, regressive>> {
+    + increase_skillful_qualities()
+    + decrease_unskillful_qualities()
+}
+
+class Livelihood {
+    + partake_in_food_clothing_shelter()
+    + partake_in_villages_towns_countrysides()
+    + partake_in_individuals()
+
+    + partake_in_training()
+}
+
+class Five_Faculties <<skillful, non-regressive>> {
+    + conviction
+}
+
+class Kammic_Field {
+    + lower-property
+    + form-property
+    + formless-property
+}
+
+Practitioner o--> Mind: is training >
+Practitioner *--> Five_Faculties: develops >
+Practitioner *--> Four_Bases_Of_Power: develops >
+Appropriate_Attention .. (Five_Faculties, Heedfulness): {born out of}
+Intention .. (Practitioner,  Livelihood): {for the sake of acquisitions}
+Intention --> Kammic_Field: seeds of consciousness get planted in >
+Mind --> Intention: [upon contact] fabricates with >
+Reflection .. (Mind, Intention)
+Mind *--> Reflection: develops >
+
+Practitioner *-l-> Kammic_Field: owner, heir, born, related & live dependent on >
+@enduml
+```
+
+6. **Section: Solution > State Transitions** 
+to complete a practitioners understanding of the solution beyond a process and structural perspective we model the solution in terms of state transitions. for each of the key object(s) identify how to transitions as the solution unfolds. further, how do other objects respond to those transitions participating in an orchestration. this model should ultimately serve to give the practitioner a more nuanced understanding of how things have come to be or function. 
+
+this task will utilise the Process View activity diagram and the class diagram(s) created in the previous sections.
+
+(a) identify the core object(s) and model it's initial state. then follow the process model for each activity in the process. review its associated classes from the class diagram and observe what determinant state governs transitions. add those determinant state to the state model along with the transitions. further, add the other key objects that to experienced key state changes as part of the same signal. continue until all activities have been considered.   
+
+
+
+```plantuml
+@startuml helpful-sol-state
+header 16-Aug-2025
+title Heedful, ardent & resolute (State view) 
+
+state "<<transient>>\nMind" as Mind {
+  state "selfhood\nin" as mind_selfhood_in <<inputPin>>
+  state "intention\nout" as mind_intention_out <<exitPoint>>
+
+  state "Less_Heedful" as less_h {
+    less_h:inappropriate attention
+    less_h:  + skillful qualities decrease
+    less_h:  + unskillful qualities increase
+  }
+  state "More_Heedful" as more_h {
+    more_h:appropriate attention
+    more_h:  + skillful qualities increase
+    more_h:  + unskillful qualities decrease
+  }
+  state "Most_Heedful" as most_h {
+    most_h:admirable_friendship=100%
+    most_h:sense_of_shame=100%
+    most_h:sense_of_compunction=100%
+    most_h:heedfulness=100%
+  }
+  
+  less_h --> less_h: unskillful intention
+  less_h --> more_h: skillful intention\n{sense of shame & compunction}
+  more_h --> less_h: unskillful intention\n{thinks: that's enough progress}
+  more_h --> more_h: skillful intention
+  more_h --> most_h: skillful intention\n[effluent-free=yes]\n{release}
+}
+
+
+  state "<<transient>>\nEffluent" as Effluent {
+    state "in" as meff_in <<inputPin>>
+    state "out" as meff_out <<exitPoint>>
+  }
+
+
+state "<<persistent>>\nPractitioner" as Practitioner {
+}
+
+
+state "<<persistent>>\nFetter" as Fetter {
+    state "in" as pfet_in <<inputPin>>
+    state "out" as pfet_out <<exitPoint>>
+}
+
+state "<<persistent>>\nKammic_Field" as Kammic_Field {
+    state "in" as pkam_in <<inputPin>>
+    state "out" as pkam_out <<exitPoint>>
+}
+
+Mind:previous_states
+Mind:
+Mind:Attention
+Mind:Guarding_Qualities
+Mind:No_Falling_Away_Qualities
+Mind:Clinging
+
+Practitioner:Four_Bases_Of_Power
+Practitioner:Five_Faculties
+Practitioner:Noble_Eightfold_Path
+Practitioner:Obstruction
+Practitioner:
+Kammic_Field:lower_property
+Kammic_Field:form_property
+Kammic_Field:formless_property
+
+Fetter:from DN33
+Fetter:sensuality
+Fetter:becoming
+Fetter:ignorance
+
+Effluent:sensuality
+Effluent:becoming
+Effluent:ignorance
+
+'pfet_out -l-> meff_in: prepare for contact\n\n\n\n
+'meff_out -r-> pfet_in: \n\tsynchronise\n\n\n\n\n\n
+
+pfet_out -l-> meff_in: [on becoming]
+mind_intention_out --> pkam_in: consciousness seed
+pkam_out --> mind_selfhood_in: [on becoming]
+
+Practitioner -> Practitioner: skillful intention ot\nunskillful intention
+Mind -> Mind: skillful intention ot\nunskillful intention
+Fetter -> Fetter: skillful intention ot\nunskillful intention
+Effluent -> Effluent: skillful intention ot\nunskillful intention
+
+@enduml
+```
+
 
 ## 4. Section: Context
 in the forth step we will use all previous sourced research material:
@@ -644,98 +894,9 @@ top to bottom direction
           * the three forms of right conduct
             * the four establishings of mindfulness
               *_ ...
+          * moderation in eating
+            * wakefulness
       *_ right view
   *_ release
 @endmindmap
-```
-
-**behaviour in terms of available transitions**
-the idea here is that often 1 or more composite object exhibit a given states in orchestration before transitions can occur. it gives the practitioner a more nuanced understanding of how things have come to be or function.
-
-(c) [for each dhamma subject in the solution (ie. progression index)] review the solution and the mindmap above and consider each of the first level follow causal-chains. identify the containing object and the various state changes of the subject in order to progress through both the solution and the first level follow on causal-chains. finally model the conditions and constraints that govern those transitions.
-
-(d) generate a plantuml state diagram using the above details
-
-```plantuml
-@startuml
-title Key states from Heedfulness
-left to right direction
-
-state "<<transient>>\n Practitioner's Mind State" as Mind {
-  Mind:previouse_heedful_state
-  state "Effluents" as Effluents {
-    state "in" as meff_in <<inputPin>>
-    state "out" as meff_out <<exitPoint>>
-    Effluents:effluent-free
-  }
-  state "Intention" as int {
-    state "out" as mint_out <<exitPoint>>
-  }
-  int -> int: skillful or\nunskillful intentions
-  Effluents <- Effluents: skillful or\nunskillful intentions
-  state "Less_Heedful" as less_h {
-    less_h:skillful qualities decrease
-    less_h:unskillful qualities increase
-  }
-  state "More_Heedful" as more_h {
-    more_h:skillful qualities increase
-    more_h:unskillful qualities decrease
-  }
-  state "Most_Heedful" as most_h {
-    most_h:admirable_friendship=100%
-    most_h:sense_of_shame=100%
-    most_h:sense_of_compunction=100%
-    most_h:heedfulness=100%
-    most_h:doctrine-of-self-clinging=0%
-  }
-  
-  less_h --> less_h: unskillful intention
-  less_h --> more_h : skillful intention\n{sense of shame & compunction}
-  more_h --> less_h : unskillful intention\n{thinks: that's enough training}
-  more_h --> more_h: skillful intention
-  more_h --> most_h: skillful intention\neffluent-free=yes\n{release}
-  
-  state "Skillful_Qualities" as msq
-  state "Unskillful_Qualities" as muq
-
-  msq -[#green,dashed]-> less_h
-  muq -[#red,dashed]-> less_h
-  msq -[#green,dashed]-> more_h
-  muq -[#red,dashed]-> more_h
-
-  msq:admirable_friendship
-  msq:sense_of_shame
-  msq:sense_of_compunction
-  msq:heedfulness
-  msq:appropriate_attention
-  muq:doctrine-of-self-clinging
-}
-state "<<persistent>>\nPractitioner's Being State" as pbs {
-  state "Skillful_Qualities" as bsq {
-    bsq: Four_Bases_Of_Power
-    bsq: Noble_Eightfold_Path
-    bsq: Five_Faculties
-  }
-
-  state "Unskillful_Qualities" as buq {
-    state Fetters 
-    state Craving
-    state Obstructions
-  }
-  Craving -> meff_in: incoming defilements
-  Fetters -> meff_in: incoming defilements
-  Fetters <- meff_out: outgoing defilements
-  Obstructions -[#red,dashed]-> less_h
-
-  state "Kammic_Field" as kf {
-    state "in" as bkf_in <<inputPin>>
-    kf:number of seeds remaining
-  }
-  mint_out -> bkf_in
-  kf --> bsq: update
-  kf --> buq: update
-  [*] --> kf
-  kf --> [*] :total unbinding\n[number of seeds remaining==0]
-}
-@enduml
 ```
