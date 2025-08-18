@@ -26,7 +26,7 @@
     ],
 
     "catagory-breadcrumb-labels": [
-        "Dhammas that a very helpful",
+        "Dhammas that are very helpful",
         "Dhammas that should be developed",
         "Dhammas that should be comprehended",
         "Dhammas that should be abandoned",
@@ -42,7 +42,7 @@
         "helpful": [
             "Heedful, ardent & resolute",
             "Mindfulness & alertness",
-            "Factors of stream-entry",
+            "Factors for stream-entry",
             "Four wheels",
             "Factors for exertion",
             "Amiability",
@@ -161,7 +161,7 @@
         ]
     },
 
-  "solution-excerpts": {
+  "answer-excerpts": {
     "helpful": [
       "Heedfulness with regard to skillful qualities",
       "Mindfulness & alertness",
