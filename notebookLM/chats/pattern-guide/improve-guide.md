@@ -668,3 +668,12 @@ The current "triad of artifacts" has made significant progress, but there are a 
     *   **Required Action:** Please **provide a single, definitive instruction** within the `DN34-param-pattern-request.md` template or `guide_to_writing_PBT_patterns.md` that explicitly states the desired markdown header levels for the main pattern title (`Pattern:`) and all its subsections (Problem, Context, Forces, Solution, Rationale, Resulting Context, Related Patterns, Case Studies, Similes, and Diagrams). For example, `### Pattern:` for the pattern name, `#### Problem:` for sections, and `##### Step-by-Step:` for sub-sections.
 
 By addressing these points, particularly the inclusion of `answer-excerpts` and explicit PlantUML guidelines, we can significantly improve the accuracy and consistency of future pattern generations.
+
+
+---
+
+in your last recommended changes on the triad of artifacts used for pattern generation last night, you mentioned:
+
+1.  **Related Patterns Descriptions:**
+
+the new model as documented in source "guide_to_writing_PBT_patterns.md" 

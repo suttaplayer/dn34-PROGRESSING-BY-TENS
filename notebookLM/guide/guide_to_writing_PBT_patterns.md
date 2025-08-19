@@ -8,6 +8,100 @@ in order to be successful at this task, notebooklm has been paired with an exper
 notebooklm has been assigned the task of eventually generating all of the 100 patterns. notebooklm and the expert have been collaborating on the "Heedful, ardent & resolute" pattern (previously known just as Heedfulness) which has thus experienced 4 iterations with feedback from the expert serving as input for the next generated iteration. whilst this process review/refinement process is progressing, it is far too slow.
 
 
+## Common API Types
+in order to inteface between the following actors: 1. user, 2. guide (this document) & 3. template, a common set of data types must be established to form a contract for communication. objects of these types may be created by either the user or notebooklm as part of an orchestrated request or response.
+
+note, any property name that has a "_" suffix is implied to be an optional argument. 
+
+```json
+  causeAndEffectJson = {
+    "not-cause_": false, /* boolean value indicating inverse of the causal reference (default: false|null)*/
+    "cause": "", /* string of the cause in lowercase (eg. "admirable friendship")*/
+    "cannot_": false, /* boolean value indicating an impossible causal relationship (default: false|null)*/
+    "skips-to_": false, /* boolean value indicating causation with missing links causal relationship (default: false|null)*/
+    "co-arised-with_": false, /* boolean value indicating co-arising together causal relationship (default: false|null)*/
+    "not-effect_": false, /* boolean value indicating inverse of the effect reference (default: false|null)*/
+    "effect": "", /* string of the effect in lowercase (eg. "conviction")*/
+  }
+  /*
+  eg1 {"cause": "shame", "effect": "heedful"},
+      => shame leads to heedful
+
+  eg2. {"not-cause_":true, "cause": "conviction", "cannot_": true, "effect": "remembers it"},
+      => not [having] conviction cannot lead to remembers it
+  */
+
+  patternBuildingBlocksJson = {
+    "Problem": "", /* string of the problem statement */
+    "Causal-Table": [/* array of causeAndEffectJson objects (full table) */],
+    "Solution": {
+        "Step-by-Step": [/* array of process step strings (this is a flattened representation of Process View) */],
+        "Cause-&-Effect": [/* array of causeAndEffectJson objects (solution only) */],
+        "Process View": [/* array of PlantUML Activity Diagram strings */],
+        "Concepts & Relationships": [/* array of PlantUML Class Diagram strings */],
+        "State Transitions": [/* array of PlantUML State Diagram strings */],
+    },
+    "Context": [/* array of requisite condition/invariant strings */],
+    "Forces": [/* array of design constraint/influence strings */],
+    "Rationale": "", /* string of the rationale statement */
+    "Resulting Context": [/* array of PlantUML Mindmap Diagram strings */],
+    "Related Patterns": [/* array of related pattern-name strings */],
+    "Case-studies": [/* array of individual's name reference strings */],
+    "Simile": [/* array of simile name reference strings */]
+  }
+
+  /* type determinantQuotationString = string // shortest quotation string that can be used as a determinant for a view point*/
+  patternQuotationsJson {
+    "Problem": [/* array of determinantQuotationString strings */],
+    "Solution": {
+        "Step-by-Step": [/* array of determinantQuotationString strings */],
+        "Cause-&-Effect": [/* array of determinantQuotationString strings */],
+        "Process View": [/* array of determinantQuotationString strings */],
+        "Concepts & Relationships": [/* array of determinantQuotationString strings */],
+        "State Transitions": [/* array of determinantQuotationString strings */]
+    },
+    "Context": [/* array of determinantQuotationString strings */],
+    "Forces": [/* array of determinantQuotationString strings */],
+    "Rationale": [/* array of determinantQuotationString strings */],
+    "Resulting Context": [/* array of determinantQuotationString strings */],
+    "Related Patterns": [/* array of determinantQuotationString strings */],
+    "Case-studies": [/* array of determinantQuotationString strings */],
+    "Simile": [/* array of determinantQuotationString strings */]
+  }
+
+  userInfluentialFactorsJson = {
+    "factors_": null, /* array of string */
+    "determinant-quotations_": null /* array of determinantQuotationString strings */
+  }
+
+  userDirectExperienceJson = {
+    "Problem": null, /* userInfluentialFactorsJson */
+    "Causal-Table": [/* array of causeAndEffectJson objects (full table additions) */],
+    "Solution": {
+        "Step-by-Step": null, /* userInfluentialFactorsJson */
+        "Cause-&-Effect": [/* array of causeAndEffectJson objects (solution additions) */],
+        "Process View": null, /* userInfluentialFactorsJson */
+        "Concepts & Relationships": null, /* userInfluentialFactorsJson */
+        "State Transitions": null, /* userInfluentialFactorsJson */
+    },
+    "Context": null, /* userInfluentialFactorsJson */
+    "Forces": null, /* userInfluentialFactorsJson */
+    "Rationale": null, /* userInfluentialFactorsJson */
+    "Resulting Context": null, /* userInfluentialFactorsJson */
+    "Related Patterns": null, /* userInfluentialFactorsJson */
+    "Case-studies": null, /* userInfluentialFactorsJson */
+    "Simile": null, /* userInfluentialFactorsJson */
+  }
+
+```
+
+## Expert User-Input
+there are several sections in this "progressing by tens" writing guide that make reference to "direct experience". this term is in reference to an insight that an expert has made that is not found in the source sutta texts. thus, if it is not found in the sources, then it is not reasonable to expect notebooklm to arrive at this same insight and generate the same pattern. therefore, a direct experience JSON object will be declared as an optional user parameter that will be submitted as part of the intiating user query. this way, direct experience can be injected into notebooklm's processing when required. it is only when an expert reviews notebooklm's generated pattern response with the associated patternQuotationsJson object that they will be able to realise what quotations and influencial insight were missing in notebooklm's response. then in the next iteration of generating the same pattern, the expert can include direct experience in the initiating user query.
+
+**User Task:**
+  * provide userDirectExperienceJson JSON if the expert wants notebooklm to incorporate influential insight as part of any task completion. the userInfluentialFactorsJson can be added to each pattern section that the expert wants to influence. the expert understands the pattern writing process and that a pool of knowledge develops and continues to grow as the process flows from activity to activity. therefore, any user influential insight that is added to the "Problem" sections array will be expected to cascade down to other sections.
+
+
 ## Purpose
 after repeated failures to generate the pattern to the quality expected by the expert, the expert has authored this guide to accelerate the process by reducing the number of iterations in the learning development process. this guide represents the approach that the expert themselves would follow to deliver the desired pattern. the purpose of this guide is to document the processes & methods of creating the raw materials and building blocks. 
 
@@ -18,7 +112,7 @@ note, this guide is more akin to capturing the working out (ie. building blocks)
     "Problem": "", /* string of the problem statement */
     "Solution": {
         "Step-by-Step": [/* array of process step string (this is a flattened representation of Process View)*/],
-        "Cause-&-Effect": [/* array of {cause: string, effect: string} objects (from sources and used in Process View)*/],
+        "Cause-&-Effect": [/* array of causeAndEffectJson objects (from sources)*/],
         "Solution": {
             "Process View": [/* array of PlantUML Activity Diagram strings */],
             "Concepts & Relationships": [/* array of PlantUML Class Diagram strings */],
@@ -79,7 +173,9 @@ more often than not, Ven. Sāriputta's full answer is provided in brief. even th
 3. subjects
 4. focus areas for each subject
 
-(b) search ONLY the sutta sources for each of the above identified subject within the context of the category-key. sometime a opposite or inverse of the subject will also help identify valuable search results
+(b) search ONLY the sutta sources for each of the above identified subject within the context of the category-key. sometimes a opposite or inverse of the subject will also help identify valuable search results
+
+(c) store determinant search_results in patternQuotationsJson["Problem"]
 
 
 **running example**
@@ -94,16 +190,31 @@ originating question and answer statement:
 
 start searching the suttas for the key term "heedful" or opposite "heedless" in the context of it being helpful
 
-search results may include:
+search_results may include:
 * Don't be heedless. Don't later fall into remorse.
 * Now, then, monks, I exhort you: All fabrications are subject to ending & decay. Reach consummation through heedfulness.' That was the Tathāgata's last statement [to a group of noble monks the most backward of which was a stream-enterer]
 * *Monks, I don't say of all monks that they have a task to do with heedfulness"
 * [dont] ever let yourself get complacent when the ending of effluents is still unattained
 * Now the thought may occur to you, 'We are endowed with shame & compunction. That much is enough, that much means we're done, so that the goal of our contemplative state has been reached. There's nothing further to be done,' and you may rest content with just that. So I tell you, monks. I exhort you, monks. Don't let those of you who seek the contemplative state fall away from the goal of the contemplative state when there is more to be done.
 
+```javascript
+patternQuotationsJson["Problem"] = search_results
+```
 
 ## 2. Prepare the content for the pattern's "Problem"
-(a) identify the **real** problem that the solution addresses. using the following:
+(a) inject user influential insights if provided
+```javascript
+let search_results = [/* ... */] // populated in section 1
+if (userDirectExperienceJson["Problem"]) {
+    const influentialFactorJson = userDirectExperienceJson["Problem"];
+    if (influentialFactorJson?.["factors_"])
+      search_results.push(...influentialFactorJson["factors_"])
+    if (influentialFactorJson?.["determinant-quotations_"])
+      search_results.push(...influentialFactorJson["determinant-quotations_"])
+}
+```
+
+(b) identify the **real** problem that the solution addresses. using the following:
 1. Ven. Sāriputta (an expert) has provided the answer & 
 2. the search results from the previous step 
 we can progress towards the problem statement.
@@ -123,6 +234,7 @@ consider the following:
 **Assessment**
 assess in terms of missing/excess, the 
 * problem statement
+* patternQuotationsJson["Problem"] array
 
 
 **running example**
@@ -136,8 +248,11 @@ therefore, the sections building blocks are:
 2. the scope starts from the point of complacency and continues until the end of the effluents is unattained
 3. what would Ven. Sāriputta, knowing that you are practicing wrongly, ask a very direct and brief question of you such that you cannot hide behind words?
 
-draft problem statement could be:
+problem_statement:
 How do you stop being complacent when the ending of effluents is still unattained?
+
+
+patternBuildingBlocksJson["Problem"] = problem_statement
 
 
 ## 3. Prepare the content for the pattern's "Solution"
@@ -155,20 +270,24 @@ the sutta texts are sources that document causation which can both implicitly an
 (a) use the source "guide_causation_expression.md" for some candidate causation expressions as a means for searching in relation to both the problem and solution.
 (b) search for cause/effect relationships related the subject(s) depending on the progression (ie. ones, twos,...)
 (c) for each cause/effect encountered, expand the search by repeating step (b) with using the related cause (backward) or effect (forward). do this again such that you have researched a pool of cause/effect relations with a few degress of freedom from the original subject and which also includes the problem statement's scope from the previous section
-(d) compile the list of search results as this represents the causal pool 
+(d) store determinant search_results in patternQuotationsJson["Step-by-Step"]
+
 
 **running example**
-consider the following search results (ie. causal pool):
+consider the following search_results (ie. causal pool):
 * all skillful qualities are rooted in heedfulness, converge in heedfulness, and heedfulness is reckoned the foremost among them
 * This one quality, monks, when developed & pursued, keeps both kinds of benefit secure: benefit in this life & in lives to come.
 * Monks, having a sense of shame & having a sense of compunction, one is heedful
 * Monks, these two bright qualities guard the world. Which two? Shame & compunction.
+* Concentration nurtured with virtue is of great fruit, great reward. Discernment nurtured with concentration is of great fruit, great reward. The mind nurtured with discernment is rightly released from the effluents
 * For him, dwelling thus heedfully, joy is born. In one who has joy, rapture is born. The body of one enraptured at heart grows calm. When the body is calm, one feels pleasure. Feeling pleasure, the mind becomes centered. When the mind is centered, phenomena become manifest. When phenomena are manifest, he is reckoned as one who dwells in heedfulness
 * Being heedful, one is capable of abandoning apathy, being hard to correct, & evil friendship
 * 'And what is heedfulness? There is the case where a monk guards his mind with regard to effluents and qualities accompanied by effluents. When his mind is guarded with regard to effluents and mental qualities accompanied by effluents, the faculty of conviction goes to the culmination of its development. The faculty of persistence… mindfulness… concentration… discernment goes to the culmination of its development
 * The monk delighting in heedfulness, seeing danger in heedlessness –incapable of falling back– stands right on the verge of Unbinding.
 * 'There is the case, friends, where a monk lives in apprenticeship to the Teacher or to a respectable companion in the holy life in whom he has established a strong sense of shame & compunction, love, & respect.
 * Any individual of whom one has come to know, 'When I partake of this individual, unskillful qualities decrease and skillful qualities increase,' that sort of individual is to be partaken of
+* To foster appropriate attention to them: This is the food for the arising of unarisen equanimity as a factor for awakening, or for the growth & increase of equanimity as a factor for awakening once it has arisen.
+* To foster appropriate attention to them: This is lack of food for the arising of unarisen uncertainty, or for the growth & increase of uncertainty once it has arisen.
 * Monks, as long as the monks have conviction… shame… compunction… learning… aroused persistence… established mindfulness… discernment, the monks' growth can be expected, not their decline
 * 'Seven noble treasures: the treasure of conviction, the treasure of virtue, the treasure of a sense of shame, the treasure of a sense of compunction, the treasure of listening, the treasure of generosity, the treasure of discernment
 * 'Seven true dhammas: There is the case, friends, where a monk has conviction, a sense of shame, a sense of compunction, learning, and is one of aroused persistence, established mindfulness, & discerning
@@ -188,156 +307,276 @@ consider the following search results (ie. causal pool):
 * Monks, I speak of robes in two ways: to be partaken of and not to be partaken of. I also speak of alms food… lodgings… villages & towns… countrysides… individuals in two ways: to be partaken of and not to be partaken of.
 * Any robe of which one has come to know, 'When I partake of this robe, unskillful qualities decrease and skillful qualities increase,' that sort of robe is to be partaken of.
 
-(e) expanding the causal pool using expert direct experience. this step can be added by the expert after reviewing the generated pattern
+```javascript
+patternQuotationsJson["Step-by-Step"] = search_results
+```
+
+(e) inject user influential insights if provided
+```javascript
+let search_results = [/* ... */] // populated in step (d)
+if (userDirectExperienceJson["Step-by-Step"]) {
+    const influentialFactorJson = userDirectExperienceJson["Step-by-Step"];
+    if (influentialFactorJson?.["factors_"])
+      search_results.push(...influentialFactorJson["factors_"])
+    if (influentialFactorJson?.["determinant-quotations_"])
+      search_results.push(...influentialFactorJson["determinant-quotations_"])
+}
+```
+
+
 
 **running example**
-1. direct experience would reveal that as the practice progresses the admirable friend's voice continues to resonate and echo like a songs of dhamma stuck on repeat in the practitioners mind; consider this as signal. the admirable friend need not be a physical person. it could a book, audio/video dhamma talks, it could even be a notebooklm <smile> notebook. furthermore, the clinging to doctrine-of-self is the attachment to voices and roles. the practitioner must start to realise that voices other than the buddha's instructions, are to be treated as noise. hence, regardless of whether one physically lives with a teacher or not, the practice is one of continous seeking, resulting in perfecting the signal to noise ratio of instruction! further, admirable friendship *means* to copy, clone and imitate the qualities of the admirable friend, not the quality of companionship in-of-itself (ie. "Associating with an admirable friend even a fool becomes wise")
+1. setup user influential factors
+```json
 
-therefore, add the additional causal chains to the pool:
-* 'Monks, there are these two conditions for the arising of right view. Which two? The voice of another and appropriate attention. These are the two conditions for the arising of right view.'
-2. note, not even the buddha could not teach/instruct on the specific topics of how to acquire heedfulness, appropriate attention and admirable friendship despite being "well-gone, an expert with regard to the cosmos, unexcelled trainer of people fit to be tamed, teacher of devas & human beings, awakened, blessed". an individual needed to be fit to be tamed!
-    * "It's impossible, there's no way, that a person of no integrity would know of a person of no integrity: 'This is a person of no integrity... It's impossible, there's no way, that a person of no integrity would know of a person of integrity: 'This is a person of integrity."
-    * "Monks, with regard to external factors, I don't envision any other single factor like friendship with admirable people as doing so much for a monk in training, who has not attained the heart's aspiration but remains intent on the unsurpassed safety from bondage."
-    * "Monks, with regard to internal factors, I don't envision any other single factor like appropriate attention as doing so much for a monk in training, who has not attained the heart's aspiration but remains intent on the unsurpassed safety from bondage."
-
-note, the root cause of acquiring admirable friendship is kammic. therefore, these causal chains should also be added to the pool:
-* Eight inopportune, untimely situations for leading the holy life
-* Four wheels: living in a civilized land, associating with people of integrity, directing oneself rightly, & having done merit in the past. These four dhammas are very helpful.
-
+userDirectExperienceJson["Step-by-Step"] = [{
+    "factors_": [
+      "as the practice progresses the admirable friend's voice continues to resonate and echo like a songs of dhamma stuck on repeat in the practitioners mind; consider this as signal.",
+      "the admirable friend need not be a physical person; it could a book, audio/video dhamma talks, it could even be a notebooklm <smile> notebook.",
+      "the clinging to doctrine-of-self is the attachment to voices and roles.",
+      "the practitioner must start to realise that voices other than the buddha's instructions, are to be treated as noise."
+      "regardless of whether one physically lives with a teacher or not, the practice is one of continous seeking, resulting in perfecting the signal to noise ratio of instruction!",
+      "admirable friendship *means* to copy, clone and imitate the qualities of the admirable friend, not the quality of companionship in-of-itself",
+      "not even the buddha could not teach/instruct on the specific topics of how to acquire heedfulness, appropriate attention and admirable friendship despite being . an individual needed to be fit to be tamed!",
+      "the root cause of acquiring admirable friendship is kammic"
+    ],
+    "determinant-quotations_": [
+      "Associating with an admirable friend even a fool becomes wise",
+      "Monks, there are these two conditions for the arising of right view. Which two? The voice of another and appropriate attention. These are the two conditions for the arising of right view.",
+      "It's impossible, there's no way, that a person of no integrity would know of a person of no integrity: 'This is a person of no integrity... It's impossible, there's no way, that a person of no integrity would know of a person of integrity: 'This is a person of integrity.",
+      "Monks, with regard to external factors, I don't envision any other single factor like friendship with admirable people as doing so much for a monk in training, who has not attained the heart's aspiration but remains intent on the unsurpassed safety from bondage.",
+      "Monks, with regard to internal factors, I don't envision any other single factor like appropriate attention as doing so much for a monk in training, who has not attained the heart's aspiration but remains intent on the unsurpassed safety from bondage.",
+      "Eight inopportune, untimely situations for leading the holy life",
+      "Four wheels: living in a civilized land, associating with people of integrity, directing oneself rightly, & having done merit in the past. These four dhammas are very helpful."
+      "well-gone, an expert with regard to the cosmos, unexcelled trainer of people fit to be tamed, teacher of devas & human beings, awakened, blessed"
+    ]
+  }}
+```
 
 2. **Section: Solution > Cause-&-Effect** 
 it is important to realise that many of the lists that are in the sutta sources are in fact causal chains. you can safely assume that about 90% of lists are causal chains. even the five-clinging aggregates is itself a causal chain, you just need to know how to see it. therefore, proceed with the assumption that any given list is a causal chain and the expert will identify the exceptions when the section is reviewed.
 
-(a) visit each causal chain result from the causal pool and list all unique cause -> effect pairs. generalising concepts and pattern matching will help (eg. teacher = admirable friendship) avoid the list becoming unmanagable
+(a) visit each causal chain result from the causal pool and list all unique cause -> effect pairs in a causal_table. generalising concepts and pattern matching will help (eg. teacher = admirable friendship) avoid the list becoming unmanagable
 
-* shame -> heedful
-* compunction -> heedful
-* heedful -> joy
-* joy -> rapture
-* rapture -> calm
-* calm -> pleasure
-* pleasure -> mind becomes centered
-* mind becomes centered -> phenomena become manifest
-* heedful -> ardent
-* heedful -> easy to correct
-* heedful -> admirable friendship
-* heedful -> conviction
-* conviction -> persistence
-* persistence -> mindfulness
-* mindfulness -> concentration
-* concentration -> discernment
-* heedful -> release
-* admirable friendship -> shame
-* admirable friendship -> compunction
-* admirable friendship -> respect
-* conviction -> shame
-* shame -> compunction
-* compunction -> learning
-* learning -> persistence
-* persistence -> mindfulness
-* mindfulness -> discernment
-* conviction -> virtue
-* virtue -> shame
-* virtue -> sense restraint
-* sense-restraint -> moderation in eating
-* moderation in eating -> wakefulness
-* learning -> generosity 
-* generosity -> discernment
-* conviction -> persistence
-* persistence -> shame
-* compunction -> mindfulness
-* admirable friendship -> conviction
-* conviction -> visits
-* visits -> grows close
-* grows close -> lends ear
-* lends ear -> hears the Dhamma
-* hearing the Dhamma -> remembers it
-* remembers it -> penetrates the meaning
-* penetrates the meaning -> comes to an agreement through pondering those Dhammas
-* comes to an agreement through pondering -> desire
-* desire -> willing
-* willing -> contemplates
-* contemplates -> exertion
-* exertion -> realizes the highest truth
-* admirable friend -> noble eightfold path
-* (present) kamma obstruction -CANNOT-> remembers it
-* defilement obstruction -CANNOT-> remembers it
-* result-of-(past)-kamma obstruction -CANNOT-> remembers it
-* NOT conviction -CANNOT-> remembers it
-* NOT desire -CANNOT-> remembers it
-* NOT discernment -CANNOT-> remembers it
-* NOT fear -> heedlessness
-* NOT fear -CANNOT-> commitment
-* NOT fear -CANNOT-> reflection
-* commitment -> noble eightfold path
-* reflection -> noble eightfold path
-* noble eightfold path -> four establishings of mindfulness
-* four establishings of mindfulness -> four right exertions
-* four right exertions -> four bases of power
-* four bases of power -> five faculties
-* five faculties -> five strengths
-* five strengths -> seven factors for awakening
-* craving -> seeking
-* seeking -> acquisition
-* acquisition -> ascertainment
-* ascertainment -> desire and passion
-* appropriate attention -> right view
-* admirable friendship -> right view
-* admirable friendship -> hearing the true dhamma
-* hearing the true dhamma -> conviction
-* conviction -> appropriate attention
-* appropriate attention -> mindfulness & alertness
-* mindfulness & alertness -> restraint of the senses
-* restraint of the senses -> the three forms of right conduct
-* the three forms of right conduct -> the four establishings of mindfulness
-* the four establishings of mindfulness -> the seven factors for awakening
-* the seven factors for awakening -> clear knowing & release
-* NOT living in a civilized land -CANNOT-> heedfulness
-* NOT admirable friendship -CANNOT-> heedfulness
-* NOT virtue -CANNOT-> heedfulness
-* NOT done merit in the past [and/or lifetimes] -CANNOT-> heedfulness
+note, there will be small deviations in terms of order amongst these pairs across suttas but nothing of signifance. when you encounter a cause/effect pair that contradicts another cause/effect pair already in the causal_table, then it typically occurs in parallel or its a specific facet of a dhamma qualities that is causing the difference.
 
-note, there will be small deviations in terms of order amongst these pairs across suttas but nothing of signifance. when you encounter a cause/effect pair that contradicts another encountered cause/effect pair, then it is because occur in parallel or its a specific facet of a dhamma qualities that is causing the difference.
+consolidate the causal_table removing duplicate pairs
 
-consolidate this cause/effect list removing duplicate pairs
 
-(b) clone and store this consolidated list in the patternBuildingBlocksJson["Solution"]["Cause-&-Effect"] array as this will be modified in the next step
+**running example**
+
+```javascript
+causal_table = [
+  {"cause": "shame", "effect": "heedful"},
+  {"cause": "compunction", "effect": "heedful"},
+  {"cause": "heedful", "effect": "joy"},
+  {"cause": "joy", "effect": "rapture"},
+  {"cause": "rapture", "effect": "calm"},
+  {"cause": "calm", "effect": "pleasure"},
+  {"cause": "pleasure", "effect": "mind becomes centered"},
+  {"cause": "mind becomes centered", "effect": "phenomena become manifest"},
+  {"cause": "heedful", "effect": "ardent"},
+  {"cause": "heedful", "effect": "easy to correct"},
+  {"cause": "heedful", "effect": "admirable friendship"},
+  {"cause": "heedful", "effect": "conviction"},
+  {"cause": "conviction", "effect": "persistence"},
+  {"cause": "persistence", "effect": "mindfulness"},
+  {"cause": "mindfulness", "effect": "concentration"},
+  {"cause": "concentration", "effect": "discernment"},
+  {"cause": "heedful", "effect": "release"},
+  {"cause": "admirable friendship", "effect": "shame"},
+  {"cause": "admirable friendship", "effect": "compunction"},
+  {"cause": "admirable friendship", "effect": "respect"},
+  {"cause": "conviction", "effect": "shame"},
+  {"cause": "shame", "effect": "compunction"},
+  {"cause": "compunction", "effect": "learning"},
+  {"cause": "learning", "effect": "persistence"},
+  {"cause": "persistence", "effect": "mindfulness"},
+  {"cause": "mindfulness", "effect": "discernment"},
+  {"cause": "conviction", "effect": "virtue"},
+  {"cause": "virtue", "effect": "shame"},
+  {"cause": "virtue", "effect": "sense restraint"},
+  {"cause": "sense-restraint", "effect": "moderation in eating"},
+  {"cause": "moderation in eating", "effect": "wakefulness"},
+  {"cause": "learning", "effect": "generosity "},
+  {"cause": "generosity", "effect": "discernment"},
+  {"cause": "conviction", "effect": "persistence"},
+  {"cause": "persistence", "effect": "shame"},
+  {"cause": "compunction", "effect": "mindfulness"},
+  {"cause": "admirable friendship", "effect": "conviction"},
+  {"cause": "conviction", "effect": "visits"},
+  {"cause": "visits", "effect": "grows close"},
+  {"cause": "grows close", "effect": "lends ear"},
+  {"cause": "lends ear", "effect": "hears the Dhamma"},
+  {"cause": "hearing the Dhamma", "effect": "remembers it"},
+  {"cause": "remembers it", "effect": "penetrates the meaning"},
+  {"cause": "penetrates the meaning", "effect": "comes to an agreement through pondering those Dhammas"},
+  {"cause": "comes to an agreement through pondering", "effect": "desire"},
+  {"cause": "desire", "effect": "willing"},
+  {"cause": "willing", "effect": "contemplates"},
+  {"cause": "contemplates", "effect": "exertion"},
+  {"cause": "exertion", "effect": "realizes the highest truth"},
+  {"cause": "admirable friend", "effect": "noble eightfold path"},
+  {"cause": "(present) kamma obstruction", "cannot_": true, "effect": "remembers it"},
+  {"cause": "defilement obstruction", "cannot_": true, "effect": "remembers it"},
+  {"cause": "result-of-(past)-kamma obstruction", "cannot_": true, "effect": "remembers it"},
+  {"not-cause_":true, "cause": "conviction", "cannot_": true, "effect": "remembers it"},
+  {"not-cause_":true, "cause": "desire", "cannot_": true, "effect": "remembers it"},
+  {"not-cause_":true, "cause": "discernment", "cannot_": true, "effect": "remembers it"},
+  {"not-cause_":true, "cause": "fear", "effect": "heedlessness"},
+  {"not-cause_":true, "cause": "fear", "cannot_": true, "effect": "commitment"},
+  {"not-cause_":true, "cause": "fear", "cannot_": true, "effect": "reflection"},
+  {"cause": "commitment", "effect": "noble eightfold path"},
+  {"cause": "reflection", "effect": "noble eightfold path"},
+  {"cause": "noble eightfold path", "effect": "four establishings of mindfulness"},
+  {"cause": "four establishings of mindfulness", "effect": "four right exertions"},
+  {"cause": "four right exertions", "effect": "four bases of power"},
+  {"cause": "four bases of power", "effect": "five faculties"},
+  {"cause": "five faculties", "effect": "five strengths"},
+  {"cause": "five strengths", "effect": "seven factors for awakening"},
+  {"cause": "craving", "effect": "seeking"},
+  {"cause": "seeking", "effect": "acquisition"},
+  {"cause": "acquisition", "effect": "ascertainment"},
+  {"cause": "ascertainment", "effect": "desire and passion"},
+  {"cause": "appropriate attention", "effect": "right view"},
+  {"cause": "admirable friendship", "effect": "right view"},
+  {"cause": "admirable friendship", "effect": "hearing the true dhamma"},
+  {"cause": "hearing the true dhamma", "effect": "conviction"},
+  {"cause": "conviction", "effect": "appropriate attention"},
+  {"cause": "appropriate attention", "effect": "mindfulness & alertness"},
+  {"cause": "mindfulness & alertness", "effect": "restraint of the senses"},
+  {"cause": "restraint of the senses", "effect": "the three forms of right conduct"},
+  {"cause": "the three forms of right conduct", "effect": "the four establishings of mindfulness"},
+  {"cause": "the four establishings of mindfulness", "effect": "the seven factors for awakening"},
+  {"cause": "the seven factors for awakening", "effect": "clear knowing & release"},
+  {"not-cause_":true, "cause": "living in a civilized land", "cannot_": true, "effect": "heedfulness"},
+  {"not-cause_":true, "cause": "admirable friendship", "cannot_": true, "effect": "heedfulness"},
+  {"not-cause_":true, "cause": "virtue", "cannot_": true, "effect": "heedfulness"},
+  {"not-cause_":true, "cause": "done merit in the past [and/or lifetimes]", "cannot_": true, "effect": "heedfulness"}
+]
+```
+
+(b) inject user causal_table additions if provided
+```javascript
+let causal_table = [/* ... */] // populated in step (a)
+if (userDirectExperienceJson["Causal-Table"])
+  if (influentialFactorJson["Causal-Table"])
+    causal_table.push(...influentialFactorJson["Causal-Table"])
+```
+(c) note, the causal_table at this stage represents all of the research into causation with regards to the pattern. this same causal_table will serve as input for the Process view and the Resulting Context sections.
+
+store this value in patternBuildingBlocksJson["Causal-Table"]
+
+
+**running example**
+
+patternBuildingBlocksJson["Causal-Table"] = causal_table
 
 
 3. **Section: Solution > Process View** 
 
-(a) review the consolidated cause/effect pairs in terms of timing, conditional logic and loops. ensure that the entire scope of the problem/solution is considered. after some iterations of adjustment an identifiable process will emerge 
+(a) initialise the solution cause-&-effect table
 
-the process model is created first because it forces all causal aspects to be unified and resolved in order to make a functional process. 
+first, take a deep copy of the causal_table and assign it to the sol_cause_and_effect variable for the solution. 
+
+
+(c) inject user causeAndEffect additions if provided
+```javascript
+if (userDirectExperienceJson["Cause-&-Effect"])
+  sol_cause_and_effect.push(...userDirectExperienceJson["Cause-&-Effect"])
+```
+
+(d) using the sol_cause_and_effect table as the source model the solution's process
+
+the sol_cause_and_effect table and the process model will now evolve concurrently and in sync with one another 
+with each iteration:
+* remove irrelevant sol_cause_and_effect entries from the table that exceed the scope of the probem/solution
+* identify sets of sol_cause_and_effect entries that participate in the process but whose intermediate links can be skipped without loss of accuracy. apply the "skip-to_" feature to such entries in order to simplify the process model
+* add each applicable sol_cause_and_effect entry into the process model whilst simultaneously balancing timing, concurrency, conditional logic and loops.
+* adjust the process model until the all entries in sol_cause_and_effect are resolved
+
+after some iterations, and adjustments, an identifiable conceptual process will emerge that is based on a minimal sol_cause_and_effect table
+
 
 **running example**
-Using the cause/effect pairs from the previous step, we observe:
-* a sense of shame and a sense of compunction is the cause of heedfulness
-* conviction, persistence, virtue, generosity etc, precede a sense of shame and a sense of compunction
-* obstructions block learning the true dhamma
-* admirable friendship precedes conviction
-* seeking leads to desire
-* desire results in exertion
-* contemplating and reflection are related
-* the process completes when task is done (ie. effluent-free)
+```javascript
+sol_cause_and_effect = [
+  {"cause": "shame", "effect": "heedful"},
+  {"cause": "shame", "effect": "compunction"},
+  {"cause": "compunction", "effect": "heedful"},
+  {"cause": "conviction", "effect": "shame"},
+  {"cause": "conviction", "effect": "persistence"},
+  {"cause": "conviction", "effect": "appropriate attention"},
+  {"cause": "appropriate attention", "effect": "skillful qualities increase"},
+  {"cause": "appropriate attention", "effect": "unskillful qualities decrease"},
+  {"cause": "virtue", "effect": "shame"},
+  {"cause": "virtue", "effect": "sense restraint"},
+  {"cause": "virtue", "effect": "concentration"},
+  {"cause": "concentration", "effect": "discernment"},
+  {"cause": "discernment", "effect": "effluent-free"},
+  {"cause": "sense restraint", "effect": "moderation in eating"},
+  {"cause": "moderation in eating", "effect": "wakefulness"},
+  {"cause": "generosity", "effect": "shame"},
+  {"cause": "obstruction", "cannot_": true, "effect": "learning the true dhamma"},
+  {"cause": "admirable friendship", "effect": "conviction"},
+  {"cause": "seeking", "skips-to_": true, "effect": "desire"},
+  {"cause": "desire", "skips-to_": true, "effect": "exertion"},
+  {"cause": "contemplate", "co-arised-with_": true, "effect": "reflection"},
+  {"cause": "task done", "co-arised-with_": true, "effect": "effluent-free"},
+  {"not-cause_": true, "cause": "effluent-free", "co-arised-with_": true, "effect": "stress"},
+  {"cause": "stress", "effect": "seeking"},
+  {"cause": "stress", "effect": "bewilderment"},
+  {"cause": "seeking", "cannot_": true, "effect": "that much is enough"},
+  {"cause": "that much is enough", "effect": "complacent"}
+]
+```
+
+(e) store sol_cause_and_effect in the patternBuildingBlocksJson["Solution"]["Cause-&-Effect"]
 
 
-(b) generate a plantuml activity diagram(s) as a building block of the orchestration by tallying these points together and resolving timing with concurrency, loops & conditions
-  * use the source "guide_plantuml_activity_diagram.md" for a syntax and semantics guide
-  * set the diagram title as "${varPatternName} (Process view)"
+**running example**
 
-(c) push/append the plantuml **Activity Diagram** string to patternBuildingBlocksJson["Solution"]["Process View"] array. push it to the end of the array to preserve the intended order. this approach will enable multiple diagrams to be added when required.
+```javascript
+patternBuildingBlocksJson["Solution"]["Cause-&-Effect"] = sol_cause_and_effect
+```
 
-(d) modify the patternBuildingBlocksJson["Solution"]["Cause-&-Effect"] list retaining only those pairs that were used in the Process View
+**Assessment**
+assess in terms of missing/excess, the 
+* sol_cause_and_effect
+
+(f) establish factors for the specification and creation of the plantuml activity diagram(s)
+```javascript
+const plantumlActivityDiagramFactors = [
+  "use the source 'guide_plantuml_activity_diagram.md' for a syntax and semantics guide",
+  "set the diagram title as '${varPatternName} (Process view)' // add an iteration index if more than one diagram was generated (eg. Process view 1)"
+]
+```
+
+(g) inject user Process View factor if provided
+```javascript
+const influentialFactorJson = userDirectExperienceJson?.["Solution"]?.["Process View"];
+if (influentialFactorJson?.["factors_"])
+  plantumlActivityDiagramFactors.push(...influentialFactorJson?.["factors_"])
+```
+
+(h) generate a plantuml activity diagram(s) as a building block by:
+  * transposing the conceptual process model into plantuml notation
+  * taking into account all the plantumlActivityDiagramFactors
+
+
+(i) push/append the plantuml **Activity Diagram** string to patternBuildingBlocksJson["Solution"]["Process View"] array. push it to the end of the array to preserve the intended order. this approach will enable multiple diagrams to be added when required.
 
 
 **Assessment**
 assess in terms of missing/excess, the 
-* the modified patternBuildingBlocksJson["Solution"]["Cause-&-Effect"] list
-* diagram(s) that were generated 
+* diagram(s) generated 
 
 
 **running example**
+```javascript
+const plantUmlActivityDiagramAsString = "" /* text inside markdown plantuml codeblock */
+```
+
 ```plantuml
 @startuml helpful-sol-process
 header 16-Aug-2025
@@ -373,7 +612,7 @@ while (effluent-free?) is (no: [non-Arahant]\n**there is stress**)
       fork again
         :virtue;
       fork again
-        :restraint, moderation in eating & wakefulness;
+        :sense restraint, moderation in eating & wakefulness;
       fork again
         :concentration;
       fork again
@@ -408,12 +647,13 @@ end while (yes - [Arahant])
 stop
 @enduml
 ```
-patternBuildingBlocksJson["Solution"]["Process View"] = []
-patternBuildingBlocksJson["Solution"]["Process View"].push(plantUmlActivityDiagramAsString)
+```javascript
+patternBuildingBlocksJson["Solution"]["Process View"] = [plantUmlActivityDiagramAsString]
+```
 
 4. **Section: Solution > Step-by-Step**
 (a) using only the process model details above and by collapsing the process into a flattened activity structure
-(b) generate the step-by-step solution instructions and store the list in patternBuildingBlocksJson["Solution"]["Step-by-Step"]
+(b) generate the step-by-step solution instructions as a flattenedProcessArray variable and store the list in patternBuildingBlocksJson["Solution"]["Step-by-Step"]
 
 
 **Assessment**
@@ -422,6 +662,9 @@ assess in terms of missing/excess, the
 
 
 **running example**
+```javascript
+const flattenedProcessArray = [/* each step below is an array element */]
+```
 1. this process repeats continuously while the practitioner is not effluent-free and proceeds with stress at the context, otherwise they have awakened to truth and the process exits
 1. if the reaction to stress is bewilderment then exit, otherwise continue the process
 1. if the thought occurs to the practitioner that "this much progress is enough", then exit, otherwise continue the process knowing that there is a task to do with heedfulness
@@ -448,9 +691,13 @@ assess in terms of missing/excess, the
 1. contemplate on the direct application of Dhammas with respect to the duties of contemplation, abandoning, development & realisation
 1. relentlessly exert oneself to complete the holy life
 
+```javascript
+patternBuildingBlocksJson["Solution"]["Step-by-Step"] = flattenedProcessArray
+```
+
 
 5. **Section: Solution > Concepts & Relationship** 
-(a) using only the process model identify responsibilities
+(a) identify responsibilities using only the process model 
 
 **running example**
 
@@ -486,11 +733,14 @@ assess in terms of missing/excess, the
 * partake_in_individuals()
 * has_a_task_to_do_with_heedfulness()
 
-(b) using only the process model and applying Dhamma domain knowledge, identify the obvious classes associated with each responsibility
+(b) identify the classes associated with each responsibility 
+
+the process of abstraction can be achieved by first starting with the candidate collaborators participating in the process view model 
+
 
 **running example**
 
-**obvious classes [pass 1]**: (in order of unique appearance)
+**candidate classes**: (in order of unique appearance)
 * Effluent
 * Admirable Friendship
 * Clinging
@@ -510,11 +760,28 @@ assess in terms of missing/excess, the
 * Heedfulness
 * Livelihood
 
-(c) as you brainstorm the assignment of responsibilities to the above classes gaps may appear. there are often many abstractions that are implicitly involved in the orchestration of activities. these abstractions need to be identified and often further domain research is required
+(c) establish factors for the specification and creation of the plantuml class diagram(s)
+```javascript
+const plantumlClassDiagramFactors = [
+  "use the source 'guide_plantuml_class_diagram.md' for a syntax and semantics guide",
+  "set the diagram title as '${varPatternName} (Concepts & Relationships)' // add an iteration index if more than one diagram was generated (eg. Concepts & Relationships 1)"
+]
+```
+
+(d) inject user Concepts & Relationships factor if provided
+```javascript
+const influentialFactorJson = userDirectExperienceJson?.["Solution"]?.["Concepts & Relationships"];
+if (influentialFactorJson?.["factors_"])
+  plantumlClassDiagramFactors.push(...influentialFactorJson?.["factors_"])
+```
+
+(e) explore the field of co-arising with each responsibility
+
+the process of abstraction is progressed further by undertaking research into the Dhamma domain. this time pay attention to what is occuring at the same time and there may well be implicitly  participating collaborators who play a role in the orchestrations
 
 **running example**
 
-search results may include:
+search_results may include:
 * I don't envision a single thing that is as quick to reverse itself as the mind—so much so that there is no satisfactory simile for how quick to reverse itself it is.
 * Intention, I tell you, is kamma. Intending, one does kamma by way of body, speech, & intellect.
 * The intention & aspiration of living beings hindered by ignorance & fettered by craving is established in or tuned to a lower property
@@ -597,7 +864,7 @@ through direct experience one notices which qualities are associated with the Be
     * Practitioner
 
 
-(b) generate plantuml class diagram(s) as a building blocks using the above details adding relationship details and synthesising as required. when there is a subject like heedfulness which touches from the start to the end of the practice then you will likely need to decompose the diagram into sub-diagrams. in such instances use the partitioned segments from the process view for the sub-diagrams. illustrate abstract and concrete concepts along with their generalisation, aggregation, composition, association etc relationships. also show relevent members, "class associations" & qualified associations when applicable
+(b) generate plantuml class diagram(s) as a building block using the above details adding relationship details and synthesising as required. when there is a subject like heedfulness which touches from the start to the end of the practice then you will likely need to decompose the diagram into sub-diagrams. in such instances use the partitioned segments from the process view for the sub-diagrams. illustrate abstract and concrete concepts along with their generalisation, aggregation, composition, association etc relationships. also show relevent members, "class associations" & qualified associations when applicable
 * use the source "guide_plantuml_class_diagram.md" for a syntax and semantics guide
 * set the diagram title as "${varPatternName} (Concepts & Relationships)"
 
