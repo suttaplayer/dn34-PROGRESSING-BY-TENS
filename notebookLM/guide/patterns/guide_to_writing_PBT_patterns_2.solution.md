@@ -1,108 +1,117 @@
 # Prepare the content for the pattern's "Solution"
 
-## Context
 despite having already been given the Ven. Sāriputta's answers, this is by far the most challenging aspect of writing these dhamma patterns.
 
 consider the following:
 * 'The Dhamma should be taught with the thought, 'I will speak step-by-step.'
 * 'The Dhamma should be taught with the thought, 'I will speak explaining the sequence (of cause & effect).'
 * humans follow processes, do activities and reach milestones. the dhamma however, is most often expressed in terms of causation, this causes that, leads to, results in, benefit, reward etc.
-* consider a student being told that they need to practice the noble eightful path. they having been told that, they are immediately lost. the student needs to transform an event based causal model (ie. when this, then that) with principles and transform it into a concrete process that they can follow, complete activities and achieve milestones. due to dull discernment, it often results in failure! the various aspects of the overral solution is intended to resolve that issue.
+* consider a student being told that they need to practice the noble eightful path. they having been told that, they are immediately lost. the student needs to transform an event based causal model (ie. when this, then that) with principles and transform it into a concrete process that they can follow, complete activities and achieve milestones. due to dull discernment, it often results in failure! the various aspects of the overrall solution is intended to resolve that issue.
 
-the sutta texts are sources that document causation which can both implicitly and explicitly inferred. notebooklm has supoerior inference, logic and reasoning skills which are required for this task. notebooklm should be able to identify links between disparate causal chains and/or activities that are not explicitly stated. teaching and learning dhamma is largely an exercise in language. because notebooklm is an LLM, it should be well positioned to perform this task.
+the sutta texts are sources that document causation which can both be implicitly and explicitly inferred. notebooklm has supoerior inference, logic and reasoning skills which are required for this task. notebooklm should be able to identify links between disparate causal chains and/or activities that are not explicitly stated. teaching and learning dhamma is largely an exercise in language. because notebooklm is an LLM, it should be well positioned to perform this task.
 
 
-## 1. creating a catchment area of causation within scope
-(a) use the source "guide_causation_expression.md" for some candidate causation expressions as a means for searching in relation to both the problem and solution.
-(b) for each subject(s) and store the search_results
-(b) search for cause/effect relationships related to the subject(s) and store the search_results
-(c) using the search results:
-  * recurse by repeating step (b) using the cause and avoiding circular loops for 7 levels
-  * recurse by repeating step (b) using the effect and avoiding circular loops for 7 levels
-(d)
-for each cause/effect encountered, expand the search by repeating step (b) but this time using the related cause (backward) or effect (forward). repeat this activity such that you have researched a pool of cause/effect relations with a few degress of freedom from the original subject and which also includes the problem statement's scope from the previous section
-(d) store determinant search_results in patternQuotationsJson["Step-by-Step"]
+## 1. Creating A Catchment Of Causation
+**NotebookLM Task**
+1. use the source "guide_causation_expression.md" for some candidate causation expressions as a means for searching in relation to both the problem and solution.
+2. for (const subject of progressionByTensContextJson["subject"]):
+  (a) const search_term = subject["name"].toLowerCase(); search_results = []
+  (b) **Command:search** for cause/effect relationships related to the search_term and append the results to search_results
+  (c) for (const result of search_results): // create a backward mind-map like structure
+    * **Command:parse** the result and identify the cause
+    * **Command:recurse** by repeating step (a) using the cause as the search_term conditioned by:
+      1. ensure that the search_term is within the subject["enter-from-state"] scope
+      2. avoid circular loops and repeat for up to 7 levels
+  (d) for (const result of search_results): // create a forward mind-map like structure
+    * **Command:parse** the result and identify the effect
+    * **Command:recurse** by repeating step (a) using the effect as the search_term conditioned by:
+      1. ensure that the search_term is within the subject["exit-to-state"] scope
+      2. avoid circular loops and repeat for up to 7 levels
+3. store catchment search_results in patternQuotationsJson["Step-by-Step"]
 
 
 **running example**
-consider the following search_results (ie. causal pool):
-* all skillful qualities are rooted in heedfulness, converge in heedfulness, and heedfulness is reckoned the foremost among them
-* This one quality, monks, when developed & pursued, keeps both kinds of benefit secure: benefit in this life & in lives to come.
-* Monks, having a sense of shame & having a sense of compunction, one is heedful
-* Monks, these two bright qualities guard the world. Which two? Shame & compunction.
-* Concentration nurtured with virtue is of great fruit, great reward. Discernment nurtured with concentration is of great fruit, great reward. The mind nurtured with discernment is rightly released from the effluents
-* For him, dwelling thus heedfully, joy is born. In one who has joy, rapture is born. The body of one enraptured at heart grows calm. When the body is calm, one feels pleasure. Feeling pleasure, the mind becomes centered. When the mind is centered, phenomena become manifest. When phenomena are manifest, he is reckoned as one who dwells in heedfulness
-* Being heedful, one is capable of abandoning apathy, being hard to correct, & evil friendship
-* 'And what is heedfulness? There is the case where a monk guards his mind with regard to effluents and qualities accompanied by effluents. When his mind is guarded with regard to effluents and mental qualities accompanied by effluents, the faculty of conviction goes to the culmination of its development. The faculty of persistence… mindfulness… concentration… discernment goes to the culmination of its development
-* The monk delighting in heedfulness, seeing danger in heedlessness –incapable of falling back– stands right on the verge of Unbinding.
-* 'There is the case, friends, where a monk lives in apprenticeship to the Teacher or to a respectable companion in the holy life in whom he has established a strong sense of shame & compunction, love, & respect.
-* Any individual of whom one has come to know, 'When I partake of this individual, unskillful qualities decrease and skillful qualities increase,' that sort of individual is to be partaken of
-* To foster appropriate attention to them: This is the food for the arising of unarisen equanimity as a factor for awakening, or for the growth & increase of equanimity as a factor for awakening once it has arisen.
-* To foster appropriate attention to them: This is lack of food for the arising of unarisen uncertainty, or for the growth & increase of uncertainty once it has arisen.
-* Monks, as long as the monks have conviction… shame… compunction… learning… aroused persistence… established mindfulness… discernment, the monks' growth can be expected, not their decline
-* 'Seven noble treasures: the treasure of conviction, the treasure of virtue, the treasure of a sense of shame, the treasure of a sense of compunction, the treasure of listening, the treasure of generosity, the treasure of discernment
-* 'Seven true dhammas: There is the case, friends, where a monk has conviction, a sense of shame, a sense of compunction, learning, and is one of aroused persistence, established mindfulness, & discerning
-* 'Seven strengths: the strength of conviction, the strength of persistence, the strength of a sense of shame, the strength of compunction, the strength of mindfulness, the strength of concentration, the strength of discernment.
-* 'When, on observing that the monk is purified with regard to qualities based on delusion, he places conviction in him. With the arising of conviction, he visits him & grows close to him. Growing close to him, he lends ear. Lending ear, he hears the Dhamma. Hearing the Dhamma, he remembers it. Remembering it, he penetrates the meaning of those dhammas. Penetrating the meaning, he comes to an agreement through pondering those dhammas. There being an agreement through pondering those dhammas, desire arises. With the arising of desire, he becomes willing. Willing, he contemplates [literally: weighs, compares]. Contemplating, he makes an exertion. Exerting himself, he both realizes the highest truth with his body and sees by penetrating it with discernment.
-* Having admirable people as friends, companions, & colleagues is actually the whole of the holy life. When a monk has admirable people as friends, companions, & colleagues, he can be expected to develop & pursue the noble eightfold path.
-* 'He is endowed with a (present) kamma obstruction, a defilement obstruction, a result-of-(past)-kamma obstruction; he lacks conviction, has no desire (to listen), and has dull discernment. Endowed with these six qualities, a person is incapable of alighting on the lawfulness, the rightness of skillful qualities even when listening to the true Dhamma.
-* 'You, too, monks, should relentlessly exert yourselves, (thinking,) 'Gladly would we let the flesh & blood in our bodies dry up, leaving just the skin, tendons, & bones, but if we have not attained what can be reached through manly firmness, manly persistence, manly striving, there will be no relaxing our persistence.' You, too, in no long time will enter & remain in the supreme goal of the holy life for which clansmen rightly go forth from home into homelessness, directly knowing & realizing it for yourselves in the here & now.
-* If, when a monk's awareness often remains steeped in the perception of stress in what is inconstant, a fierce perception of danger & fear is not established in him toward idleness, indolence, laziness, heedlessness, lack of commitment, & lack of reflection, as if toward a murderer with an upraised sword, then he should realize, 'I have not developed the perception of stress in what is inconstant; there is no step-by-step distinction in me; I have not arrived at the fruit of (mental) development.'
-* 'Commitment & reflection are food for Dhammas.
-* Monks, it's good for a monk periodically to have reflected on his own failings. It's good for a monk periodically to have reflected on the failings of others. It's good for a monk periodically to have reflected on his own attainments. It's good for a monk periodically to have reflected on the attainments of others
-* Thus for him, having thus developed the noble eightfold path, the four establishings of mindfulness go to the culmination of their development. The four right exertions… the four bases of power… the five faculties… the five strengths… the seven factors for awakening go to the culmination of their development.
-* seeking is dependent on craving, acquisition is dependent on seeking, ascertainment is dependent on acquisition, desire and passion is dependent on ascertainment,
-* I tell you, monks, that stress results either in bewilderment or in search.
-* when associating with people of integrity is made full, it fills [the conditions for] hearing the true Dhamma… conviction… appropriate attention… mindfulness & alertness… restraint of the senses… the three forms of right conduct… the four establishings of mindfulness… the seven factors for awakening. When the seven factors for awakening are made full, they fill [the conditions for] clear knowing & release
-* There is the case where a monk is consummate in virtue, guards the doors to his sense faculties, knows moderation in eating, & is devoted to wakefulness.
-* Monks, I speak of robes in two ways: to be partaken of and not to be partaken of. I also speak of alms food… lodgings… villages & towns… countrysides… individuals in two ways: to be partaken of and not to be partaken of.
-* Any robe of which one has come to know, 'When I partake of this robe, unskillful qualities decrease and skillful qualities increase,' that sort of robe is to be partaken of.
-
-```javascript
+```typescript
+const search_results = [
+"all skillful qualities are rooted in heedfulness, converge in heedfulness, and heedfulness is reckoned the foremost among them", 
+"This one quality, monks, when developed & pursued, keeps both kinds of benefit secure: benefit in this life & in lives to come.", 
+"Monks, having a sense of shame & having a sense of compunction, one is heedful", 
+"Monks, these two bright qualities guard the world. Which two? Shame & compunction.", 
+"Concentration nurtured with virtue is of great fruit, great reward. Discernment nurtured with concentration is of great fruit, great reward. The mind nurtured with discernment is rightly released from the effluents", 
+"For him, dwelling thus heedfully, joy is born. In one who has joy, rapture is born. The body of one enraptured at heart grows calm. When the body is calm, one feels pleasure. Feeling pleasure, the mind becomes centered. When the mind is centered, phenomena become manifest. When phenomena are manifest, he is reckoned as one who dwells in heedfulness", 
+"Being heedful, one is capable of abandoning apathy, being hard to correct, & evil friendship", 
+"'And what is heedfulness? There is the case where a monk guards his mind with regard to effluents and qualities accompanied by effluents. When his mind is guarded with regard to effluents and mental qualities accompanied by effluents, the faculty of conviction goes to the culmination of its development. The faculty of persistence… mindfulness… concentration… discernment goes to the culmination of its development", 
+"The monk delighting in heedfulness, seeing danger in heedlessness –incapable of falling back– stands right on the verge of Unbinding.", 
+"'There is the case, friends, where a monk lives in apprenticeship to the Teacher or to a respectable companion in the holy life in whom he has established a strong sense of shame & compunction, love, & respect.", 
+"Any individual of whom one has come to know, 'When I partake of this individual, unskillful qualities decrease and skillful qualities increase,' that sort of individual is to be partaken of", 
+"To foster appropriate attention to them: This is the food for the arising of unarisen equanimity as a factor for awakening, or for the growth & increase of equanimity as a factor for awakening once it has arisen.", 
+"To foster appropriate attention to them: This is lack of food for the arising of unarisen uncertainty, or for the growth & increase of uncertainty once it has arisen.", 
+"Monks, as long as the monks have conviction… shame… compunction… learning… aroused persistence… established mindfulness… discernment, the monks' growth can be expected, not their decline", 
+"'Seven noble treasures: the treasure of conviction, the treasure of virtue, the treasure of a sense of shame, the treasure of a sense of compunction, the treasure of listening, the treasure of generosity, the treasure of discernment", 
+"'Seven true dhammas: There is the case, friends, where a monk has conviction, a sense of shame, a sense of compunction, learning, and is one of aroused persistence, established mindfulness, & discerning", 
+"'Seven strengths: the strength of conviction, the strength of persistence, the strength of a sense of shame, the strength of compunction, the strength of mindfulness, the strength of concentration, the strength of discernment.", 
+"'When, on observing that the monk is purified with regard to qualities based on delusion, he places conviction in him. With the arising of conviction, he visits him & grows close to him. Growing close to him, he lends ear. Lending ear, he hears the Dhamma. Hearing the Dhamma, he remembers it. Remembering it, he penetrates the meaning of those dhammas. Penetrating the meaning, he comes to an agreement through pondering those dhammas. There being an agreement through pondering those dhammas, desire arises. With the arising of desire, he becomes willing. Willing, he contemplates [literally: weighs, compares]. Contemplating, he makes an exertion. Exerting himself, he both realizes the highest truth with his body and sees by penetrating it with discernment.", 
+"Having admirable people as friends, companions, & colleagues is actually the whole of the holy life. When a monk has admirable people as friends, companions, & colleagues, he can be expected to develop & pursue the noble eightfold path.", 
+"'He is endowed with a (present) kamma obstruction, a defilement obstruction, a result-of-(past)-kamma obstruction; he lacks conviction, has no desire (to listen), and has dull discernment. Endowed with these six qualities, a person is incapable of alighting on the lawfulness, the rightness of skillful qualities even when listening to the true Dhamma.", 
+"'You, too, monks, should relentlessly exert yourselves, (thinking,) 'Gladly would we let the flesh & blood in our bodies dry up, leaving just the skin, tendons, & bones, but if we have not attained what can be reached through manly firmness, manly persistence, manly striving, there will be no relaxing our persistence.' You, too, in no long time will enter & remain in the supreme goal of the holy life for which clansmen rightly go forth from home into homelessness, directly knowing & realizing it for yourselves in the here & now.", 
+"If, when a monk's awareness often remains steeped in the perception of stress in what is inconstant, a fierce perception of danger & fear is not established in him toward idleness, indolence, laziness, heedlessness, lack of commitment, & lack of reflection, as if toward a murderer with an upraised sword, then he should realize, 'I have not developed the perception of stress in what is inconstant; there is no step-by-step distinction in me; I have not arrived at the fruit of (mental) development.'", 
+"'Commitment & reflection are food for Dhammas.", 
+"Monks, it's good for a monk periodically to have reflected on his own failings. It's good for a monk periodically to have reflected on the failings of others. It's good for a monk periodically to have reflected on his own attainments. It's good for a monk periodically to have reflected on the attainments of others", 
+"Thus for him, having thus developed the noble eightfold path, the four establishings of mindfulness go to the culmination of their development. The four right exertions… the four bases of power… the five faculties… the five strengths… the seven factors for awakening go to the culmination of their development.", 
+"seeking is dependent on craving, acquisition is dependent on seeking, ascertainment is dependent on acquisition, desire and passion is dependent on ascertainment,", 
+"I tell you, monks, that stress results either in bewilderment or in search.", 
+"when associating with people of integrity is made full, it fills [the conditions for] hearing the true Dhamma… conviction… appropriate attention… mindfulness & alertness… restraint of the senses… the three forms of right conduct… the four establishings of mindfulness… the seven factors for awakening. When the seven factors for awakening are made full, they fill [the conditions for] clear knowing & release", 
+"There is the case where a monk is consummate in virtue, guards the doors to his sense faculties, knows moderation in eating, & is devoted to wakefulness.", 
+"Monks, I speak of robes in two ways: to be partaken of and not to be partaken of. I also speak of alms food… lodgings… villages & towns… countrysides… individuals in two ways: to be partaken of and not to be partaken of.", 
+"Any robe of which one has come to know, 'When I partake of this robe, unskillful qualities decrease and skillful qualities increase,' that sort of robe is to be partaken of."
+]
 patternQuotationsJson["Step-by-Step"] = search_results
 ```
 
-(e) inject user influential insights if provided
-```javascript
-let search_results = [/* ... */] // populated in step (d)
-if (userDirectExperienceJson["Step-by-Step"]) {
-    const influentialFactorJson = userDirectExperienceJson["Step-by-Step"];
-    if (influentialFactorJson?.["factors"])
-      search_results.push(...influentialFactorJson["factors"])
-    if (influentialFactorJson?.["determinant-quotations"])
-      search_results.push(...influentialFactorJson["determinant-quotations"])
-}
-```
+## 2. Inject User's Direct Experience
+**NotebookLM Task**
+1. **Command:append** the userDirectExperienceJson["Step-by-Step"] if provided:
+```typescript
+if (userDirectExperienceJson?.["Step-by-Step"]?.["factors"])
+  patternQuotationsJson["Step-by-Step"].push(...userDirectExperienceJson?.["Step-by-Step"]?.["factors"])
+if (userDirectExperienceJson?.["Step-by-Step"]?.["determinant-quotations"])
+  patternQuotationsJson["Step-by-Step"].push(...userDirectExperienceJson?.["Step-by-Step"]?.["determinant-quotations"])
 
+```
 
 
 **running example**
+**User Task**
 1. setup user influential factors
-```json
-
-userDirectExperienceJson["Step-by-Step"] = [{
-    "factors": [
-      "as the practice progresses the admirable friend's voice continues to resonate and echo like a songs of dhamma stuck on repeat in the practitioners mind; consider this as signal.",
-      "the admirable friend need not be a physical person; it could a book, audio/video dhamma talks, it could even be a notebooklm <smile> notebook.",
-      "the clinging to doctrine-of-self is the attachment to voices and roles.",
-      "the practitioner must start to realise that voices other than the buddha's instructions, are to be treated as noise."
-      "regardless of whether one physically lives with a teacher or not, the practice is one of continous seeking, resulting in perfecting the signal to noise ratio of instruction!",
-      "admirable friendship *means* to copy, clone and imitate the qualities of the admirable friend, not the quality of companionship in-of-itself",
-      "not even the buddha could not teach/instruct on the specific topics of how to acquire heedfulness, appropriate attention and admirable friendship despite being . an individual needed to be fit to be tamed!",
-      "the root cause of acquiring admirable friendship is kammic"
-    ],
-    "determinant-quotations": [
-      "Associating with an admirable friend even a fool becomes wise",
-      "Monks, there are these two conditions for the arising of right view. Which two? The voice of another and appropriate attention. These are the two conditions for the arising of right view.",
-      "It's impossible, there's no way, that a person of no integrity would know of a person of no integrity: 'This is a person of no integrity... It's impossible, there's no way, that a person of no integrity would know of a person of integrity: 'This is a person of integrity.",
-      "Monks, with regard to external factors, I don't envision any other single factor like friendship with admirable people as doing so much for a monk in training, who has not attained the heart's aspiration but remains intent on the unsurpassed safety from bondage.",
-      "Monks, with regard to internal factors, I don't envision any other single factor like appropriate attention as doing so much for a monk in training, who has not attained the heart's aspiration but remains intent on the unsurpassed safety from bondage.",
-      "Eight inopportune, untimely situations for leading the holy life",
-      "Four wheels: living in a civilized land, associating with people of integrity, directing oneself rightly, & having done merit in the past. These four dhammas are very helpful."
-      "well-gone, an expert with regard to the cosmos, unexcelled trainer of people fit to be tamed, teacher of devas & human beings, awakened, blessed"
-    ]
-  }}
+```typescript
+const userDirectExperienceJson: UserDirectExperienceJson = {
+    "Solution": {
+        "Step-by-Step": {
+            "factors": [
+              "as the practice progresses the admirable friend's voice continues to resonate and echo like a songs of dhamma stuck on repeat in the practitioners mind; consider this as signal.",
+              "the admirable friend need not be a physical person; it could a book, audio/video dhamma talks, it could even be a notebooklm <smile> notebook.",
+              "the clinging to doctrine-of-self is the attachment to voices and roles.",
+              "the practitioner must start to realise that voices other than the buddha's instructions, are to be treated as noise."
+              "regardless of whether one physically lives with a teacher or not, the practice is one of continous seeking, resulting in perfecting the signal to noise ratio of instruction!",
+              "admirable friendship *means* to copy, clone and imitate the qualities of the admirable friend, not the quality of companionship in-of-itself",
+              "not even the buddha could not teach/instruct on the specific topics of how to acquire heedfulness, appropriate attention and admirable friendship despite being . an individual needed to be fit to be tamed!",
+              "the root cause of acquiring admirable friendship is kammic"
+            ],
+            "determinant-quotations": [
+              "Associating with an admirable friend even a fool becomes wise",
+              "Monks, there are these two conditions for the arising of right view. Which two? The voice of another and appropriate attention. These are the two conditions for the arising of right view.",
+              "It's impossible, there's no way, that a person of no integrity would know of a person of no integrity: 'This is a person of no integrity... It's impossible, there's no way, that a person of no integrity would know of a person of integrity: 'This is a person of integrity.",
+              "Monks, with regard to external factors, I don't envision any other single factor like friendship with admirable people as doing so much for a monk in training, who has not attained the heart's aspiration but remains intent on the unsurpassed safety from bondage.",
+              "Monks, with regard to internal factors, I don't envision any other single factor like appropriate attention as doing so much for a monk in training, who has not attained the heart's aspiration but remains intent on the unsurpassed safety from bondage.",
+              "Eight inopportune, untimely situations for leading the holy life",
+              "Four wheels: living in a civilized land, associating with people of integrity, directing oneself rightly, & having done merit in the past. These four dhammas are very helpful."
+              "well-gone, an expert with regard to the cosmos, unexcelled trainer of people fit to be tamed, teacher of devas & human beings, awakened, blessed"
+            ]
+        }
+    }
+}
 ```
+
 
 2. **Section: Solution > Cause-&-Effect** 
 it is important to realise that many of the lists that are in the sutta sources are in fact causal chains. you can safely assume that about 90% of lists are causal chains. even the five-clinging aggregates is itself a causal chain, you just need to know how to see it. therefore, proceed with the assumption that any given list is a causal chain and the expert will identify the exceptions when the section is reviewed.

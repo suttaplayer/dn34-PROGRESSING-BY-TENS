@@ -16,7 +16,15 @@ consider the following:
 * an expert is often highly direct and brief
 * what vocabulary and expression would the buddha or Ven. Sāriputta use in the framing of the problem
 
-**Command:generate** the problem statement tallying up the raw-materials and considerations above. store the problem statement in patternBuildingBlocksJson["Problem"]
+**Command:generate** the problem statement. When generating, **prioritize directly quoting or closely paraphrasing existing questions or problem descriptions found in the sutta sources (`_nblm.txt` files) that align with the `subject`'s `name`, `focus`, `enter-from-state`, `exit-to-state`, and `target-audience`**.
+
+If a **direct quotation or a very close paraphrase** from the suttas is not available for the specific problem, construct the problem statement using **rhetorical questions and vocabulary commonly employed by the Buddha or Venerable Sāriputta** in the provided Dhamma texts. This includes, but is not limited to, question structures such as:
+*   'What is X?' [e.g., "What is feeling?" (SN_nblm.txt)]
+*   'How does one Y?' [e.g., "How does one gain discernment?" (SN_nblm.txt)]
+*   'To what extent is Z?' [e.g., "To what extent is one consummate in faculties?" (SN_nblm.txt)]
+*   Statements describing an undesirable state followed by a question about its cessation or the path out of it [e.g., "How this world has fallen on difficulty! ... O when will it discern the escape from this stress...?" (SN_nblm.txt) or "A tangle within, a tangle without, people are entangled in a tangle. Gotama, I ask you this: Who can untangle this tangle?" (SN_nblm.txt)].
+
+**Strictly adhere to the language, rhetorical framing, and common expressions found in the suttas, avoiding abstract or 'invented' philosophical formulations, even if conceptually correct.** Store the problem statement in `patternBuildingBlocksJson["Problem"]`.
 
 
 **running example**

@@ -26,8 +26,11 @@ Heedfulness with regard to skillful qualities
 
 ## 2. Parse The Context
 **NotebookLM Task**
-1. **Command:parse** the contextStatement value, identify the subjects and the potential focus areas that was specified, and create a ProgressionByTensSubjectJson object for each subject 
-2. **Command:store** the ProgressionByTensSubjectJson objects as array elements in progressionByTensContextJson's "subject" property
+1.  **Command:parse** the `contextStatement` value.
+    *   Identify the primary **subject(s)**.
+    *   For each identified subject, extract any **explicitly stated qualifying phrases or modifiers** present directly within the `contextStatement`'s answer portion, and use these verbatim as the **focus areas**. **Do not infer or introduce new terms for focus areas that are not literally present in the `contextStatement` provided in the query.**
+    *   Create a `ProgressionByTensSubjectJson` object for each subject based on these parsed elements.
+2.  **Command:store** the `ProgressionByTensSubjectJson` objects as array elements in `progressionByTensContextJson`'s "subject" property"
 
 
 **running example**
