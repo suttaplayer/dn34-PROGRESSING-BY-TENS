@@ -1,0 +1,51 @@
+@startuml Mind_JourneyToRelease
+title The Mind's Journey to Release (State View)
+header Generated on 25-Jul-2024 by NotebookLM
+
+hide empty description
+
+skinparam state {
+    BackgroundColor White
+    BorderColor Black
+    FontColor Black
+    FontSize 11
+    Padding 5
+}
+skinparam defaultTextAlignment center
+
+state "The Mind" as MindComposite {
+
+    state "Untrained & Defiled" as UntrainedDefiled <<start>> {
+        note right: Characterized by 'Dhammas on the side of Decline' and 'Dhammas to be Abandoned'.
+
+        state Undeveloped 
+        Undeveloped:Undeveloped,Unpliant
+        Undeveloped:Sullied,\nDefiled
+        Undeveloped:Untamed,\nUnguarded,\nUnrestrained
+        Undeveloped:Quick to reverse itself
+        Undeveloped:Brittle
+        
+        state Ignorant_Attached {
+            Ignorance\n& Craving\nfor becoming
+            Subject to\nI-making & Mine-making\nConceit
+            Five Hindrances
+            Seven Obsessions
+            Three Cravings
+        }
+        state Afflicted {
+            Afflicted by\nSuffering & Stress
+            Muddled\nMindfulness
+            Unconcentrated
+            Delighting in action
+            Living out of tune
+            Unskillful thinking
+            Ignoble modes of speech
+            Mental blockages
+        }
+        Undeveloped --> Ignorant_Attached : leads to great harm
+        Ignorant_Attached --> Afflicted : perpetuates suffering
+        Afflicted --> Undeveloped : cycle of action & attachment
+    }
+}
+
+@enduml
