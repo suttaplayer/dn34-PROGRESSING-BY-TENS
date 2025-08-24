@@ -24,7 +24,7 @@ userPatternRequestJson = {
       }
     ]
   },
-  "build-blocks": {
+  "building-blocks": {
     "Problem": "How do you stop being complacent when the ending of effluents is still unattained?",
     "Causal-Table": [],
     "Solution": {

@@ -15,9 +15,10 @@ export type CauseAndEffectJson = {
     "cause": string,            /* string of the cause in lowercase (eg. "admirable friendship")*/
     "cannot"?: boolean,         /* boolean value indicating an impossible causal relationship (default: boolean|null)*/
     "skips-to"?: boolean,       /* boolean value indicating causation with missing links between causal relationship (default: boolean|null)*/
-    "co-arised-with"?: boolean, /* boolean value indicating co-arising together causal relationship (default: boolean|null)*/
+    "co-arised-with"?: boolean, /* boolean value indicating co-arising together (with no order criticality between cause/effect) causal relationship (default: boolean|null)*/
     "not-effect"?: boolean,     /* boolean value indicating inverse of the effect reference (default: boolean|null)*/
     "effect": string,           /* string of the effect in lowercase (eg. "conviction")*/
+    "quotation-index"?: number, /* number of the array index position of the directly associated quote where this cause and effect relationship was derived from */
 }
 
 /*
@@ -173,6 +174,7 @@ created by: notebooklm
 */
 export type PatternQuotationsJson = {
     "Problem": DeterminantQuotationString[], 
+    "Causal-Table": DeterminantQuotationString[], 
     "Solution": {
         "Step-by-Step": DeterminantQuotationString[], 
         "Cause-&-Effect": DeterminantQuotationString[], 
@@ -190,6 +192,7 @@ export type PatternQuotationsJson = {
 }
 export const patternQuotationsJson: PatternQuotationsJson = {
     "Problem": [],
+    "Causal-Table": [],
     "Solution": {
         "Step-by-Step": [],
         "Cause-&-Effect": [],
@@ -207,17 +210,29 @@ export const patternQuotationsJson: PatternQuotationsJson = {
 }
 
 /*
+purpose: represents the resultant search tuple where resultJson["cause-&-effect-table"][] maps to 
+created by: notebooklm
+
+const result: CausalTableSearchResultJson = {}
+result["quotation-sheet"][result["cause-&-effect-table"][0]["quotation-index"]] // is the actual quotation for the causal relationship
+*/
+export type CausalTableSearchResultJson = {
+    "cause-&-effect-table": CauseAndEffectJson[],
+    "quotation-sheet": DeterminantQuotationString[]
+}
+
+/*
 purpose: represents the full payload of the conceptualised pattern devoid of specific media formatting
 created by: notebooklm
 */
 export type PatternResponseJson = {
     "context": ProgressionByTensContextJson,   
-    "build-blocks": PatternBuildingBlocksJson,
+    "building-blocks": PatternBuildingBlocksJson,
     "quotations": PatternQuotationsJson
 }
 export const patternResponseJson: PatternResponseJson = {
     "context": progressionByTensContextJson,
-    "build-blocks": patternBuildingBlocksJson,
+    "building-blocks": patternBuildingBlocksJson,
     "quotations": patternQuotationsJson
 }
 

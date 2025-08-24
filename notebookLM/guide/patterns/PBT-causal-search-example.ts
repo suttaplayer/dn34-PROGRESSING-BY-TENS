@@ -1,0 +1,715 @@
+import { CausalTableSearchResultJson, CauseAndEffectJson } from "./PBT-collaboration-API.ts";
+import { createPuml } from "./PBT-puml-mindmap.ts";
+
+const fake_causal_quotations = `(a) to (b)
+(b) to (c)
+(c) to (d)
+(d) to (e)
+(e) to (f)
+(f) to (g)
+(g) to (h)
+(h) to (i)
+(i) to (j)
+(i) to (m) cycle
+(j) to (k)
+(k) to (l)
+(l) to (m)
+(m) to (n)
+(n) to (m) cycle
+(n) to (o)
+(o) to (p)
+(p) to (q)
+(q) to (r)
+(r) to (s)
+(s) to (t)
+(t) to (u)
+(u) to (v)
+(v) to (w)
+(w) to (x)
+(x) to (y)
+(y) to (z)
+(1) to (2)
+(2) to (3)
+(3) to (4)
+(4) to (5)
+(5) to (6)
+(6) to (7)
+(7) to (8)
+(8) to (9)
+(9) to (10)
+(11) to (a)
+(12) to (a)
+(13) to (a)
+(14) to (a)
+(15) to (b)
+(16) to (b)
+(17) to (b)
+(18) to (b)
+(19) to (b)
+(20) to (b)
+(21) to (c)
+(22) to (c)
+(23) to (c)
+(24) to (c)
+(25) to (d)
+(26) to (d)
+(27) to (d)
+(28) to (d)
+(29) to (d)
+(30) to (e)
+(31) to (e)
+(32) to (e)
+(33) to (e)
+(34) to (e)
+(35) to (f)
+(36) to (f)
+(37) to (f)
+(38) to (f)
+(39) to (f)
+(40) to (g)
+(41) to (g)
+(42) to (g)
+(43) to (g)
+(44) to (g)
+(45) to (h)
+(46) to (h)
+(47) to (h)
+(48) to (h)
+(49) to (h)
+(50) to (i)
+(51) to (i)
+(52) to (i)
+(53) to (i)
+(54) to (i)
+(55) to (j)
+(56) to (j)
+(57) to (j)
+(58) to (j)
+(59) to (j)
+(60) to (k)`.split("\n");
+
+function getAsMoreGeneralisedAndFrequentlyUsedTerm(fromTerm: string): string {
+    const toTerm = fromTerm // stub
+    return toTerm
+}
+
+function parseQuotationsAsCauseAndEffects(quote: string, quoteIndex: number): CauseAndEffectJson[] {
+    const ret: CauseAndEffectJson[] = []
+    const regEx = /\((.*?)\) to \((.*?)\)/gm
+    let m: RegExpExecArray | null;
+    while ((m = regEx.exec(quote)) !== null) {
+        if (m.index === regEx.lastIndex) 
+            regEx.lastIndex++;
+        const causeAndEffect: CauseAndEffectJson = {
+            "cause": getAsMoreGeneralisedAndFrequentlyUsedTerm(m[1]),
+            "effect": getAsMoreGeneralisedAndFrequentlyUsedTerm(m[2]),
+            "quotation-index": quoteIndex
+        }
+        ret.push(causeAndEffect)
+    }
+    return ret
+}
+
+function searchNotebookLmSources(searchTerm: string): string[] {
+    const ret: string[] = []
+    for (const quote of fake_causal_quotations) {
+        if (quote.includes(`(${searchTerm})`)) 
+            ret.push(quote)
+    }
+    return ret
+}
+
+function isCyclicReference(cycleStore: Set<string>, toCheck: CauseAndEffectJson): boolean {
+    const ref = `${toCheck.cause}->${toCheck.effect}`
+    if (cycleStore.has(ref)) 
+        return true
+    cycleStore.add(ref)
+    return false 
+}
+
+function searchRecursively(searchTerm: string, store: CausalTableSearchResultJson, forward: boolean, level: number, cycleStore: Set<string>, maxDepth = 12) {
+    if (level > maxDepth) 
+        return;
+    const quotationMatches = searchNotebookLmSources(searchTerm);
+    for (let i = 0; i < quotationMatches.length; i++) {
+        const quote = quotationMatches[i]
+        let indexPos = store["quotation-sheet"].indexOf(quote)
+        if (indexPos === -1) {
+            indexPos = store["quotation-sheet"].length
+            store["quotation-sheet"].push(quote)
+        }
+        const causeAndEffects = parseQuotationsAsCauseAndEffects(quote, indexPos);
+        for (const causeAndEffect of causeAndEffects) {
+            if ((forward && causeAndEffect.cause === searchTerm) || (!forward && causeAndEffect.effect === searchTerm)) {
+                if (!isCyclicReference(cycleStore, causeAndEffect)) {
+                    store["cause-&-effect-table"].push(causeAndEffect);
+                    const nextTerm = forward ? causeAndEffect.effect : causeAndEffect.cause;
+                    searchRecursively(nextTerm, store, forward, level + 1, cycleStore, maxDepth);
+                }
+            }
+        }
+    }
+}
+
+function causalCatchmentSearch(searchTerm: string, maxDepth?: number): CausalTableSearchResultJson {
+    const store: CausalTableSearchResultJson = {
+        "cause-&-effect-table": [],
+        "quotation-sheet": []
+    }
+    const cycleStore = new Set<string>()
+    for (const direction of [true, false]) { // true = forward, false = backward
+        searchRecursively(searchTerm, store, direction, 1, cycleStore, maxDepth);
+    }
+    console.log(JSON.stringify(store["cause-&-effect-table"], null, 2));
+    console.log(cycleStore)
+    return store
+}
+
+const causalTableResult = causalCatchmentSearch("m")
+const mindmap = createPuml(causalTableResult["cause-&-effect-table"], "m")
+console.log(mindmap) // see output below:
+
+/*
+
+[
+  {
+    "cause": "m",
+    "effect": "n",
+    "quotation-index": 2
+  },
+  {
+    "cause": "n",
+    "effect": "m",
+    "quotation-index": 3
+  },
+  {
+    "cause": "n",
+    "effect": "o",
+    "quotation-index": 4
+  },
+  {
+    "cause": "o",
+    "effect": "p",
+    "quotation-index": 5
+  },
+  {
+    "cause": "p",
+    "effect": "q",
+    "quotation-index": 6
+  },
+  {
+    "cause": "q",
+    "effect": "r",
+    "quotation-index": 7
+  },
+  {
+    "cause": "r",
+    "effect": "s",
+    "quotation-index": 8
+  },
+  {
+    "cause": "s",
+    "effect": "t",
+    "quotation-index": 9
+  },
+  {
+    "cause": "t",
+    "effect": "u",
+    "quotation-index": 10
+  },
+  {
+    "cause": "u",
+    "effect": "v",
+    "quotation-index": 11
+  },
+  {
+    "cause": "v",
+    "effect": "w",
+    "quotation-index": 12
+  },
+  {
+    "cause": "w",
+    "effect": "x",
+    "quotation-index": 13
+  },
+  {
+    "cause": "x",
+    "effect": "y",
+    "quotation-index": 14
+  },
+  {
+    "cause": "i",
+    "effect": "m",
+    "quotation-index": 0
+  },
+  {
+    "cause": "h",
+    "effect": "i",
+    "quotation-index": 15
+  },
+  {
+    "cause": "g",
+    "effect": "h",
+    "quotation-index": 16
+  },
+  {
+    "cause": "f",
+    "effect": "g",
+    "quotation-index": 17
+  },
+  {
+    "cause": "e",
+    "effect": "f",
+    "quotation-index": 18
+  },
+  {
+    "cause": "d",
+    "effect": "e",
+    "quotation-index": 19
+  },
+  {
+    "cause": "c",
+    "effect": "d",
+    "quotation-index": 20
+  },
+  {
+    "cause": "b",
+    "effect": "c",
+    "quotation-index": 21
+  },
+  {
+    "cause": "a",
+    "effect": "b",
+    "quotation-index": 22
+  },
+  {
+    "cause": "11",
+    "effect": "a",
+    "quotation-index": 23
+  },
+  {
+    "cause": "12",
+    "effect": "a",
+    "quotation-index": 24
+  },
+  {
+    "cause": "13",
+    "effect": "a",
+    "quotation-index": 25
+  },
+  {
+    "cause": "14",
+    "effect": "a",
+    "quotation-index": 26
+  },
+  {
+    "cause": "15",
+    "effect": "b",
+    "quotation-index": 27
+  },
+  {
+    "cause": "16",
+    "effect": "b",
+    "quotation-index": 28
+  },
+  {
+    "cause": "17",
+    "effect": "b",
+    "quotation-index": 29
+  },
+  {
+    "cause": "18",
+    "effect": "b",
+    "quotation-index": 30
+  },
+  {
+    "cause": "19",
+    "effect": "b",
+    "quotation-index": 31
+  },
+  {
+    "cause": "20",
+    "effect": "b",
+    "quotation-index": 32
+  },
+  {
+    "cause": "21",
+    "effect": "c",
+    "quotation-index": 33
+  },
+  {
+    "cause": "22",
+    "effect": "c",
+    "quotation-index": 34
+  },
+  {
+    "cause": "23",
+    "effect": "c",
+    "quotation-index": 35
+  },
+  {
+    "cause": "24",
+    "effect": "c",
+    "quotation-index": 36
+  },
+  {
+    "cause": "25",
+    "effect": "d",
+    "quotation-index": 37
+  },
+  {
+    "cause": "26",
+    "effect": "d",
+    "quotation-index": 38
+  },
+  {
+    "cause": "27",
+    "effect": "d",
+    "quotation-index": 39
+  },
+  {
+    "cause": "28",
+    "effect": "d",
+    "quotation-index": 40
+  },
+  {
+    "cause": "29",
+    "effect": "d",
+    "quotation-index": 41
+  },
+  {
+    "cause": "30",
+    "effect": "e",
+    "quotation-index": 42
+  },
+  {
+    "cause": "31",
+    "effect": "e",
+    "quotation-index": 43
+  },
+  {
+    "cause": "32",
+    "effect": "e",
+    "quotation-index": 44
+  },
+  {
+    "cause": "33",
+    "effect": "e",
+    "quotation-index": 45
+  },
+  {
+    "cause": "34",
+    "effect": "e",
+    "quotation-index": 46
+  },
+  {
+    "cause": "35",
+    "effect": "f",
+    "quotation-index": 47
+  },
+  {
+    "cause": "36",
+    "effect": "f",
+    "quotation-index": 48
+  },
+  {
+    "cause": "37",
+    "effect": "f",
+    "quotation-index": 49
+  },
+  {
+    "cause": "38",
+    "effect": "f",
+    "quotation-index": 50
+  },
+  {
+    "cause": "39",
+    "effect": "f",
+    "quotation-index": 51
+  },
+  {
+    "cause": "40",
+    "effect": "g",
+    "quotation-index": 52
+  },
+  {
+    "cause": "41",
+    "effect": "g",
+    "quotation-index": 53
+  },
+  {
+    "cause": "42",
+    "effect": "g",
+    "quotation-index": 54
+  },
+  {
+    "cause": "43",
+    "effect": "g",
+    "quotation-index": 55
+  },
+  {
+    "cause": "44",
+    "effect": "g",
+    "quotation-index": 56
+  },
+  {
+    "cause": "45",
+    "effect": "h",
+    "quotation-index": 57
+  },
+  {
+    "cause": "46",
+    "effect": "h",
+    "quotation-index": 58
+  },
+  {
+    "cause": "47",
+    "effect": "h",
+    "quotation-index": 59
+  },
+  {
+    "cause": "48",
+    "effect": "h",
+    "quotation-index": 60
+  },
+  {
+    "cause": "49",
+    "effect": "h",
+    "quotation-index": 61
+  },
+  {
+    "cause": "50",
+    "effect": "i",
+    "quotation-index": 63
+  },
+  {
+    "cause": "51",
+    "effect": "i",
+    "quotation-index": 64
+  },
+  {
+    "cause": "52",
+    "effect": "i",
+    "quotation-index": 65
+  },
+  {
+    "cause": "53",
+    "effect": "i",
+    "quotation-index": 66
+  },
+  {
+    "cause": "54",
+    "effect": "i",
+    "quotation-index": 67
+  },
+  {
+    "cause": "l",
+    "effect": "m",
+    "quotation-index": 1
+  },
+  {
+    "cause": "k",
+    "effect": "l",
+    "quotation-index": 68
+  },
+  {
+    "cause": "j",
+    "effect": "k",
+    "quotation-index": 69
+  },
+  {
+    "cause": "i",
+    "effect": "j",
+    "quotation-index": 62
+  },
+  {
+    "cause": "55",
+    "effect": "j",
+    "quotation-index": 70
+  },
+  {
+    "cause": "56",
+    "effect": "j",
+    "quotation-index": 71
+  },
+  {
+    "cause": "57",
+    "effect": "j",
+    "quotation-index": 72
+  },
+  {
+    "cause": "58",
+    "effect": "j",
+    "quotation-index": 73
+  },
+  {
+    "cause": "59",
+    "effect": "j",
+    "quotation-index": 74
+  },
+  {
+    "cause": "60",
+    "effect": "k",
+    "quotation-index": 75
+  }
+]
+Set(76) {
+  "m->n",
+  "n->m",
+  "n->o",
+  "o->p",
+  "p->q",
+  "q->r",
+  "r->s",
+  "s->t",
+  "t->u",
+  "u->v",
+  "v->w",
+  "w->x",
+  "x->y",
+  "i->m",
+  "h->i",
+  "g->h",
+  "f->g",
+  "e->f",
+  "d->e",
+  "c->d",
+  "b->c",
+  "a->b",
+  "11->a",
+  "12->a",
+  "13->a",
+  "14->a",
+  "15->b",
+  "16->b",
+  "17->b",
+  "18->b",
+  "19->b",
+  "20->b",
+  "21->c",
+  "22->c",
+  "23->c",
+  "24->c",
+  "25->d",
+  "26->d",
+  "27->d",
+  "28->d",
+  "29->d",
+  "30->e",
+  "31->e",
+  "32->e",
+  "33->e",
+  "34->e",
+  "35->f",
+  "36->f",
+  "37->f",
+  "38->f",
+  "39->f",
+  "40->g",
+  "41->g",
+  "42->g",
+  "43->g",
+  "44->g",
+  "45->h",
+  "46->h",
+  "47->h",
+  "48->h",
+  "49->h",
+  "50->i",
+  "51->i",
+  "52->i",
+  "53->i",
+  "54->i",
+  "l->m",
+  "k->l",
+  "j->k",
+  "i->j",
+  "55->j",
+  "56->j",
+  "57->j",
+  "58->j",
+  "59->j",
+  "60->k"
+}
+@startmindmap
+top to bottom direction
+* m
+  * n
+    * o
+      * p
+        * q
+          * r
+            * s
+              * t
+                * u
+                  * v
+                    * w
+                      * x
+                        * y
+left side
+  * n
+  * i
+    * h
+      * g
+        * f
+          * e
+            * d
+              * c
+                * b
+                  * a
+                    * 11
+                    * 12
+                    * 13
+                    * 14
+                  * 15
+                  * 16
+                  * 17
+                  * 18
+                  * 19
+                  * 20
+                * 21
+                * 22
+                * 23
+                * 24
+              * 25
+              * 26
+              * 27
+              * 28
+              * 29
+            * 30
+            * 31
+            * 32
+            * 33
+            * 34
+          * 35
+          * 36
+          * 37
+          * 38
+          * 39
+        * 40
+        * 41
+        * 42
+        * 43
+        * 44
+      * 45
+      * 46
+      * 47
+      * 48
+      * 49
+    * 50
+    * 51
+    * 52
+    * 53
+    * 54
+  * l
+    * k
+      * j
+        * 55
+        * 56
+        * 57
+        * 58
+        * 59
+      * 60
+@endmindmap
+
+*/

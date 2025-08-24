@@ -24,7 +24,7 @@ userPatternRequestJson = {
       }
     ]
   },
-  "build-blocks": {
+  "building-blocks": {
     "Problem": "How do you guard your sense faculties so that your mind is not assailed by sense objects, when unskillful qualities arise and the end of stress is still unattained?",
     "Causal-Table": [],
     "Solution": {
@@ -102,7 +102,7 @@ this should be in reference to the pattern named "Contact". something has gone w
       }
     ]
   },
-  "build-blocks": {
+  "building-blocks": {
     "Problem": "How do you break free from the cycle of suffering and clinging, which arises from uncomprehended contact?",
     "Causal-Table": [],
     "Solution": {
@@ -249,7 +249,7 @@ This revised instruction guides the process to first search for and use authenti
       }
     ]
   },
-  "build-blocks": {
+  "building-blocks": {
     "Problem": "How does one comprehend contact accompanied by effluents and subject to clinging to achieve the ending of passion, aversion, and delusion?",
     "Causal-Table": [],
     "Solution": {

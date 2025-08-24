@@ -90,7 +90,7 @@ export type PatternQuotationsJson = {
 
 export type PatternResponseJson = {
     "context": ProgressionByTensContextJson,   
-    "build-blocks": PatternBuildingBlocksJson,
+    "building-blocks": PatternBuildingBlocksJson,
     "quotations": PatternQuotationsJson
 }
 ```
@@ -245,7 +245,7 @@ userPatternRequestJson = {
     "categoryKey": "helpful",
 }
 2. execute the instructions in source "guide_to_writing_PBT_patterns.md" which output's patternResponseJson
-3. apply patternResponseJson as input and execute the instructions in source "debug_PBT-pattern-request-template.md" for rendering
+3. apply patternResponseJson as input and execute the instructions in source "sys-test_PBT-pattern-request-template.md" for rendering
 ```
 
 
@@ -308,7 +308,7 @@ const progressionByTensContextJson: ProgressionByTensContextJson = {
 
 const patternResponseJson: PatternResponseJson = {
     "context": progressionByTensContextJson,
-    "build-blocks": patternBuildingBlocksJson,
+    "building-blocks": patternBuildingBlocksJson,
     "quotations": patternQuotationsJson
 }
 
@@ -322,15 +322,17 @@ progressionByTensContextJson["pattern-name"] = lookupPatternName(userPatternRequ
 **NotebookLM Task**
 execute the process below in order. each item in the list has its own specification document. open each source document below in turn and complete the instructions before moving to the next list item.
 
-note, an iterative & incremental approach will be taken to building this pattern writing guide system. therfore, only those section that have been developed are listed below with associated sub-section guides!
+note, an iterative & incremental approach will be taken to building this pattern writing guide system. therfore, only those sections that have been developed are listed below with associated sub-section guides!
 
 0. **Command:execute** Establish the pattern's "Scope" in source "guide_to_writing_PBT_patterns_0.scope.md"
 1. **Command:execute** Prepare the content for the pattern's "Problem" in source "guide_to_writing_PBT_patterns_1.problem.md"
-2. Prepare the content for the pattern's "Solution" 
-3. Prepare the content for the pattern's "Context"
-4. Prepare the content for the pattern's "Forces"
-5. Prepare the content for the pattern's "Rationale"
-6. Prepare the content for the pattern's "Resulting Context"
-7. Prepare the content for the pattern's "Related Patterns"
-8. Prepare the content for the pattern's "Case-studies"
-9. Prepare the content for the pattern's "Simile"
+2. **Command:execute** Prepare the content for the pattern's "Causal-Table" in source "guide_to_writing_PBT_patterns_2.causal-table.md"
+
+3. Prepare the content for the pattern's "Solution" 
+4. Prepare the content for the pattern's "Context"
+5. Prepare the content for the pattern's "Forces"
+6. Prepare the content for the pattern's "Rationale"
+7. Prepare the content for the pattern's "Resulting Context"
+8. Prepare the content for the pattern's "Related Patterns"
+9. Prepare the content for the pattern's "Case-studies"
+10. Prepare the content for the pattern's "Simile"

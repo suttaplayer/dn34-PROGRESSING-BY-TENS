@@ -26,7 +26,7 @@ userPatternRequestJson = {
       }
     ]
   },
-  "build-blocks": {
+  "building-blocks": {
     "Problem": "How do unskillful qualities increase and skillful qualities decline?",
     "Causal-Table": [],
     "Solution": {

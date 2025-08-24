@@ -212,12 +212,12 @@ created by: notebooklm
 */
 export type PatternResponseJson = {
     "context": ProgressionByTensContextJson,   
-    "build-blocks": PatternBuildingBlocksJson,
+    "building-blocks": PatternBuildingBlocksJson,
     "quotations": PatternQuotationsJson
 }
 export const patternResponseJson: PatternResponseJson = {
     "context": progressionByTensContextJson,
-    "build-blocks": patternBuildingBlocksJson,
+    "building-blocks": patternBuildingBlocksJson,
     "quotations": patternQuotationsJson
 }
 

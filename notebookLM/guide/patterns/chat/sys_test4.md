@@ -26,7 +26,7 @@ userPatternRequestJson = {
       }
     ]
   },
-  "build-blocks": {
+  "building-blocks": {
     "Problem": "How does one abandon the assumption of self in form, feeling, perception, fabrications, and consciousness?",
     "Causal-Table": [],
     "Solution": {

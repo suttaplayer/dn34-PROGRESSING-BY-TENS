@@ -24,7 +24,7 @@ userPatternRequestJson = {
       }
     ]
   },
-  "build-blocks": {
+  "building-blocks": {
     "Problem": "How do you steady an unconcentrated mind through immersion in the body when the unfabricated is still unattained?",
     "Causal-Table": [],
     "Solution": {

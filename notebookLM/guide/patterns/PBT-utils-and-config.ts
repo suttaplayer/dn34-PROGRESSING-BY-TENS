@@ -384,6 +384,23 @@ export function createRelatedPatternMarkdownLink(ref: ProgressionReferenceJson) 
     return `/${patternName}/(../${indexAsString}s/${ref.categoryKey}.html)`;
 }
 
+export function mimimiseJson(jsonObj: any): any {
+    const mimimisedResult: any = Array.isArray(jsonObj) ? [] : {};
+    for (const key in jsonObj) {
+        const value = jsonObj[key];
+        if (Array.isArray(value)) {
+            if (value.length > 0) 
+                mimimisedResult[key] = value;
+        } else if (typeof value === 'object' && value !== null) {
+            const nestedCompressed = mimimiseJson(value);
+            if (Object.keys(nestedCompressed).length > 0) 
+                mimimisedResult[key] = nestedCompressed;
+        } else if (value !== '') 
+            mimimisedResult[key] = value;
+    }
+    return mimimisedResult;
+}
+
 /* helper utilities; example usage
 console.log(convertProgressionKeyToIndex("one")); // -> 1
 console.log(convertProgressionIndexToKey(1)); // -> "one"
