@@ -1,7 +1,7 @@
-import { CauseAndEffectJson } from "../PBT-collaboration-API.ts";
-import { createPuml } from "../PBT-puml-mindmap.ts";
+import { AbstractCausalTableBuilder, CauseAndEffectJson, patternResponseJson } from "../collaboration-api/PBT-collaboration-API.ts";
+import { MindMapDiagram } from "../collaboration-api/PBT-puml-utils.ts";
 
-const fake_quotations = `(a) to (b)
+const fake_causal_quotations = `(a) to (b)
 (b) to (c)
 (c) to (d)
 (d) to (e)
@@ -42,30 +42,6 @@ const fake_quotations = `(a) to (b)
 (13) to (a)
 (14) to (a)
 (15) to (b)
-(16) to (b)
-(17) to (b)
-(18) to (b)
-(19) to (b)
-(20) to (b)
-(21) to (c)
-(22) to (c)
-(23) to (c)
-(24) to (c)
-(25) to (d)
-(26) to (d)
-(27) to (d)
-(28) to (d)
-(29) to (d)
-(30) to (e)
-(31) to (e)
-(32) to (e)
-(33) to (e)
-(34) to (e)
-(35) to (f)
-(36) to (f)
-(37) to (f)
-(38) to (f)
-(39) to (f)
 (40) to (g)
 (41) to (g)
 (42) to (g)
@@ -80,6 +56,8 @@ const fake_quotations = `(a) to (b)
 (51) to (i)
 (52) to (i)
 (53) to (i)
+(AA) to (BB)
+(ZZ) to (AA)
 (54) to (i)
 (55) to (j)
 (56) to (j)
@@ -88,12 +66,14 @@ const fake_quotations = `(a) to (b)
 (59) to (j)
 (60) to (k)`.split("\n");
 
-function getAsMoreGeneralisedAndFrequentlyUsedTerm(fromExpression: string): string {
+
+export class UnitTestCausalTableBuilder extends AbstractCausalTableBuilder {
+  public override makeExpressionAsGeneralisedAndCommon(fromExpression: string): string {
     const toTerm = fromExpression // stub
     return toTerm
-}
-
-function parseQuotationsAsCauseAndEffects(quote: string, quoteIndex: number): CauseAndEffectJson[] {
+  }
+  
+  public override convertFromQuotationToCauseAndEffect(quote: string, quoteIndex: number): CauseAndEffectJson[] {
     const ret: CauseAndEffectJson[] = []
     const regEx = /\((.*?)\) to \((.*?)\)/gm
     let m: RegExpExecArray | null;
@@ -101,62 +81,37 @@ function parseQuotationsAsCauseAndEffects(quote: string, quoteIndex: number): Ca
         if (m.index === regEx.lastIndex) 
             regEx.lastIndex++;
         const causeAndEffect: CauseAndEffectJson = {
-            "cause": getAsMoreGeneralisedAndFrequentlyUsedTerm(m[1]),
-            "effect": getAsMoreGeneralisedAndFrequentlyUsedTerm(m[2]),
+            "cause": this.makeExpressionAsGeneralisedAndCommon(m[1]),
+            "effect": this.makeExpressionAsGeneralisedAndCommon(m[2]),
             "quotation-index": quoteIndex
         }
         ret.push(causeAndEffect)
     }
     return ret
-}
+  }
 
-function searchNotebookLmSources(searchTerm: string): string[] {
+  public override searchSourcesForCausalQuotations(searchTerm: string): string[] {
     const ret: string[] = []
-    for (const quote of fake_quotations) {
+    for (const quote of fake_causal_quotations) {
         if (quote.includes(`(${searchTerm})`)) 
             ret.push(quote)
     }
     return ret
+  }
 }
 
-function isCyclicReference(cycleStore: Set<string>, toCheck: CauseAndEffectJson): boolean {
-    const ref = `${toCheck.cause}->${toCheck.effect}`
-    if (cycleStore.has(ref)) 
-        return true
-    cycleStore.add(ref)
-    return false 
-}
-
-function searchRecursively(searchTerm: string, store: CauseAndEffectJson[], forward: boolean, level: number, cycleStore: Set<string>, maxDepth = 12) {
-    if (level > maxDepth) 
-        return;
-    const quotationMatches = searchNotebookLmSources(searchTerm);
-    for (let i = 0; i < quotationMatches.length; i++) {
-        const quote = quotationMatches[i]
-        const causeAndEffects = parseQuotationsAsCauseAndEffects(quote, i);
-        for (const causeAndEffect of causeAndEffects) {
-            if ((forward && causeAndEffect.cause === searchTerm) || (!forward && causeAndEffect.effect === searchTerm)) {
-                if (!isCyclicReference(cycleStore, causeAndEffect)) {
-                    store.push(causeAndEffect);
-                    const nextTerm = forward ? causeAndEffect.effect : causeAndEffect.cause;
-                    searchRecursively(nextTerm, store, forward, level + 1, cycleStore, maxDepth);
-                }
-            }
-        }
-    }
-}
 
 
 function main() {
-    const store = [] as CauseAndEffectJson[];
-    const cycleStore = new Set<string>()
-    for (const direction of [true, false]) { // true = forward, false = backward
-        searchRecursively(`m`, store, direction, 1, cycleStore, 50);
+    const builder = new UnitTestCausalTableBuilder()
+    for (const subject of patternResponseJson.scope.subject) {
+        builder.build(subject["name"])
     }
-    // console.log(JSON.stringify(store, null, 2));
-    // console.log(cycleStore)
-    const test = createPuml(store, "m")
-    console.log(test)
+    const causalTableResult = builder.results
+    console.log("quotation-sheet", causalTableResult["quotation-sheet"]) 
+    console.log("cause-&-effect-table[", causalTableResult["cause-&-effect-table"])
+    patternResponseJson["building-blocks"]["Causal-Table"] = causalTableResult["cause-&-effect-table"]
+    patternResponseJson["quotations"]["Causal-Table"] = causalTableResult["quotation-sheet"]
 }
 
 main()

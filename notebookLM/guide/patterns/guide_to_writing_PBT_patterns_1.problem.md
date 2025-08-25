@@ -3,7 +3,7 @@
 ## 1. Identify The Problem
 **NotebookLM Task**
 using the following raw-materials:
-1. progressionByTensContextJson["subject"] array of ProgressionByTensSubjectJson objects of which each specifies:
+1. scopeJson["subject"] array of SubjectJson objects of which each specifies:
   * "name", (ie. answers what the subject is about)
   * "focus" [optional property], (ie. answers what the area of focus is)
   * "enter-from-state", (ie. answers the where does the scope begin)
@@ -32,14 +32,15 @@ tallied observations are:
 1. there is only one subject which is "Heedfulness" with a focus area of "skillful qualities"
 2. one enters into Heedfulness from a state of being "complacent"
 3. one exits from Heedfulness to a state of being "effluent-free"
-4. the typucal recipients of the be heedful message is "one-in-training"
-5. quotations include:
+4. the typical recipients of the "be heedful" message is "one-in-training"
+5. quotations in injected values include:
   1. "Don't be heedless. Don't later fall into remorse.", 
   2. "Now, then, monks, I exhort you: All fabrications are subject to ending & decay. Reach consummation through heedfulness.' That was the Tathāgata's last statement [to a group of noble monks the most backward of which was a stream-enterer]", 
   3. "Monks, I don't say of all monks that they have a task to do with heedfulness"
-  4. "[dont] ever let yourself get complacent when the ending of effluents is still unattained", 
-  5. "Now the thought may occur to you, 'We are endowed with shame & compunction. That much is enough, that much means we're done, so that the goal of our contemplative state has been reached. There's nothing further to be done,' and you may rest content with just that.",
-  6. "Don't let those of you who seek the contemplative state fall away from the goal of the contemplative state when there is more to be done."
+  4. "admirable friendship is the whole of the holy life"
+  5. "[dont] ever let yourself get complacent when the ending of effluents is still unattained", 
+  6. "Now the thought may occur to you, 'We are endowed with shame & compunction. That much is enough, that much means we're done, so that the goal of our contemplative state has been reached. There's nothing further to be done,' and you may rest content with just that.",
+  7. "Don't let those of you who seek the contemplative state fall away from the goal of the contemplative state when there is more to be done."
 
 
 ## 2. Assessment

@@ -1,6 +1,6 @@
 // file:PBT-local-causal-search.ts BEGIN
 
-import { CausalTableSearch, CauseAndEffectJson } from "../collaboration-api/PBT-collaboration-API.ts";
+import { AbstractCausalTableBuilder, CauseAndEffectJson } from "../collaboration-api/PBT-collaboration-API.ts";
 import { MindMapDiagram } from "../collaboration-api/PBT-puml-utils.ts";
 
 const fake_causal_quotations = `(a) to (b)
@@ -90,7 +90,50 @@ const fake_causal_quotations = `(a) to (b)
 (59) to (j)
 (60) to (k)`.split("\n");
 
-export class LocalTestCausalTableSearch extends CausalTableSearch {
+export class NotebookLMCausalTableBuilder extends AbstractCausalTableBuilder {
+  /*
+  purpose: transform fromExpression into a more generalised and common/frequent term if required
+      eg 
+      "person of integrity" -> "admirable friendship" 
+      "restraint of the senses" -> "sense restraint"
+      "three forms of right conduct" -> "right conduct"
+  */
+  public override makeExpressionAsGeneralisedAndCommon(fromExpression: string): string {
+    throw new Error("Method not implemented.");
+  }
+
+  /*
+  purpose: convert a quote with 1 or more causal relationships into a CauseAndEffectJson[] array. note unrelated entries will get dropped later
+      eg. 
+      'Thus, when associating with people of integrity is made full, it fills [the conditions for] hearing the true Dhamma… conviction… appropriate attention… mindfulness & alertness… restraint of the senses… the three forms of right conduct… the four establishings of mindfulness… the seven factors for awakening. When the seven factors for awakening are made full, they fill [the conditions for] clear knowing & release.
+      -> 
+      [{"cause": "admirable friendship", "effect": "hearing the true Dhamma", "quotation-index": 4},
+      {"cause": "hearing the true Dhamma", "effect": "conviction", "quotation-index": 4},
+      {"cause": "conviction", "effect": "appropriate attention", "quotation-index": 4},
+      {"cause": "appropriate attention", "effect": "mindfulness & alertness", "quotation-index": 4},
+      {"cause": "mindfulness & alertness", "effect": "sense restraint", "quotation-index": 4},
+      {"cause": "sense restraint", "effect": "right conduct", "quotation-index": 4},
+      {"cause": "right conduct", "effect": "four establishings of mindfulness", "quotation-index": 4},
+      {"cause": "four establishings of mindfulness", "effect": "seven factors for awakening", "quotation-index": 4},
+      {"cause": "seven factors for awakening", "effect": "clear knowing & release", "quotation-index": 4}]
+
+  */
+  public override convertFromQuotationToCauseAndEffect(quote: string, quoteIndex: number): CauseAndEffectJson[] {
+    throw new Error("Method not implemented.");
+  }
+
+  /*
+  purpose: search *_nblm.txt sources ONLY for a causal or co-arising relationship quotations for the given searchTerm
+      eg. searchTerm = "conviction"
+      1. "Monks, as long as the monks have conviction… shame… compunction… learning… aroused persistence… established mindfulness… discernment, the monks' growth can be expected, not their decline"
+      2. 'Thus, when associating with people of integrity is made full, it fills [the conditions for] hearing the true Dhamma… conviction… appropriate attention… mindfulness & alertness… restraint of the senses… the three forms of right conduct… the four establishings of mindfulness… the seven factors for awakening. When the seven factors for awakening are made full, they fill [the conditions for] clear knowing & release.
+  */
+  public override searchSourcesForCausalQuotations(searchTerm: string): string[] {
+    throw new Error("Method not implemented.");
+  }
+}
+
+export class UnitTestCausalTableBuilder extends AbstractCausalTableBuilder {
   public override makeExpressionAsGeneralisedAndCommon(fromExpression: string): string {
     const toTerm = fromExpression // stub
     return toTerm
@@ -123,8 +166,8 @@ export class LocalTestCausalTableSearch extends CausalTableSearch {
   }
 }
 
-const searcher = new LocalTestCausalTableSearch()
-const causalTableResult = searcher.search("m")
+const builder = new UnitTestCausalTableBuilder()
+const causalTableResult = builder.build("m") // "m" is the subject at the centre of the catchment
 const mindmap = MindMapDiagram.create(causalTableResult["cause-&-effect-table"], "m")
 console.log("quotation-sheet[2..6]", causalTableResult["quotation-sheet"].slice(2,7))
 console.log("cause-&-effect-table[0..5]", causalTableResult["cause-&-effect-table"].slice(0,5))
@@ -133,7 +176,7 @@ console.log(mindmap) // see output below:
 /*
 
 
-quotation-sheet[2..7] [
+quotation-sheet[2..6] [
   "(m) to (n)",
   "(n) to (m) cycle",
   "(n) to (o)",

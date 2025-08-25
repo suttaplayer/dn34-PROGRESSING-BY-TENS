@@ -20,7 +20,7 @@ class MindMapNode {
             this.children.delete(this)
     }
 
-    public dump(store: string[], forward: boolean, level: number = 0, visitedSet: Set<MindMapNode>|null = null) {
+    public generateAsText(store: string[], forward: boolean, level: number = 0, visitedSet: Set<MindMapNode>|null = null) {
         if (!visitedSet)
             visitedSet = new Set()
         if (visitedSet.has(this))
@@ -32,7 +32,7 @@ class MindMapNode {
         const targetSet = forward ? this.children : this.parents
         for (const child of targetSet) {
             if (child)
-                child.dump(store, forward, level + 1, visitedSet)
+                child.generateAsText(store, forward, level + 1, visitedSet)
         }
     }
 }
@@ -60,11 +60,11 @@ export class MindMapDiagram {
 
     public static create(src: CauseAndEffectJson[], root: string): string {
         const diagram = new MindMapDiagram();
-        const causeTree = diagram.build(src, root);
+        const causalTree = diagram.build(src, root);
         const buffer: string[] = ["@startmindmap", "top to bottom direction"]
-        causeTree.dump(buffer, true);
+        causalTree.generateAsText(buffer, true);
         buffer.push('left side')
-        causeTree.dump(buffer, false);
+        causalTree.generateAsText(buffer, false);
         buffer.push("@endmindmap")
         return buffer.join("\n")
     }

@@ -17,7 +17,7 @@ purpose: represents a subject in the "progressing by tens" framework. note, ther
 specified by:
     1. notebooklm: when trying the comprehend the problem
 */
-export type ProgressionByTensSubjectJson = {
+export type SubjectJson = {
     "name": string,                     /* subject name (eg. "people of integrity") */
     "focus"?: string[],                 /* focus area (eg. ["associating"]) */
     "enter-from-state": string,         /* from internal|external state (eg. "stress") */
@@ -39,7 +39,7 @@ specified by:
     1. notebooklm: for querying use in the helper utilities and config
     2. user: for specifying the dhamma progression in the userPatternRequestJson
 */
-export type ProgressionReferenceJson = {
+export type ReferenceJson = {
     "progressionIndex": number, /* 1-based progression index reference in: Which [three] dhammas are very helpful */
     "categoryKey": CategoryKey, /* category key reference in: Which three dhammas are very [helpful]  */
 }
@@ -50,7 +50,7 @@ created by: notebooklm based on user query specifying: {"progressionIndex": <num
 
 eg, 'Which three dhammas are very helpful? Associating with people of integrity, listening to the True Dhamma, practicing the Dhamma in accordance with the Dhamma: These three dhammas are very helpful.
 
-progressionByTensContextJson = { 
+scopeJson = { 
     "progressionIndex": 3,
     "categoryKey": "helpful",
     ""pattern-name": "Factors for stream-entry",
@@ -77,11 +77,11 @@ progressionByTensContextJson = {
     ]
 }
 */
-export type ProgressionByTensContextJson = ProgressionReferenceJson &{
+export type ScopeJson = ReferenceJson &{
     "pattern-name": string, 
-    "subject": ProgressionByTensSubjectJson[], 
+    "subject": SubjectJson[], 
 }
-export const progressionByTensContextJson: ProgressionByTensContextJson = { 
+export const scopeJson: ScopeJson = { 
     "progressionIndex": -1, 
     "categoryKey": "helpful",
     "pattern-name": "",
@@ -115,7 +115,13 @@ export type CauseAndEffectJson = {
 purpose: represents a PlantUML diagram used for process view, concepts & relationships, state transitions, and resulting context sections
 created by: notebooklm
 */
-export type PlantUMLDiagram = string;
+export type PlantUMLDiagramText = string;
+
+/*
+purpose: represents a work task as the property name of the following types: PatternBuildingBlocksJson, PatternQuotationsJson, UserDirectExperienceJson
+*/
+export type RootWorkTaskKey = "Problem" | "Causal-Table" | "Context" | "Forces" | "Rationale" | "Resulting Context" | "Related Patterns" | "Case-studies" | "Simile";
+export type SolutionWorkTaskKey = "Step-by-Step" | "Cause-&-Effect" | "Process View" | "Concepts & Relationships" | "State Transitions";
 
 /*
 purpose: represents all building blocks for the pattern complete pattern devoid of quotations
@@ -127,14 +133,14 @@ export type PatternBuildingBlocksJson = {
     "Solution": {
         "Step-by-Step": string[], /* array of process step strings (this is a flattened representation of Process View) */
         "Cause-&-Effect": CauseAndEffectJson[], /* array of causeAndEffectJson objects (solution only) */
-        "Process View": PlantUMLDiagram[], /* array of PlantUML Activity Diagram strings */
-        "Concepts & Relationships": PlantUMLDiagram[], /* array of PlantUML Class Diagram strings */
-        "State Transitions": PlantUMLDiagram[], /* array of PlantUML State Diagram strings */
+        "Process View": PlantUMLDiagramText[], /* array of PlantUML Activity Diagram strings */
+        "Concepts & Relationships": PlantUMLDiagramText[], /* array of PlantUML Class Diagram strings */
+        "State Transitions": PlantUMLDiagramText[], /* array of PlantUML State Diagram strings */
     },
     "Context": string[], /* array of requisite condition/invariant strings */
     "Forces": string[], /* array of design constraint/influence strings */
     "Rationale": string, /* string of the rationale statement */
-    "Resulting Context": PlantUMLDiagram[], /* array of PlantUML Mindmap Diagram strings */
+    "Resulting Context": PlantUMLDiagramText[], /* array of PlantUML Mindmap Diagram strings */
     "Related Patterns": string[], /* array of related pattern-name strings */
     "Case-studies": string[], /* array of individual's name reference strings */
     "Simile": string[], /* array of simile name reference strings */
@@ -209,31 +215,32 @@ export const patternQuotationsJson: PatternQuotationsJson = {
 }
 
 /*
-purpose: represents the resultant search tuple where resultJson["cause-&-effect-table"][] maps to 
-created by: notebooklm
-
-const result: CausalTableSearchResultJson = {}
-result["quotation-sheet"][result["cause-&-effect-table"][0]["quotation-index"]] // is the actual quotation for the causal relationship
-*/
-export type CausalTableSearchResultJson = {
-    "cause-&-effect-table": CauseAndEffectJson[],
-    "quotation-sheet": DeterminantQuotationString[]
-}
-
-/*
 purpose: represents the full payload of the conceptualised pattern devoid of specific media formatting
 created by: notebooklm
 */
 export type PatternResponseJson = {
-    "context": ProgressionByTensContextJson,   
+    "scope": ScopeJson,   
     "building-blocks": PatternBuildingBlocksJson,
     "quotations": PatternQuotationsJson
 }
 export const patternResponseJson: PatternResponseJson = {
-    "context": progressionByTensContextJson,
+    "scope": scopeJson,
     "building-blocks": patternBuildingBlocksJson,
     "quotations": patternQuotationsJson
 }
+
+/*
+purpose: represents the resultant search tuple where the "cause-&-effect-table" entries are linked to "quotation-sheet" entries via "quotation-index"
+created by: notebooklm
+
+const result: CausalTableResultJson = {}
+result["quotation-sheet"][result["cause-&-effect-table"][0]["quotation-index"]] // is the actual quotation for the causal relationship
+*/
+export type CausalTableResultJson = {
+    "cause-&-effect-table": CauseAndEffectJson[],
+    "quotation-sheet": DeterminantQuotationString[]
+}
+
 
 /*
 purpose: represents the influential factors the expert wants to notebooklm to apply to specific pattern sections
@@ -273,11 +280,11 @@ export type UserDirectExperienceJson = {
 purpose: represents the parameterised pattern request with optional direct experience to be injected into the pattern generation
 created by: user and submitted in the initiating user query
 */
-export type UserPatternRequestJson = ProgressionReferenceJson &{
+export type UserPatternRequestJson = ReferenceJson &{
     "directExperience"?: UserDirectExperienceJson;
 }
 
-type Progressions = [string, string, string, string, string, string, string, string, string, string];
+type Progressions = [string, string, string, string, string, string, string, string, string, string]; // one, two, three, ..., ten
 
 type CategoryCollection = {
     "helpful": Progressions;
@@ -292,15 +299,15 @@ type CategoryCollection = {
     "realised": Progressions;
 }
 
-type ProgressingByTensConfig = {
-    "index-keys": string[];
-    "catagory-keys": string[];
-    "catagory-breadcrumb-labels": string[];
-    "pattern-names": CategoryCollection;
+type ProgressingByTensConfigJson = {
+    "index-keys": string[];     // in reference to a progression key (eg. "nine")
+    "catagory-keys": string[];  // in reference to a category key (eg. "helpful")
+    "catagory-breadcrumb-labels": string[]; // in reference to a context (eg. "Dhammas that are very helpful")
+    "pattern-names": CategoryCollection;    // 1-to-1 mapping of pattern-names to answer-excerpts "Heedful, ardent & resolute" -> "Heedfulness with regard to skillful qualities")
     "answer-excerpts": CategoryCollection
 }
 
-export type ProgressionReferenceJsonSearchResult = ProgressionReferenceJson & {
+export type AnswerExcerptReferenceJson = ReferenceJson & {
     excerpt: string
 }
 
@@ -336,7 +343,7 @@ class Category {
         return ProgressingByTens.config["catagory-breadcrumb-labels"][idx];
     }
 
-    public fixBreadcrumbsIfNecessary(ref: ProgressionReferenceJson) {
+    public fixBreadcrumbsIfNecessary(ref: ReferenceJson) {
         const categoryIndex = this.keyToIndex(ref.categoryKey);
         if (categoryIndex === -1) throw new Error(`Invalid category key: ${ref.categoryKey}`);
     
@@ -351,11 +358,11 @@ class Category {
 }
 
 export class ProgressingByTens {
-    public static config: ProgressingByTensConfig
+    public static config: ProgressingByTensConfigJson
     public static progression = new Progression();
     public static category = new Category();
 
-    public static lookupPatternName(ref: ProgressionReferenceJson) {
+    public static lookupPatternName(ref: ReferenceJson) {
         const categoryIndex = this.category.keyToIndex(ref?.categoryKey);
         if (categoryIndex === -1) throw new Error(`Invalid category key: ${ref?.categoryKey}`);
     
@@ -370,7 +377,7 @@ export class ProgressingByTens {
         return patternName;
     }
 
-    public static lookupAnswerExcerpt(ref: ProgressionReferenceJson) {
+    public static lookupAnswerExcerpt(ref: ReferenceJson) {
         const categoryIndex = this.category.keyToIndex(ref?.categoryKey);
         if (categoryIndex === -1) throw new Error(`Invalid category key: ${ref?.categoryKey}`);
     
@@ -383,8 +390,8 @@ export class ProgressingByTens {
         return answerExcerpts[ref?.progressionIndex - 1];
     }
 
-    public static searchAnswerExcerptsForTerm(term: string): ProgressionReferenceJsonSearchResult[] {
-        const results: ProgressionReferenceJsonSearchResult[] = [];
+    public static searchAnswerExcerptsForTerm(term: string): AnswerExcerptReferenceJson[] {
+        const results: AnswerExcerptReferenceJson[] = [];
         for (const categoryKey in this.config["answer-excerpts"]) {
             const excerpts = this.config["answer-excerpts"][categoryKey as CategoryKey];
             excerpts.forEach((excerpt, index) => {
@@ -400,13 +407,13 @@ export class ProgressingByTens {
         return results;
     }
 
-    public static createRelatedPatternMarkdownLink(ref: ProgressionReferenceJson) {
+    public static createRelatedPatternMarkdownLink(ref: ReferenceJson) {
         const patternName = this.lookupPatternName(ref);
         const indexAsString = this.progression.indexToKey(ref.progressionIndex);
         return `/${patternName}/(../${indexAsString}s/${ref.categoryKey}.html)`;
     }
 
-    public static revealContextStatement(ref: ProgressionReferenceJson): string {
+    public static revealContextStatement(ref: ReferenceJson): string {
         const ret = `
 Which ${this.progression.indexToKey(ref["progressionIndex"])} ${this.category.fixBreadcrumbsIfNecessary(ref)}? 
 ${this.lookupAnswerExcerpt(ref)}`
@@ -429,11 +436,26 @@ ${this.lookupAnswerExcerpt(ref)}`
         }
         return mimimisedResult;
     }
+
+    public static injectUsersDirectExperience(workTask: RootWorkTaskKey, src: UserPatternRequestJson, tar: PatternResponseJson) {
+        if (src?.directExperience?.[workTask]) {
+            if (workTask === "Causal-Table") {
+                // note, users entries will have a "quotation-index" value of -1
+                if (src?.directExperience?.[workTask]) 
+                    tar["building-blocks"][workTask].push(...src?.directExperience?.[workTask])
+            } else {
+                if (src?.directExperience?.[workTask]?.["factors"])
+                    tar.quotations[workTask].push(...src?.directExperience?.[workTask]?.["factors"])
+                if (src?.directExperience?.[workTask]?.["determinant-quotations"])
+                    tar.quotations[workTask].push(...src?.directExperience?.[workTask]?.["determinant-quotations"])
+            }
+        }
+    }
 }
 
-export abstract class CausalTableSearch {
+export abstract class AbstractCausalTableBuilder {
     private maxDepth: number
-    public results: CausalTableSearchResultJson = {
+    public results: CausalTableResultJson = {
             "cause-&-effect-table": [],
             "quotation-sheet": []
         }
@@ -471,7 +493,7 @@ export abstract class CausalTableSearch {
     public abstract convertFromQuotationToCauseAndEffect(quote: string, quoteIndex: number): CauseAndEffectJson[]
     
     /*
-    purpose: search sources for a causal or co-arising relationship quotations for the given searchTerm
+    purpose: search *_nblm.txt sources ONLY for a causal or co-arising relationship quotations for the given searchTerm
         eg. searchTerm = "conviction"
         1. "Monks, as long as the monks have conviction… shame… compunction… learning… aroused persistence… established mindfulness… discernment, the monks' growth can be expected, not their decline"
         2. 'Thus, when associating with people of integrity is made full, it fills [the conditions for] hearing the true Dhamma… conviction… appropriate attention… mindfulness & alertness… restraint of the senses… the three forms of right conduct… the four establishings of mindfulness… the seven factors for awakening. When the seven factors for awakening are made full, they fill [the conditions for] clear knowing & release.
@@ -511,10 +533,13 @@ export abstract class CausalTableSearch {
         }
     }
 
-    public search(searchTerm: string, bothDirections = true): CausalTableSearchResultJson {
+    public clear() {
         this.causalSet.clear()
         this.results["cause-&-effect-table"].length = 0
         this.results["quotation-sheet"].length = 0
+    }
+
+    public build(searchTerm: string, bothDirections = true): CausalTableResultJson {
         this.searchRecursively(searchTerm, true, 0);
         if (bothDirections)
             this.searchRecursively(searchTerm, false, 0);
@@ -823,8 +848,7 @@ console.log(ProgressingByTens.lookupPatternName({ progressionIndex: 1, categoryK
 console.log(ProgressingByTens.lookupAnswerExcerpt({ progressionIndex: 1, categoryKey: "helpful" })); // -> "Heedfulness with regard to skillful qualities"
 console.log(ProgressingByTens.searchAnswerExcerptsForTerm("inconstant")); // -> [  {  categoryKey: "arise",  progressionIndex: 9,  excerpt: "Nine perceptions: the perception of unattractiveness, the perception of death, the perception of loathsomeness in food, the perception of distaste for every world, the perception of inconstancy, the perception of stress in what is inconstant, the perception of not-self in what is stressful, the perception of abandoning, the perception of dispassion."  },  {  categoryKey: "arise",  progressionIndex: 10,  excerpt: "Ten perceptions: the perception of unattractiveness, the perception of death, the perception of loathsomeness in food, the perception of distaste for every world, the perception of inconstancy, the perception of stress in what is inconstant, the perception of not-self in what is stressful, the perception of abandoning, the perception of dispassion, the perception of cessation."  }]
 console.log(ProgressingByTens.createRelatedPatternMarkdownLink({ progressionIndex: 1, categoryKey: "helpful" })); // -> "/Heedful, ardent & resolute/(../ones/helpful.html)"
-console.log(ProgressingByTens.revealContextStatement({ progressionIndex: 1, categoryKey: "helpful" })); // -> "/Heedful, ardent & resolute/(../ones/helpful.html)"
+console.log(ProgressingByTens.revealContextStatement({ progressionIndex: 1, categoryKey: "helpful" })); // -> "\nWhich one Dhamma is very helpful? \nHeedfulness with regard to skillful qualities"
 console.log(ProgressingByTens.mimimiseJson({val1_keep:10, val2_keep: "ten", obj1_keep: {a: "ten", b: [10]}, val2_no_keep: "", obj2_no_keep: {a: "", b: []}, obj3_partial_keep: {a: "ten", b: []}, obj4_partial_keep: {a: "", b: [10]}})); // -> {val1_keep:10,val2_keep:"ten",obj1_keep:{a:"ten",b:[10]},obj3_partial_keep:{a:"ten"},obj4_partial_keep:{b:[10]}} 
 
 */
-

@@ -14,7 +14,7 @@ the sutta texts are sources that document causation which can both be implicitly
 ## 1. Creating A Catchment Of Causation
 **NotebookLM Task**
 1. use the source "guide_causation_expression.md" for some candidate causation expressions as a means for searching in relation to both the problem and solution.
-2. for (const subject of progressionByTensContextJson["subject"]):
+2. for (const subject of scopeJson["subject"]):
   (a) const search_term = subject["name"].toLowerCase(); search_results = []
   (b) **Command:search** for cause/effect relationships related to the search_term and append the results to search_results
   (c) for (const result of search_results): // create a backward mind-map like structure

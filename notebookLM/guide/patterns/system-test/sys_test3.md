@@ -10,7 +10,7 @@ userPatternRequestJson = {
 --- PART-A BEG ---
 ```json
 {
-  "context": {
+  "scope": {
     "progressionIndex": 1,
     "categoryKey": "comprehended",
     "pattern-name": "Sense-restraint",
@@ -82,7 +82,7 @@ this should be in reference to the pattern named "Contact". something has gone w
 --- PART-A BEG ---
 ```json
 {
-  "context": {
+  "scope": {
     "progressionIndex": 1,
     "categoryKey": "comprehended",
     "pattern-name": "Contact accompanied by effluents & subject to clinging",
@@ -159,7 +159,7 @@ Here is the instruction that needs to be changed, along with the recommended mod
 **Original Instruction:**
 From `guide_to_writing_PBT_patterns_0.scope.md`:
 "**NotebookLM Task**
-1.  **Command:parse** the contextStatement value, identify the subjects and the potential focus areas that was specified, and create a ProgressionByTensSubjectJson object for each subject"
+1.  **Command:parse** the contextStatement value, identify the subjects and the potential focus areas that was specified, and create a SubjectJson object for each subject"
 
 **Recommended Change:**
 To ensure strict, literal parsing for the `focus` areas, I suggest adding a clear directive within this task that prohibits external inference.
@@ -169,8 +169,8 @@ To ensure strict, literal parsing for the `focus` areas, I suggest adding a clea
 1.  **Command:parse** the `contextStatement` value.
     *   Identify the primary **subject(s)**.
     *   For each identified subject, extract any **explicitly stated qualifying phrases or modifiers** present directly within the `contextStatement`'s answer portion, and use these verbatim as the **focus areas**. **Do not infer or introduce new terms for focus areas that are not literally present in the `contextStatement` provided in the query.**
-    *   Create a `ProgressionByTensSubjectJson` object for each subject based on these parsed elements.
-2.  **Command:store** the `ProgressionByTensSubjectJson` objects as array elements in `progressionByTensContextJson`'s "subject" property"
+    *   Create a `SubjectJson` object for each subject based on these parsed elements.
+2.  **Command:store** the `SubjectJson` objects as array elements in `scopeJson`'s "subject" property"
 
 By explicitly stating that focus areas should be "explicitly stated qualifying phrases or modifiers" and adding the constraint to "Do not infer or introduce new terms for focus areas that are not literally present in the `contextStatement` provided in the query," this modification will guide the parsing process to yield the `focus` as `["effluents", "clinging"]` from the `contextStatement`: "Contact accompanied by effluents & subject to clinging" [user].
 
@@ -230,7 +230,7 @@ This revised instruction guides the process to first search for and use authenti
 --- PART-A BEG ---
 ```json
 {
-  "context": {
+  "scope": {
     "progressionIndex": 1,
     "categoryKey": "comprehended",
     "pattern-name": "Contact",

@@ -18,7 +18,7 @@ Your new approach to pattern generation, as outlined in the provided sources, de
 
 *   **Standardized Collaboration API and Utilities**
     The `PBT-collaboration-API.ts.txt` and `PBT-utils-and-config.ts.txt` sources define **common data types and helper functions** for communication between the artifacts.
-    *   The `PBT-collaboration-API.ts.txt` specifies types like `CauseAndEffectJson`, `CategoryKey`, `ProgressionReferenceJson`, `AudienceKey`, `ProgressionByTensSubjectJson`, `PatternBuildingBlocksJson`, `DeterminantQuotationString`, `PatternQuotationsJson`, `PatternResponseJson`, `UserInfluentialFactorsJson`, and `UserDirectExperienceJson`. These types provide a **formal contract for information exchange**, significantly reducing ambiguity in how data is structured and interpreted.
+    *   The `PBT-collaboration-API.ts.txt` specifies types like `CauseAndEffectJson`, `CategoryKey`, `ReferenceJson`, `AudienceKey`, `SubjectJson`, `PatternBuildingBlocksJson`, `DeterminantQuotationString`, `PatternQuotationsJson`, `PatternResponseJson`, `UserInfluentialFactorsJson`, and `UserDirectExperienceJson`. These types provide a **formal contract for information exchange**, significantly reducing ambiguity in how data is structured and interpreted.
     *   The `PBT-utils-and-config.ts.txt` provides a `progressingByTensConfig` JSON object and utility functions for querying it. This ensures **consistent access to predefined framework data** (like category keys, pattern names, and excerpts), which helps maintain coherence across all generated patterns and reduces the chance of misinterpretation.
 
 *   **Comprehensive Running Example**

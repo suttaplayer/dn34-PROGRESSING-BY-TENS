@@ -26,8 +26,8 @@ Heedfulness with regard to skillful qualities
 1.  **Command:parse** the `contextStatement` value.
     *   Identify the primary **subject(s)**.
     *   For each identified subject, extract any **explicitly stated qualifying phrases or modifiers** present directly within the `contextStatement`'s answer portion, and use these verbatim as the **focus areas**. **Do not infer or introduce new terms for focus areas that are not literally present in the `contextStatement` provided in the query.**
-    *   Create a `ProgressionByTensSubjectJson` object for each subject based on these parsed elements.
-2.  **Command:store** the `ProgressionByTensSubjectJson` objects as array elements in `progressionByTensContextJson`'s "subject" property"
+    *   Create a `SubjectJson` object for each subject based on these parsed elements.
+2.  **Command:store** the `SubjectJson` objects as array elements in `scopeJson`'s "subject" property"
 
 
 **running example**
@@ -37,7 +37,7 @@ Heedfulness with regard to skillful qualities
 * therefore, the subject name is "Heedfulness" and the focus area is "skillful qualities"
 
 ```typescript
-progressionByTensContextJson["subject"] = [
+scopeJson["subject"] = [
     {
       "name": "Heedfulness",
       "focus": ["skillful qualities"],
@@ -51,8 +51,8 @@ progressionByTensContextJson["subject"] = [
 ## 3. Research The Subjects & Focus Areas
 **NotebookLM Task**
 1. **Command:fuzzy search** ONLY the sutta sources (*_nblm.txt):
-  * for each progressionByTensContextJson["subject"] element's "name" in the context of its associated "focus" areas if applicable
-  * by extending the search to include the opposite or inverse of each progressionByTensContextJson["subject"]
+  * for each scopeJson["subject"] element's "name" in the context of its associated "focus" areas if applicable
+  * by extending the search to include the opposite or inverse of each scopeJson["subject"]
 2. **Command:review** each search_result item in terms of relevence of a determining quality with regards to the context and discard those with low relevence
 3. **Command:sort** search_result by relevence
 4. **Command:store** the search_result in the patternQuotationsJson["Problem"] property
@@ -70,13 +70,9 @@ patternQuotationsJson["Problem"] = search_results
 
 ## 4. Inject User's Direct Experience
 **NotebookLM Task**
-1. **Command:append** the userDirectExperienceJson["Problem"] if provided:
+1. **Command:execute** injectUsersDirectExperience for "Problem" which gets ignored if not provided
 ```typescript
-if (userDirectExperienceJson?.["Problem"]?.["factors"])
-  patternQuotationsJson["Problem"].push(...userDirectExperienceJson?.["Problem"]?.["factors"])
-if (userDirectExperienceJson?.["Problem"]?.["determinant-quotations"])
-  patternQuotationsJson["Problem"].push(...userDirectExperienceJson?.["Problem"]?.["determinant-quotations"])
-
+ProgressingByTens.injectUsersDirectExperience("Problem", userPatternRequestJson, patternResponseJson)
 ```
 
 **running example**
@@ -93,32 +89,36 @@ const userPatternRequestJson: UserPatternRequestJson = {
   "categoryKey": "helpful",
   "directExperience": {
       "Problem": {
+          "factors": ["admirable friendship is the whole of the holy life"],
           "determinant-quotations": expert_determinant_quotes_for_problem,
       }
   }
 }
+
+ProgressingByTens.injectUsersDirectExperience("Problem", userPatternRequestJson, patternResponseJson)
+
 // after injecting user's direct experience:
-patternQuotationsJson["Problem"].length // 6
+patternQuotationsJson["Problem"].length // 7
 ```
 
 ## 5. Determine The Scope & Target Audience
 **NotebookLM Task**
-1. **Command:review** all the quotations in the patternQuotationsJson["Problem"] array and discern with respect to each progressionByTensContextJson["subject"]:
+1. **Command:review** all the quotations in the patternQuotationsJson["Problem"] array and discern with respect to each scopeJson["subject"]:
   1. subject's enter-from-state and exit-to-state
-    clearly entry and exit states are associated with causual events. there are several sections in the pattern that will investigate causation, but this task's purpose is to identify an internal or external state of the state of the mind or environmental condition
+    clearly entry and exit states are associated with causual events. there are several sections in the pattern that will investigate causation, but this task's purpose is to identify an internal or external state of the mind or environmental condition
     **Command:identify** what was the relevant state of the mind or environmental condition before the subject and store in "enter-from-state" property
     **Command:identify** what was the relevant state of the mind or environmental condition after the subject and store in "exit-to-state" property
   2. target audience
     some dhammas a highly advanced and are applicable to a practitioner who has achieved non-return, where as other practices are relevant to conviction and dhamma followers who are determined on stream-entry.
-    **Command:identify** which type of individual the subject is targetting and store in "target-audience" property
+    **Command:identify** which type of individual the subject is targetting and store the value in the "target-audience" property
 
 
 **running example**
 ```typescript
-progressionByTensContextJson["subject"][0]["name"] // -> "Heedfulness"
-progressionByTensContextJson["subject"][0]["enter-from-state"] = "complacent"
-progressionByTensContextJson["subject"][0]["exit-to-state"] = "effluent-free"
-progressionByTensContextJson["subject"][0]["target-audience"] = ["one-in-training"] // stream-enterer to non-returner (inclusive)
+scopeJson["subject"][0]["name"] // -> "Heedfulness"
+scopeJson["subject"][0]["enter-from-state"] = "complacent"
+scopeJson["subject"][0]["exit-to-state"] = "effluent-free"
+scopeJson["subject"][0]["target-audience"] = ["one-in-training"] // stream-enterer to non-returner (inclusive)
 
 ```
 
@@ -127,4 +127,4 @@ progressionByTensContextJson["subject"][0]["target-audience"] = ["one-in-trainin
 **User Task**
 assess in terms of missing/excess, the 
 * patternQuotationsJson["Problem"]
-* progressionByTensContextJson and all of its embedded object and properties
+* scopeJson and all of its embedded object and properties

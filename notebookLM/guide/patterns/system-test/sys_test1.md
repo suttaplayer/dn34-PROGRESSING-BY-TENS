@@ -10,7 +10,7 @@ userPatternRequestJson = {
 --- PART-A BEG ---
 ```json
 {
-  "context": {
+  "scope": {
     "progressionIndex": 1,
     "categoryKey": "helpful",
     "pattern-name": "Heedful, ardent & resolute",
