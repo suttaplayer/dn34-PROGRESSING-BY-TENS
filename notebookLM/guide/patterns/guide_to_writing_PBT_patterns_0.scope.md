@@ -10,10 +10,7 @@ more often than not, Ven. Sāriputta's full answer is provided in brief. even th
 1. **Command:construct** a language expression of Ven. Sāriputta's question and full answer and assign it to contextStatement local variable
 
 ```typescript
-const contextStatement = `
-Which ${convertProgressionIndexToKey(progressionByTensContextJson["progressionIndex"])} ${fixBreadcrumbsIfNecessary(progressionByTensContextJson)}? 
-${lookupAnswerExcerpt(progressionByTensContextJson)}
-`
+const contextStatement = ProgressingByTens.revealContextStatement(userPatternRequestJson);
 ```
 
 **running example**

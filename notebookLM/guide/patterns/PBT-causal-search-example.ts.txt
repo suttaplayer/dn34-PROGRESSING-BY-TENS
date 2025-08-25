@@ -88,8 +88,8 @@ const fake_causal_quotations = `(a) to (b)
 (59) to (j)
 (60) to (k)`.split("\n");
 
-function getAsMoreGeneralisedAndFrequentlyUsedTerm(fromTerm: string): string {
-    const toTerm = fromTerm // stub
+function getAsMoreGeneralisedAndFrequentlyUsedTerm(fromExpression: string): string {
+    const toTerm = fromExpression // stub
     return toTerm
 }
 

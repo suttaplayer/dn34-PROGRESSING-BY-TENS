@@ -1,33 +1,31 @@
 import { CauseAndEffectJson } from "./PBT-collaboration-API.ts";
 
-class Node {
+class MindMapNode {
     public name: string;
-    public children: Set<Node>;
-    public parents: Set<Node|null>;
+    public children: Set<MindMapNode>;
+    public parents: Set<MindMapNode|null>;
 
-    constructor(name: string, parent: Node | null = null) {
+    constructor(name: string, parent: MindMapNode | null = null) {
         this.name = name
         this.children = new Set()
         this.parents = new Set()
         this.addParent(parent) 
     }
 
-    public addParent(parent: Node| null = null) {
+    public addParent(parent: MindMapNode| null = null) {
         this.parents.add(parent)
-        if (parent) {
+        if (parent) 
             parent.children.add(this)
-        } else {
+        else 
             this.children.delete(this)
-        }
     }
 
-    public dump(store: string[], forward: boolean, level: number = 0, visitedSet: Set<Node>|null = null) {
+    public dump(store: string[], forward: boolean, level: number = 0, visitedSet: Set<MindMapNode>|null = null) {
         if (!visitedSet)
             visitedSet = new Set()
         if (visitedSet.has(this))
             return
         const display = `* ${this.name}`
-        // console.log(display.padStart(level * 2 + display.length))
         if (forward || !forward && level !== 0)
             store.push(display.padStart(level * 2 + display.length))
         visitedSet.add(this)
@@ -39,37 +37,40 @@ class Node {
     }
 }
 
-function getOrCreateNode(name: string, nodeMap: Map<string, Node>): Node {
-    let node = nodeMap.get(name);
-    if (!node) {
-        node = new Node(name);
-        nodeMap.set(name, node);
-    }
-    return node;
-}
-
-
-function buildCauseTree(src: CauseAndEffectJson[], root: string): Node {
-    const nodeMap = new Map<string, Node>();
-    const rootNode = getOrCreateNode(root, nodeMap);
-    for (const causeAndEffect of src) {
-        const parentNode = getOrCreateNode(causeAndEffect.cause, nodeMap);
-        const childNode = getOrCreateNode(causeAndEffect.effect, nodeMap);
-        childNode.addParent(parentNode);
+export class MindMapDiagram {
+    private getOrCreateNode(name: string, nodeMap: Map<string, MindMapNode>): MindMapNode {
+        let node = nodeMap.get(name);
+        if (!node) {
+            node = new MindMapNode(name);
+            nodeMap.set(name, node);
+        }
+        return node;
     }
 
-    return rootNode;
+    public build(src: CauseAndEffectJson[], root: string): MindMapNode {
+        const nodeMap = new Map<string, MindMapNode>();
+        const rootNode = this.getOrCreateNode(root, nodeMap);
+        for (const causeAndEffect of src) {
+            const parentNode = this.getOrCreateNode(causeAndEffect.cause, nodeMap);
+            const childNode = this.getOrCreateNode(causeAndEffect.effect, nodeMap);
+            childNode.addParent(parentNode);
+        }
+        return rootNode;
+    }
+
+    public static create(src: CauseAndEffectJson[], root: string): string {
+        const diagram = new MindMapDiagram();
+        const causeTree = diagram.build(src, root);
+        const buffer: string[] = ["@startmindmap", "top to bottom direction"]
+        causeTree.dump(buffer, true);
+        buffer.push('left side')
+        causeTree.dump(buffer, false);
+        buffer.push("@endmindmap")
+        return buffer.join("\n")
+    }
 }
 
-export function createPuml(src: CauseAndEffectJson[], root: string): string {
-    const causeTree = buildCauseTree(src, root);
-    const buffer: string[] = ["@startmindmap", "top to bottom direction"]
-    causeTree.dump(buffer, true);
-    buffer.push('left side')
-    causeTree.dump(buffer, false);
-    buffer.push("@endmindmap")
-    return buffer.join("\n")
-}
+/* MindMapDiagram example usage
 
 const testJson: CauseAndEffectJson[] = JSON.parse(`[
         {
@@ -133,10 +134,12 @@ const testJson: CauseAndEffectJson[] = JSON.parse(`[
             "quotation-index": 2
         }]`);
 
-// function main() {
-//     console.log("Cause Tree:");
-//     const string = createPuml(testJson, "m");
-//     console.log(string)
-// }
+function main() {
+    console.log("Cause Tree:");
+    const string = MindMapDiagram.create(testJson, "m");
+    console.log(string)
+}
 
-// main();
+main();
+
+*/

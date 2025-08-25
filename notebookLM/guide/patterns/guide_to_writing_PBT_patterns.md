@@ -120,16 +120,18 @@ export const progressingByTensConfig = {
 }
 
 // helper utilities; example usage
-convertProgressionKeyToIndex("one"); // -> 1
-convertProgressionIndexToKey(1); // -> "one"
-convertProgressionCategoryKeyToIndex("helpful"); // -> 0
-convertProgressionCategoryKeyToBreadcrumb("helpful"); // -> "Dhammas that are very helpful"
-convertProgressionCategoryIndexToKey(0); // -> "helpful"
-fixBreadcrumbsIfNecessary({ progressionIndex: 1, categoryKey: "helpful" }); // -> "Dhamma that is very helpful"
-lookupPatternName({ progressionIndex: 1, categoryKey: "helpful" }); // -> 
-lookupAnswerExcerpt({ progressionIndex: 1, categoryKey: "helpful" }); // -> "Heedfulness with regard to skillful qualities"
-searchAnswerExcerptsForTerm("inconstant"); // -> [  {  categoryKey: "arise",  progressionIndex: 9,  excerpt: "Nine perceptions: the perception of unattractiveness, the perception of death, the perception of loathsomeness in food, the perception of distaste for every world, the perception of inconstancy, the perception of stress in what is inconstant, the perception of not-self in what is stressful, the perception of abandoning, the perception of dispassion."  },  {  categoryKey: "arise",  progressionIndex: 10,  excerpt: "Ten perceptions: the perception of unattractiveness, the perception of death, the perception of loathsomeness in food, the perception of distaste for every world, the perception of inconstancy, the perception of stress in what is inconstant, the perception of not-self in what is stressful, the perception of abandoning, the perception of dispassion, the perception of cessation."  }]
-createRelatedPatternMarkdownLink({ progressionIndex: 1, categoryKey: "helpful" }); // -> "/Heedful, ardent & resolute/(../ones/helpful.html)"
+ProgressingByTens.progression.keyToIndex("one"); // -> 1
+ProgressingByTens.progression.indexToKey(1); // -> "one"
+ProgressingByTens.category.keyToIndex("helpful"); // -> 0
+ProgressingByTens.category.keyToBreadcrumb("helpful"); // -> "Dhammas are very helpful"
+ProgressingByTens.category.indexToKey(0); // -> "helpful"
+ProgressingByTens.category.fixBreadcrumbsIfNecessary({ progressionIndex: 1, categoryKey: "helpful" }); // -> "Dhamma is very helpful"
+ProgressingByTens.lookupPatternName({ progressionIndex: 1, categoryKey: "helpful" }); // -> "Heedful, ardent & resolute"
+ProgressingByTens.lookupAnswerExcerpt({ progressionIndex: 1, categoryKey: "helpful" }); // -> "Heedfulness with regard to skillful qualities"
+ProgressingByTens.searchAnswerExcerptsForTerm("inconstant"); // -> [  {  categoryKey: "arise",  progressionIndex: 9,  excerpt: "Nine perceptions: the perception of unattractiveness, the perception of death, the perception of loathsomeness in food, the perception of distaste for every world, the perception of inconstancy, the perception of stress in what is inconstant, the perception of not-self in what is stressful, the perception of abandoning, the perception of dispassion."  },  {  categoryKey: "arise",  progressionIndex: 10,  excerpt: "Ten perceptions: the perception of unattractiveness, the perception of death, the perception of loathsomeness in food, the perception of distaste for every world, the perception of inconstancy, the perception of stress in what is inconstant, the perception of not-self in what is stressful, the perception of abandoning, the perception of dispassion, the perception of cessation."  }]
+ProgressingByTens.createRelatedPatternMarkdownLink({ progressionIndex: 1, categoryKey: "helpful" }); // -> "/Heedful, ardent & resolute/(../ones/helpful.html)"
+ProgressingByTens.revealContextStatement({ progressionIndex: 1, categoryKey: "helpful" }); // -> "/Heedful, ardent & resolute/(../ones/helpful.html)"
+ProgressingByTens.mimimiseJson({val1_keep:10, val2_keep: "ten", obj1_keep: {a: "ten", b: [10]}, val2_no_keep: "", obj2_no_keep: {a: "", b: []}, obj3_partial_keep: {a: "ten", b: []}, obj4_partial_keep: {a: "", b: [10]}}); // -> {val1_keep:10,val2_keep:"ten",obj1_keep:{a:"ten",b:[10]},obj3_partial_keep:{a:"ten"},obj4_partial_keep:{b:[10]}} 
 
 ``` 
 
