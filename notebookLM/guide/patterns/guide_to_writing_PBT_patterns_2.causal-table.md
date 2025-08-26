@@ -29,19 +29,30 @@ use the source "guide_causation_expression.md" for some candidate causation expr
 **6. Queries & Explanations**
 **7. Negated Causation**
 
-however, notebooklm must also identify causal expressions in groups and lists.
+
+However, NotebookLM must identify causal expressions within various sentence structures, including **sequential causal chains (often presented as lists)** and **grouped statements, especially those describing cessation or co-arising factors**.
+
+For **direct sequential causal chains** (e.g., "A leads to B leads to C"), the parsing logic demonstrated in the `convertFromQuotationToCauseAndEffect` method within `PBT-causal-table-builder.ts.txt` serves as the **authoritative and correct approach** for translating such quotations into `CauseAndEffectJson` arrays. This method correctly translates a sequence of conditions into ordered cause-and-effect pairs.
 
 **Groups**
-Example 1. consider the following quotation:
+Example 1. consider the following quotation that describes **cessation through abandonment**:
 
 > 'Abandoning three things, one is capable of abandoning self-identification views, abandoning uncertainty, abandoning grasping at habits & practices. Which three? Inappropriate attention, following a wrong path, & slowness of awareness…
 
-from the above quote the following can inferred:
-* Inappropriate attention leads to wrong view
-* wrong view co-arises with slowness of awareness
-* slowness of awareness leads to self-identification view
-* self-identification view co-arises with uncertainty
-* uncertainty co-arises with grasping at habits & practices
+from the above quote, the following causal relationships (framed in terms of cessation/abandonment) can be inferred, utilizing the `not-cause` and `not-effect` properties in the `CauseAndEffectJson` to accurately reflect the source text:
+*  **Abandoning inappropriate attention leads to abandoning self-identification views.**
+*  **Abandoning following a wrong path leads to abandoning uncertainty.**
+*  **Abandoning slowness of awareness leads to abandoning grasping at habits & practices.**
+
+When generating the `CauseAndEffectJson` for this type of cessation statement, the structure should reflect the 'not-cause' leads to 'not-effect' relationship. For example:
+```json
+[
+  {"not-cause": true, "cause": "inappropriate attention", "not-effect": true, "effect": "self-identification views", "quotation-index": [INDEX]},
+  {"not-cause": true, "cause": "following a wrong path", "not-effect": true, "effect": "uncertainty", "quotation-index": [INDEX]},
+  {"not-cause": true, "cause": "slowness of awareness", "not-effect": true, "effect": "grasping at habits & practices", "quotation-index": [INDEX]}
+]
+```
+*(The `[INDEX]` placeholder refers to the `quotation-index` from the `patternQuotationsJson["Causal-Table"]` array, which NotebookLM would dynamically assign.)*
 
 **Lists**
 Example 2. consider the following quotation:
