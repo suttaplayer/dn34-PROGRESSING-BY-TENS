@@ -172,8 +172,8 @@ export type UserDirectExperienceJson = {
     "Simile"?: UserInfluentialFactorsJson,
 }
 ```
-the expert user will apply "determinant-quotations" when they want to inject into notebooklm's awareness a quotation that was previously absent when a task was performed. however, there are occasions where the expert has gained insights that are not in the sources. on these occasions, they will use "factors" to inject causation into notebooklm's awareness. 
-
+the expert user will apply "determinant-quotations" when they want to inject into notebooklm's awareness a quotation that was previously absent when a task was performed. however, there are occasions where the expert has gained insights that are not in the sources. on these occasions, they will use "factors" to inject conceptual, structural, or relational insights into notebooklm's awareness. These `factors` can describe relationships such as **supersets, components, or encompassment** (e.g., "Practice X is a superset of Practice Y," or "Practice A includes Practice B").
+**`NotebookLMCausalTableBuilder` must be equipped to interpret these injected `factors` as if they were source quotations for the purpose of generating `CauseAndEffectJson` entries. When a `factor` describes an inclusive or compositional relationship, the `co-arised-with: true` property should be applied to the resulting `CauseAndEffectJson` entry.**
 note, it is only when an expert reviews notebooklm's generated pattern response with the associated patternQuotationsJson object will they be able to realise what key quotations and influencial aspects were absent. it is in the next iteration of generation of the same pattern that the expert can include direct experience in the initiating user query. the expert need only supply the influences relevant for the sections of interest on as needed basis.
 
 

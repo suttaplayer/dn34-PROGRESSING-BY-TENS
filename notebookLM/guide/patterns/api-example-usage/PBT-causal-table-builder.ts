@@ -92,31 +92,55 @@ const fake_causal_quotations = `(a) to (b)
 
 export class NotebookLMCausalTableBuilder extends AbstractCausalTableBuilder {
   /*
-  purpose: transform fromExpression into a more generalised and common/frequent term if required
-      eg 
-      "person of integrity" -> "admirable friendship" 
-      "restraint of the senses" -> "sense restraint"
-      "three forms of right conduct" -> "right conduct"
+  purpose: transform fromExpression into a more generalised and common/frequent term if required,
+          including identifying broader categories that encompass the expression or vice versa.
+
+  eg
+
+  "person of integrity" -> "admirable friendship"
+  "restraint of the senses" -> "sense restraint"
+  "three forms of right conduct" -> "right conduct"
+  "mindfulness of in-&-out breathing's 'body' establishment" -> "mindfulness immersed in the body" (if used as an effect for hierarchical generalization)
+  "body disposition" -> "mindfulness immersed in the body" (if contextually appropriate as a component being developed within it)
+
+  *  **Prioritize exact matching for established terms** like "right view" and "wrong view," preventing their generalization.
+  *  **Implement the specified generalizations** for descriptive phrases (e.g., "persistence aroused" to "persistence") to ensure consistency in the generated `cause` and `effect` fields of the `CauseAndEffectJson` entries.
+  *  Continue to apply general abstraction and generalization principles for other terms as needed, always aiming for the **most frequent and common representation** in the sources while avoiding excessive simplification or over-specialization.
   */
   public override makeExpressionAsGeneralisedAndCommon(fromExpression: string): string {
     throw new Error("Method not implemented.");
-  }
+  }  
 
   /*
   purpose: convert a quote with 1 or more causal relationships into a CauseAndEffectJson[] array. note unrelated entries will get dropped later
-      eg. 
-      'Thus, when associating with people of integrity is made full, it fills [the conditions for] hearing the true Dhamma… conviction… appropriate attention… mindfulness & alertness… restraint of the senses… the three forms of right conduct… the four establishings of mindfulness… the seven factors for awakening. When the seven factors for awakening are made full, they fill [the conditions for] clear knowing & release.
-      -> 
-      [{"cause": "admirable friendship", "effect": "hearing the true Dhamma", "quotation-index": 4},
-      {"cause": "hearing the true Dhamma", "effect": "conviction", "quotation-index": 4},
-      {"cause": "conviction", "effect": "appropriate attention", "quotation-index": 4},
-      {"cause": "appropriate attention", "effect": "mindfulness & alertness", "quotation-index": 4},
-      {"cause": "mindfulness & alertness", "effect": "sense restraint", "quotation-index": 4},
-      {"cause": "sense restraint", "effect": "right conduct", "quotation-index": 4},
-      {"cause": "right conduct", "effect": "four establishings of mindfulness", "quotation-index": 4},
-      {"cause": "four establishings of mindfulness", "effect": "seven factors for awakening", "quotation-index": 4},
-      {"cause": "seven factors for awakening", "effect": "clear knowing & release", "quotation-index": 4}]
 
+  eg.
+  'Thus, when associating with people of integrity is made full, it fills [the conditions for] hearing the true Dhamma… conviction… appropriate attention… mindfulness & alertness… restraint of the senses… the three forms of right conduct… the four establishings of mindfulness… the seven factors for awakening. When the seven factors for awakening are made full, they fill [the conditions for] clear knowing & release.
+  ->
+  [{"cause": "admirable friendship", "effect": "hearing the true Dhamma", "quotation-index": 4},
+  {"cause": "hearing the true Dhamma", "effect": "conviction", "quotation-index": 4},
+  {"cause": "conviction", "effect": "appropriate attention", "quotation-index": 4},
+  {"cause": "appropriate attention", "effect": "mindfulness & alertness", "quotation-index": 4},
+  {"cause": "mindfulness & alertness", "effect": "sense restraint", "quotation-index": 4},
+  {"cause": "sense restraint", "effect": "right conduct", "quotation-index": 4},
+  {"cause": "right conduct", "effect": "four establishings of mindfulness", "quotation-index": 4},
+  {"cause": "four establishings of mindfulness", "effect": "seven factors for awakening", "quotation-index": 4},
+  {"cause": "seven factors for awakening", "effect": "clear knowing & release", "quotation-index": 4}]
+
+  **Command:implement** `convertFromQuotationToCauseAndEffect` to parse the following types of relationships:
+  1.  **Hierarchical/Compositional Relationships:** For statements like "X includes Y" or "Z encompasses Y," create a `CauseAndEffectJson` entry where X (or Z) is the `cause` and Y is the `effect`, with `co-arised-with: true`.
+      *   Example: A statement "The four establishings of mindfulness encompasses mindfulness immersed in the body" would result in:
+          `{"cause": "four establishings of mindfulness", "effect": "mindfulness immersed in the body", "co-arised-with": true, "quotation-index": [INDEX]}`
+      *   Similarly, "Mindfulness immersed in the body includes contemplation of body disposition" would yield:
+          `{"cause": "mindfulness immersed in the body", "effect": "contemplation of body disposition", "co-arised-with": true, "quotation-index": [INDEX]}`
+    2.  **Benefits as Causal Effects:** Explicitly identify and process statements that describe positive outcomes or "benefits" as `effect`s of a practice.
+        *   Example: A statement "One doesn't fault oneself; observant people, on close examination, praise one; one's good reputation gets spread about; one dies unconfused; and—on the break-up of the body, after death—one reappears in a good destination, a heavenly world" could result in multiple entries such as:
+            `{"cause": "right conduct", "effect": "doesn't fault oneself", "quotation-index": [INDEX]}`
+            `{"cause": "right conduct", "effect": "observant people praise one", "quotation-index": [INDEX]}`
+            `{"cause": "right conduct", "effect": "good reputation gets spread about", "quotation-index": [INDEX]}`
+    3.  **Prioritize exact matching for established terms** like "right view" and "wrong view," preventing their generalization.
+    4.  **Implement the specified generalizations** for descriptive phrases (e.g., "persistence aroused" to "persistence") to ensure consistency in the generated `cause` and `effect` fields of the `CauseAndEffectJson` entries.
+    5.  Continue to apply general abstraction and generalization principles for other terms as needed, always aiming for the **most frequent and common representation** in the sources while avoiding excessive simplification or over-specialization.
   */
   public override convertFromQuotationToCauseAndEffect(quote: string, quoteIndex: number): CauseAndEffectJson[] {
     throw new Error("Method not implemented.");

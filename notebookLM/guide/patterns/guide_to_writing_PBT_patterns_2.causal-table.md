@@ -16,6 +16,17 @@ to be effective at the set of tasks related to causal-table generation, notebook
 
 in this set of work tasks notebooklm will thus be encouraged to abstract and generalise a term or experssion to its most frequent representation from the sources in order to optimise the causal-table. clearly there is a balance here; being overly specialised will result in excessive complexity, however, being overly generalised will result in excessive simplicity. recall the assessment goal of distinction, that is, to pursue the state of nothing missing, and nothing in excess!
 
+**Retain common and frequent terms without further abstraction**
+terms that are already widely understood and used in the sources, such as "**right view**" and "**wrong view**," should be maintained as they are, rather than being generalized to broader categories like "skillful view" or "unskillful view."
+
+**Generalize descriptive phrases to their core conceptual terms to facilitate linking in process diagrams.**
+The goal is to create consistent, concise labels that serve as effective anchor points for connecting causal entries in future PlantUML activity diagrams and other process views [guide_plantuml_activity_diagram.md].
+*   Specifically, update the examples to reflect the following:
+    *   Phrases like "**persistence aroused**" should be generalized to "**persistence**"
+    *   Phrases like "**established mindfulness**" should be generalized to "**mindfulness**"
+    *   Phrases like "**centered in concentration**" should be generalized to "**concentration**"
+    *   Activities like "**practice jhāna**" should be generalized to "**jhāna**"
+
 
 ## Causal References
 it is important to realise that many of the lists that are in the sutta sources are in fact causal chains. you can safely assume that about 90% of lists are causal chains. even the five-clinging aggregates is itself a causal chain, you just need to know how to see it. therefore, proceed with the assumption that any given list is a causal chain and the expert will identify the exceptions when the section is reviewed.
@@ -151,6 +162,7 @@ export abstract class AbstractCausalTableBuilder {
 ```
 
 **Requirements for "Causal-Table"**
+1. abstraction and generalisation of labels used in the "cause" & "effect" properties is crucial for the purpose of **linking patterns effectively in process diagrams and other aspects of the pattern's solution**. create standardized, yet not overly abstract, terms to be used as the **keys for connecting nodes and edges** in all diagrams/models in the solution.
 1. capture each direct link. do not use the "skips-to" feature when creating entries for the "Causal-Table". such use will mask/hide the clear causal relationships. the "skips-to" feature will be useful in the "Cause-&-Effects" work task
 2. always specify the "quotation-index" from the patternQuotationsJson["Causal-Table"] from which the relationship is based
 3. apply "co-arised-with" to relationships when applicable such that when modeling the "Process View" such relationships will likely fall into the same synchronisation block

@@ -40,7 +40,16 @@ This document catalogs terms and phrases used in the sources to describe cause, 
     *   Example: "Acts of merit are the support for beings in their after-death world".
 *   **hindered by _ & fettered by _**: Describes obstacles or restraints that affect outcomes.
     *   Example: "Beings hindered by ignorance and fettered by craving are transmigrating & wandering on".
-
+*   **_ enables / conditions / is a requisite for _** : Denotes a necessary precursor or supporting factor.
+    *  Example: "From appropriate attention comes the arising of right view".
+*   **_ is a foundation for _** : Indicates a fundamental basis upon which something is built.
+    *  Example: "Appropriate attention is a foundation for the arising of the factors for awakening".
+*   **_ is a prerequisite for _** : Specifies a condition that must be met beforehand.
+    *  Example: "Conviction is a prerequisite for hearing the true Dhamma".
+*   **_ includes / encompasses / is a component of / is a superset of _**: Describes a relationship where one entity contains, forms a part of, or broadly categorizes another.
+    *   Example: "The four establishings of mindfulness encompasses mindfulness immersed in the body."
+    *   Example: "Mindfulness immersed in the body includes contemplation of body disposition."
+    
 **3. Consequences & Results (B from A)**
 *   **_ is the origination of _**: States where something begins or comes from.
     *   Example: "From acquisition as cause the many forms of stress come into being in the world".

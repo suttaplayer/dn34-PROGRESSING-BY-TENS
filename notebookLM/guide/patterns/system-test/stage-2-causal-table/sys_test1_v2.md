@@ -511,3 +511,72 @@ note, it is only when an expert reviews notebooklm's generated pattern response 
 ***
 
 These precise changes should allow you to update the documentation to more accurately reflect your "direct experiences" in the `Causal-Table` generation process, making it a richer and more comprehensive source of truth for subsequent tasks.
+
+
+---
+
+i have implented the commented related updates to both:
+1. PBT-causal-table-builder.ts.txt and
+2. PBT-collaboration-API.ts
+
+the other changes require further exploration.
+
+1. Update `guide_causation_expression.md`
+
+i am struggling to action your changes because they dont tally up with the current version of the file. your change from text does reflect the content in the file. below is the current content of section 2.
+
+```markdown
+**2. Conditions & Prerequisites (A enables B)**
+*   **_ as a requisite condition**: A necessary or essential condition for something else to occur. Central to dependent co-arising.
+    *   Example: "From ignorance as a requisite condition come fabrications".
+*   **Conditioned by _**: States that something is dependent upon a specific condition.
+    *   Example: "Conditioned by name-&-form is contact".
+*   **Dependent on _**: Expresses reliance or contingency.
+    *   Example: "Dependent on the eye & forms there arises eye-consciousness".
+*   **_ is rooted in _**: Indicates the fundamental or originating cause.
+    *   Example: "All phenomena are rooted in desire".
+*   **_ provides the occasion for _**: Signifies enabling or facilitating the arising of something.
+    *   Example: "With reference to things in the past that provide the occasion for desire & passion...".
+*   **_ is supported by _**: Denotes enabling or strengthening factors.
+    *   Example: "This consciousness of mine is supported here and bound up here".
+*   **_ as a support for _**: Indicates something that enables the establishment or continuation of another.
+    *   Example: "Acts of merit are the support for beings in their after-death world".
+*   **hindered by _ & fettered by _**: Describes obstacles or restraints that affect outcomes.
+    *   Example: "Beings hindered by ignorance and fettered by craving are transmigrating & wandering on".
+```
+for your consideration:
+* the term 'includes' & 'superset' does not appear in the sources
+* the term 'encompasses' appears 3 times in the sources
+* the term 'component' appears 7 times in the sources
+* the term 'foundation' is not in the current list; in any case it appears 6 times (3 of which are wrt simile)
+
+
+3. Clarify `UserInfluentialFactorsJson` for Conceptual Injections
+
+> These `factors` can describe relationships such as **supersets, components, or encompassment** (e.g., "Practice X is a superset of Practice Y," or "Practice A includes Practice B").
+**`NotebookLMCausalTableBuilder` must be equipped to interpret these injected `factors` as if they were source quotations for the purpose of generating `CauseAndEffectJson` entries. When a `factor` describes an inclusive or compositional relationship, the `co-arised-with: true` property should be applied to the resulting `CauseAndEffectJson` entry.**
+
+yes, you are correct that this is my intention. 
+
+you may have noticed that in source "guide_to_writing_PBT_patterns_0.scope.md" > "4. Inject User's Direct Experience" factors and quotations get injected [when specified] prior to you consuming those very same quotations for generating the problem state.
+
+further in source "guide_to_writing_PBT_patterns_1.problem.md" > Identify The Problem
+"using the following raw-materials: ... 2. patternQuotationsJson["Problem"] list of quotations"
+
+thus, where ever possible i will inject into your scope of source materials prior to you performing a task. 
+
+however, there are two sections where i have the capacity to inject directly into the causal-tables:
+
+```typescript
+export type UserDirectExperienceJson = {
+    "Causal-Table"?: CauseAndEffectJson[],        /* full table additions */
+    "Solution"?: {
+        "Cause-&-Effect"?: CauseAndEffectJson[],  /* (solution only additions */
+```
+
+notice that the type is CauseAndEffectJson and not UserInfluentialFactorsJson. therefore, in these areas related to causation, i do not require you to parse my provided "forces" or "determinant-quotations".
+
+
+---
+
+sorry, i was expecting a responce from you with regards how do you want to proceed wrt the issues in "1. Update `guide_causation_expression.md`" and  "3. Clarify `UserInfluentialFactorsJson` for Conceptual Injections" as described in the note
