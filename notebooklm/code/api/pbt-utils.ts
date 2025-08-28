@@ -1,0 +1,86 @@
+import config_ from "./pbt-catalog.json" with { type: "json" }
+
+
+type Progressions = [string, string, string, string, string, string, string, string, string, string]; // one, two, three, ..., ten
+
+type CategoryCollection = {
+    "helpful": Progressions;
+    "developed": Progressions;
+    "comprehended": Progressions;
+    "abandoned": Progressions;
+    "decline": Progressions;
+    "distinction": Progressions;
+    "penetrate": Progressions;
+    "arise": Progressions;
+    "known": Progressions;
+    "realized": Progressions;
+}
+
+type ProgressingByTensConfigJson = {
+    "index-keys": string[];     // in reference to a progression key (eg. "nine")
+    "catagory-keys": string[];  // in reference to a category key (eg. "helpful")
+    "catagory-breadcrumb-labels": string[]; // in reference to a context (eg. "Dhammas that are very helpful")
+    "pattern-names": CategoryCollection;    // 1-to-1 mapping of pattern-names to answer-excerpts "Heedful, ardent & resolute" -> "Heedfulness with regard to skillful qualities")
+    "answer-excerpts": CategoryCollection
+}
+
+export class ProgressingByTens {
+    public static config: ProgressingByTensConfigJson = config_ as any
+}
+
+export class JsonUtils {
+    public static minimise(jsonObj: any): any {
+        const mimimisedResult: any = Array.isArray(jsonObj) ? [] : {};
+        for (const key in jsonObj) {
+            const value = jsonObj[key];
+            if (Array.isArray(value)) {
+                if (value.length > 0) 
+                    mimimisedResult[key] = value;
+            } else if (typeof value === 'object' && value !== null) {
+                const nestedCompressed = this.minimise(value);
+                if (Object.keys(nestedCompressed).length > 0) 
+                    mimimisedResult[key] = nestedCompressed;
+            } else if (value !== '') 
+                mimimisedResult[key] = value;
+        }
+        return mimimisedResult;
+    }
+
+    public static async compress(jsonContent: object): Promise<string> {
+        const jsonString = JSON.stringify(jsonContent);
+        const textEncoder = new TextEncoder();
+        const data = textEncoder.encode(jsonString);
+        const readableStream = new ReadableStream({
+            start(controller) {
+            controller.enqueue(data);
+            controller.close();
+            },
+        });
+
+        const compressionStream = new CompressionStream('gzip');
+        const compressedStream = readableStream.pipeThrough(compressionStream);
+        const compressedBlob = await new Response(compressedStream).blob();
+        const compressedBuffer = await compressedBlob.arrayBuffer();
+        const base64String = btoa(String.fromCharCode(...new Uint8Array(compressedBuffer)));
+        return base64String;
+    }
+
+    public static async decompress(base64String: string): Promise<object> {
+        const binaryString = atob(base64String);
+        const binaryBuffer = new Uint8Array(binaryString.length);
+        for (let i = 0; i < binaryString.length; i++) {
+            binaryBuffer[i] = binaryString.charCodeAt(i);
+        }
+        const readableStream = new ReadableStream({
+            start(controller) {
+            controller.enqueue(binaryBuffer);
+            controller.close();
+            },
+        });
+        const decompressionStream = new DecompressionStream('gzip');
+        const decompressedStream = readableStream.pipeThrough(decompressionStream);
+        const decompressedBlob = await new Response(decompressedStream).blob();
+        const jsonString = await decompressedBlob.text();
+        return JSON.parse(jsonString);
+    }
+}
