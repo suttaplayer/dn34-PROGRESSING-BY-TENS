@@ -1,6 +1,79 @@
-import { NotebookLmPatternGenerator } from "../api/nblm-pattern-generator.ts";
-import { AbtractPatternGenerator, DeterminantQuotationString, ScopeWorkTaskBuilder, SubjectJson, UserPatternRequestJson } from "../api/pattern-API.ts";
-import { JsonUtils, ProgressingByTens } from "../api/pbt-utils.ts";
+import { AbtractPatternGenerator, CausalTableWorkTaskBuilder, ProblemWorkTaskBuilder, ScopeWorkTaskBuilder } from "./pattern-API.ts";
+import { ProgressingByTens } from "./pbt-utils.ts";
+
+export type RequestTypeKey = "information_retrieval" | "text_analysis" | "conceptual_mapping" | "comparative_analysis" | "structured_extraction" | "synthesized_overview" | "user_text_analysis"
+
+export type ResponseFormatKey = "paragraphs" | "bullet_points" | "short_summary" | "detailed_explanation" | "text_snippets" | "json"
+
+export type RequestTypeJson = {
+    "query_id"?: string
+    "request_type": RequestTypeKey
+    "task": string
+    "response_format"?: ResponseFormatKey
+    "language"?: string
+}
+
+export type SearchTypeJson = {
+    "search_scope": string[] | "all_sources"
+    "query"?: string
+    subject?: string
+}
+
+export type InformationRetrievalJson = RequestTypeJson & SearchTypeJson &{
+    "request_type": "information_retrieval"
+}
+
+export type UserTextAnalysisJson = RequestTypeJson &{
+    "request_type": "user_text_analysis"
+    "user_input": {
+        "text": string
+        "object"?: {}    // perhaps json is also supported as user input?
+    }
+}
+
+export type TextAnalysisJson = UserTextAnalysisJson &{
+    "request_type": "text_analysis"
+}
+
+export type ConceptualMappingJson = RequestTypeJson &{
+    "request_type": "conceptual_mapping"
+    "concept_a": string
+    "concept_b": string
+}
+
+export type ComparativeAnalysisJson = RequestTypeJson &{
+    "request_type": "comparative_analysis"
+    "items_to_compare": string[]
+    "comparison_criteria": []
+}
+
+export type StructuredExtractionJson = RequestTypeJson &{
+    "request_type": "structured_extraction"
+    "target_entities": string
+    "attributes": string[]   
+}
+
+export type SynthesizedOverviewJson = RequestTypeJson &{
+    "request_type": "synthesized_overview"
+    "topic": string
+}
+
+export type ResponseJson = {}
+
+export interface ContentGenerator {
+    generateContent(req: RequestTypeJson|SearchTypeJson): Promise<ResponseJson|string>
+}
+
+export class NotebookLmModel implements ContentGenerator {
+    public async generateContent(req: RequestTypeJson|SearchTypeJson): Promise<ResponseJson|string> {
+        let response: ResponseJson = {}
+        /*
+            **NotebookLM Task**
+                1. **Command:generate** implementation which takes a request as an argument and then awaits for the actual content generation in the specified request format. finally, store the result in the response variable 
+        */
+        return response
+    }
+}
 
 
 export class NotebookLmScopeWorkTaskBuilder extends ScopeWorkTaskBuilder {
@@ -13,8 +86,8 @@ export class NotebookLmScopeWorkTaskBuilder extends ScopeWorkTaskBuilder {
     constructor(key: string, responder: AbtractPatternGenerator) {
         super(key, responder)
         this.patternName = ProgressingByTens.config.patternName[this.responder.request.categoryKey][this.responder.request.progressionIndex-1]
-        this.indexKey = ProgressingByTens.config.topic.progressionKey[this.responder.request.progressionIndex-1]
-        this.breadcrumbLabel = ProgressingByTens.config.topic.label[this.responder.request.progressionIndex-1]
+        this.indexKey = ProgressingByTens.config.progressionKey[this.responder.request.progressionIndex-1]
+        this.breadcrumbLabel = ProgressingByTens.config.label[this.responder.request.progressionIndex-1]
         this.answerExcerpt = ProgressingByTens.config.answerExcerpt[this.responder.request.categoryKey][this.responder.request.progressionIndex-1]
     }
 
@@ -32,7 +105,7 @@ export class NotebookLmScopeWorkTaskBuilder extends ScopeWorkTaskBuilder {
     private parseSubjectsFromAnswerExcerpt():  SubjectJson[] {
         const numberOfSubjects = this.responder.request.progressionIndex
         const expression = this.answerExcerpt
-        const storage = this.responder.response.buildingBlocks["Scope"].subject // array
+        const storage = this.responder.response[buildingBlocks]["Scope"][subject] // array
         const subjectsMap = new Map<string, string[]|undefined>()
         if (numberOfSubjects === 2 && this.responder.request.categoryKey === "helpful") { // Mindfulness & alertness
             subjectsMap.set("Mindfulness & alertness", undefined)
@@ -65,7 +138,7 @@ export class NotebookLmScopeWorkTaskBuilder extends ScopeWorkTaskBuilder {
 
             eg. "complacent" is the determinant
         */
-        subjectJson.enterFromState = "complacent" // hard-coded example
+        subjectJson[enterFromState] = "complacent" // hard-coded example
         searchResults.forEach((v) => {this.quotationset.add(v)})
     }
 
@@ -81,7 +154,7 @@ export class NotebookLmScopeWorkTaskBuilder extends ScopeWorkTaskBuilder {
 
             eg. "effluent-free" is the determinant
         */
-        subjectJson.enterFromState = "effluent-free" // hard-coded example
+        subjectJson[enterFromState] = "effluent-free" // hard-coded example
         searchResults.forEach((v) => {this.quotationset.add(v)})
     }
 
@@ -97,7 +170,7 @@ export class NotebookLmScopeWorkTaskBuilder extends ScopeWorkTaskBuilder {
 
             eg. ["stream-enterer", "once-returner", "non-returner"] the "the most backward" is the determinant
         */
-        subjectJson.targetPractitioner = ["stream-enterer", "once-returner", "non-returner"]
+        subjectJson[targetPractitioner] = ["stream-enterer", "once-returner", "non-returner"]
         searchResults.forEach((v) => {this.quotationset.add(v)})
     }
 
@@ -113,54 +186,18 @@ export class NotebookLmScopeWorkTaskBuilder extends ScopeWorkTaskBuilder {
     }
 }
 
-function main() {
-    const userPatternRequest: UserPatternRequestJson = {
-        progressionIndex: 1,
-        categoryKey: "helpful"
+
+export class NotebookLmPatternGenerator extends AbtractPatternGenerator {
+    public static CONTENT_GENERATOR = new NotebookLmModel()
+
+
+    static {
+        AbtractPatternGenerator.BUILDER_REGISTRY.set("Scope", ScopeWorkTaskBuilder)
+        AbtractPatternGenerator.BUILDER_REGISTRY.set("Problem", ProblemWorkTaskBuilder)
+        AbtractPatternGenerator.BUILDER_REGISTRY.set("Causal-Table", CausalTableWorkTaskBuilder)
     }
-    NotebookLmPatternGenerator.BUILDER_REGISTRY.set("Scope", NotebookLmScopeWorkTaskBuilder)
-    const responder = new NotebookLmPatternGenerator(userPatternRequest)
-    const response = responder.generate()
-    const output = JsonUtils.minimise(response)
-    console.log(JSON.stringify(output, null, 2))
 }
 
-main()
-
-/*
-
- deno 0.scope.ts 
-
-pattern "Heedful, ardent & resolute", has as its originating context:
-        Which one Dhammas are very helpful?
-Heedfulness with regard to skillful qualities
-{
-  "buildingBlocks": {
-    "Scope": {
-      "progressionIndex": 1,
-      "categoryKey": "helpful",
-      "subject": [
-        {
-          "name": "Heedfulness",
-          "focusArea": [
-            "skillful qualities"
-          ],
-          "enterFromState": "effluent-free",
-          "exitToState": "",
-          "targetPractitioner": [
-            "stream-enterer",
-            "once-returner",
-            "non-returner"
-          ]
-        }
-      ]
-    }
-  },
-  "quotationSheet": {
-    "Scope": [
-      "[dont] ever let yourself get complacent when the ending of effluents is still unattained",
-      "Now, then, monks, I exhort you: All fabrications are subject to ending & decay. Reach consummation through heedfulness.' That was the Tathāgata's last statement [to a group of noble monks the most backward of which was a stream-enterer]"
-    ]
-  }
-}
-*/
+const responder = new NotebookLmPatternGenerator({progressionIndex: 1, categoryKey: "helpful"})
+responder.generate()
+console.log(responder.response)

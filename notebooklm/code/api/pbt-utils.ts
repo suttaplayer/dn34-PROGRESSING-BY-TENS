@@ -4,24 +4,26 @@ import config_ from "./pbt-catalog.json" with { type: "json" }
 type Progressions = [string, string, string, string, string, string, string, string, string, string]; // one, two, three, ..., ten
 
 type CategoryCollection = {
-    "helpful": Progressions;
-    "developed": Progressions;
-    "comprehended": Progressions;
-    "abandoned": Progressions;
-    "decline": Progressions;
-    "distinction": Progressions;
-    "penetrate": Progressions;
-    "arise": Progressions;
-    "known": Progressions;
-    "realized": Progressions;
+    helpful: Progressions;
+    developed: Progressions;
+    comprehended: Progressions;
+    abandoned: Progressions;
+    decline: Progressions;
+    distinction: Progressions;
+    penetrate: Progressions;
+    arise: Progressions;
+    known: Progressions;
+    realized: Progressions;
 }
 
 type ProgressingByTensConfigJson = {
-    "index-keys": string[];     // in reference to a progression key (eg. "nine")
-    "catagory-keys": string[];  // in reference to a category key (eg. "helpful")
-    "catagory-breadcrumb-labels": string[]; // in reference to a context (eg. "Dhammas that are very helpful")
-    "pattern-names": CategoryCollection;    // 1-to-1 mapping of pattern-names to answer-excerpts "Heedful, ardent & resolute" -> "Heedfulness with regard to skillful qualities")
-    "answer-excerpts": CategoryCollection
+    topic: {
+        progressionKey: string[];     // in reference to a progression key (eg. "nine")
+        catagoryKey: string[];  // in reference to a category key (eg. "helpful")
+        label: string[]; // in reference to a context (eg. "Dhammas that are very helpful")
+    }
+    patternName: CategoryCollection;    // 1-to-1 mapping of pattern-names to answer-excerpts "Heedful, ardent & resolute" -> "Heedfulness with regard to skillful qualities")
+    answerExcerpt: CategoryCollection
 }
 
 export class ProgressingByTens {

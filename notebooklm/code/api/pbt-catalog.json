@@ -1,44 +1,45 @@
 {
-    "index-keys": [
-        "one",
-        "two",
-        "three",
-        "four",
-        "five",
-        "sixe",
-        "seven",
-        "eight",
-        "nine",
-        "ten"
-    ],
+    "topic": {
+        "progressionKey": [
+            "one",
+            "two",
+            "three",
+            "four",
+            "five",
+            "sixe",
+            "seven",
+            "eight",
+            "nine",
+            "ten"
+        ],
 
-    "catagory-keys": [
-        "helpful",
-        "developed",
-        "comprehended",
-        "abandoned",
-        "decline",
-        "distinction",
-        "penetrate",
-        "arise",
-        "known",
-        "realized"
-    ],
+        "catagoryKey": [
+            "helpful",
+            "developed",
+            "comprehended",
+            "abandoned",
+            "decline",
+            "distinction",
+            "penetrate",
+            "arise",
+            "known",
+            "realized"
+        ],
 
-    "catagory-breadcrumb-labels": [
-        "Dhammas are very helpful",
-        "Dhammas should be developed",
-        "Dhammas should be comprehended",
-        "Dhammas should be abandoned",
-        "Dhammas are on the side of decline",
-        "Dhammas are on the side of distinction",
-        "Dhammas are hard to penetrate",
-        "Dhammas should be made to arise",
-        "Dhammas should be directly known",
-        "Dhammas should be realised"
-    ],
-
-    "pattern-names": {
+        "label": [
+            "Dhammas are very helpful",
+            "Dhammas should be developed",
+            "Dhammas should be comprehended",
+            "Dhammas should be abandoned",
+            "Dhammas are on the side of decline",
+            "Dhammas are on the side of distinction",
+            "Dhammas are hard to penetrate",
+            "Dhammas should be made to arise",
+            "Dhammas should be directly known",
+            "Dhammas should be realised"
+        ]
+    },
+    "patternName": {
         "helpful": [
             "Heedful, ardent & resolute",
             "Mindfulness & alertness",
@@ -161,7 +162,7 @@
         ]
     },
 
-  "answer-excerpts": {
+    "answerExcerpt": {
         "helpful": [
             "Heedfulness with regard to skillful qualities",
             "Mindfulness & alertness",

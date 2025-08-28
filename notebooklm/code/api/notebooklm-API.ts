@@ -1,12 +1,3 @@
-/*
-    NOTE:
-
-    THIS IS A SERVER SIDE LIBRARY FOR CODE THAT IS EXPECTED TO BE RUN IN NOTEBOOKLM'S SANDBOX.
-    THIS FILE MUST BE SAVED AS EITHER A NOTE OR A SOURCE AS PART OF A NOTEBOOK PROJECT
-
-*/
-
-
 export type RequestTypeKey = "information_retrieval" | "text_analysis" | "conceptual_mapping" | "comparative_analysis" | "structured_extraction" | "synthesized_overview" | "user_text_analysis"
 
 export type ResponseFormatKey = "paragraphs" | "bullet_points" | "short_summary" | "detailed_explanation" | "text_snippets" | "json"
@@ -22,7 +13,7 @@ export type RequestTypeJson = {
 export type SearchTypeJson = {
     "search_scope": string[] | "all_sources"
     "query"?: string
-    "subject"?: string
+    subject?: string
 }
 
 export type InformationRetrievalJson = RequestTypeJson & SearchTypeJson &{
@@ -66,18 +57,16 @@ export type SynthesizedOverviewJson = RequestTypeJson &{
 
 export type ResponseJson = {}
 
-export class NotebookLmModel {
-    public static async generateContent(req: RequestTypeJson|SearchTypeJson): Promise<ResponseJson> {
+export interface ContentGenerator {
+    generateContent(req: RequestTypeJson|SearchTypeJson): Promise<ResponseJson|string>
+}
+
+export class NotebookLmModel implements ContentGenerator {
+    public async generateContent(req: RequestTypeJson|SearchTypeJson): Promise<ResponseJson|string> {
         let response: ResponseJson = {}
         /*
-            NOTE TO NotebookLM:
-
-            please specify the actual API call below:
-
-            eg. 
-            const ai = new NotebookGenAI({})
-            response = ai.model.generateContent(req)
-            
+            **NotebookLM Task**
+                1. **Command:generate** implementation which takes a request as an argument and then awaits for the actual content generation in the specified request format. finally, store the result in the response variable 
         */
         return response
     }
