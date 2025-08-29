@@ -1,3 +1,5 @@
+import { ProgressingByTens } from "./pbt-utils.ts";
+
 /*
 purpose: represents the valid category keys for the dhammas in the "progressing by tens" framework
 specified by:
@@ -307,6 +309,7 @@ export abstract class AbtractPatternGenerator {
         this.request = req
         this.response.buildingBlocks["Scope"].progressionIndex = req.progressionIndex
         this.response.buildingBlocks["Scope"].categoryKey = req.categoryKey
+        this.response.buildingBlocks["Scope"].patternName = ProgressingByTens.config.patternName[this.request.categoryKey][this.request.progressionIndex-1]
         this.initBuilders()
     }
 

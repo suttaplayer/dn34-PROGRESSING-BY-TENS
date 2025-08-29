@@ -4,7 +4,6 @@ import { JsonUtils, ProgressingByTens } from "../api/pbt-utils.ts";
 
 
 export class NotebookLmScopeWorkTaskBuilder extends ScopeWorkTaskBuilder {
-    private patternName: string 
     private indexKey: string
     private breadcrumbLabel: string
     private answerExcerpt: string 
@@ -12,15 +11,13 @@ export class NotebookLmScopeWorkTaskBuilder extends ScopeWorkTaskBuilder {
 
     constructor(key: string, responder: AbtractPatternGenerator) {
         super(key, responder)
-        this.patternName = ProgressingByTens.config.patternName[this.responder.request.categoryKey][this.responder.request.progressionIndex-1]
         this.indexKey = ProgressingByTens.config.topic.progressionKey[this.responder.request.progressionIndex-1]
         this.breadcrumbLabel = ProgressingByTens.config.topic.label[this.responder.request.progressionIndex-1]
         this.answerExcerpt = ProgressingByTens.config.answerExcerpt[this.responder.request.categoryKey][this.responder.request.progressionIndex-1]
-        this.responder.response.buildingBlocks["Scope"].patternName = this.patternName
     }
 
     private extendContextWindowBeyondOriginalUserQuery() {
-        const context = `pattern "${this.patternName}", has as its originating context:\n\tWhich ${this.indexKey} ${this.breadcrumbLabel}?\n${this.answerExcerpt}`
+        const context = `pattern "${this.responder.response.buildingBlocks["Scope"].patternName}", has as its originating context:\n\tWhich ${this.indexKey} ${this.breadcrumbLabel}?\n${this.answerExcerpt}`
         /*  **Command:notebooklm_API::add-to-context-window**: ${context}
 
             eg. console.log(context) > $ deno 0.scope.ts 
