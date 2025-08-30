@@ -204,6 +204,7 @@ created by: user and submitted as part of the userPatternRequestJson in the init
 note: CausalRelationJson objects are only applied to work tasks "Causal-Table" and "Cause-&-Effect"
 */
 export type UserDirectExperienceJson = {
+    "Scope"?: UserInfluentialFactorsJson
     "Problem"?: UserInfluentialFactorsJson
     "Causal-Table"?: CausalRelationJson[]        /* full table additions */
     "Solution"?: {
