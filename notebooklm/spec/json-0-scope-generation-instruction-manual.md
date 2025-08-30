@@ -333,9 +333,32 @@ notebooklm must:
   }
 
 
-**Command:UPDATE INSTRUCTION MANUAL** by inserting the internal json request object for step 1
+```json
+{
+  "commandType": "information_retrieval",
+  "parameters": {
+    "query": "<dynamic_subject_name_and_focus_area>", // e.g., "people of integrity enter from state"
+    "sources": ["AN_nblm.txt", "DN_nblm.txt", "KN_Dhp_nblm.txt", "KN_Iti_nblm.txt", "KN_Khp_nblm.txt", "KN_StNp_nblm.txt", "KN_Thag_nblm.txt", "KN_Thig_nblm.txt", "KN_Ud_nblm.txt", "MN_nblm.txt", "SN_nblm.txt"],
+    "contextHint": "mind states or external states",
+    "resultType": "DeterminantQuotationString[]"
+  }
+}
+```
 
 2. **Command:parse** the selected quotation(s) to extract the enter-from-state as text and assign it to the subject's "enterFromState" property
+
+
+```json
+{
+  "commandType": "structured_extraction",
+  "parameters": {
+    "textToParse": "<result_from_Command:search>", // e.g., ["'From ignorance as a requisite condition come fabrications.'"]
+    "extractionTarget": "enterFromState",
+    "expectedFormat": "string",
+    "guidance": "Extract the 'nearest branch' condition or state that precedes or leads to the subject. Prioritize a specific preceding condition over general states like 'heedfulness' if a more direct link is present, as per manual's instruction 'look deeper at the \"nearest branch\" state (as opposed to root state)'."
+  }
+}
+```
 
 **running example**
 ```typescript
@@ -361,7 +384,6 @@ let quotes = ["Because of that gain, he becomes intoxicated, complacent, & falls
 }
 ```
 
-**Command:UPDATE INSTRUCTION MANUAL** by inserting the internal json request object for step 2
 
 3. **Command:store** the quotation in the quotation sheet for "Scope" 
 
@@ -419,7 +441,17 @@ let quotes = ["Because of that gain, he becomes intoxicated, complacent, & falls
 }
 ```
 
-**Command:UPDATE INSTRUCTION MANUAL** by inserting the internal json request object for step 2
+```json
+{
+  "commandType": "structured_extraction",
+  "parameters": {
+    "textToParse": "<result_from_Command:search>",
+    "extractionTarget": "exitToState",
+    "expectedFormat": "string",
+    "guidance": "Extract the ending state or 'natural baton change' to another skillful quality. Prioritize a specific outcome over general states like 'ending of the effluents' if a more direct transition is evident, as per manual's instruction 'look more deeply at where there is a natural baton change to another skillful quality'."
+  }
+}
+```
 
 3. **Command:store** the quotation in the quotation sheet for "Scope" 
 
@@ -483,7 +515,17 @@ let quotes = ["Now, then, monks, I exhort you: All fabrications are subject to e
 ```
 
 
-**Command:UPDATE INSTRUCTION MANUAL** by inserting the internal json request object for step 2
+```json
+{
+  "commandType": "structured_extraction",
+  "parameters": {
+    "textToParse": "<result_from_Command:search>",
+    "extractionTarget": "targetPractitioner",
+    "expectedFormat": "PractitionerKey[]",
+    "guidance": "Identify all relevant practitioner types from the `PractitionerKey` enumeration ('conviction-dhamma-follower', 'stream-enterer', 'once-returner', 'non-returner') that are explicitly or implicitly mentioned as suitable for the subject. Consider the 'medical prescription' analogy; if a practice is too advanced or basic, narrow the target practitioner accordingly."
+  }
+}
+```
 
 3. **Command:store** the quotation in the quotation sheet for "Scope" 
 
