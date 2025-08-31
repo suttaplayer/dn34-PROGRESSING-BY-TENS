@@ -228,6 +228,19 @@ export type SubjectJson = {
 }
 ```
 
+**Internal JSON Request Object for `Command:parse` (Answer Excerpt Parsing):**
+```json
+{
+  "commandType": "structured_extraction",
+  "parameters": {
+    "textToParse": "<answerExcerpt_string>",
+    "extractionTarget": "SubjectJson[]",
+    "expectedFormat": "{ name: string, focusArea?: string[] }[]",
+    "guidance": "Identify distinct subjects and their optional associated focus areas from the answer excerpt. If components within the answer excerpt have distinct and sequential requisite conditions, or lead to different immediate outcomes, parse them as separate SubjectJson objects. The maximum number of subjects to extract is defined by progressionIndex. Initially, enterFromState and exitToState should be empty strings, and targetPractitioner an empty array."
+  }
+}
+```
+
 
 2. **Command:generalise & abstract** the subject name if necessary. the subject name plays role in the causal-table. if the name is to specific the causal-table will be small and of little benefit (due to simplicity) for the remaining work tasks. however, if the name is over-generalised then the causal-table will be too large and again of little benefit (due to complexity) for the remaining work tasks.
   * eg, consider the subject: "people of integrity"
@@ -333,11 +346,12 @@ notebooklm must:
   }
 
 
+**Internal JSON Request Object for `Command:search` (for `enterFromState`):**
 ```json
 {
   "commandType": "information_retrieval",
   "parameters": {
-    "query": "<dynamic_subject_name_and_focus_area>", // e.g., "people of integrity enter from state"
+    "query": "<dynamic_search_expression_from_subject_name_and_focus_area>",
     "sources": ["AN_nblm.txt", "DN_nblm.txt", "KN_Dhp_nblm.txt", "KN_Iti_nblm.txt", "KN_Khp_nblm.txt", "KN_StNp_nblm.txt", "KN_Thag_nblm.txt", "KN_Thig_nblm.txt", "KN_Ud_nblm.txt", "MN_nblm.txt", "SN_nblm.txt"],
     "contextHint": "mind states or external states",
     "resultType": "DeterminantQuotationString[]"
@@ -348,11 +362,12 @@ notebooklm must:
 2. **Command:parse** the selected quotation(s) to extract the enter-from-state as text and assign it to the subject's "enterFromState" property
 
 
+**Internal JSON Request Object for `Command:parse` (for `enterFromState` extraction):**
 ```json
 {
   "commandType": "structured_extraction",
   "parameters": {
-    "textToParse": "<result_from_Command:search>", // e.g., ["'From ignorance as a requisite condition come fabrications.'"]
+    "textToParse": "<quotes_array_from_Command:search>",
     "extractionTarget": "enterFromState",
     "expectedFormat": "string",
     "guidance": "Extract the 'nearest branch' condition or state that precedes or leads to the subject. Prioritize a specific preceding condition over general states like 'heedfulness' if a more direct link is present, as per manual's instruction 'look deeper at the \"nearest branch\" state (as opposed to root state)'."
@@ -412,7 +427,18 @@ notebooklm must:
   }
 
 
-**Command:UPDATE INSTRUCTION MANUAL** by inserting the internal json request object for step 1
+**Internal JSON Request Object for `Command:search` (for `exitToState`):**
+```json
+{
+  "commandType": "information_retrieval",
+  "parameters": {
+    "query": "<dynamic_search_expression_from_subject_name_and_focus_area>",
+    "sources": ["AN_nblm.txt", "DN_nblm.txt", "KN_Dhp_nblm.txt", "KN_Iti_nblm.txt", "KN_Khp_nblm.txt", "KN_StNp_nblm.txt", "KN_Thag_nblm.txt", "KN_Thig_nblm.txt", "KN_Ud_nblm.txt", "MN_nblm.txt", "SN_nblm.txt"],
+    "contextHint": "mind states or external states",
+    "resultType": "DeterminantQuotationString[]"
+  }
+}
+```
 
 2. **Command:parse** the selected quotation(s) to extract the exit-to-state as text and assign it to the subject's "exitToState" property
 
@@ -445,7 +471,7 @@ let quotes = ["Because of that gain, he becomes intoxicated, complacent, & falls
 {
   "commandType": "structured_extraction",
   "parameters": {
-    "textToParse": "<result_from_Command:search>",
+    "textToParse": "<quotes_array_from_Command:search>",
     "extractionTarget": "exitToState",
     "expectedFormat": "string",
     "guidance": "Extract the ending state or 'natural baton change' to another skillful quality. Prioritize a specific outcome over general states like 'ending of the effluents' if a more direct transition is evident, as per manual's instruction 'look more deeply at where there is a natural baton change to another skillful quality'."
@@ -479,8 +505,18 @@ notebooklm must:
       searchAttempts.pop()
   }
 
-**Command:UPDATE INSTRUCTION MANUAL** by inserting the internal json request object for step 1  
-
+**Internal JSON Request Object for `Command:search` (for `targetPractitioner`):**
+```json
+{
+  "commandType": "information_retrieval",
+  "parameters": {
+    "query": "<dynamic_search_expression_from_subject_name_and_focus_area>",
+    "sources": ["AN_nblm.txt", "DN_nblm.txt", "KN_Dhp_nblm.txt", "KN_Iti_nblm.txt", "KN_Khp_nblm.txt", "KN_StNp_nblm.txt", "KN_Thag_nblm.txt", "KN_Thig_nblm.txt", "KN_Ud_nblm.txt", "MN_nblm.txt", "SN_nblm.txt"],
+    "contextHint": "individuals in PractitionerKey",
+    "resultType": "DeterminantQuotationString[]"
+  }
+}
+```
 
 2. **Command:parse** the selected quotation(s) to extract the target-pracitioner as an array of PractitionerKey and assign it to the subject's "targetPractitioner" property
 
@@ -519,13 +555,12 @@ let quotes = ["Now, then, monks, I exhort you: All fabrications are subject to e
 {
   "commandType": "structured_extraction",
   "parameters": {
-    "textToParse": "<result_from_Command:search>",
+    "textToParse": "<quotes_array_from_Command:search>",
     "extractionTarget": "targetPractitioner",
     "expectedFormat": "PractitionerKey[]",
     "guidance": "Identify all relevant practitioner types from the `PractitionerKey` enumeration ('conviction-dhamma-follower', 'stream-enterer', 'once-returner', 'non-returner') that are explicitly or implicitly mentioned as suitable for the subject. Consider the 'medical prescription' analogy; if a practice is too advanced or basic, narrow the target practitioner accordingly."
   }
 }
-```
 
 3. **Command:store** the quotation in the quotation sheet for "Scope" 
 

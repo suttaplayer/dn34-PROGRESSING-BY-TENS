@@ -1,0 +1,171 @@
+{
+  "buildingBlocks": {
+    "Scope": {
+      "progressionIndex": 8,
+      "categoryKey": "decline",
+      "patternName": "Grounds for laziness",
+      "subject": [
+        {
+          "name": "pending task",
+          "focusArea": [
+            "arousal of energy"
+          ],
+          "enterFromState": "sloth & torpor",
+          "exitToState": "unbinding",
+          "targetPractitioner": [
+            "conviction-dhamma-follower",
+            "stream-enterer",
+            "once-returner",
+            "non-returner"
+          ]
+        },
+        {
+          "name": "completed task",
+          "focusArea": [
+            "arousal of energy"
+          ],
+          "enterFromState": "sloth & torpor",
+          "exitToState": "unbinding",
+          "targetPractitioner": [
+            "conviction-dhamma-follower",
+            "stream-enterer",
+            "once-returner",
+            "non-returner"
+          ]
+        },
+        {
+          "name": "pending journey",
+          "focusArea": [
+            "arousal of energy"
+          ],
+          "enterFromState": "sloth & torpor",
+          "exitToState": "unbinding",
+          "targetPractitioner": [
+            "conviction-dhamma-follower",
+            "stream-enterer",
+            "once-returner",
+            "non-returner"
+          ]
+        },
+        {
+          "name": "completed journey",
+          "focusArea": [
+            "arousal of energy"
+          ],
+          "enterFromState": "sloth & torpor",
+          "exitToState": "unbinding",
+          "targetPractitioner": [
+            "conviction-dhamma-follower",
+            "stream-enterer",
+            "once-returner",
+            "non-returner"
+          ]
+        },
+        {
+          "name": "insufficient alms-food",
+          "focusArea": [
+            "arousal of energy"
+          ],
+          "enterFromState": "sloth & torpor",
+          "exitToState": "unbinding",
+          "targetPractitioner": [
+            "conviction-dhamma-follower",
+            "stream-enterer",
+            "once-returner",
+            "non-returner"
+          ]
+        },
+        {
+          "name": "sufficient alms-food",
+          "focusArea": [
+            "arousal of energy"
+          ],
+          "enterFromState": "sloth & torpor",
+          "exitToState": "unbinding",
+          "targetPractitioner": [
+            "conviction-dhamma-follower",
+            "stream-enterer",
+            "once-returner",
+            "non-returner"
+          ]
+        },
+        {
+          "name": "onset of illness",
+          "focusArea": [
+            "arousal of energy"
+          ],
+          "enterFromState": "sloth & torpor",
+          "exitToState": "unbinding",
+          "targetPractitioner": [
+            "conviction-dhamma-follower",
+            "stream-enterer",
+            "once-returner",
+            "non-returner"
+          ]
+        },
+        {
+          "name": "recovery from illness",
+          "focusArea": [
+            "arousal of energy"
+          ],
+          "enterFromState": "sloth & torpor",
+          "exitToState": "unbinding",
+          "targetPractitioner": [
+            "conviction-dhamma-follower",
+            "stream-enterer",
+            "once-returner",
+            "non-returner"
+          ]
+        }
+      ]
+    },
+    "Problem": "",
+    "Causal-Table": [],
+    "Solution": {
+      "Step-by-Step": [],
+      "Cause-&-Effect": [],
+      "Process View": [],
+      "Concepts & Relationships": [],
+      "State Transitions": []
+    },
+    "Context": [],
+    "Forces": [],
+    "Rationale": "",
+    "Resulting Context": [],
+    "Related Patterns": [],
+    "Case-studies": [],
+    "Simile": []
+  },
+  "quotationSheet": {
+    "Scope": [
+      "Eight grounds for the arousal of energy: There is the case, friends, where a monk has some work to do. The thought occurs to him: 'I will have to do this work. But when I am doing this work, it will not be easy to attend to the Buddha's message. Why don't I make an effort beforehand for the attaining of the as-yet-unattained, the reaching of the as-yet-unreached, the realization of the as-yet-unrealized?' So he makes an effort for the attaining of the as-yet-unattained, the reaching of the as-yet-unreached, the realization of the as-yet-unrealized. This is the first ground for the arousal of energy.\n\n'Then there is the case where a monk has done some work. The thought occurs to him: 'I have done some work. While I was doing work, I couldn't attend to the Buddha's message. Why don't I make an effort for the attaining of the as-yet-unattained, the reaching of the as-yet-unreached, the realization of the as-yet-unrealized?' So he makes an effort for the attaining of the as-yet-unattained, the reaching of the as-yet-unreached, the realization of the as-yet-unrealized. This is the second ground for the arousal of energy.\n\n'Then there is the case where a monk has to go on a journey. The thought occurs to him: 'I will have to go on this journey. But when I am going on the journey, it will not be easy to attend to the Buddha's message. Why don't I make an effort beforehand for the attaining of the as-yet-unattained, the reaching of the as-yet-unreached, the realization of the as-yet-unrealized?' So he makes an effort for the attaining of the as-yet-unattained, the reaching of the as-yet-unreached, the realization of the as-yet-unrealized. This is the third ground for the arousal of energy.\n\n'Then there is the case where a monk has gone on a journey. The thought occurs to him: 'I have gone on a journey. While I was going on the journey, I couldn't attend to the Buddha's message. Why don't I make an effort for the attaining of the as-yet-unattained, the reaching of the as-yet-unreached, the realization of the as-yet-unrealized?' So he makes an effort for the attaining of the as-yet-unattained, the reaching of the as-yet-unreached, the realization of the as-yet-unrealized. This is the fourth ground for the arousal of energy.\n\n'Then there is the case where a monk, having gone for alms in a village or town, does not get as much coarse or refined food as he would like for his fill. The thought occurs to him: 'I, having gone for alms in a village or town, have not gotten as much coarse or refined food as I would like for my fill. This body of mine is light & suitable for work. Why don't I make an effort for the attaining of the as-yet-unattained, the reaching of the as-yet-unreached, the realization of the as-yet-unrealized?' So he makes an effort for the attaining of the as-yet-unattained, the reaching of the as-yet-unreached, the realization of the as-yet-unrealized. This is the fifth ground for the arousal of energy.\n\n'Then there is the case where a monk, having gone for alms in a village or town, gets as much coarse or refined food as he would like for his fill. The thought occurs to him: 'I, having gone for alms in a village or town, have gotten as much coarse or refined food as I would like for my fill. This body of mine is light & suitable for work. Why don't I make an effort for the attaining of the as-yet-unattained, the reaching of the as-yet-unreached, the realization of the as-yet-unrealized?' So he makes an effort for the attaining of the as-yet-unattained, the reaching of the as-yet-unreached, the realization of the as-yet-unrealized. This is the sixth ground for the arousal of energy.\n\n'Then there is the case where a monk comes down with a slight illness. The thought occurs to him: 'I have come down with a slight illness. Now, there's the possibility that it could get worse. Why don't I make an effort beforehand for the attaining of the as-yet-unattained, the reaching of the as-yet-unreached, the realization of the as-yet-unrealized?' So he makes an effort for the attaining of the as-yet-unattained, the reaching of the as-yet-unreached, the realization of the as-yet-unrealized. This is the seventh ground for the arousal of energy.\n\n'Then there is the case where a monk has recovered from his illness, not long after his recovery. The thought occurs to him: 'I have recovered from my illness. It's not long after my recovery. Now, there's the possibility that the illness could come back. Why don't I make an effort beforehand for the attaining of the as-yet-unattained, the reaching of the as-yet-unreached, the realization of the as-yet-unrealized?' So he makes an effort for the attaining of the as-yet-unattained, the reaching of the as-yet-unreached, the realization of the as-yet-unrealized. This is the eighth ground for the arousal of energy.",
+      "Then there is the case where a certain person goes without cloth, rejecting conventions, licking his hands, not coming when called, not staying when asked. He doesn't accept food brought or specially made. He doesn't consent to an invitation (to a meal). He doesn't receive anything from the mouth of a pot, from the mouth of a container, across a threshold, across a stick, across a pestle, from two eating together, from a pregnant woman, from a woman nursing a child, from a woman living with a man, from where it is announced that food is to be distributed, from where a dog is waiting, from where flies are buzzing. He accepts no meat, no distilled liquor, no wine, no fermented liquor. He limits himself to one house for one morsel, to two houses for two morsels… to seven houses for seven morsels. He lives on one saucerful a day, two saucerfuls a day… seven saucerfuls a day. He takes food once a day, once every two days… once every seven days, and so on up to once every half-month. He remains devoted to the practice of regulating his intake of food. He eats a diet of green vegetables or millet or wild rice or hide-parings or moss or rice bran or rice-water or sesame flour or grass or cow dung. He lives off forest roots & fruits. He eats fallen fruits. He clothes himself in hemp, in canvas, in shrouds, in thrown-away rags, in tree bark, in antelope hide, in wood-shavings fabric, in head-hair wool, in wild-animal wool, in owls' wings. He is a hair-&-beard puller, one devoted to the practice of pulling out his hair & beard. He is a stander, one who rejects seats. He is a hands-around-the-knees sitter, one devoted to the exertion of sitting with his hands around his knees. He is a spike-mattresser, one who makes his bed on a bed of spikes. He is a third-time-in-the-evening bather, one who stays devoted to the practice of bathing in water. Thus, in these many ways, he is devoted to the practice of tormenting & torturing the body. This is called a person who torments himself and is devoted to the practice of torturing himself.",
+      "But if one follows the holy life appropriately, even when having made a wish… having made no wish… both having made a wish and having made no wish… neither having made a wish nor having made no wish, one is capable of obtaining results.",
+      "When one knows of a search, 'As I pursue this search, unskillful mental qualities decline, and skillful mental qualities increase,' that sort of search is to be pursued.",
+      "The mindfulness that 'I will make complete any training with regard to good conduct that is not yet complete, or I will protect with discernment any training with regard to good conduct that is complete' is well established right within. The mindfulness that 'I will make complete any training with regard to the basics of the holy life that is not yet complete, or I will protect with discernment any training with regard to the basics of the holy life that is complete' is well established right within. The mindfulness that 'I will scrutinize with discernment any Dhamma that is not yet scrutinized, or I will protect with discernment any Dhamma that has been scrutinized' is well established right within. The mindfulness that 'I will touch through release any Dhamma that is not yet touched, or I will protect with discernment any Dhamma that has been touched' is well established right within.",
+      "Then there is the case where a monk has abandoned five factors, is endowed with six, guards one, is supported in four, has shaken off idiosyncratic truths, has thoroughly given up searching, is undisturbed in his resolves, is calmed in his bodily-fabrication, is well released in mind, is well released in discernment.\n\n'And how has a monk abandoned five factors? There is the case where a monk's sensual desire is abandoned. His ill will… His sloth & torpor… His restlessness & anxiety… His uncertainty is abandoned. This is how a monk has abandoned five factors.",
+      "This Dhamma that I have attained is deep, hard to see, hard to realize, peaceful, refined, beyond the scope of conjecture, subtle, to-be-experienced by the wise. But this generation delights in attachment, is excited by attachment, enjoys attachment. For a generation delighting in attachment, excited by attachment, enjoying attachment, this or that conditionality & dependent co-arising are hard to see. This state, too, is hard to see: the pacification of all fabrications, the relinquishing of all acquisitions, the ending of craving; dispassion; cessation; unbinding. And if I were to teach the Dhamma and others would not understand me, that would be tiresome for me, troublesome for me.",
+      "Monks, I will also teach you unbinding and the path leading to unbinding …",
+      "Monks, six qualities lead to the non-decline of a monk in training. Which six? Not delighting in work, not delighting in talking, not delighting in sleeping, not delighting in entanglement, guarding the sense faculties, and knowing moderation in food. These six qualities lead to the non-decline of a monk in training.",
+      "They're addicted to heedlessness —dullards, fools— while one who is wise cherishes heedfulness as his highest wealth.",
+      "Heedfulness with regard to skillful qualities",
+      "Then, if a person, when asked a question, stands by what is possible and impossible, stands by agreed-upon assumptions, stands by teachings known to be true, stands by standard procedure, then—that being the case—he is a person fit to talk with."
+    ],
+    "Problem": [],
+    "Causal-Table": [],
+    "Solution": {
+      "Step-by-Step": [],
+      "Cause-&-Effect": [],
+      "Process View": [],
+      "Concepts & Relationships": [],
+      "State Transitions": []
+    },
+    "Context": [],
+    "Forces": [],
+    "Rationale": [],
+    "Resulting Context": [],
+    "Related Patterns": [],
+    "Case-studies": [],
+    "Simile": []
+  }
+}
