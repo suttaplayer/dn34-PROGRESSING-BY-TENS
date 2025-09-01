@@ -167,7 +167,7 @@ export class NotebookLmScopeWorkTaskBuilder extends ScopeWorkTaskBuilder {
         searchResults.forEach((v) => {this.quotationset.add(v)})
     }
 
-    public build() {
+    public async build() {
         this.setProgressionByTensContext()
         const subjects = this.parseSubjectsFromAnswerExcerpt()
         for (const subject of subjects) {
@@ -175,7 +175,7 @@ export class NotebookLmScopeWorkTaskBuilder extends ScopeWorkTaskBuilder {
             this.determineSubjectsExitToState(subject)
             this.determineSubjectsTargetPractitioner(subject)
         }
-        super.build()
+        await super.build()
     }
 }
 

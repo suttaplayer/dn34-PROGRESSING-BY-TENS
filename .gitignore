@@ -9,3 +9,5 @@ tmp/
 .bundle/
 vendor/bundle/
 Gemfile.lock
+
+notebooklm/manual/puml-images

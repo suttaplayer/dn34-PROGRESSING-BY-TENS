@@ -26,7 +26,7 @@ type ProgressingByTensConfigJson = {
 }
 
 export class ProgressingByTens {
-    public static config: ProgressingByTensConfigJson = config_ as any
+    public static config: ProgressingByTensConfigJson = config_ as ProgressingByTensConfigJson
 
     public static createRelatedPatternMarkdownLink(ref: {categoryKey:string, progressionIndex: number}) {
         const patternName = this.config.patternName[ref.categoryKey][ref.progressionIndex-1]

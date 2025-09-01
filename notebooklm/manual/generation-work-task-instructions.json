@@ -1,0 +1,8 @@
+{ 
+    "instructions": [
+        {
+            "modulePath": "./running-example-scope-instructions.ts",
+            "bootstrap": "register"
+        }
+    ]
+}

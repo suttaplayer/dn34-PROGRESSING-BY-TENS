@@ -138,7 +138,7 @@ export class ProgressingByTens {
 
 ## Pattern API For Collaboration
 
-in order to inteface between the three core artifacts, a common set of data types must be established to form a contract for communication. objects of these types may be created by notebooklm as part of an orchestrated work task response.
+in order to inteface between the three core artifacts, a common set of data types must be established to form a contract for communication. objects of these types may be created by notebooklm or the user as part of an orchestrated work task response.
 
 the source "pattern-API.ts.txt" typescript file provides many key types required for communication and exchange. some include:
 
