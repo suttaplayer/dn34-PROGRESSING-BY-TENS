@@ -28,8 +28,18 @@ type ProgressingByTensConfigJson = {
 export class ProgressingByTens {
     public static config: ProgressingByTensConfigJson = config_ as ProgressingByTensConfigJson
 
+    public static lookupPatternName(ref: {categoryKey:string, progressionIndex: number}): string {
+        const ret = this.config.patternName[ref.categoryKey][ref.progressionIndex-1]
+        return ret
+    }
+
+    public static lookupAnswerExcerpt(ref: {categoryKey:string, progressionIndex: number}): string {
+        const ret = this.config.answerExcerpt[ref.categoryKey][ref.progressionIndex-1]
+        return ret
+    }
+
     public static createRelatedPatternMarkdownLink(ref: {categoryKey:string, progressionIndex: number}) {
-        const patternName = this.config.patternName[ref.categoryKey][ref.progressionIndex-1]
+        const patternName = this.lookupPatternName(ref)
         const progressionKey = this.config.topic.progressionKey[ref.progressionIndex-1]
         return `/${patternName}/(../${progressionKey}s/${ref.categoryKey}.html)`;
     }

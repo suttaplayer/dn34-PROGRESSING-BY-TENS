@@ -26,9 +26,9 @@ class JsonPatternGenerationInstructions {
         /*
         
         ```plantuml - https://editor.plantuml.com/uml/NLDDRzim3BtxLn0-DLtj9W5sM51aNOjrA7R9a00xR3ie4ckhrOSXoccoeF-zjEoaQNKnQP6FVEJJDKKHOciDb9SDVmfjHOLq-KZU5Os84OChAdI5TXIB9lYrGLjG8oHcDGg50Mu3YeWAl9l1T3pzN8YsAgPVigYZGLZq6F037GOHjNTmpr2XbSa-M_IGiEmWHrcj5GBQ9kx0ebrZe2oJHX11pf5LG2BjAhZPmGeT_NLtGLXyzk4f1q6mk5bbw5eBjznHvSCEzXdmgT4q3wr9ji8D6j-WIfxqjWbOerF33x4MJdatU0gbqGvxMrFKBhMT_8OPHQRKtugWgRUUd7_k8tWmHl_dqV39NhACsuC_pO66T_TSTNi1ScZs9-x-mNbHp26VZCSvh7oZvO7-uYqDhgwO8yzcFjzd-qbPJiOl7NoAXvJ_iKX-cdyQU58xFqxjD231vx1iruyeOtRdPKlVc1YK9Pobk8l3vMW6LkoW5Xk4SLcUl-i8gn9-rrhMh1C4LGjh1MY23VAMXlrypU5NYvGclFIcxOplMucXYQVb3Z6Zusm6ZNNB_WI3I9CjlOkuZSb-y44Y9PC6yEJqgXG6Um-fDR7Js6bkG9CqFho87aKAme9Yg_G1LblDCEzMCVGsIx8mg2hiM2iUeqNNGMe7iKQOipm66btQ1_gpDw6IPltkM9bHQ4D3xZ5rVbZ638HItSAH-FwQ1Swl-nK0
-        @startuml ./puml-images/json-pattern-gen-inst-problem-space
+        @startuml ./puml-images/JsonPatternGenerationInstructions-problem-space
         header Created on: 2025-aug-29
-        title Pattern Generation Instruction (Problem Space)
+        title Json Pattern Generation Instructions (Problem Space)
         hide empty members
 
         class "Progressing By Tens\nFramework" as PBT
@@ -154,7 +154,7 @@ class JsonPatternGenerationInstructions {
 
         to address these concerns these generation instructions & also the template instructions have been codified. furthermore, users task segment are marked with a "**User Task**" qualifier indicating that this task is to be performed by the user only. notebooklm must read & analyse all source materials associated with the user-query in order to understand the means of collaboration and exchange between artifacts and the user.
 
-        furthermore, all commands that notebooklm must execute beyond the codified instructions will be denoted with a "**Command:<command>**" qualifier. note, the "**Command:<command>**" marker will be found within source code comments to ensure compile-time & unit-test time execution. this marker helps notebooklm understand the user's expectation and help with the separation of concerns between instructional information and command.
+        furthermore, all commands that notebooklm must execute beyond the codified instructions will be denoted with a "**Command:<command>**" qualifier. note, the "**Command:<command>**" annotation will be found within source code comments to ensure compile-time & unit-test time execution. this marker helps notebooklm understand the user's expectation and help with the separation of concerns between instructional information and command.
 
         */
     }
@@ -197,15 +197,12 @@ class JsonPatternGenerationInstructions {
             categoryKey: "helpful",
             verboseOutput: true
         }
-        const topicPatternName = ProgressingByTens.config.patternName[userQuery_heedful_ardent_resolute.categoryKey][userQuery_heedful_ardent_resolute.progressionIndex-1]
-
-        const context = ProgressingByTens.revealContextStatement(userQuery_heedful_ardent_resolute)
 
         // simulate notebooklm user-query submission:
         this.generator = new PatternGenerator(userQuery_heedful_ardent_resolute)
         if (this.generator.verboseOutput) {
-            console.log(`-------- RUNNING-EXAMPLE [${topicPatternName}] --------`)
-            console.log(context)
+            console.log("USER-QUERY [UserPatternRequestJson]")
+            console.log(JSON.stringify(userQuery_heedful_ardent_resolute, null, 2))
             console.log("-------------------------------------------------------")
         }
     }

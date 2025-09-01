@@ -125,7 +125,7 @@ created by: notebooklm
 */
 export type PatternBuildingBlocksJson = {
     "Scope": ScopeJson                          /* object of the pattern's scope */
-    "Problem": string                           /* string of the problem statement */
+    "Problem": string[]                         /* single element string array of the problem statement */
     "Causal-Table": CausalRelationJson[]        /* array of CausalRelationJson objects (full table) */
     "Solution": {
         "Step-by-Step": string[]                /* array of process step strings (this is a flattened representation of Process View) */
