@@ -9,7 +9,7 @@ these instructions are codified for and to be executed by notebooklm. it must be
 */
 
 class JsonPatternGenerationInstructions {
-    private generator: PatternGenerator
+    public generator: PatternGenerator
 
     readBackground() {
         /*
@@ -195,7 +195,8 @@ class JsonPatternGenerationInstructions {
        const userQuery_heedful_ardent_resolute: UserPatternRequestJson = { // a PBT dhamma reference requires a composite key:
             progressionIndex: 1,
             categoryKey: "helpful",
-            verboseOutput: true
+            includeSubstantiations: true,
+            verboseOutput: true,
         }
 
         // simulate notebooklm user-query submission:
@@ -231,7 +232,6 @@ class JsonPatternGenerationInstructions {
 
         */
        await this.generator.generate()
-       console.log(this.generator.response)
     }
 
     async execute() {
@@ -249,4 +249,119 @@ class JsonPatternGenerationInstructions {
 
 
 const instructions = new JsonPatternGenerationInstructions()
-instructions.execute()
+await instructions.execute()
+console.log(JSON.stringify(instructions.generator.response, null, 2))
+
+/* 
+
+$ deno --allow-read json-pattern-generation-instructions.ts 
+USER-QUERY [UserPatternRequestJson]
+{
+  "progressionIndex": 1,
+  "categoryKey": "helpful",
+  "includeSubstantiations": true,
+  "verboseOutput": true
+}
+-------------------------------------------------------
+starting [RunningExampleScopeInstructions]
+PATTERN: Heedful, ardent & resolute
+Which one Dhamma is very helpful? 
+Heedfulness with regard to skillful qualities
+-------------------------------------------------------
+{
+  "buildingBlocks": {
+    "Scope": {
+      "progressionIndex": 1,
+      "categoryKey": "helpful",
+      "patternName": "Heedful, ardent & resolute",
+      "subject": [
+        {
+          "name": "Heedfulness",
+          "focusArea": [
+            "skillful qualities"
+          ],
+          "enterFromState": "heedlessness",
+          "exitToState": "heedful",
+          "targetPractitioner": [
+            "stream-enterer",
+            "once-returner",
+            "non-returner"
+          ]
+        }
+      ]
+    },
+    "Problem": [],
+    "Causal-Table": [],
+    "Solution": {
+      "Step-by-Step": [],
+      "Cause-&-Effect": [],
+      "Process View": [],
+      "Concepts & Relationships": [],
+      "State Transitions": []
+    },
+    "Context": [],
+    "Forces": [],
+    "Rationale": "",
+    "Resulting Context": [],
+    "Related Patterns": [],
+    "Case-studies": [],
+    "Simile": []
+  },
+  "quotationSheet": {
+    "Scope": [
+      "[dont] ever let yourself get complacent when the ending of effluents is still unattained",
+      "Because of that gain, he becomes intoxicated, complacent, & falls into heedlessness.",
+      "Now, then, monks, I exhort you: All fabrications are subject to ending & decay. Reach consummation through heedfulness.' That was the Tathāgata's last statement [to a group of noble monks the most backward of which was a stream-enterer]"
+    ],
+    "Problem": [],
+    "Causal-Table": [],
+    "Solution": {
+      "Step-by-Step": [],
+      "Cause-&-Effect": [],
+      "Process View": [],
+      "Concepts & Relationships": [],
+      "State Transitions": []
+    },
+    "Context": [],
+    "Forces": [],
+    "Rationale": [],
+    "Resulting Context": [],
+    "Related Patterns": [],
+    "Case-studies": [],
+    "Simile": [],
+    "Step-by-Step": [],
+    "Cause-&-Effect": [],
+    "Process View": [],
+    "Concepts & Relationships": [],
+    "State Transitions": []
+  },
+  "substantiations": {
+    "Scope": [
+      "parsed as 1 subject & 1 focus area because `with regard to` denotes that the focusArea follows",
+      "'[dont] ever let yourself get complacent' &  'falls into heedlessness' establish the enter from state",
+      "heedfulness is a composite state of the mind. 'complacent' would be the first state after transition from 'heedlessness'",
+      "'when the ending of effluents is still unattained' establish the exit to state",
+      "heedfulness is a composite state of the mind. 'heedful' would be the final state from which there is no falling back",
+      "provides a clear indication by the buddha himself at who the 'heedfulness' message was targetted at",
+      "although heedfulness is applicable to all practitioners, it is specifically applicable to leaners (ie. one-in-training)"
+    ],
+    "Problem": [],
+    "Causal-Table": [],
+    "Solution": {
+      "Step-by-Step": [],
+      "Cause-&-Effect": [],
+      "Process View": [],
+      "Concepts & Relationships": [],
+      "State Transitions": []
+    },
+    "Context": [],
+    "Forces": [],
+    "Rationale": [],
+    "Resulting Context": [],
+    "Related Patterns": [],
+    "Case-studies": [],
+    "Simile": []
+  }
+}
+
+*/

@@ -1,13 +1,157 @@
-import { BaseWorkTaskInstructions, PatternGenerator } from "./generation-API.ts";
-import { ScopeJson, SubjectJson } from "./pattern-API.ts";
+import { BaseWorkTaskInstructions, NotebooklmCommandResolver, PatternGenerator } from "./generation-API.ts";
+import { DeterminantQuotationString, PractitionerKey, ScopeJson, SubjectJson } from "./pattern-API.ts";
 import { ProgressingByTens } from "./pbt-utils.ts";
 
 
-class NotebooklmScopeService {
+export class NotebooklmScopeCommandResolver extends NotebooklmCommandResolver<RunningExampleScopeInstructions> {
+    public async parseAnswerExcerptAsSubjectJsonArray(answerExcerpt: string): Promise<SubjectJson[]> {
+        /*
+        the answerExcerpt must be parsed by:
+        1. identifying a maximum of progressionIndex number of subjects from the answerExcerpt
+        2. identifying optional focusArea(s) associated with that subject
+
+        notebooklm must:
+        1. **Command:parse** the answerExcerpt into SubjectJson objects. focusArea is optional can remain undefined if not applicable. assign "", "" & [] for enterFromState, exitToState & targetPractitioner respectively.
+
+        */
+        const exeCommand = {
+            commandType: "structured_extraction",
+            parameters: {
+                textToParse: answerExcerpt,
+                extractionTarget: "SubjectJson[]",
+                expectedFormat: "{ name: string, focusArea?: string[] }[]",
+                guidance: "Identify distinct subjects and their optional associated focus areas from the answer excerpt. If components within the answer excerpt have distinct and sequential requisite conditions, or lead to different immediate outcomes, or their enterFromState or exitToState are different, then parse them as separate SubjectJson objects. The maximum number of subjects to extract is defined by progressionIndex. Initially, enterFromState and exitToState should be empty strings, and targetPractitioner an empty array."
+            }
+        }
+        return await this.executeQuery<SubjectJson[]>(exeCommand)
+    }
+
+    public async searchForMindOrExternalStateWithRespectTo(subjectAndForcesExpression: string, boundaryType: string): Promise<DeterminantQuotationString[]> {
+        /*
+        1. **Command:search** for determinant quotations from the ["*_nblm.txt"] sources:
+            * on the subject and its associated focusArea(s)
+            * select 1 if possible (or more when chained together) that best quotes that substantiates the concluded enter from or exit to state
+
+        */
+        const exeCommand = {
+            commandType: "information_retrieval",
+            parameters: {
+                query: subjectAndForcesExpression,
+                sources: ["AN_nblm.txt", "DN_nblm.txt", "KN_Dhp_nblm.txt", "KN_Iti_nblm.txt", "KN_Khp_nblm.txt", "KN_StNp_nblm.txt", "KN_Thag_nblm.txt", "KN_Thig_nblm.txt", "KN_Ud_nblm.txt", "MN_nblm.txt", "SN_nblm.txt"],
+                contextHint: `identify the ${boundaryType} mind states or external states associated with the search expression `,
+                resultType: "DeterminantQuotationString[]"
+            }
+        }
+        return await this.executeQuery<DeterminantQuotationString[]>(exeCommand)
+    }
+
+    public async parseMindOrExternalStateWithRespectTo(determinantQuotations: DeterminantQuotationString[], boundaryType: string): Promise<string> {
+        /*
+        2. **Command:parse** the selected quotation(s) to extract the enter from or exit to state as text
+
+        */
+        const guidance = boundaryType === "enter from" ? 
+            "Extract the 'nearest branch' condition or state that precedes or leads to the subject. Prioritize a specific preceding condition over general states like 'heedfulness' if a more direct link is present, as per instructions 'look deeper at the \"nearest branch\" state (as opposed to root state)'." :
+            "Extract the ending state or 'natural baton change' to another skillful quality. Prioritize a specific outcome over general states like 'ending of the effluents' if a more direct transition is evident, as per instructions 'look more deeply at where there is a natural baton change to another skillful quality'."
+        const exeCommand = {
+            commandType: "structured_extraction",
+            parameters: {
+                textToParse: determinantQuotations.join("\n"),
+                extractionTarget: boundaryType,
+                expectedFormat: "string",
+                guidance: guidance
+            }
+        }
+        return await this.executeQuery<string>(exeCommand)
+    }
+
+    public async searchForTargetPracitionersWithRespectTo(subjectAndForcesExpression: string): Promise<DeterminantQuotationString[]> {
+        /*
+        1. **Command:search** for quotations from the ["*_nblm.txt"] sources:
+        * on the subject and its associated focusArea(s)
+        * select 1 if possible (or more when chained together) that best quotes that substantiates the concluded target practitioner
+
+        */
+        const exeCommand = {
+            commandType: "information_retrieval",
+            parameters: {
+                query: subjectAndForcesExpression,
+                sources: ["AN_nblm.txt", "DN_nblm.txt", "KN_Dhp_nblm.txt", "KN_Iti_nblm.txt", "KN_Khp_nblm.txt", "KN_StNp_nblm.txt", "KN_Thag_nblm.txt", "KN_Thig_nblm.txt", "KN_Ud_nblm.txt", "MN_nblm.txt", "SN_nblm.txt"],
+                contextHint: `identify individuals in PractitionerKey that are associated with the search expression `,
+                resultType: "DeterminantQuotationString[]"
+            }
+        }
+        return await this.executeQuery<DeterminantQuotationString[]>(exeCommand)
+    }
+
+    public async parseTargetPractitionersWithRespectTo(determinantQuotations: DeterminantQuotationString[]): Promise<PractitionerKey[]> {
+        /*
+        2. **Command:parse** the selected quotation(s) to extract the target pracitioner as an array of PractitionerKey
+
+        */
+        const exeCommand = {
+            commandType: "structured_extraction",
+            parameters: {
+                textToParse: determinantQuotations.join("\n"),
+                extractionTarget: "target practitioners",
+                expectedFormat: "string",
+                guidance: "Identify all relevant practitioner types from the `PractitionerKey` enumeration ('conviction-dhamma-follower', 'stream-enterer', 'once-returner', 'non-returner') that are explicitly or implicitly mentioned as suitable for the subject. Consider the 'medical prescription' analogy; if a practice is too advanced or basic, narrow the target practitioner accordingly."
+            }
+        }
+        return await this.executeQuery<PractitionerKey[]>(exeCommand)
+    }
 
 }
 
-export class RunningExampleScopeInstructions extends BaseWorkTaskInstructions {
+export class RunningExampleScopeCommandResolver extends NotebooklmScopeCommandResolver {
+    public async parseAnswerExcerptAsSubjectJsonArray(answerExcerpt: string): Promise<SubjectJson[]> {
+        const ret = [{name: "Heedfulness", focusArea: ["skillful qualities"], enterFromState: "", exitToState: "", targetPractitioner: []}]
+        this.substantiationsStack.push("parsed as 1 subject & 1 focus area because `with regard to` denotes that the focusArea follows")
+        return ret
+    }
+
+    public async searchForMindOrExternalStateWithRespectTo(subjectAndForcesExpression: string, boundaryType: string): Promise<DeterminantQuotationString[]> {
+        const ret = ["[dont] ever let yourself get complacent when the ending of effluents is still unattained"]
+        let substantiation: string
+        if (boundaryType === "enter from") {
+            ret.push("Because of that gain, he becomes intoxicated, complacent, & falls into heedlessness.")
+            substantiation = "'[dont] ever let yourself get complacent' &  'falls into heedlessness' establish the enter from state"
+        } else { 
+            substantiation = "'when the ending of effluents is still unattained' establish the exit to state"
+        }
+        this.substantiationsStack.push(substantiation)
+        return ret
+    }
+
+    public async parseMindOrExternalStateWithRespectTo(determinantQuotations: DeterminantQuotationString[], boundaryType: string): Promise<string> {
+        let ret: string
+        let substantiation: string
+        if (boundaryType === "enter from") {
+            ret = "heedlessness"
+            substantiation = "heedfulness is a composite state of the mind. 'complacent' would be the first state after transition from 'heedlessness'"
+        } else {
+            ret = "heedful"
+            substantiation = "heedfulness is a composite state of the mind. 'heedful' would be the final state from which there is no falling back"
+        }
+        this.substantiationsStack.push(substantiation)
+        return ret
+    }
+
+    public async searchForTargetPracitionersWithRespectTo(subjectAndForcesExpression: string): Promise<DeterminantQuotationString[]> {
+        const ret = ["Now, then, monks, I exhort you: All fabrications are subject to ending & decay. Reach consummation through heedfulness.' That was the Tathāgata's last statement [to a group of noble monks the most backward of which was a stream-enterer]"]
+        this.substantiationsStack.push("provides a clear indication by the buddha himself at who the 'heedfulness' message was targetted at")
+        return ret
+    }
+
+    public async parseTargetPractitionersWithRespectTo(determinantQuotations: DeterminantQuotationString[]): Promise<PractitionerKey[]> {
+        this.substantiationsStack.push("although heedfulness is applicable to all practitioners, it is specifically applicable to leaners (ie. one-in-training)")
+        return ["stream-enterer", "once-returner", "non-returner"]
+    }
+}
+
+export class RunningExampleScopeInstructions extends BaseWorkTaskInstructions<ScopeJson, NotebooklmScopeCommandResolver> {
+    protected answerExcerpt: string
+
     visualiseSolutionSpace() {
         /*
         ```plantuml - https://editor.plantuml.com/uml/dLLDRzim3BtxLn0vjTtSPXs60aAGTUrMhFj2q6IdPGV5fcsjbcH8SfjWw7yV9JjniYHBiLugI-BZu-EZScaTDwwM9PoULVGl5fBdQC_kQgM4oZ_CkQnA72UwmbjbdQaJ9xIoiTLbxLUnhNY2KO4yHGFN1hd35BHYSDu_VnFpEezVzoCdN8aGK60T1ex6BGwCFSvnL8WK0MNb5Y1Hpj3OA4fARYsCk7Der5KjofIONPKwkRUVB8KE1aUVNiBDpSL5ltyy7CBlfpPaNCz-OU9sNug0_XINo8084MBOo7HIstTKnjlbze-VuG0LPRynMeuTbRWHWtFX9dfp_sb9EnJz3mQLqRb1Qqc3MvNYd86gVTqGJXF2pBLPVCO5W-lkepcj6ac-hHT1YP4GO6GuQUobHUC3cco9LWyYQ1-d1PUInvakI_s89XmJ1d8PXrhRBQqIZ0swsgXsHr7mQgEhqvS_Ahbotxz-UIzuRhYSuDpjAFk55zCiGeJ_8FcQzGhiMXE3-Rx6TTTuRNbvXoNt5UsvxQ_lzyv970-X5vhKwth5l50a1XVaKLSWBEqE3uB3y32UBmScXYih6gE_EZqzwUqLYO7KAPQRkUoKA7WSoPD2A7ncxbQxthg8pDliWKRB0kzgoRI1Po46cUC9dvKaqhRe3BppB6H8Nl4PoBL98Qd9eBEfIdn0IFWeN05azeg64fpULFOmZv7Hn43se5qmu6dgPoSa7KPHDslXlct6VwbzznWm4Cxw5djzeE2MWjVVYX1DxsAERdsCMg2_9ej1SpD8IvM9J2IRU8njFXu1VwyLM3SS390SC2k5BR3nnZrDyWnpuTzc2EwOqh8HCa2xbUSWRK2tk7IlrI4Yoy7SpGDL-hyi3YYyvjneEypx2SymoxhUxlAaQ9WcNaua8pPVAsTkyrcvwgD-X5J3GjUGwwdAg6yms6pXSAh8luCrBOVH9Gb2lw1_0000
@@ -82,13 +226,14 @@ export class RunningExampleScopeInstructions extends BaseWorkTaskInstructions {
     assignThePatternNameAndEstablishTheContext() {
         const patternName = ProgressingByTens.lookupPatternName(this.request)
         this.responder.response.buildingBlocks["Scope"].patternName = patternName
+        this.answerExcerpt = ProgressingByTens.lookupAnswerExcerpt(this.request)
         const context = ProgressingByTens.revealContextStatement(this.request)
         if (this.responder.verboseOutput) {
-            console.log(`RUNNING-EXAMPLE [${patternName}]`)
+            console.log(`PATTERN: ${patternName}`)
             console.log(context)
             console.log("-------------------------------------------------------")
             /* stdout:
-            RUNNING-EXAMPLE [Heedful, ardent & resolute]
+            PATTERN: Heedful, ardent & resolute
             Which one Dhamma is very helpful? 
             Heedfulness with regard to skillful qualities
             -------------------------------------------------------
@@ -141,61 +286,107 @@ export class RunningExampleScopeInstructions extends BaseWorkTaskInstructions {
         */
     }
 
-    async parsingTheAnswerExcerpt() {
-        /*
-        the answerExcerpt must be parsed by:
-        1. identifying a maximum of progressionIndex number of subjects from the answerExcerpt
-        2. identifying optional focusArea(s) associated with that subject
+    async parseTheAnswerExcerpt() {
+        const subjs = await this.resolver.parseAnswerExcerptAsSubjectJsonArray(this.answerExcerpt)
+        if (this.substantiations) 
+            this.substantiations.push(...this.resolver.popSubstantiationsFromLastCommand())
+        for (const subj of subjs) {
+            subj.name = await this.resolver.generaliseAndAbstractToConcept(subj.name)
+        }
+        this.buildingBlock.subject.push(...subjs)
+    }
 
-        notebooklm must:
-        1. **Command:parse** the answerExcerpt into SubjectJson objects. focusArea is optional can remain undefined if not applicable. assign "", "" & [] for enterFromState, exitToState & targetPractitioner respectively.
+    async determineBoundaryStateWithRespectTo(searchExpr: string, boundaryType: string): Promise<string|undefined> {
+        /*
+        dhamma practice is a training of the mind and more often than not, the states of significance are in relation to the mind's composite states. 
+
+        the "progressing by tens" framework is all about the development of skillful qualities and the abandoning of unskillful qualities. most qualities are internal mental qualities, but there are a few external qualities (eg. admirable friendship, living in a civilised land, having done merit in the past etc.)
+
+        given that all skillful qualities converge and are rooted in heedfulness. its would reduce the value & quality of all the artifacts if they all had an enter from state of "heedfulness". therefore, notebooklm is encouraged to look deeper at the "nearest branch" state (as opposed to root state) when identifying the enter from state.
 
         */
-        async function notebooklmParse(): Promise<[SubjectJson[], string]> {
-            const exeCommand = {
-                commandType: "structured_extraction",
-                parameters: {
-                    textToParse: "<answerExcerpt_string>",
-                    extractionTarget: "SubjectJson[]",
-                    expectedFormat: "{ name: string, focusArea?: string[] }[]",
-                    guidance: "Identify distinct subjects and their optional associated focus areas from the answer excerpt. If components within the answer excerpt have distinct and sequential requisite conditions, or lead to different immediate outcomes, parse them as separate SubjectJson objects. The maximum number of subjects to extract is defined by progressionIndex. Initially, enterFromState and exitToState should be empty strings, and targetPractitioner an empty array."
+        let mindOrExternalState: string|undefined = undefined
+        const determinantQuotations = await this.resolver.searchForMindOrExternalStateWithRespectTo(searchExpr, boundaryType)
+        if (determinantQuotations?.length > 0) {
+            mindOrExternalState = await this.resolver.parseMindOrExternalStateWithRespectTo(determinantQuotations, boundaryType)
+                        determinantQuotations.forEach((quotation) => {
+                this.quotationSet.add(quotation)
+            })
+        }
+        return mindOrExternalState
+    }
+
+    async determineTargetPracititionerWithRespectTo(searchExpr: string): Promise<PractitionerKey[]> {
+        /*
+        the "progressing by tens" framework covers a spectrum of topics. some are suited for conviction and dhamma followers, whilst others are extremely advanced practices that are suited for non-returners. these patterns are like medical prescriptions; thus, if a practitioner doesnt suffer a given context, then they shouldnt follow the solution.
+
+        */
+        let practitioners: PractitionerKey[] = []
+        const determinantQuotations = await this.resolver.searchForTargetPracitionersWithRespectTo(searchExpr)
+        if (determinantQuotations?.length > 0) {
+            practitioners = await this.resolver.parseTargetPractitionersWithRespectTo(determinantQuotations)
+            determinantQuotations.forEach((quotation) => {
+                this.quotationSet.add(quotation)
+            })
+        }
+        return practitioners
+    }
+
+    protected getFocusAreaCombinations(focusAreas: string[]|undefined): string[][] {
+        if (!focusAreas)
+            return [[]]
+        const ret: string[][] = [[]];
+        for (const element of focusAreas) {
+            const len = ret.length;
+            for (let i = 0; i < len; i++) 
+               ret.push([...ret[i], element]);
+        }
+        ret.sort((a, b) => b.length - a.length);
+        return ret;
+    }
+
+    protected async finaliseSubjectDetails(aspect: string) {
+        for (const subj of this.buildingBlock.subject) {
+            const focusAreaCombinations = this.getFocusAreaCombinations(subj.focusArea)
+            for (const combination of focusAreaCombinations) {
+                const searchExpr = [subj.name, ...combination].join(" ")
+                if (aspect === "target practitioner") {
+                    const practitioners = await this.determineTargetPracititionerWithRespectTo(searchExpr)
+                    if (practitioners?.length > 0) {
+                        subj.targetPractitioner.push(...practitioners)
+                        break
+                    }
+                } else {
+                    const mindOrExternalState = await this.determineBoundaryStateWithRespectTo(searchExpr, aspect)
+                    if (mindOrExternalState) {
+                        if (aspect === "enter from")
+                            subj.enterFromState = mindOrExternalState
+                        else
+                            subj.exitToState = mindOrExternalState
+                        break
+                    }
                 }
             }
-            return [[{
-                name: "Heedfulness", focusArea: ["skillful qualities"],
-                enterFromState: "", exitToState: "", targetPractitioner: []}], "parsed as 1 subject & 1 focus area because `with regard to` denotes that the focusArea follows"]
         }
-        const [subjs, subst] = await notebooklmParse()
-        if (this.substantiations) {
-            this.substantiations.push(subst)
-        }
-        for (const subj of subjs) {
-            subj.name = await this.generaliseAndAbstractToConcept(subj.name)
-        }
-        (this.taskBuildingBlock as ScopeJson).subject.push(...subjs)
     }
 
     protected async executeInstructions(): Promise<void> {
-        this.visualiseSolutionSpace()
-        this.assignThePatternNameAndEstablishTheContext()
-        await this.parsingTheAnswerExcerpt()
-
-
-        // this.responder.response.buildingBlocks["Scope"].subject = [{
-        //     name: "Heedfulness",
-        //     focusArea: ["skillful qualities"],
-        //     enterFromState: "complacent",
-        //     exitToState: "effluent-free",
-        //     targetPractitioner: ["stream-enterer", "once-returner", "non-returner"]
-        // }]
-        // this.quotationSet.add("[dont] ever let yourself get complacent when the ending of effluents is still unattained")
-        // this.quotationSet.add("Now, then, monks, I exhort you: All fabrications are subject to ending & decay. Reach consummation through heedfulness.' That was the Tathāgata's last statement [to a group of noble monks the most backward of which was a stream-enterer]")
-        
         if (this.responder.verboseOutput)
             console.log("starting [RunningExampleScopeInstructions]")
+        this.visualiseSolutionSpace()
+        this.assignThePatternNameAndEstablishTheContext()
+        this.considerExceptionalCasesForAnswerExcerptParsing()
+        await this.parseTheAnswerExcerpt()
+        for (const subj of ["enter from", "exit to", "target practitioner"]) {
+            await this.finaliseSubjectDetails(subj)
+            if (this.substantiations) 
+                this.substantiations.push(...this.resolver.popSubstantiationsFromLastCommand())
+        }
     }
 
-
+    protected constructResolver(): NotebooklmScopeCommandResolver {
+        return new RunningExampleScopeCommandResolver()
+    }
 
     protected checkPreConditions() {
         let ret = false
@@ -206,7 +397,7 @@ export class RunningExampleScopeInstructions extends BaseWorkTaskInstructions {
 
     protected checkPostConditions() {
         let ret = false
-        if ((this.taskBuildingBlock as ScopeJson).subject.length > 0)
+        if (this.buildingBlock.subject.length > 0)
             ret = true
         return ret
     }
