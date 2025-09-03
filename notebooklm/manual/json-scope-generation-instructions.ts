@@ -158,7 +158,10 @@ export class RunningExampleScopeCommandResolver extends NotebooklmCommandResolve
     }
 }
 
+export type ScopeCommandResolverConstructor = new () => NotebooklmScopeCommandResolver
+
 export class JsonScopeGenerationInstructions extends BaseWorkTaskInstructions<ScopeJson, NotebooklmScopeCommandResolver> {
+    public static RESOLVER_CTR: ScopeCommandResolverConstructor = NotebooklmScopeCommandResolver
     protected answerExcerpt: string
 
     visualiseSolutionSpace() {
@@ -395,7 +398,7 @@ export class JsonScopeGenerationInstructions extends BaseWorkTaskInstructions<Sc
     }
 
     protected constructResolver(): NotebooklmScopeCommandResolver {
-        return new RunningExampleScopeCommandResolver()
+        return new JsonScopeGenerationInstructions.RESOLVER_CTR()
     }
 
     protected checkPreConditions() {
@@ -415,4 +418,9 @@ export class JsonScopeGenerationInstructions extends BaseWorkTaskInstructions<Sc
 
 export function register() {
     PatternGenerator.INSTRUCTIONS_REGISTRY.set("Scope", JsonScopeGenerationInstructions)
+}
+
+export function registerRunningExample() {
+    register()
+    JsonScopeGenerationInstructions.RESOLVER_CTR = RunningExampleScopeCommandResolver
 }

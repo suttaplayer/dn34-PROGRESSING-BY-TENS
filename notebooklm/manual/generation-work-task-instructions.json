@@ -2,7 +2,7 @@
     "instructions": [
         {
             "modulePath": "./json-scope-generation-instructions.ts",
-            "bootstrap": "register"
+            "bootstrap": "registerRunningExample"
         }
     ]
 }

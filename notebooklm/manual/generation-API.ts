@@ -111,7 +111,7 @@ export class BaseWorkTaskInstructions<B, R extends NotebooklmCommandResolver> {
     }
 }
 
-export type BaseWorkTaskInstructionsConstructor<T, R extends NotebooklmCommandResolver> = new (key: string, responder: PatternGenerator) => BaseWorkTaskInstructions<T, R>;
+export type BaseWorkTaskInstructionsConstructor<T, R extends NotebooklmCommandResolver> = new (key: string, responder: PatternGenerator) => BaseWorkTaskInstructions<T, R>
 
 export class PatternGenerator {
     public static INSTRUCTIONS_REGISTRY = new Map<WorkTaskKey, BaseWorkTaskInstructionsConstructor<any, any>>()
