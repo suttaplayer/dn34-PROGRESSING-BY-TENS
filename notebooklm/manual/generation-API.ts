@@ -17,7 +17,7 @@ export type GenerationWorkTaskInstructionsConfigJson = {
 /*
 purpose: provide notebooklm with a base abstraction which must be specialised for individual work tasks that are assosciated with the notebooklm "**Command:<command>** annotation"
 */
-export class NotebooklmCommandResolver<I extends BaseWorkTaskInstructions<any, any>> {
+export class NotebooklmCommandResolver {
     public executionContext: string = "" 
     public readonly substantiationsStack: string[] = []
 
@@ -52,7 +52,7 @@ export class NotebooklmCommandResolver<I extends BaseWorkTaskInstructions<any, a
     }
 }
 
-export class BaseWorkTaskInstructions<B, R extends NotebooklmCommandResolver<any>> {
+export class BaseWorkTaskInstructions<B, R extends NotebooklmCommandResolver> {
     protected readonly key: string
 
     protected readonly request: UserPatternRequestJson
@@ -111,7 +111,7 @@ export class BaseWorkTaskInstructions<B, R extends NotebooklmCommandResolver<any
     }
 }
 
-export type BaseWorkTaskInstructionsConstructor<T, R extends NotebooklmCommandResolver<any>> = new (key: string, responder: PatternGenerator) => BaseWorkTaskInstructions<T, R>;
+export type BaseWorkTaskInstructionsConstructor<T, R extends NotebooklmCommandResolver> = new (key: string, responder: PatternGenerator) => BaseWorkTaskInstructions<T, R>;
 
 export class PatternGenerator {
     public static INSTRUCTIONS_REGISTRY = new Map<WorkTaskKey, BaseWorkTaskInstructionsConstructor<any, any>>()

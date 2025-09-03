@@ -2,8 +2,17 @@ import { BaseWorkTaskInstructions, NotebooklmCommandResolver, PatternGenerator }
 import { DeterminantQuotationString, PractitionerKey, ScopeJson, SubjectJson } from "./pattern-API.ts";
 import { ProgressingByTens } from "./pbt-utils.ts";
 
+export interface NotebooklmScopeCommandResolvable {
+    parseAnswerExcerptAsSubjectJsonArray(answerExcerpt: string): Promise<SubjectJson[]>
 
-export class NotebooklmScopeCommandResolver extends NotebooklmCommandResolver<RunningExampleScopeInstructions> {
+    searchForMindOrExternalStateWithRespectTo(subjectAndForcesExpression: string, boundaryType: string): Promise<DeterminantQuotationString[]>
+    parseMindOrExternalStateWithRespectTo(determinantQuotations: DeterminantQuotationString[], boundaryType: string): Promise<string>
+
+    searchForTargetPracitionersWithRespectTo(subjectAndForcesExpression: string): Promise<DeterminantQuotationString[]>
+    parseTargetPractitionersWithRespectTo(determinantQuotations: DeterminantQuotationString[]): Promise<PractitionerKey[]>
+}
+
+export class NotebooklmScopeCommandResolver extends NotebooklmCommandResolver implements NotebooklmScopeCommandResolvable {
     public async parseAnswerExcerptAsSubjectJsonArray(answerExcerpt: string): Promise<SubjectJson[]> {
         /*
         the answerExcerpt must be parsed by:
@@ -103,7 +112,7 @@ export class NotebooklmScopeCommandResolver extends NotebooklmCommandResolver<Ru
 
 }
 
-export class RunningExampleScopeCommandResolver extends NotebooklmScopeCommandResolver {
+export class RunningExampleScopeCommandResolver extends NotebooklmCommandResolver implements NotebooklmScopeCommandResolvable {
     public async parseAnswerExcerptAsSubjectJsonArray(answerExcerpt: string): Promise<SubjectJson[]> {
         const ret = [{name: "Heedfulness", focusArea: ["skillful qualities"], enterFromState: "", exitToState: "", targetPractitioner: []}]
         this.substantiationsStack.push("parsed as 1 subject & 1 focus area because `with regard to` denotes that the focusArea follows")
@@ -149,7 +158,7 @@ export class RunningExampleScopeCommandResolver extends NotebooklmScopeCommandRe
     }
 }
 
-export class RunningExampleScopeInstructions extends BaseWorkTaskInstructions<ScopeJson, NotebooklmScopeCommandResolver> {
+export class JsonScopeGenerationInstructions extends BaseWorkTaskInstructions<ScopeJson, NotebooklmScopeCommandResolver> {
     protected answerExcerpt: string
 
     visualiseSolutionSpace() {
@@ -241,6 +250,7 @@ export class RunningExampleScopeInstructions extends BaseWorkTaskInstructions<Sc
         }
         /* **Command:appendToContextWindow** ${context}
         */
+       this.resolver.executionContext = context
     }
 
     considerExceptionalCasesForAnswerExcerptParsing() {
@@ -372,7 +382,7 @@ export class RunningExampleScopeInstructions extends BaseWorkTaskInstructions<Sc
 
     protected async executeInstructions(): Promise<void> {
         if (this.responder.verboseOutput)
-            console.log("starting [RunningExampleScopeInstructions]")
+            console.log("starting [JsonScopeGenerationInstructions]")
         this.visualiseSolutionSpace()
         this.assignThePatternNameAndEstablishTheContext()
         this.considerExceptionalCasesForAnswerExcerptParsing()
@@ -404,5 +414,5 @@ export class RunningExampleScopeInstructions extends BaseWorkTaskInstructions<Sc
 }
 
 export function register() {
-    PatternGenerator.INSTRUCTIONS_REGISTRY.set("Scope", RunningExampleScopeInstructions)
+    PatternGenerator.INSTRUCTIONS_REGISTRY.set("Scope", JsonScopeGenerationInstructions)
 }

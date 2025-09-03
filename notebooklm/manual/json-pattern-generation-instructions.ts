@@ -263,7 +263,7 @@ USER-QUERY [UserPatternRequestJson]
   "verboseOutput": true
 }
 -------------------------------------------------------
-starting [RunningExampleScopeInstructions]
+starting [JsonScopeGenerationInstructions]
 PATTERN: Heedful, ardent & resolute
 Which one Dhamma is very helpful? 
 Heedfulness with regard to skillful qualities
