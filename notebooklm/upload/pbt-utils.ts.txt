@@ -26,7 +26,40 @@ type ProgressingByTensConfigJson = {
 }
 
 export class ProgressingByTens {
-    public static config: ProgressingByTensConfigJson = config_ as any
+    public static config: ProgressingByTensConfigJson = config_ as ProgressingByTensConfigJson
+
+    public static lookupPatternName(ref: {categoryKey:string, progressionIndex: number}): string {
+        const ret = this.config.patternName[ref.categoryKey][ref.progressionIndex-1]
+        return ret
+    }
+
+    public static lookupAnswerExcerpt(ref: {categoryKey:string, progressionIndex: number}): string {
+        const ret = this.config.answerExcerpt[ref.categoryKey][ref.progressionIndex-1]
+        return ret
+    }
+
+    public static createRelatedPatternMarkdownLink(ref: {categoryKey:string, progressionIndex: number}) {
+        const patternName = this.lookupPatternName(ref)
+        const progressionKey = this.config.topic.progressionKey[ref.progressionIndex-1]
+        return `/${patternName}/(../${progressionKey}s/${ref.categoryKey}.html)`;
+    }
+
+    public static fixBreadcrumbsIfNecessary(ref: {categoryKey:string, progressionIndex: number}): string {
+        const categoryIndex = this.config.topic.catagoryKey.indexOf(ref.categoryKey) 
+        let label = this.config.topic.label[categoryIndex]
+        if (ref.progressionIndex === 1) {
+            label = label.replace("Dhammas", "Dhamma");
+            label = label.replace("are", "is");
+        }
+        return label 
+    }
+
+    public static revealContextStatement(ref: {categoryKey:string, progressionIndex: number}): string {
+        const progressionKey = this.config.topic.progressionKey[ref.progressionIndex-1]
+        const ret = `Which ${progressionKey} ${this.fixBreadcrumbsIfNecessary(ref)}? 
+${this.config.answerExcerpt[ref.categoryKey][ref.progressionIndex-1]}`
+        return ret
+    }
 }
 
 export class JsonUtils {

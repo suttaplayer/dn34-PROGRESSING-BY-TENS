@@ -1,0 +1,11 @@
+{ 
+    "instructions": [
+        {
+            "modulePath": "./json-scope-generation-instructions.ts",
+            "bootstrap": "registerRunningExample"
+        },
+        {
+            "modulePath": "./json-problem-generation-instructions.ts",
+            "bootstrap": "registerRunningExample"
+        }    ]
+}
