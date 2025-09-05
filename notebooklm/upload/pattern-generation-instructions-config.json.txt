@@ -7,5 +7,6 @@
         {
             "modulePath": "./json-problem-generation-instructions.ts",
             "bootstrap": "registerRunningExample"
-        }    ]
+        }    
+    ]
 }

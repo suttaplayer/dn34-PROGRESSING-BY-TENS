@@ -1,15 +1,17 @@
 const filenames = [
-    "./manual/generation-API.ts",
-    "./manual/generation-instructions-config.json",
-    "./manual/json-pattern-generation-instructions.ts",
-    "./manual/json-scope-generation-instructions.ts",
-    "./manual/pattern-API.ts",
-    "./manual/pbt-catalog.json",
-    "./manual/pbt-utils.ts",
+"json-pattern-generation-instructions.ts",
+"json-problem-generation-instructions.ts",
+"json-scope-generation-instructions.ts",
+"pattern-API.ts",
+"pattern-generation-API.ts",
+"pattern-generation-instructions-config.json",
+"pbt-catalog.json",
+"pbt-utils.ts",
 ]
 for (const filename of filenames) {
     if (!filename)
             continue
-    const copyTo = filename.replace('.ts', '.ts.txt').replace('.json', '.json.txt').replace('./manual', './upload')
-    Deno.copyFileSync(filename, copyTo)
+    const copyFrom = `./manual/${filename}`
+    const copyTo = `./upload/${filename.replace('.ts', '.ts.txt').replace('.json', '.json.txt')}`
+    Deno.copyFileSync(copyFrom, copyTo)
 }

@@ -1,4 +1,4 @@
-import { PatternGenerator } from "./generation-API.ts"
+import { PatternGenerator } from "./pattern-generation-API.ts"
 import { UserPatternRequestJson } from "./pattern-API.ts"
 
 /*
@@ -292,6 +292,12 @@ determineEnterExitStatesAndPractitionerDetails [Heedfulness skillful qualities >
   "although heedfulness is applicable to all practitioners, it is specifically applicable to leaners (ie. one-in-training)"
 ]
 -------------------------------------------------------
+starting [JsonProblemGenerationInstructions]
+prepareProblemStatement substantiations:
+[
+  "'abandon' within the sources is typically used to express a transition from a negative mind state. 'enter and remain in' is typically used to express a transition to a positive mind state."
+]
+-------------------------------------------------------
 {
   "buildingBlocks": {
     "Scope": {
@@ -314,7 +320,9 @@ determineEnterExitStatesAndPractitionerDetails [Heedfulness skillful qualities >
         }
       ]
     },
-    "Problem": [],
+    "Problem": [
+      "How do you abandon heedlessness and enter and remain in heedfulness?"
+    ],
     "Causal-Table": [],
     "Solution": {
       "Step-by-Step": [],
@@ -370,7 +378,9 @@ determineEnterExitStatesAndPractitionerDetails [Heedfulness skillful qualities >
       "provides a clear indication by the buddha himself at who the 'heedfulness' message was targetted at",
       "although heedfulness is applicable to all practitioners, it is specifically applicable to leaners (ie. one-in-training)"
     ],
-    "Problem": [],
+    "Problem": [
+      "'abandon' within the sources is typically used to express a transition from a negative mind state. 'enter and remain in' is typically used to express a transition to a positive mind state."
+    ],
     "Causal-Table": [],
     "Solution": {
       "Step-by-Step": [],

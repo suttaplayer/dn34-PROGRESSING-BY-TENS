@@ -1,4 +1,4 @@
-import { BaseWorkTaskInstructions, NotebooklmCommandResolver, PatternGenerator } from "./generation-API.ts";
+import { BaseWorkTaskInstructions, NotebooklmCommandResolver, PatternGenerator } from "./pattern-generation-API.ts";
 import { DeterminantQuotationString, PractitionerKey, ScopeJson, SubjectJson } from "./pattern-API.ts";
 import { ProgressingByTens } from "./pbt-utils.ts";
 

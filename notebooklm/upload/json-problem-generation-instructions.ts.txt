@@ -1,24 +1,26 @@
-import { BaseWorkTaskInstructions, NotebooklmCommandResolver, PatternGenerator } from "./generation-API.ts";
+import { BaseWorkTaskInstructions, NotebooklmCommandResolver, PatternGenerator } from "./pattern-generation-API.ts";
 import { SubjectJson } from "./pattern-API.ts";
 import { ProgressingByTens } from "./pbt-utils.ts";
 
 export interface NotebooklmProblemCommandResolvable {
-    composePatternsProblemStatement(enterCompositeStates: string, exitCompositeStates: string, targetAnswer: string): Promise<string>
+    composePatternsProblemStatement(enterCompositeStates: Object, exitCompositeStates: Object, targetAnswer: string): Promise<string>
 }
 
 export class NotebooklmProblemCommandResolver extends NotebooklmCommandResolver implements NotebooklmProblemCommandResolvable {
-    public async composePatternsProblemStatement(enterCompositeStates: string, exitCompositeStates: string, targetAnswer: string): Promise<string> {
+    public async composePatternsProblemStatement(enterCompositeStates: Object, exitCompositeStates: Object, targetAnswer: string): Promise<string> {
         /*
         **Command:compose problem statement** using the:
             1. basic format: How do you <verb> <unified-enter-state> and <verb> <unified-exit-state>?
-            2. use similar language and expression as found in the sources
+            2. use similar language and expression as found in the sources:
+                * eg:
+                * And what is the miracle of instruction? There is the case where a certain person gives instruction in this way: 'Direct your thought in this way, don't direct it in that. Attend to things in this way, don't attend to them in that. Let go of this, enter and remain in that.' This is called the miracle of instruction.
 
             eg. How do you abandon heedlessness and enter and remain in heedfulness?
         */
         const exeCommand = {
             commandType: "text_analysis",
             parameters: {
-                enterExitCompositeStates: [enterCompositeStates, exitCompositeStates],
+                enterExitCompositeStateMaps: [enterCompositeStates, exitCompositeStates],
                 targetAnswer: targetAnswer,
                 extractionTarget: "problem statement",
                 expectedFormat: "string",
@@ -30,8 +32,12 @@ export class NotebooklmProblemCommandResolver extends NotebooklmCommandResolver 
 }
 
 export class RunningExampleProblemCommandResolver extends NotebooklmCommandResolver implements NotebooklmProblemCommandResolvable {
-    composePatternsProblemStatement(enterCompositeStates: string, exitCompositeStates: string, targetAnswer: string): Promise<string> {
-        const ret = `How do you abandon ${enterCompositeStates} and enter and remain in ${exitCompositeStates}?`
+    public async composePatternsProblemStatement(enterCompositeStates: Object, exitCompositeStates: Object, targetAnswer: string): Promise<string> {
+        const enterVals = Object.values(enterCompositeStates)
+        const exitVals = Object.values(exitCompositeStates)
+        const ret = `How do you abandon ${enterVals[0]} and enter and remain in ${exitVals[0]}ness?`
+        this.substantiationsStack.push("'abandon' within the sources is typically used to express a transition from a negative mind state. 'let go of' is identified in the miracle of instruction, but 'abandon' is more effective in this instance. 'enter and remain in' is typically used to express a transition to a positive mind state.")
+        return ret
     }
 }
 
@@ -75,17 +81,8 @@ export class JsonProblemGenerationInstructions extends BaseWorkTaskInstructions<
         */
     }
 
-    summariseScopeBoundaryStatesAsSingleUnifiedState() {
-
-    }
-
-    /*
-    purpose: convert a set of subjects into a string of qualified states
-        eg. "subj1[enter-state-A],subj2[enter-state-B],subj3[enter-state-C]"
-
-    */
-    consolidateScopeBoundaryStates(subjects: SubjectJson[], boundaryType: string): string {
-        const source: string[] = []
+    consolidateScopeIntoSubjectStateMap(subjects: SubjectJson[], boundaryType: string): Object {
+        const ret: Object = {}
         let targetState: string
         for (const subject of subjects) {
             if (boundaryType === "enter from") {
@@ -93,18 +90,32 @@ export class JsonProblemGenerationInstructions extends BaseWorkTaskInstructions<
             } else {
                 targetState = subject.exitToState
             }
-            source.push(`${subject.name}[${targetState}]`)
+            ret[subject.name] = targetState
         }
-        return source.join(",")
+        return ret
+    }
+
+    async prepareProblemStatement() {
+        const entryCompositeStates = this.consolidateScopeIntoSubjectStateMap(this.response.buildingBlocks.Scope.subject, "enter from")
+        const exitCompositeStates = this.consolidateScopeIntoSubjectStateMap(this.response.buildingBlocks.Scope.subject, "exit to")
+        const answerExcerpt = ProgressingByTens.lookupAnswerExcerpt(this.request) 
+        const statement = await this.resolver.composePatternsProblemStatement(entryCompositeStates, exitCompositeStates, answerExcerpt)
+        if (this.substantiations) {
+            if (this.responder.verboseOutput) {
+                console.log('prepareProblemStatement substantiations:')
+                console.log(this.resolver.substantiationsStack)
+                console.log("-------------------------------------------------------")
+            }
+            this.substantiations.push(...this.resolver.popSubstantiationsFromLastCommand())
+        }
+        this.buildingBlock.push(statement)
     }
 
     protected async executeInstructions(): Promise<void> {
         if (this.responder.verboseOutput)
             console.log("starting [JsonProblemGenerationInstructions]")
         this.visualiseSolutionSpace()
-        const entryCompositeStates = this.consolidateScopeBoundaryStates(this.response.buildingBlocks.Scope.subject, "enter from")
-        const exitCompositeStates = this.consolidateScopeBoundaryStates(this.response.buildingBlocks.Scope.subject, "exit to")
-        const answerExcerpt = ProgressingByTens.lookupAnswerExcerpt(this.request) 
+        await this.prepareProblemStatement()
     }
 
     protected constructResolver(): NotebooklmProblemCommandResolver {

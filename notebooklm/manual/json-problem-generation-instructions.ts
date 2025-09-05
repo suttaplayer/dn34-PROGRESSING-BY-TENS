@@ -1,4 +1,4 @@
-import { BaseWorkTaskInstructions, NotebooklmCommandResolver, PatternGenerator } from "./generation-API.ts";
+import { BaseWorkTaskInstructions, NotebooklmCommandResolver, PatternGenerator } from "./pattern-generation-API.ts";
 import { SubjectJson } from "./pattern-API.ts";
 import { ProgressingByTens } from "./pbt-utils.ts";
 
@@ -12,6 +12,7 @@ export class NotebooklmProblemCommandResolver extends NotebooklmCommandResolver 
         **Command:compose problem statement** using the:
             1. basic format: How do you <verb> <unified-enter-state> and <verb> <unified-exit-state>?
             2. use similar language and expression as found in the sources:
+                * eg:
                 * And what is the miracle of instruction? There is the case where a certain person gives instruction in this way: 'Direct your thought in this way, don't direct it in that. Attend to things in this way, don't attend to them in that. Let go of this, enter and remain in that.' This is called the miracle of instruction.
 
             eg. How do you abandon heedlessness and enter and remain in heedfulness?
@@ -35,7 +36,7 @@ export class RunningExampleProblemCommandResolver extends NotebooklmCommandResol
         const enterVals = Object.values(enterCompositeStates)
         const exitVals = Object.values(exitCompositeStates)
         const ret = `How do you abandon ${enterVals[0]} and enter and remain in ${exitVals[0]}ness?`
-        this.substantiationsStack.push("'abandon' within the sources is typically used to express a transition from a negative mind state. 'enter and remain in' is typically used to express a transition to a positive mind state.")
+        this.substantiationsStack.push("'abandon' within the sources is typically used to express a transition from a negative mind state. 'let go of' is identified in the miracle of instruction, but 'abandon' is more effective in this instance. 'enter and remain in' is typically used to express a transition to a positive mind state.")
         return ret
     }
 }

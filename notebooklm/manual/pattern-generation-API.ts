@@ -1,6 +1,11 @@
-import config_ from "./generation-instructions-config.json" with { type: "json" }
+import config_ from "./pattern-generation-instructions-config.json" with { type: "json" }
 
 import { DeterminantQuotationString, PatternResponseJson, UserDirectExperienceJson, UserPatternRequestJson, WORK_TASK_ORDER, WorkTaskKey } from "./pattern-API.ts"
+
+/*
+work task dependency injection is achieved through the pattern-generation-instructions-config.json. this file contains an array of instruction modules that are dynamically linked into the pattern generation process. the bootstrap function enables the configuration to toggle between the running-example and the actual implementation.  
+
+*/
 
 export type InstructionsJson = {
     modulePath: string

@@ -1,6 +1,5 @@
-import { PatternGenerator } from "./generation-API.ts"
+import { PatternGenerator } from "./pattern-generation-API.ts"
 import { UserPatternRequestJson } from "./pattern-API.ts"
-import { ProgressingByTens } from "./pbt-utils.ts"
 
 /*
 # JSON Pattern Generation Instruction Manual For NotebookLM
@@ -25,7 +24,7 @@ class JsonPatternGenerationInstructions {
     visualiseProblemSpace() {
         /*
         
-        ```plantuml - https://editor.plantuml.com/uml/NLDDRzim3BtxLn0-DLtj9W5sM51aNOjrA7R9a00xR3ie4ckhrOSXoccoeF-zjEoaQNKnQP6FVEJJDKKHOciDb9SDVmfjHOLq-KZU5Os84OChAdI5TXIB9lYrGLjG8oHcDGg50Mu3YeWAl9l1T3pzN8YsAgPVigYZGLZq6F037GOHjNTmpr2XbSa-M_IGiEmWHrcj5GBQ9kx0ebrZe2oJHX11pf5LG2BjAhZPmGeT_NLtGLXyzk4f1q6mk5bbw5eBjznHvSCEzXdmgT4q3wr9ji8D6j-WIfxqjWbOerF33x4MJdatU0gbqGvxMrFKBhMT_8OPHQRKtugWgRUUd7_k8tWmHl_dqV39NhACsuC_pO66T_TSTNi1ScZs9-x-mNbHp26VZCSvh7oZvO7-uYqDhgwO8yzcFjzd-qbPJiOl7NoAXvJ_iKX-cdyQU58xFqxjD231vx1iruyeOtRdPKlVc1YK9Pobk8l3vMW6LkoW5Xk4SLcUl-i8gn9-rrhMh1C4LGjh1MY23VAMXlrypU5NYvGclFIcxOplMucXYQVb3Z6Zusm6ZNNB_WI3I9CjlOkuZSb-y44Y9PC6yEJqgXG6Um-fDR7Js6bkG9CqFho87aKAme9Yg_G1LblDCEzMCVGsIx8mg2hiM2iUeqNNGMe7iKQOipm66btQ1_gpDw6IPltkM9bHQ4D3xZ5rVbZ638HItSAH-FwQ1Swl-nK0
+        ```plantuml - https://editor.plantuml.com/uml/RLHDRzim3BttLn0-DLtjfWLsM51aNOjrs7R9q00xR3ie4cDhrOSXocszelzzikFOiXDVR3oHxr6Ff05spmrvvdob5MGNPNYbKhCSwU8RMRDYtgCpNz2WOrvQyzMGTnLlFYajdTqer2cLZED9HmS5Ce4ExXmoZmAiMS3L_EfzogeylVhGXtdf5K8Z0fqA338Gwy3fQYS43utGR52I0W5rwMlGg3VewAG_uueHGH8oSuT4qkHmMyCQ3VqszuvfVBRkCG56iBfTzrbeAWrteUxSkXfUUtntBrLkApN213wXiYMA4SgjBXqMQCJaW6sO4TPCK85SIODZJ9ANfht_22-3HJvuD8vcJj8OUJJsUPmPsg7alz2GyFG7RuDXmGRuLUxjQZejyEKSU6V6Twp_m5cQBY6vdCyJMDjIygdTgo4Thg-3bw4do-LWu-jbbbtEtux9jtpGya-BI6BUOmbHZKdVlKcWRG9VZGMxXKY0tg2jAO67QlCNkU_JxYslw5Dm3R8CJbkIyttGR06QrL2m9uHvbfqTlGRc6Vmi92_22Y28WcdDG18yOHYjRfW-9l2ZGXgr-S6ggW4-lt1qfO_bzx6p0-Ex3HgiVWVTTaO8jyRZYu-GhNKSAGAe4u-WtKOoXJ66L2dVBDKXfqFLBdwvgobcvumm9Ly9EHQLMaRqHwUYk-6YdMo58iV6In6QfD4qSjA0Bn2MqKHtfZJf4rCNmuwI32jSXoNqJ2hgE0uebllMBu09qGmFKXHt4tOz_3fF_WC0
         @startuml ./puml-images/JsonPatternGenerationInstructions-problem-space
         header Created on: 2025-aug-29
         title Json Pattern Generation Instructions (Problem Space)
@@ -53,7 +52,7 @@ class JsonPatternGenerationInstructions {
 
         Topic --> "progressionIndex" Progression
         Topic --> "categoryKey" Category
-        Topic --> "1..10" Subject
+        Topic o-> "{no of progressions} 1..10" Subject
         FocusArea .. (Topic, Subject): may have 0..*
 
         Topic --> "eg. Which one dhamma is very helpful?" Question
@@ -78,7 +77,9 @@ class JsonPatternGenerationInstructions {
         @enduml
         ```
 
-        the class diagram above outlines the problem space for this project.
+        the class diagram above outlines the problem space for this project. each topic in the framework is qualitied by categetory and progression. the topic has an aggregate of subjects and focus areas which are constrained by the number of progressions. the topic presents a question with a number of progressions in the context of a category eg. "Which one dhamma is very helpful?". in response to this question, the topic presents an excerpt answer. 
+        
+        the pattern language is overlayed on top of this framework. it uses the same topic structure but explores a greater solution detail in order to address a prescribed problem.
 
         */
     }
@@ -253,7 +254,6 @@ await instructions.execute()
 console.log(JSON.stringify(instructions.generator.response, null, 2))
 
 /* 
-
 $ deno --allow-read json-pattern-generation-instructions.ts 
 USER-QUERY [UserPatternRequestJson]
 {
@@ -264,9 +264,39 @@ USER-QUERY [UserPatternRequestJson]
 }
 -------------------------------------------------------
 starting [JsonScopeGenerationInstructions]
+assignThePatternNameAndEstablishTheContext:
 PATTERN: Heedful, ardent & resolute
 Which one Dhamma is very helpful? 
 Heedfulness with regard to skillful qualities
+-------------------------------------------------------
+parseTheAnswerExcerptAsSubjectJsonArray substantiations:
+[
+  "mock of generalisation/abstraction of expression[Heedfulness] to concept[Heedfulness]"
+]
+-------------------------------------------------------
+determineEnterExitStatesAndPractitionerDetails [Heedfulness skillful qualities > enter from] substantiations:
+[
+  "'[dont] ever let yourself get complacent' &  'falls into heedlessness' establish the enter from state",
+  "heedfulness is a composite state of the mind. 'complacent' would be the first state after transition from 'heedlessness'"
+]
+-------------------------------------------------------
+determineEnterExitStatesAndPractitionerDetails [Heedfulness skillful qualities > exit to] substantiations:
+[
+  "'when the ending of effluents is still unattained' establish the exit to state",
+  "heedfulness is a composite state of the mind. 'heedful' would be the final state from which there is no falling back"
+]
+-------------------------------------------------------
+determineEnterExitStatesAndPractitionerDetails [Heedfulness skillful qualities > target practitioner] substantiations:
+[
+  "provides a clear indication by the buddha himself at who the 'heedfulness' message was targetted at",
+  "although heedfulness is applicable to all practitioners, it is specifically applicable to leaners (ie. one-in-training)"
+]
+-------------------------------------------------------
+starting [JsonProblemGenerationInstructions]
+prepareProblemStatement substantiations:
+[
+  "'abandon' within the sources is typically used to express a transition from a negative mind state. 'enter and remain in' is typically used to express a transition to a positive mind state."
+]
 -------------------------------------------------------
 {
   "buildingBlocks": {
@@ -290,7 +320,9 @@ Heedfulness with regard to skillful qualities
         }
       ]
     },
-    "Problem": [],
+    "Problem": [
+      "How do you abandon heedlessness and enter and remain in heedfulness?"
+    ],
     "Causal-Table": [],
     "Solution": {
       "Step-by-Step": [],
@@ -338,6 +370,7 @@ Heedfulness with regard to skillful qualities
   "substantiations": {
     "Scope": [
       "parsed as 1 subject & 1 focus area because `with regard to` denotes that the focusArea follows",
+      "mock of generalisation/abstraction of expression[Heedfulness] to concept[Heedfulness]",
       "'[dont] ever let yourself get complacent' &  'falls into heedlessness' establish the enter from state",
       "heedfulness is a composite state of the mind. 'complacent' would be the first state after transition from 'heedlessness'",
       "'when the ending of effluents is still unattained' establish the exit to state",
@@ -345,7 +378,9 @@ Heedfulness with regard to skillful qualities
       "provides a clear indication by the buddha himself at who the 'heedfulness' message was targetted at",
       "although heedfulness is applicable to all practitioners, it is specifically applicable to leaners (ie. one-in-training)"
     ],
-    "Problem": [],
+    "Problem": [
+      "'abandon' within the sources is typically used to express a transition from a negative mind state. 'enter and remain in' is typically used to express a transition to a positive mind state."
+    ],
     "Causal-Table": [],
     "Solution": {
       "Step-by-Step": [],
