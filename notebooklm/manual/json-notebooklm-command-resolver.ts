@@ -1,3 +1,5 @@
+import { ContextWorkTaskResolvable, JsonContextGenerationInstructions } from "./json-context-generation-instructions.ts";
+import { JsonForcesGenerationInstructions } from "./json-forces-generation-instructions.ts";
 import { JsonProblemGenerationInstructions, ProblemWorkTaskResolvable } from "./json-problem-generation-instructions.ts";
 import { JsonScopeGenerationInstructions, ScopeWorkTaskResolvable } from "./json-scope-generation-instructions.ts";
 import { DeterminantQuotationString, PractitionerKey, ScopeJson, SubjectJson } from "./pattern-API.ts";
@@ -138,7 +140,7 @@ class ScopeCommandResolver extends CommandResolver implements ScopeWorkTaskResol
 
 
 class ProblemCommandResolver extends CommandResolver implements ProblemWorkTaskResolvable {
-    public async composePatternsProblemStatement(enterCompositeStates: Object, exitCompositeStates: Object, targetAnswer: string): Promise<string> {
+    public async composeProblemStatement(subjects: SubjectJson[]): Promise<string> {
         /*
         **Command:compose problem statement** using the following steps:
         1.  **Analyze the composite states:** Review the `enterCompositeStates` and `exitCompositeStates` maps provided.
@@ -150,8 +152,8 @@ class ProblemCommandResolver extends CommandResolver implements ProblemWorkTaskR
         const exeCommand = {
             commandType: "text_analysis",
             parameters: {
-                enterExitCompositeStateMaps: [enterCompositeStates, exitCompositeStates],
-                targetAnswer: targetAnswer,
+                subjects: subjects,
+                targetAnswer: this.executionContext,
                 extractionTarget: "problem statement",
                 expectedFormat: "string",
                 guidance: "compose a problem statement for the pattern using the enter & exit states. ensure that the resultant problem statement is suitable for the target answer"
@@ -161,13 +163,25 @@ class ProblemCommandResolver extends CommandResolver implements ProblemWorkTaskR
     }
 }
 
-class ContextCommandResolver extends CommandResolver {
-    public async composeContextStatement(scope: ScopeJson): Promise<string[]> {
+class ContextCommandResolver extends CommandResolver implements ContextWorkTaskResolvable {
+    public async searchForContextWithRespectTo(subjects: SubjectJson[]): Promise<DeterminantQuotationString[]> {
+        /*
+        **Command:search for context** 
+        use subjects > targetPractitioners & enterFromState, & executionContext
+        sources: ["AN_nblm.txt", "DN_nblm.txt", "KN_Dhp_nblm.txt", "KN_Iti_nblm.txt", "KN_Khp_nblm.txt", "KN_StNp_nblm.txt", "KN_Thag_nblm.txt", "KN_Thig_nblm.txt", "KN_Ud_nblm.txt", "MN_nblm.txt", "SN_nblm.txt"],
+
+        TODO: notebooklm to provide details...
+        */
+        return await this.executeQuery<DeterminantQuotationString[]>({})
+    }
+
+    public async composeContextStatement(subjects: SubjectJson[], determinantQuotations: DeterminantQuotationString[]): Promise<string[]> {
         /*
         **Command:compose context statement** by framing it as a diagnosis, using the "medical prescription" analogy. The context should describe the "symptoms" the practitioner is experiencing.
         1.  **Identify the 'symptoms':** The primary symptoms are the `enterFromState`(s) of the subjects in the Scope.
         2.  **Describe the situation:** Formulate sentences describing a situation where a practitioner is experiencing these 'symptoms.' For example: "You find yourself in a state of [enterFromState], characterized by [supporting details from sources about that state]."
         3.  **State the 'diagnosis':** Conclude by stating that this pattern applies when one is experiencing this specific condition. For example, the sources describe a mind "undeveloped", "sullied", or "overcome with passion" as conditions requiring a remedy.
+        4.  return in point form (without formatting) with each point as separate array element
         */
         // ... (notebooklm query execution logic)
         return await this.executeQuery<string[]>({})
@@ -175,12 +189,23 @@ class ContextCommandResolver extends CommandResolver {
 }
 
 class ForcesCommandResolver extends CommandResolver {
-    public async composeForcesStatement(scope: ScopeJson): Promise<string[]> {
+    public async searchForForcesWithRespectTo(subjects: SubjectJson[]): Promise<DeterminantQuotationString[]> {
+        /*
+        **Command:search for forces** 
+        use subjects > targetPractitioners & enterFromState, & executionContext
+        sources: ["AN_nblm.txt", "DN_nblm.txt", "KN_Dhp_nblm.txt", "KN_Iti_nblm.txt", "KN_Khp_nblm.txt", "KN_StNp_nblm.txt", "KN_Thag_nblm.txt", "KN_Thig_nblm.txt", "KN_Ud_nblm.txt", "MN_nblm.txt", "SN_nblm.txt"],
+        TODO: notebooklm to provide details...
+        */
+        return await this.executeQuery<DeterminantQuotationString[]>({})
+    }
+
+    public async composeForcesStatement(subjects: SubjectJson[], determinantQuotations: DeterminantQuotationString[]): Promise<string[]> {
         /*
         **Command:compose forces statement** by explaining why a simple or naive solution is insufficient, thereby justifying the pattern's specific "prescription."
         1.  **Identify the core conflict:** The central conflict is the difficulty of transitioning from the `enterFromState` to the `exitToState`.
         2.  **Describe countervailing forces:** Explain what makes this transition challenging. This could include the allure of the negative state (e.g., the "allure of sensuality"), the subtle nature of the problem (e.g., how craving ensnares like a "tangled skein"), or common misunderstandings that lead to failure. For instance, a "slack going-forth kicks up all the more dust".
         3.  **Justify the pattern:** Conclude by explaining why a more nuanced approach—the pattern's Solution—is necessary to resolve these conflicting forces.
+        4.  return in point form (without formatting) with each point as separate array element
         */
         // ... (notebooklm query execution logic)
         return await this.executeQuery<string[]>({})
@@ -190,4 +215,6 @@ class ForcesCommandResolver extends CommandResolver {
 export function register() {
     JsonScopeGenerationInstructions.RESOLVER_CTR = ScopeCommandResolver
     JsonProblemGenerationInstructions.RESOLVER_CTR = ProblemCommandResolver
+    JsonContextGenerationInstructions.RESOLVER_CTR = ContextCommandResolver
+    JsonForcesGenerationInstructions.RESOLVER_CTR = ForcesCommandResolver
 }

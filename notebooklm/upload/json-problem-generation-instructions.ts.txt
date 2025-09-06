@@ -3,9 +3,8 @@ import { SubjectJson } from "./pattern-API.ts";
 import { ProgressingByTens } from "./pbt-utils.ts";
 
 export interface ProblemWorkTaskResolvable extends WorkTaskResolvable {
-    composePatternsProblemStatement(enterCompositeStates: Object, exitCompositeStates: Object, targetAnswer: string): Promise<string>
+    composeProblemStatement(subjects: SubjectJson[]): Promise<string>
 }
-
 
 export type ProblemCommandResolverConstructor = new () => ProblemWorkTaskResolvable
 
@@ -47,25 +46,10 @@ export class JsonProblemGenerationInstructions extends BaseWorkTaskInstructions<
         */
     }
 
-    consolidateScopeIntoSubjectStateMap(subjects: SubjectJson[], boundaryType: string): Object {
-        const ret: Object = {}
-        let targetState: string
-        for (const subject of subjects) {
-            if (boundaryType === "enter from") {
-                targetState = subject.enterFromState
-            } else {
-                targetState = subject.exitToState
-            }
-            ret[subject.name] = targetState
-        }
-        return ret
-    }
-
     async prepareProblemStatement() {
-        const entryCompositeStates = this.consolidateScopeIntoSubjectStateMap(this.response.buildingBlocks.Scope.subject, "enter from")
-        const exitCompositeStates = this.consolidateScopeIntoSubjectStateMap(this.response.buildingBlocks.Scope.subject, "exit to")
         const answerExcerpt = ProgressingByTens.lookupAnswerExcerpt(this.request) 
-        const statement = await this.resolver.composePatternsProblemStatement(entryCompositeStates, exitCompositeStates, answerExcerpt)
+        this.resolver.executionContext = answerExcerpt
+        const statement = await this.resolver.composeProblemStatement(this.response.buildingBlocks.Scope.subject)
         if (this.substantiations) {
             if (this.responder.verboseOutput) {
                 console.log('prepareProblemStatement substantiations:')

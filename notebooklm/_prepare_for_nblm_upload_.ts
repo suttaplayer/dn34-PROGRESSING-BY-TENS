@@ -1,4 +1,6 @@
 const filenames = [
+"json-context-generation-instructions.ts",
+"json-forces-generation-instructions.ts",
 "json-notebooklm-command-resolver.ts",
 "json-pattern-generation-instructions.ts",
 "json-problem-generation-instructions.ts",

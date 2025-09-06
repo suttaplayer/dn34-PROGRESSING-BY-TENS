@@ -15,6 +15,14 @@
             "bootstrap": "register"
         },    
         {
+            "modulePath": "./json-context-generation-instructions.ts",
+            "bootstrap": "register"
+        },    
+        {
+            "modulePath": "./json-forces-generation-instructions.ts",
+            "bootstrap": "register"
+        },    
+        {
             "modulePath": "./json-running-example-command-resolver.ts",
             "bootstrap": "register"
         }
