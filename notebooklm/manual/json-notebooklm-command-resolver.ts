@@ -1,0 +1,193 @@
+import { JsonProblemGenerationInstructions, ProblemWorkTaskResolvable } from "./json-problem-generation-instructions.ts";
+import { JsonScopeGenerationInstructions, ScopeWorkTaskResolvable } from "./json-scope-generation-instructions.ts";
+import { DeterminantQuotationString, PractitionerKey, ScopeJson, SubjectJson } from "./pattern-API.ts";
+import { WorkTaskResolver } from "./pattern-generation-API.ts";
+
+/*
+purpose: provide notebooklm with a base abstraction which must be specialised for individual work tasks that are assosciated with the notebooklm "**Command:<command>** annotation"
+*/
+class CommandResolver extends WorkTaskResolver {
+    protected async executeQuery<Type>(cmd: Object): Promise<Type> {
+        // notebooklm internal query execution ...
+        this.substantiationsStack.push("/* add rationale for query result here */")
+        return (undefined as unknown) as Type
+    }
+
+    public async generaliseAndAbstractToConcept(term: string): Promise<string> {
+        /*
+        **Command:generalise & abstract to concept** the term if necessary. concepts play a key role in the causal-table. if the concept is to specific the causal-table will be small and of little benefit (due to simplicity) for the remaining work tasks. however, if the concept is over-generalised then the causal-table will be too large and again of little benefit (due to complexity). notebooklm needs to ensure that it can subsequently match on the concept as opposed to the specific term/expression for the benefit of down-stream work tasks
+
+        * eg1, consider the subject: "people of integrity"
+            1. "people of integrity" has 77 references in 6 source files
+            2. "person of integrity" has 112 references in 7 source files
+            3. "admirable friend" 43 references in 8 source files
+            4. "noble ones" 776 references in 8 source files
+            this.substantiationsStack.push("within the context of 'Associating with people of integrity', 'people of integrity', 'person of integrity', 'admirable friend' & 'noble ones' are all abstractions of <concept>.")
+
+        * eg2, consider the subject: "faculty of conviction"
+            1. "faculty of conviction" has 38 references in 4 source files
+            2. "strength of conviction" has 11 references in 4 source files
+            3. "conviction" has 450 references in 10 source files
+            this.substantiationsStack.push("outside the context of then wings to awakening 'faculty of conviction', 'strength of conviction', 'conviction' are again all references of <concept>")
+            
+        */
+       this.substantiationsStack.push(`mock of generalisation/abstraction of expression[${term}] to concept[${term}]`)
+       return term
+    }
+}
+
+class ScopeCommandResolver extends CommandResolver implements ScopeWorkTaskResolvable {
+    public async parseAnswerExcerptAsSubjectJsonArray(answerExcerpt: string): Promise<SubjectJson[]> {
+        /*
+        the answerExcerpt must be parsed by:
+        1. identifying a maximum of progressionIndex number of subjects from the answerExcerpt
+        2. identifying optional focusArea(s) associated with that subject
+
+        notebooklm must:
+        1. **Command:parse** the answerExcerpt into SubjectJson objects. focusArea is optional can remain undefined if not applicable. assign "", "" & [] for enterFromState, exitToState & targetPractitioner respectively.
+
+        */
+        const exeCommand = {
+            commandType: "structured_extraction",
+            parameters: {
+                textToParse: answerExcerpt,
+                extractionTarget: "SubjectJson[]",
+                expectedFormat: "{ name: string, focusArea?: string[] }[]",
+                guidance: "Identify distinct subjects and their optional associated focus areas from the answer excerpt. If components within the answer excerpt have distinct and sequential requisite conditions, or lead to different immediate outcomes, or their enterFromState or exitToState are different, then parse them as separate SubjectJson objects. The maximum number of subjects to extract is defined by progressionIndex. Initially, enterFromState and exitToState should be empty strings, and targetPractitioner an empty array."
+            }
+        }
+        return await this.executeQuery<SubjectJson[]>(exeCommand)
+    }
+
+    public async searchForMindOrExternalStateWithRespectTo(subjectAndForcesExpression: string, boundaryType: string): Promise<DeterminantQuotationString[]> {
+        /*
+        1. **Command:search** for determinant quotations from the ["*_nblm.txt"] sources:
+            * on the subject and its associated focusArea(s)
+            * select 1 if possible (or more when chained together) that best quotes that substantiates the concluded enter from or exit to state
+
+        */
+        const exeCommand = {
+            commandType: "information_retrieval",
+            parameters: {
+                query: subjectAndForcesExpression,
+                sources: ["AN_nblm.txt", "DN_nblm.txt", "KN_Dhp_nblm.txt", "KN_Iti_nblm.txt", "KN_Khp_nblm.txt", "KN_StNp_nblm.txt", "KN_Thag_nblm.txt", "KN_Thig_nblm.txt", "KN_Ud_nblm.txt", "MN_nblm.txt", "SN_nblm.txt"],
+                contextHint: `identify the ${boundaryType} mind states or external states associated with the search expression `,
+                resultType: "DeterminantQuotationString[]"
+            }
+        }
+        return await this.executeQuery<DeterminantQuotationString[]>(exeCommand)
+    }
+
+    public async parseMindOrExternalStateWithRespectTo(determinantQuotations: DeterminantQuotationString[], boundaryType: string): Promise<string> {
+        /*
+        2. **Command:parse** the selected quotation(s) to extract the enter from or exit to state as text
+
+        */
+        const guidance = boundaryType === "enter from" ? 
+            "Extract the 'nearest branch' condition or state that precedes or leads to the subject. Prioritize a specific preceding condition over general states like 'heedfulness' if a more direct link is present, as per instructions 'look deeper at the \"nearest branch\" state (as opposed to root state)'." :
+            "Extract the ending state or 'natural baton change' to another skillful quality. Prioritize a specific outcome over general states like 'ending of the effluents' if a more direct transition is evident, as per instructions 'look more deeply at where there is a natural baton change to another skillful quality'."
+        const exeCommand = {
+            commandType: "structured_extraction",
+            parameters: {
+                textToParse: determinantQuotations.join("\n"),
+                extractionTarget: boundaryType,
+                expectedFormat: "string",
+                guidance: guidance
+            }
+        }
+        return await this.executeQuery<string>(exeCommand)
+    }
+
+    public async searchForTargetPracitionersWithRespectTo(subjectAndForcesExpression: string): Promise<DeterminantQuotationString[]> {
+        /*
+        1. **Command:search** for quotations from the ["*_nblm.txt"] sources:
+        * on the subject and its associated focusArea(s)
+        * select 1 if possible (or more when chained together) that best quotes that substantiates the concluded target practitioner
+
+        */
+        const exeCommand = {
+            commandType: "information_retrieval",
+            parameters: {
+                query: subjectAndForcesExpression,
+                sources: ["AN_nblm.txt", "DN_nblm.txt", "KN_Dhp_nblm.txt", "KN_Iti_nblm.txt", "KN_Khp_nblm.txt", "KN_StNp_nblm.txt", "KN_Thag_nblm.txt", "KN_Thig_nblm.txt", "KN_Ud_nblm.txt", "MN_nblm.txt", "SN_nblm.txt"],
+                contextHint: `identify individuals in PractitionerKey that are associated with the search expression `,
+                resultType: "DeterminantQuotationString[]"
+            }
+        }
+        return await this.executeQuery<DeterminantQuotationString[]>(exeCommand)
+    }
+
+    public async parseTargetPractitionersWithRespectTo(determinantQuotations: DeterminantQuotationString[]): Promise<PractitionerKey[]> {
+        /*
+        2. **Command:parse** the selected quotation(s) to extract the target pracitioner as an array of PractitionerKey
+
+        */
+        const exeCommand = {
+            commandType: "structured_extraction",
+            parameters: {
+                textToParse: determinantQuotations.join("\n"),
+                extractionTarget: "target practitioners",
+                expectedFormat: "string",
+                guidance: "Identify all relevant practitioner types from the `PractitionerKey` enumeration ('conviction-dhamma-follower', 'stream-enterer', 'once-returner', 'non-returner') that are explicitly or implicitly mentioned as suitable for the subject. Consider the 'medical prescription' analogy; if a practice is too advanced or basic, narrow the target practitioner accordingly."
+            }
+        }
+        return await this.executeQuery<PractitionerKey[]>(exeCommand)
+    }
+
+}
+
+
+class ProblemCommandResolver extends CommandResolver implements ProblemWorkTaskResolvable {
+    public async composePatternsProblemStatement(enterCompositeStates: Object, exitCompositeStates: Object, targetAnswer: string): Promise<string> {
+        /*
+        **Command:compose problem statement** using the following steps:
+        1.  **Analyze the composite states:** Review the `enterCompositeStates` and `exitCompositeStates` maps provided.
+        2.  **Synthesize a unified theme:** If there are multiple subjects, identify a single, overarching theme or concept that connects their respective state transitions. The goal is to create one coherent problem statement that encompasses all subjects, rather than multiple separate statements.
+        3.  **Formulate the question:** Using language found in the sources, compose the problem statement. A suitable format is: "How does one abandon [unified `enterFromState` theme] and enter and remain in [unified `exitToState` theme]?"
+            *   For example, when dealing with multiple unskillful states to be abandoned, you might synthesize them under a broader term like "unskillful qualities". Similarly, multiple skillful states to be developed could be unified under "skillful qualities".
+            *   An example from the sources is the "miracle of instruction": 'Let go of this, enter and remain in that'.
+        */
+        const exeCommand = {
+            commandType: "text_analysis",
+            parameters: {
+                enterExitCompositeStateMaps: [enterCompositeStates, exitCompositeStates],
+                targetAnswer: targetAnswer,
+                extractionTarget: "problem statement",
+                expectedFormat: "string",
+                guidance: "compose a problem statement for the pattern using the enter & exit states. ensure that the resultant problem statement is suitable for the target answer"
+            }
+        }
+        return await this.executeQuery<string>(exeCommand)
+    }
+}
+
+class ContextCommandResolver extends CommandResolver {
+    public async composeContextStatement(scope: ScopeJson): Promise<string[]> {
+        /*
+        **Command:compose context statement** by framing it as a diagnosis, using the "medical prescription" analogy. The context should describe the "symptoms" the practitioner is experiencing.
+        1.  **Identify the 'symptoms':** The primary symptoms are the `enterFromState`(s) of the subjects in the Scope.
+        2.  **Describe the situation:** Formulate sentences describing a situation where a practitioner is experiencing these 'symptoms.' For example: "You find yourself in a state of [enterFromState], characterized by [supporting details from sources about that state]."
+        3.  **State the 'diagnosis':** Conclude by stating that this pattern applies when one is experiencing this specific condition. For example, the sources describe a mind "undeveloped", "sullied", or "overcome with passion" as conditions requiring a remedy.
+        */
+        // ... (notebooklm query execution logic)
+        return await this.executeQuery<string[]>({})
+    }
+}
+
+class ForcesCommandResolver extends CommandResolver {
+    public async composeForcesStatement(scope: ScopeJson): Promise<string[]> {
+        /*
+        **Command:compose forces statement** by explaining why a simple or naive solution is insufficient, thereby justifying the pattern's specific "prescription."
+        1.  **Identify the core conflict:** The central conflict is the difficulty of transitioning from the `enterFromState` to the `exitToState`.
+        2.  **Describe countervailing forces:** Explain what makes this transition challenging. This could include the allure of the negative state (e.g., the "allure of sensuality"), the subtle nature of the problem (e.g., how craving ensnares like a "tangled skein"), or common misunderstandings that lead to failure. For instance, a "slack going-forth kicks up all the more dust".
+        3.  **Justify the pattern:** Conclude by explaining why a more nuanced approach—the pattern's Solution—is necessary to resolve these conflicting forces.
+        */
+        // ... (notebooklm query execution logic)
+        return await this.executeQuery<string[]>({})
+    }
+}
+
+export function register() {
+    JsonScopeGenerationInstructions.RESOLVER_CTR = ScopeCommandResolver
+    JsonProblemGenerationInstructions.RESOLVER_CTR = ProblemCommandResolver
+}

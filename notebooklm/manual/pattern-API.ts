@@ -1,5 +1,3 @@
-import { ProgressingByTens } from "./pbt-utils.ts";
-
 /*
 purpose: represents the valid category keys for the dhammas in the "progressing by tens" framework
 specified by:

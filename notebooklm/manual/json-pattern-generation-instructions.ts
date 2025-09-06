@@ -1,5 +1,5 @@
 import { PatternGenerator } from "./pattern-generation-API.ts"
-import { UserPatternRequestJson } from "./pattern-API.ts"
+import { PatternResponseJson, UserPatternRequestJson } from "./pattern-API.ts"
 
 /*
 # JSON Pattern Generation Instruction Manual For NotebookLM
@@ -7,8 +7,30 @@ import { UserPatternRequestJson } from "./pattern-API.ts"
 these instructions are codified for and to be executed by notebooklm. it must be fit for notebooklm's use. these instructions must routinely be assessed by notebooklm for ambiguity, inconsistencies and errors which present as obstacles to the pattern generation system.
 */
 
-class JsonPatternGenerationInstructions {
+
+import config_ from "./pattern-generation-instructions-config.json" with { type: "json" }
+
+export type InstructionsJson = {
+    modulePath: string
+    bootstrap: string
+}
+
+type BootstrapFunctionDefinition = () => void
+
+
+export type GenerationWorkTaskInstructionsConfigJson = {
+    userQuery: UserPatternRequestJson
+    instructions: InstructionsJson[]
+}
+
+export class JsonPatternGenerationInstructions {
+    private static CONFIG: GenerationWorkTaskInstructionsConfigJson = config_ as GenerationWorkTaskInstructionsConfigJson
+    public userPatternRequest: UserPatternRequestJson|undefined
     public generator: PatternGenerator
+
+    constructor(userPatternRequest?: UserPatternRequestJson) {
+        this.userPatternRequest = userPatternRequest
+    }
 
     readBackground() {
         /*
@@ -193,49 +215,34 @@ class JsonPatternGenerationInstructions {
         ```
         */
 
-       const userQuery_heedful_ardent_resolute: UserPatternRequestJson = { // a PBT dhamma reference requires a composite key:
-            progressionIndex: 1,
-            categoryKey: "helpful",
-            includeSubstantiations: true,
-            verboseOutput: true,
-        }
+        if (!this.userPatternRequest)
+            this.userPatternRequest = JsonPatternGenerationInstructions.CONFIG.userQuery
 
-        // simulate notebooklm user-query submission:
-        this.generator = new PatternGenerator(userQuery_heedful_ardent_resolute)
+        this.generator = new PatternGenerator(this.userPatternRequest)
         if (this.generator.verboseOutput) {
             console.log("USER-QUERY [UserPatternRequestJson]")
-            console.log(JSON.stringify(userQuery_heedful_ardent_resolute, null, 2))
+            console.log(JSON.stringify(this.generator.request, null, 2))
             console.log("-------------------------------------------------------")
         }
     }
 
     async runIterativeAndIncrementalApproachToBuilding() {
         /*
-        ## Running Example
+        work tasks will be built using an iterative & incremental methodology with continuous input from notebooklm. a work task will be iterated over and over until the collaborative effort yields the desired result for a specific pattern work task. when the desired result is achieved, then the next work task increment is incorporated into the build.
 
-        instructions are one things but examples of how a method has been applied is another. therefore, below the instructions for each work task, an example of resultant building blocks has been provided. however, often independent and over-simplisitic examples hide the nuances inherent in tasks that are coupled to the overrall process. to resolve this issues, this manual uses a **running-example**. 
-
-        the **"Heedful, ardent & resolute"** pattern whose associated answer-excerpt is **"Heedfulness with regard to skillful qualities"** has been used as a running example for this manual and it's sub-manuals. notebooklm must analyse the running example to follow the expert's methodology on how they implemented the instructions when crafting the resultant raw materials and building blocks. 
-
-        note, only the example plantuml diagrams are to be considered final drafts. all other sections or sub-sections examples are to be considered as work-in-progress that notebooklm must use as a reference.
-
-        > Which one dhamma is very helpful? Heedfulness with regard to skillful qualities: This one dhamma is very helpful.
-
-        there are pros and cons related to this topic selection:
-        * pro:
-            1. it is the 1st progression and therefore there is only one subject
-            2. heedfulness is critical subject that cross cuts the entire dhamma practice and is applicable to all practitioners in training
-        * con:
-            1. it may result in an over-simplification of the resultant instruction manual. this may result in failure when apply the instruction manual to large progression topics eg. "Which eight dhammas are on the side of distinction?" this solution excerpt itself has 4827 characters.
-
-
-        the following json captures the desired generated pattern for this topic. note, the json below will be incomplete until this manual has been completed. as the collaborative effort progresses this json object below will get updated.
+        work task dependency injection is achieved through the pattern-generation-instructions-config.json. this file contains an array of instruction modules that are dynamically linked into the pattern generation process. the bootstrap function enables the configuration to toggle between the running-example and the actual implementation.  
 
         */
-       await this.generator.generate()
+
+      for (const workTaskInstructions of JsonPatternGenerationInstructions
+        .CONFIG.instructions) {
+          const module = await import(workTaskInstructions.modulePath)
+          const bootFunc = module[workTaskInstructions.bootstrap] as BootstrapFunctionDefinition
+          bootFunc()
+      }
     }
 
-    async execute() {
+    async execute(): Promise<PatternResponseJson> {
         this.readBackground()
         this.visualiseProblemSpace()
         this.readNotebookLmCollaboration()
@@ -243,160 +250,15 @@ class JsonPatternGenerationInstructions {
         this.readProgressingByTensCatalogAndUtils()
         this.readPatternAPIForCollaboration()
         this.readWorkTasks()
-        this.readUserPatternRequestQuery()
         await this.runIterativeAndIncrementalApproachToBuilding()
+        this.readUserPatternRequestQuery()
+        await this.generator.generate()
+        if (this.generator.verboseOutput) 
+            console.log(JSON.stringify(this.generator.response, null, 2))
+        return this.generator.response
     }
 }
 
-
-const instructions = new JsonPatternGenerationInstructions()
+// simulate notebooklm user-query submission as injected argument:
+const instructions = new JsonPatternGenerationInstructions(/* UserPatternRequestJson|undefined */)
 await instructions.execute()
-console.log(JSON.stringify(instructions.generator.response, null, 2))
-
-/* 
-$ deno --allow-read json-pattern-generation-instructions.ts 
-USER-QUERY [UserPatternRequestJson]
-{
-  "progressionIndex": 1,
-  "categoryKey": "helpful",
-  "includeSubstantiations": true,
-  "verboseOutput": true
-}
--------------------------------------------------------
-starting [JsonScopeGenerationInstructions]
-assignThePatternNameAndEstablishTheContext:
-PATTERN: Heedful, ardent & resolute
-Which one Dhamma is very helpful? 
-Heedfulness with regard to skillful qualities
--------------------------------------------------------
-parseTheAnswerExcerptAsSubjectJsonArray substantiations:
-[
-  "mock of generalisation/abstraction of expression[Heedfulness] to concept[Heedfulness]"
-]
--------------------------------------------------------
-determineEnterExitStatesAndPractitionerDetails [Heedfulness skillful qualities > enter from] substantiations:
-[
-  "'[dont] ever let yourself get complacent' &  'falls into heedlessness' establish the enter from state",
-  "heedfulness is a composite state of the mind. 'complacent' would be the first state after transition from 'heedlessness'"
-]
--------------------------------------------------------
-determineEnterExitStatesAndPractitionerDetails [Heedfulness skillful qualities > exit to] substantiations:
-[
-  "'when the ending of effluents is still unattained' establish the exit to state",
-  "heedfulness is a composite state of the mind. 'heedful' would be the final state from which there is no falling back"
-]
--------------------------------------------------------
-determineEnterExitStatesAndPractitionerDetails [Heedfulness skillful qualities > target practitioner] substantiations:
-[
-  "provides a clear indication by the buddha himself at who the 'heedfulness' message was targetted at",
-  "although heedfulness is applicable to all practitioners, it is specifically applicable to leaners (ie. one-in-training)"
-]
--------------------------------------------------------
-starting [JsonProblemGenerationInstructions]
-prepareProblemStatement substantiations:
-[
-  "'abandon' within the sources is typically used to express a transition from a negative mind state. 'enter and remain in' is typically used to express a transition to a positive mind state."
-]
--------------------------------------------------------
-{
-  "buildingBlocks": {
-    "Scope": {
-      "progressionIndex": 1,
-      "categoryKey": "helpful",
-      "patternName": "Heedful, ardent & resolute",
-      "subject": [
-        {
-          "name": "Heedfulness",
-          "focusArea": [
-            "skillful qualities"
-          ],
-          "enterFromState": "heedlessness",
-          "exitToState": "heedful",
-          "targetPractitioner": [
-            "stream-enterer",
-            "once-returner",
-            "non-returner"
-          ]
-        }
-      ]
-    },
-    "Problem": [
-      "How do you abandon heedlessness and enter and remain in heedfulness?"
-    ],
-    "Causal-Table": [],
-    "Solution": {
-      "Step-by-Step": [],
-      "Cause-&-Effect": [],
-      "Process View": [],
-      "Concepts & Relationships": [],
-      "State Transitions": []
-    },
-    "Context": [],
-    "Forces": [],
-    "Rationale": "",
-    "Resulting Context": [],
-    "Related Patterns": [],
-    "Case-studies": [],
-    "Simile": []
-  },
-  "quotationSheet": {
-    "Scope": [
-      "[dont] ever let yourself get complacent when the ending of effluents is still unattained",
-      "Because of that gain, he becomes intoxicated, complacent, & falls into heedlessness.",
-      "Now, then, monks, I exhort you: All fabrications are subject to ending & decay. Reach consummation through heedfulness.' That was the Tathāgata's last statement [to a group of noble monks the most backward of which was a stream-enterer]"
-    ],
-    "Problem": [],
-    "Causal-Table": [],
-    "Solution": {
-      "Step-by-Step": [],
-      "Cause-&-Effect": [],
-      "Process View": [],
-      "Concepts & Relationships": [],
-      "State Transitions": []
-    },
-    "Context": [],
-    "Forces": [],
-    "Rationale": [],
-    "Resulting Context": [],
-    "Related Patterns": [],
-    "Case-studies": [],
-    "Simile": [],
-    "Step-by-Step": [],
-    "Cause-&-Effect": [],
-    "Process View": [],
-    "Concepts & Relationships": [],
-    "State Transitions": []
-  },
-  "substantiations": {
-    "Scope": [
-      "parsed as 1 subject & 1 focus area because `with regard to` denotes that the focusArea follows",
-      "mock of generalisation/abstraction of expression[Heedfulness] to concept[Heedfulness]",
-      "'[dont] ever let yourself get complacent' &  'falls into heedlessness' establish the enter from state",
-      "heedfulness is a composite state of the mind. 'complacent' would be the first state after transition from 'heedlessness'",
-      "'when the ending of effluents is still unattained' establish the exit to state",
-      "heedfulness is a composite state of the mind. 'heedful' would be the final state from which there is no falling back",
-      "provides a clear indication by the buddha himself at who the 'heedfulness' message was targetted at",
-      "although heedfulness is applicable to all practitioners, it is specifically applicable to leaners (ie. one-in-training)"
-    ],
-    "Problem": [
-      "'abandon' within the sources is typically used to express a transition from a negative mind state. 'enter and remain in' is typically used to express a transition to a positive mind state."
-    ],
-    "Causal-Table": [],
-    "Solution": {
-      "Step-by-Step": [],
-      "Cause-&-Effect": [],
-      "Process View": [],
-      "Concepts & Relationships": [],
-      "State Transitions": []
-    },
-    "Context": [],
-    "Forces": [],
-    "Rationale": [],
-    "Resulting Context": [],
-    "Related Patterns": [],
-    "Case-studies": [],
-    "Simile": []
-  }
-}
-
-*/

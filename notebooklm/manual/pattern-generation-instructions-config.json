@@ -1,12 +1,22 @@
 { 
+    "userQuery": { 
+        "progressionIndex": 1,
+        "categoryKey": "helpful",
+        "includeSubstantiations": true,
+        "verboseOutput": true
+    },
     "instructions": [
         {
             "modulePath": "./json-scope-generation-instructions.ts",
-            "bootstrap": "registerRunningExample"
+            "bootstrap": "register"
         },
         {
             "modulePath": "./json-problem-generation-instructions.ts",
-            "bootstrap": "registerRunningExample"
-        }    
+            "bootstrap": "register"
+        },    
+        {
+            "modulePath": "./json-running-example-command-resolver.ts",
+            "bootstrap": "register"
+        }
     ]
 }

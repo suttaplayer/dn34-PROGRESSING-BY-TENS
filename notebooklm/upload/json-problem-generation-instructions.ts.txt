@@ -1,50 +1,16 @@
-import { BaseWorkTaskInstructions, NotebooklmCommandResolver, PatternGenerator } from "./pattern-generation-API.ts";
+import { BaseWorkTaskInstructions, PatternGenerator, WorkTaskResolvable } from "./pattern-generation-API.ts";
 import { SubjectJson } from "./pattern-API.ts";
 import { ProgressingByTens } from "./pbt-utils.ts";
 
-export interface NotebooklmProblemCommandResolvable {
+export interface ProblemWorkTaskResolvable extends WorkTaskResolvable {
     composePatternsProblemStatement(enterCompositeStates: Object, exitCompositeStates: Object, targetAnswer: string): Promise<string>
 }
 
-export class NotebooklmProblemCommandResolver extends NotebooklmCommandResolver implements NotebooklmProblemCommandResolvable {
-    public async composePatternsProblemStatement(enterCompositeStates: Object, exitCompositeStates: Object, targetAnswer: string): Promise<string> {
-        /*
-        **Command:compose problem statement** using the:
-            1. basic format: How do you <verb> <unified-enter-state> and <verb> <unified-exit-state>?
-            2. use similar language and expression as found in the sources:
-                * eg:
-                * And what is the miracle of instruction? There is the case where a certain person gives instruction in this way: 'Direct your thought in this way, don't direct it in that. Attend to things in this way, don't attend to them in that. Let go of this, enter and remain in that.' This is called the miracle of instruction.
 
-            eg. How do you abandon heedlessness and enter and remain in heedfulness?
-        */
-        const exeCommand = {
-            commandType: "text_analysis",
-            parameters: {
-                enterExitCompositeStateMaps: [enterCompositeStates, exitCompositeStates],
-                targetAnswer: targetAnswer,
-                extractionTarget: "problem statement",
-                expectedFormat: "string",
-                guidance: "compose a problem statement for the pattern using the enter & exit states. ensure that the resultant problem statement is suitable for the target answer"
-            }
-        }
-        return await this.executeQuery<string>(exeCommand)
-    }
-}
+export type ProblemCommandResolverConstructor = new () => ProblemWorkTaskResolvable
 
-export class RunningExampleProblemCommandResolver extends NotebooklmCommandResolver implements NotebooklmProblemCommandResolvable {
-    public async composePatternsProblemStatement(enterCompositeStates: Object, exitCompositeStates: Object, targetAnswer: string): Promise<string> {
-        const enterVals = Object.values(enterCompositeStates)
-        const exitVals = Object.values(exitCompositeStates)
-        const ret = `How do you abandon ${enterVals[0]} and enter and remain in ${exitVals[0]}ness?`
-        this.substantiationsStack.push("'abandon' within the sources is typically used to express a transition from a negative mind state. 'let go of' is identified in the miracle of instruction, but 'abandon' is more effective in this instance. 'enter and remain in' is typically used to express a transition to a positive mind state.")
-        return ret
-    }
-}
-
-export type ProblemCommandResolverConstructor = new () => NotebooklmProblemCommandResolver
-
-export class JsonProblemGenerationInstructions extends BaseWorkTaskInstructions<string[], NotebooklmProblemCommandResolver> {
-    public static RESOLVER_CTR: ProblemCommandResolverConstructor = NotebooklmProblemCommandResolver
+export class JsonProblemGenerationInstructions extends BaseWorkTaskInstructions<string[], ProblemWorkTaskResolvable> {
+    public static RESOLVER_CTR: ProblemCommandResolverConstructor
 
     visualiseSolutionSpace() {
         /*
@@ -118,7 +84,7 @@ export class JsonProblemGenerationInstructions extends BaseWorkTaskInstructions<
         await this.prepareProblemStatement()
     }
 
-    protected constructResolver(): NotebooklmProblemCommandResolver {
+    protected constructResolver(): ProblemWorkTaskResolvable {
         return new JsonProblemGenerationInstructions.RESOLVER_CTR()
     }
 
@@ -139,9 +105,4 @@ export class JsonProblemGenerationInstructions extends BaseWorkTaskInstructions<
 
 export function register() {
     PatternGenerator.INSTRUCTIONS_REGISTRY.set("Problem", JsonProblemGenerationInstructions)
-}
-
-export function registerRunningExample() {
-    register()
-    JsonProblemGenerationInstructions.RESOLVER_CTR = RunningExampleProblemCommandResolver
 }
