@@ -1,5 +1,6 @@
 const filenames = [
 "causation-expression-API.ts",
+"json-causal-table-generation-instructions.ts",
 "json-context-generation-instructions.ts",
 "json-forces-generation-instructions.ts",
 "json-notebooklm-command-resolver.ts",

@@ -26,8 +26,9 @@ import { JsonContextGenerationInstructions } from "./json-context-generation-ins
 import { JsonForcesGenerationInstructions } from "./json-forces-generation-instructions.ts";
 import { JsonProblemGenerationInstructions, ProblemWorkTaskResolvable } from "./json-problem-generation-instructions.ts";
 import { JsonScopeGenerationInstructions, ScopeWorkTaskResolvable } from "./json-scope-generation-instructions.ts";
-import { DeterminantQuotationString, PractitionerKey, ScopeJson, SubjectJson } from "./pattern-API.ts";
+import { CausalRelationJson, DeterminantQuotationString, PractitionerKey, SubjectJson } from "./pattern-API.ts";
 import { WorkTaskResolver } from "./pattern-generation-API.ts";
+import { CausalTableWorkTaskResolvable, JsonCausalTableGenerationInstructions } from "./json-causal-table-generation-instructions.ts"; // Import the new interface
 
 class CommandResolver extends WorkTaskResolver {
     public async generaliseAndAbstractToConcept(term: string): Promise<string> {
@@ -161,11 +162,96 @@ class ForcesCommandResolver extends CommandResolver {
     }
 }
 
+class CausalTableCommandResolver extends CommandResolver implements CausalTableWorkTaskResolvable {
+    public async generateCausalTable(subjects: SubjectJson[], existingCausalRelations?: CausalRelationJson[]): Promise<CausalRelationJson[]> {
+        this.substantiationsStack.push("mocked generation of causal table for running example 'Heedful, ardent & resolute'");
+
+        // For the running example "Heedful, ardent & resolute", we'll provide a simplified
+        // set of causal relations, including paths to heedfulness and jhāna progression.
+        const mockCausalTable: CausalRelationJson[] = [
+            // Causes leading to Heedfulness (as discussed in previous turn)
+            { this: "shame", relation: 3, that: "heedful" },
+            { this: "compunction", relation: 3, that: "heedful" },
+            { this: "admirable friendship", relation: 3, that: "shame" }, // Reciprocal link
+            { this: "admirable friendship", relation: 3, that: "compunction" }, // Reciprocal link
+            { this: "associating with people of integrity", relation: 3, that: "admirable friendship" },
+            { this: "directing oneself rightly", relation: 3, that: "heedful" },
+            { this: "having done merit in the past", relation: 3, that: "heedful" },
+            { this: "clear knowing", relation: 3, that: "heedful" }, // Link to `generaliseAndAbstractToConcept` abstraction
+
+            // Effects of Heedfulness (from discussion)
+            { this: "heedful", relation: 3, that: "joy" },
+            { this: "heedful", relation: 3, that: "ardent" },
+            { this: "heedful", relation: 3, that: "resolute" },
+            { this: "heedful", relation: 3, that: "easy to correct" },
+            { this: "heedful", relation: 3, that: "conviction" },
+            { this: "heedful", relation: 3, that: "release" },
+
+            // Progressive meditative states (Jhānas as mountain peaks)
+            { this: "seclusion from sensuality", relation: 1, that: "first jhāna" },
+            { this: "first jhāna", relation: 3, notThat: true, that: "perception of sensuality" },
+            { this: "stilling of directed thoughts & evaluations", relation: 3, that: "second jhāna" },
+            { this: "second jhāna", relation: 3, notThat: true, that: "directed thoughts & evaluations" },
+            { this: "fading of rapture", relation: 3, that: "third jhāna" },
+            { this: "third jhāna", relation: 3, notThat: true, that: "rapture" },
+            { this: "abandoning of pleasure & pain", relation: 3, that: "fourth jhāna" },
+            { this: "fourth jhāna", relation: 3, notThat: true, that: "in-and-out breaths" },
+
+            // Formless attainments (mountain peaks)
+            { this: "transcending perceptions of physical form", relation: 3, that: "dimension of the infinitude of space" },
+            { this: "dimension of the infinitude of space", relation: 3, notThat: true, that: "perception of forms" },
+            { this: "transcending dimension of the infinitude of space", relation: 3, that: "dimension of the infinitude of consciousness" },
+            { this: "dimension of the infinitude of consciousness", relation: 3, notThat: true, that: "perception of the infinitude of space" },
+            { this: "transcending dimension of the infinitude of consciousness", relation: 3, that: "dimension of nothingness" },
+            { this: "dimension of nothingness", relation: 3, notThat: true, that: "perception of the infinitude of consciousness" },
+            { this: "transcending dimension of nothingness", relation: 3, that: "dimension of neither perception nor non-perception" },
+            { this: "dimension of neither perception nor non-perception", relation: 3, notThat: true, that: "perception of nothingness" },
+            { this: "transcending dimension of neither perception nor non-perception", relation: 3, that: "cessation of perception & feeling" },
+            { this: "cessation of perception & feeling", relation: 3, notThat: true, that: "perceptions & feelings" },
+            { this: "cessation of perception & feeling (seen with discernment)", relation: 3, that: "ending of effluents" },
+
+            // Obstructions/Forces (from previous discussions)
+            { this: "shamelessness", relation: 3, that: "heedlessness" },
+            { this: "lack of compunction", relation: 3, that: "heedlessness" },
+            { this: "heedlessness", relation: 3, cannot: true, that: "abandoning apathy" },
+            { this: "heedlessness", relation: 3, cannot: true, that: "being hard to correct" },
+            { this: "heedlessness", relation: 3, cannot: true, that: "evil friendship" },
+            { this: "evil friendship", relation: 3, cannot: true, that: "abandoning a lack of conviction" },
+            { this: "evil friendship", relation: 3, cannot: true, that: "abandoning stinginess" },
+            { this: "evil friendship", relation: 3, cannot: true, that: "abandoning laziness" },
+            { this: "laziness", relation: 3, cannot: true, that: "abandoning restlessness" },
+            { this: "laziness", relation: 3, cannot: true, that: "abandoning a lack of restraint" },
+            { this: "laziness", relation: 3, cannot: true, that: "abandoning poor virtue" },
+
+            // Fetters (mountain peaks of abandonment)
+            { this: "abandoning self-identification views, uncertainty, grasping at habits & practices", relation: 3, that: "stream-entry" },
+            { this: "stream-entry", relation: 3, notThat: true, that: "self-identification views" },
+            { this: "stream-entry", relation: 3, notThat: true, that: "uncertainty" },
+            { this: "stream-entry", relation: 3, notThat: true, that: "grasping at habits & practices" },
+            { this: "abandoning sensual desire & ill will", relation: 3, that: "non-returner" }, // Leads to non-returner
+            { this: "non-returner", relation: 3, notThat: true, that: "sensual desire" },
+            { this: "non-returner", relation: 3, notThat: true, that: "ill will" },
+            { this: "abandoning higher fetters", relation: 3, that: "arahantship" }, // Passion for form, formless, conceit, restlessness, ignorance
+            { this: "arahantship", relation: 3, notThat: true, that: "passion for form" },
+            { this: "arahantship", relation: 3, notThat: true, that: "passion for what is formless" },
+            { this: "arahantship", relation: 3, notThat: true, that: "conceit" },
+            { this: "arahantship", relation: 3, notThat: true, that: "restlessness" },
+            { this: "arahantship", relation: 3, notThat: true, that: "ignorance" },
+        ];
+
+        // Merge with any provided existing relations (e.g., from direct experience)
+        const combinedCausalTable = existingCausalRelations ? [...existingCausalRelations, ...mockCausalTable] : mockCausalTable;
+
+        return combinedCausalTable;
+    }
+}
+
 export function register() {
     JsonScopeGenerationInstructions.RESOLVER_CTR = ScopeCommandResolver
     JsonProblemGenerationInstructions.RESOLVER_CTR = ProblemCommandResolver
     JsonContextGenerationInstructions.RESOLVER_CTR = ContextCommandResolver
     JsonForcesGenerationInstructions.RESOLVER_CTR = ForcesCommandResolver
+    JsonCausalTableGenerationInstructions.RESOLVER_CTR = CausalTableCommandResolver
 }
 
 /* deno --allow-read json-pattern-generation-instructions.ts

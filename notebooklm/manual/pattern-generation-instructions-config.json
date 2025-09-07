@@ -23,6 +23,10 @@
             "bootstrap": "register"
         },    
         {
+            "modulePath": "./json-causal-table-generation-instructions.ts",
+            "bootstrap": "register"
+        },    
+        {
             "modulePath": "./json-running-example-command-resolver.ts",
             "bootstrap": "register"
         }

@@ -2,8 +2,10 @@ import { ContextWorkTaskResolvable, JsonContextGenerationInstructions } from "./
 import { JsonForcesGenerationInstructions, ForcesWorkTaskResolvable } from "./json-forces-generation-instructions.ts";
 import { JsonProblemGenerationInstructions, ProblemWorkTaskResolvable } from "./json-problem-generation-instructions.ts";
 import { JsonScopeGenerationInstructions, ScopeWorkTaskResolvable } from "./json-scope-generation-instructions.ts";
-import { DeterminantQuotationString, PractitionerKey, ScopeJson, SubjectJson } from "./pattern-API.ts";
+import { CausalRelationJson, DeterminantQuotationString, PractitionerKey, SubjectJson } from "./pattern-API.ts";
 import { WorkTaskResolver } from "./pattern-generation-API.ts";
+import { CausalExpressionGuide } from "./causation-expression-API.ts"; // Assuming 
+import { CausalTableWorkTaskResolvable, JsonCausalTableGenerationInstructions } from "./json-causal-table-generation-instructions.ts";
 
 /*
 purpose: provide notebooklm with a base abstraction which must be specialised for individual work tasks that are assosciated with the notebooklm "**Command:** annotation"
@@ -299,9 +301,175 @@ class ForcesCommandResolver extends CommandResolver implements ForcesWorkTaskRes
     }
 }
 
+class CausalTableCommandResolver extends CommandResolver implements CausalTableWorkTaskResolvable {
+
+    // Helper to safely split and trim a string by a delimiter
+    private splitAndTrim(text: string, delimiter: string): string[] {
+        return text.split(delimiter).map(item => item.trim()).filter(item => item.length > 0);
+    }
+
+    // Helper to infer a term from surrounding context (for thisGroup: 0 or thatGroup: 0)
+    private async inferContextualTerm(text: string, target: 'this' | 'that', contextHint: string): Promise<string> {
+        this.substantiationsStack.push(`Attempting to infer '${target}' term from context for: '${text}' with hint: '${contextHint}'`);
+        const exeCommand = {
+            commandType: "text_analysis",
+            parameters: {
+                textToAnalyze: text,
+                extractionTarget: `inferred ${target} term`,
+                expectedFormat: "string",
+                guidance: `From the given text snippet and context hint, infer the most appropriate and concise '${target}' term. Context: ${contextHint}.`,
+            }
+        };
+        const inferredTerm = await this.executeQuery<string>(exeCommand);
+        this.substantiationsStack.push(`Inferred '${target}' as: '${inferredTerm}'`);
+        return inferredTerm;
+    }
+
+    // Main method to generate the causal table
+    public async generateCausalTable(subjects: SubjectJson[], existingCausalRelations?: CausalRelationJson[]): Promise<CausalRelationJson[]> {
+        const causalTable: CausalRelationJson[] = existingCausalRelations ? [...existingCausalRelations] : [];
+        const visitedConcepts = new Set<string>(); // To prevent infinite recursion and duplicate processing
+        const conceptsToExplore: { name: string; type: 'subject' | 'this' | 'that' }[] = [];
+
+        // Add initial subjects and their boundary states to concepts to explore
+        for (const subj of subjects) {
+            const abstractedSubjectName = await this.generaliseAndAbstractToConcept(subj.name);
+            conceptsToExplore.push({ name: abstractedSubjectName, type: 'subject' });
+            if (subj.enterFromState) {
+                const abstractedEnterFrom = await this.generaliseAndAbstractToConcept(subj.enterFromState);
+                conceptsToExplore.push({ name: abstractedEnterFrom, type: 'this' }); // Explore what leads to enterFromState
+            }
+            if (subj.exitToState) {
+                const abstractedExitTo = await this.generaliseAndAbstractToConcept(subj.exitToState);
+                conceptsToExplore.push({ name: abstractedExitTo, type: 'that' }); // Explore what is caused by exitToState
+            }
+        }
+
+        let depth = 0;
+        const MAX_DEPTH = 3; // Limit recursion depth to prevent over-generalisation and manage complexity
+
+        while (conceptsToExplore.length > 0 && depth < MAX_DEPTH) {
+            depth++;
+            const currentConcepts = conceptsToExplore.splice(0, conceptsToExplore.length); // Process current level
+
+            for (const currentConcept of currentConcepts) {
+                const conceptName = currentConcept.name.toLowerCase();
+
+                if (visitedConcepts.has(conceptName)) {
+                    continue; // Skip if already processed to avoid cycles
+                }
+                visitedConcepts.add(conceptName);
+                this.substantiationsStack.push(`Exploring causal relations for concept: '${conceptName}' at depth ${depth}`);
+
+                // Perform a broad search for quotations related to the current concept
+                const searchKeywords = `${this.executionContext} ${conceptName}`;
+                const determinantQuotations = await this.executeQuery<DeterminantQuotationString[]>({
+                    commandType: "information_retrieval",
+                    parameters: {
+                        query: searchKeywords,
+                        sources: ["AN_nblm.txt", "DN_nblm.txt", "KN_Dhp_nblm.txt", "KN_Iti_nblm.txt", "KN_Khp_nblm.txt", "KN_StNp_nblm.txt", "KN_Thag_nblm.txt", "KN_Thig_nblm.txt", "KN_Ud_nblm.txt", "MN_nblm.txt", "SN_nblm.txt"],
+                        contextHint: `Identifying causal relations involving '${conceptName}' within the overall pattern context: ${this.executionContext}.`,
+                        resultType: "DeterminantQuotationString[]"
+                    }
+                });
+                this.substantiationsStack.push(`Found ${determinantQuotations.length} determinant quotations for '${conceptName}'`);
+
+                for (const quotation of determinantQuotations) {
+                    for (const expression of CausalExpressionGuide) {
+                        const regex = new RegExp(expression.pattern, 'i'); // Case-insensitive match
+                        const match = quotation.match(regex);
+
+                        if (match) {
+                            this.substantiationsStack.push(`Matched pattern '${expression.pattern}' in quotation: '${quotation}'`);
+                            let extractedThis = match[expression.parseTransform.thisGroup];
+                            let extractedThat = match[expression.parseTransform.thatGroup];
+
+                            // Apply transformations if defined
+                            if (expression.parseTransform.transformThis) {
+                                extractedThis = expression.parseTransform.transformThis
+                                    .replace(/\${thisGroupText}/g, extractedThis || '')
+                                    .replace(/\${thatGroupText}/g, extractedThat || '')
+                                    .replace(/\${captureGroup\((\d+)\)}/g, (m, g) => match[parseInt(g)] || '');
+                            }
+                            if (expression.parseTransform.transformThat) {
+                                extractedThat = expression.parseTransform.transformThat
+                                    .replace(/\${thisGroupText}/g, extractedThis || '')
+                                    .replace(/\${thatGroupText}/g, extractedThat || '')
+                                    .replace(/\${captureGroup\((\d+)\)}/g, (m, g) => match[parseInt(g)] || '');
+                            }
+
+                            // Handle inference for thisGroup: 0 or thatGroup: 0
+                            if (expression.parseTransform.thisGroup === 0 && !extractedThis) {
+                                extractedThis = await this.inferContextualTerm(quotation, 'this', this.executionContext);
+                            }
+                            if (expression.parseTransform.thatGroup === 0 && !extractedThat) {
+                                extractedThat = await this.inferContextualTerm(quotation, 'that', this.executionContext);
+                            }
+
+                            if (!extractedThis || !extractedThat) {
+                                this.substantiationsStack.push(`Skipping CausalRelation due to uninferable 'this' or 'that' from match: ${match}`);
+                                continue;
+                            }
+
+                            // Handle multiple comma-separated 'that' values
+                            const rawThats = this.splitAndTrim(extractedThat, ',');
+                            const rawThiss = this.splitAndTrim(extractedThis, ','); // Also handle multiple 'this' for more robust parsing
+
+                            for (const singleThat of rawThats) {
+                                for (const singleThis of rawThiss) {
+                                    const abstractedThis = await this.generaliseAndAbstractToConcept(singleThis);
+                                    const abstractedThat = await this.generaliseAndAbstractToConcept(singleThat);
+
+                                    const newRelation: CausalRelationJson = {
+                                        this: abstractedThis.toLowerCase(),
+                                        that: abstractedThat.toLowerCase(),
+                                        relation: expression.relation,
+                                        notThis: expression.notThis,
+                                        cannot: expression.cannot,
+                                        notThat: expression.notThat,
+                                        // quotationIndicies: TODO: Integrate with actual quotationSheet management
+                                    };
+
+                                    // Check for duplicates before adding
+                                    const isDuplicate = causalTable.some(
+                                        r => r.this === newRelation.this &&
+                                            r.that === newRelation.that &&
+                                            r.relation === newRelation.relation &&
+                                            r.notThis === newRelation.notThis &&
+                                            r.cannot === newRelation.cannot &&
+                                            r.notThat === newRelation.notThat
+                                    );
+
+                                    if (!isDuplicate) {
+                                        causalTable.push(newRelation);
+                                        this.substantiationsStack.push(`Added CausalRelation: ${JSON.stringify(newRelation)}`);
+
+                                        // Add new concepts to explore for the next depth level
+                                        if (!visitedConcepts.has(newRelation.this)) {
+                                            conceptsToExplore.push({ name: newRelation.this, type: 'this' });
+                                        }
+                                        if (!visitedConcepts.has(newRelation.that)) {
+                                            conceptsToExplore.push({ name: newRelation.that, type: 'that' });
+                                        }
+                                    } else {
+                                        this.substantiationsStack.push(`Skipped duplicate CausalRelation: ${JSON.stringify(newRelation)}`);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        return causalTable;
+    }
+}
+
+
 export function register() {
     JsonScopeGenerationInstructions.RESOLVER_CTR = ScopeCommandResolver
     JsonProblemGenerationInstructions.RESOLVER_CTR = ProblemCommandResolver
     JsonContextGenerationInstructions.RESOLVER_CTR = ContextCommandResolver
     JsonForcesGenerationInstructions.RESOLVER_CTR = ForcesCommandResolver
+    JsonCausalTableGenerationInstructions.RESOLVER_CTR = CausalTableCommandResolver;
 }
