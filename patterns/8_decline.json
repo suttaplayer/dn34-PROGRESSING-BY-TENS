@@ -6,120 +6,114 @@
       "patternName": "Grounds for laziness",
       "subject": [
         {
-          "name": "pending task",
+          "name": "work",
           "focusArea": [
-            "arousal of energy"
+            "having work to do"
           ],
-          "enterFromState": "sloth & torpor",
-          "exitToState": "unbinding",
+          "enterFromState": "laziness",
+          "exitToState": "aroused energy",
           "targetPractitioner": [
             "conviction-dhamma-follower",
             "stream-enterer",
-            "once-returner",
-            "non-returner"
+            "once-returner"
           ]
         },
         {
-          "name": "completed task",
+          "name": "work",
           "focusArea": [
-            "arousal of energy"
+            "having done work"
           ],
-          "enterFromState": "sloth & torpor",
-          "exitToState": "unbinding",
+          "enterFromState": "laziness",
+          "exitToState": "aroused energy",
           "targetPractitioner": [
             "conviction-dhamma-follower",
             "stream-enterer",
-            "once-returner",
-            "non-returner"
+            "once-returner"
           ]
         },
         {
-          "name": "pending journey",
+          "name": "journey",
           "focusArea": [
-            "arousal of energy"
+            "having to go on a journey"
           ],
-          "enterFromState": "sloth & torpor",
-          "exitToState": "unbinding",
+          "enterFromState": "laziness",
+          "exitToState": "aroused energy",
           "targetPractitioner": [
             "conviction-dhamma-follower",
             "stream-enterer",
-            "once-returner",
-            "non-returner"
+            "once-returner"
           ]
         },
         {
-          "name": "completed journey",
+          "name": "journey",
           "focusArea": [
-            "arousal of energy"
+            "having gone on a journey"
           ],
-          "enterFromState": "sloth & torpor",
-          "exitToState": "unbinding",
+          "enterFromState": "laziness",
+          "exitToState": "aroused energy",
           "targetPractitioner": [
             "conviction-dhamma-follower",
             "stream-enterer",
-            "once-returner",
-            "non-returner"
+            "once-returner"
           ]
         },
         {
-          "name": "insufficient alms-food",
+          "name": "almsfood",
           "focusArea": [
-            "arousal of energy"
+            "not getting enough"
           ],
-          "enterFromState": "sloth & torpor",
-          "exitToState": "unbinding",
+          "enterFromState": "laziness",
+          "exitToState": "aroused energy",
           "targetPractitioner": [
             "conviction-dhamma-follower",
             "stream-enterer",
-            "once-returner",
-            "non-returner"
+            "once-returner"
           ]
         },
         {
-          "name": "sufficient alms-food",
+          "name": "almsfood",
           "focusArea": [
-            "arousal of energy"
+            "getting enough"
           ],
-          "enterFromState": "sloth & torpor",
-          "exitToState": "unbinding",
+          "enterFromState": "laziness",
+          "exitToState": "aroused energy",
           "targetPractitioner": [
             "conviction-dhamma-follower",
             "stream-enterer",
-            "once-returner",
-            "non-returner"
+            "once-returner"
           ]
         },
         {
-          "name": "onset of illness",
+          "name": "illness",
           "focusArea": [
-            "arousal of energy"
+            "slight illness"
           ],
-          "enterFromState": "sloth & torpor",
-          "exitToState": "unbinding",
+          "enterFromState": "laziness",
+          "exitToState": "aroused energy",
           "targetPractitioner": [
             "conviction-dhamma-follower",
             "stream-enterer",
-            "once-returner",
-            "non-returner"
+            "once-returner"
           ]
         },
         {
-          "name": "recovery from illness",
+          "name": "illness",
           "focusArea": [
-            "arousal of energy"
+            "recent recovery from illness"
           ],
-          "enterFromState": "sloth & torpor",
-          "exitToState": "unbinding",
+          "enterFromState": "laziness",
+          "exitToState": "aroused energy",
           "targetPractitioner": [
             "conviction-dhamma-follower",
             "stream-enterer",
-            "once-returner",
-            "non-returner"
+            "once-returner"
           ]
         }
       ]
     },
-    "Problem": "",
+    "Problem": [
+      "How do you abandon laziness and cultivate aroused energy?"
+    ],
     "Causal-Table": [],
     "Solution": {
       "Step-by-Step": [],
@@ -128,8 +122,21 @@
       "Concepts & Relationships": [],
       "State Transitions": []
     },
-    "Context": [],
-    "Forces": [],
+    "Context": [
+      "A practitioner finds themselves experiencing various physical or mental conditions, such as having work to do, having completed work, preparing for a journey, or having finished a journey, which trigger thoughts of fatigue and a desire to lie down.",
+      "This leads to a lack of effort for attaining the as-yet-unattained, reaching the as-yet-unreached, or realizing the as-yet-unrealized, thereby hindering spiritual progress.",
+      "Similarly, situations like not getting enough almsfood, getting too much almsfood (leading to bodily heaviness), experiencing a slight illness, or recovering from an illness are perceived as justifications for resting, further obstructing diligent practice.",
+      "The mind, when untamed, unguarded, unprotected, and unrestrained, is prone to such inclinations, lacking the pliancy and development needed to overcome these obstacles and make strenuous effort.",
+      "This pattern is applicable when a monk in training struggles with maintaining persistence and alertness in the face of daily tasks, physical states, or a general tendency towards idleness, risking decline in skillful qualities."
+    ],
+    "Forces": [
+      "The body's natural inclination towards comfort and aversion to exertion, particularly after or during work, travel, or illness, acts as a powerful countervailing force, making it difficult to maintain spiritual effort.",
+      "The mind's inherent tendency to be 'quick to reverse itself' and its 'undeveloped' and 'unpliant' nature contribute to laziness, making it hard to sustain concentration and develop skillful qualities.",
+      "The allure of immediate sensual gratification and the satisfaction of physical ease often overshadow the long-term benefits of rigorous practice, leading to complacency and a 'slack going-forth'.",
+      "A failure to properly discern the 'origination, the passing away, the allure, the drawbacks, & the escape' from the six media of contact means that a monk may not see the danger in giving in to sloth and torpor, or in delighting in attachment.",
+      "The tendency to 'fall back on what was done in the past as being essential' or to be consumed by 'delusion-born fevers' can undermine the desire and effort to cultivate new, skillful qualities, perpetuating the cycle of laziness.",
+      "The complexity of the path to awakening and the subtle nature of hindrances, such as the 'tangled skein' of craving, make a simple 'fix' insufficient, requiring consistent, ardent, and resolute effort to unravel these defilements."
+    ],
     "Rationale": "",
     "Resulting Context": [],
     "Related Patterns": [],
@@ -138,18 +145,13 @@
   },
   "quotationSheet": {
     "Scope": [
-      "Eight grounds for the arousal of energy: There is the case, friends, where a monk has some work to do. The thought occurs to him: 'I will have to do this work. But when I am doing this work, it will not be easy to attend to the Buddha's message. Why don't I make an effort beforehand for the attaining of the as-yet-unattained, the reaching of the as-yet-unreached, the realization of the as-yet-unrealized?' So he makes an effort for the attaining of the as-yet-unattained, the reaching of the as-yet-unreached, the realization of the as-yet-unrealized. This is the first ground for the arousal of energy.\n\n'Then there is the case where a monk has done some work. The thought occurs to him: 'I have done some work. While I was doing work, I couldn't attend to the Buddha's message. Why don't I make an effort for the attaining of the as-yet-unattained, the reaching of the as-yet-unreached, the realization of the as-yet-unrealized?' So he makes an effort for the attaining of the as-yet-unattained, the reaching of the as-yet-unreached, the realization of the as-yet-unrealized. This is the second ground for the arousal of energy.\n\n'Then there is the case where a monk has to go on a journey. The thought occurs to him: 'I will have to go on this journey. But when I am going on the journey, it will not be easy to attend to the Buddha's message. Why don't I make an effort beforehand for the attaining of the as-yet-unattained, the reaching of the as-yet-unreached, the realization of the as-yet-unrealized?' So he makes an effort for the attaining of the as-yet-unattained, the reaching of the as-yet-unreached, the realization of the as-yet-unrealized. This is the third ground for the arousal of energy.\n\n'Then there is the case where a monk has gone on a journey. The thought occurs to him: 'I have gone on a journey. While I was going on the journey, I couldn't attend to the Buddha's message. Why don't I make an effort for the attaining of the as-yet-unattained, the reaching of the as-yet-unreached, the realization of the as-yet-unrealized?' So he makes an effort for the attaining of the as-yet-unattained, the reaching of the as-yet-unreached, the realization of the as-yet-unrealized. This is the fourth ground for the arousal of energy.\n\n'Then there is the case where a monk, having gone for alms in a village or town, does not get as much coarse or refined food as he would like for his fill. The thought occurs to him: 'I, having gone for alms in a village or town, have not gotten as much coarse or refined food as I would like for my fill. This body of mine is light & suitable for work. Why don't I make an effort for the attaining of the as-yet-unattained, the reaching of the as-yet-unreached, the realization of the as-yet-unrealized?' So he makes an effort for the attaining of the as-yet-unattained, the reaching of the as-yet-unreached, the realization of the as-yet-unrealized. This is the fifth ground for the arousal of energy.\n\n'Then there is the case where a monk, having gone for alms in a village or town, gets as much coarse or refined food as he would like for his fill. The thought occurs to him: 'I, having gone for alms in a village or town, have gotten as much coarse or refined food as I would like for my fill. This body of mine is light & suitable for work. Why don't I make an effort for the attaining of the as-yet-unattained, the reaching of the as-yet-unreached, the realization of the as-yet-unrealized?' So he makes an effort for the attaining of the as-yet-unattained, the reaching of the as-yet-unreached, the realization of the as-yet-unrealized. This is the sixth ground for the arousal of energy.\n\n'Then there is the case where a monk comes down with a slight illness. The thought occurs to him: 'I have come down with a slight illness. Now, there's the possibility that it could get worse. Why don't I make an effort beforehand for the attaining of the as-yet-unattained, the reaching of the as-yet-unreached, the realization of the as-yet-unrealized?' So he makes an effort for the attaining of the as-yet-unattained, the reaching of the as-yet-unreached, the realization of the as-yet-unrealized. This is the seventh ground for the arousal of energy.\n\n'Then there is the case where a monk has recovered from his illness, not long after his recovery. The thought occurs to him: 'I have recovered from my illness. It's not long after my recovery. Now, there's the possibility that the illness could come back. Why don't I make an effort beforehand for the attaining of the as-yet-unattained, the reaching of the as-yet-unreached, the realization of the as-yet-unrealized?' So he makes an effort for the attaining of the as-yet-unattained, the reaching of the as-yet-unreached, the realization of the as-yet-unrealized. This is the eighth ground for the arousal of energy.",
-      "Then there is the case where a certain person goes without cloth, rejecting conventions, licking his hands, not coming when called, not staying when asked. He doesn't accept food brought or specially made. He doesn't consent to an invitation (to a meal). He doesn't receive anything from the mouth of a pot, from the mouth of a container, across a threshold, across a stick, across a pestle, from two eating together, from a pregnant woman, from a woman nursing a child, from a woman living with a man, from where it is announced that food is to be distributed, from where a dog is waiting, from where flies are buzzing. He accepts no meat, no distilled liquor, no wine, no fermented liquor. He limits himself to one house for one morsel, to two houses for two morsels… to seven houses for seven morsels. He lives on one saucerful a day, two saucerfuls a day… seven saucerfuls a day. He takes food once a day, once every two days… once every seven days, and so on up to once every half-month. He remains devoted to the practice of regulating his intake of food. He eats a diet of green vegetables or millet or wild rice or hide-parings or moss or rice bran or rice-water or sesame flour or grass or cow dung. He lives off forest roots & fruits. He eats fallen fruits. He clothes himself in hemp, in canvas, in shrouds, in thrown-away rags, in tree bark, in antelope hide, in wood-shavings fabric, in head-hair wool, in wild-animal wool, in owls' wings. He is a hair-&-beard puller, one devoted to the practice of pulling out his hair & beard. He is a stander, one who rejects seats. He is a hands-around-the-knees sitter, one devoted to the exertion of sitting with his hands around his knees. He is a spike-mattresser, one who makes his bed on a bed of spikes. He is a third-time-in-the-evening bather, one who stays devoted to the practice of bathing in water. Thus, in these many ways, he is devoted to the practice of tormenting & torturing the body. This is called a person who torments himself and is devoted to the practice of torturing himself.",
-      "But if one follows the holy life appropriately, even when having made a wish… having made no wish… both having made a wish and having made no wish… neither having made a wish nor having made no wish, one is capable of obtaining results.",
-      "When one knows of a search, 'As I pursue this search, unskillful mental qualities decline, and skillful mental qualities increase,' that sort of search is to be pursued.",
-      "The mindfulness that 'I will make complete any training with regard to good conduct that is not yet complete, or I will protect with discernment any training with regard to good conduct that is complete' is well established right within. The mindfulness that 'I will make complete any training with regard to the basics of the holy life that is not yet complete, or I will protect with discernment any training with regard to the basics of the holy life that is complete' is well established right within. The mindfulness that 'I will scrutinize with discernment any Dhamma that is not yet scrutinized, or I will protect with discernment any Dhamma that has been scrutinized' is well established right within. The mindfulness that 'I will touch through release any Dhamma that is not yet touched, or I will protect with discernment any Dhamma that has been touched' is well established right within.",
-      "Then there is the case where a monk has abandoned five factors, is endowed with six, guards one, is supported in four, has shaken off idiosyncratic truths, has thoroughly given up searching, is undisturbed in his resolves, is calmed in his bodily-fabrication, is well released in mind, is well released in discernment.\n\n'And how has a monk abandoned five factors? There is the case where a monk's sensual desire is abandoned. His ill will… His sloth & torpor… His restlessness & anxiety… His uncertainty is abandoned. This is how a monk has abandoned five factors.",
-      "This Dhamma that I have attained is deep, hard to see, hard to realize, peaceful, refined, beyond the scope of conjecture, subtle, to-be-experienced by the wise. But this generation delights in attachment, is excited by attachment, enjoys attachment. For a generation delighting in attachment, excited by attachment, enjoying attachment, this or that conditionality & dependent co-arising are hard to see. This state, too, is hard to see: the pacification of all fabrications, the relinquishing of all acquisitions, the ending of craving; dispassion; cessation; unbinding. And if I were to teach the Dhamma and others would not understand me, that would be tiresome for me, troublesome for me.",
-      "Monks, I will also teach you unbinding and the path leading to unbinding …",
-      "Monks, six qualities lead to the non-decline of a monk in training. Which six? Not delighting in work, not delighting in talking, not delighting in sleeping, not delighting in entanglement, guarding the sense faculties, and knowing moderation in food. These six qualities lead to the non-decline of a monk in training.",
-      "They're addicted to heedlessness —dullards, fools— while one who is wise cherishes heedfulness as his highest wealth.",
-      "Heedfulness with regard to skillful qualities",
-      "Then, if a person, when asked a question, stands by what is possible and impossible, stands by agreed-upon assumptions, stands by teachings known to be true, stands by standard procedure, then—that being the case—he is a person fit to talk with."
+      "Eight grounds for laziness: There is the case, friends, where a monk has some work to do. The thought occurs to him: 'I will have to do this work. But when I have done this work, my body will be tired. Why don't I lie down?' So he lies down. He doesn't make an effort for the attaining of the as-yet-unattained, the reaching of the as-yet-unreached, the realization of the as-yet-unrealized. This is the first ground for laziness.\n\n'Then there is the case where a monk has done some work. The thought occurs to him: 'I have done some work. Now that I have done work, my body is tired. Why don't I lie down?' So he lies down. He doesn't make an effort for the attaining of the as-yet-unattained, the reaching of the as-yet-unreached, the realization of the as-yet-unrealized. This is the second ground for laziness.\n\n'Then there is the case where a monk has to go on a journey. The thought occurs to him: 'I will have to go on this journey. But when I have gone on the journey, my body will be tired. Why don't I lie down?' So he lies down. He doesn't make an effort for the attaining of the as-yet-unattained, the reaching of the as-yet-unreached, the realization of the as-yet-unrealized. This is the third ground for laziness.\n\n'Then there is the case where a monk has gone on a journey. The thought occurs to him: 'I have gone on a journey. Now that I have gone on a journey, my body is tired. Why don't I lie down?' So he lies down. He doesn't make an effort for the attaining of the as-yet-unattained, the reaching of the as-yet-unreached, the realization of the as-yet-unrealized. This is the fourth ground for laziness.\n\n'Then there is the case where a monk, having gone for alms in a village or town, does not get as much coarse or refined food as he would like for his fill. The thought occurs to him: 'I, having gone for alms in a village or town, have not gotten as much coarse or refined food as I would like for my fill. This body of mine is tired & unsuitable for work. Why don't I lie down?' So he lies down. He doesn't make an effort for the attaining of the as-yet-unattained, the reaching of the as-yet-unreached, the realization of the as-yet-unrealized. This is the fifth ground for laziness.\n\n'Then there is the case where a monk, having gone for alms in a village or town, gets as much coarse or refined food as he would like for his fill. The thought occurs to him: 'I, having gone for alms in a village or town, have gotten as much coarse or refined food as I would like for my fill. This body of mine is heavy & unsuitable for work—stuffed with beans, as it were. Why don't I lie down?' So he lies down. He doesn't make an effort for the attaining of the as-yet-unattained, the reaching of the as-yet-unreached, the realization of the as-yet-unrealized. This is the sixth ground for laziness.\n\n'Then there is the case where a monk comes down with a slight illness. The thought occurs to him: 'I have come down with a slight illness. There's a need to lie down.' So he lies down. He doesn't make an effort for the attaining of the as-yet-unattained, the reaching of the as-yet-unreached, the realization of the as-yet-unrealized. This is the seventh ground for laziness.\n\n'Then there is the case where a monk has recovered from his illness, not long after his recovery. The thought occurs to him: 'I have recovered from my illness. It's not long after my recovery. This body of mine is weak & unsuitable for work. Why don't I lie down?' So he lies down. He doesn't make an effort for the attaining of the as-yet-unattained, the reaching of the as-yet-unreached, the realization of the as-yet-unrealized. This is the eighth ground for laziness." [DN_nblm.txt 151-153, AN_nblm.txt 92-95, 145-147, 151-153],
+      "'Monks, six qualities lead to the decline of a monk in training. Which six? Delighting in work, delighting in talking, delighting in sleeping, delighting in entanglement, not guarding the sense faculties, not knowing moderation in food. These six qualities lead to the decline of a monk in training.",
+      "'Young, strong, but lethargic, the resolves of his heart exhausted, the lazy, lethargic one loses the path to discernment.",
+      "'Monks, endowed with six qualities, a monk is incapable of attaining what is to be witnessed right there whenever there is an opening. Which six?\n\n'There is the case where a monk doesn't discern as it has come to be that 'This quality has a share in decline.' He doesn't discern as it has come to be that 'This quality has a share in stability.' He doesn't discern as it has come to be that 'This quality has a share in distinction.' He doesn't discern as it has come to be that 'This quality has a share in penetration.' He is one who doesn't act attentively. He is one who doesn't act suitably.",
+      "'Monks, endowed with six qualities, a monk is capable of attaining what is to be witnessed right there whenever there is an opening. Which six?\n\n'There is the case where a monk discerns as it has come to be that 'This quality has a share in decline.' He discerns as it has come to be that 'This quality has a share in stability.' He discerns as it has come to be that 'This quality has a share in distinction.' He discerns as it has come to be that 'This quality has a share in penetration.' He is one who acts attentively. He is one who acts suitably.",
+      "Eight grounds for the arousal of energy: There is the case, friends, where a monk has some work to do. The thought occurs to him: 'I will have to do this work. But when I am doing this work, it will not be easy to attend to the Buddha's message. Why don't I make an effort beforehand for the attaining of the as-yet-unattained, the reaching of the as-yet-unreached, the realization of the as-yet-unrealized?' So he makes an effort for the attaining of the as-yet-unattained, the reaching of the as-yet-unreached, the realization of the as-yet-unrealized. This is the first ground for the arousal of energy.",
+      "Without abandoning these five qualities, one is incapable of entering & remaining in the first jhāna… incapable of realizing the fruit of stream-entry… the fruit of once-returning… the fruit of non-returning… arahantship. Which five? Stinginess as to one's monastery (lodgings)… one's family (of supporters)… one's gains… one's status, and ingratitude. Without abandoning these five qualities, one is incapable of entering & remaining in the second jhāna… the third jhāna… the fourth jhāna; one is incapable realizing the fruit of stream-entry… the fruit of once-returning… the fruit of non-returning… arahantship."
     ],
     "Problem": [],
     "Causal-Table": [],
@@ -160,8 +162,76 @@
       "Concepts & Relationships": [],
       "State Transitions": []
     },
-    "Context": [],
-    "Forces": [],
+    "Context": [
+      "'I don't envision a single thing that—when untamed, unguarded, unprotected, unrestrained—leads to such great harm as the mind. The mind—when untamed, unguarded, unprotected, unrestrained—leads to great harm.'",
+      "'I don't envision a single thing that, when developed & cultivated, is as soft & pliant as the mind. The mind, when developed & cultivated, is soft & pliant.'",
+      "'Luminous, monks, is the mind. And it is defiled by incoming defilements.'\n\n'Luminous, monks, is the mind. And it is freed from incoming defilements.'\n\n'Luminous, monks, is the mind. And it is defiled by incoming defilements. The uninstructed run-of-the-mill person doesn't discern that as it has come to be, which is why I tell you that—for the uninstructed run-of-the-mill person—there is no development of the mind.'",
+      "Eight grounds for laziness: There is the case, friends, where a monk has some work to do. The thought occurs to him: 'I will have to do this work. But when I have done this work, my body will be tired. Why don't I lie down?' So he lies down. He doesn't make an effort for the attaining of the as-yet-unattained, the reaching of the as-yet-unreached, the realization of the as-yet-unrealized. This is the first ground for laziness.",
+      "Then there is the case where a monk comes down with a slight illness. The thought occurs to him: 'I have come down with a slight illness. There's a need to lie down.' So he lies down. He doesn't make an effort for the attaining of the as-yet-unattained, the reaching of the as-yet-unreached, the realization of the as-yet-unrealized. This is the seventh ground for laziness.",
+      "This generation delights in attachment, is excited by attachment, enjoys attachment. For a generation delighting in attachment, excited by attachment, enjoying attachment, this or that conditionality & dependent co-arising are hard to see.",
+      "Beings are defiled with cause, with requisite condition. There is cause, there is requisite condition, for the purification of beings. Beings are purified with cause, with requisite condition."
+    ],
+    "Forces": [
+      "Eight grounds for laziness: There is the case, friends, where a monk has some work to do. The thought occurs to him: 'I will have to do this work. But when I have done this work, my body will be tired. Why don't I lie down?' So he lies down. He doesn't make an effort for the attaining of the as-yet-unattained, the reaching of the as-yet-unreached, the realization of the as-yet-unrealized. This is the first ground for laziness.",
+      "'I don't envision a single thing that—when untamed, unguarded, unprotected, unrestrained—leads to such great harm as the mind. The mind—when untamed, unguarded, unprotected, unrestrained—leads to great harm.'",
+      "'I don't envision a single thing that is as quick to reverse itself as the mind—so much so that there is no satisfactory simile for how quick to reverse itself it is.'",
+      "This generation delights in attachment, is excited by attachment, enjoys attachment. For a generation delighting in attachment, excited by attachment, enjoying attachment, this or that conditionality & dependent co-arising are hard to see.",
+      "'Craving is the ensnarer that has flowed along, spread out, and caught hold, with which this world is smothered & enveloped like a tangled skein, a knotted ball of string, like matted rushes and reeds, and does not go beyond transmigration, beyond the planes of deprivation, woe, & bad destinations.'",
+      "When one falls back on what was done in the past as being essential, monks, there is no desire, no effort (at the thought), 'This should be done. This shouldn't be done.'",
+      "'As for those delusion-born fevers—burned with which the householder or householder's son would sleep miserably—that delusion has been abandoned by the Tathāgata, its root destroyed, made like a palmyra stump, deprived of the conditions of development, not destined for future arising. Therefore he sleeps in ease.",
+      "For one knowing & seeing, 'This is stress,' there is the ending of effluents. For one knowing & seeing, 'This is the origination of stress,' there is the ending of effluents. For one knowing & seeing, 'This is the cessation of stress,' there is the ending of effluents. For one knowing & seeing, 'This is the path of practice leading to the cessation of stress,' there is the ending of effluents. For one knowing in this way and seeing in this way is there the ending of effluents.",
+      "If you'd mold yourself the way you teach others, then, well-trained, go ahead & tame– for, as they say, what's hard to tame is you"
+    ],
+    "Rationale": [],
+    "Resulting Context": [],
+    "Related Patterns": [],
+    "Case-studies": [],
+    "Simile": []
+  },
+  "substantiations": {
+    "Scope": [
+      "parsed as 8 subjects & 8 focus areas because each clause describes a distinct ground for laziness.",
+      "mock of generalisation/abstraction of expression[work] to concept[work]",
+      "mock of generalisation/abstraction of expression[work] to concept[work]",
+      "mock of generalisation/abstraction of expression[journey] to concept[journey]",
+      "mock of generalisation/abstraction of expression[journey] to concept[journey]",
+      "mock of generalisation/abstraction of expression[almsfood] to concept[almsfood]",
+      "mock of generalisation/abstraction of expression[almsfood] to concept[almsfood]",
+      "mock of generalisation/abstraction of expression[illness] to concept[illness]",
+      "mock of generalisation/abstraction of expression[illness] to concept[illness]",
+      "The repeated phrase 'he doesn't make an effort for the attaining of the as-yet-unattained...' in the context of 'Eight grounds for laziness' [DN_nblm.txt 151] clearly establishes 'laziness' as the 'enter from' state. The pattern name itself further reinforces this.",
+      "Laziness, characterised by lack of effort in the face of various circumstances, is established as the primary 'enter from' state, preventing spiritual attainment.",
+      "The 'Eight grounds for the arousal of energy' are presented as the direct counter to the 'Eight grounds for laziness,' indicating that 'aroused energy' is the desired 'exit to' state. This represents the successful overcoming of idleness to pursue spiritual goals.",
+      "Aroused energy, manifested as making effort for the un-attained, is the natural 'exit to' state, directly opposing the passive 'lying down' described in the laziness grounds.",
+      "The `answerExcerpt` explicitly describes actions of 'a monk'. Furthermore, references to 'monk in training' and the broader context of the Dhamma indicate that these patterns apply to practitioners who are still developing and have not yet reached full awakening. This aligns with 'conviction-dhamma-follower', 'stream-enterer', and 'once-returner'.",
+      "The grounds for laziness are directly applicable to 'monks in training', implying that those who have not yet reached full awakening (arahantship) are the target audience, specifically encompassing 'conviction-dhamma-follower', 'stream-enterer', and 'once-returner'."
+    ],
+    "Problem": [
+      "'abandon' is used to express moving away from the negative state of laziness. 'cultivate aroused energy' is used to express the desired outcome of the effort, aligning with the positive counterpart 'grounds for the arousal of energy' from the sources. 'cultivate' is chosen to reflect the active development required, consistent with the effort described in the sources."
+    ],
+    "Causal-Table": [],
+    "Solution": {
+      "Step-by-Step": [],
+      "Cause-&-Effect": [],
+      "Process View": [],
+      "Concepts & Relationships": [],
+      "State Transitions": []
+    },
+    "Context": [
+      "The description of the 'Eight grounds for laziness' directly outlines the various situations (work, journey, alms, illness) where a monk's body feels tired or heavy, leading to the decision to 'lie down' instead of making effort. This forms the primary symptom of the problem.",
+      "The phrase 'He doesn't make an effort for the attaining of the as-yet-unattained...' explicitly states the consequence of this inaction, linking it to a lack of spiritual progress.",
+      "Quotations such as the mind being 'untamed, unguarded, unprotected, unrestrained' and thus leading to 'great harm', or being 'undeveloped' and 'unpliant', directly describe the internal mental state that makes the practitioner susceptible to these grounds for laziness.",
+      "The inclusion of 'getting as much coarse or refined food as he would like for his fill' making the body 'heavy & unsuitable for work' and the phrase 'Luminous, monks, is the mind. And it is defiled by incoming defilements. The uninstructed run-of-the-mill person doesn't discern that as it has come to be, which is why I tell you that—for the uninstructed run-of-the-mill person—there is no development of the mind.' further characterise the 'diagnosis' of a mind easily influenced by external conditions and lacking discernment.",
+      "The overall context of 'decline of a monk in training' and the applicability to 'monks in training' supports the framing as a 'medical prescription' for those experiencing these symptoms of laziness and lack of effort."
+    ],
+    "Forces": [
+      "The detailed description of the 'Eight grounds for laziness' themselves inherently describes the internal and external pressures that pull the practitioner towards inaction, directly opposing sustained effort. This is the core conflict.",
+      "The mind's inherent 'unpliancy' when undeveloped and its characteristic of being 'quick to reverse itself' means that even a good intention can easily be overridden by the desire for ease, making a simple resolution insufficient.",
+      "The 'delight in attachment' to sensual pleasures and physical comfort provides a strong 'allure' that distracts from the deeper spiritual goal, making the path of ease seem more attractive than the effortful path. Similarly, 'delighting in sleeping' as a quality of decline highlights this force.",
+      "The 'tangled skein' of craving and the general difficulty for a 'generation delighting in attachment' to see 'conditionality & dependent co-arising' implies a lack of deep insight into the long-term consequences of laziness, thus making it hard to abandon without a structured approach.",
+      "The tendency to 'fall back on what was done in the past as being essential' creates a powerful inertia, suppressing the 'desire' and 'effort' to initiate or continue skillful actions, making the transition from laziness to aroused energy intrinsically challenging.",
+      "The concept of 'delusion-born fevers' and the observation that 'the lazy, lethargic one loses the path to discernment' indicates that mental obscurations actively work against the cultivation of energy and clear seeing, highlighting the need for a nuanced solution."
+    ],
     "Rationale": [],
     "Resulting Context": [],
     "Related Patterns": [],
