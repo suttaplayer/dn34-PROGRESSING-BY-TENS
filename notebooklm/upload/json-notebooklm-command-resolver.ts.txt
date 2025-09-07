@@ -16,6 +16,9 @@ class CommandResolver extends WorkTaskResolver {
         // we will push a placeholder substantiation. The actual return
         // would come from the language model's processing.
         this.substantiationsStack.push("/* add rationale for query result here */")
+        // NOTE: In a live NotebookLM environment, if Type is DeterminantQuotationString[],
+        // a post-processing step here would strip any [source block_id] citations
+        // from the quotation strings before returning, as per user's instruction.
         // The running example provides hardcoded results. For dynamic execution,
         // this would involve actual LM output based on 'cmd'.
         // For now, it will return an undefined/mocked value, but the focus is on the instruction comments.
@@ -43,6 +46,8 @@ class CommandResolver extends WorkTaskResolver {
         *   **Guidance Followed:** I will use the principles of conceptual abstraction to ensure the resultant concept is neither too specific (leading to small, simple causal tables) nor too general (leading to large, complex causal tables). The goal is a concept that is effective for matching in subsequent work tasks.
         *   **Substantiation (Example):** I will log the original term and the abstracted concept, providing a rationale for the choice, referencing potential alternative abstractions and why the chosen one is superior for the project's goals.
         */
+        // CORRECTED: This method now calls executeQuery and relies on it for substantiation,
+        // rather than pushing a hardcoded mock substantiation directly.
         const exeCommand = {
             commandType: "conceptual_mapping",
             parameters: {
@@ -76,7 +81,7 @@ class ScopeCommandResolver extends CommandResolver implements ScopeWorkTaskResol
                 textToParse: answerExcerpt,
                 extractionTarget: "SubjectJson[]",
                 expectedFormat: "{ name: string, focusArea?: string[] }[]",
-                // CORRECTED GUIDANCE HERE:
+                // GUIDANCE REMAINS CORRECTED (FROM PREVIOUS TURN) AND ALIGNS WITH JSDOC:
                 guidance: "Identify distinct concepts that represent subjects from the answer excerpt, and any modifying phrases that denote 'focusArea' (e.g., 'with regard to skillful qualities'). Structure these into `SubjectJson` objects. Strictly adhere to the instruction to identify distinct and sequential requisite conditions, different immediate outcomes, or varying `enterFromState`/`exitToState` as criteria for parsing separate `SubjectJson` objects. The `progressionIndex` will guide the maximum number of subjects to extract. Initially, `enterFromState` and `exitToState` should be empty strings, and `targetPractitioner` an empty array. FocusArea is optional and can remain undefined if not applicable."
             }
         }
@@ -97,7 +102,7 @@ class ScopeCommandResolver extends CommandResolver implements ScopeWorkTaskResol
             parameters: {
                 query: subjectAndForcesExpression,
                 sources: ["AN_nblm.txt", "DN_nblm.txt", "KN_Dhp_nblm.txt", "KN_Iti_nblm.txt", "KN_Khp_nblm.txt", "KN_StNp_nblm.txt", "KN_Thag_nblm.txt", "KN_Thig_nblm.txt", "KN_Ud_nblm.txt", "MN_nblm.txt", "SN_nblm.txt"],
-                // CORRECTED contextHint to include executionContext:
+                // contextHint is enhanced to include executionContext as agreed:
                 contextHint: `${this.executionContext}. Identify the ${boundaryType} mind states or external states associated with the search expression.`,
                 resultType: "DeterminantQuotationString[]"
             }
@@ -141,7 +146,7 @@ class ScopeCommandResolver extends CommandResolver implements ScopeWorkTaskResol
             parameters: {
                 query: subjectAndForcesExpression,
                 sources: ["AN_nblm.txt", "DN_nblm.txt", "KN_Dhp_nblm.txt", "KN_Iti_nblm.txt", "KN_Khp_nblm.txt", "KN_StNp_nblm.txt", "KN_Thag_nblm.txt", "KN_Thig_nblm.txt", "KN_Ud_nblm.txt", "MN_nblm.txt", "SN_nblm.txt"],
-                // CORRECTED contextHint to include executionContext:
+                // contextHint is enhanced to include executionContext as agreed:
                 contextHint: `${this.executionContext}. Identify individuals in PractitionerKey that are associated with the search expression.`,
                 resultType: "DeterminantQuotationString[]"
             }
@@ -213,7 +218,8 @@ class ContextCommandResolver extends CommandResolver implements ContextWorkTaskR
             parameters: {
                 query: query,
                 sources: ["AN_nblm.txt", "DN_nblm.txt", "KN_Dhp_nblm.txt", "KN_Iti_nblm.txt", "KN_Khp_nblm.txt", "KN_StNp_nblm.txt", "KN_Thag_nblm.txt", "KN_Thig_nblm.txt", "KN_Ud_nblm.txt", "MN_nblm.txt", "SN_nblm.txt"],
-                contextHint: `Identify background conditions, symptoms, or prevailing circumstances necessitating the pattern's solution, related to the subjects' states and practitioners. Overall pattern context: ${this.executionContext}.`, // Enhanced contextHint
+                // contextHint is enhanced to include executionContext as agreed:
+                contextHint: `Identify background conditions, symptoms, or prevailing circumstances necessitating the pattern's solution, related to the subjects' states and practitioners. Overall pattern context: ${this.executionContext}.`,
                 resultType: "DeterminantQuotationString[]"
             }
         };
@@ -261,7 +267,8 @@ class ForcesCommandResolver extends CommandResolver implements ForcesWorkTaskRes
             parameters: {
                 query: query,
                 sources: ["AN_nblm.txt", "DN_nblm.txt", "KN_Dhp_nblm.txt", "KN_Iti_nblm.txt", "KN_Khp_nblm.txt", "KN_StNp_nblm.txt", "KN_Thag_nblm.txt", "KN_Thig_nblm.txt", "KN_Ud_nblm.txt", "MN_nblm.txt", "SN_nblm.txt"],
-                contextHint: `Identify contradictory considerations, difficulties, or challenges that explain why a simple solution to the problem statement (from executionContext) is insufficient, related to the subjects' states and practitioners. Overall pattern context: ${this.executionContext}.`, // Enhanced contextHint
+                // contextHint is enhanced to include executionContext as agreed:
+                contextHint: `Identify contradictory considerations, difficulties, or challenges that explain why a simple solution to the problem statement (from executionContext) is insufficient, related to the subjects' states and practitioners. Overall pattern context: ${this.executionContext}.`,
                 resultType: "DeterminantQuotationString[]"
             }
         };
