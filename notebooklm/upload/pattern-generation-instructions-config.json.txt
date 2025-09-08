@@ -1,10 +1,4 @@
 { 
-    "userQuery": { 
-        "progressionIndex": 1,
-        "categoryKey": "helpful",
-        "includeSubstantiations": true,
-        "verboseOutput": true
-    },
     "instructions": [
         {
             "modulePath": "./json-scope-generation-instructions.ts",
@@ -27,7 +21,7 @@
             "bootstrap": "register"
         },    
         {
-            "modulePath": "./json-running-example-command-resolver.ts",
+            "modulePath": "./json-notebooklm-command-resolver.ts",
             "bootstrap": "register"
         }
     ]

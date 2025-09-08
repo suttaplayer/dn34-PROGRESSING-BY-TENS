@@ -249,7 +249,10 @@ purpose: represents the parameterised pattern request with optional direct exper
 created by: user and submitted in the initiating user query
 */
 export type UserPatternRequestJson = TopicJson &{
+    unitTestResolver?: string
     verboseOutput?: boolean
     includeSubstantiations?: boolean
     directExperience?: UserDirectExperienceJson
 }
+
+export const userPatternRequestJson: UserPatternRequestJson[] = []

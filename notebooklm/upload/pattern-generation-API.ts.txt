@@ -2,20 +2,26 @@ import { DeterminantQuotationString, PatternResponseJson, UserDirectExperienceJs
 
 export interface WorkTaskResolvable {
     executionContext: string
+    quotationSet: Set<DeterminantQuotationString>
     readonly substantiationsStack: string[]
     popSubstantiationsFromLastCommand(): string[]
 
     generaliseAndAbstractToConcept(term: string): Promise<string>
 } 
 
-export class WorkTaskResolver {
+export class WorkTaskResolver implements WorkTaskResolvable {
     public executionContext: string = "" 
+    public quotationSet: Set<DeterminantQuotationString>
     public readonly substantiationsStack: string[] = []
 
     public popSubstantiationsFromLastCommand(): string[] {
         let ret = [...this.substantiationsStack]
         this.substantiationsStack.splice(0, this.substantiationsStack.length)
         return ret
+    }
+
+    public generaliseAndAbstractToConcept(term: string): Promise<string> {
+        return (undefined as unknown) as Promise<string>
     }
 }
 
@@ -38,6 +44,8 @@ export class BaseWorkTaskInstructions<B, R extends WorkTaskResolver> {
         this.request = responder.request
         this.response = responder.response
         this.resolver = this.constructResolver()
+        if (this.resolver)
+            this.resolver.quotationSet = this.quotationSet
         this.buildingBlock = responder.response.buildingBlocks[this.key]
         if (responder.response?.substantiations?.[this.key])
             this.substantiations = responder.response.substantiations[this.key]
@@ -155,17 +163,7 @@ export class PatternGenerator {
             delete this.response.substantiations
     }
 
-    // private async loadDllWorkTaskInstructions() {
-    //     const config: GenerationWorkTaskInstructionsConfigJson = config_ as GenerationWorkTaskInstructionsConfigJson
-    //     for (const workTaskInstructions of config.instructions) {
-    //         const module = await import(workTaskInstructions.modulePath)
-    //         const bootFunc = module[workTaskInstructions.bootstrap] as BootstrapFunctionDefinition
-    //         bootFunc()
-    //     }
-    // }
-
     public async generate(): Promise<PatternResponseJson> {
-        // await this.loadDllWorkTaskInstructions()
         for (const workTask of WORK_TASK_ORDER) {
             let cls = PatternGenerator.INSTRUCTIONS_REGISTRY.get(workTask)
             if (!cls)

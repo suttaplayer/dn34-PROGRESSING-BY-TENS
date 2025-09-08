@@ -26,9 +26,10 @@ import { JsonContextGenerationInstructions } from "./json-context-generation-ins
 import { JsonForcesGenerationInstructions } from "./json-forces-generation-instructions.ts";
 import { JsonProblemGenerationInstructions, ProblemWorkTaskResolvable } from "./json-problem-generation-instructions.ts";
 import { JsonScopeGenerationInstructions, ScopeWorkTaskResolvable } from "./json-scope-generation-instructions.ts";
-import { CausalRelationJson, DeterminantQuotationString, PractitionerKey, SubjectJson } from "./pattern-API.ts";
+import { CausalRelationJson, DeterminantQuotationString, PractitionerKey, SubjectJson, UserPatternRequestJson} from "./pattern-API.ts";
 import { WorkTaskResolver } from "./pattern-generation-API.ts";
 import { CausalTableWorkTaskResolvable, JsonCausalTableGenerationInstructions } from "./json-causal-table-generation-instructions.ts"; // Import the new interface
+import { JsonPatternGenerationInstructions } from "./json-pattern-generation-instructions.ts";
 
 class CommandResolver extends WorkTaskResolver {
     public async generaliseAndAbstractToConcept(term: string): Promise<string> {
@@ -253,6 +254,18 @@ export function register() {
     JsonForcesGenerationInstructions.RESOLVER_CTR = ForcesCommandResolver
     JsonCausalTableGenerationInstructions.RESOLVER_CTR = CausalTableCommandResolver
 }
+
+const userPatternRequestJson: UserPatternRequestJson = { 
+    unitTestResolver: "./json-running-example-command-resolver.ts",
+    progressionIndex: 1,
+    categoryKey: "helpful",
+    includeSubstantiations: true,
+    verboseOutput: true
+}
+
+const instructions = new JsonPatternGenerationInstructions(userPatternRequestJson)
+await instructions.execute()
+
 
 /* deno --allow-read json-pattern-generation-instructions.ts
 

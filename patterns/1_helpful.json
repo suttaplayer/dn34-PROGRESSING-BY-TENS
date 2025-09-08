@@ -1,0 +1,230 @@
+{
+  "buildingBlocks": {
+    "Scope": {
+      "progressionIndex": 1,
+      "categoryKey": "helpful",
+      "patternName": "Heedful, ardent & resolute",
+      "subject": [
+        {
+          "name": "Heedfulness",
+          "focusArea": [
+            "skillful qualities"
+          ],
+          "enterFromState": "heedlessness",
+          "exitToState": "heedful",
+          "targetPractitioner": [
+            "stream-enterer",
+            "once-returner",
+            "non-returner"
+          ]
+        }
+      ]
+    },
+    "Problem": [
+      "How do you abandon heedlessness and enter and remain in heedfulness?"
+    ],
+    "Causal-Table": [
+      {
+        "this": "shame",
+        "that": "heedful",
+        "relation": 3
+      },
+      {
+        "this": "compunction",
+        "that": "heedful",
+        "relation": 3
+      },
+      {
+        "this": "admirable friendship",
+        "that": "shame",
+        "relation": 3
+      },
+      {
+        "this": "admirable friendship",
+        "that": "compunction",
+        "relation": 3
+      },
+      {
+        "this": "heedful",
+        "that": "easy to correct",
+        "relation": 3
+      },
+      {
+        "this": "heedful",
+        "that": "conviction",
+        "relation": 3
+      },
+      {
+        "this": "heedful",
+        "that": "release",
+        "relation": 3
+      },
+      {
+        "this": "seclusion from sensuality",
+        "that": "first jhāna",
+        "relation": 1
+      },
+      {
+        "this": "first jhāna",
+        "that": "perception of sensuality",
+        "relation": 3,
+        "notThat": true
+      },
+      {
+        "this": "stilling of directed thoughts & evaluations",
+        "that": "second jhāna",
+        "relation": 3
+      },
+      {
+        "this": "second jhāna",
+        "that": "directed thoughts & evaluations",
+        "relation": 3,
+        "notThat": true
+      }
+    ],
+    "Solution": {
+      "Step-by-Step": [],
+      "Cause-&-Effect": [],
+      "Process View": [],
+      "Concepts & Relationships": [],
+      "State Transitions": []
+    },
+    "Context": [
+      "A practitioner in higher training finds themselves in a state of heedlessness, where their undeveloped mind is unpliant and prone to great harm.",
+      "Although naturally luminous, the mind is defiled by incoming defilements which an uninstructed person may fail to discern.",
+      "This heedless condition is further characterised by complacency or intoxication arising from worldly gains and offerings.",
+      "This situation applies particularly to monks in higher training who have not yet reached their hearts' goal, indicating a persistent, unfulfilled task that requires conscious effort and heedfulness."
+    ],
+    "Forces": [
+      "The path from heedlessness to heedfulness is fraught with contradictory forces that make a simple or naive resolution insufficient.",
+      "The undeveloped and unpliant mind remains highly susceptible to defilements such as passion, aversion, and delusion, hindering the clarity needed for progress.",
+      "The metaphor of `craving as an 'ensnarer'` and a `tangled skein` illustrates the pervasive and complex nature of this force, which hinders liberation and justifies a nuanced solution.",
+      "These collective forces demonstrate why the `Heedful, ardent & resolute` pattern requires a specific, carefully considered solution rather than a simple approach."
+    ],
+    "Rationale": "",
+    "Resulting Context": [],
+    "Related Patterns": [],
+    "Case-studies": [],
+    "Simile": []
+  },
+  "quotationSheet": {
+    "Scope": [
+      "[dont] ever let yourself get complacent when the ending of effluents is still unattained",
+      "Because of that gain, he becomes intoxicated, complacent, & falls into heedlessness.",
+      "Now, then, monks, I exhort you: All fabrications are subject to ending & decay. Reach consummation through heedfulness.' That was the Tathāgata's last statement [to a group of noble monks the most backward of which was a stream-enterer]"
+    ],
+    "Problem": [],
+    "Causal-Table": [],
+    "Solution": {
+      "Step-by-Step": [],
+      "Cause-&-Effect": [],
+      "Process View": [],
+      "Concepts & Relationships": [],
+      "State Transitions": []
+    },
+    "Context": [
+      "I don't envision a single thing that, when undeveloped, is as unpliant as the mind. The mind, when undeveloped, is unpliant.",
+      "I don't envision a single thing that, when undeveloped, leads to such great harm as the mind. The mind, when undeveloped, leads to great harm.",
+      "Luminous, monks, is the mind. And it is defiled by incoming defilements. The uninstructed run-of-the-mill person doesn't discern that as it has come to be, which is why I tell you that—for the uninstructed run-of-the-mill person—there is no development of the mind.",
+      "Because of that gain, he becomes intoxicated, complacent, & falls into heedlessness.",
+      "Monks who are arahants, whose mental effluents are ended... I don't say of them that they have a task to do with heedfulness... But as for monks in higher training, who have not yet reached their hearts' goal... I say of them that they have a task to do with heedfulness."
+    ],
+    "Forces": [
+      "I don't envision a single thing that, when undeveloped, is as unpliant as the mind. The mind, when undeveloped, is unpliant.",
+      "Luminous, monks, is the mind. And it is defiled by incoming defilements.",
+      "Defiled by passion, the mind is not released. Defiled by ignorance, discernment does not develop. Thus from the fading of passion is there awareness-release. From the fading of ignorance is there discernment-release.",
+      "Monks, I will teach you craving: the ensnarer that has flowed along, spread out, and caught hold, with which this world is smothered & enveloped like a tangled skein, a knotted ball of string, like matted rushes and reeds, and does not go beyond transmigration, beyond the planes of deprivation, woe, & bad destinations.",
+      "The Blessed One has compared sensual pleasures to a chain of bones: of much stress, much despair, & greater drawbacks."
+    ],
+    "Rationale": [],
+    "Resulting Context": [],
+    "Related Patterns": [],
+    "Case-studies": [],
+    "Simile": []
+  },
+  "substantiations": {
+    "Scope": [
+      "parsed as 1 subject & 1 focus area because `with regard to` denotes that the focusArea follows",
+      "mock of generalisation/abstraction of expression[Heedfulness] to concept[Heedfulness]",
+      "'[dont] ever let yourself get complacent' & 'falls into heedlessness' establish the enter from state",
+      "heedfulness is a composite state of the mind. 'complacent' would be the first state after transition from 'heedlessness'",
+      "'when the ending of effluents is still unattained' establish the exit to state",
+      "heedfulness is a composite state of the mind. 'heedful' would be the final state from which there is no falling back",
+      "provides a clear indication by the buddha himself at who the 'heedfulness' message was targetted at",
+      "although heedfulness is applicable to all practitioners, it is specifically applicable to leaners (ie. one-in-training)"
+    ],
+    "Problem": [
+      "'abandon' within the sources is typically used to express a transition from a negative mind state. 'let go of' is identified in the miracle of instruction, but 'abandon' is more effective in this instance. 'enter and remain in' is typically used to express a transition to a positive mind state."
+    ],
+    "Causal-Table": [
+      "mocked generation of causal table for running example 'Heedful, ardent & resolute'",
+      "mock of generalisation/abstraction of expression[Heedfulness] to concept[Heedfulness]",
+      "mock of generalisation/abstraction of expression[heedlessness] to concept[heedlessness]",
+      "mock of generalisation/abstraction of expression[heedful] to concept[heedful]",
+      "Exploring causal relations for concept: 'heedfulness' at depth 1",
+      "Found 0 determinant quotations for 'heedfulness'",
+      "Exploring causal relations for concept: 'heedlessness' at depth 1",
+      "Found 0 determinant quotations for 'heedlessness'",
+      "Exploring causal relations for concept: 'heedful' at depth 1",
+      "Found 0 determinant quotations for 'heedful'",
+      "mock of generalisation/abstraction of expression[shame] to concept[shame]",
+      "mock of generalisation/abstraction of expression[heedful] to concept[heedful]",
+      "Added CausalRelation: {\"this\":\"shame\",\"that\":\"heedful\",\"relation\":3}",
+      "mock of generalisation/abstraction of expression[compunction] to concept[compunction]",
+      "mock of generalisation/abstraction of expression[heedful] to concept[heedful]",
+      "Added CausalRelation: {\"this\":\"compunction\",\"that\":\"heedful\",\"relation\":3}",
+      "mock of generalisation/abstraction of expression[admirable friendship] to concept[admirable friendship]",
+      "mock of generalisation/abstraction of expression[shame] to concept[shame]",
+      "Added CausalRelation: {\"this\":\"admirable friendship\",\"that\":\"shame\",\"relation\":3}",
+      "mock of generalisation/abstraction of expression[admirable friendship] to concept[admirable friendship]",
+      "mock of generalisation/abstraction of expression[compunction] to concept[compunction]",
+      "Added CausalRelation: {\"this\":\"admirable friendship\",\"that\":\"compunction\",\"relation\":3}",
+      "mock of generalisation/abstraction of expression[heedful] to concept[heedful]",
+      "mock of generalisation/abstraction of expression[easy to correct] to concept[easy to correct]",
+      "Added CausalRelation: {\"this\":\"heedful\",\"that\":\"easy to correct\",\"relation\":3}",
+      "mock of generalisation/abstraction of expression[heedful] to concept[heedful]",
+      "mock of generalisation/abstraction of expression[conviction] to concept[conviction]",
+      "Added CausalRelation: {\"this\":\"heedful\",\"that\":\"conviction\",\"relation\":3}",
+      "mock of generalisation/abstraction of expression[heedful] to concept[heedful]",
+      "mock of generalisation/abstraction of expression[release] to concept[release]",
+      "Added CausalRelation: {\"this\":\"heedful\",\"that\":\"release\",\"relation\":3}",
+      "mock of generalisation/abstraction of expression[seclusion from sensuality] to concept[seclusion from sensuality]",
+      "mock of generalisation/abstraction of expression[first jhāna] to concept[first jhāna]",
+      "Added CausalRelation: {\"this\":\"seclusion from sensuality\",\"that\":\"first jhāna\",\"relation\":1}",
+      "mock of generalisation/abstraction of expression[first jhāna] to concept[first jhāna]",
+      "mock of generalisation/abstraction of expression[perception of sensuality] to concept[perception of sensuality]",
+      "Added CausalRelation: {\"this\":\"first jhāna\",\"that\":\"perception of sensuality\",\"relation\":3,\"notThat\":true}",
+      "mock of generalisation/abstraction of expression[stilling of directed thoughts & evaluations] to concept[stilling of directed thoughts & evaluations]",
+      "mock of generalisation/abstraction of expression[second jhāna] to concept[second jhāna]",
+      "Added CausalRelation: {\"this\":\"stilling of directed thoughts & evaluations\",\"that\":\"second jhāna\",\"relation\":3}",
+      "mock of generalisation/abstraction of expression[second jhāna] to concept[second jhāna]",
+      "mock of generalisation/abstraction of expression[directed thoughts & evaluations] to concept[directed thoughts & evaluations]",
+      "Added CausalRelation: {\"this\":\"second jhāna\",\"that\":\"directed thoughts & evaluations\",\"relation\":3,\"notThat\":true}"
+    ],
+    "Solution": {
+      "Step-by-Step": [],
+      "Cause-&-Effect": [],
+      "Process View": [],
+      "Concepts & Relationships": [],
+      "State Transitions": []
+    },
+    "Context": [
+      "The `enterFromState` for heedfulness is `heedlessness`.",
+      "The sources directly link the `undeveloped mind` to being unpliant and causing great harm, aligning with the state of heedlessness.",
+      "The mind's `luminosity being defiled by incoming defilements` is a characteristic of heedlessness in an uninstructed person, who lacks discernment.",
+      "Worldly gains leading to `intoxicated, complacent, & falls into heedlessness` explicitly describes a state of heedlessness.",
+      "The reference to `monks in higher training` having a task to do with heedfulness establishes the specific target audience for this pattern, aligning with the `medical diagnosis` analogy for the context."
+    ],
+    "Forces": [
+      "The initial state of `heedlessness` is linked to an undeveloped and unpliant mind, making it vulnerable to various defilements and rendering simple solutions ineffective.",
+      "The sources highlight how defilements like `passion, aversion, & delusion` corrupt the mind, preventing release and discernment, thus acting as strong opposing forces.",
+      "The metaphor of `craving as an 'ensnarer'` and a `tangled skein` illustrates the pervasive and complex nature of this force, which hinders liberation and justifies a nuanced solution.",
+      "These collective forces demonstrate why the `Heedful, ardent & resolute` pattern requires a specific, carefully considered solution rather than a simple approach."
+    ],
+    "Rationale": [],
+    "Resulting Context": [],
+    "Related Patterns": [],
+    "Case-studies": [],
+    "Simile": []
+  }
+}

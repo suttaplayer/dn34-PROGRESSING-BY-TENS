@@ -1,5 +1,5 @@
 import { PatternGenerator } from "./pattern-generation-API.ts"
-import { PatternResponseJson, UserPatternRequestJson } from "./pattern-API.ts"
+import { PatternResponseJson, userPatternRequestJson, UserPatternRequestJson } from "./pattern-API.ts"
 
 /*
 # JSON Pattern Generation Instruction Manual For NotebookLM
@@ -19,12 +19,11 @@ type BootstrapFunctionDefinition = () => void
 
 
 export type GenerationWorkTaskInstructionsConfigJson = {
-    userQuery: UserPatternRequestJson
     instructions: InstructionsJson[]
 }
 
 export class JsonPatternGenerationInstructions {
-    private static CONFIG: GenerationWorkTaskInstructionsConfigJson = config_ as GenerationWorkTaskInstructionsConfigJson
+    public static CONFIG: GenerationWorkTaskInstructionsConfigJson = config_ as GenerationWorkTaskInstructionsConfigJson
     public userPatternRequest: UserPatternRequestJson|undefined
     public generator: PatternGenerator
 
@@ -215,9 +214,12 @@ export class JsonPatternGenerationInstructions {
         ```
         */
 
-        if (!this.userPatternRequest)
-            this.userPatternRequest = JsonPatternGenerationInstructions.CONFIG.userQuery
-
+        if (!this.userPatternRequest) {
+            if (!userPatternRequestJson[0])
+                throw new Error("IllegalArgument: pattern-API.ts > userPatternRequestJson[0] is undefined. This is likely due to the user not providing a userPatternRequestJson object in the prompt.")
+            this.userPatternRequest = userPatternRequestJson[0]
+        }
+            
         this.generator = new PatternGenerator(this.userPatternRequest)
         if (this.generator.verboseOutput) {
             console.log("USER-QUERY [UserPatternRequestJson]")
@@ -234,12 +236,14 @@ export class JsonPatternGenerationInstructions {
 
         */
 
-      for (const workTaskInstructions of JsonPatternGenerationInstructions
-        .CONFIG.instructions) {
-          const module = await import(workTaskInstructions.modulePath)
-          const bootFunc = module[workTaskInstructions.bootstrap] as BootstrapFunctionDefinition
-          bootFunc()
-      }
+        for (let i = 0, len = JsonPatternGenerationInstructions.CONFIG.instructions.length; i < len; i++) {
+            const workTaskInstructions = JsonPatternGenerationInstructions.CONFIG.instructions[i]
+            if (i == len-1 && this.userPatternRequest?.unitTestResolver)
+                workTaskInstructions.modulePath = this.userPatternRequest.unitTestResolver
+            const module = await import(workTaskInstructions.modulePath)
+            const bootFunc = module[workTaskInstructions.bootstrap] as BootstrapFunctionDefinition
+            bootFunc()
+        }
     }
 
     async execute(): Promise<PatternResponseJson> {
@@ -259,6 +263,8 @@ export class JsonPatternGenerationInstructions {
     }
 }
 
-// simulate notebooklm user-query submission as injected argument:
-const instructions = new JsonPatternGenerationInstructions(/* UserPatternRequestJson|undefined */)
-await instructions.execute()
+if (Deno.mainModule === import.meta.url) {
+    // simulate notebooklm user-query submission as injected argument:
+    const instructions = new JsonPatternGenerationInstructions(/* UserPatternRequestJson|undefined */)
+    await instructions.execute()
+}
