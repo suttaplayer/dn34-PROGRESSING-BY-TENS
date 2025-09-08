@@ -6,7 +6,7 @@
       "patternName": "Heedful, ardent & resolute",
       "subject": [
         {
-          "name": "Heedfulness",
+          "name": "heedfulness",
           "focusArea": [
             "skillful qualities"
           ],
@@ -27,59 +27,1304 @@
       {
         "this": "shame",
         "that": "heedful",
-        "relation": 3
+        "relation": 3,
+        "quotationIndicies": [
+          0
+        ]
       },
       {
         "this": "compunction",
         "that": "heedful",
-        "relation": 3
+        "relation": 3,
+        "quotationIndicies": [
+          0
+        ]
       },
       {
         "this": "admirable friendship",
         "that": "shame",
-        "relation": 3
+        "relation": 3,
+        "quotationIndicies": [
+          0
+        ]
       },
       {
         "this": "admirable friendship",
         "that": "compunction",
-        "relation": 3
+        "relation": 3,
+        "quotationIndicies": [
+          0
+        ]
+      },
+      {
+        "this": "associating with people of integrity",
+        "that": "admirable friendship",
+        "relation": 3,
+        "quotationIndicies": [
+          1
+        ]
+      },
+      {
+        "this": "directing oneself rightly",
+        "that": "heedful",
+        "relation": 3,
+        "quotationIndicies": [
+          2
+        ]
+      },
+      {
+        "this": "having done merit in the past",
+        "that": "heedful",
+        "relation": 3,
+        "quotationIndicies": [
+          2
+        ]
+      },
+      {
+        "this": "clear knowing",
+        "that": "heedful",
+        "relation": 3,
+        "quotationIndicies": [
+          3,
+          4
+        ]
+      },
+      {
+        "this": "heedful",
+        "that": "joy",
+        "relation": 3,
+        "quotationIndicies": [
+          5
+        ]
+      },
+      {
+        "this": "heedful",
+        "that": "ardent",
+        "relation": 3,
+        "quotationIndicies": [
+          3,
+          4,
+          6,
+          7,
+          8,
+          9
+        ]
+      },
+      {
+        "this": "heedful",
+        "that": "resolute",
+        "relation": 3,
+        "quotationIndicies": [
+          3,
+          4,
+          6,
+          7,
+          8,
+          9
+        ]
       },
       {
         "this": "heedful",
         "that": "easy to correct",
-        "relation": 3
+        "relation": 3,
+        "quotationIndicies": [
+          10
+        ]
       },
       {
         "this": "heedful",
         "that": "conviction",
-        "relation": 3
+        "relation": 3,
+        "quotationIndicies": [
+          11
+        ]
       },
       {
         "this": "heedful",
         "that": "release",
-        "relation": 3
+        "relation": 3,
+        "quotationIndicies": [
+          12
+        ]
       },
       {
         "this": "seclusion from sensuality",
         "that": "first jhāna",
-        "relation": 1
+        "relation": 1,
+        "quotationIndicies": [
+          13
+        ]
       },
       {
         "this": "first jhāna",
+        "notThat": true,
         "that": "perception of sensuality",
         "relation": 3,
-        "notThat": true
+        "quotationIndicies": [
+          13
+        ]
       },
       {
         "this": "stilling of directed thoughts & evaluations",
         "that": "second jhāna",
-        "relation": 3
+        "relation": 3,
+        "quotationIndicies": [
+          14
+        ]
       },
       {
         "this": "second jhāna",
+        "notThat": true,
         "that": "directed thoughts & evaluations",
         "relation": 3,
-        "notThat": true
+        "quotationIndicies": [
+          14
+        ]
+      },
+      {
+        "this": "fading of rapture",
+        "that": "third jhāna",
+        "relation": 3,
+        "quotationIndicies": [
+          15
+        ]
+      },
+      {
+        "this": "third jhāna",
+        "notThat": true,
+        "that": "rapture",
+        "relation": 3,
+        "quotationIndicies": [
+          15
+        ]
+      },
+      {
+        "this": "fourth jhāna",
+        "notThat": true,
+        "that": "pleasure & pain",
+        "relation": 3,
+        "quotationIndicies": [
+          16
+        ]
+      },
+      {
+        "this": "fourth jhāna",
+        "notThat": true,
+        "that": "elation & distress",
+        "relation": 3,
+        "quotationIndicies": [
+          16
+        ]
+      },
+      {
+        "this": "fourth jhāna",
+        "that": "purity of equanimity & mindfulness",
+        "relation": 3,
+        "quotationIndicies": [
+          16
+        ]
+      },
+      {
+        "this": "abandoning of five factors",
+        "that": "endowed with six (factors)",
+        "relation": 3,
+        "quotationIndicies": [
+          17
+        ]
+      },
+      {
+        "this": "endowed with six (factors)",
+        "that": "guard one (factor)",
+        "relation": 3,
+        "quotationIndicies": [
+          17
+        ]
+      },
+      {
+        "this": "guard one (factor)",
+        "that": "supported in four (ways)",
+        "relation": 3,
+        "quotationIndicies": [
+          17
+        ]
+      },
+      {
+        "this": "supported in four (ways)",
+        "that": "shaken off idiosyncratic truths",
+        "relation": 3,
+        "quotationIndicies": [
+          17
+        ]
+      },
+      {
+        "this": "shaken off idiosyncratic truths",
+        "that": "thoroughly given up searching",
+        "relation": 3,
+        "quotationIndicies": [
+          17
+        ]
+      },
+      {
+        "this": "thoroughly given up searching",
+        "that": "undisturbed in his resolves",
+        "relation": 3,
+        "quotationIndicies": [
+          17
+        ]
+      },
+      {
+        "this": "undisturbed in his resolves",
+        "that": "calmed in his bodily-fabrication",
+        "relation": 3,
+        "quotationIndicies": [
+          17
+        ]
+      },
+      {
+        "this": "calmed in his bodily-fabrication",
+        "that": "well released in mind",
+        "relation": 3,
+        "quotationIndicies": [
+          17
+        ]
+      },
+      {
+        "this": "well released in mind",
+        "that": "well released in discernment",
+        "relation": 3,
+        "quotationIndicies": [
+          17
+        ]
+      },
+      {
+        "this": "abandoning sensual desire",
+        "that": "abandoning ill will",
+        "relation": 3,
+        "quotationIndicies": [
+          18
+        ]
+      },
+      {
+        "this": "abandoning ill will",
+        "that": "abandoning sloth & torpor",
+        "relation": 3,
+        "quotationIndicies": [
+          18
+        ]
+      },
+      {
+        "this": "abandoning sloth & torpor",
+        "that": "abandoning restlessness & anxiety",
+        "relation": 3,
+        "quotationIndicies": [
+          18
+        ]
+      },
+      {
+        "this": "abandoning restlessness & anxiety",
+        "that": "abandoning uncertainty",
+        "relation": 3,
+        "quotationIndicies": [
+          18
+        ]
+      },
+      {
+        "this": "abandoning resolve for sensuality",
+        "that": "abandoning resolve for ill-will",
+        "relation": 3,
+        "quotationIndicies": [
+          19
+        ]
+      },
+      {
+        "this": "abandoning resolve for ill-will",
+        "that": "abandoning resolve for harmfulness",
+        "relation": 3,
+        "quotationIndicies": [
+          19
+        ]
+      },
+      {
+        "this": "mind is released from passion",
+        "that": "mind is released from aversion",
+        "relation": 3,
+        "quotationIndicies": [
+          20
+        ]
+      },
+      {
+        "this": "mind is released from aversion",
+        "that": "mind is released from delusion",
+        "relation": 3,
+        "quotationIndicies": [
+          20
+        ]
+      },
+      {
+        "this": "discernment",
+        "that": "passion is abandoned",
+        "relation": 3,
+        "quotationIndicies": [
+          21
+        ]
+      },
+      {
+        "this": "passion is abandoned",
+        "that": "root destroyed",
+        "relation": 3,
+        "quotationIndicies": [
+          21
+        ]
+      },
+      {
+        "this": "root destroyed",
+        "that": "palmyra stump",
+        "relation": 3,
+        "quotationIndicies": [
+          21
+        ]
+      },
+      {
+        "this": "palmyra stump",
+        "that": "deprived of the conditions of development",
+        "relation": 3,
+        "quotationIndicies": [
+          21
+        ]
+      },
+      {
+        "this": "deprived of the conditions of development",
+        "notThat": true,
+        "that": "destined for future arising",
+        "relation": 3,
+        "quotationIndicies": [
+          21
+        ]
+      },
+      {
+        "this": "discernment",
+        "that": "aversion is abandoned",
+        "relation": 3,
+        "quotationIndicies": [
+          21
+        ]
+      },
+      {
+        "this": "aversion is abandoned",
+        "that": "root destroyed",
+        "relation": 3,
+        "quotationIndicies": [
+          21
+        ]
+      },
+      {
+        "this": "discernment",
+        "that": "delusion is abandoned",
+        "relation": 3,
+        "quotationIndicies": [
+          21
+        ]
+      },
+      {
+        "this": "delusion is abandoned",
+        "that": "root destroyed",
+        "relation": 3,
+        "quotationIndicies": [
+          21
+        ]
+      },
+      {
+        "this": "abandoning of pleasure & pain",
+        "that": "fourth jhāna",
+        "relation": 3,
+        "quotationIndicies": [
+          16
+        ]
+      },
+      {
+        "this": "heedlessness",
+        "that": "dust",
+        "relation": 3,
+        "quotationIndicies": [
+          22
+        ]
+      },
+      {
+        "this": "dust",
+        "that": "heedlessness",
+        "relation": 3,
+        "quotationIndicies": [
+          22
+        ]
+      },
+      {
+        "this": "heedfulness & clear knowing",
+        "that": "remove your own arrow",
+        "relation": 3,
+        "quotationIndicies": [
+          22
+        ]
+      },
+      {
+        "this": "heedlessness",
+        "that": "intoxicated",
+        "relation": 3,
+        "quotationIndicies": [
+          23
+        ]
+      },
+      {
+        "this": "heedlessness",
+        "that": "complacent",
+        "relation": 3,
+        "quotationIndicies": [
+          23
+        ]
+      },
+      {
+        "this": "gain",
+        "that": "intoxicated",
+        "relation": 3,
+        "quotationIndicies": [
+          23
+        ]
+      },
+      {
+        "this": "intoxicated",
+        "that": "complacent",
+        "relation": 3,
+        "quotationIndicies": [
+          23
+        ]
+      },
+      {
+        "this": "complacent",
+        "that": "heedlessness",
+        "relation": 3,
+        "quotationIndicies": [
+          23
+        ]
+      },
+      {
+        "this": "abandoning ignorance",
+        "that": "arising of clear knowing",
+        "relation": 3,
+        "quotationIndicies": [
+          24
+        ]
+      },
+      {
+        "this": "arising of clear knowing",
+        "notThat": true,
+        "that": "effluents causing trouble & vexation",
+        "relation": 3,
+        "quotationIndicies": [
+          24
+        ]
+      },
+      {
+        "this": "fading of ignorance",
+        "notThat": true,
+        "that": "effluents causing trouble & vexation",
+        "relation": 3,
+        "quotationIndicies": [
+          24
+        ]
+      },
+      {
+        "this": "rightly contemplating this duality in this way",
+        "that": "gnosis right here-&-now",
+        "relation": 3,
+        "quotationIndicies": [
+          6,
+          7,
+          8,
+          9
+        ]
+      },
+      {
+        "this": "rightly contemplating this duality in this way",
+        "that": "non-return",
+        "relation": 3,
+        "quotationIndicies": [
+          6,
+          7,
+          8,
+          9
+        ]
+      },
+      {
+        "this": "heedful, ardent, & resolute",
+        "that": "gnosis right here-&-now",
+        "relation": 3,
+        "quotationIndicies": [
+          6,
+          7,
+          8,
+          9
+        ]
+      },
+      {
+        "this": "heedful, ardent, & resolute",
+        "that": "non-return",
+        "relation": 3,
+        "quotationIndicies": [
+          6,
+          7,
+          8,
+          9
+        ]
+      },
+      {
+        "this": "heedfulness",
+        "that": "consummation in virtue",
+        "relation": 3,
+        "quotationIndicies": [
+          25
+        ]
+      },
+      {
+        "this": "consummation in virtue",
+        "that": "consummation in concentration",
+        "relation": 3,
+        "quotationIndicies": [
+          25
+        ]
+      },
+      {
+        "this": "consummation in concentration",
+        "that": "knowledge & vision",
+        "relation": 3,
+        "quotationIndicies": [
+          25
+        ]
+      },
+      {
+        "this": "knowledge & vision",
+        "that": "non-occasional liberation",
+        "relation": 3,
+        "quotationIndicies": [
+          25
+        ]
+      },
+      {
+        "this": "heedfulness",
+        "that": "achieving consummation in virtue",
+        "relation": 3,
+        "quotationIndicies": [
+          25
+        ]
+      },
+      {
+        "this": "heedfulness",
+        "that": "achieving consummation in concentration",
+        "relation": 3,
+        "quotationIndicies": [
+          25
+        ]
+      },
+      {
+        "this": "heedfulness",
+        "that": "achieving knowledge & vision",
+        "relation": 3,
+        "quotationIndicies": [
+          25
+        ]
+      },
+      {
+        "this": "heedfulness",
+        "that": "achieving a non-occasional liberation",
+        "relation": 3,
+        "quotationIndicies": [
+          25
+        ]
+      },
+      {
+        "this": "heedfulness",
+        "that": "ignorance was destroyed",
+        "relation": 3,
+        "quotationIndicies": [
+          3
+        ]
+      },
+      {
+        "this": "heedfulness",
+        "that": "knowledge arose",
+        "relation": 3,
+        "quotationIndicies": [
+          3
+        ]
+      },
+      {
+        "this": "heedfulness",
+        "that": "darkness was destroyed",
+        "relation": 3,
+        "quotationIndicies": [
+          3
+        ]
+      },
+      {
+        "this": "heedfulness",
+        "that": "light arose",
+        "relation": 3,
+        "quotationIndicies": [
+          3
+        ]
+      },
+      {
+        "this": "heedful",
+        "that": "gnosis here & now",
+        "relation": 2,
+        "quotationIndicies": [
+          26
+        ]
+      },
+      {
+        "this": "heedful",
+        "that": "non-return",
+        "relation": 2,
+        "quotationIndicies": [
+          26
+        ]
+      },
+      {
+        "this": "heedful",
+        "that": "gnosis",
+        "relation": 2,
+        "quotationIndicies": [
+          27
+        ]
+      },
+      {
+        "this": "heedful",
+        "that": "bliss",
+        "relation": 3,
+        "quotationIndicies": [
+          28
+        ]
+      },
+      {
+        "this": "heedlessness",
+        "that": "suffering",
+        "relation": 3,
+        "quotationIndicies": [
+          29
+        ]
+      },
+      {
+        "this": "heedlessness",
+        "that": "stress",
+        "relation": 3,
+        "quotationIndicies": [
+          29
+        ]
+      },
+      {
+        "this": "heedlessness",
+        "cannot": true,
+        "that": "abandoning apathy",
+        "relation": 3,
+        "quotationIndicies": [
+          30
+        ]
+      },
+      {
+        "this": "heedlessness",
+        "cannot": true,
+        "that": "abandoning hard to correct",
+        "relation": 3,
+        "quotationIndicies": [
+          30
+        ]
+      },
+      {
+        "this": "heedlessness",
+        "cannot": true,
+        "that": "abandoning evil friendship",
+        "relation": 3,
+        "quotationIndicies": [
+          30
+        ]
+      },
+      {
+        "this": "ignorance",
+        "that": "fabrications",
+        "relation": 1,
+        "quotationIndicies": [
+          31
+        ]
+      },
+      {
+        "this": "fabrications",
+        "that": "consciousness",
+        "relation": 1,
+        "quotationIndicies": [
+          31
+        ]
+      },
+      {
+        "this": "consciousness",
+        "that": "name-&-form",
+        "relation": 1,
+        "quotationIndicies": [
+          31
+        ]
+      },
+      {
+        "this": "name-&-form",
+        "that": "six sense media",
+        "relation": 1,
+        "quotationIndicies": [
+          31
+        ]
+      },
+      {
+        "this": "six sense media",
+        "that": "contact",
+        "relation": 1,
+        "quotationIndicies": [
+          31
+        ]
+      },
+      {
+        "this": "contact",
+        "that": "feeling",
+        "relation": 1,
+        "quotationIndicies": [
+          31
+        ]
+      },
+      {
+        "this": "feeling",
+        "that": "craving",
+        "relation": 1,
+        "quotationIndicies": [
+          31
+        ]
+      },
+      {
+        "this": "craving",
+        "that": "clinging",
+        "relation": 1,
+        "quotationIndicies": [
+          31
+        ]
+      },
+      {
+        "this": "clinging",
+        "that": "becoming",
+        "relation": 1,
+        "quotationIndicies": [
+          31
+        ]
+      },
+      {
+        "this": "becoming",
+        "that": "birth",
+        "relation": 1,
+        "quotationIndicies": [
+          31
+        ]
+      },
+      {
+        "this": "birth",
+        "that": "aging-&-death",
+        "relation": 1,
+        "quotationIndicies": [
+          31
+        ]
+      },
+      {
+        "this": "birth",
+        "that": "sorrow",
+        "relation": 1,
+        "quotationIndicies": [
+          31
+        ]
+      },
+      {
+        "this": "birth",
+        "that": "lamentation",
+        "relation": 1,
+        "quotationIndicies": [
+          31
+        ]
+      },
+      {
+        "this": "birth",
+        "that": "pain",
+        "relation": 1,
+        "quotationIndicies": [
+          31
+        ]
+      },
+      {
+        "this": "birth",
+        "that": "distress",
+        "relation": 1,
+        "quotationIndicies": [
+          31
+        ]
+      },
+      {
+        "this": "birth",
+        "that": "despair",
+        "relation": 1,
+        "quotationIndicies": [
+          31
+        ]
+      },
+      {
+        "this": "cessation of contact",
+        "that": "cessation of fabrications",
+        "relation": 3,
+        "quotationIndicies": [
+          32
+        ]
+      },
+      {
+        "this": "cessation of fabrications",
+        "that": "noble eightfold path",
+        "relation": 2,
+        "quotationIndicies": [
+          32
+        ]
+      },
+      {
+        "this": "desire-passion for fabrications",
+        "that": "drawback of fabrications",
+        "relation": 3,
+        "quotationIndicies": [
+          32
+        ]
+      },
+      {
+        "this": "subduing of desire-passion for fabrications",
+        "that": "escape from fabrications",
+        "relation": 3,
+        "quotationIndicies": [
+          32
+        ]
+      },
+      {
+        "this": "abandoning of desire-passion for fabrications",
+        "that": "escape from fabrications",
+        "relation": 3,
+        "quotationIndicies": [
+          32
+        ]
+      },
+      {
+        "this": "ignorance",
+        "that": "fabrications",
+        "relation": 1,
+        "quotationIndicies": [
+          33,
+          34
+        ]
+      },
+      {
+        "this": "fabrications",
+        "that": "consciousness",
+        "relation": 1,
+        "quotationIndicies": [
+          33,
+          34
+        ]
+      },
+      {
+        "this": "consciousness",
+        "that": "name-&-form",
+        "relation": 1,
+        "quotationIndicies": [
+          33,
+          34
+        ]
+      },
+      {
+        "this": "name-&-form",
+        "that": "six sense media",
+        "relation": 1,
+        "quotationIndicies": [
+          33,
+          34
+        ]
+      },
+      {
+        "this": "six sense media",
+        "that": "contact",
+        "relation": 1,
+        "quotationIndicies": [
+          33,
+          34
+        ]
+      },
+      {
+        "this": "contact",
+        "that": "feeling",
+        "relation": 1,
+        "quotationIndicies": [
+          33,
+          34
+        ]
+      },
+      {
+        "this": "feeling",
+        "that": "craving",
+        "relation": 1,
+        "quotationIndicies": [
+          33,
+          34
+        ]
+      },
+      {
+        "this": "craving",
+        "that": "clinging",
+        "relation": 1,
+        "quotationIndicies": [
+          33,
+          34
+        ]
+      },
+      {
+        "this": "clinging",
+        "that": "becoming",
+        "relation": 1,
+        "quotationIndicies": [
+          33,
+          34
+        ]
+      },
+      {
+        "this": "becoming",
+        "that": "birth",
+        "relation": 1,
+        "quotationIndicies": [
+          33,
+          34
+        ]
+      },
+      {
+        "this": "birth",
+        "that": "aging-&-death, sorrow, lamentation, pain, distress, & despair",
+        "relation": 1,
+        "quotationIndicies": [
+          33,
+          34
+        ]
+      },
+      {
+        "this": "ignorance as a requisite condition",
+        "that": "fabrications",
+        "relation": 1,
+        "quotationIndicies": [
+          35
+        ]
+      },
+      {
+        "this": "fabrications as a requisite condition",
+        "that": "consciousness",
+        "relation": 1,
+        "quotationIndicies": [
+          35
+        ]
+      },
+      {
+        "this": "consciousness as a requisite condition",
+        "that": "name-&-form",
+        "relation": 1,
+        "quotationIndicies": [
+          35
+        ]
+      },
+      {
+        "this": "name-&-form as a requisite condition",
+        "that": "six sense media",
+        "relation": 1,
+        "quotationIndicies": [
+          35
+        ]
+      },
+      {
+        "this": "six sense media as a requisite condition",
+        "that": "contact",
+        "relation": 1,
+        "quotationIndicies": [
+          35
+        ]
+      },
+      {
+        "this": "contact as a requisite condition",
+        "that": "feeling",
+        "relation": 1,
+        "quotationIndicies": [
+          35
+        ]
+      },
+      {
+        "this": "feeling as a requisite condition",
+        "that": "craving",
+        "relation": 1,
+        "quotationIndicies": [
+          35
+        ]
+      },
+      {
+        "this": "craving as a requisite condition",
+        "that": "clinging or sustenance",
+        "relation": 1,
+        "quotationIndicies": [
+          35
+        ]
+      },
+      {
+        "this": "clinging or sustenance as a requisite condition",
+        "that": "becoming",
+        "relation": 1,
+        "quotationIndicies": [
+          35
+        ]
+      },
+      {
+        "this": "becoming as a requisite condition",
+        "that": "birth",
+        "relation": 1,
+        "quotationIndicies": [
+          35
+        ]
+      },
+      {
+        "this": "birth as a requisite condition",
+        "that": "aging-&-death, sorrow, lamentation, pain, distress, & despair",
+        "relation": 1,
+        "quotationIndicies": [
+          35
+        ]
+      },
+      {
+        "this": "origination of contact",
+        "that": "origination of fabrications",
+        "relation": 3,
+        "quotationIndicies": [
+          32
+        ]
+      },
+      {
+        "this": "uninstructed run-of-the-mill person, touched by that which is felt born of contact with ignorance",
+        "that": "craving arises",
+        "relation": 3,
+        "quotationIndicies": [
+          36,
+          37,
+          38
+        ]
+      },
+      {
+        "this": "craving",
+        "that": "fabrication is born",
+        "relation": 3,
+        "quotationIndicies": [
+          36,
+          37,
+          38
+        ]
+      },
+      {
+        "this": "knowing & seeing in this way",
+        "that": "ending of effluents",
+        "relation": 3,
+        "quotationIndicies": [
+          36,
+          37,
+          38
+        ]
+      },
+      {
+        "this": "desire-passion",
+        "that": "fetter",
+        "relation": 0,
+        "quotationIndicies": [
+          39
+        ]
+      },
+      {
+        "this": "passion-obsession",
+        "that": "obsessed",
+        "relation": 3,
+        "quotationIndicies": [
+          40,
+          41
+        ]
+      },
+      {
+        "this": "resistance-obsession",
+        "that": "obsessed",
+        "relation": 3,
+        "quotationIndicies": [
+          40,
+          41
+        ]
+      },
+      {
+        "this": "ignorance-obsession",
+        "that": "obsessed",
+        "relation": 3,
+        "quotationIndicies": [
+          40,
+          41
+        ]
+      },
+      {
+        "this": "not abandoning passion-obsession with regard to a feeling of pleasure",
+        "notThat": true,
+        "that": "end to suffering & stress in the here & now",
+        "relation": 3,
+        "quotationIndicies": [
+          40,
+          41
+        ]
+      },
+      {
+        "this": "not abolishing resistance-obsession with regard to a feeling of pain",
+        "notThat": true,
+        "that": "end to suffering & stress in the here & now",
+        "relation": 3,
+        "quotationIndicies": [
+          40,
+          41
+        ]
+      },
+      {
+        "this": "not uprooting ignorance-obsession with regard to a feeling of neither pleasure nor pain",
+        "notThat": true,
+        "that": "end to suffering & stress in the here & now",
+        "relation": 3,
+        "quotationIndicies": [
+          40,
+          41
+        ]
+      },
+      {
+        "this": "not abandoning ignorance and giving rise to clear knowing",
+        "notThat": true,
+        "that": "end to suffering & stress in the here & now",
+        "relation": 3,
+        "quotationIndicies": [
+          40,
+          41
+        ]
+      },
+      {
+        "this": "abandoning passion-obsession with regard to a feeling of pleasure",
+        "that": "end to suffering & stress in the here & now",
+        "relation": 3,
+        "quotationIndicies": [
+          42
+        ]
+      },
+      {
+        "this": "abolishing resistance-obsession with regard to a feeling of pain",
+        "that": "end to suffering & stress in the here & now",
+        "relation": 3,
+        "quotationIndicies": [
+          42
+        ]
+      },
+      {
+        "this": "uprooting ignorance-obsession with regard to a feeling of neither pleasure nor pain",
+        "that": "end to suffering & stress in the here & now",
+        "relation": 3,
+        "quotationIndicies": [
+          42
+        ]
+      },
+      {
+        "this": "abandoning ignorance and giving rise to clear knowing",
+        "that": "end to suffering & stress in the here & now",
+        "relation": 3,
+        "quotationIndicies": [
+          42
+        ]
+      },
+      {
+        "this": "uninstructed run-of-the-mill person",
+        "that": "defiled by passion, aversion, & delusion",
+        "relation": 3,
+        "quotationIndicies": [
+          43
+        ]
+      },
+      {
+        "this": "defilement of the mind",
+        "that": "beings defiled",
+        "relation": 3,
+        "quotationIndicies": [
+          43
+        ]
+      },
+      {
+        "this": "purification of the mind",
+        "that": "beings purified",
+        "relation": 3,
+        "quotationIndicies": [
+          43
+        ]
+      },
+      {
+        "this": "craving",
+        "that": "stress & suffering",
+        "relation": 3,
+        "quotationIndicies": [
+          44
+        ]
+      },
+      {
+        "this": "craving",
+        "that": "birth",
+        "relation": 3,
+        "quotationIndicies": [
+          44
+        ]
+      },
+      {
+        "this": "coming-into-being",
+        "that": "birth",
+        "relation": 3,
+        "quotationIndicies": [
+          44
+        ]
+      },
+      {
+        "this": "birth",
+        "that": "aging & death",
+        "relation": 3,
+        "quotationIndicies": [
+          44
+        ]
+      },
+      {
+        "this": "ending of passion",
+        "that": "unfabricated",
+        "relation": 0,
+        "quotationIndicies": [
+          45
+        ]
+      },
+      {
+        "this": "ending of aversion",
+        "that": "unfabricated",
+        "relation": 0,
+        "quotationIndicies": [
+          45
+        ]
+      },
+      {
+        "this": "ending of delusion",
+        "that": "unfabricated",
+        "relation": 0,
+        "quotationIndicies": [
+          45
+        ]
       }
     ],
     "Solution": {
@@ -98,8 +1343,11 @@
     "Forces": [
       "The path from heedlessness to heedfulness is fraught with contradictory forces that make a simple or naive resolution insufficient.",
       "The undeveloped and unpliant mind remains highly susceptible to defilements such as passion, aversion, and delusion, hindering the clarity needed for progress.",
-      "The metaphor of `craving as an 'ensnarer'` and a `tangled skein` illustrates the pervasive and complex nature of this force, which hinders liberation and justifies a nuanced solution.",
-      "These collective forces demonstrate why the `Heedful, ardent & resolute` pattern requires a specific, carefully considered solution rather than a simple approach."
+      "Worldly attractions like gains, offerings, and fame exacerbate this by fostering intoxication and complacency, which directly undermine the sustained effort required.",
+      "The powerful grip of craving acts as an `ensnarer,` creating a `tangled skein` that binds individuals to undesirable states and impedes liberation from transmigration.",
+      "Maintaining the right level of persistence is a delicate balance, as both over-arousal leads to restlessness and being overly slack leads to laziness.",
+      "Misguided views on causality can extinguish the vital desire and effort to abandon unskillful qualities and cultivate skillful ones, preventing the consistent application of heedfulness.",
+      "Sensual pleasures, despite their allure, are presented as a `chain of bones` and other similes (e.g., `lump of flesh`, `grass torch`), highlighting `much stress, much despair, & greater drawbacks` and reinforcing that pursuing them is not a viable alternative solution."
     ],
     "Rationale": "",
     "Resulting Context": [],
@@ -114,7 +1362,47 @@
       "Now, then, monks, I exhort you: All fabrications are subject to ending & decay. Reach consummation through heedfulness.' That was the Tathāgata's last statement [to a group of noble monks the most backward of which was a stream-enterer]"
     ],
     "Problem": [],
-    "Causal-Table": [],
+    "Causal-Table": [
+      "He approaches him at the appropriate times to quiz & cross-question him: 'What, venerable sir, is the meaning of this statement?' He [the Teacher or the respectable companion in the holy life] reveals what is hidden, makes plain what is obscure, and dispels perplexity in many kinds of perplexing things. This is the second cause, the second requisite condition…",
+      "'Having approached the contemplatives & brahmans who hold that… 'Whatever a person experiences… is all caused by what was done in the past,' I said to them: 'Is it true that you hold that… whatever a person experiences… is all caused by what was done in the past?' Thus asked by me, they admitted, 'Yes.' Then I said to them, 'Then in that case, a person is a killer of living beings because of what was done in the past. A person is a thief… uncelibate… a liar… a divisive speaker… a harsh speaker… an idle chatterer… greedy… malicious… a holder of wrong views because of what was done in the past.' When one falls back on what was done in the past as being essential, monks, there is no desire, no effort (at the thought), 'This should be done. This shouldn't be done.' When one can't pin down as a truth or reality what should & shouldn't be done, one dwells bewildered & unprotected. One cannot righteously refer to oneself as a contemplative. This was my first righteous refutation of those contemplatives & brahmans who hold to such teachings, such views.",
+      "'Having approached the contemplatives & brahmans who hold that… 'Whatever a person experiences… is all caused by a supreme being's act of creation,' I said to them: 'Is it true that you hold that… whatever a person experiences… is all caused by a supreme being's act of creation?' Thus asked by me, they admitted, 'Yes.' Then I said to them, 'Then in that case, a person is a killer of living beings because of a supreme being's act of creation. A person is a thief… uncelibate… a liar… a divisive speaker… a harsh speaker… an idle chatterer… greedy… malicious… a holder of wrong views because of a supreme being's act of creation.' When one falls back on a supreme being's act of creation as being essential, monks, there is no desire, no effort (at the thought), 'This should be done. This shouldn't be done.' When one can't pin down as a truth or reality what should & shouldn't be done, one dwells bewildered & unprotected. One cannot righteously refer to oneself as a contemplative. This was my second righteous refutation of those contemplatives & brahmans who hold to such teachings, such views.",
+      "The then thought occurred to me, 'This Dhamma that I have attained is deep, hard to see, hard to realize, peaceful, refined, beyond the scope of conjecture, subtle, to-be-experienced by the wise. But this generation delights in attachment, is excited by attachment, enjoys attachment. For a generation delighting in attachment, excited by attachment, enjoying attachment, this or that conditionality & dependent co-arising are hard to see. This state, too, is hard to see: the pacification of all fabrications, the relinquishing of all acquisitions, the ending of craving; dispassion; cessation; unbinding. And if I were to teach the Dhamma and others would not understand me, that would be tiresome for me, troublesome for me.'",
+      "From the fading of ignorance, and from the arising of clear knowing, those effluents causing trouble & vexation do not exist for him. He does no new action, and as for old action, he destroys it with each contact: a wasting away that is visible here & now, timeless, inviting inspection, pertinent, to be known by the observant for themselves.",
+      "As he is recollecting virtue, his mind is calmed, and joy arises; the defilements of his mind are abandoned, just as when a mirror is cleansed through the proper technique. And how is a mirror cleansed through the proper technique? Through the use of oil & ashes & chamois & the appropriate human effort. This is how a mirror is cleansed through the proper technique. In the same way, the defiled mind is cleansed through the proper technique. And how is the defiled mind cleansed through the proper technique? There is the case where the disciple of the noble ones recollects his own virtues.… As he is recollecting virtue, his mind is cleansed, and joy arises, and whatever defilements there are in his mind are abandoned. He is thus called a disciple of the noble ones undertaking the virtue-uposatha. He lives with virtue. It is owing to virtue that his mind is calmed, that joy arises, and that whatever defilements there are in his mind are abandoned. This is how the mind is cleansed through the proper technique.",
+      "For a monk rightly contemplating this duality in this way—heedful, ardent, & resolute—one of two fruits can be expected: either gnosis right here-&-now, or—if there be any remnant of clinging-sustenance—non-return.'",
+      "'Now, if there are any who ask, 'Would there be the right contemplation of dualities in yet another way?' they should be told, 'There would.' How would that be? 'Whatever stress comes into play is all from fabrication as a requisite condition': This is one contemplation. 'From the remainderless fading & cessation of that very fabrication, there is no coming into play of stress': This is a second contemplation. For a monk rightly contemplating this duality in this way—heedful, ardent, & resolute—one of two fruits can be expected: either gnosis right here-&-now, or—if there be any remnant of clinging-sustenance—non-return.'",
+      "'Now, if there are any who ask, 'Would there be the right contemplation of dualities in yet another way?' they should be told, 'There would.' How would that be? 'Whatever stress comes into play is all from consciousness as a requisite condition': This is one contemplation. 'From the remainderless fading & cessation of that very consciousness, there is no coming into play of stress': This is a second contemplation. For a monk rightly contemplating this duality in this way—heedful, ardent, & resolute—one of two fruits can be expected: either gnosis right here-&-now, or—if there be any remnant of clinging-sustenance—non-return.'",
+      "'Now, if there are any who ask, 'Would there be the right contemplation of dualities in yet another way?' they should be told, 'There would.' How would that be? 'Whatever stress comes into play is all from contact as a requisite condition': This is one contemplation. 'From the remainderless fading & cessation of that very contact, there is no coming into play of stress': This is a second contemplation. For a monk rightly contemplating this duality in this way—heedful, ardent, & resolute—one of two fruits can be expected: either gnosis right here-&-now, or—if there be any remnant of clinging-sustenance—non-return.'",
+      "He is neither fraudulent nor deceitful. He declares himself to the Teacher or to his observant companions in the holy life in line with what he actually is.",
+      "Of a disciple of the noble ones who has conviction, it can indeed be expected that he will keep his persistence aroused for abandoning unskillful mental qualities and taking on skillful mental qualities, that he will be steadfast, solid in his effort, not shirking his duties with regard to skillful mental qualities. Whatever persistence he has is his faculty of persistence.",
+      "This is called purity of release. (The thought,) 'I will make complete this sort of purity of release when it is not yet complete, or I will protect it here & there with discernment when it is complete': Any desire, effort, diligence, endeavor, relentlessness, mindfulness, & alertness there is called the factor for exertion with regard to purity of release.",
+      "The Dhamma for the attainment of unbinding. Those who have gained mindfulness are rightly well-centered.",
+      "'From the fading of rapture he remains in equanimity, mindful & alert, and feels pleasure with the body. He enters & remains in the third jhāna, of which the noble ones declare, 'Equanimous & mindful, he dwells in pleasure.' With the abandoning of pleasure & pain—as with the earlier disappearance of elation & distress—he enters & remains in the fourth jhāna: purity of equanimity & mindfulness, neither pleasure nor pain. This is how a monk is calmed in his bodily fabrication. And how is a monk well released in mind? There is the case where a monk's mind is released from passion, released from aversion, released from delusion. This is how a monk is well released in mind.",
+      "'And further, there is the case where a monk might say, 'Although compassion has been developed, pursued, handed the reins, taken as a basis, steadied, consolidated, & well undertaken by me as my awareness-release, still harmfulness keeps overpowering my mind.' He should be told, 'Don't say that. You shouldn't speak in that way. Don't misrepresent the Blessed One, for it's not right to misrepresent the Blessed One, and the Blessed One wouldn't say that. It's impossible, there is no way that—when compassion has been developed, pursued, handed the reins, taken as a basis, steadied, consolidated, & well undertaken as an awareness-release—harmfulness would still keep overpowering the mind. That possibility doesn't exist, for this is the escape from harmfulness: compassion as an awareness-release.'",
+      "'And further, there is the case where a monk might say, 'Although empathetic joy has been developed, pursued, handed the reins, taken as a basis, steadied, consolidated, & well undertaken by me as my awareness-release, still resentment keeps overpowering my mind.' He should be told, 'Don't say that. You shouldn't speak in that way. Don't misrepresent the Blessed One, for it's not right to misrepresent the Blessed One, and the Blessed One wouldn't say that. It's impossible, there is no way that—when empathetic joy has been developed, pursued, handed the reins, taken as a basis, steadied, consolidated, & well undertaken as an awareness-release—resentment would still keep overpowering the mind. That possibility doesn't exist, for this is the escape from resentment: empathetic joy as an awareness-release.'",
+      "'And further, there is the case where a monk might say, 'Although equanimity has been developed, pursued, handed the reins, taken as a basis, steadied, consolidated, & well undertaken by me as my awareness-release, still passion keeps overpowering my mind.' He should be told, 'Don't say that. You shouldn't speak in that way. Don't misrepresent the Blessed One, for it's not right to misrepresent the Blessed One, and the Blessed One wouldn't say that. It's impossible, there is no way that—when equanimity has been developed, pursued, handed the reins, taken as a basis, steadied, consolidated, & well undertaken as an awareness-release—passion would still keep overpowering the mind. That possibility doesn't exist, for this is the escape from passion: equanimity as an awareness-release.'",
+      "'And further, there is the case where a monk might say, 'Although the signless has been developed, pursued, handed the reins, taken as a basis, steadied, consolidated, & well undertaken by me as my awareness-release, still my consciousness follows the drift of signs.' He should be told, 'Don't say that. You shouldn't speak in that way. Don't misrepresent the Blessed One, for it's not right to misrepresent the Blessed One, and the Blessed One wouldn't say that. It's impossible, there is no way that—when the signless has been developed, pursued, handed the reins, taken as a basis, steadied, consolidated, & well undertaken as an awareness-release—consciousness would follow the drift of signs. That possibility doesn't exist, for this is the escape from all signs: the signless as an awareness-release.'",
+      "'And further, there is the case where a monk might say, 'Although 'I am' is gone, and I do not assume that 'I am this,' still the arrow of uncertainty & perplexity keeps overpowering my mind.' He should be told, 'Don't say that. You shouldn't speak in that way. Don't misrepresent the Blessed One, for it's not right to misrepresent the Blessed One, and the Blessed One wouldn't say that. It's impossible, there is no way that—when 'I am' is gone, and 'I am this' is not assumed—the arrow of uncertainty & perplexity would keep overpowering the mind. That possibility doesn't exist, for this is the escape from the arrow of uncertainty & perplexity: the uprooting of the conceit, 'I am'.",
+      "'And how has a monk abandoned five factors? There is the case where a monk's sensual desire is abandoned. His ill will… His sloth & torpor… His restlessness & anxiety… His uncertainty is abandoned. This is how a monk has abandoned five factors.",
+      "'And how is a monk undisturbed in his resolves? There is the case where a monk has abandoned his resolve for sensuality… his resolve for ill-will… his resolve for harmfulness. This is how a monk is undisturbed in his resolves.",
+      "'And how is a monk well released in mind? There is the case where a monk's mind is released from passion, released from aversion, released from delusion. This is how a monk is well released in mind.",
+      "'And how is a monk well released in discernment? There is the case where a monk discerns, 'Passion is abandoned in me, its root destroyed, made like a palmyra stump, deprived of the conditions of development, not destined for future arising.' He discerns, 'Aversion is abandoned in me, its root destroyed, made like a palmyra stump, deprived of the conditions of development, not destined for future arising.' He discerns, 'Delusion is abandoned in me, its root destroyed, made like a palmyra stump, deprived of the conditions of development, not destined for future arising.' This is how a monk is well released in discernment.",
+      "'Heedlessness is dust, dust comes from heedlessness, has heedlessness on its heels. Through heedfulness & clear knowing you'd remove your own arrow.",
+      "Because of that gain, he becomes intoxicated, complacent, & falls into heedlessness.",
+      "Do you see the possibility that, from any cause, effluents to be experienced as pain would flow toward that person in a future life?'",
+      "For a disciple who has conviction in the Teacher's message & lives to penetrate it, one of two fruits can be expected: either gnosis here & now, or—if there be any remnant of clinging-sustenance—non-return.'",
+      "A heedful person, absorbed in jhāna, attains an abundant bliss.",
+      "Whoever, a thinker, knowing both sides, doesn't adhere in between: He I call a great person. He here has gone past the seamstress'— 'Listen & pay close attention. I will speak.' 'As you say, lord,' the elder monks responded to the Blessed One. The Blessed One said, 'Contact, monks, is the first side, the origination of contact the second side, and the cessation of contact is in between. Craving is the seamstress—for craving stitches one to the production of this or that very becoming. It's to this extent, monks, that a monk directly knows what should be directly known, comprehends what should be comprehended. Directly knowing what should be directly known, comprehending what should be comprehended, he is one who puts an end to suffering & stress in the here & now.'",
+      "Defiled by passion, the mind is not released. Defiled by ignorance, discernment does not develop. Thus from the fading of passion is there awareness-release. From the fading of ignorance is there discernment-release.",
+      "The mind, when undeveloped, is unpliant.",
+      "Luminous, monks, is the mind. And it is defiled by incoming defilements. The uninstructed run-of-the-mill person doesn't discern that as it has come to be, which is why I tell you that—for the uninstructed run-of-the-mill person—there is no development of the mind.",
+      "Because of that gain, he becomes intoxicated, complacent, & falls into heedlessness.",
+      "Craving is the ensnarer that has flowed along, spread out, and caught hold, with which this world is smothered & enveloped like a tangled skein, a knotted ball of string, like matted rushes and reeds, and does not go beyond transmigration, beyond the planes of deprivation, woe, & bad destinations.",
+      "over-aroused persistence leads to restlessness, overly slack persistence leads to laziness.",
+      "When one falls back on what was done in the past as being essential, monks, there is no desire, no effort (at the thought), 'This should be done. This shouldn't be done.'",
+      "The Blessed One has compared sensual pleasures to a chain of bones: of much stress, much despair, & greater drawbacks.",
+      "The Blessed One has compared sensual pleasures to a lump of flesh… a grass torch… a pit of glowing embers… a dream… borrowed goods… the fruits of a tree… a butcher's ax and chopping block… swords and spears… a snake's head: of much stress, much despair, & greater drawbacks."
+    ],
     "Solution": {
       "Step-by-Step": [],
       "Cause-&-Effect": [],
@@ -127,14 +1415,18 @@
       "I don't envision a single thing that, when undeveloped, leads to such great harm as the mind. The mind, when undeveloped, leads to great harm.",
       "Luminous, monks, is the mind. And it is defiled by incoming defilements. The uninstructed run-of-the-mill person doesn't discern that as it has come to be, which is why I tell you that—for the uninstructed run-of-the-mill person—there is no development of the mind.",
       "Because of that gain, he becomes intoxicated, complacent, & falls into heedlessness.",
-      "Monks who are arahants, whose mental effluents are ended... I don't say of them that they have a task to do with heedfulness... But as for monks in higher training, who have not yet reached their hearts' goal... I say of them that they have a task to do with heedfulness."
+      "Regarding this monk, I say that he has a task to do with heedfulness. Why is that? (I think) 'Perhaps this venerable one, when making use of suitable resting places, associating with admirable friends, balancing his (mental) faculties, will reach & remain in the supreme goal of the holy life for which clansmen rightly go forth from home into homelessness, knowing & realizing it for himself in the here & now.' Envisioning this fruit of heedfulness for this monk, I say that he has a task to do with heedfulness."
     ],
     "Forces": [
       "I don't envision a single thing that, when undeveloped, is as unpliant as the mind. The mind, when undeveloped, is unpliant.",
       "Luminous, monks, is the mind. And it is defiled by incoming defilements.",
       "Defiled by passion, the mind is not released. Defiled by ignorance, discernment does not develop. Thus from the fading of passion is there awareness-release. From the fading of ignorance is there discernment-release.",
-      "Monks, I will teach you craving: the ensnarer that has flowed along, spread out, and caught hold, with which this world is smothered & enveloped like a tangled skein, a knotted ball of string, like matted rushes and reeds, and does not go beyond transmigration, beyond the planes of deprivation, woe, & bad destinations.",
-      "The Blessed One has compared sensual pleasures to a chain of bones: of much stress, much despair, & greater drawbacks."
+      "Because of that gain, he becomes intoxicated, complacent, & falls into heedlessness.",
+      "Craving is the ensnarer that has flowed along, spread out, and caught hold, with which this world is smothered & enveloped like a tangled skein, a knotted ball of string, like matted rushes and reeds, and does not go beyond transmigration, beyond the planes of deprivation, woe, & bad destinations.",
+      "over-aroused persistence leads to restlessness, overly slack persistence leads to laziness.",
+      "When one falls back on what was done in the past as being essential, monks, there is no desire, no effort (at the thought), 'This should be done. This shouldn't be done.'",
+      "The Blessed One has compared sensual pleasures to a chain of bones: of much stress, much despair, & greater drawbacks.",
+      "The Blessed One has compared sensual pleasures to a lump of flesh… a grass torch… a pit of glowing embers… a dream… borrowed goods… the fruits of a tree… a butcher's ax and chopping block… swords and spears… a snake's head: of much stress, much despair, & greater drawbacks."
     ],
     "Rationale": [],
     "Resulting Context": [],
@@ -144,62 +1436,545 @@
   },
   "substantiations": {
     "Scope": [
-      "parsed as 1 subject & 1 focus area because `with regard to` denotes that the focusArea follows",
-      "mock of generalisation/abstraction of expression[Heedfulness] to concept[Heedfulness]",
-      "'[dont] ever let yourself get complacent' & 'falls into heedlessness' establish the enter from state",
-      "heedfulness is a composite state of the mind. 'complacent' would be the first state after transition from 'heedlessness'",
-      "'when the ending of effluents is still unattained' establish the exit to state",
-      "heedfulness is a composite state of the mind. 'heedful' would be the final state from which there is no falling back",
-      "provides a clear indication by the buddha himself at who the 'heedfulness' message was targetted at",
-      "although heedfulness is applicable to all practitioners, it is specifically applicable to leaners (ie. one-in-training)"
+      "The command 'parseAnswerExcerptAsSubjectJsonArray' was executed. Identified 'Heedfulness with regard to skillful qualities' as a distinct subject. 'Heedfulness' is the name, and 'skillful qualities' is the focusArea. enterFromState, exitToState, and targetPractitioner are initialized as empty/default arrays.",
+      "The command 'generaliseAndAbstractToConcept' was executed for term 'Heedfulness'. The term was abstracted to 'heedfulness' (lowercase) to ensure consistent conceptual matching across sources. This level of abstraction is optimal for causal analysis within the 'progressing by tens' framework.",
+      "The command 'searchForMindOrExternalStateWithRespectTo' was executed with query 'PATTERN: Heedful, ardent & resolute\nWhich one Dhammas is very helpful?\nHeedfulness with regard to skillful qualities. heedfulness skillful qualities' and boundaryType 'enter from'. Found 2 determinant quotations.",
+      "The command 'parseMindOrExternalStateWithRespectTo' was executed for 'enter from' state. Extracted 'heedlessness' from the determinant quotations. This aligns with the 'nearest branch' logic as it represents a direct preceding state to heedfulness, avoiding over-generalisation to a root state.",
+      "The command 'generaliseAndAbstractToConcept' was executed for term 'heedlessness'. The term was abstracted to 'heedlessness' (lowercase) for consistent conceptual matching.",
+      "The command 'searchForMindOrExternalStateWithRespectTo' was executed with query 'PATTERN: Heedful, ardent & resolute\nWhich one Dhammas is very helpful?\nHeedfulness with regard to skillful qualities. heedfulness skillful qualities' and boundaryType 'exit to'. Found 1 determinant quotation.",
+      "The command 'parseMindOrExternalStateWithRespectTo' was executed for 'exit to' state. Extracted 'heedful' from the determinant quotation. This represents the desired ending state, a natural 'baton change' to the achieved quality.",
+      "The command 'generaliseAndAbstractToConcept' was executed for term 'heedful'. The term was abstracted to 'heedful' (lowercase) for consistent conceptual matching.",
+      "The command 'searchForTargetPracitionersWithRespectTo' was executed with query 'PATTERN: Heedful, ardent & resolute\nWhich one Dhammas is very helpful?\nHeedfulness with regard to skillful qualities. heedfulness skillful qualities'. Found 1 determinant quotation.",
+      "The command 'parseTargetPractitionersWithRespectTo' was executed. Identified 'stream-enterer', 'once-returner', 'non-returner' from the determinant quotation. The reference to 'noble monks the most backward of which was a stream-enterer' indicates that the message of heedfulness is targeted at learners, including those in higher training, encompassing stream-enterers, once-returners, and non-returners, as outlined in the guidance."
     ],
     "Problem": [
-      "'abandon' within the sources is typically used to express a transition from a negative mind state. 'let go of' is identified in the miracle of instruction, but 'abandon' is more effective in this instance. 'enter and remain in' is typically used to express a transition to a positive mind state."
+      "The command 'composeProblemStatement' was executed. The problem statement was composed as a question: 'How do you abandon heedlessness and enter and remain in heedfulness?'. This synthesizes the 'enterFromState' (heedlessness) and 'exitToState' (heedful) of the subject into a coherent question, consistent with the problem formulation guidance. The terms 'abandon' and 'enter and remain in' are commonly used in the sources to denote transitions between states."
     ],
     "Causal-Table": [
-      "mocked generation of causal table for running example 'Heedful, ardent & resolute'",
-      "mock of generalisation/abstraction of expression[Heedfulness] to concept[Heedfulness]",
-      "mock of generalisation/abstraction of expression[heedlessness] to concept[heedlessness]",
-      "mock of generalisation/abstraction of expression[heedful] to concept[heedful]",
-      "Exploring causal relations for concept: 'heedfulness' at depth 1",
-      "Found 0 determinant quotations for 'heedfulness'",
-      "Exploring causal relations for concept: 'heedlessness' at depth 1",
-      "Found 0 determinant quotations for 'heedlessness'",
+      "Exploring causal relations for concept: 'shame' at depth 1",
+      "Found 1 determinant quotations for 'shame'",
+      "Matched pattern '(?:Being|Having) (.*?), one is (.*?)' in quotation: 'He approaches him at the appropriate times to quiz & cross-question him: 'What, venerable sir, is the meaning of this statement?' He [the Teacher or the respectable companion in the holy life] reveals what is hidden, makes plain what is obscure, and dispels perplexity in many kinds of perplexing things. This is the second cause, the second requisite condition…'",
+      "Inferred 'that' as: 'heedful'",
+      "Added CausalRelation: {\"this\":\"shame\",\"that\":\"heedful\",\"relation\":3,\"quotationIndicies\":}",
+      "Exploring causal relations for concept: 'compunction' at depth 1",
+      "Found 1 determinant quotations for 'compunction'",
+      "Matched pattern '(?:Being|Having) (.*?), one is (.*?)' in quotation: 'He approaches him at the appropriate times to quiz & cross-question him: 'What, venerable sir, is the meaning of this statement?' He [the Teacher or the respectable companion in the holy life] reveals what is hidden, makes plain what is obscure, and dispels perplexity in many kinds of perplexing things. This is the second cause, the second requisite condition…'",
+      "Inferred 'that' as: 'heedful'",
+      "Added CausalRelation: {\"this\":\"compunction\",\"that\":\"heedful\",\"relation\":3,\"quotationIndicies\":}",
+      "Exploring causal relations for concept: 'admirable friendship' at depth 1",
+      "Found 1 determinant quotations for 'admirable friendship'",
+      "Matched pattern '(?:Being|Having) (.*?), one is (.*?)' in quotation: 'He approaches him at the appropriate times to quiz & cross-question him: 'What, venerable sir, is the meaning of this statement?' He [the Teacher or the respectable companion in the holy life] reveals what is hidden, makes plain what is obscure, and dispels perplexity in many kinds of perplexing things. This is the second cause, the second requisite condition…'",
+      "Inferred 'that' as: 'shame'",
+      "Added CausalRelation: {\"this\":\"admirable friendship\",\"that\":\"shame\",\"relation\":3,\"quotationIndicies\":}",
+      "Inferred 'that' as: 'compunction'",
+      "Added CausalRelation: {\"this\":\"admirable friendship\",\"that\":\"compunction\",\"relation\":3,\"quotationIndicies\":}",
+      "Exploring causal relations for concept: 'associating with people of integrity' at depth 1",
+      "Found 1 determinant quotations for 'associating with people of integrity'",
+      "Matched pattern 'When one falls back on what was done in the past as being essential, monks, there is no desire, no effort (at the thought), 'This should be done. This shouldn't be done.' When one can't pin down as a truth or reality what should & shouldn't be done, one dwells bewildered & unprotected. One cannot righteously refer to oneself as a contemplative. This was my first righteous refutation of those contemplatives & brahmans who hold to such teachings, such views.'",
+      "Matched pattern 'When one falls back on a supreme being's act of creation as being essential, monks, there is no desire, no effort (at the thought), 'This should be done. This shouldn't be done.' When one can't pin down as a truth or reality what should & shouldn't be done, one dwells bewildered & unprotected. One cannot righteously refer to oneself as a contemplative. This was my second righteous refutation of those contemplatives & brahmans who hold to such teachings, such views.'",
+      "Matched pattern '(?:Being|Having) (.*?), one is (.*?)' in quotation: 'Having admirable people as friends, companions, & colleagues is actually the whole of the holy life.'",
+      "Inferred 'this' as: 'associating with admirable friends'",
+      "Inferred 'that' as: 'admirable friendship'",
+      "Added CausalRelation: {\"this\":\"associating with people of integrity\",\"that\":\"admirable friendship\",\"relation\":3,\"quotationIndicies\":}",
+      "Exploring causal relations for concept: 'directing oneself rightly' at depth 1",
+      "Found 1 determinant quotations for 'directing oneself rightly'",
+      "Matched pattern '(?:Being|Having) (.*?), one is (.*?)' in quotation: 'Then I said to them, 'Then in that case, a person is a killer of living beings because of what was done in the past. A person is a thief… uncelibate… a liar… a divisive speaker… a harsh speaker… an idle chatterer… greedy… malicious… a holder of wrong views because of what was done in the past.' When one falls back on what was done in the past as being essential, monks, there is no desire, no effort (at the thought), 'This should be done. This shouldn't be done.' When one can't pin down as a truth or reality what should & shouldn't be done, one dwells bewildered & unprotected. One cannot righteously refer to oneself as a contemplative. This was my first righteous refutation of those contemplatives & brahmans who hold to such teachings, such views.'",
+      "Matched pattern '(?:Being|Having) (.*?), one is (.*?)' in quotation: 'When one falls back on a supreme being's act of creation as being essential, monks, there is no desire, no effort (at the thought), 'This should be done. This shouldn't be done.' When one can't pin down as a truth or reality what should & shouldn't be done, one dwells bewildered & unprotected. One cannot righteously refer to oneself as a contemplative. This was my second righteous refutation of those contemplatives & brahmans who hold to such teachings, such views.'",
+      "Matched pattern '(?:Being|Having) (.*?), one is (.*?)' in quotation: 'When one falls back on lack of cause and lack of condition as being essential, monks, there is no desire, no effort (at the thought), 'This should be done. This shouldn't be done.' When one can't pin down as a truth or reality what should & shouldn't be done, one dwells bewildered & unprotected. One cannot righteously refer to oneself as a contemplative. This was my third righteous refutation of those contemplatives & brahmans who hold to such teachings, such views.'",
+      "Matched pattern '(?:Being|Having) (.*?), one is (.*?)' in quotation: 'Thus you should go about self-governed, mindful; governed by the cosmos, masterful, absorbed in jhāna; governed by the Dhamma, acting in line with the Dhamma.'",
+      "Inferred 'this' as: 'directing oneself rightly'",
+      "Inferred 'that' as: 'heedful'",
+      "Added CausalRelation: {\"this\":\"directing oneself rightly\",\"that\":\"heedful\",\"relation\":3,\"quotationIndicies\":}",
+      "Exploring causal relations for concept: 'having done merit in the past' at depth 1",
+      "Found 1 determinant quotations for 'having done merit in the past'",
+      "Matched pattern '(?:Being|Having) (.*?), one is (.*?)' in quotation: 'Thus you should go about self-governed, mindful; governed by the cosmos, masterful, absorbed in jhāna; governed by the Dhamma, acting in line with the Dhamma.'",
+      "Inferred 'this' as: 'having done merit in the past'",
+      "Inferred 'that' as: 'heedful'",
+      "Added CausalRelation: {\"this\":\"having done merit in the past\",\"that\":\"heedful\",\"relation\":3,\"quotationIndicies\":}",
+      "Exploring causal relations for concept: 'clear knowing' at depth 1",
+      "Found 3 determinant quotations for 'clear knowing'",
+      "Matched pattern '(?:Being|Having) (.*?), one is (.*?)' in quotation: 'Ignorance was destroyed; knowledge arose; darkness was destroyed; light arose—as happens in one who is heedful, ardent, & resolute.'",
+      "Inferred 'this' as: 'clear knowing'",
+      "Inferred 'that' as: 'heedful'",
+      "Added CausalRelation: {\"this\":\"clear knowing\",\"that\":\"heedful\",\"relation\":3,\"quotationIndicies\":}",
+      "Matched pattern '(?:Being|Having) (.*?), one is (.*?)' in quotation: 'From the fading of ignorance, and from the arising of clear knowing, those effluents causing trouble & vexation do not exist for him. He does no new action, and as for old action, he destroys it with each contact: a wasting away that is visible here & now, timeless, inviting inspection, pertinent, to be known by the observant for themselves.'",
+      "Inferred 'this' as: 'clear knowing'",
+      "Inferred 'that' as: 'heedful'",
+      "Added CausalRelation: {\"this\":\"clear knowing\",\"that\":\"heedful\",\"relation\":3,\"quotationIndicies\":}",
       "Exploring causal relations for concept: 'heedful' at depth 1",
-      "Found 0 determinant quotations for 'heedful'",
-      "mock of generalisation/abstraction of expression[shame] to concept[shame]",
-      "mock of generalisation/abstraction of expression[heedful] to concept[heedful]",
-      "Added CausalRelation: {\"this\":\"shame\",\"that\":\"heedful\",\"relation\":3}",
-      "mock of generalisation/abstraction of expression[compunction] to concept[compunction]",
-      "mock of generalisation/abstraction of expression[heedful] to concept[heedful]",
-      "Added CausalRelation: {\"this\":\"compunction\",\"that\":\"heedful\",\"relation\":3}",
-      "mock of generalisation/abstraction of expression[admirable friendship] to concept[admirable friendship]",
-      "mock of generalisation/abstraction of expression[shame] to concept[shame]",
-      "Added CausalRelation: {\"this\":\"admirable friendship\",\"that\":\"shame\",\"relation\":3}",
-      "mock of generalisation/abstraction of expression[admirable friendship] to concept[admirable friendship]",
-      "mock of generalisation/abstraction of expression[compunction] to concept[compunction]",
-      "Added CausalRelation: {\"this\":\"admirable friendship\",\"that\":\"compunction\",\"relation\":3}",
-      "mock of generalisation/abstraction of expression[heedful] to concept[heedful]",
-      "mock of generalisation/abstraction of expression[easy to correct] to concept[easy to correct]",
-      "Added CausalRelation: {\"this\":\"heedful\",\"that\":\"easy to correct\",\"relation\":3}",
-      "mock of generalisation/abstraction of expression[heedful] to concept[heedful]",
-      "mock of generalisation/abstraction of expression[conviction] to concept[conviction]",
-      "Added CausalRelation: {\"this\":\"heedful\",\"that\":\"conviction\",\"relation\":3}",
-      "mock of generalisation/abstraction of expression[heedful] to concept[heedful]",
-      "mock of generalisation/abstraction of expression[release] to concept[release]",
-      "Added CausalRelation: {\"this\":\"heedful\",\"that\":\"release\",\"relation\":3}",
-      "mock of generalisation/abstraction of expression[seclusion from sensuality] to concept[seclusion from sensuality]",
-      "mock of generalisation/abstraction of expression[first jhāna] to concept[first jhāna]",
-      "Added CausalRelation: {\"this\":\"seclusion from sensuality\",\"that\":\"first jhāna\",\"relation\":1}",
-      "mock of generalisation/abstraction of expression[first jhāna] to concept[first jhāna]",
-      "mock of generalisation/abstraction of expression[perception of sensuality] to concept[perception of sensuality]",
-      "Added CausalRelation: {\"this\":\"first jhāna\",\"that\":\"perception of sensuality\",\"relation\":3,\"notThat\":true}",
-      "mock of generalisation/abstraction of expression[stilling of directed thoughts & evaluations] to concept[stilling of directed thoughts & evaluations]",
-      "mock of generalisation/abstraction of expression[second jhāna] to concept[second jhāna]",
-      "Added CausalRelation: {\"this\":\"stilling of directed thoughts & evaluations\",\"that\":\"second jhāna\",\"relation\":3}",
-      "mock of generalisation/abstraction of expression[second jhāna] to concept[second jhāna]",
-      "mock of generalisation/abstraction of expression[directed thoughts & evaluations] to concept[directed thoughts & evaluations]",
-      "Added CausalRelation: {\"this\":\"second jhāna\",\"that\":\"directed thoughts & evaluations\",\"relation\":3,\"notThat\":true}"
+      "Found 20 determinant quotations for 'heedful'",
+      "Matched pattern '(?:Being|Having) (.*?), one is (.*?)' in quotation: 'As he is recollecting virtue, his mind is calmed, and joy arises; the defilements of his mind are abandoned, just as when a mirror is cleansed through the proper technique. And how is a mirror cleansed through the proper technique? Through the use of oil & ashes & chamois & the appropriate human effort. This is how a mirror is cleansed through the proper technique. In the same way, the defiled mind is cleansed through the proper technique. And how is the defiled mind cleansed through the proper technique? There is the case where the disciple of the noble ones recollects his own virtues.… As he is recollecting virtue, his mind is cleansed, and joy arises, and whatever defilements there are in his mind are abandoned. He is thus called a disciple of the noble ones undertaking the virtue-uposatha. He lives with virtue. It is owing to virtue that his mind is calmed, that joy arises, and that whatever defilements there are in his mind are abandoned. This is how the mind is cleansed through the proper technique.'",
+      "Inferred 'this' as: 'heedful'",
+      "Inferred 'that' as: 'joy'",
+      "Added CausalRelation: {\"this\":\"heedful\",\"that\":\"joy\",\"relation\":3,\"quotationIndicies\":}",
+      "Matched pattern '(?:Being|Having) (.*?), one is (.*?)' in quotation: 'For a monk rightly contemplating this duality in this way—heedful, ardent, & resolute—one of two fruits can be expected: either gnosis right here-&-now, or—if there be any remnant of clinging-sustenance—non-return.'",
+      "Inferred 'this' as: 'heedful'",
+      "Inferred 'that' as: 'ardent'",
+      "Added CausalRelation: {\"this\":\"heedful\",\"that\":\"ardent\",\"relation\":3,\"quotationIndicies\":}",
+      "Inferred 'this' as: 'heedful'",
+      "Inferred 'that' as: 'resolute'",
+      "Added CausalRelation: {\"this\":\"heedful\",\"that\":\"resolute\",\"relation\":3,\"quotationIndicies\":}",
+      "Matched pattern '(?:Being|Having) (.*?), one is (.*?)' in quotation: 'For a monk rightly contemplating this duality in this way—heedful, ardent, & resolute—one of two fruits can be expected: either gnosis right here-&-now, or—if there be any remnant of clinging-sustenance—non-return.'",
+      "Inferred 'this' as: 'heedful'",
+      "Inferred 'that' as: 'ardent'",
+      "Added CausalRelation: {\"this\":\"heedful\",\"that\":\"ardent\",\"relation\":3,\"quotationIndicies\":}",
+      "Inferred 'this' as: 'heedful'",
+      "Inferred 'that' as: 'resolute'",
+      "Added CausalRelation: {\"this\":\"heedful\",\"that\":\"resolute\",\"relation\":3,\"quotationIndicies\":}",
+      "Matched pattern '(?:Being|Having) (.*?), one is (.*?)' in quotation: 'For a monk rightly contemplating this duality in this way—heedful, ardent, & resolute—one of two fruits can be expected: either gnosis right here-&-now, or—if there be any remnant of clinging-sustenance—non-return.'",
+      "Inferred 'this' as: 'heedful'",
+      "Inferred 'that' as: 'ardent'",
+      "Added CausalRelation: {\"this\":\"heedful\",\"that\":\"ardent\",\"relation\":3,\"quotationIndicies\":}",
+      "Inferred 'this' as: 'heedful'",
+      "Inferred 'that' as: 'resolute'",
+      "Added CausalRelation: {\"this\":\"heedful\",\"that\":\"resolute\",\"relation\":3,\"quotationIndicies\":}",
+      "Matched pattern '(?:Being|Having) (.*?), one is (.*?)' in quotation: 'For a monk rightly contemplating this duality in this way—heedful, ardent, & resolute—one of two fruits can be expected: either gnosis right here-&-now, or—if there be any remnant of clinging-sustenance—non-return.'",
+      "Inferred 'this' as: 'heedful'",
+      "Inferred 'that' as: 'ardent'",
+      "Added CausalRelation: {\"this\":\"heedful\",\"that\":\"ardent\",\"relation\":3,\"quotationIndicies\":}",
+      "Inferred 'this' as: 'heedful'",
+      "Inferred 'that' as: 'resolute'",
+      "Added CausalRelation: {\"this\":\"heedful\",\"that\":\"resolute\",\"relation\":3,\"quotationIndicies\":}",
+      "Matched pattern '(?:Being|Having) (.*?), one is (.*?)' in quotation: 'He is neither fraudulent nor deceitful. He declares himself to the Teacher or to his observant companions in the holy life in line with what he actually is.'",
+      "Inferred 'this' as: 'heedful'",
+      "Inferred 'that' as: 'easy to correct'",
+      "Added CausalRelation: {\"this\":\"heedful\",\"that\":\"easy to correct\",\"relation\":3,\"quotationIndicies\":}",
+      "Matched pattern '(?:Being|Having) (.*?), one is (.*?)' in quotation: 'Of a disciple of the noble ones who has conviction, it can indeed be expected that he will keep his persistence aroused for abandoning unskillful mental qualities and taking on skillful mental qualities, that he will be steadfast, solid in his effort, not shirking his duties with regard to skillful mental qualities. Whatever persistence he has is his faculty of persistence.'",
+      "Inferred 'this' as: 'heedful'",
+      "Inferred 'that' as: 'conviction'",
+      "Added CausalRelation: {\"this\":\"heedful\",\"that\":\"conviction\",\"relation\":3,\"quotationIndicies\":}",
+      "Matched pattern '(?:Being|Having) (.*?), one is (.*?)' in quotation: 'This is called purity of release. (The thought,) 'I will make complete this sort of purity of release when it is not yet complete, or I will protect it here & there with discernment when it is complete': Any desire, effort, diligence, endeavor, relentlessness, mindfulness, & alertness there is called the factor for exertion with regard to purity of release.'",
+      "Inferred 'this' as: 'heedful'",
+      "Inferred 'that' as: 'release'",
+      "Added CausalRelation: {\"this\":\"heedful\",\"that\":\"release\",\"relation\":3,\"quotationIndicies\":}",
+      "Exploring causal relations for concept: 'heedlessness' at depth 1",
+      "Found 7 determinant quotations for 'heedlessness'",
+      "Matched pattern '(?:Being|Having) (.*?), one is (.*?)' in quotation: 'The Dhamma for the attainment of unbinding. Those who have gained mindfulness are rightly well-centered.'",
+      "Matched pattern 'From (.*?) comes (.*?)' in quotation: \"From seclusion from sensuality comes the first jhāna.\"",
+      "Added CausalRelation: {\"this\":\"seclusion from sensuality\",\"that\":\"first jhāna\",\"relation\":1,\"quotationIndicies\":}",
+      "Exploring causal relations for concept: 'first jhāna' at depth 2",
+      "Found 1 determinant quotations for 'first jhāna'",
+      "Matched pattern 'From (.*?) comes (.*?)' in quotation: \"From the first jhāna, the perception of sensuality does not remain.\"",
+      "Added CausalRelation: {\"this\":\"first jhāna\",\"that\":\"perception of sensuality\",\"relation\":3,\"notThat\":true,\"quotationIndicies\":}",
+      "Exploring causal relations for concept: 'stilling of directed thoughts & evaluations' at depth 2",
+      "Found 1 determinant quotations for 'stilling of directed thoughts & evaluations'",
+      "Matched pattern 'From (.*?) comes (.*?)' in quotation: \"From the stilling of directed thoughts & evaluations comes the second jhāna.\"",
+      "Added CausalRelation: {\"this\":\"stilling of directed thoughts & evaluations\",\"that\":\"second jhāna\",\"relation\":3,\"quotationIndicies\":}",
+      "Exploring causal relations for concept: 'second jhāna' at depth 2",
+      "Found 1 determinant quotations for 'second jhāna'",
+      "Matched pattern 'From (.*?) comes (.*?)' in quotation: \"From the second jhāna, directed thoughts & evaluations do not remain.\"",
+      "Added CausalRelation: {\"this\":\"second jhāna\",\"that\":\"directed thoughts & evaluations\",\"relation\":3,\"notThat\":true,\"quotationIndicies\":}",
+      "Exploring causal relations for concept: 'fading of rapture' at depth 2",
+      "Found 1 determinant quotations for 'fading of rapture'",
+      "Matched pattern 'From (.*?) comes (.*?)' in quotation: \"From the fading of rapture comes the third jhāna.\"",
+      "Added CausalRelation: {\"this\":\"fading of rapture\",\"that\":\"third jhāna\",\"relation\":3,\"quotationIndicies\":}",
+      "Exploring causal relations for concept: 'third jhāna' at depth 2",
+      "Found 1 determinant quotations for 'third jhāna'",
+      "Matched pattern 'From (.*?) comes (.*?)' in quotation: \"From the third jhāna, rapture does not remain.\"",
+      "Added CausalRelation: {\"this\":\"third jhāna\",\"that\":\"rapture\",\"relation\":3,\"notThat\":true,\"quotationIndicies\":}",
+      "Exploring causal relations for concept: 'fourth jhāna' at depth 2",
+      "Found 1 determinant quotations for 'fourth jhāna'",
+      "Matched pattern 'From (.*?) comes (.*?)' in quotation: \"From the fourth jhāna, pleasure & pain cease, elation & distress cease, and purity of equanimity & mindfulness arise.\"",
+      "Added CausalRelation: {\"this\":\"fourth jhāna\",\"that\":\"pleasure & pain\",\"relation\":3,\"notThat\":true,\"quotationIndicies\":}",
+      "Added CausalRelation: {\"this\":\"fourth jhāna\",\"that\":\"elation & distress\",\"relation\":3,\"notThat\":true,\"quotationIndicies\":}",
+      "Added CausalRelation: {\"this\":\"fourth jhāna\",\"that\":\"purity of equanimity & mindfulness\",\"relation\":3,\"quotationIndicies\":}",
+      "Exploring causal relations for concept: 'abandoning of five factors' at depth 2",
+      "Found 1 determinant quotations for 'abandoning of five factors'",
+      "Matched pattern '(?:Being|Having) (.*?), one is (.*?)' in quotation: \"Having abandoned five factors, one is endowed with six.\"",
+      "Added CausalRelation: {\"this\":\"abandoning of five factors\",\"that\":\"endowed with six (factors)\",\"relation\":3,\"quotationIndicies\":}",
+      "Exploring causal relations for concept: 'endowed with six (factors)' at depth 2",
+      "Found 1 determinant quotations for 'endowed with six (factors)'",
+      "Matched pattern '(?:Being|Having) (.*?), one is (.*?)' in quotation: \"Having endowed with six, one guards one (factor).\"",
+      "Added CausalRelation: {\"this\":\"endowed with six (factors)\",\"that\":\"guard one (factor)\",\"relation\":3,\"quotationIndicies\":}",
+      "Exploring causal relations for concept: 'guard one (factor)' at depth 2",
+      "Found 1 determinant quotations for 'guard one (factor)'",
+      "Matched pattern '(?:Being|Having) (.*?), one is (.*?)' in quotation: \"Having guarded one, one is supported in four (ways).\"",
+      "Added CausalRelation: {\"this\":\"guard one (factor)\",\"that\":\"supported in four (ways)\",\"relation\":3,\"quotationIndicies\":}",
+      "Exploring causal relations for concept: 'supported in four (ways)' at depth 2",
+      "Found 1 determinant quotations for 'supported in four (ways)'",
+      "Matched pattern '(?:Being|Having) (.*?), one is (.*?)' in quotation: \"Having supported in four, one has shaken off idiosyncratic truths.\"",
+      "Added CausalRelation: {\"this\":\"supported in four (ways)\",\"that\":\"shaken off idiosyncratic truths\",\"relation\":3,\"quotationIndicies\":}",
+      "Exploring causal relations for concept: 'shaken off idiosyncratic truths' at depth 2",
+      "Found 1 determinant quotations for 'shaken off idiosyncratic truths'",
+      "Matched pattern '(?:Being|Having) (.*?), one is (.*?)' in quotation: \"Having shaken off idiosyncratic truths, one has thoroughly given up searching.\"",
+      "Added CausalRelation: {\"this\":\"shaken off idiosyncratic truths\",\"that\":\"thoroughly given up searching\",\"relation\":3,\"quotationIndicies\":}",
+      "Exploring causal relations for concept: 'thoroughly given up searching' at depth 2",
+      "Found 1 determinant quotations for 'thoroughly given up searching'",
+      "Matched pattern '(?:Being|Having) (.*?), one is (.*?)' in quotation: \"Having thoroughly given up searching, one is undisturbed in his resolves.\"",
+      "Added CausalRelation: {\"this\":\"thoroughly given up searching\",\"that\":\"undisturbed in his resolves\",\"relation\":3,\"quotationIndicies\":}",
+      "Exploring causal relations for concept: 'undisturbed in his resolves' at depth 2",
+      "Found 1 determinant quotations for 'undisturbed in his resolves'",
+      "Matched pattern '(?:Being|Having) (.*?), one is (.*?)' in quotation: \"Having undisturbed in his resolves, one is calmed in his bodily-fabrication.\"",
+      "Added CausalRelation: {\"this\":\"undisturbed in his resolves\",\"that\":\"calmed in his bodily-fabrication\",\"relation\":3,\"quotationIndicies\":}",
+      "Exploring causal relations for concept: 'calmed in his bodily-fabrication' at depth 2",
+      "Found 1 determinant quotations for 'calmed in his bodily-fabrication'",
+      "Matched pattern '(?:Being|Having) (.*?), one is (.*?)' in quotation: \"Having calmed in his bodily-fabrication, one is well released in mind.\"",
+      "Added CausalRelation: {\"this\":\"calmed in his bodily-fabrication\",\"that\":\"well released in mind\",\"relation\":3,\"quotationIndicies\":}",
+      "Exploring causal relations for concept: 'well released in mind' at depth 2",
+      "Found 1 determinant quotations for 'well released in mind'",
+      "Matched pattern '(?:Being|Having) (.*?), one is (.*?)' in quotation: \"Having well released in mind, one is well released in discernment.\"",
+      "Added CausalRelation: {\"this\":\"well released in mind\",\"that\":\"well released in discernment\",\"relation\":3,\"quotationIndicies\":}",
+      "Exploring causal relations for concept: 'abandoning sensual desire' at depth 2",
+      "Found 1 determinant quotations for 'abandoning sensual desire'",
+      "Matched pattern '(?:Being|Having) (.*?), one is (.*?)' in quotation: \"Having abandoned sensual desire, ill will, sloth & torpor, restlessness & anxiety, and uncertainty.\"",
+      "Added CausalRelation: {\"this\":\"abandoning sensual desire\",\"that\":\"abandoning ill will\",\"relation\":3,\"quotationIndicies\":}",
+      "Added CausalRelation: {\"this\":\"abandoning ill will\",\"that\":\"abandoning sloth & torpor\",\"relation\":3,\"quotationIndicies\":}",
+      "Added CausalRelation: {\"this\":\"abandoning sloth & torpor\",\"that\":\"abandoning restlessness & anxiety\",\"relation\":3,\"quotationIndicies\":}",
+      "Added CausalRelation: {\"this\":\"abandoning restlessness & anxiety\",\"that\":\"abandoning uncertainty\",\"relation\":3,\"quotationIndicies\":}",
+      "Exploring causal relations for concept: 'abandoning resolve for sensuality' at depth 2",
+      "Found 1 determinant quotations for 'abandoning resolve for sensuality'",
+      "Matched pattern '(?:Being|Having) (.*?), one is (.*?)' in quotation: \"Having abandoned his resolve for sensuality, ill-will, & harmfulness.\"",
+      "Added CausalRelation: {\"this\":\"abandoning resolve for sensuality\",\"that\":\"abandoning resolve for ill-will\",\"relation\":3,\"quotationIndicies\":}",
+      "Added CausalRelation: {\"this\":\"abandoning resolve for ill-will\",\"that\":\"abandoning resolve for harmfulness\",\"relation\":3,\"quotationIndicies\":}",
+      "Exploring causal relations for concept: 'mind is released from passion' at depth 2",
+      "Found 1 determinant quotations for 'mind is released from passion'",
+      "Matched pattern '(?:Being|Having) (.*?), one is (.*?)' in quotation: \"Having released from passion, aversion, and delusion.\"",
+      "Added CausalRelation: {\"this\":\"mind is released from passion\",\"that\":\"mind is released from aversion\",\"relation\":3,\"quotationIndicies\":}",
+      "Added CausalRelation: {\"this\":\"mind is released from aversion\",\"that\":\"mind is released from delusion\",\"relation\":3,\"quotationIndicies\":}",
+      "Exploring causal relations for concept: 'discernment' at depth 2",
+      "Found 4 determinant quotations for 'discernment'",
+      "Matched pattern '(?:Being|Having) (.*?), one is (.*?)' in quotation: \"Having discerned that passion, aversion, and delusion are abandoned, their root destroyed, made like a palmyra stump, deprived of the conditions of development, not destined for future arising.\"",
+      "Added CausalRelation: {\"this\":\"discernment\",\"that\":\"passion is abandoned\",\"relation\":3,\"quotationIndicies\":}",
+      "Added CausalRelation: {\"this\":\"passion is abandoned\",\"that\":\"root destroyed\",\"relation\":3,\"quotationIndicies\":}",
+      "Added CausalRelation: {\"this\":\"root destroyed\",\"that\":\"palmyra stump\",\"relation\":3,\"quotationIndicies\":}",
+      "Added CausalRelation: {\"this\":\"palmyra stump\",\"that\":\"deprived of the conditions of development\",\"relation\":3,\"quotationIndicies\":}",
+      "Added CausalRelation: {\"this\":\"deprived of the conditions of development\",\"that\":\"future arising of not destined for future arising\",\"relation\":3,\"notThat\":true,\"quotationIndicies\":}",
+      "Added CausalRelation: {\"this\":\"discernment\",\"that\":\"aversion is abandoned\",\"relation\":3,\"quotationIndicies\":}",
+      "Added CausalRelation: {\"this\":\"aversion is abandoned\",\"that\":\"root destroyed\",\"relation\":3,\"quotationIndicies\":}",
+      "Added CausalRelation: {\"this\":\"discernment\",\"that\":\"delusion is abandoned\",\"relation\":3,\"quotationIndicies\":}",
+      "Added CausalRelation: {\"this\":\"delusion is abandoned\",\"that\":\"root destroyed\",\"relation\":3,\"quotationIndicies\":}",
+      "Exploring causal relations for concept: 'abandoning of pleasure & pain' at depth 2",
+      "Found 1 determinant quotations for 'abandoning of pleasure & pain'",
+      "Matched pattern '(?:Being|Having) (.*?), one is (.*?)' in quotation: \"Having abandoned pleasure & pain, one enters & remains in the fourth jhāna.\"",
+      "Added CausalRelation: {\"this\":\"abandoning of pleasure & pain\",\"that\":\"fourth jhāna\",\"relation\":3,\"quotationIndicies\":}",
+      "Exploring causal relations for concept: 'heedlessness' at depth 2",
+      "Found 7 determinant quotations for 'heedlessness'",
+      "Matched pattern '(.*?) is dust' in quotation: 'Heedlessness is dust, dust comes from heedlessness, has heedlessness on its heels.'",
+      "Added CausalRelation: {\"this\":\"heedlessness\",\"that\":\"dust\",\"relation\":3,\"quotationIndicies\":}",
+      "Matched pattern '(.*?) comes from (.*?)' in quotation: 'Heedlessness is dust, dust comes from heedlessness, has heedlessness on its heels.'",
+      "Added CausalRelation: {\"this\":\"dust\",\"that\":\"heedlessness\",\"relation\":3,\"quotationIndicies\":}",
+      "Matched pattern '(.*?) removes (.*?)' in quotation: 'Through heedfulness & clear knowing you'd remove your own arrow.'",
+      "Added CausalRelation: {\"this\":\"heedfulness & clear knowing\",\"that\":\"remove your own arrow\",\"relation\":3,\"quotationIndicies\":}",
+      "Matched pattern '(.*?) becomes (.*?)' in quotation: 'Because of that gain, he becomes intoxicated, complacent, & falls into heedlessness.'",
+      "Added CausalRelation: {\"this\":\"heedlessness\",\"that\":\"intoxicated\",\"relation\":3,\"quotationIndicies\":}",
+      "Added CausalRelation: {\"this\":\"heedlessness\",\"that\":\"complacent\",\"relation\":3,\"quotationIndicies\":}",
+      "Matched pattern '(.*?) falls into (.*?)' in quotation: 'Because of that gain, he becomes intoxicated, complacent, & falls into heedlessness.'",
+      "Added CausalRelation: {\"this\":\"gain\",\"that\":\"intoxicated\",\"relation\":3,\"quotationIndicies\":}",
+      "Added CausalRelation: {\"this\":\"intoxicated\",\"that\":\"complacent\",\"relation\":3,\"quotationIndicies\":}",
+      "Added CausalRelation: {\"this\":\"complacent\",\"that\":\"heedlessness\",\"relation\":3,\"quotationIndicies\":}",
+      "Matched pattern 'From the fading of (.*?) is there (.*?) release' in quotation: 'From the fading of ignorance, and from the arising of clear knowing, those effluents causing trouble & vexation do not exist for him. He does no new action, and as for old action, he destroys it with each contact: a wasting away that is visible here & now, timeless, inviting inspection, pertinent, to be known by the observant for themselves.'",
+      "Added CausalRelation: {\"this\":\"abandoning ignorance\",\"that\":\"arising of clear knowing\",\"relation\":3,\"quotationIndicies\":}",
+      "Added CausalRelation: {\"this\":\"arising of clear knowing\",\"that\":\"effluents causing trouble & vexation\",\"relation\":3,\"notThat\":true,\"quotationIndicies\":}",
+      "Added CausalRelation: {\"this\":\"fading of ignorance\",\"that\":\"effluents causing trouble & vexation\",\"relation\":3,\"notThat\":true,\"quotationIndicies\":}",
+      "Matched pattern '(?:Being|Having) (.*?), one is (.*?)' in quotation: 'For a monk rightly contemplating this duality in this way—heedful, ardent, & resolute—one of two fruits can be expected: either gnosis right here-&-now, or—if there be any remnant of clinging-sustenance—non-return.'",
+      "Added CausalRelation: {\"this\":\"rightly contemplating this duality in this way\",\"that\":\"gnosis right here-&-now\",\"relation\":3,\"quotationIndicies\":}",
+      "Added CausalRelation: {\"this\":\"rightly contemplating this duality in this way\",\"that\":\"non-return\",\"relation\":3,\"quotationIndicies\":}",
+      "Added CausalRelation: {\"this\":\"heedful, ardent, & resolute\",\"that\":\"gnosis right here-&-now\",\"relation\":3,\"quotationIndicies\":}",
+      "Added CausalRelation: {\"this\":\"heedful, ardent, & resolute\",\"that\":\"non-return\",\"relation\":3,\"quotationIndicies\":}",
+      "Matched pattern '(?:Being|Having) (.*?), one is (.*?)' in quotation: 'For a monk rightly contemplating this duality in this way—heedful, ardent, & resolute—one of two fruits can be expected: either gnosis right here-&-now, or—if there be any remnant of clinging-sustenance—non-return.'",
+      "Added CausalRelation: {\"this\":\"rightly contemplating this duality in this way\",\"that\":\"gnosis right here-&-now\",\"relation\":3,\"quotationIndicies\":}",
+      "Added CausalRelation: {\"this\":\"rightly contemplating this duality in this way\",\"that\":\"non-return\",\"relation\":3,\"quotationIndicies\":}",
+      "Added CausalRelation: {\"this\":\"heedful, ardent, & resolute\",\"that\":\"gnosis right here-&-now\",\"relation\":3,\"quotationIndicies\":}",
+      "Added CausalRelation: {\"this\":\"heedful, ardent, & resolute\",\"that\":\"non-return\",\"relation\":3,\"quotationIndicies\":}",
+      "Matched pattern '(?:Being|Having) (.*?), one is (.*?)' in quotation: 'For a monk rightly contemplating this duality in this way—heedful, ardent, & resolute—one of two fruits can be expected: either gnosis right here-&-now, or—if there be any remnant of clinging-sustenance—non-return.'",
+      "Added CausalRelation: {\"this\":\"rightly contemplating this duality in this way\",\"that\":\"gnosis right here-&-now\",\"relation\":3,\"quotationIndicies\":}",
+      "Added CausalRelation: {\"this\":\"rightly contemplating this duality in this way\",\"that\":\"non-return\",\"relation\":3,\"quotationIndicies\":}",
+      "Added CausalRelation: {\"this\":\"heedful, ardent, & resolute\",\"that\":\"gnosis right here-&-now\",\"relation\":3,\"quotationIndicies\":}",
+      "Added CausalRelation: {\"this\":\"heedful, ardent, & resolute\",\"that\":\"non-return\",\"relation\":3,\"quotationIndicies\":}",
+      "Matched pattern '(?:Being|Having) (.*?), one is (.*?)' in quotation: 'For a monk rightly contemplating this duality in this way—heedful, ardent, & resolute—one of two fruits can be expected: either gnosis right here-&-now, or—if there be any remnant of clinging-sustenance—non-return.'",
+      "Added CausalRelation: {\"this\":\"rightly contemplating this duality in this way\",\"that\":\"gnosis right here-&-now\",\"relation\":3,\"quotationIndicies\":}",
+      "Added CausalRelation: {\"this\":\"rightly contemplating this duality in this way\",\"that\":\"non-return\",\"relation\":3,\"quotationIndicies\":}",
+      "Added CausalRelation: {\"this\":\"heedful, ardent, & resolute\",\"that\":\"gnosis right here-&-now\",\"relation\":3,\"quotationIndicies\":}",
+      "Added CausalRelation: {\"this\":\"heedful, ardent, & resolute\",\"that\":\"non-return\",\"relation\":3,\"quotationIndicies\":}",
+      "Matched pattern '(?:Being|Having) (.*?), one is (.*?)' in quotation: 'Having thus gone forth, he encounters gain, offerings, & fame. He is not gratified with that gain, offerings, & fame, his resolve not fulfilled. He is not intoxicated with that gain, offerings, & fame, not heedless about it, and does not fall into heedlessness. Being heedful, he achieves consummation in virtue. He is gratified with that consummation in virtue, but his resolve is not fulfilled. Because of that consummation in virtue he does not exalt himself or disparage others. He is not intoxicated with that consummation in virtue, not heedless about it, and does not fall into heedlessness. Being heedful, he achieves consummation in concentration. He is gratified with that consummation in concentration, but his resolve is not fulfilled. He is not intoxicated with that consummation in concentration, not heedless about it, and does not fall into heedlessness. Being heedful, he achieves knowledge & vision. He is gratified with that knowledge & vision, but his resolve is not fulfilled. Because of that knowledge & vision he does not exalt himself or disparage others. He is not intoxicated with that knowledge & vision, not heedless about it, and does not fall into heedlessness. Being heedful, he achieves a non-occasional liberation. And it is impossible, monks, there is no opportunity, for that monk to fall from that non-occasional release.'",
+      "Added CausalRelation: {\"this\":\"heedfulness\",\"that\":\"consummation in virtue\",\"relation\":3,\"quotationIndicies\":}",
+      "Added CausalRelation: {\"this\":\"consummation in virtue\",\"that\":\"consummation in concentration\",\"relation\":3,\"quotationIndicies\":}",
+      "Added CausalRelation: {\"this\":\"consummation in concentration\",\"that\":\"knowledge & vision\",\"relation\":3,\"quotationIndicies\":}",
+      "Added CausalRelation: {\"this\":\"knowledge & vision\",\"that\":\"non-occasional liberation\",\"relation\":3,\"quotationIndicies\":}",
+      "Added CausalRelation: {\"this\":\"heedfulness\",\"that\":\"achieving consummation in virtue\",\"relation\":3,\"quotationIndicies\":}",
+      "Added CausalRelation: {\"this\":\"heedfulness\",\"that\":\"achieving consummation in concentration\",\"relation\":3,\"quotationIndicies\":}",
+      "Added CausalRelation: {\"this\":\"heedfulness\",\"that\":\"achieving knowledge & vision\",\"relation\":3,\"quotationIndicies\":}",
+      "Added CausalRelation: {\"this\":\"heedfulness\",\"that\":\"achieving a non-occasional liberation\",\"relation\":3,\"quotationIndicies\":}",
+      "Matched pattern '(?:Being|Having) (.*?), one is (.*?)' in quotation: 'Ignorance was destroyed; knowledge arose; darkness was destroyed; light arose—as happens in one who is heedful, ardent, & resolute.'",
+      "Added CausalRelation: {\"this\":\"heedfulness\",\"that\":\"ignorance was destroyed\",\"relation\":3,\"quotationIndicies\":}",
+      "Added CausalRelation: {\"this\":\"heedfulness\",\"that\":\"knowledge arose\",\"relation\":3,\"quotationIndicies\":}",
+      "Added CausalRelation: {\"this\":\"heedfulness\",\"that\":\"darkness was destroyed\",\"relation\":3,\"quotationIndicies\":}",
+      "Added CausalRelation: {\"this\":\"heedfulness\",\"that\":\"light arose\",\"relation\":3,\"quotationIndicies\":}",
+      "Matched pattern '(?:Being|Having) (.*?), one is (.*?)' in quotation: \"Having conviction in the Teacher's message & living to penetrate it, one of two fruits can be expected: either gnosis here & now, or—if there be any remnant of clinging-sustenance—non-return.\"",
+      "Added CausalRelation: {\"this\":\"heedful\",\"that\":\"gnosis here & now\",\"relation\":2,\"quotationIndicies\":}",
+      "Added CausalRelation: {\"this\":\"heedful\",\"that\":\"non-return\",\"relation\":2,\"quotationIndicies\":}",
+      "Matched pattern '(?:Being|Having) (.*?), one is (.*?)' in quotation: \"Having made his mind dispassionate with regard to phenomena that are conducive to passion, and having liberated his mind with regard to phenomena that are conducive to liberation—touches right release. This is called purity of release. (The thought,) 'I will make complete this sort of purity of release when it is not yet complete, or I will protect it here & there with discernment when it is complete': Any desire, effort, diligence, endeavor, relentlessness, mindfulness, & alertness there is called the factor for exertion with regard to purity of release.\"",
+      "Added CausalRelation: {\"this\":\"heedful\",\"that\":\"gnosis\",\"relation\":2,\"quotationIndicies\":}",
+      "Matched pattern '(?:Being|Having) (.*?), one is (.*?)' in quotation: 'A heedful person, absorbed in jhāna, attains an abundant bliss.'",
+      "Added CausalRelation: {\"this\":\"heedful\",\"that\":\"bliss\",\"relation\":3,\"quotationIndicies\":}",
+      "Matched pattern '(?:Being|Having) (.*?), one is (.*?)' in quotation: 'Heedlessness is dust, dust comes from heedlessness, has heedlessness on its heels.'",
+      "Added CausalRelation: {\"this\":\"heedlessness\",\"that\":\"suffering\",\"relation\":3,\"quotationIndicies\":}",
+      "Added CausalRelation: {\"this\":\"heedlessness\",\"that\":\"stress\",\"relation\":3,\"quotationIndicies\":}",
+      "Matched pattern '(?:Being|Having) (.*?), one is incapable of abandoning (.*?)' in quotation: 'Being heedless, one is incapable of abandoning apathy, hard to correct, & evil friendship.'",
+      "Added CausalRelation: {\"this\":\"heedlessness\",\"that\":\"abandoning apathy\",\"relation\":3,\"cannot\":true,\"quotationIndicies\":}",
+      "Added CausalRelation: {\"this\":\"heedlessness\",\"that\":\"abandoning hard to correct\",\"relation\":3,\"cannot\":true,\"quotationIndicies\":}",
+      "Added CausalRelation: {\"this\":\"heedlessness\",\"that\":\"abandoning evil friendship\",\"relation\":3,\"cannot\":true,\"quotationIndicies\":}",
+      "Exploring causal relations for concept: 'ignorance' at depth 2",
+      "Found 4 determinant quotations for 'ignorance'",
+      "Matched pattern 'From (.*?) as a requisite condition come (.*?)' in quotation: 'From ignorance as a requisite condition come fabrications.'",
+      "Added CausalRelation: {\"this\":\"ignorance\",\"that\":\"fabrications\",\"relation\":1,\"quotationIndicies\":}",
+      "Exploring causal relations for concept: 'fabrications' at depth 2",
+      "Found 6 determinant quotations for 'fabrications'",
+      "Matched pattern 'From (.*?) as a requisite condition come (.*?)' in quotation: 'From fabrications as a requisite condition comes consciousness.'",
+      "Added CausalRelation: {\"this\":\"fabrications\",\"that\":\"consciousness\",\"relation\":1,\"quotationIndicies\":}",
+      "Exploring causal relations for concept: 'consciousness' at depth 2",
+      "Found 5 determinant quotations for 'consciousness'",
+      "Matched pattern 'From (.*?) as a requisite condition come (.*?)' in quotation: 'From consciousness as a requisite condition comes name-&-form.'",
+      "Added CausalRelation: {\"this\":\"consciousness\",\"that\":\"name-&-form\",\"relation\":1,\"quotationIndicies\":}",
+      "Exploring causal relations for concept: 'name-&-form' at depth 2",
+      "Found 4 determinant quotations for 'name-&-form'",
+      "Matched pattern 'From (.*?) as a requisite condition come (.*?)' in quotation: 'From name-&-form as a requisite condition come the six sense media.'",
+      "Added CausalRelation: {\"this\":\"name-&-form\",\"that\":\"six sense media\",\"relation\":1,\"quotationIndicies\":}",
+      "Exploring causal relations for concept: 'six sense media' at depth 2",
+      "Found 4 determinant quotations for 'six sense media'",
+      "Matched pattern 'From (.*?) as a requisite condition come (.*?)' in quotation: 'From the six sense media as a requisite condition comes contact.'",
+      "Added CausalRelation: {\"this\":\"six sense media\",\"that\":\"contact\",\"relation\":1,\"quotationIndicies\":}",
+      "Exploring causal relations for concept: 'contact' at depth 2",
+      "Found 6 determinant quotations for 'contact'",
+      "Matched pattern 'From (.*?) as a requisite condition come (.*?)' in quotation: 'From contact as a requisite condition comes feeling.'",
+      "Added CausalRelation: {\"this\":\"contact\",\"that\":\"feeling\",\"relation\":1,\"quotationIndicies\":}",
+      "Exploring causal relations for concept: 'feeling' at depth 2",
+      "Found 6 determinant quotations for 'feeling'",
+      "Matched pattern 'From (.*?) as a requisite condition come (.*?)' in quotation: 'From feeling as a requisite condition comes craving.'",
+      "Added CausalRelation: {\"this\":\"feeling\",\"that\":\"craving\",\"relation\":1,\"quotationIndicies\":}",
+      "Exploring causal relations for concept: 'craving' at depth 2",
+      "Found 7 determinant quotations for 'craving'",
+      "Matched pattern 'From (.*?) as a requisite condition come (.*?)' in quotation: 'From craving as a requisite condition comes clinging or sustenance.'",
+      "Added CausalRelation: {\"this\":\"craving\",\"that\":\"clinging\",\"relation\":1,\"quotationIndicies\":}",
+      "Exploring causal relations for concept: 'clinging' at depth 2",
+      "Found 5 determinant quotations for 'clinging'",
+      "Matched pattern 'From (.*?) as a requisite condition come (.*?)' in quotation: 'From clinging as a requisite condition comes becoming.'",
+      "Added CausalRelation: {\"this\":\"clinging\",\"that\":\"becoming\",\"relation\":1,\"quotationIndicies\":}",
+      "Exploring causal relations for concept: 'becoming' at depth 2",
+      "Found 5 determinant quotations for 'becoming'",
+      "Matched pattern 'From (.*?) as a requisite condition come (.*?)' in quotation: 'From becoming as a requisite condition comes birth.'",
+      "Added CausalRelation: {\"this\":\"becoming\",\"that\":\"birth\",\"relation\":1,\"quotationIndicies\":}",
+      "Exploring causal relations for concept: 'birth' at depth 2",
+      "Found 4 determinant quotations for 'birth'",
+      "Matched pattern 'From (.*?) as a requisite condition, then (.*?) come into play.' in quotation: 'From birth as a requisite condition, then aging-&-death, sorrow, lamentation, pain, distress, & despair come into play. Such is the origination of this entire mass of stress & suffering.'",
+      "Added CausalRelation: {\"this\":\"birth\",\"that\":\"aging-&-death\",\"relation\":1,\"quotationIndicies\":}",
+      "Added CausalRelation: {\"this\":\"birth\",\"that\":\"sorrow\",\"relation\":1,\"quotationIndicies\":}",
+      "Added CausalRelation: {\"this\":\"birth\",\"that\":\"lamentation\",\"relation\":1,\"quotationIndicies\":}",
+      "Added CausalRelation: {\"this\":\"birth\",\"that\":\"pain\",\"relation\":1,\"quotationIndicies\":}",
+      "Added CausalRelation: {\"this\":\"birth\",\"that\":\"distress\",\"relation\":1,\"quotationIndicies\":}",
+      "Added CausalRelation: {\"this\":\"birth\",\"that\":\"despair\",\"relation\":1,\"quotationIndicies\":}",
+      "Exploring causal relations for concept: 'aging-&-death' at depth 3",
+      "Found 2 determinant quotations for 'aging-&-death'",
+      "Exploring causal relations for concept: 'sorrow' at depth 3",
+      "Found 2 determinant quotations for 'sorrow'",
+      "Exploring causal relations for concept: 'lamentation' at depth 3",
+      "Found 2 determinant quotations for 'lamentation'",
+      "Exploring causal relations for concept: 'pain' at depth 3",
+      "Found 2 determinant quotations for 'pain'",
+      "Exploring causal relations for concept: 'distress' at depth 3",
+      "Found 2 determinant quotations for 'distress'",
+      "Exploring causal relations for concept: 'despair' at depth 3",
+      "Found 2 determinant quotations for 'despair'",
+      "Exploring causal relations for concept: 'cessation of contact' at depth 2",
+      "Found 2 determinant quotations for 'cessation of contact'",
+      "Matched pattern 'From the cessation of (.*?) comes the cessation of (.*?)' in quotation: 'From the cessation of contact comes the cessation of fabrications.'",
+      "Added CausalRelation: {\"this\":\"cessation of contact\",\"that\":\"cessation of fabrications\",\"relation\":3,\"quotationIndicies\":}",
+      "Exploring causal relations for concept: 'cessation of fabrications' at depth 2",
+      "Found 2 determinant quotations for 'cessation of fabrications'",
+      "Matched pattern '(.*?) is the path leading to (.*?)' in quotation: 'And just this noble eightfold path is the path of practice leading to the cessation of fabrications.'",
+      "Added CausalRelation: {\"this\":\"cessation of fabrications\",\"that\":\"noble eightfold path\",\"relation\":2,\"quotationIndicies\":}",
+      "Exploring causal relations for concept: 'desire-passion for fabrications' at depth 2",
+      "Found 1 determinant quotations for 'desire-passion for fabrications'",
+      "Matched pattern '(.*?) is the drawback of (.*?)' in quotation: 'The fact that pleasure & happiness arise in dependence on fabrications: That is the allure of fabrications. The fact that fabrications are inconstant, stressful, subject to change: That is the drawback of fabrications. The subduing of desire-passion for fabrications, the abandoning of desire-passion for fabrications: That is the escape from fabrications.'",
+      "Added CausalRelation: {\"this\":\"desire-passion for fabrications\",\"that\":\"drawback of fabrications\",\"relation\":3,\"quotationIndicies\":}",
+      "Exploring causal relations for concept: 'subduing of desire-passion for fabrications' at depth 2",
+      "Found 1 determinant quotations for 'subduing of desire-passion for fabrications'",
+      "Matched pattern '(.*?) is the escape from (.*?)' in quotation: 'The subduing of desire-passion for fabrications, the abandoning of desire-passion for fabrications: That is the escape from fabrications.'",
+      "Added CausalRelation: {\"this\":\"subduing of desire-passion for fabrications\",\"that\":\"escape from fabrications\",\"relation\":3,\"quotationIndicies\":}",
+      "Exploring causal relations for concept: 'abandoning of desire-passion for fabrications' at depth 2",
+      "Found 1 determinant quotations for 'abandoning of desire-passion for fabrications'",
+      "Matched pattern '(.*?) is the escape from (.*?)' in quotation: 'The subduing of desire-passion for fabrications, the abandoning of desire-passion for fabrications: That is the escape from fabrications.'",
+      "Added CausalRelation: {\"this\":\"abandoning of desire-passion for fabrications\",\"that\":\"escape from fabrications\",\"relation\":3,\"quotationIndicies\":}",
+      "Exploring causal relations for concept: 'ignorance' at depth 3",
+      "Found 4 determinant quotations for 'ignorance'",
+      "Matched pattern 'From (.*?) as a requisite condition come (.*?)' in quotation: 'From ignorance as a requisite condition come fabrications.'",
+      "Added CausalRelation: {\"this\":\"ignorance\",\"that\":\"fabrications\",\"relation\":1,\"quotationIndicies\":}",
+      "Added CausalRelation: {\"this\":\"ignorance\",\"that\":\"fabrications\",\"relation\":1,\"quotationIndicies\":}",
+      "Added CausalRelation: {\"this\":\"ignorance as a requisite condition\",\"that\":\"fabrications\",\"relation\":1,\"quotationIndicies\":}",
+      "Exploring causal relations for concept: 'fabrications' at depth 3",
+      "Found 6 determinant quotations for 'fabrications'",
+      "Matched pattern 'From (.*?) as a requisite condition come (.*?)' in quotation: 'From fabrications as a requisite condition comes consciousness.'",
+      "Added CausalRelation: {\"this\":\"fabrications\",\"that\":\"consciousness\",\"relation\":1,\"quotationIndicies\":}",
+      "Added CausalRelation: {\"this\":\"fabrications\",\"that\":\"consciousness\",\"relation\":1,\"quotationIndicies\":}",
+      "Added CausalRelation: {\"this\":\"fabrications as a requisite condition\",\"that\":\"consciousness\",\"relation\":1,\"quotationIndicies\":}",
+      "Exploring causal relations for concept: 'consciousness' at depth 3",
+      "Found 5 determinant quotations for 'consciousness'",
+      "Matched pattern 'From (.*?) as a requisite condition come (.*?)' in quotation: 'From consciousness as a requisite condition comes name-&-form.'",
+      "Added CausalRelation: {\"this\":\"consciousness\",\"that\":\"name-&-form\",\"relation\":1,\"quotationIndicies\":}",
+      "Added CausalRelation: {\"this\":\"consciousness\",\"that\":\"name-&-form\",\"relation\":1,\"quotationIndicies\":}",
+      "Added CausalRelation: {\"this\":\"consciousness as a requisite condition\",\"that\":\"name-&-form\",\"relation\":1,\"quotationIndicies\":}",
+      "Exploring causal relations for concept: 'name-&-form' at depth 3",
+      "Found 4 determinant quotations for 'name-&-form'",
+      "Matched pattern 'From (.*?) as a requisite condition come (.*?)' in quotation: 'From name-&-form as a requisite condition come the six sense media.'",
+      "Added CausalRelation: {\"this\":\"name-&-form\",\"that\":\"six sense media\",\"relation\":1,\"quotationIndicies\":}",
+      "Added CausalRelation: {\"this\":\"name-&-form\",\"that\":\"six sense media\",\"relation\":1,\"quotationIndicies\":}",
+      "Added CausalRelation: {\"this\":\"name-&-form as a requisite condition\",\"that\":\"six sense media\",\"relation\":1,\"quotationIndicies\":}",
+      "Exploring causal relations for concept: 'six sense media' at depth 3",
+      "Found 4 determinant quotations for 'six sense media'",
+      "Matched pattern 'From (.*?) as a requisite condition come (.*?)' in quotation: 'From the six sense media as a requisite condition comes contact.'",
+      "Added CausalRelation: {\"this\":\"six sense media\",\"that\":\"contact\",\"relation\":1,\"quotationIndicies\":}",
+      "Added CausalRelation: {\"this\":\"six sense media\",\"that\":\"contact\",\"relation\":1,\"quotationIndicies\":}",
+      "Added CausalRelation: {\"this\":\"six sense media as a requisite condition\",\"that\":\"contact\",\"relation\":1,\"quotationIndicies\":}",
+      "Exploring causal relations for concept: 'contact' at depth 3",
+      "Found 6 determinant quotations for 'contact'",
+      "Matched pattern 'From (.*?) as a requisite condition come (.*?)' in quotation: 'From contact as a requisite condition comes feeling.'",
+      "Added CausalRelation: {\"this\":\"contact\",\"that\":\"feeling\",\"relation\":1,\"quotationIndicies\":}",
+      "Added CausalRelation: {\"this\":\"contact\",\"that\":\"feeling\",\"relation\":1,\"quotationIndicies\":}",
+      "Added CausalRelation: {\"this\":\"contact as a requisite condition\",\"that\":\"feeling\",\"relation\":1,\"quotationIndicies\":}",
+      "Exploring causal relations for concept: 'feeling' at depth 3",
+      "Found 6 determinant quotations for 'feeling'",
+      "Matched pattern 'From (.*?) as a requisite condition come (.*?)' in quotation: 'From feeling as a requisite condition comes craving.'",
+      "Added CausalRelation: {\"this\":\"feeling\",\"that\":\"craving\",\"relation\":1,\"quotationIndicies\":}",
+      "Added CausalRelation: {\"this\":\"feeling\",\"that\":\"craving\",\"relation\":1,\"quotationIndicies\":}",
+      "Added CausalRelation: {\"this\":\"feeling as a requisite condition\",\"that\":\"craving\",\"relation\":1,\"quotationIndicies\":}",
+      "Exploring causal relations for concept: 'craving' at depth 3",
+      "Found 7 determinant quotations for 'craving'",
+      "Matched pattern 'From (.*?) as a requisite condition come (.*?)' in quotation: 'From craving as a requisite condition comes clinging or sustenance.'",
+      "Added CausalRelation: {\"this\":\"craving\",\"that\":\"clinging\",\"relation\":1,\"quotationIndicies\":}",
+      "Added CausalRelation: {\"this\":\"craving\",\"that\":\"clinging\",\"relation\":1,\"quotationIndicies\":}",
+      "Added CausalRelation: {\"this\":\"craving as a requisite condition\",\"that\":\"clinging or sustenance\",\"relation\":1,\"quotationIndicies\":}",
+      "Exploring causal relations for concept: 'clinging' at depth 3",
+      "Found 5 determinant quotations for 'clinging'",
+      "Matched pattern 'From (.*?) as a requisite condition come (.*?)' in quotation: 'From clinging as a requisite condition comes becoming.'",
+      "Added CausalRelation: {\"this\":\"clinging\",\"that\":\"becoming\",\"relation\":1,\"quotationIndicies\":}",
+      "Added CausalRelation: {\"this\":\"clinging\",\"that\":\"becoming\",\"relation\":1,\"quotationIndicies\":}",
+      "Added CausalRelation: {\"this\":\"clinging or sustenance as a requisite condition\",\"that\":\"becoming\",\"relation\":1,\"quotationIndicies\":}",
+      "Exploring causal relations for concept: 'becoming' at depth 3",
+      "Found 5 determinant quotations for 'becoming'",
+      "Matched pattern 'From (.*?) as a requisite condition come (.*?)' in quotation: 'From becoming as a requisite condition comes birth.'",
+      "Added CausalRelation: {\"this\":\"becoming\",\"that\":\"birth\",\"relation\":1,\"quotationIndicies\":}",
+      "Added CausalRelation: {\"this\":\"becoming\",\"that\":\"birth\",\"relation\":1,\"quotationIndicies\":}",
+      "Added CausalRelation: {\"this\":\"becoming as a requisite condition\",\"that\":\"birth\",\"relation\":1,\"quotationIndicies\":}",
+      "Exploring causal relations for concept: 'birth' at depth 3",
+      "Found 4 determinant quotations for 'birth'",
+      "Matched pattern 'From (.*?) as a requisite condition, then (.*?) come into play.' in quotation: 'From birth as a requisite condition, then aging-&-death, sorrow, lamentation, pain, distress, & despair come into play. Such is the origination of this entire mass of stress & suffering.'",
+      "Added CausalRelation: {\"this\":\"birth\",\"that\":\"aging-&-death, sorrow, lamentation, pain, distress, & despair\",\"relation\":1,\"quotationIndicies\":}",
+      "Added CausalRelation: {\"this\":\"birth\",\"that\":\"aging-&-death, sorrow, lamentation, pain, distress, & despair\",\"relation\":1,\"quotationIndicies\":}",
+      "Added CausalRelation: {\"this\":\"birth as a requisite condition\",\"that\":\"aging-&-death, sorrow, lamentation, pain, distress, & despair\",\"relation\":1,\"quotationIndicies\":}",
+      "Exploring causal relations for concept: 'origination of contact' at depth 2",
+      "Found 1 determinant quotations for 'origination of contact'",
+      "Matched pattern 'From the origination of (.*?) comes the origination of (.*?)' in quotation: 'From the origination of contact comes the origination of fabrications.'",
+      "Added CausalRelation: {\"this\":\"origination of contact\",\"that\":\"origination of fabrications\",\"relation\":3,\"quotationIndicies\":}",
+      "Exploring causal relations for concept: 'uninstructed run-of-the-mill person, touched by that which is felt born of contact with ignorance' at depth 2",
+      "Found 3 determinant quotations for 'uninstructed run-of-the-mill person, touched by that which is felt born of contact with ignorance'",
+      "Matched pattern '(.*?) arises' in quotation: \"To an uninstructed, run-of-the-mill person, touched by that which is felt born of contact with ignorance, craving arises.\"",
+      "Added CausalRelation: {\"this\":\"uninstructed run-of-the-mill person, touched by that which is felt born of contact with ignorance\",\"that\":\"craving arises\",\"relation\":3,\"quotationIndicies\":}",
+      "Added CausalRelation: {\"this\":\"uninstructed run-of-the-mill person, touched by that which is felt born of contact with ignorance\",\"that\":\"craving arises\",\"relation\":3,\"quotationIndicies\":}",
+      "Added CausalRelation: {\"this\":\"uninstructed run-of-the-mill person, touched by that which is felt born of contact with ignorance\",\"that\":\"craving arises\",\"relation\":3,\"quotationIndicies\":}",
+      "Exploring causal relations for concept: 'craving' at depth 3",
+      "Found 7 determinant quotations for 'craving'",
+      "Matched pattern '(.*?) is born' in quotation: \"That fabrication is born of that.\"",
+      "Added CausalRelation: {\"this\":\"craving\",\"that\":\"fabrication is born\",\"relation\":3,\"quotationIndicies\":}",
+      "Added CausalRelation: {\"this\":\"craving\",\"that\":\"fabrication is born\",\"relation\":3,\"quotationIndicies\":}",
+      "Added CausalRelation: {\"this\":\"craving\",\"that\":\"fabrication is born\",\"relation\":3,\"quotationIndicies\":}",
+      "Exploring causal relations for concept: 'knowing & seeing in this way' at depth 2",
+      "Found 3 determinant quotations for 'knowing & seeing in this way'",
+      "Matched pattern '(.*?) puts an end to (.*?)' in quotation: \"It is by knowing & seeing in this way that one without delay puts an end to effluents.\"",
+      "Added CausalRelation: {\"this\":\"knowing & seeing in this way\",\"that\":\"ending of effluents\",\"relation\":3,\"quotationIndicies\":}",
+      "Added CausalRelation: {\"this\":\"knowing & seeing in this way\",\"that\":\"ending of effluents\",\"relation\":3,\"quotationIndicies\":}",
+      "Added CausalRelation: {\"this\":\"knowing & seeing in this way\",\"that\":\"ending of effluents\",\"relation\":3,\"quotationIndicies\":}",
+      "Exploring causal relations for concept: 'desire-passion' at depth 2",
+      "Found 2 determinant quotations for 'desire-passion'",
+      "Matched pattern '(.*?) is the fetter there' in quotation: 'But because whatever desire-passion arises in dependence on the two of them is the fetter there, that is why this holy life for the right ending of stress & suffering is proclaimed.'",
+      "Added CausalRelation: {\"this\":\"desire-passion\",\"that\":\"fetter\",\"relation\":0,\"quotationIndicies\":}",
+      "Exploring causal relations for concept: 'passion-obsession' at depth 2",
+      "Found 2 determinant quotations for 'passion-obsession'",
+      "Matched pattern '(.*?) gets obsessed' in quotation: \"If, when touched by a feeling of pleasure, one relishes it, welcomes it, or remains fastened to it, then one's passion-obsession gets obsessed.\"",
+      "Added CausalRelation: {\"this\":\"passion-obsession\",\"that\":\"obsessed\",\"relation\":3,\"quotationIndicies\":}",
+      "Added CausalRelation: {\"this\":\"passion-obsession\",\"that\":\"obsessed\",\"relation\":3,\"quotationIndicies\":}",
+      "Exploring causal relations for concept: 'resistance-obsession' at depth 2",
+      "Found 2 determinant quotations for 'resistance-obsession'",
+      "Matched pattern '(.*?) gets obsessed' in quotation: \"If, when touched by a feeling of pain, one sorrows, grieves, & laments, beats one's breast, becomes distraught, then one's resistance-obsession gets obsessed.\"",
+      "Added CausalRelation: {\"this\":\"resistance-obsession\",\"that\":\"obsessed\",\"relation\":3,\"quotationIndicies\":}",
+      "Added CausalRelation: {\"this\":\"resistance-obsession\",\"that\":\"obsessed\",\"relation\":3,\"quotationIndicies\":}",
+      "Exploring causal relations for concept: 'ignorance-obsession' at depth 2",
+      "Found 2 determinant quotations for 'ignorance-obsession'",
+      "Matched pattern '(.*?) gets obsessed' in quotation: \"If, when touched by a feeling of neither pleasure nor pain, one does not discern, as it has come to be, the origination, passing away, allure, drawback, or escape from that feeling, then one's ignorance-obsession gets obsessed.\"",
+      "Added CausalRelation: {\"this\":\"ignorance-obsession\",\"that\":\"obsessed\",\"relation\":3,\"quotationIndicies\":}",
+      "Added CausalRelation: {\"this\":\"ignorance-obsession\",\"that\":\"obsessed\",\"relation\":3,\"quotationIndicies\":}",
+      "Exploring causal relations for concept: 'not abandoning passion-obsession with regard to a feeling of pleasure' at depth 2",
+      "Found 2 determinant quotations for 'not abandoning passion-obsession with regard to a feeling of pleasure'",
+      "Matched pattern '(.*?) impossible for (.*?)' in quotation: \"That a person—without abandoning passion-obsession with regard to a feeling of pleasure, without abolishing resistance-obsession with regard to a feeling of pain, without uprooting ignorance-obsession with regard to a feeling of neither pleasure nor pain, without abandoning ignorance and giving rise to clear knowing—would put an end to suffering & stress in the here & now: Such a thing isn't possible.\"",
+      "Added CausalRelation: {\"this\":\"not abandoning passion-obsession with regard to a feeling of pleasure\",\"that\":\"end to suffering & stress in the here & now\",\"relation\":3,\"notThat\":true,\"quotationIndicies\":}",
+      "Added CausalRelation: {\"this\":\"not abandoning passion-obsession with regard to a feeling of pleasure\",\"that\":\"end to suffering & stress in the here & now\",\"relation\":3,\"notThat\":true,\"quotationIndicies\":}",
+      "Exploring causal relations for concept: 'not abolishing resistance-obsession with regard to a feeling of pain' at depth 2",
+      "Found 2 determinant quotations for 'not abolishing resistance-obsession with regard to a feeling of pain'",
+      "Matched pattern '(.*?) impossible for (.*?)' in quotation: \"That a person—without abandoning passion-obsession with regard to a feeling of pleasure, without abolishing resistance-obsession with regard to a feeling of pain, without uprooting ignorance-obsession with regard to a feeling of neither pleasure nor pain, without abandoning ignorance and giving rise to clear knowing—would put an end to suffering & stress in the here & now: Such a thing isn't possible.\"",
+      "Added CausalRelation: {\"this\":\"not abolishing resistance-obsession with regard to a feeling of pain\",\"that\":\"end to suffering & stress in the here & now\",\"relation\":3,\"notThat\":true,\"quotationIndicies\":}",
+      "Added CausalRelation: {\"this\":\"not abolishing resistance-obsession with regard to a feeling of pain\",\"that\":\"end to suffering & stress in the here & now\",\"relation\":3,\"notThat\":true,\"quotationIndicies\":}",
+      "Exploring causal relations for concept: 'not uprooting ignorance-obsession with regard to a feeling of neither pleasure nor pain' at depth 2",
+      "Found 2 determinant quotations for 'not uprooting ignorance-obsession with regard to a feeling of neither pleasure nor pain'",
+      "Matched pattern '(.*?) impossible for (.*?)' in quotation: \"That a person—without abandoning passion-obsession with regard to a feeling of pleasure, without abolishing resistance-obsession with regard to a feeling of pain, without uprooting ignorance-obsession with regard to a feeling of neither pleasure nor pain, without abandoning ignorance and giving rise to clear knowing—would put an end to suffering & stress in the here & now: Such a thing isn't possible.\"",
+      "Added CausalRelation: {\"this\":\"not uprooting ignorance-obsession with regard to a feeling of neither pleasure nor pain\",\"that\":\"end to suffering & stress in the here & now\",\"relation\":3,\"notThat\":true,\"quotationIndicies\":}",
+      "Added CausalRelation: {\"this\":\"not uprooting ignorance-obsession with regard to a feeling of neither pleasure nor pain\",\"that\":\"end to suffering & stress in the here & now\",\"relation\":3,\"notThat\":true,\"quotationIndicies\":}",
+      "Exploring causal relations for concept: 'not abandoning ignorance and giving rise to clear knowing' at depth 2",
+      "Found 2 determinant quotations for 'not abandoning ignorance and giving rise to clear knowing'",
+      "Matched pattern '(.*?) impossible for (.*?)' in quotation: \"That a person—without abandoning passion-obsession with regard to a feeling of pleasure, without abolishing resistance-obsession with regard to a feeling of pain, without uprooting ignorance-obsession with regard to a feeling of neither pleasure nor pain, without abandoning ignorance and giving rise to clear knowing—would put an end to suffering & stress in the here & now: Such a thing isn't possible.\"",
+      "Added CausalRelation: {\"this\":\"not abandoning ignorance and giving rise to clear knowing\",\"that\":\"end to suffering & stress in the here & now\",\"relation\":3,\"notThat\":true,\"quotationIndicies\":}",
+      "Added CausalRelation: {\"this\":\"not abandoning ignorance and giving rise to clear knowing\",\"that\":\"end to suffering & stress in the here & now\",\"relation\":3,\"notThat\":true,\"quotationIndicies\":}",
+      "Exploring causal relations for concept: 'abandoning passion-obsession with regard to a feeling of pleasure' at depth 2",
+      "Found 1 determinant quotations for 'abandoning passion-obsession with regard to a feeling of pleasure'",
+      "Matched pattern 'That a person—through abandoning (.*?) and giving rise to (.*?)—would put an end to suffering & stress in the here & now: Such a thing is possible.' in quotation: \"That a person—through abandoning passion-obsession with regard to a feeling of pleasure, through abolishing resistance-obsession with regard to a feeling of pain, through uprooting ignorance-obsession with regard to a feeling of neither pleasure nor pain, through abandoning ignorance and giving rise to clear knowing—would put an end to suffering & stress in the here & now: Such a thing is possible.\"",
+      "Added CausalRelation: {\"this\":\"abandoning passion-obsession with regard to a feeling of pleasure\",\"that\":\"end to suffering & stress in the here & now\",\"relation\":3,\"quotationIndicies\":}",
+      "Exploring causal relations for concept: 'abolishing resistance-obsession with regard to a feeling of pain' at depth 2",
+      "Found 1 determinant quotations for 'abolishing resistance-obsession with regard to a feeling of pain'",
+      "Matched pattern 'That a person—through abandoning (.*?) and giving rise to (.*?)—would put an end to suffering & stress in the here & now: Such a thing is possible.' in quotation: \"That a person—through abandoning passion-obsession with regard to a feeling of pleasure, through abolishing resistance-obsession with regard to a feeling of pain, through uprooting ignorance-obsession with regard to a feeling of neither pleasure nor pain, through abandoning ignorance and giving rise to clear knowing—would put an end to suffering & stress in the here & now: Such a thing is possible.\"",
+      "Added CausalRelation: {\"this\":\"abolishing resistance-obsession with regard to a feeling of pain\",\"that\":\"end to suffering & stress in the here & now\",\"relation\":3,\"quotationIndicies\":}",
+      "Exploring causal relations for concept: 'uprooting ignorance-obsession with regard to a feeling of neither pleasure nor pain' at depth 2",
+      "Found 1 determinant quotations for 'uprooting ignorance-obsession with regard to a feeling of neither pleasure nor pain'",
+      "Matched pattern 'That a person—through abandoning (.*?) and giving rise to (.*?)—would put an end to suffering & stress in the here & now: Such a thing is possible.' in quotation: \"That a person—through abandoning passion-obsession with regard to a feeling of pleasure, through abolishing resistance-obsession with regard to a feeling of pain, through uprooting ignorance-obsession with regard to a feeling of neither pleasure nor pain, through abandoning ignorance and giving rise to clear knowing—would put an end to suffering & stress in the here & now: Such a thing is possible.\"",
+      "Added CausalRelation: {\"this\":\"uprooting ignorance-obsession with regard to a feeling of neither pleasure nor pain\",\"that\":\"end to suffering & stress in the here & now\",\"relation\":3,\"quotationIndicies\":}",
+      "Exploring causal relations for concept: 'abandoning ignorance and giving rise to clear knowing' at depth 2",
+      "Found 1 determinant quotations for 'abandoning ignorance and giving rise to clear knowing'",
+      "Matched pattern 'That a person—through abandoning (.*?) and giving rise to (.*?)—would put an end to suffering & stress in the here & now: Such a thing is possible.' in quotation: \"That a person—through abandoning passion-obsession with regard to a feeling of pleasure, through abolishing resistance-obsession with regard to a feeling of pain, through uprooting ignorance-obsession with regard to a feeling of neither pleasure nor pain, through abandoning ignorance and giving rise to clear knowing—would put an end to suffering & stress in the here & now: Such a thing is possible.\"",
+      "Added CausalRelation: {\"this\":\"abandoning ignorance and giving rise to clear knowing\",\"that\":\"end to suffering & stress in the here & now\",\"relation\":3,\"quotationIndicies\":}",
+      "Exploring causal relations for concept: 'uninstructed run-of-the-mill person' at depth 2",
+      "Found 2 determinant quotations for 'uninstructed run-of-the-mill person'",
+      "Matched pattern '(.*?) is defiled by (.*?), & (.*?)' in quotation: \"For a long time has this mind been defiled by passion, aversion, & delusion.\"",
+      "Added CausalRelation: {\"this\":\"uninstructed run-of-the-mill person\",\"that\":\"defiled by passion, aversion, & delusion\",\"relation\":3,\"quotationIndicies\":}",
+      "Exploring causal relations for concept: 'defilement of the mind' at depth 2",
+      "Found 1 determinant quotations for 'defilement of the mind'",
+      "Matched pattern 'From the defilement of the mind are (.*?) defiled.' in quotation: 'From the defilement of the mind are beings defiled. From the purification of the mind are beings purified.'",
+      "Added CausalRelation: {\"this\":\"defilement of the mind\",\"that\":\"beings defiled\",\"relation\":3,\"quotationIndicies\":}",
+      "Exploring causal relations for concept: 'purification of the mind' at depth 2",
+      "Found 1 determinant quotations for 'purification of the mind'",
+      "Matched pattern 'From the purification of the mind are (.*?) purified.' in quotation: 'From the defilement of the mind are beings defiled. From the purification of the mind are beings purified.'",
+      "Added CausalRelation: {\"this\":\"purification of the mind\",\"that\":\"beings purified\",\"relation\":3,\"quotationIndicies\":}",
+      "Exploring causal relations for concept: 'craving' at depth 3",
+      "Found 7 determinant quotations for 'craving'",
+      "Matched pattern '(.*?) is the root of (.*?)' in quotation: 'Because he has known that delight is the root of suffering & stress, that from coming-into-being there is birth, and that for what has come into being there is aging & death. Therefore, with the total ending, fading away, cessation, letting go, relinquishment of craving, the Tathāgata has totally awakened to the unexcelled right self-awakening, I tell you.'",
+      "Added CausalRelation: {\"this\":\"craving\",\"that\":\"stress & suffering\",\"relation\":3,\"quotationIndicies\":}",
+      "Added CausalRelation: {\"this\":\"craving\",\"that\":\"birth\",\"relation\":3,\"quotationIndicies\":}",
+      "Exploring causal relations for concept: 'coming-into-being' at depth 3",
+      "Found 1 determinant quotations for 'coming-into-being'",
+      "Matched pattern 'From (.*?) there is (.*?)' in quotation: 'Because he has known that delight is the root of suffering & stress, that from coming-into-being there is birth, and that for what has come into being there is aging & death. Therefore, with the total ending, fading away, cessation, letting go, relinquishment of craving, the Tathāgata has totally awakened to the unexcelled right self-awakening, I tell you.'",
+      "Added CausalRelation: {\"this\":\"coming-into-being\",\"that\":\"birth\",\"relation\":3,\"quotationIndicies\":}",
+      "Exploring causal relations for concept: 'birth' at depth 3",
+      "Found 4 determinant quotations for 'birth'",
+      "Matched pattern 'For what has come into being there is (.*?) & (.*?)' in quotation: 'Because he has known that delight is the root of suffering & stress, that from coming-into-being there is birth, and that for what has come into being there is aging & death. Therefore, with the total ending, fading away, cessation, letting go, relinquishment of craving, the Tathāgata has totally awakened to the unexcelled right self-awakening, I tell you.'",
+      "Added CausalRelation: {\"this\":\"birth\",\"that\":\"aging & death\",\"relation\":3,\"quotationIndicies\":}",
+      "Exploring causal relations for concept: 'ending of passion' at depth 2",
+      "Found 1 determinant quotations for 'ending of passion'",
+      "Matched pattern '(.*?) is called the (.*?)' in quotation: 'Whatever is the ending of passion, the ending of aversion, the ending of delusion: This is called the unfabricated.'",
+      "Added CausalRelation: {\"this\":\"ending of passion\",\"that\":\"unfabricated\",\"relation\":0,\"quotationIndicies\":}",
+      "Exploring causal relations for concept: 'ending of aversion' at depth 2",
+      "Found 1 determinant quotations for 'ending of aversion'",
+      "Matched pattern '(.*?) is called the (.*?)' in quotation: 'Whatever is the ending of passion, the ending of aversion, the ending of delusion: This is called the unfabricated.'",
+      "Added CausalRelation: {\"this\":\"ending of aversion\",\"that\":\"unfabricated\",\"relation\":0,\"quotationIndicies\":}",
+      "Exploring causal relations for concept: 'ending of delusion' at depth 2",
+      "Found 1 determinant quotations for 'ending of delusion'",
+      "Matched pattern '(.*?) is called the (.*?)' in quotation: 'Whatever is the ending of passion, the ending of aversion, the ending of delusion: This is called the unfabricated.'",
+      "Added CausalRelation: {\"this\":\"ending of delusion\",\"that\":\"unfabricated\",\"relation\":0,\"quotationIndicies\":}"
     ],
     "Solution": {
       "Step-by-Step": [],
@@ -209,17 +1984,12 @@
       "State Transitions": []
     },
     "Context": [
-      "The `enterFromState` for heedfulness is `heedlessness`.",
-      "The sources directly link the `undeveloped mind` to being unpliant and causing great harm, aligning with the state of heedlessness.",
-      "The mind's `luminosity being defiled by incoming defilements` is a characteristic of heedlessness in an uninstructed person, who lacks discernment.",
-      "Worldly gains leading to `intoxicated, complacent, & falls into heedlessness` explicitly describes a state of heedlessness.",
-      "The reference to `monks in higher training` having a task to do with heedfulness establishes the specific target audience for this pattern, aligning with the `medical diagnosis` analogy for the context."
+      "The command 'searchForContextWithRespectTo' was executed with query 'PATTERN: Heedful, ardent & resolute\nWhich one Dhammas is very helpful?\nHeedfulness with regard to skillful qualities. heedfulness skillful qualities stream-enterer once-returner non-returner heedlessness'. Found 5 determinant quotations.",
+      "The command 'composeContextStatement' was executed. The context statement was composed as a 'medical diagnosis'. The `enterFromState` 'heedlessness' is framed as the primary symptom. Supporting details from sources describe the 'undeveloped mind' as 'unpliant' and leading to 'great harm', and how 'incoming defilements' affect the 'luminous mind' of the 'uninstructed person'. It also includes how worldly gains cause 'intoxication, complacency, & heedlessness'. The context concludes by applying this pattern to 'monks in higher training' who still have a task with heedfulness, aligning with the medical diagnosis analogy."
     ],
     "Forces": [
-      "The initial state of `heedlessness` is linked to an undeveloped and unpliant mind, making it vulnerable to various defilements and rendering simple solutions ineffective.",
-      "The sources highlight how defilements like `passion, aversion, & delusion` corrupt the mind, preventing release and discernment, thus acting as strong opposing forces.",
-      "The metaphor of `craving as an 'ensnarer'` and a `tangled skein` illustrates the pervasive and complex nature of this force, which hinders liberation and justifies a nuanced solution.",
-      "These collective forces demonstrate why the `Heedful, ardent & resolute` pattern requires a specific, carefully considered solution rather than a simple approach."
+      "The command 'searchForForcesWithRespectTo' was executed with query 'PATTERN: Heedful, ardent & resolute\nWhich one Dhammas is very helpful?\nHeedfulness with regard to skillful qualities. heedfulness skillful qualities stream-enterer once-returner non-returner heedlessness'. Found 9 determinant quotations.",
+      "The command 'composeForcesStatement' was executed. The forces statement was composed to explain why simple solutions are insufficient. It highlights the core conflict of moving from heedlessness to heedfulness, describing countervailing forces such as the mind's unpliant nature and susceptibility to defilements (passion, aversion, delusion). Worldly allurements (gains, offerings, fame) leading to intoxication and complacency are presented as forces undermining effort. The pervasive nature of craving (likened to an 'ensnarer' or 'tangled skein') is cited as a complex problem. The challenge of maintaining balanced persistence (avoiding restlessness from over-arousal and laziness from being slack) is noted. Misguided views on causality are also identified as forces extinguishing effort to cultivate skillful qualities. Finally, sensual pleasures are framed as having 'much stress, much despair, & greater drawbacks', reinforcing their role as a distraction from the solution. All points are supported by specific source references."
     ],
     "Rationale": [],
     "Resulting Context": [],
