@@ -255,4 +255,9 @@ export type UserPatternRequestJson = TopicJson &{
     directExperience?: UserDirectExperienceJson
 }
 
-export const userPatternRequestJson: UserPatternRequestJson[] = []
+export const userPatternRequestJson: UserPatternRequestJson[] = [{
+    progressionIndex: 1,
+    categoryKey: "helpful"
+    // , verboseOutput: true,
+    // includeSubstantiations: true
+}]

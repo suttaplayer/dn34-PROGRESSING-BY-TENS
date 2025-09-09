@@ -267,10 +267,11 @@ const instructions = new JsonPatternGenerationInstructions(userPatternRequestJso
 await instructions.execute()
 
 
-/* deno --allow-read json-pattern-generation-instructions.ts
+/* deno --allow-read json-running-example-command-resolver.ts
 
 USER-QUERY [UserPatternRequestJson]
 {
+  "unitTestResolver": "./json-running-example-command-resolver.ts",
   "progressionIndex": 1,
   "categoryKey": "helpful",
   "includeSubstantiations": true,
@@ -310,6 +311,12 @@ starting [JsonProblemGenerationInstructions]
 prepareProblemStatement substantiations:
 [
   "'abandon' within the sources is typically used to express a transition from a negative mind state. 'let go of' is identified in the miracle of instruction, but 'abandon' is more effective in this instance. 'enter and remain in' is typically used to express a transition to a positive mind state."
+]
+-------------------------------------------------------
+starting [JsonCausalTableGenerationInstructions]
+prepareCausalTable substantiations:
+[
+  "mocked generation of causal table for running example 'Heedful, ardent & resolute'"
 ]
 -------------------------------------------------------
 starting [JsonContextGenerationInstructions]
@@ -359,7 +366,321 @@ prepareForcesStatement substantiations:
     "Problem": [
       "How do you abandon heedlessness and enter and remain in heedfulness?"
     ],
-    "Causal-Table": [],
+    "Causal-Table": [
+      {
+        "this": "shame",
+        "relation": 3,
+        "that": "heedful"
+      },
+      {
+        "this": "compunction",
+        "relation": 3,
+        "that": "heedful"
+      },
+      {
+        "this": "admirable friendship",
+        "relation": 3,
+        "that": "shame"
+      },
+      {
+        "this": "admirable friendship",
+        "relation": 3,
+        "that": "compunction"
+      },
+      {
+        "this": "associating with people of integrity",
+        "relation": 3,
+        "that": "admirable friendship"
+      },
+      {
+        "this": "directing oneself rightly",
+        "relation": 3,
+        "that": "heedful"
+      },
+      {
+        "this": "having done merit in the past",
+        "relation": 3,
+        "that": "heedful"
+      },
+      {
+        "this": "clear knowing",
+        "relation": 3,
+        "that": "heedful"
+      },
+      {
+        "this": "heedful",
+        "relation": 3,
+        "that": "joy"
+      },
+      {
+        "this": "heedful",
+        "relation": 3,
+        "that": "ardent"
+      },
+      {
+        "this": "heedful",
+        "relation": 3,
+        "that": "resolute"
+      },
+      {
+        "this": "heedful",
+        "relation": 3,
+        "that": "easy to correct"
+      },
+      {
+        "this": "heedful",
+        "relation": 3,
+        "that": "conviction"
+      },
+      {
+        "this": "heedful",
+        "relation": 3,
+        "that": "release"
+      },
+      {
+        "this": "seclusion from sensuality",
+        "relation": 1,
+        "that": "first jhāna"
+      },
+      {
+        "this": "first jhāna",
+        "relation": 3,
+        "notThat": true,
+        "that": "perception of sensuality"
+      },
+      {
+        "this": "stilling of directed thoughts & evaluations",
+        "relation": 3,
+        "that": "second jhāna"
+      },
+      {
+        "this": "second jhāna",
+        "relation": 3,
+        "notThat": true,
+        "that": "directed thoughts & evaluations"
+      },
+      {
+        "this": "fading of rapture",
+        "relation": 3,
+        "that": "third jhāna"
+      },
+      {
+        "this": "third jhāna",
+        "relation": 3,
+        "notThat": true,
+        "that": "rapture"
+      },
+      {
+        "this": "abandoning of pleasure & pain",
+        "relation": 3,
+        "that": "fourth jhāna"
+      },
+      {
+        "this": "fourth jhāna",
+        "relation": 3,
+        "notThat": true,
+        "that": "in-and-out breaths"
+      },
+      {
+        "this": "transcending perceptions of physical form",
+        "relation": 3,
+        "that": "dimension of the infinitude of space"
+      },
+      {
+        "this": "dimension of the infinitude of space",
+        "relation": 3,
+        "notThat": true,
+        "that": "perception of forms"
+      },
+      {
+        "this": "transcending dimension of the infinitude of space",
+        "relation": 3,
+        "that": "dimension of the infinitude of consciousness"
+      },
+      {
+        "this": "dimension of the infinitude of consciousness",
+        "relation": 3,
+        "notThat": true,
+        "that": "perception of the infinitude of space"
+      },
+      {
+        "this": "transcending dimension of the infinitude of consciousness",
+        "relation": 3,
+        "that": "dimension of nothingness"
+      },
+      {
+        "this": "dimension of nothingness",
+        "relation": 3,
+        "notThat": true,
+        "that": "perception of the infinitude of consciousness"
+      },
+      {
+        "this": "transcending dimension of nothingness",
+        "relation": 3,
+        "that": "dimension of neither perception nor non-perception"
+      },
+      {
+        "this": "dimension of neither perception nor non-perception",
+        "relation": 3,
+        "notThat": true,
+        "that": "perception of nothingness"
+      },
+      {
+        "this": "transcending dimension of neither perception nor non-perception",
+        "relation": 3,
+        "that": "cessation of perception & feeling"
+      },
+      {
+        "this": "cessation of perception & feeling",
+        "relation": 3,
+        "notThat": true,
+        "that": "perceptions & feelings"
+      },
+      {
+        "this": "cessation of perception & feeling (seen with discernment)",
+        "relation": 3,
+        "that": "ending of effluents"
+      },
+      {
+        "this": "shamelessness",
+        "relation": 3,
+        "that": "heedlessness"
+      },
+      {
+        "this": "lack of compunction",
+        "relation": 3,
+        "that": "heedlessness"
+      },
+      {
+        "this": "heedlessness",
+        "relation": 3,
+        "cannot": true,
+        "that": "abandoning apathy"
+      },
+      {
+        "this": "heedlessness",
+        "relation": 3,
+        "cannot": true,
+        "that": "being hard to correct"
+      },
+      {
+        "this": "heedlessness",
+        "relation": 3,
+        "cannot": true,
+        "that": "evil friendship"
+      },
+      {
+        "this": "evil friendship",
+        "relation": 3,
+        "cannot": true,
+        "that": "abandoning a lack of conviction"
+      },
+      {
+        "this": "evil friendship",
+        "relation": 3,
+        "cannot": true,
+        "that": "abandoning stinginess"
+      },
+      {
+        "this": "evil friendship",
+        "relation": 3,
+        "cannot": true,
+        "that": "abandoning laziness"
+      },
+      {
+        "this": "laziness",
+        "relation": 3,
+        "cannot": true,
+        "that": "abandoning restlessness"
+      },
+      {
+        "this": "laziness",
+        "relation": 3,
+        "cannot": true,
+        "that": "abandoning a lack of restraint"
+      },
+      {
+        "this": "laziness",
+        "relation": 3,
+        "cannot": true,
+        "that": "abandoning poor virtue"
+      },
+      {
+        "this": "abandoning self-identification views, uncertainty, grasping at habits & practices",
+        "relation": 3,
+        "that": "stream-entry"
+      },
+      {
+        "this": "stream-entry",
+        "relation": 3,
+        "notThat": true,
+        "that": "self-identification views"
+      },
+      {
+        "this": "stream-entry",
+        "relation": 3,
+        "notThat": true,
+        "that": "uncertainty"
+      },
+      {
+        "this": "stream-entry",
+        "relation": 3,
+        "notThat": true,
+        "that": "grasping at habits & practices"
+      },
+      {
+        "this": "abandoning sensual desire & ill will",
+        "relation": 3,
+        "that": "non-returner"
+      },
+      {
+        "this": "non-returner",
+        "relation": 3,
+        "notThat": true,
+        "that": "sensual desire"
+      },
+      {
+        "this": "non-returner",
+        "relation": 3,
+        "notThat": true,
+        "that": "ill will"
+      },
+      {
+        "this": "abandoning higher fetters",
+        "relation": 3,
+        "that": "arahantship"
+      },
+      {
+        "this": "arahantship",
+        "relation": 3,
+        "notThat": true,
+        "that": "passion for form"
+      },
+      {
+        "this": "arahantship",
+        "relation": 3,
+        "notThat": true,
+        "that": "passion for what is formless"
+      },
+      {
+        "this": "arahantship",
+        "relation": 3,
+        "notThat": true,
+        "that": "conceit"
+      },
+      {
+        "this": "arahantship",
+        "relation": 3,
+        "notThat": true,
+        "that": "restlessness"
+      },
+      {
+        "this": "arahantship",
+        "relation": 3,
+        "notThat": true,
+        "that": "ignorance"
+      }
+    ],
     "Solution": {
       "Step-by-Step": [],
       "Cause-&-Effect": [],
@@ -443,7 +764,9 @@ prepareForcesStatement substantiations:
     "Problem": [
       "'abandon' within the sources is typically used to express a transition from a negative mind state. 'let go of' is identified in the miracle of instruction, but 'abandon' is more effective in this instance. 'enter and remain in' is typically used to express a transition to a positive mind state."
     ],
-    "Causal-Table": [],
+    "Causal-Table": [
+      "mocked generation of causal table for running example 'Heedful, ardent & resolute'"
+    ],
     "Solution": {
       "Step-by-Step": [],
       "Cause-&-Effect": [],
