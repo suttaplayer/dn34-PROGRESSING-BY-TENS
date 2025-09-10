@@ -3,13 +3,26 @@
     "Scope": {
       "progressionIndex": 4,
       "categoryKey": "penetrate",
-      "patternName": "Concentrations that have a share in penetration",
+      "patternName": "Concentration in decline, stability, distinction & penetration",
       "subject": [
         {
-          "name": "concentration with a share in decline",
+          "name": "concentration that has a share in decline",
           "focusArea": [],
-          "enterFromState": "unconcentrated mind",
-          "exitToState": "ending of effluents",
+          "enterState": [
+            "increase in passion",
+            "increase in aversion",
+            "increase in delusion",
+            "undeveloped discernment",
+            "delighting in work",
+            "delighting in talking",
+            "delighting in sleeping",
+            "delighting in entanglement",
+            "not guarding the sense faculties",
+            "not knowing moderation in food"
+          ],
+          "exitState": [
+            "in_decline (wrong concentration)"
+          ],
           "targetPractitioner": [
             "stream-enterer",
             "once-returner",
@@ -17,10 +30,19 @@
           ]
         },
         {
-          "name": "concentration with a share in stability",
+          "name": "concentration that has a share in stability",
           "focusArea": [],
-          "enterFromState": "unconcentrated mind",
-          "exitToState": "ending of effluents",
+          "enterState": [
+            "hindrances active",
+            "seclusion from sensuality",
+            "seclusion from unskillful mental qualities"
+          ],
+          "exitState": [
+            "in_stability (first jhana)",
+            "in_stability (second jhana)",
+            "in_stability (third jhana)",
+            "in_stability (fourth jhana)"
+          ],
           "targetPractitioner": [
             "stream-enterer",
             "once-returner",
@@ -28,10 +50,18 @@
           ]
         },
         {
-          "name": "concentration with a share in distinction",
+          "name": "concentration that has a share in distinction",
           "focusArea": [],
-          "enterFromState": "unconcentrated mind",
-          "exitToState": "ending of effluents",
+          "enterState": [
+            "in_stability (fourth jhana)",
+            "mindfulness (active)",
+            "equanimity (active)"
+          ],
+          "exitState": [
+            "in_distinction",
+            "knowledge & vision",
+            "strong discernment"
+          ],
           "targetPractitioner": [
             "stream-enterer",
             "once-returner",
@@ -39,10 +69,22 @@
           ]
         },
         {
-          "name": "concentration with a share in penetration",
+          "name": "concentration that has a share in penetration",
           "focusArea": [],
-          "enterFromState": "unconcentrated mind",
-          "exitToState": "ending of effluents",
+          "enterState": [
+            "in_distinction",
+            "perception of inconstancy",
+            "perception of stress in inconstant",
+            "perception of not-self in stressful",
+            "ardent",
+            "alert",
+            "mindful"
+          ],
+          "exitState": [
+            "in_penetration",
+            "effluents ended",
+            "total unbinding"
+          ],
           "targetPractitioner": [
             "stream-enterer",
             "once-returner",
@@ -52,40 +94,208 @@
       ]
     },
     "Problem": [
-      "How do you abandon unconcentrated mind and enter and remain in ending of effluents?"
+      "How do you abandon increase in passion, increase in aversion, increase in delusion, undeveloped discernment, delighting in work, delighting in talking, delighting in sleeping, delighting in entanglement, not guarding the sense faculties, not knowing moderation in food, hindrances active, seclusion from sensuality, seclusion from unskillful mental qualities, in_stability (fourth jhana), mindfulness (active), equanimity (active), in_distinction, perception of inconstancy, perception of stress in inconstant, perception of not-self in stressful, ardent, alert, and mindful and enter and remain in in_decline (wrong concentration), in_stability (first jhana), in_stability (second jhana), in_stability (third jhana), in_stability (fourth jhana), in_distinction, knowledge & vision, strong discernment, in_penetration, effluents ended, and total unbinding?"
     ],
     "Causal-Table": [
       {
-        "this": "concentration",
+        "this": "increase in passion",
         "relation": 3,
-        "that": "penetration"
+        "that": "in_decline (wrong concentration)",
+        "quotationIndicies":
       },
       {
-        "this": "right discernment",
+        "this": "increase in aversion",
         "relation": 3,
-        "that": "penetration"
+        "that": "in_decline (wrong concentration)",
+        "quotationIndicies":
       },
       {
-        "this": "ignorance",
+        "this": "increase in delusion",
         "relation": 3,
-        "notThat": true,
-        "that": "penetration"
+        "that": "in_decline (wrong concentration)",
+        "quotationIndicies":
       },
       {
-        "this": "unskillful qualities",
+        "this": "eye of discernment makes no headway",
         "relation": 3,
-        "notThat": true,
-        "that": "concentration that has a share in penetration"
+        "that": "in_decline (wrong concentration)",
+        "quotationIndicies":
+      },
+      {
+        "this": "delighting in work",
+        "relation": 3,
+        "that": "in_decline (wrong concentration)",
+        "quotationIndicies":
+      },
+      {
+        "this": "delighting in talking",
+        "relation": 3,
+        "that": "in_decline (wrong concentration)",
+        "quotationIndicies":
+      },
+      {
+        "this": "delighting in sleeping",
+        "relation": 3,
+        "that": "in_decline (wrong concentration)",
+        "quotationIndicies":
+      },
+      {
+        "this": "delighting in entanglement",
+        "relation": 3,
+        "that": "in_decline (wrong concentration)",
+        "quotationIndicies":
+      },
+      {
+        "this": "not guarding the sense faculties",
+        "relation": 3,
+        "that": "in_decline (wrong concentration)",
+        "quotationIndicies":
+      },
+      {
+        "this": "not knowing moderation in food",
+        "relation": 3,
+        "that": "in_decline (wrong concentration)",
+        "quotationIndicies":
       },
       {
         "this": "seclusion from sensuality",
         "relation": 1,
-        "that": "concentration"
+        "that": "in_stability (first jhana)",
+        "quotationIndicies":
       },
       {
-        "this": "deep dependent co-arising",
+        "this": "seclusion from unskillful qualities",
+        "relation": 1,
+        "that": "in_stability (first jhana)",
+        "quotationIndicies":
+      },
+      {
+        "this": "in_stability (first jhana)",
         "relation": 0,
-        "that": "penetration"
+        "that": "rapture (active)",
+        "quotationIndicies":
+      },
+      {
+        "this": "in_stability (first jhana)",
+        "relation": 0,
+        "that": "pleasant feeling",
+        "quotationIndicies":
+      },
+      {
+        "this": "fading of rapture",
+        "relation": 3,
+        "that": "in_stability (third jhana)",
+        "quotationIndicies": []
+      },
+      {
+        "this": "abandoning of pleasure & pain",
+        "relation": 3,
+        "that": "in_stability (fourth jhana)",
+        "quotationIndicies": []
+      },
+      {
+        "this": "in_stability (fourth jhana)",
+        "relation": 1,
+        "that": "purity of equanimity & mindfulness"
+      },
+      {
+        "this": "discernment of arising & passing away",
+        "relation": 3,
+        "that": "in_distinction",
+        "quotationIndicies":
+      },
+      {
+        "this": "noble, penetrating discernment",
+        "relation": 3,
+        "that": "in_distinction",
+        "quotationIndicies":
+      },
+      {
+        "this": "in_distinction",
+        "relation": 3,
+        "that": "knowledge & vision"
+      },
+      {
+        "this": "perception of inconstancy",
+        "relation": 2,
+        "that": "in_penetration",
+        "quotationIndicies":
+      },
+      {
+        "this": "perception of stress in inconstant",
+        "relation": 2,
+        "that": "in_penetration",
+        "quotationIndicies":
+      },
+      {
+        "this": "perception of not-self in stressful",
+        "relation": 2,
+        "that": "in_penetration",
+        "quotationIndicies":
+      },
+      {
+        "this": "in_penetration",
+        "relation": 3,
+        "that": "effluents ended",
+        "quotationIndicies":
+      },
+      {
+        "this": "effluents ended",
+        "relation": 3,
+        "that": "total unbinding",
+        "quotationIndicies":
+      },
+      {
+        "this": "heedfulness",
+        "relation": 1,
+        "that": "mindfulness (active)",
+        "quotationIndicies":
+      },
+      {
+        "this": "persistence (active)",
+        "relation": 1,
+        "that": "mindfulness (active)"
+      },
+      {
+        "this": "equanimity (active)",
+        "relation": 1,
+        "that": "mindfulness (active)"
+      },
+      {
+        "this": "mind is luminous & not brittle",
+        "relation": 3,
+        "that": "rightly concentrated for the ending of the effluents",
+        "quotationIndicies":
+      },
+      {
+        "this": "attending periodically to concentration",
+        "relation": 3,
+        "that": "mind is luminous & not brittle",
+        "quotationIndicies":
+      },
+      {
+        "this": "attending periodically to uplifted energy",
+        "relation": 3,
+        "that": "mind is luminous & not brittle",
+        "quotationIndicies":
+      },
+      {
+        "this": "attending periodically to equanimity",
+        "relation": 3,
+        "that": "mind is luminous & not brittle",
+        "quotationIndicies":
+      },
+      {
+        "this": "over-aroused persistence",
+        "relation": 3,
+        "that": "restlessness",
+        "quotationIndicies":
+      },
+      {
+        "this": "overly slack persistence",
+        "relation": 3,
+        "that": "laziness",
+        "quotationIndicies":
       }
     ],
     "Solution": {
@@ -96,17 +306,17 @@
       "State Transitions": []
     },
     "Context": [
-      "A practitioner finds their mind often unconcentrated, making it difficult to achieve deeper states of insight and understanding.",
-      "Despite the mind's luminous nature, it is frequently defiled by various hindrances and defilements, hindering the clarity required for penetration.",
-      "This condition is further exacerbated by attachment to worldly affairs and sense pleasures, which distract and prevent sustained meditative effort.",
-      "The task of penetrating profound Dhamma, particularly dependent co-arising, requires sustained focus and a mind free from these distractions, indicating a need for practices that foster concentration and insight."
+      "A practitioner may experience a decline in skillful qualities marked by an increase in passion, aversion, and delusion, accompanied by an undeveloped eye of discernment and unskillful habits like delighting in work, talking, sleeping, entanglement, or lack of sense-guarding and moderation in food.",
+      "The mind, although inherently luminous, can be defiled by incoming defilements, becoming unpliant and unconcentrated, especially when an uninstructed person fails to discern these states.",
+      "This state is often compounded by the presence of hindrances that overwhelm awareness, preventing the mind from settling into stability.",
+      "Progress requires moving through stages of concentration, which involves overcoming these unskillful states and cultivating states conducive to insight and liberation."
     ],
     "Forces": [
-      "The path to penetration is challenging, as the mind remains highly susceptible to defilements such as passion, aversion, and delusion, hindering the clarity and discernment needed for progress.",
-      "Maintaining the right level of persistence in meditation is a delicate balance; over-arousal leads to restlessness, while being overly slack leads to laziness, both undermining the sustained effort required for concentration.",
-      "Worldly attractions and sense pleasures act as ensnarers, creating a 'tangled skein' that binds individuals to undesirable states and impedes the liberation and insight that concentration aims for.",
-      "The inherent 'deep' nature of Dhamma, such as dependent co-arising, makes it 'hard to see, hard to realize' for a generation that 'delights in attachment,' posing a significant obstacle to penetration.",
-      "The difficulty of maintaining a unified and concentrated mind, easily scattered by external stimuli and internal discursive thoughts, presents a constant challenge to achieving stable meditative states."
+      "The tendency of the mind to decline in skillful qualities due to increases in passion, aversion, and delusion, coupled with an inability to discern deep possibilities and impossibilities, creates a strong gravitational pull towards unskillful states.",
+      "Unskillful habits such as delighting in work, talking, sleeping, entanglement, or a lack of restraint over senses and food intake, actively counteract efforts to cultivate concentration and higher states.",
+      "The challenge lies in managing persistence, as both `over-aroused persistence leads to restlessness` and `overly slack persistence leads to laziness`, preventing the mind from becoming `pliant, malleable, luminous, & not brittle` for the ending of effluents.",
+      "The journey from initial `seclusion from sensuality` to advanced states of `penetration` and `total unbinding` involves a series of distinct transitions, each with its own set of challenges and requiring specific abandonments and cultivations.",
+      "Worldly distractions and the allure of sensual pleasures continuously threaten to pull the mind away from the path of concentration and insight, as demonstrated by the disappearance of light and forms when excitement, boredom, or excess/slack persistence arise."
     ],
     "Rationale": "",
     "Resulting Context": [],
@@ -116,20 +326,38 @@
   },
   "quotationSheet": {
     "Scope": [
-      "Four concentrations: concentration that has a share in decline, concentration that has a share in stability, concentration that has a share in distinction, concentration that has a share in penetration.",
-      "It's impossible that he would, through the ending of effluents, enter & remain in the effluent-free awareness-release & discernment-release, having directly known & realized them for himself right in the here & now.",
-      "Practice jhāna, Ānanda. Don't be heedless. Don't later fall into remorse. That is our message to you all."
+      "Any monk or nun who sees four qualities in him- or herself should come to the conclusion, 'I am declining in skillful qualities. This is called decline by the Blessed One.' Which four? An increase in passion, an increase in aversion, an increase in delusion, and one's eye of discernment makes no headway in terms of deep possibilities & impossibilities. [AN_nblm.txt, 32]",
+      "Any monk or nun who sees four qualities in him- or herself should come to the conclusion, 'I am not declining in skillful qualities. This is called non-decline by the Blessed One.' Which four? A reduction in passion, a reduction in aversion, a reduction in delusion, and one's eye of discernment makes headway in terms of deep possibilities & impossibilities. [AN_nblm.txt, 33]",
+      "If the noble disciple passes away at that time, there is no fetter bound by which he would return to this world. [AN_nblm.txt, 28]",
+      "Having transcended & calmed that abiding, lord, this is another comfortable abiding where a superior human attainment, a truly noble distinction of knowledge & vision, has been attained. [state-parsing-and-mapping-rules.json.txt, 390]",
+      "The perception of inconstancy, when developed & pursued, is of great fruit, of great benefit. It gains a footing in the deathless, has the deathless as its final end'. [AN_nblm.txt, 48]",
+      "The perception of stress in what is inconstant, when developed & pursued, is of great fruit, of great benefit. It gains a footing in the deathless, has the deathless as its final end'. [AN_nblm.txt, 49]",
+      "The perception of not-self in what is stressful, when developed & pursued, is of great fruit, of great benefit. It gains a footing in the deathless, has the deathless as its final end'. [AN_nblm.txt, 50]",
+      "If he wants, then through the ending of the effluents, he enters & remains in the effluent-free awareness-release & discernment-release. [AN_nblm.txt, 29]",
+      "Now, then, monks, I exhort you: All fabrications are subject to ending & decay. Reach consummation through heedfulness.' That was the Tathāgata's last statement [to a group of noble monks the most backward of which was a stream-enterer] [json-notebooklm-command-resolver.ts.txt, 289]"
     ],
-    "Problem": [],
+    "Problem": [
+      "'abandon' within the sources is typically used to express a transition from a negative mind state. 'let go of' is identified in the miracle of instruction, but 'abandon' is more effective in this instance. 'enter and remain in' is typically used to express a transition to a positive mind state. [json-notebooklm-command-resolver.ts.txt, 290]"
+    ],
     "Causal-Table": [
-      "Concentrations that have a share in penetration",
-      "discerning, endowed with the discernment of arising & passing away—noble, penetrating, leading to the right ending of stress.",
-      "From ignorance as a requisite condition come fabrications.",
-      "It's because of not understanding and not penetrating this Dhamma that this generation is like a tangled skein, a knotted ball of string, like matted rushes and reeds, and does not go beyond transmigration, beyond the planes of deprivation, woe, & bad destinations.",
-      "If he doesn't abandon that statement, doesn't abandon that intent, doesn't relinquish that view, then as if he were to be carried off, he would for that very reason be placed in hell.",
-      "That a person—through abandoning passion-obsession with regard to a feeling of pleasure, through abolishing resistance-obsession with regard to a feeling of pain, through uprooting ignorance-obsession with regard to a feeling of neither pleasure nor pain, through abandoning ignorance and giving rise to clear knowing—would put an end to suffering & stress in the here & now: Such a thing is possible.",
-      "When physical food is comprehended, passion for the five strings of sensuality is comprehended.",
-      "Deep is this dependent co-arising, and deep its appearance. It's because of not understanding and not penetrating this Dhamma that this generation is like a tangled skein, a knotted ball of string, like matted rushes and reeds, and does not go beyond transmigration, beyond the planes of deprivation, woe, & bad destinations."
+      "An increase in passion, an increase in aversion, an increase in delusion, and one's eye of discernment makes no headway in terms of deep possibilities & impossibilities. [AN_nblm.txt, 32]",
+      "Delighting in work, delighting in talking, delighting in sleeping, delighting in entanglement, not guarding the sense faculties, not knowing moderation in food. [AN_nblm.txt, 44]",
+      "quite secluded from sensuality, secluded from unskillful qualities, he enters & remains in the first jhāna: rapture & pleasure born of seclusion, accompanied by directed thought & evaluation. [AN_nblm.txt, 28]",
+      "discerning, endowed with the discernment of arising & passing away—noble, penetrating, leading to the right ending of stress. [AN_nblm.txt, 95]",
+      "He is discerning, endowed with the discernment of arising & passing away—noble, penetrating, leading to the right ending of stress. [AN_nblm.txt, 53]",
+      "When a monk's awareness often remains steeped in the perception of inconstancy, his mind shrinks away from gains, offerings, & fame, bends away, pulls back, and is not drawn in, and either equanimity or loathing take a stance. [AN_nblm.txt, 48]",
+      "When a monk's awareness often remains steeped in the perception of stress in what is inconstant, a fierce perception of danger & fear is established in him toward idleness, indolence, laziness, heedlessness, lack of commitment, & lack of reflection, as if toward a murderer with an upraised sword. [AN_nblm.txt, 49]",
+      "When a monk's awareness often remains steeped in the perception of not-self in what is stressful, his heart is devoid of I-making & my-making with regard to this conscious body and externally with regard to all themes, has transcended pride, is at peace, and is well released. [AN_nblm.txt, 50]",
+      "This is the development of concentration that, when developed & pursued, leads to the ending of the effluents. [AN_nblm.txt, 31]",
+      "This is the development of concentration that, when developed & pursued, leads to the ending of the effluents. [DN_nblm.txt, 87]",
+      "For me the ending of stress is reached; the ending of effluents, attained. [KN_Thag_nblm.txt, 111]",
+      "With effluents all totally ended, there is now no further becoming. [KN_Thag_nblm.txt, 115]",
+      "heedfulness is reckoned the foremost among them. [json-notebooklm-command-resolver.ts.txt, 277]",
+      "his mind is pliant, malleable, luminous, & not brittle. It is rightly concentrated for the ending of the effluents. [AN_nblm.txt, 29]",
+      "his mind is pliant, malleable, luminous, and not brittle. It is rightly concentrated for the ending of the effluents. [AN_nblm.txt, 30]",
+      "If he were to attend solely to the theme of uplifted energy, it's possible that his mind would tend to restlessness. [AN_nblm.txt, 29]",
+      "If he were to attend solely to the theme of concentration, it's possible that his mind would tend to laziness. [AN_nblm.txt, 29]",
+      "over-aroused persistence leads to restlessness, overly slack persistence leads to laziness. [AN_nblm.txt, 45]"
     ],
     "Solution": {
       "Step-by-Step": [],
@@ -139,22 +367,118 @@
       "State Transitions": []
     },
     "Context": [
-      "I don't envision a single thing that, when undeveloped, is as unpliant as the mind. The mind, when undeveloped, is unpliant. [MN_nblm.txt:L13]",
-      "Luminous, monks, is the mind. And it is defiled by incoming defilements. The uninstructed run-of-the-mill person doesn't discern that as it has come to be, which is why I tell you that—for the uninstructed run-of-the-mill person—there is no development of the mind. [MN_nblm.txt:L15]",
-      "Because of that gain, he becomes intoxicated, complacent, & falls into heedlessness. [AN_nblm.txt:L17]",
-      "For him—living in the midst of sensuality, consuming sensuality, chewed on by thoughts of sensuality, burning with the fever of sensuality, intent on the search for sensuality—to know or see or realize that which is to be known through renunciation, seen through renunciation, attained through renunciation, realized through renunciation: That's impossible. [MN_nblm.txt:L173]",
-      "But as for monks in higher training, who have not yet reached their hearts' goal, who still aspire for the unexcelled freedom from bondage: I say of them that they have a task to do with heedfulness. [MN_nblm.txt:L351]",
-      "This Dhamma that I have attained is deep, hard to see, hard to realize, peaceful, refined, beyond the scope of conjecture, subtle, to-be-experienced by the observant. But this generation delights in attachment, is excited by attachment, enjoys attachment. [SN_nblm.txt:L202]"
+      "I don't envision a single thing that, when undeveloped, is as unpliant as the mind. The mind, when undeveloped, is unpliant. [MN_nblm.txt, 118]",
+      "I don't envision a single thing that, when undeveloped, leads to such great harm as the mind. The mind, when undeveloped, leads to great harm. [MN_nblm.txt, 118]",
+      "Luminous, monks, is the mind. And it is defiled by incoming defilements. The uninstructed run-of-the-mill person doesn't discern that as it has come to be, which is why I tell you that—for the uninstructed run-of-the-mill person—there is no development of the mind. [AN_nblm.txt, 24]",
+      "The five hindrances overwhelm awareness and weaken discernment. [state-parsing-and-mapping-rules.json.txt, 377]"
     ],
     "Forces": [
-      "I don't envision a single thing that, when undeveloped, is as unpliant as the mind. The mind, when undeveloped, is unpliant. [MN_nblm.txt:L13]",
-      "Luminous, monks, is the mind. And it is defiled by incoming defilements. [MN_nblm.txt:L15]",
-      "Defiled by passion, the mind is not released. Defiled by ignorance, discernment does not develop. Thus from the fading of passion is there awareness-release. From the fading of ignorance is there discernment-release. [AN_nblm.txt:L17]",
-      "over-aroused persistence leads to restlessness, overly slack persistence leads to laziness. [AN_nblm.txt:L295]",
-      "Craving is the ensnarer that has flowed along, spread out, and caught hold, with which this world is smothered & enveloped like a tangled skein, a knotted ball of string, like matted rushes and reeds, and does not go beyond transmigration, beyond the planes of deprivation, woe, & bad destinations. [AN_nblm.txt:L20]",
-      "Deep is this dependent co-arising, and deep its appearance. It's because of not understanding and not penetrating this Dhamma that this generation is like a tangled skein, a knotted ball of string, like matted rushes and reeds, and does not go beyond transmigration, beyond the planes of deprivation, woe, & bad destinations. [DN_nblm.txt:L295]",
-      "This Dhamma that I have attained is deep, hard to see, hard to realize, peaceful, refined, beyond the scope of conjecture, subtle, to-be-experienced by the observant. But this generation delights in attachment, is excited by attachment, enjoys attachment. [SN_nblm.txt:L202]",
-      "Many people find abstract descriptions very hard to understand. [Source 87]"
+      "An increase in passion, an increase in aversion, an increase in delusion, and one's eye of discernment makes no headway in terms of deep possibilities & impossibilities. [AN_nblm.txt, 32]",
+      "Delighting in work, delighting in talking, delighting in sleeping, delighting in entanglement, not guarding the sense faculties, not knowing moderation in food. [AN_nblm.txt, 44]",
+      "over-aroused persistence leads to restlessness, overly slack persistence leads to laziness. [AN_nblm.txt, 45]",
+      "The Blessed One has compared sensual pleasures to a chain of bones: of much stress, much despair, & greater drawbacks. [json-notebooklm-command-resolver.ts.txt, 278]",
+      "If he were to attend solely to the theme of concentration, it's possible that his mind would tend to laziness. If he were to attend solely to the theme of uplifted energy, it's possible that his mind would tend to restlessness. If he were to attend solely to the theme of equanimity, it's possible that his mind would not be rightly concentrated for the ending of the effluents. [AN_nblm.txt, 29]"
+    ],
+    "Rationale": "",
+    "Resulting Context": [],
+    "Related Patterns": [],
+    "Case-studies": [],
+    "Simile": []
+  },
+  "quotationSheet": {
+    "Scope": [
+      "Any monk or nun who sees four qualities in him- or herself should come to the conclusion, 'I am declining in skillful qualities. This is called decline by the Blessed One.' Which four? An increase in passion, an increase in aversion, an increase in delusion, and one's eye of discernment makes no headway in terms of deep possibilities & impossibilities. [AN_nblm.txt, 32]",
+      "Any monk or nun who sees four qualities in him- or herself should come to the conclusion, 'I am not declining in skillful qualities. This is called non-decline by the Blessed One.' Which four? A reduction in passion, a reduction in aversion, a reduction in delusion, and one's eye of discernment makes headway in terms of deep possibilities & impossibilities. [AN_nblm.txt, 33]",
+      "If the noble disciple passes away at that time, there is no fetter bound by which he would return to this world. [AN_nblm.txt, 28]",
+      "Having transcended & calmed that abiding, lord, this is another comfortable abiding where a superior human attainment, a truly noble distinction of knowledge & vision, has been attained. [state-parsing-and-mapping-rules.json.txt, 390]",
+      "The perception of inconstancy, when developed & pursued, is of great fruit, of great benefit. It gains a footing in the deathless, has the deathless as its final end'. [AN_nblm.txt, 48]",
+      "The perception of stress in what is inconstant, when developed & pursued, is of great fruit, of great benefit. It gains a footing in the deathless, has the deathless as its final end'. [AN_nblm.txt, 49]",
+      "The perception of not-self in what is stressful, when developed & pursued, is of great fruit, of great benefit. It gains a footing in the deathless, has the deathless as its final end'. [AN_nblm.txt, 50]",
+      "If he wants, then through the ending of the effluents, he enters & remains in the effluent-free awareness-release & discernment-release. [AN_nblm.txt, 29]",
+      "Now, then, monks, I exhort you: All fabrications are subject to ending & decay. Reach consummation through heedfulness.' That was the Tathāgata's last statement [to a group of noble monks the most backward of which was a stream-enterer] [json-notebooklm-command-resolver.ts.txt, 289]"
+    ],
+    "Problem": [
+      "'abandon' within the sources is typically used to express a transition from a negative mind state. 'let go of' is identified in the miracle of instruction, but 'abandon' is more effective in this instance. 'enter and remain in' is typically used to express a transition to a positive mind state. [json-notebooklm-command-resolver.ts.txt, 290]"
+    ],
+    "Causal-Table": [
+      "An increase in passion, an increase in aversion, an increase in delusion, and one's eye of discernment makes no headway in terms of deep possibilities & impossibilities. [AN_nblm.txt, 32]",
+      "Delighting in work, delighting in talking, delighting in sleeping, delighting in entanglement, not guarding the sense faculties, not knowing moderation in food. [AN_nblm.txt, 44]",
+      "quite secluded from sensuality, secluded from unskillful qualities, he enters & remains in the first jhāna: rapture & pleasure born of seclusion, accompanied by directed thought & evaluation. [AN_nblm.txt, 28]",
+      "discerning, endowed with the discernment of arising & passing away—noble, penetrating, leading to the right ending of stress. [AN_nblm.txt, 95]",
+      "He is discerning, endowed with the discernment of arising & passing away—noble, penetrating, leading to the right ending of stress. [AN_nblm.txt, 53]",
+      "When a monk's awareness often remains steeped in the perception of inconstancy, his mind shrinks away from gains, offerings, & fame, bends away, pulls back, and is not drawn in, and either equanimity or loathing take a stance. [AN_nblm.txt, 48]",
+      "When a monk's awareness often remains steeped in the perception of stress in what is inconstant, a fierce perception of danger & fear is established in him toward idleness, indolence, laziness, heedlessness, lack of commitment, & lack of reflection, as if toward a murderer with an upraised sword. [AN_nblm.txt, 49]",
+      "When a monk's awareness often remains steeped in the perception of not-self in what is stressful, his heart is devoid of I-making & my-making with regard to this conscious body and externally with regard to all themes, has transcended pride, is at peace, and is well released. [AN_nblm.txt, 50]",
+      "This is the development of concentration that, when developed & pursued, leads to the ending of the effluents. [AN_nblm.txt, 31]",
+      "This is the development of concentration that, when developed & pursued, leads to the ending of the effluents. [DN_nblm.txt, 87]",
+      "For me the ending of stress is reached; the ending of effluents, attained. [KN_Thag_nblm.txt, 111]",
+      "With effluents all totally ended, there is now no further becoming. [KN_Thag_nblm.txt, 115]",
+      "heedfulness is reckoned the foremost among them. [json-notebooklm-command-resolver.ts.txt, 277]",
+      "his mind is pliant, malleable, luminous, & not brittle. It is rightly concentrated for the ending of the effluents. [AN_nblm.txt, 29]",
+      "his mind is pliant, malleable, luminous, and not brittle. It is rightly concentrated for the ending of the effluents. [AN_nblm.txt, 30]",
+      "If he were to attend solely to the theme of uplifted energy, it's possible that his mind would tend to restlessness. [AN_nblm.txt, 29]",
+      "If he were to attend solely to the theme of concentration, it's possible that his mind would tend to laziness. [AN_nblm.txt, 29]",
+      "over-aroused persistence leads to restlessness, overly slack persistence leads to laziness. [AN_nblm.txt, 45]"
+    ],
+    "Solution": {
+      "Step-by-Step": [],
+      "Cause-&-Effect": [],
+      "Process View": [],
+      "Concepts & Relationships": [],
+      "State Transitions": []
+    },
+    "Context": [
+      "I don't envision a single thing that, when undeveloped, is as unpliant as the mind. The mind, when undeveloped, is unpliant. [MN_nblm.txt, 118]",
+      "I don't envision a single thing that, when undeveloped, leads to such great harm as the mind. The mind, when undeveloped, leads to great harm. [MN_nblm.txt, 118]",
+      "Luminous, monks, is the mind. And it is defiled by incoming defilements. The uninstructed run-of-the-mill person doesn't discern that as it has come to be, which is why I tell you that—for the uninstructed run-of-the-mill person—there is no development of the mind. [AN_nblm.txt, 24]",
+      "The five hindrances overwhelm awareness and weaken discernment. [state-parsing-and-mapping-rules.json.txt, 377]"
+    ],
+    "Forces": [
+      "An increase in passion, an increase in aversion, an increase in delusion, and one's eye of discernment makes no headway in terms of deep possibilities & impossibilities. [AN_nblm.txt, 32]",
+      "Delighting in work, delighting in talking, delighting in sleeping, delighting in entanglement, not guarding the sense faculties, not knowing moderation in food. [AN_nblm.txt, 44]",
+      "over-aroused persistence leads to restlessness, overly slack persistence leads to laziness. [AN_nblm.txt, 45]",
+      "The Blessed One has compared sensual pleasures to a chain of bones: of much stress, much despair, & greater drawbacks. [json-notebooklm-command-resolver.ts.txt, 278]",
+      "If he were to attend solely to the theme of concentration, it's possible that his mind would tend to laziness. If he were to attend solely to the theme of uplifted energy, it's possible that his mind would tend to restlessness. If he were to attend solely to the theme of equanimity, it's possible that his mind would not be rightly concentrated for the ending of the effluents. [AN_nblm.txt, 29]"
+    ],
+    "Rationale": [],
+    "Resulting Context": [],
+    "Related Patterns": [],
+    "Case-studies": [],
+    "Simile": []
+  },
+  "quotationSheet": {
+    "Scope": [
+      "Any monk or nun who sees four qualities in him- or herself should come to the conclusion, 'I am declining in skillful qualities. This is called decline by the Blessed One.' Which four? An increase in passion, an increase in aversion, an increase in delusion, and one's eye of discernment makes no headway in terms of deep possibilities & impossibilities. [AN_nblm.txt, 32]",
+      "Any monk or nun who sees four qualities in him- or herself should come to the conclusion, 'I am not declining in skillful qualities. This is called non-decline by the Blessed One.' Which four? A reduction in passion, a reduction in aversion, a reduction in delusion, and one's eye of discernment makes headway in terms of deep possibilities & impossibilities. [AN_nblm.txt, 33]",
+      "If the noble disciple passes away at that time, there is no fetter bound by which he would return to this world. [AN_nblm.txt, 28]",
+      "Having transcended & calmed that abiding, lord, this is another comfortable abiding where a superior human attainment, a truly noble distinction of knowledge & vision, has been attained. [state-parsing-and-mapping-rules.json.txt, 390]",
+      "The perception of inconstancy, when developed & pursued, is of great fruit, of great benefit. It gains a footing in the deathless, has the deathless as its final end'. [AN_nblm.txt, 48]",
+      "The perception of stress in what is inconstant, when developed & pursued, is of great fruit, of great benefit. It gains a footing in the deathless, has the deathless as its final end'. [AN_nblm.txt, 49]",
+      "The perception of not-self in what is stressful, when developed & pursued, is of great fruit, of great benefit. It gains a footing in the deathless, has the deathless as its final end'. [AN_nblm.txt, 50]",
+      "If he wants, then through the ending of the effluents, he enters & remains in the effluent-free awareness-release & discernment-release. [AN_nblm.txt, 29]",
+      "Now, then, monks, I exhort you: All fabrications are subject to ending & decay. Reach consummation through heedfulness.' That was the Tathāgata's last statement [to a group of noble monks the most backward of which was a stream-enterer] [json-notebooklm-command-resolver.ts.txt, 289]"
+    ],
+    "Problem": [],
+    "Causal-Table": [],
+    "Solution": {
+      "Step-by-Step": [],
+      "Cause-&-Effect": [],
+      "Process View": [],
+      "Concepts & Relationships": [],
+      "State Transitions": []
+    },
+    "Context": [
+      "I don't envision a single thing that, when undeveloped, is as unpliant as the mind. The mind, when undeveloped, is unpliant. [MN_nblm.txt, 118]",
+      "I don't envision a single thing that, when undeveloped, leads to such great harm as the mind. The mind, when undeveloped, leads to great harm. [MN_nblm.txt, 118]",
+      "Luminous, monks, is the mind. And it is defiled by incoming defilements. The uninstructed run-of-the-mill person doesn't discern that as it has come to be, which is why I tell you that—for the uninstructed run-of-the-mill person—there is no development of the mind. [AN_nblm.txt, 24]",
+      "The five hindrances overwhelm awareness and weaken discernment. [state-parsing-and-mapping-rules.json.txt, 377]"
+    ],
+    "Forces": [
+      "An increase in passion, an increase in aversion, an increase in delusion, and one's eye of discernment makes no headway in terms of deep possibilities & impossibilities. [AN_nblm.txt, 32]",
+      "Delighting in work, delighting in talking, delighting in sleeping, delighting in entanglement, not guarding the sense faculties, not knowing moderation in food. [AN_nblm.txt, 44]",
+      "over-aroused persistence leads to restlessness, overly slack persistence leads to laziness. [AN_nblm.txt, 45]",
+      "The Blessed One has compared sensual pleasures to a chain of bones: of much stress, much despair, & greater drawbacks. [json-notebooklm-command-resolver.ts.txt, 278]",
+      "If he were to attend solely to the theme of concentration, it's possible that his mind would tend to laziness. If he were to attend solely to the theme of uplifted energy, it's possible that his mind would tend to restlessness. If he were to attend solely to the theme of equanimity, it's possible that his mind would not be rightly concentrated for the ending of the effluents. [AN_nblm.txt, 29]"
     ],
     "Rationale": [],
     "Resulting Context": [],
@@ -164,164 +488,113 @@
   },
   "substantiations": {
     "Scope": [
-      "Simulating NotebookLM Command: structured_extraction with parameters: {\"textToParse\":\"Four concentrations: concentration that has a share in decline, concentration that has a share in stability, concentration that has a share in distinction, concentration that has a share in penetration.\",\"extractionTarget\":\"SubjectJson[]\",\"expectedFormat\":\"{ name: string, focusArea?: string[] }[]\",\"guidance\":\"Identify distinct concepts that represent subjects from the answer excerpt, and any modifying phrases that denote 'focusArea' (e.g., 'with regard to skillful qualities'). Structure these into `SubjectJson` objects. Strictly adhere to the instruction to identify distinct and sequential requisite conditions, different immediate outcomes, or varying `enterFromState`/`exitToState` as criteria for parsing separate `SubjectJson` objects. The `progressionIndex` will guide the maximum number of subjects to extract. Initially, `enterFromState` and `exitToState` should be empty strings, and `targetPractitioner` an empty array. FocusArea is optional and can remain undefined if not applicable.\"}",
-      "Extracted SubjectJson array: [{\"name\":\"concentration that has a share in decline\",\"focusArea\":[],\"enterFromState\":\"\",\"exitToState\":\"\",\"targetPractitioner\":[]},{\"name\":\"concentration that has a share in stability\",\"focusArea\":[],\"enterFromState\":\"\",\"exitToState\":\"\",\"targetPractitioner\":[]},{\"name\":\"concentration that has a share in distinction\",\"focusArea\":[],\"enterFromState\":\"\",\"exitToState\":\"\",\"targetPractitioner\":[]},{\"name\":\"concentration that has a share in penetration\",\"focusArea\":[],\"enterFromState\":\"\",\"exitToState\":\"\",\"targetPractitioner\":[]}]",
-      "Simulating NotebookLM Command: conceptual_mapping with parameters: {\"termToAbstract\":\"concentration that has a share in decline\",\"targetConceptLevel\":\"optimal_for_causal_table\",\"expectedFormat\":\"string\",\"guidance\":\"Abstract the given term to a concept level that is neither too specific (resulting in small causal tables) nor too general (resulting in large causal tables). The abstracted concept must be suitable for subsequent matching in downstream work tasks. Justify the abstraction based on its utility for causal analysis within the 'progressing by tens' framework.\"}",
-      "Simulating conceptual mapping for term: 'concentration that has a share in decline' to target level: 'optimal_for_causal_table'",
-      "Abstracted 'concentration that has a share in decline' to 'concentration that has a share in decline' (cleaned: 'concentration that has a share in decline')",
-      "Simulating NotebookLM Command: conceptual_mapping with parameters: {\"termToAbstract\":\"concentration that has a share in stability\",\"targetConceptLevel\":\"optimal_for_causal_table\",\"expectedFormat\":\"string\",\"guidance\":\"Abstract the given term to a concept level that is neither too specific (resulting in small causal tables) nor too general (resulting in large causal tables). The abstracted concept must be suitable for subsequent matching in downstream work tasks. Justify the abstraction based on its utility for causal analysis within the 'progressing by tens' framework.\"}",
-      "Simulating conceptual mapping for term: 'concentration that has a share in stability' to target level: 'optimal_for_causal_table'",
-      "Abstracted 'concentration that has a share in stability' to 'concentration that has a share in stability' (cleaned: 'concentration that has a share in stability')",
-      "Simulating NotebookLM Command: conceptual_mapping with parameters: {\"termToAbstract\":\"concentration that has a share in distinction\",\"targetConceptLevel\":\"optimal_for_causal_table\",\"expectedFormat\":\"string\",\"guidance\":\"Abstract the given term to a concept level that is neither too specific (resulting in small causal tables) nor too general (resulting in large causal tables). The abstracted concept must be suitable for subsequent matching in downstream work tasks. Justify the abstraction based on its utility for causal analysis within the 'progressing by tens' framework.\"}",
-      "Simulating conceptual mapping for term: 'concentration that has a share in distinction' to target level: 'optimal_for_causal_table'",
-      "Abstracted 'concentration that has a share in distinction' to 'concentration that has a share in distinction' (cleaned: 'concentration that has a share in distinction')",
-      "Simulating NotebookLM Command: conceptual_mapping with parameters: {\"termToAbstract\":\"concentration that has a share in penetration\",\"targetConceptLevel\":\"optimal_for_causal_table\",\"expectedFormat\":\"string\",\"guidance\":\"Abstract the given term to a concept level that is neither too specific (resulting in small causal tables) nor too general (resulting in large causal tables). The abstracted concept must be suitable for subsequent matching in downstream work tasks. Justify the abstraction based on its utility for causal analysis within the 'progressing by tens' framework.\"}",
-      "Simulating conceptual mapping for term: 'concentration that has a share in penetration' to target level: 'optimal_for_causal_table'",
-      "Abstracted 'concentration that has a share in penetration' to 'concentration that has a share in penetration' (cleaned: 'concentration that has a share in penetration')",
-      "Simulating NotebookLM Command: information_retrieval with parameters: {\"query\":\"concentration that has a share in decline enter from\",\"sources\":[\"AN_nblm.txt\",\"DN_nblm.txt\",\"KN_Dhp_nblm.txt\",\"KN_Iti_nblm.txt\",\"KN_Khp_nblm.txt\",\"KN_StNp_nblm.txt\",\"KN_Thag_nblm.txt\",\"KN_Thig_nblm.txt\",\"KN_Ud_nblm.txt\",\"MN_nblm.txt\",\"SN_nblm.txt\"],\"contextHint\":\"Identify state or condition for 'concentration that has a share in decline' related to 'enter from'.\",\"resultType\":\"DeterminantQuotationString[]\"}",
-      "Simulated information retrieval found 0 results.",
-      "Simulating NotebookLM Command: information_retrieval with parameters: {\"query\":\"concentration that has a share in stability enter from\",\"sources\":[\"AN_nblm.txt\",\"DN_nblm.txt\",\"KN_Dhp_nblm.txt\",\"KN_Iti_nblm.txt\",\"KN_Khp_nblm.txt\",\"KN_StNp_nblm.txt\",\"KN_Thag_nblm.txt\",\"KN_Thig_nblm.txt\",\"KN_Ud_nblm.txt\",\"MN_nblm.txt\",\"SN_nblm.txt\"],\"contextHint\":\"Identify state or condition for 'concentration that has a share in stability' related to 'enter from'.\",\"resultType\":\"DeterminantQuotationString[]\"}",
-      "Simulated information retrieval found 0 results.",
-      "Simulating NotebookLM Command: information_retrieval with parameters: {\"query\":\"concentration that has a share in distinction enter from\",\"sources\":[\"AN_nblm.txt\",\"DN_nblm.txt\",\"KN_Dhp_nblm.txt\",\"KN_Iti_nblm.txt\",\"KN_Khp_nblm.txt\",\"KN_StNp_nblm.txt\",\"KN_Thag_nblm.txt\",\"KN_Thig_nblm.txt\",\"KN_Ud_nblm.txt\",\"MN_nblm.txt\",\"SN_nblm.txt\"],\"contextHint\":\"Identify state or condition for 'concentration that has a share in distinction' related to 'enter from'.\",\"resultType\":\"DeterminantQuotationString[]\"}",
-      "Simulated information retrieval found 0 results.",
-      "Simulating NotebookLM Command: information_retrieval with parameters: {\"query\":\"concentration that has a share in penetration enter from\",\"sources\":[\"AN_nblm.txt\",\"DN_nblm.txt\",\"KN_Dhp_nblm.txt\",\"KN_Iti_nblm.txt\",\"KN_Khp_nblm.txt\",\"KN_StNp_nblm.txt\",\"KN_Thag_nblm.txt\",\"KN_Thig_nblm.txt\",\"KN_Ud_nblm.txt\",\"MN_nblm.txt\",\"SN_nblm.txt\"],\"contextHint\":\"Identify state or condition for 'concentration that has a share in penetration' related to 'enter from'.\",\"resultType\":\"DeterminantQuotationString[]\"}",
-      "Simulated information retrieval found 0 results.",
-      "Simulating NotebookLM Command: information_retrieval with parameters: {\"query\":\"concentration enter from\",\"sources\":[\"AN_nblm.txt\",\"DN_nblm.txt\",\"KN_Dhp_nblm.txt\",\"KN_Iti_nblm.txt\",\"KN_Khp_nblm.txt\",\"KN_StNp_nblm.txt\",\"KN_Thag_nblm.txt\",\"KN_Thig_nblm.txt\",\"KN_Ud_nblm.txt\",\"MN_nblm.txt\",\"SN_nblm.txt\"],\"contextHint\":\"Identify state or condition for 'concentration' related to 'enter from'.\",\"resultType\":\"DeterminantQuotationString[]\"}",
-      "Simulated information retrieval found 2 results.",
-      "Simulating NotebookLM Command: structured_extraction with parameters: {\"textToParse\":\"'Very well then, brahman, in that case I will cross-question you. Answer as you see fit. What do you think? There is the case where a Tathāgata appears in the world, a worthy one, rightly-self-awakened, consummate in clear-knowing & conduct, Well-Gone, an expert with regard to the cosmos, unexcelled trainer of people fit to be tamed, teacher of devas & human beings, awakened, blessed. He says: 'Here! This is the path, this is the practice which, having practiced, I make known the unexcelled gaining of a footing in the holy life, having directly known & realized it for myself. Come! You, too, practice in such a way that you will remain in the unexcelled gaining of a footing in the holy life, having directly known & realized it for yourselves.' Thus the Teacher teaches the Dhamma, and others practice, for authenticity [tathattā]. And there are countless hundreds of them, countless thousands of them, countless hundreds of thousands of them. This being the case, is this practice of merit—this business of going-forth—one that benefits countless beings, or only one being?'\\n'In the same way, an uninstructed run-of-the-mill person regards form as: 'This is mine, this is my self, this is what I am.' He regards feeling… perception… fabrications… consciousness as: 'This is mine, this is my self, this is what I am.' If he walks, he walks right around these five clinging-aggregates. If he stands, he stands right next to these five clinging-aggregates. If he sits, he sits right next to these five clinging-aggregates. If he lies down, he lies down right next to these five clinging-aggregates. Thus one should reflect on one's mind with every moment: 'For a long time has this mind been defiled by passion, aversion, & delusion.' From the defilement of the mind are beings defiled. From the purification of the mind are beings purified.\",\"extractionTarget\":\"enter from\",\"expectedFormat\":\"string\",\"guidance\":\"Extract the most relevant and specific mind or external state (enter from) from the provided quotations. Prioritize states that are a \\\"nearest branch\\\" or \\\"natural baton change\\\" rather than overly general root/final states.\"}",
-      "Simulating structured extraction for: enter from",
-      "Extracted enter from state: 'unconcentrated mind' from text.",
-      "Simulating NotebookLM Command: information_retrieval with parameters: {\"query\":\"concentration that has a share in decline exit to\",\"sources\":[\"AN_nblm.txt\",\"DN_nblm.txt\",\"KN_Dhp_nblm.txt\",\"KN_Iti_nblm.txt\",\"KN_Khp_nblm.txt\",\"KN_StNp_nblm.txt\",\"KN_Thag_nblm.txt\",\"KN_Thig_nblm.txt\",\"KN_Ud_nblm.txt\",\"MN_nblm.txt\",\"SN_nblm.txt\"],\"contextHint\":\"Identify state or condition for 'concentration that has a share in decline' related to 'exit to'.\",\"resultType\":\"DeterminantQuotationString[]\"}",
-      "Simulated information retrieval found 0 results.",
-      "Simulating NotebookLM Command: information_retrieval with parameters: {\"query\":\"concentration that has a share in stability exit to\",\"sources\":[\"AN_nblm.txt\",\"DN_nblm.txt\",\"KN_Dhp_nblm.txt\",\"KN_Iti_nblm.txt\",\"KN_Khp_nblm.txt\",\"KN_StNp_nblm.txt\",\"KN_Thag_nblm.txt\",\"KN_Thig_nblm.txt\",\"KN_Ud_nblm.txt\",\"MN_nblm.txt\",\"SN_nblm.txt\"],\"contextHint\":\"Identify state or condition for 'concentration that has a share in stability' related to 'exit to'.\",\"resultType\":\"DeterminantQuotationString[]\"}",
-      "Simulated information retrieval found 0 results.",
-      "Simulating NotebookLM Command: information_retrieval with parameters: {\"query\":\"concentration that has a share in distinction exit to\",\"sources\":[\"AN_nblm.txt\",\"DN_nblm.txt\",\"KN_Dhp_nblm.txt\",\"KN_Iti_nblm.txt\",\"KN_Khp_nblm.txt\",\"KN_StNp_nblm.txt\",\"KN_Thag_nblm.txt\",\"KN_Thig_nblm.txt\",\"KN_Ud_nblm.txt\",\"MN_nblm.txt\",\"SN_nblm.txt\"],\"contextHint\":\"Identify state or condition for 'concentration that has a share in distinction' related to 'exit to'.\",\"resultType\":\"DeterminantQuotationString[]\"}",
-      "Simulated information retrieval found 0 results.",
-      "Simulating NotebookLM Command: information_retrieval with parameters: {\"query\":\"concentration that has a share in penetration exit to\",\"sources\":[\"AN_nblm.txt\",\"DN_nblm.txt\",\"KN_Dhp_nblm.txt\",\"KN_Iti_nblm.txt\",\"KN_Khp_nblm.txt\",\"KN_StNp_nblm.txt\",\"KN_Thag_nblm.txt\",\"KN_Thig_nblm.txt\",\"KN_Ud_nblm.txt\",\"MN_nblm.txt\",\"SN_nblm.txt\"],\"contextHint\":\"Identify state or condition for 'concentration that has a share in penetration' related to 'exit to'.\",\"resultType\":\"DeterminantQuotationString[]\"}",
-      "Simulated information retrieval found 0 results.",
-      "Simulating NotebookLM Command: information_retrieval with parameters: {\"query\":\"concentration exit to\",\"sources\":[\"AN_nblm.txt\",\"DN_nblm.txt\",\"KN_Dhp_nblm.txt\",\"KN_Iti_nblm.txt\",\"KN_Khp_nblm.txt\",\"KN_StNp_nblm.txt\",\"KN_Thag_nblm.txt\",\"KN_Thig_nblm.txt\",\"KN_Ud_nblm.txt\",\"MN_nblm.txt\",\"SN_nblm.txt\"],\"contextHint\":\"Identify state or condition for 'concentration' related to 'exit to'.\",\"resultType\":\"DeterminantQuotationString[]\"}",
-      "Simulated information retrieval found 3 results.",
-      "Simulating NotebookLM Command: structured_extraction with parameters: {\"textToParse\":\"'Monks, I will teach you the unfabricated and the path leading to the unfabricated. Listen & pay close attention. I will speak.'\\n'As you say, lord,' the monks responded to the Blessed One.\\nThe Blessed One said, 'Which, monks, is the unfabricated? Whatever is the ending of passion, the ending of aversion, the ending of delusion: This is called the unfabricated.\\n'And which is the path leading to the unfabricated? Mindfulness immersed in the body: This is called the path leading to the unfabricated.\\nThus, monks, I have taught you the unfabricated and the path leading to the unfabricated. Whatever a sympathetic teacher should do—seeking the welfare of his disciples, out of sympathy for them—that have I done for you. Over there are the roots of trees; over there, empty dwellings. Practice jhāna, monks. Don't be heedless. Don't later fall into remorse. This is our message to you all.'\\n'And which is the path leading to the unfabricated? The noble eightfold path. This is called the path leading to the unfabricated.\\nThus, monks, I have taught you the unfabricated and the path leading to the unfabricated. Whatever a sympathetic teacher should do—seeking the welfare of his disciples, out of sympathy for them—that have I done for you. Over there are the roots of trees; over there, empty dwellings. Practice jhāna, monks. Don't be heedless. Don't later fall into remorse. This is our message to you all.'\\n'Monks, I will teach you the unfabricated and the path leading to the unfabricated. Listen & pay close attention. I will speak.'\\n'As you say, lord,' the monks responded to the Blessed One.\\nThe Blessed One said, 'Which, monks, is the unfabricated? Whatever is the ending of passion, the ending of aversion, the ending of delusion: This is called the unfabricated.\\n'And which is the path leading to the unfabricated? Tranquility: This is called the path leading to the unfabricated.\\nThus, monks, I have taught you the unfabricated and the path leading to the unfabricated. Whatever a sympathetic teacher should do—seeking the welfare of his disciples, out of sympathy for them—that have I done for you. Over there are the roots of trees; over there, empty dwellings. Practice jhāna, monks. Don't be heedless. Don't later fall into remorse. This is our message to you all.'\\n'Thus, monks, I have taught you the unfabricated and the path leading to the unfabricated. Whatever a sympathetic teacher should do—seeking the welfare of his disciples, out of sympathy for them—that have I done for you. Over there are the roots of trees; over there, empty dwellings. Practice jhāna, monks. Don't be heedless. Don't later fall into regret. This is our message to you.'\\n'It's impossible that he would, through the ending of effluents, enter & remain in the effluent-free awareness-release & discernment-release, having directly known & realized them for himself right in the here & now.'\",\"extractionTarget\":\"exit to\",\"expectedFormat\":\"string\",\"guidance\":\"Extract the most relevant and specific mind or external state (exit to) from the provided quotations. Prioritize states that are a \\\"nearest branch\\\" or \\\"natural baton change\\\" rather than overly general root/final states.\"}",
-      "Simulating structured extraction for: exit to",
-      "Extracted exit to state: 'ending of effluents' from text.",
-      "Simulating NotebookLM Command: information_retrieval with parameters: {\"query\":\"concentration that has a share in decline practitioner\",\"sources\":[\"AN_nblm.txt\",\"DN_nblm.txt\",\"KN_Dhp_nblm.txt\",\"KN_Iti_nblm.txt\",\"KN_Khp_nblm.txt\",\"KN_StNp_nblm.txt\",\"KN_Thag_nblm.txt\",\"KN_Thig_nblm.txt\",\"KN_Ud_nblm.txt\",\"MN_nblm.txt\",\"SN_nblm.txt\"],\"contextHint\":\"Identify explicit or implicit mentions of practitioner types (e.g., 'stream-enterer', 'monks in higher training') associated with 'concentration that has a share in decline'.\",\"resultType\":\"DeterminantQuotationString[]\"}",
-      "Simulated information retrieval found 0 results.",
-      "Simulating NotebookLM Command: information_retrieval with parameters: {\"query\":\"concentration that has a share in stability practitioner\",\"sources\":[\"AN_nblm.txt\",\"DN_nblm.txt\",\"KN_Dhp_nblm.txt\",\"KN_Iti_nblm.txt\",\"KN_Khp_nblm.txt\",\"KN_StNp_nblm.txt\",\"KN_Thag_nblm.txt\",\"KN_Thig_nblm.txt\",\"KN_Ud_nblm.txt\",\"MN_nblm.txt\",\"SN_nblm.txt\"],\"contextHint\":\"Identify explicit or implicit mentions of practitioner types (e.g., 'stream-enterer', 'monks in higher training') associated with 'concentration that has a share in stability'.\",\"resultType\":\"DeterminantQuotationString[]\"}",
-      "Simulated information retrieval found 0 results.",
-      "Simulating NotebookLM Command: information_retrieval with parameters: {\"query\":\"concentration that has a share in distinction practitioner\",\"sources\":[\"AN_nblm.txt\",\"DN_nblm.txt\",\"KN_Dhp_nblm.txt\",\"KN_Iti_nblm.txt\",\"KN_Khp_nblm.txt\",\"KN_StNp_nblm.txt\",\"KN_Thag_nblm.txt\",\"KN_Thig_nblm.txt\",\"KN_Ud_nblm.txt\",\"MN_nblm.txt\",\"SN_nblm.txt\"],\"contextHint\":\"Identify explicit or implicit mentions of practitioner types (e.g., 'stream-enterer', 'monks in higher training') associated with 'concentration that has a share in distinction'.\",\"resultType\":\"DeterminantQuotationString[]\"}",
-      "Simulated information retrieval found 0 results.",
-      "Simulating NotebookLM Command: information_retrieval with parameters: {\"query\":\"concentration that has a share in penetration practitioner\",\"sources\":[\"AN_nblm.txt\",\"DN_nblm.txt\",\"KN_Dhp_nblm.txt\",\"KN_Iti_nblm.txt\",\"KN_Khp_nblm.txt\",\"KN_StNp_nblm.txt\",\"KN_Thag_nblm.txt\",\"KN_Thig_nblm.txt\",\"KN_Ud_nblm.txt\",\"MN_nblm.txt\",\"SN_nblm.txt\"],\"contextHint\":\"Identify explicit or implicit mentions of practitioner types (e.g., 'stream-enterer', 'monks in higher training') associated with 'concentration that has a share in penetration'.\",\"resultType\":\"DeterminantQuotationString[]\"}",
-      "Simulated information retrieval found 0 results.",
-      "Simulating NotebookLM Command: information_retrieval with parameters: {\"query\":\"concentration practitioner\",\"sources\":[\"AN_nblm.txt\",\"DN_nblm.txt\",\"KN_Dhp_nblm.txt\",\"KN_Iti_nblm.txt\",\"KN_Khp_nblm.txt\",\"KN_StNp_nblm.txt\",\"KN_Thag_nblm.txt\",\"KN_Thig_nblm.txt\",\"KN_Ud_nblm.txt\",\"MN_nblm.txt\",\"SN_nblm.txt\"],\"contextHint\":\"Identify explicit or implicit mentions of practitioner types (e.g., 'stream-enterer', 'monks in higher training') associated with 'concentration'.\",\"resultType\":\"DeterminantQuotationString[]\"}",
-      "Simulated information retrieval found 4 results.",
-      "Simulating NotebookLM Command: structured_extraction with parameters: {\"textToParse\":\"'These are the four developments of concentration.\\n'And it was in connection with this that I stated in Puṇṇaka's Question in the Way to the Far Shore :\\n'He who has fathomed\\nthe far & near in the world,\\nfor whom there is nothing\\nperturbing in the world—\\nhis vices evaporated,\\nundesiring, untroubled,\\nat peace—\\nhe, I tell you, has crossed over birth\\n& aging.'\\n'One who is aroused to practice is one of conviction, not without conviction. One aroused to practice is one with persistence aroused, not lazy. One aroused to practice is one of established mindfulness, not muddled mindfulness. One aroused to practice is centered in concentration, not uncentered. One aroused to practice is discerning, not undiscerning.\\n'One who is aroused to practice is one of conviction, not without conviction. One aroused to practice is one with persistence aroused, not lazy. One aroused to practice is one of established mindfulness, not muddled mindfulness. One aroused to practice is centered in concentration, not uncentered. One aroused to practice is discerning, not undiscerning.\\n'Even though this wish may not occur to a monk who dwells devoting himself to development—'O that my mind might be released from effluents through lack of clinging!'—still his mind is released from effluents through lack of clinging. Why is that? From developing, it should be said. Developing what? The four establishing of mindfulness, the four right exertions, the four bases of power, the five faculties, the five strengths, the seven factors for awakening, the noble eightfold path.\\n'Suppose a hen has eight, ten, or twelve eggs that she covers rightly, warmed rightly, & incubates rightly: Even though this wish may not occur to her—'O that my chicks might break through the egg shells with their spiked claws or beaks and hatch out safely!'—still it is possible that the chicks will break through the egg shells with their spiked claws or beaks and hatch out safely. Why is that? Because the hen has covered them, warmed them, & incubated them rightly. In the same way, even though this wish may not occur to a monk who dwells devoting himself to development—'O that my mind might be released from effluents through lack of clinging!'—still his mind is released from effluents through lack of clinging. Why is that? From developing, it should be said. Developing what? The four establishing of mindfulness, the four right exertions, the four bases of power, the five faculties, the five strengths, the seven factors for awakening, the noble eightfold path.'\",\"extractionTarget\":\"PractitionerKey[]\",\"expectedFormat\":\"string[]\",\"guidance\":\"Extract specific practitioner types (e.g., 'stream-enterer', 'once-returner', 'non-returner') from the quotations. Return as an array of strings. If general terms like 'monks in higher training' are found, abstract them to the closest PractitionerKey.\"}",
-      "Simulating structured extraction for: PractitionerKey[]",
-      "Extracted PractitionerKey array: [\"stream-enterer\",\"once-returner\",\"non-returner\"]",
-      "Simulating NotebookLM Command: information_retrieval with parameters: {\"query\":\"concentration that has a share in decline target practitioner\",\"sources\":[\"AN_nblm.txt\",\"DN_nblm.txt\",\"KN_Dhp_nblm.txt\",\"KN_Iti_nblm.txt\",\"KN_Khp_nblm.txt\",\"KN_StNp_nblm.txt\",\"KN_Thag_nblm.txt\",\"KN_Thig_nblm.txt\",\"KN_Ud_nblm.txt\",\"MN_nblm.txt\",\"SN_nblm.txt\"],\"contextHint\":\"Identify explicit or implicit mentions of practitioner types (e.g., 'stream-enterer', 'monks in higher training') associated with 'concentration that has a share in decline'.\",\"resultType\":\"DeterminantQuotationString[]\"}",
-      "Simulated information retrieval found 0 results.",
-      "Simulating NotebookLM Command: information_retrieval with parameters: {\"query\":\"concentration that has a share in stability target practitioner\",\"sources\":[\"AN_nblm.txt\",\"DN_nblm.txt\",\"KN_Dhp_nblm.txt\",\"KN_Iti_nblm.txt\",\"KN_Khp_nblm.txt\",\"KN_StNp_nblm.txt\",\"KN_Thag_nblm.txt\",\"KN_Thig_nblm.txt\",\"KN_Ud_nblm.txt\",\"MN_nblm.txt\",\"SN_nblm.txt\"],\"contextHint\":\"Identify explicit or implicit mentions of practitioner types (e.g., 'stream-enterer', 'monks in higher training') associated with 'concentration that has a share in stability'.\",\"resultType\":\"DeterminantQuotationString[]\"}",
-      "Simulated information retrieval found 0 results.",
-      "Simulating NotebookLM Command: information_retrieval with parameters: {\"query\":\"concentration that has a share in distinction target practitioner\",\"sources\":[\"AN_nblm.txt\",\"DN_nblm.txt\",\"KN_Dhp_nblm.txt\",\"KN_Iti_nblm.txt\",\"KN_Khp_nblm.txt\",\"KN_StNp_nblm.txt\",\"KN_Thag_nblm.txt\",\"KN_Thig_nblm.txt\",\"KN_Ud_nblm.txt\",\"MN_nblm.txt\",\"SN_nblm.txt\"],\"contextHint\":\"Identify explicit or implicit mentions of practitioner types (e.g., 'stream-enterer', 'monks in higher training') associated with 'concentration that has a share in distinction'.\",\"resultType\":\"DeterminantQuotationString[]\"}",
-      "Simulated information retrieval found 0 results.",
-      "Simulating NotebookLM Command: information_retrieval with parameters: {\"query\":\"concentration that has a share in penetration target practitioner\",\"sources\":[\"AN_nblm.txt\",\"DN_nblm.txt\",\"KN_Dhp_nblm.txt\",\"KN_Iti_nblm.txt\",\"KN_Khp_nblm.txt\",\"KN_StNp_nblm.txt\",\"KN_Thag_nblm.txt\",\"KN_Thig_nblm.txt\",\"KN_Ud_nblm.txt\",\"MN_nblm.txt\",\"SN_nblm.txt\"],\"contextHint\":\"Identify explicit or implicit mentions of practitioner types (e.g., 'stream-enterer', 'monks in higher training') associated with 'concentration that has a share in penetration'.\",\"resultType\":\"DeterminantQuotationString[]\"}",
-      "Simulated information retrieval found 0 results."
+      "mock of generalisation/abstraction of expression[concentration that has a share in decline] to concept[concentration that has a share in decline]",
+      "mock of generalisation/abstraction of expression[concentration that has a share in stability] to concept[concentration that has a share in stability]",
+      "mock of generalisation/abstraction of expression[concentration that has a share in distinction] to concept[concentration that has a share in distinction]",
+      "mock of generalisation/abstraction of expression[concentration that has a share in penetration] to concept[concentration that has a share in penetration]",
+      "Parsing 'concentration that has a share in decline, stability, distinction, & penetration' as four distinct subjects to avoid wrong analysis due to differing semantic nuances and boundary states. [json-scope-generation-instructions.ts.txt, 355]",
+      "For 'concentration that has a share in decline': Quotations directly describing 'increase in passion, aversion, delusion' and 'eye of discernment makes no headway' (from [AN_nblm.txt, 32]) and unskillful habits like 'delighting in work, talking, sleeping' (from [AN_nblm.txt, 44]) establish initial entry states, alongside definitions of 'undeveloped discernment'.",
+      "For 'concentration that has a share in stability': Quotations directly describing 'seclusion from sensuality' and 'seclusion from unskillful qualities' (from [AN_nblm.txt, 28]) establish initial entry states for the first jhāna, implying hindrances are subdued. The canonical jhana definitions (from core-composite-states.json.txt) confirm the subsequent stability states.",
+      "For 'concentration that has a share in distinction': Quotations describing 'discernment of arising & passing away—noble, penetrating' (from [AN_nblm.txt, 95]) establish the exit to 'distinction' and 'knowledge & vision'. Entry from the fourth jhana is implied as a prerequisite for higher insight.",
+      "For 'concentration that has a share in penetration': Quotations on 'perception of inconstancy, stress in inconstant, not-self in stressful' (from [AN_nblm.txt, 48, 49, 50]) are directly conducive to 'penetration' and the 'ending of effluents' ([AN_nblm.txt, 31]). Entry is from 'distinction'.",
+      "Target practitioners are identified as 'stream-enterer, once-returner, non-returner' (from [json-notebooklm-command-resolver.ts.txt, 289]) for all concentrations, as monks in training (learners) are engaged in this development."
     ],
     "Problem": [
-      "Simulating NotebookLM Command: text_analysis with parameters: {\"subjects\":[{\"name\":\"concentration that has a share in decline\",\"focusArea\":[],\"enterFromState\":\"unconcentrated mind\",\"exitToState\":\"ending of effluents\",\"targetPractitioner\":[\"stream-enterer\",\"once-returner\",\"non-returner\"]},{\"name\":\"concentration that has a share in stability\",\"focusArea\":[],\"enterFromState\":\"unconcentrated mind\",\"exitToState\":\"ending of effluents\",\"targetPractitioner\":[\"stream-enterer\",\"once-returner\",\"non-returner\"]},{\"name\":\"concentration that has a share in distinction\",\"focusArea\":[],\"enterFromState\":\"unconcentrated mind\",\"exitToState\":\"ending of effluents\",\"targetPractitioner\":[\"stream-enterer\",\"once-returner\",\"non-returner\"]},{\"name\":\"concentration that has a share in penetration\",\"focusArea\":[],\"enterFromState\":\"unconcentrated mind\",\"exitToState\":\"ending of effluents\",\"targetPractitioner\":[\"stream-enterer\",\"once-returner\",\"non-returner\"]}],\"targetAnswer\":\"Which four Dhammas are hard to penetrate?\\nFour concentrations: concentration that has a share in decline, concentration that has a share in stability, concentration that has a share in distinction, concentration that has a share in penetration.\",\"extractionTarget\":\"problem statement\",\"expectedFormat\":\"string\",\"guidance\":\"Compose a problem statement for the pattern using the enter & exit states of the subjects. If there are multiple subjects, synthesize a single, overarching theme from their respective state transitions. Formulate as a question: 'How do you abandon [unified enterFromState theme] and enter and remain in [unified exitToState theme]?'. Draw on language from the sources like 'abandon' or 'enter and remain in'. Ensure the statement is coherent and suitable for the target answer/pattern context.\"}",
-      "Simulating text analysis for: problem statement",
-      "Composed problem statement: \"How do you abandon unconcentrated mind and enter and remain in ending of effluents?\" based on subject states."
+      "'abandon' within the sources is typically used to express a transition from a negative mind state. 'let go of' is identified in the miracle of instruction, but 'abandon' is more effective in this instance. 'enter and remain in' is typically used to express a transition to a positive mind state. [json-notebooklm-command-resolver.ts.txt, 290]"
     ],
     "Causal-Table": [
-      "Starting dynamic generation of causal table.",
-      "Simulating NotebookLM Command: conceptual_mapping with parameters: {\"termToAbstract\":\"concentration that has a share in decline\",\"targetConceptLevel\":\"optimal_for_causal_table\",\"expectedFormat\":\"string\",\"guidance\":\"Abstract the given term to a concept level that is neither too specific (resulting in small causal tables) nor too general (resulting in large causal tables). The abstracted concept must be suitable for subsequent matching in downstream work tasks. Justify the abstraction based on its utility for causal analysis within the 'progressing by tens' framework.\"}",
-      "Simulating conceptual mapping for term: 'concentration that has a share in decline' to target level: 'optimal_for_causal_table'",
-      "Abstracted 'concentration that has a share in decline' to 'concentration that has a share in decline' (cleaned: 'concentration that has a share in decline')",
-      "Simulating NotebookLM Command: conceptual_mapping with parameters: {\"termToAbstract\":\"unconcentrated mind\",\"targetConceptLevel\":\"optimal_for_causal_table\",\"expectedFormat\":\"string\",\"guidance\":\"Abstract the given term to a concept level that is neither too specific (resulting in small causal tables) nor too general (resulting in large causal tables). The abstracted concept must be suitable for subsequent matching in downstream work tasks. Justify the abstraction based on its utility for causal analysis within the 'progressing by tens' framework.\"}",
-      "Simulating conceptual mapping for term: 'unconcentrated mind' to target level: 'optimal_for_causal_table'",
-      "Abstracted 'unconcentrated mind' to 'unconcentrated mind' (cleaned: 'unconcentrated mind')",
-      "Simulating NotebookLM Command: conceptual_mapping with parameters: {\"termToAbstract\":\"ending of effluents\",\"targetConceptLevel\":\"optimal_for_causal_table\",\"expectedFormat\":\"string\",\"guidance\":\"Abstract the given term to a concept level that is neither too specific (resulting in small causal tables) nor too general (resulting in large causal tables). The abstracted concept must be suitable for subsequent matching in downstream work tasks. Justify the abstraction based on its utility for causal analysis within the 'progressing by tens' framework.\"}",
-      "Simulating conceptual mapping for term: 'ending of effluents' to target level: 'optimal_for_causal_table'",
-      "Abstracted 'ending of effluents' to 'ending of effluents' (cleaned: 'ending of effluents')",
-      "Simulating NotebookLM Command: conceptual_mapping with parameters: {\"termToAbstract\":\"concentration that has a share in stability\",\"targetConceptLevel\":\"optimal_for_causal_table\",\"expectedFormat\":\"string\",\"guidance\":\"Abstract the given term to a concept level that is neither too specific (resulting in small causal tables) nor too general (resulting in large causal tables). The abstracted concept must be suitable for subsequent matching in downstream work tasks. Justify the abstraction based on its utility for causal analysis within the 'progressing by tens' framework.\"}",
-      "Simulating conceptual mapping for term: 'concentration that has a share in stability' to target level: 'optimal_for_causal_table'",
-      "Abstracted 'concentration that has a share in stability' to 'concentration that has a share in stability' (cleaned: 'concentration that has a share in stability')",
-      "Simulating NotebookLM Command: conceptual_mapping with parameters: {\"termToAbstract\":\"concentration that has a share in distinction\",\"targetConceptLevel\":\"optimal_for_causal_table\",\"expectedFormat\":\"string\",\"guidance\":\"Abstract the given term to a concept level that is neither too specific (resulting in small causal tables) nor too general (resulting in large causal tables). The abstracted concept must be suitable for subsequent matching in downstream work tasks. Justify the abstraction based on its utility for causal analysis within the 'progressing by tens' framework.\"}",
-      "Simulating conceptual mapping for term: 'concentration that has a share in distinction' to target level: 'optimal_for_causal_table'",
-      "Abstracted 'concentration that has a share in distinction' to 'concentration that has a share in distinction' (cleaned: 'concentration that has a share in distinction')",
-      "Simulating NotebookLM Command: conceptual_mapping with parameters: {\"termToAbstract\":\"concentration that has a share in penetration\",\"targetConceptLevel\":\"optimal_for_causal_table\",\"expectedFormat\":\"string\",\"guidance\":\"Abstract the given term to a concept level that is neither too specific (resulting in small causal tables) nor too general (resulting in large causal tables). The abstracted concept must be suitable for subsequent matching in downstream work tasks. Justify the abstraction based on its utility for causal analysis within the 'progressing by tens' framework.\"}",
-      "Simulating conceptual mapping for term: 'concentration that has a share in penetration' to target level: 'optimal_for_causal_table'",
-      "Abstracted 'concentration that has a share in penetration' to 'concentration that has a share in penetration' (cleaned: 'concentration that has a share in penetration')",
-      "Exploring causal relations for concept: 'concentration that has a share in decline' at depth 1",
-      "Simulating NotebookLM Command: information_retrieval with parameters: {\"query\":\"concentration that has a share in decline\",\"sources\":[\"AN_nblm.txt\",\"DN_nblm.txt\",\"KN_Dhp_nblm.txt\",\"KN_Iti_nblm.txt\",\"KN_Khp_nblm.txt\",\"KN_StNp_nblm.txt\",\"KN_Thag_nblm.txt\",\"KN_Thig_nblm.txt\",\"KN_Ud_nblm.txt\",\"MN_nblm.txt\",\"SN_nblm.txt\"],\"contextHint\":\"Identifying causal relations involving 'concentration that has a share in decline' within the overall pattern context: How do you abandon unconcentrated mind and enter and remain in ending of effluents?.\",\"resultType\":\"DeterminantQuotationString[]\"}",
-      "Simulated information retrieval found 0 results.",
-      "Exploring causal relations for concept: 'unconcentrated mind' at depth 1",
-      "Simulating NotebookLM Command: information_retrieval with parameters: {\"query\":\"unconcentrated mind\",\"sources\":[\"AN_nblm.txt\",\"DN_nblm.txt\",\"KN_Dhp_nblm.txt\",\"KN_Iti_nblm.txt\",\"KN_Khp_nblm.txt\",\"KN_StNp_nblm.txt\",\"KN_Thag_nblm.txt\",\"KN_Thig_nblm.txt\",\"KN_Ud_nblm.txt\",\"MN_nblm.txt\",\"SN_nblm.txt\"],\"contextHint\":\"Identifying causal relations involving 'unconcentrated mind' within the overall pattern context: How do you abandon unconcentrated mind and enter and remain in ending of effluents?.\",\"resultType\":\"DeterminantQuotationString[]\"}",
-      "Simulated information retrieval found 0 results.",
-      "Exploring causal relations for concept: 'ending of effluents' at depth 1",
-      "Simulating NotebookLM Command: information_retrieval with parameters: {\"query\":\"ending of effluents\",\"sources\":[\"AN_nblm.txt\",\"DN_nblm.txt\",\"KN_Dhp_nblm.txt\",\"KN_Iti_nblm.txt\",\"KN_Khp_nblm.txt\",\"KN_StNp_nblm.txt\",\"KN_Thag_nblm.txt\",\"KN_Thig_nblm.txt\",\"KN_Ud_nblm.txt\",\"MN_nblm.txt\",\"SN_nblm.txt\"],\"contextHint\":\"Identifying causal relations involving 'ending of effluents' within the overall pattern context: How do you abandon unconcentrated mind and enter and remain in ending of effluents?.\",\"resultType\":\"DeterminantQuotationString[]\"}",
-      "Simulated information retrieval found 7 results.",
-      "Simulating NotebookLM Command: conceptual_mapping with parameters: {\"termToAbstract\":\"ending of effluents\",\"targetConceptLevel\":\"optimal_for_causal_table\",\"expectedFormat\":\"string\",\"guidance\":\"Abstract the given term to a concept level that is neither too specific (resulting in small causal tables) nor too general (resulting in large causal tables). The abstracted concept must be suitable for subsequent matching in downstream work tasks. Justify the abstraction based on its utility for causal analysis within the 'progressing by tens' framework.\"}",
-      "Simulating conceptual mapping for term: 'ending of effluents' to target level: 'optimal_for_causal_table'",
-      "Abstracted 'ending of effluents' to 'ending of effluents' (cleaned: 'ending of effluents')",
-      "Simulating NotebookLM Command: conceptual_mapping with parameters: {\"termToAbstract\":\"mind\",\"targetConceptLevel\":\"optimal_for_causal_table\",\"expectedFormat\":\"string\",\"guidance\":\"Abstract the given term to a concept level that is neither too specific (resulting in small causal tables) nor too general (resulting in large causal tables). The abstracted concept must be suitable for subsequent matching in downstream work tasks. Justify the abstraction based on its utility for causal analysis within the 'progressing by tens' framework.\"}",
-      "Simulating conceptual mapping for term: 'mind' to target level: 'optimal_for_causal_table'",
-      "Abstracted 'mind' to 'mind' (cleaned: 'mind')",
-      "Added CausalRelation: {\"this\":\"ending of effluents\",\"that\":\"mind\",\"relation\":0,\"quotationIndicies\":} from quotation index 0",
-      "Simulating NotebookLM Command: conceptual_mapping with parameters: {\"termToAbstract\":\"effluents\",\"targetConceptLevel\":\"optimal_for_causal_table\",\"expectedFormat\":\"string\",\"guidance\":\"Abstract the given term to a concept level that is neither too specific (resulting in small causal tables) nor too general (resulting in large causal tables). The abstracted concept must be suitable for subsequent matching in downstream work tasks. Justify the abstraction based on its utility for causal analysis within the 'progressing by tens' framework.\"}",
-      "Simulating conceptual mapping for term: 'effluents' to target level: 'optimal_for_causal_table'",
-      "Abstracted 'effluents' to 'effluents' (cleaned: 'effluents')",
-      "Simulating NotebookLM Command: conceptual_mapping with parameters: {\"termToAbstract\":\"end of stress\",\"targetConceptLevel\":\"optimal_for_causal_table\",\"expectedFormat\":\"string\",\"guidance\":\"Abstract the given term to a concept level that is neither too specific (resulting in small causal tables) nor too general (resulting in large causal tables). The abstracted concept must be suitable for subsequent matching in downstream work tasks. Justify the abstraction based on its utility for causal analysis within the 'progressing by tens' framework.\"}",
-      "Simulating conceptual mapping for term: 'end of stress' to target level: 'optimal_for_causal_table'",
-      "Abstracted 'end of stress' to 'ending of stress' (cleaned: 'end of stress')",
-      "Added CausalRelation: {\"this\":\"ending of effluents\",\"that\":\"ending of stress\",\"relation\":3,\"quotationIndicies\":} from quotation index 1",
-      "Simulating NotebookLM Command: conceptual_mapping with parameters: {\"termToAbstract\":\"cessation of effluents\",\"targetConceptLevel\":\"optimal_for_causal_table\",\"expectedFormat\":\"string\",\"guidance\":\"Abstract the given term to a concept level that is neither too specific (resulting in small causal tables) nor too general (resulting in large causal tables). The abstracted concept must be suitable for subsequent matching in downstream work tasks. Justify the abstraction based on its utility for causal analysis within the 'progressing by tens' framework.\"}",
-      "Simulating conceptual mapping for term: 'cessation of effluents' to target level: 'optimal_for_causal_table'",
-      "Abstracted 'cessation of effluents' to 'cessation of effluents' (cleaned: 'cessation of effluents')",
-      "Simulating NotebookLM Command: conceptual_mapping with parameters: {\"termToAbstract\":\"ignorance\",\"targetConceptLevel\":\"optimal_for_causal_table\",\"expectedFormat\":\"string\",\"guidance\":\"Abstract the given term to a concept level that is neither too specific (resulting in small causal tables) nor too general (resulting in large causal tables). The abstracted concept must be suitable for subsequent matching in downstream work tasks. Justify the abstraction based on its utility for causal analysis within the 'progressing by tens' framework.\"}",
-      "Simulating conceptual mapping for term: 'ignorance' to target level: 'optimal_for_causal_table'",
-      "Abstracted 'ignorance' to 'ignorance' (cleaned: 'ignorance')",
-      "Simulating NotebookLM Command: conceptual_mapping with parameters: {\"termToAbstract\":\"effluents\",\"targetConceptLevel\":\"optimal_for_causal_table\",\"expectedFormat\":\"string\",\"guidance\":\"Abstract the given term to a concept level that is neither too specific (resulting in small causal tables) nor too general (resulting in large causal tables). The abstracted concept must be suitable for subsequent matching in downstream work tasks. Justify the abstraction based on its utility for causal analysis within the 'progressing by tens' framework.\"}",
-      "Simulating conceptual mapping for term: 'effluents' to target level: 'optimal_for_causal_table'",
-      "Abstracted 'effluents' to 'effluents' (cleaned: 'effluents')",
-      "Simulating NotebookLM Command: conceptual_mapping with parameters: {\"termToAbstract\":\"ignorance\",\"targetConceptLevel\":\"optimal_for_causal_table\",\"expectedFormat\":\"string\",\"guidance\":\"Abstract the given term to a concept level that is neither too specific (resulting in small causal tables) nor too general (resulting in large causal tables). The abstracted concept must be suitable for subsequent matching in downstream work tasks. Justify the abstraction based on its utility for causal analysis within the 'progressing by tens' framework.\"}",
-      "Simulating conceptual mapping for term: 'ignorance' to target level: 'optimal_for_causal_table'",
-      "Abstracted 'ignorance' to 'ignorance' (cleaned: 'ignorance')",
-      "Added CausalRelation: {\"this\":\"cessation of ignorance\",\"that\":\"cessation of effluents\",\"relation\":3,\"quotationIndicies\":} from quotation index 2",
-      "Simulating NotebookLM Command: conceptual_mapping with parameters: {\"termToAbstract\":\"action\",\"targetConceptLevel\":\"optimal_for_causal_table\",\"expectedFormat\":\"string\",\"guidance\":\"Abstract the given term to a concept level that is neither too specific (resulting in small causal tables) nor too general (resulting in large causal tables). The abstracted concept must be suitable for subsequent matching in downstream work tasks. Justify the abstraction based on its utility for causal analysis within the 'progressing by tens' framework.\"}",
-      "Simulating conceptual mapping for term: 'action' to target level: 'optimal_for_causal_table'",
-      "Abstracted 'action' to 'actions' (cleaned: 'action')",
-      "Simulating NotebookLM Command: conceptual_mapping with parameters: {\"termToAbstract\":\"flow into the future\",\"targetConceptLevel\":\"optimal_for_causal_table\",\"expectedFormat\":\"string\",\"guidance\":\"Abstract the given term to a concept level that is neither too specific (resulting in small causal tables) nor too general (resulting in large causal tables). The abstracted concept must be suitable for subsequent matching in downstream work tasks. Justify the abstraction based on its utility for causal analysis within the 'progressing by tens' framework.\"}",
-      "Simulating conceptual mapping for term: 'flow into the future' to target level: 'optimal_for_causal_table'",
-      "Abstracted 'flow into the future' to 'flow into the future' (cleaned: 'flow into the future')",
-      "Added CausalRelation: {\"this\":\"action\",\"relation\":3,\"notThat\":true,\"that\":\"flow into the future\",\"quotationIndicies\":} from quotation index 3",
-      "Simulating NotebookLM Command: conceptual_mapping with parameters: {\"termToAbstract\":\"end of suffering & stress\",\"targetConceptLevel\":\"optimal_for_causal_table\",\"expectedFormat\":\"string\",\"guidance\":\"Abstract the given term to a concept level that is neither too specific (resulting in small causal tables) nor too general (resulting in large causal tables). The abstracted concept must be suitable for subsequent matching in downstream work tasks. Justify the abstraction based on its utility for causal analysis within the 'progressing by tens' framework.\"}",
-      "Simulating conceptual mapping for term: 'end of suffering & stress' to target level: 'optimal_for_causal_table'",
-      "Abstracted 'end of suffering & stress' to 'ending of suffering & stress' (cleaned: 'end of suffering & stress')",
-      "Added CausalRelation: {\"this\":\"ending of effluents\",\"that\":\"ending of suffering & stress\",\"relation\":3,\"quotationIndicies\":} from quotation index 4",
-      "Simulating NotebookLM Command: conceptual_mapping with parameters: {\"termToAbstract\":\"awareness-release\",\"targetConceptLevel\":\"optimal_for_causal_table\",\"expectedFormat\":\"string\",\"guidance\":\"Abstract the given term to a concept level that is neither too specific (resulting in small causal tables) nor too general (resulting in large causal tables). The abstracted concept must be suitable for subsequent matching in downstream work tasks. Justify the abstraction based on its utility for causal analysis within the 'progressing by tens' framework.\"}",
-      "Simulating conceptual mapping for term: 'awareness-release' to target level: 'optimal_for_causal_table'",
-      "Abstracted 'awareness-release' to 'awareness-release' (cleaned: 'awareness-release')",
-      "Simulating NotebookLM Command: conceptual_mapping with parameters: {\"termToAbstract\":\"discernment-release\",\"targetConceptLevel\":\"optimal_for_causal_table\",\"expectedFormat\":\"string\",\"guidance\":\"Abstract the given term to a concept level that is neither too specific (resulting in small causal tables) nor too general (resulting in large causal tables). The abstracted concept must be suitable for subsequent matching in downstream work tasks. Justify the abstraction based on its utility for causal analysis within the 'progressing by tens' framework.\"}",
-      "Simulating conceptual mapping for term: 'discernment-release' to target level: 'optimal_for_causal_table'",
-      "Abstracted 'discernment-release' to 'discernment-release' (cleaned: 'discernment-release')",
-      "Added CausalRelation: {\"this\":\"ending of effluents\",\"that\":\"awareness-release & discernment-release\",\"relation\":3,\"quotationIndicies\":} from quotation index 5",
-      "Exploring causal relations for concept: 'concentration that has a share in stability' at depth 1",
-      "Simulating NotebookLM Command: information_retrieval with parameters: {\"query\":\"concentration that has a share in stability\",\"sources\":[\"AN_nblm.txt\",\"DN_nblm.txt\",\"KN_Dhp_nblm.txt\",\"KN_Iti_nblm.txt\",\"KN_Khp_nblm.txt\",\"KN_StNp_nblm.txt\",\"KN_Thag_nblm.txt\",\"KN_Thig_nblm.txt\",\"KN_Ud_nblm.txt\",\"MN_nblm.txt\",\"SN_nblm.txt\"],\"contextHint\":\"Identifying causal relations involving 'concentration that has a share in stability' within the overall pattern context: How do you abandon unconcentrated mind and enter and remain in ending of effluents?.\",\"resultType\":\"DeterminantQuotationString[]\"}",
-      "Simulated information retrieval found 0 results.",
-      "Exploring causal relations for concept: 'concentration that has a share in distinction' at depth 1",
-      "Simulating NotebookLM Command: information_retrieval with parameters: {\"query\":\"concentration that has a share in distinction\",\"sources\":[\"AN_nblm.txt\",\"DN_nblm.txt\",\"KN_Dhp_nblm.txt\",\"KN_Iti_nblm.txt\",\"KN_Khp_nblm.txt\",\"KN_StNp_nblm.txt\",\"KN_Thag_nblm.txt\",\"KN_Thig_nblm.txt\",\"KN_Ud_nblm.txt\",\"MN_nblm.txt\",\"SN_nblm.txt\"],\"contextHint\":\"Identifying causal relations involving 'concentration that has a share in distinction' within the overall pattern context: How do you abandon unconcentrated mind and enter and remain in ending of effluents?.\",\"resultType\":\"DeterminantQuotationString[]\"}",
-      "Simulated information retrieval found 0 results.",
-      "Exploring causal relations for concept: 'concentration that has a share in penetration' at depth 1",
-      "Simulating NotebookLM Command: information_retrieval with parameters: {\"query\":\"concentration that has a share in penetration\",\"sources\":[\"AN_nblm.txt\",\"DN_nblm.txt\",\"KN_Dhp_nblm.txt\",\"KN_Iti_nblm.txt\",\"KN_Khp_nblm.txt\",\"KN_StNp_nblm.txt\",\"KN_Thag_nblm.txt\",\"KN_Thig_nblm.txt\",\"KN_Ud_nblm.txt\",\"MN_nblm.txt\",\"SN_nblm.txt\"],\"contextHint\":\"Identifying causal relations involving 'concentration that has a share in penetration' within the overall pattern context: How do you abandon unconcentrated mind and enter and remain in ending of effluents?.\",\"resultType\":\"DeterminantQuotationString[]\"}",
-      "Simulated information retrieval found 0 results.",
-      "Dynamic generation yielded no results. Populating with a minimal mock set for 'Concentration & Penetration' to satisfy post-conditions during simulation.",
-      "Added CausalRelation: {\"this\":\"concentration\",\"that\":\"penetration\",\"relation\":3,\"quotationIndicies\":[]}",
-      "Added CausalRelation: {\"this\":\"right discernment\",\"that\":\"penetration\",\"relation\":3,\"quotationIndicies\":[]}",
-      "Added CausalRelation: {\"this\":\"ignorance\",\"that\":\"penetration\",\"relation\":3,\"notThat\":true,\"quotationIndicies\":[]}",
-      "Added CausalRelation: {\"this\":\"unskillful qualities\",\"that\":\"concentration that has a share in penetration\",\"relation\":3,\"notThat\":true,\"quotationIndicies\":[]}",
-      "Added CausalRelation: {\"this\":\"seclusion from sensuality\",\"that\":\"concentration\",\"relation\":1,\"quotationIndicies\":[]}",
-      "Added CausalRelation: {\"this\":\"deep dependent co-arising\",\"that\":\"penetration\",\"relation\":0,\"quotationIndicies\":[]}",
-      "Finished dynamic generation of causal table. Found 6 relations."
+      "mocked generation of causal table for running example 'Heedful, ardent & resolute'",
+      "Exploring causal relations for concept: 'increase in passion' at depth 1",
+      "Found 1 determinant quotations for 'increase in passion'",
+      "Exploring causal relations for concept: 'increase in aversion' at depth 1",
+      "Found 1 determinant quotations for 'increase in aversion'",
+      "Exploring causal relations for concept: 'increase in delusion' at depth 1",
+      "Found 1 determinant quotations for 'increase in delusion'",
+      "Exploring causal relations for concept: 'eye of discernment makes no headway' at depth 1",
+      "Found 1 determinant quotations for 'eye of discernment makes no headway'",
+      "Exploring causal relations for concept: 'delighting in work' at depth 1",
+      "Found 1 determinant quotations for 'delighting in work'",
+      "Exploring causal relations for concept: 'delighting in talking' at depth 1",
+      "Found 1 determinant quotations for 'delighting in talking'",
+      "Exploring causal relations for concept: 'delighting in sleeping' at depth 1",
+      "Found 1 determinant quotations for 'delighting in sleeping'",
+      "Exploring causal relations for concept: 'delighting in entanglement' at depth 1",
+      "Found 1 determinant quotations for 'delighting in entanglement'",
+      "Exploring causal relations for concept: 'not guarding the sense faculties' at depth 1",
+      "Found 1 determinant quotations for 'not guarding the sense faculties'",
+      "Exploring causal relations for concept: 'not knowing moderation in food' at depth 1",
+      "Found 1 determinant quotations for 'not knowing moderation in food'",
+      "Exploring causal relations for concept: 'seclusion from sensuality' at depth 1",
+      "Found 1 determinant quotations for 'seclusion from sensuality'",
+      "Exploring causal relations for concept: 'seclusion from unskillful qualities' at depth 1",
+      "Found 1 determinant quotations for 'seclusion from unskillful qualities'",
+      "Exploring causal relations for concept: 'in_stability (first jhana)' at depth 1",
+      "Found 1 determinant quotations for 'in_stability (first jhana)'",
+      "Exploring causal relations for concept: 'rapture (active)' at depth 2",
+      "Found 0 determinant quotations for 'rapture (active)'",
+      "Exploring causal relations for concept: 'pleasant feeling' at depth 2",
+      "Found 0 determinant quotations for 'pleasant feeling'",
+      "Exploring causal relations for concept: 'in_stability (second jhana)' at depth 1",
+      "Found 0 determinant quotations for 'in_stability (second jhana)'",
+      "Exploring causal relations for concept: 'in_stability (third jhana)' at depth 1",
+      "Found 0 determinant quotations for 'in_stability (third jhana)'",
+      "Exploring causal relations for concept: 'in_stability (fourth jhana)' at depth 1",
+      "Found 1 determinant quotations for 'in_stability (fourth jhana)'",
+      "Exploring causal relations for concept: 'purity of equanimity & mindfulness' at depth 2",
+      "Found 0 determinant quotations for 'purity of equanimity & mindfulness'",
+      "Exploring causal relations for concept: 'discernment of arising & passing away' at depth 1",
+      "Found 1 determinant quotations for 'discernment of arising & passing away'",
+      "Exploring causal relations for concept: 'noble, penetrating discernment' at depth 1",
+      "Found 1 determinant quotations for 'noble, penetrating discernment'",
+      "Exploring causal relations for concept: 'in_distinction' at depth 1",
+      "Found 0 determinant quotations for 'in_distinction'",
+      "Exploring causal relations for concept: 'knowledge & vision' at depth 2",
+      "Found 0 determinant quotations for 'knowledge & vision'",
+      "Exploring causal relations for concept: 'perception of inconstancy' at depth 1",
+      "Found 1 determinant quotations for 'perception of inconstancy'",
+      "Exploring causal relations for concept: 'perception of stress in inconstant' at depth 1",
+      "Found 1 determinant quotations for 'perception of stress in inconstant'",
+      "Exploring causal relations for concept: 'perception of not-self in stressful' at depth 1",
+      "Found 1 determinant quotations for 'perception of not-self in stressful'",
+      "Exploring causal relations for concept: 'in_penetration' at depth 1",
+      "Found 0 determinant quotations for 'in_penetration'",
+      "Exploring causal relations for concept: 'effluents ended' at depth 2",
+      "Found 2 determinant quotations for 'effluents ended'",
+      "Exploring causal relations for concept: 'total unbinding' at depth 3",
+      "Found 1 determinant quotations for 'total unbinding'",
+      "Exploring causal relations for concept: 'heedfulness' at depth 1",
+      "Found 1 determinant quotations for 'heedfulness'",
+      "Exploring causal relations for concept: 'mindfulness (active)' at depth 2",
+      "Found 0 determinant quotations for 'mindfulness (active)'",
+      "Exploring causal relations for concept: 'persistence (active)' at depth 2",
+      "Found 0 determinant quotations for 'persistence (active)'",
+      "Exploring causal relations for concept: 'equanimity (active)' at depth 2",
+      "Found 0 determinant quotations for 'equanimity (active)'",
+      "Exploring causal relations for concept: 'ardent' at depth 1",
+      "Found 0 determinant quotations for 'ardent'",
+      "Exploring causal relations for concept: 'alert' at depth 1",
+      "Found 0 determinant quotations for 'alert'",
+      "Exploring causal relations for concept: 'mindful' at depth 1",
+      "Found 0 determinant quotations for 'mindful'",
+      "Exploring causal relations for concept: 'mind is luminous & not brittle' at depth 1",
+      "Found 2 determinant quotations for 'mind is luminous & not brittle'",
+      "Exploring causal relations for concept: 'rightly concentrated for the ending of the effluents' at depth 2",
+      "Found 0 determinant quotations for 'rightly concentrated for the ending of the effluents'",
+      "Exploring causal relations for concept: 'attending periodically to concentration' at depth 1",
+      "Found 2 determinant quotations for 'attending periodically to concentration'",
+      "Exploring causal relations for concept: 'attending periodically to uplifted energy' at depth 1",
+      "Found 2 determinant quotations for 'attending periodically to uplifted energy'",
+      "Exploring causal relations for concept: 'attending periodically to equanimity' at depth 1",
+      "Found 2 determinant quotations for 'attending periodically to equanimity'",
+      "Exploring causal relations for concept: 'over-aroused persistence' at depth 1",
+      "Found 1 determinant quotations for 'over-aroused persistence'",
+      "Exploring causal relations for concept: 'restlessness' at depth 2",
+      "Found 0 determinant quotations for 'restlessness'",
+      "Exploring causal relations for concept: 'overly slack persistence' at depth 1",
+      "Found 1 determinant quotations for 'overly slack persistence'",
+      "Exploring causal relations for concept: 'laziness' at depth 2",
+      "Found 0 determinant quotations for 'laziness'",
+      "Finished dynamic generation of causal table. Found 34 relations."
     ],
     "Solution": {
       "Step-by-Step": [],
@@ -331,23 +604,17 @@
       "State Transitions": []
     },
     "Context": [
-      "Simulating NotebookLM Command: information_retrieval with parameters: {\"query\":\"PATTERN: Concentrations that have a share in penetration\\nWhich four Dhammas are hard to penetrate?\\nFour concentrations: concentration that has a share in decline, concentration that has a share in stability, concentration that has a share in distinction, concentration that has a share in penetration. concentration that has a share in decline concentration that has a share in stability concentration that has a share in distinction concentration that has a share in penetration stream-enterer once-returner non-returner unconcentrated mind\",\"sources\":[\"AN_nblm.txt\",\"DN_nblm.txt\",\"KN_Dhp_nblm.txt\",\"KN_Iti_nblm.txt\",\"KN_Khp_nblm.txt\",\"KN_StNp_nblm.txt\",\"KN_Thag_nblm.txt\",\"KN_Thig_nblm.txt\",\"KN_Ud_nblm.txt\",\"MN_nblm.txt\",\"SN_nblm.txt\"],\"contextHint\":\"Identify background conditions, symptoms, or prevailing circumstances necessitating the pattern's solution, related to the subjects' states and practitioners. Overall pattern context: PATTERN: Concentrations that have a share in penetration\\nWhich four Dhammas are hard to penetrate?\\nFour concentrations: concentration that has a share in decline, concentration that has a share in stability, concentration that has a share in distinction, concentration that has a share in penetration..\",\"resultType\":\"DeterminantQuotationString[]\"}",
-      "Simulated information retrieval found 2 results.",
-      "Simulating NotebookLM Command: text_analysis with parameters: {\"subjects\":[{\"name\":\"concentration that has a share in decline\",\"focusArea\":[],\"enterFromState\":\"unconcentrated mind\",\"exitToState\":\"ending of effluents\",\"targetPractitioner\":[\"stream-enterer\",\"once-returner\",\"non-returner\"]},{\"name\":\"concentration that has a share in stability\",\"focusArea\":[],\"enterFromState\":\"unconcentrated mind\",\"exitToState\":\"ending of effluents\",\"targetPractitioner\":[\"stream-enterer\",\"once-returner\",\"non-returner\"]},{\"name\":\"concentration that has a share in distinction\",\"focusArea\":[],\"enterFromState\":\"unconcentrated mind\",\"exitToState\":\"ending of effluents\",\"targetPractitioner\":[\"stream-enterer\",\"once-returner\",\"non-returner\"]},{\"name\":\"concentration that has a share in penetration\",\"focusArea\":[],\"enterFromState\":\"unconcentrated mind\",\"exitToState\":\"ending of effluents\",\"targetPractitioner\":[\"stream-enterer\",\"once-returner\",\"non-returner\"]}],\"determinantQuotations\":[\"I don't envision a single thing that, when undeveloped, is as unpliant as the mind. The mind, when undeveloped, is unpliant. [MN_nblm.txt:L13]\",\"Luminous, monks, is the mind. And it is defiled by incoming defilements. The uninstructed run-of-the-mill person doesn't discern that as it has come to be, which is why I tell you that—for the uninstructed run-of-the-mill person—there is no development of the mind. [MN_nblm.txt:L15]\",\"Because of that gain, he becomes intoxicated, complacent, & falls into heedlessness. [AN_nblm.txt:L17]\",\"For him—living in the midst of sensuality, consuming sensuality, chewed on by thoughts of sensuality, burning with the fever of sensuality, intent on the search for sensuality—to know or see or realize that which is to be known through renunciation, seen through renunciation, attained through renunciation, realized through renunciation: That's impossible. [MN_nblm.txt:L173]\",\"But as for monks in higher training, who have not yet reached their hearts' goal, who still aspire for the unexcelled freedom from bondage: I say of them that they have a task to do with heedfulness. [MN_nblm.txt:L351]\",\"This Dhamma that I have attained is deep, hard to see, hard to realize, peaceful, refined, beyond the scope of conjecture, subtle, to-be-experienced by the observant. But this generation delights in attachment, is excited by attachment, enjoys attachment. [SN_nblm.txt:L202]\"],\"extractionTarget\":\"context statement\",\"expectedFormat\":\"string[]\",\"guidance\":\"Compose a context statement as a \\\"medical diagnosis.\\\" Identify subjects' enterFromState as symptoms. Integrate details from quotations to describe the practitioner's situation. Formulate sentences describing the problematic state and when the pattern is applicable, using terms like \\\"undeveloped,\\\" \\\"sullied,\\\" \\\"overcome with passion.\\\" Output as a string array.\"}",
-      "Simulating text analysis for: context statement",
-      "Composed context statement: [\"A practitioner finds their mind often unconcentrated, making it difficult to achieve deeper states of insight and understanding.\",\"Despite the mind's luminous nature, it is frequently defiled by various hindrances and defilements, hindering the clarity required for penetration.\",\"This condition is further exacerbated by attachment to worldly affairs and sense pleasures, which distract and prevent sustained meditative effort.\",\"The task of penetrating profound Dhamma, particularly dependent co-arising, requires sustained focus and a mind free from these distractions, indicating a need for practices that foster concentration and insight.\"] for the running example."
+      "The 'enterState' for 'concentration that has a share in decline' includes 'increase in passion, aversion, delusion', 'undeveloped discernment', and unskillful habits like 'delighting in work, talking, sleeping', indicating a state where the mind is susceptible to defilement. [AN_nblm.txt, 32, 44]",
+      "The mind, although inherently luminous, can be defiled by incoming defilements, becoming unpliant and unconcentrated, which aligns with the initial state of decline. [AN_nblm.txt, 24; MN_nblm.txt, 118]",
+      "The presence of the five hindrances actively `overwhelm awareness and weaken discernment`, preventing the mind from achieving any form of stable concentration. [state-parsing-and-mapping-rules.json.txt, 377]",
+      "A practitioner in this context needs guidance to move from these detrimental states towards states of stability, distinction, and ultimately, penetration."
     ],
     "Forces": [
-      "Simulating NotebookLM Command: information_retrieval with parameters: {\"query\":\"PATTERN: Concentrations that have a share in penetration\\nWhich four Dhammas are hard to penetrate?\\nFour concentrations: concentration that has a share in decline, concentration that has a share in stability, concentration that has a share in distinction, concentration that has a share in penetration. concentration that has a share in decline concentration that has a share in stability concentration that has a share in distinction concentration that has a share in penetration stream-enterer once-returner non-returner unconcentrated mind\",\"sources\":[\"AN_nblm.txt\",\"DN_nblm.txt\",\"KN_Dhp_nblm.txt\",\"KN_Iti_nblm.txt\",\"KN_Khp_nblm.txt\",\"KN_StNp_nblm.txt\",\"KN_Thag_nblm.txt\",\"KN_Thig_nblm.txt\",\"KN_Ud_nblm.txt\",\"MN_nblm.txt\",\"SN_nblm.txt\"],\"contextHint\":\"Identify contradictory considerations, difficulties, or challenges that explain why a simple solution to the problem statement (from executionContext) is insufficient, related to the subjects' states and practitioners. Overall pattern context: PATTERN: Concentrations that have a share in penetration\\nWhich four Dhammas are hard to penetrate?\\nFour concentrations: concentration that has a share in decline, concentration that has a share in stability, concentration that has a share in distinction, concentration that has a share in penetration..\",\"resultType\":\"DeterminantQuotationString[]\"}",
-      "Simulated information retrieval found 3 results.",
-      "Simulating NotebookLM Command: text_analysis with parameters: {\"subjects\":[{\"name\":\"concentration that has a share in decline\",\"focusArea\":[],\"enterFromState\":\"unconcentrated mind\",\"exitToState\":\"ending of effluents\",\"targetPractitioner\":[\"stream-enterer\",\"once-returner\",\"non-returner\"]},{\"name\":\"concentration that has a share in stability\",\"focusArea\":[],\"enterFromState\":\"unconcentrated mind\",\"exitToState\":\"ending of effluents\",\"targetPractitioner\":[\"stream-enterer\",\"once-returner\",\"non-returner\"]},{\"name\":\"concentration that has a share in distinction\",\"focusArea\":[],\"enterFromState\":\"unconcentrated mind\",\"exitToState\":\"ending of effluents\",\"targetPractitioner\":[\"stream-enterer\",\"once-returner\",\"non-returner\"]},{\"name\":\"concentration that has a share in penetration\",\"focusArea\":[],\"enterFromState\":\"unconcentrated mind\",\"exitToState\":\"ending of effluents\",\"targetPractitioner\":[\"stream-enterer\",\"once-returner\",\"non-returner\"]}],\"determinantQuotations\":[\"I don't envision a single thing that, when undeveloped, is as unpliant as the mind. The mind, when undeveloped, is unpliant. [MN_nblm.txt:L13]\",\"Luminous, monks, is the mind. And it is defiled by incoming defilements. [MN_nblm.txt:L15]\",\"Defiled by passion, the mind is not released. Defiled by ignorance, discernment does not develop. Thus from the fading of passion is there awareness-release. From the fading of ignorance is there discernment-release. [AN_nblm.txt:L17]\",\"over-aroused persistence leads to restlessness, overly slack persistence leads to laziness. [AN_nblm.txt:L295]\",\"Craving is the ensnarer that has flowed along, spread out, and caught hold, with which this world is smothered & enveloped like a tangled skein, a knotted ball of string, like matted rushes and reeds, and does not go beyond transmigration, beyond the planes of deprivation, woe, & bad destinations. [AN_nblm.txt:L20]\",\"Deep is this dependent co-arising, and deep its appearance. It's because of not understanding and not penetrating this Dhamma that this generation is like a tangled skein, a knotted ball of string, like matted rushes and reeds, and does not go beyond transmigration, beyond the planes of deprivation, woe, & bad destinations. [DN_nblm.txt:L295]\",\"This Dhamma that I have attained is deep, hard to see, hard to realize, peaceful, refined, beyond the scope of conjecture, subtle, to-be-experienced by the observant. But this generation delights in attachment, is excited by attachment, enjoys attachment. [SN_nblm.txt:L202]\",\"Many people find abstract descriptions very hard to understand. [Source 87]\"],\"extractionTarget\":\"forces statement\",\"expectedFormat\":\"string[]\",\"guidance\":\"Compose a forces statement explaining why simple solutions are insufficient. Identify the core conflict in transitioning from 'enterFromState' to 'exitToState'. Describe countervailing forces like allure of negative states (e.g., \\\"allure of sensuality\\\"), subtle problems (e.g., \\\"tangled skein\\\" of craving), or common misunderstandings. Justify why the pattern's Solution is necessary. Output in point form as a string array.\"}",
-      "Simulating text analysis for: forces statement",
-      "Composed forces statement: [\"The path to penetration is challenging, as the mind remains highly susceptible to defilements such as passion, aversion, and delusion, hindering the clarity and discernment needed for progress.\",\"Maintaining the right level of persistence in meditation is a delicate balance; over-arousal leads to restlessness, while being overly slack leads to laziness, both undermining the sustained effort required for concentration.\",\"Worldly attractions and sense pleasures act as ensnarers, creating a `tangled skein` that binds individuals to undesirable states and impedes the liberation and insight that concentration aims for.\",\"The inherent `deep` nature of Dhamma, such as dependent co-arising, makes it `hard to see, hard to realize` for a generation that `delights in attachment,` posing a significant obstacle to penetration.\",\"The difficulty of maintaining a unified and concentrated mind, easily scattered by external stimuli and internal discursive thoughts, presents a constant challenge to achieving stable meditative states.\"] for the running example."
-    ],
-    "Rationale": [],
-    "Resulting Context": [],
-    "Related Patterns": [],
-    "Case-studies": [],
-    "Simile": []
+      "The inherent tendency for `an increase in passion, aversion, and delusion` acts as a powerful force pulling the practitioner towards `decline`, preventing `discernment` from making `headway in deep possibilities & impossibilities`. [AN_nblm.txt, 32]",
+      "Unskillful behaviours such as `delighting in work, talking, sleeping, entanglement`, not guarding the `sense faculties`, and `not knowing moderation in food` actively foster `decline` and undermine any nascent skillful qualities. [AN_nblm.txt, 44]",
+      "The delicate balance of `persistence` is a significant force, as `over-aroused persistence leads to restlessness` while `overly slack persistence leads to laziness`, either of which can prevent the mind from becoming `rightly concentrated for the ending of the effluents`. [AN_nblm.txt, 29, 30, 45]",
+      "The progression through different levels of concentration (stability, distinction, penetration) demands a continuous and often counter-intuitive adjustment of mental factors, conflicting with the mind's natural tendency to cling or be distracted. This is exacerbated by the `chain of bones` nature of sensual pleasures, which bring `much stress, much despair, & greater drawbacks`. [json-notebooklm-command-resolver.ts.txt, 278]",
+      "The need to `abandon` multiple unskillful states (e.g., hindrances, complacency, heedlessness) while simultaneously cultivating complex, subtle states (e.g., jhanas, perceptions of inconstancy, discernment) represents a persistent challenge for any practitioner."
+    ]
   }
 }

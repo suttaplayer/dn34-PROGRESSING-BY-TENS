@@ -1,5 +1,6 @@
 const filenames = [
 "causation-expression-API.ts",
+"core-composite-states.json",
 "json-causal-table-generation-instructions.ts",
 "json-context-generation-instructions.ts",
 "json-forces-generation-instructions.ts",
@@ -13,6 +14,7 @@ const filenames = [
 "pattern-generation-instructions-config.json",
 "pbt-catalog.json",
 "pbt-utils.ts",
+"state-parsing-and-mapping-rules.json",
 ]
 for (const filename of filenames) {
     if (!filename)
