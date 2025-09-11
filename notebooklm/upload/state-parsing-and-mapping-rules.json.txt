@@ -1,9 +1,9 @@
 {
   "meta": {
     "artifactName": "State Parsing and Mapping Rules Document",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "purpose": "Rules for mapping diverse natural language expressions from source texts to canonical core composite states defined in Artifact 1 (Core Composite States Inventory Document). These rules support consistent extraction of enterState and exitState.",
-    "generatedDate": "2024-02-17"
+    "generatedDate": "2024-03-01"
   },
   "stateMappingRules": [
     {
@@ -12,20 +12,9 @@
       "canonicalState": "heedless",
       "exampleQuotations": [
         "Don't be heedless. Don't later fall into regret.",
-        "A monk intent on heightened mind were to attend solely to the theme of concentration, it's possible that his mind would tend to laziness... it's possible that his mind would not be rightly concentrated for the ending of the effluents. But when he attends periodically to the theme of concentration, attends periodically to the theme of uplifted energy, attends periodically to the theme of equanimity, his mind is pliant, malleable, luminous, & not brittle. It is rightly concentrated for the ending of the effluents.",
-        "Don't give way to heedlessness or to intimacy with sensual delight–for a heedful person, the End-Maker holds him under his sway.",
-        "No recitation: the ruinous impurity. No heedfulness: the ruinous impurity."
+        "A monk intent on heightened mind were to attend solely to the theme of concentration, it's possible that his mind would tend to laziness... it's possible that his mind would not be rightly concentrated for the ending of the effluents. But when he attends periodically to the theme of concentration, attends periodically to the theme of uplifted energy, attends periodically to the theme of equanimity, his mind is pliant, malleable, luminous, & not brittle. It is rightly concentrated for the ending of the effluents."
       ],
       "notes": "Matches explicit mentions of 'heedless' or 'heedlessness'."
-    },
-    {
-      "pattern": "(?:^|\\b)complacent\\b",
-      "category": "heedfulness",
-      "canonicalState": "complacent",
-      "exampleQuotations": [
-        "Because of that gain, he becomes intoxicated, complacent, & falls into heedlessness."
-      ],
-      "notes": "Identifies a state of contentment that can lead to heedlessness."
     },
     {
       "pattern": "(?:^|\\b)heedful\\b",
@@ -65,37 +54,47 @@
       "notes": "Matches explicit mentions of 'appropriate attention'."
     },
     {
-      "pattern": "(?:^|\\b)greed\\b",
+      "pattern": "(?:^|\\b)greed|desire|passion|attachment|sensuality\\b",
       "category": "three_roots",
       "canonicalState": "greed",
       "exampleQuotations": [
         "Greed is a cause for the origination of actions.",
         "Any desire-passion with regard to the earth property is a defilement of the mind."
       ],
-      "notes": "Identifies the root of unskillful action."
+      "notes": "Identifies the root of unskillful action; includes common manifestations like desire and passion."
     },
     {
-      "pattern": "(?:^|\\b)aversion|ill will\\b",
+      "pattern": "(?:^|\\b)aversion|ill will|hatred|resistance\\b",
       "category": "three_roots",
       "canonicalState": "aversion",
       "exampleQuotations": [
         "Aversion is a cause for the origination of actions.",
         "A monk in training… will make complete any training with regard to non-ill will."
       ],
-      "notes": "Identifies the root of unskillful action; includes 'ill will' as a common manifestation."
+      "notes": "Identifies the root of unskillful action; includes 'ill will' and other manifestations."
     },
     {
-      "pattern": "(?:^|\\b)delusion|ignorance\\b",
+      "pattern": "(?:^|\\b)delusion|confusion|lack of understanding\\b",
       "category": "three_roots",
       "canonicalState": "delusion",
       "exampleQuotations": [
         "Delusion is a cause for the origination of actions.",
-        "Defiled by ignorance, discernment does not develop."
+        "Delusion, my friend, makes you blind, makes you sightless, makes you ignorant."
       ],
-      "notes": "Identifies the root of unskillful action; includes 'ignorance' as a common manifestation."
+      "notes": "Identifies the root of unskillful action; includes 'confusion' and 'lack of understanding' as manifestations."
     },
     {
-      "pattern": "(?:^|\\b)non-greed\\b",
+      "pattern": "(?:^|\\b)ignorance\\b",
+      "category": "three_roots",
+      "canonicalState": "ignorance",
+      "exampleQuotations": [
+        "Whatever stress comes into play is all from ignorance as a requisite condition.",
+        "Defiled by ignorance, discernment does not develop."
+      ],
+      "notes": "Identifies ignorance as a fundamental defilement, often a manifestation of delusion."
+    },
+    {
+      "pattern": "(?:^|\\b)non-greed|non-desire\\b",
       "category": "three_roots",
       "canonicalState": "non-greed",
       "exampleQuotations": [
@@ -114,7 +113,7 @@
       "notes": "Identifies the skillful root; includes 'non-ill will'."
     },
     {
-      "pattern": "(?:^|\\b)non-delusion\\b",
+      "pattern": "(?:^|\\b)non-delusion|clear knowing|wisdom\\b",
       "category": "three_roots",
       "canonicalState": "non-delusion",
       "exampleQuotations": [
@@ -127,7 +126,8 @@
       "category": "obstructions_defilements",
       "canonicalState": "hindrances active",
       "exampleQuotations": [
-        "The five hindrances overwhelm awareness and weaken discernment."
+        "The five hindrances overwhelm awareness and weaken discernment.",
+        "Ignorance has its food: the five hindrances."
       ],
       "notes": "Identifies active hindrances."
     },
@@ -191,17 +191,20 @@
       "pattern": "(?:^|\\b)obsessions abandoned\\b",
       "category": "obstructions_defilements",
       "canonicalState": "obsessions abandoned",
-      "exampleQuotations": [],
-      "notes": "Identifies abandonment of obsessions (no direct quotes found for 'obsessions abandoned' but implied by abandoning related defilements)."
+      "exampleQuotations": [
+        "That is the end of the obsessions of passion, the obsessions of resistance, the obsessions of views, the obsessions of uncertainty, the obsessions of conceit, the obsessions of passion for becoming, & the obsessions of ignorance."
+      ],
+      "notes": "Identifies abandonment of obsessions."
     },
     {
-      "pattern": "(?:^|\\b)unvirtuous|impurity of (?:envy|stinginess)\\b",
+      "pattern": "(?:^|\\b)unvirtuous|impurity of (?:envy|stinginess)|bodily misconduct|verbal misconduct|mental misconduct\\b",
       "category": "obstructions_defilements",
       "canonicalState": "impurities active",
       "exampleQuotations": [
-        "One is unvirtuous and hasn't abandoned the impurity of being unvirtuous. One is envious and hasn't abandoned the impurity of envy. One is stingy and hasn't abandoned the impurity of stinginess."
+        "One is unvirtuous and hasn't abandoned the impurity of being unvirtuous. One is envious and hasn't abandoned the impurity of envy. One is stingy and hasn't abandoned the impurity of stinginess.",
+        "A person endowed with three things is to be recognized as a fool. Which three? Bodily misconduct, verbal misconduct, mental misconduct."
       ],
-      "notes": "Identifies active impurities."
+      "notes": "Identifies active impurities and unskillful conduct."
     },
     {
       "pattern": "(?:^|\\b)impurities (?:all blown away|abandoned|gone)\\b",
@@ -222,13 +225,24 @@
       "notes": "Captures the presence of mental resistance towards sense objects or ideas."
     },
     {
+      "pattern": "(?:^|\\b)wrong views|view-dependencies(?: concerning beginning-points and view-dependencies concerning endpoints)?\\b",
+      "category": "obstructions_defilements",
+      "canonicalState": "wrong views",
+      "exampleQuotations": [
+        "A person is a holder of wrong views because of what was done in the past.",
+        "It's for the abandoning & transcending of these view-dependencies concerning beginning-points and view-dependencies concerning endpoints that I have thus taught & formulated the four establishings of mindfulness."
+      ],
+      "notes": "Identifies mistaken understandings, including specific view-dependencies."
+    },
+    {
       "pattern": "(?:^|\\b)mindfulness (?:active|established|present)\\b",
       "category": "factors_for_awakening",
       "canonicalState": "mindfulness (active)",
       "exampleQuotations": [
-        "He is mindful, endowed with excellent proficiency in mindfulness, remembering & able to call to mind even things that were done & said long ago."
+        "He is mindful, endowed with excellent proficiency in mindfulness, remembering & able to call to mind even things that were done & said long ago.",
+        "The four establishings of mindfulness."
       ],
-      "notes": "Identifies active mindfulness."
+      "notes": "Identifies active mindfulness, including the four establishings of mindfulness."
     },
     {
       "pattern": "(?:^|\\b)analysis of qualities (?:active|present)\\b",
@@ -250,66 +264,59 @@
       "notes": "Identifies active persistence."
     },
     {
-      "pattern": "(?:^|\\b)rapture (?:active|present|born)\\b",
+      "pattern": "(?:^|\\b)rapture (?:active|present|born|enraptured)\\b",
       "category": "factors_for_awakening",
       "canonicalState": "rapture (active)",
       "exampleQuotations": [
-        "In one whose heart is enraptured, the body grows calm."
+        "In one whose heart is enraptured, the body grows calm.",
+        "When he is joyful, rapture is born."
       ],
-      "notes": "Identifies active rapture."
+      "notes": "Identifies active rapture, including its arising and state of being enraptured."
     },
     {
-      "pattern": "(?:^|\\b)calm (?:active|present)\\b",
+      "pattern": "(?:^|\\b)calm (?:active|present|grows calm)\\b",
       "category": "factors_for_awakening",
       "canonicalState": "calm (active)",
       "exampleQuotations": [
-        "His body calm, he feels pleasure."
+        "One whose body is calmed experiences ease.",
+        "the body grows calm."
       ],
-      "notes": "Identifies active calm."
+      "notes": "Identifies active calm, including the body growing calm."
     },
     {
-      "pattern": "(?:^|\\b)concentration (?:active|present|gathered into singleness|unified)\\b",
+      "pattern": "(?:^|\\b)concentration (?:active|present|becomes concentrated)\\b",
       "category": "factors_for_awakening",
       "canonicalState": "concentration (active)",
       "exampleQuotations": [
-        "His mind is concentrated & gathered into singleness."
+        "In one at ease, the mind becomes concentrated."
       ],
-      "notes": "Identifies active concentration."
+      "notes": "Identifies active concentration, including the mind becoming concentrated."
     },
     {
-      "pattern": "(?:^|\\b)equanimity (?:active|present|purified)\\b",
+      "pattern": "(?:^|\\b)equanimity (?:active|present)\\b",
       "category": "factors_for_awakening",
       "canonicalState": "equanimity (active)",
       "exampleQuotations": [
-        "equanimity-&-mindfulness purified",
-        "attaining pure equanimity, tranquility"
+        "He should attend periodically to the theme of equanimity."
       ],
       "notes": "Identifies active equanimity."
     },
     {
-      "pattern": "(?:^|\\b)unconcentrated\\b",
+      "pattern": "(?:^|\\b)unconcentrated|undeveloped mind|unpliant mind\\b",
       "category": "concentration_qualities",
       "canonicalState": "unconcentrated",
       "exampleQuotations": [
+        "A mind that is unconcentrated is not released.",
         "I don't envision a single thing that, when undeveloped, is as unpliant as the mind. The mind, when undeveloped, is unconcentrated."
       ],
-      "notes": "Matches 'unconcentrated' mind state."
-    },
-    {
-      "pattern": "(?:^|\\b)concentration that has a share in decline|wrong concentration\\b",
-      "category": "concentration_qualities",
-      "canonicalState": "in_decline (wrong concentration)",
-      "exampleQuotations": [
-        "Concentration that has a share in decline is wrong concentration which focuses on sensuality, ill will & harmfulness."
-      ],
-      "notes": "Identifies concentration leading to decline."
+      "notes": "Identifies a mind that is scattered or undeveloped, prone to unskillful states."
     },
     {
       "pattern": "(?:^|\\b)first jhāna\\b",
       "category": "concentration_qualities",
       "canonicalState": "in_stability (first jhana)",
       "exampleQuotations": [
-        "When one has attained the first jhāna, the perception of sensuality has ceased."
+        "Secludes himself from sensuality… enters & remains in the first jhāna."
       ],
       "notes": "Identifies the first Jhāna state."
     },
@@ -369,7 +376,7 @@
       "notes": "Identifies pleasant feeling."
     },
     {
-      "pattern": "(?:^|\\b)painful feeling\\b",
+      "pattern": "(?:^|\\b)painful feeling|stressful feeling\\b",
       "category": "feeling",
       "canonicalState": "painful feeling",
       "exampleQuotations": [
@@ -384,61 +391,7 @@
       "exampleQuotations": [
         "There are these three feelings, my friend—feelings of pleasure, feelings of pain, and feelings of neither pleasure nor pain."
       ],
-      "notes": "Identifies neutral feeling."
-    },
-    {
-      "pattern": "(?:^|\\b)cessation of perception & feeling\\b",
-      "category": "feeling",
-      "canonicalState": "feeling ceased",
-      "exampleQuotations": [
-        "When one has attained the cessation of perception & feeling, perceptions & feelings [mental fabrications] have ceased."
-      ],
-      "notes": "Identifies the cessation of all feeling, a very high meditative attainment."
-    },
-    {
-      "pattern": "(?:^|\\b)perception of sensuality has ceased\\b",
-      "category": "perceptions",
-      "canonicalState": "perception of sensuality ceased",
-      "exampleQuotations": [
-        "When one has attained the first jhāna, the perception of sensuality has ceased."
-      ],
-      "notes": "Cessation of perception specific to sensuality."
-    },
-    {
-      "pattern": "(?:^|\\b)perception of forms has ceased\\b",
-      "category": "perceptions",
-      "canonicalState": "perception of forms ceased",
-      "exampleQuotations": [
-        "When one has attained the dimension of the infinitude of space, the perception of forms has ceased."
-      ],
-      "notes": "Cessation of perception specific to forms."
-    },
-    {
-      "pattern": "(?:^|\\b)perception of the dimension of the infinitude of space has ceased\\b",
-      "category": "perceptions",
-      "canonicalState": "perception of space ceased",
-      "exampleQuotations": [
-        "When one has attained the dimension of the infinitude of consciousness, the perception of the dimension of the infinitude of space has ceased."
-      ],
-      "notes": "Cessation of perception specific to space."
-    },
-    {
-      "pattern": "(?:^|\\b)perception of the dimension of the infinitude of consciousness has ceased\\b",
-      "category": "perceptions",
-      "canonicalState": "perception of consciousness ceased",
-      "exampleQuotations": [
-        "When one has attained the dimension of nothingness, the perception of the dimension of the infinitude of consciousness has ceased."
-      ],
-      "notes": "Cessation of perception specific to consciousness."
-    },
-    {
-      "pattern": "(?:^|\\b)perception of the dimension of nothingness has ceased\\b",
-      "category": "perceptions",
-      "canonicalState": "perception of nothingness ceased",
-      "exampleQuotations": [
-        "When one has attained the dimension of neither perception nor non-perception, the perception of the dimension of nothingness has ceased."
-      ],
-      "notes": "Cessation of perception specific to nothingness."
+      "notes": "Identifies neither pleasant nor painful feeling."
     },
     {
       "pattern": "(?:^|\\b)perception of inconstancy\\b",
@@ -450,7 +403,7 @@
       "notes": "Identifying the perception of impermanence."
     },
     {
-      "pattern": "(?:^|\\b)perception of stress in inconstant\\b",
+      "pattern": "(?:^|\\b)perception of stress in (?:what is )?inconstant\\b",
       "category": "perceptions",
       "canonicalState": "perception of stress in inconstant",
       "exampleQuotations": [
@@ -459,13 +412,40 @@
       "notes": "Identifying the perception of suffering within impermanence."
     },
     {
-      "pattern": "(?:^|\\b)perception of not-self in stressful\\b",
+      "pattern": "(?:^|\\b)perception of not-self in (?:what is )?stressful\\b",
       "category": "perceptions",
       "canonicalState": "perception of not-self in stressful",
       "exampleQuotations": [
         "The perception of not-self in what is stressful, when developed & pursued, is of great fruit, of great benefit."
       ],
       "notes": "Identifying the perception of non-self within suffering."
+    },
+    {
+      "pattern": "(?:^|\\b)perception of abandoning\\b",
+      "category": "perceptions",
+      "canonicalState": "perception of abandoning",
+      "exampleQuotations": [
+        "Six perceptions conducive to penetration: ... the perception of abandoning."
+      ],
+      "notes": "Identifying the perception of relinquishment."
+    },
+    {
+      "pattern": "(?:^|\\b)perception of dispassion\\b",
+      "category": "perceptions",
+      "canonicalState": "perception of dispassion",
+      "exampleQuotations": [
+        "Six perceptions conducive to penetration: ... the perception of dispassion."
+      ],
+      "notes": "Identifying the perception of detachment."
+    },
+    {
+      "pattern": "(?:^|\\b)perception of cessation\\b",
+      "category": "perceptions",
+      "canonicalState": "perception of cessation",
+      "exampleQuotations": [
+        "Six perceptions conducive to penetration: ... the perception of cessation."
+      ],
+      "notes": "Identifying the perception of the ending of suffering."
     },
     {
       "pattern": "(?:^|\\b)perceptions & categories of objectification active\\b",
@@ -541,13 +521,14 @@
       "notes": "Identifies a lack or weakness in discernment."
     },
     {
-      "pattern": "(?:^|\\b)discernment developing|discernment strengthened\\b",
+      "pattern": "(?:^|\\b)discernment developing|discernment strengthened|develop discernment\\b",
       "category": "discernment_knowledge",
       "canonicalState": "discernment developing",
       "exampleQuotations": [
-        "This is called purity of view. (The thought,) 'I will make complete this sort of purity of view when it is not yet complete, or I will protect it here & there with discernment when it is complete': Any desire, effort, diligence, endeavor, relentlessness, mindfulness, & alertness there is called the factor for exertion with regard to purity of view."
+        "This is called purity of view. (The thought,) 'I will make complete this sort of purity of view when it is not yet complete, or I will protect it here & there with discernment when it is complete': Any desire, effort, diligence, endeavor, relentlessness, mindfulness, & alertness there is called the factor for exertion with regard to purity of view.",
+        "Develop what is skillful"
       ],
-      "notes": "Identifies the process of cultivating discernment."
+      "notes": "Identifies the process of cultivating and strengthening discernment."
     },
     {
       "pattern": "(?:^|\\b)strong discernment|noble, penetrating discernment\\b",
@@ -642,7 +623,7 @@
       "notes": "Identifies liberation through insight and wisdom."
     },
     {
-      "pattern": "(?:^|\\b)total unbinding|unbinding|nibbana|ending of stress\\b",
+      "pattern": "(?:^|\\b)total unbinding|unbinding|nibbana|ending of stress|realization of unbinding\\b",
       "category": "release_unbinding",
       "canonicalState": "total unbinding",
       "exampleQuotations": [
@@ -668,7 +649,7 @@
       "exampleQuotations": [
         "When the three forms of craving [for sensuality, for becoming, and for non-becoming] are comprehended."
       ],
-      "notes": "Identifies craving for sensual objects."
+      "notes": "Identifies craving for sensory pleasures."
     },
     {
       "pattern": "(?:^|\\b)becoming-craving|craving for becoming\\b",
@@ -695,16 +676,17 @@
       "exampleQuotations": [
         "Craving is the seamstress—for craving stitches one to the production of this or that very becoming."
       ],
-      "notes": "Identifies the general presence of craving."
+      "notes": "Identifies the active presence of craving."
     },
     {
-      "pattern": "(?:^|\\b)clinging to aggregates|regarded form as 'mine'\\b",
+      "pattern": "(?:^|\\b)clinging to aggregates|grasping at aggregates|taking up rods & bladed weapons|arguments, quarrels, disputes, accusations, divisive speech, & false speech\\b",
       "category": "clinging_sustenance",
       "canonicalState": "clinging to aggregates",
       "exampleQuotations": [
-        "an uninstructed run-of-the-mill person regards form as: 'This is mine, this is my self, this is what I am.' He regards feeling… perception… fabrications… consciousness as: 'This is mine, this is my self, this is what I am.'"
+        "The mind, through lack of clinging or sustenance, was released from the effluents.",
+        "That is the end of taking up rods & bladed weapons, of arguments, quarrels, disputes, accusations, divisive speech, & false speech."
       ],
-      "notes": "Identifies clinging to the five aggregates."
+      "notes": "Identifies clinging to the five aggregates and its resulting manifestations."
     },
     {
       "pattern": "(?:^|\\b)lack of clinging|no clinging|unagitated by lack of clinging\\b",
@@ -716,13 +698,23 @@
       "notes": "Identifies the absence of clinging."
     },
     {
-      "pattern": "(?:^|\\b)admirable friendship\\b",
+      "pattern": "(?:^|\\b)admirable friendship|association with people of integrity\\b",
       "category": "externalStates",
       "canonicalState": "admirable friendship",
       "exampleQuotations": [
-        "associating with admirable friends"
+        "associating with admirable friends",
+        "There is the case where a monk has admirable people as friends, companions, & colleagues."
       ],
       "notes": "Identifies the external state of having supportive companions."
+    },
+    {
+      "pattern": "(?:^|\\b)not admirable friendship|associating with people of no integrity\\b",
+      "category": "externalStates",
+      "canonicalState": "not admirable friendship",
+      "exampleQuotations": [
+        "Associating with people of no integrity [is food for ignorance]."
+      ],
+      "notes": "Identifies the absence of admirable friendship or association with unskillful individuals."
     },
     {
       "pattern": "(?:^|\\b)suitable resting places|roots of trees|empty dwellings\\b",
@@ -738,9 +730,165 @@
       "category": "externalStates",
       "canonicalState": "worldly gains & offerings",
       "exampleQuotations": [
-        "Monks, gains, offerings, & fame are a cruel thing, a harsh, bitter obstacle to the attainment of the unexcelled rest from bondage."
+        "Because of that gain, he becomes intoxicated, complacent, & falls into heedlessness.",
+        "Gains, offerings, & fame are a cruel thing, a harsh, bitter obstacle to the attainment of the unexcelled rest from bondage."
       ],
-      "notes": "Identifies external factors that can be an obstacle."
+      "notes": "Identifies external acquirements that can be obstacles."
+    },
+    {
+      "pattern": "(?:^|\\b)hearing (?:the )?True Dhamma\\b",
+      "category": "externalStates",
+      "canonicalState": "hearing true Dhamma",
+      "exampleQuotations": [
+        "hearing the True Dhamma [is a stream-entry factor].",
+        "Not hearing the true Dhamma [is food for ignorance]."
+      ],
+      "notes": "Identifies the act of listening to authentic Dhamma teachings."
+    },
+    {
+      "pattern": "(?:^|\\b)not hearing (?:the )?True Dhamma\\b",
+      "category": "externalStates",
+      "canonicalState": "not hearing true Dhamma",
+      "exampleQuotations": [
+        "Not hearing the true Dhamma [is food for ignorance]."
+      ],
+      "notes": "Identifies the absence of hearing true Dhamma."
+    },
+    {
+      "pattern": "(?:^|\\b)Dhamma practice|practice of the Dhamma in accordance with the Dhamma\\b",
+      "category": "externalStates",
+      "canonicalState": "Dhamma practice",
+      "exampleQuotations": [
+        "practice of the Dhamma in accordance with the Dhamma [is a stream-entry factor]."
+      ],
+      "notes": "Identifies the engagement in Dhamma practice."
+    },
+    {
+      "pattern": "(?:^|\\b)origination of actions|origination of kamma\\b",
+      "category": "causal_events",
+      "canonicalState": "origination of kamma",
+      "exampleQuotations": [
+        "Greed is a cause for the origination of actions."
+      ],
+      "notes": "Identifies the arising of kamma."
+    },
+    {
+      "pattern": "(?:^|\\b)cessation of ignorance\\b",
+      "category": "causal_events",
+      "canonicalState": "cessation of ignorance",
+      "exampleQuotations": [
+        "From the cessation of ignorance comes the cessation of fabrications."
+      ],
+      "notes": "Identifies the ending of ignorance."
+    },
+    {
+      "pattern": "(?:^|\\b)cessation of fabrications\\b",
+      "category": "causal_events",
+      "canonicalState": "cessation of fabrications",
+      "exampleQuotations": [
+        "From the cessation of ignorance comes the cessation of fabrications."
+      ],
+      "notes": "Identifies the ending of fabrications."
+    },
+    {
+      "pattern": "(?:^|\\b)cessation of effluents\\b",
+      "category": "causal_events",
+      "canonicalState": "cessation of effluents",
+      "exampleQuotations": [
+        "From the cessation of ignorance comes the cessation of effluents.",
+        "through the ending of the effluents, he enters & remains in the effluent-free awareness-release & discernment-release."
+      ],
+      "notes": "Identifies the ending of effluents."
+    },
+    {
+      "pattern": "(?:^|\\b)purification of beings\\b",
+      "category": "purification_outcomes",
+      "canonicalState": "purification of beings",
+      "exampleQuotations": [
+        "This is the direct path for the purification of beings."
+      ],
+      "notes": "Identifies the outcome of purifying beings."
+    },
+    {
+      "pattern": "(?:^|\\b)overcoming of sorrow & lamentation\\b",
+      "category": "purification_outcomes",
+      "canonicalState": "overcoming of sorrow & lamentation",
+      "exampleQuotations": [
+        "for the overcoming of sorrow & lamentation."
+      ],
+      "notes": "Identifies the outcome of overcoming sorrow and lamentation."
+    },
+    {
+      "pattern": "(?:^|\\b)disappearance of pain & distress\\b",
+      "category": "purification_outcomes",
+      "canonicalState": "disappearance of pain & distress",
+      "exampleQuotations": [
+        "for the disappearance of pain & distress."
+      ],
+      "notes": "Identifies the outcome of pain and distress disappearing."
+    },
+    {
+      "pattern": "(?:^|\\b)attainment of (?:the )?right method\\b",
+      "category": "purification_outcomes",
+      "canonicalState": "attainment of right method",
+      "exampleQuotations": [
+        "for the attainment of the right method."
+      ],
+      "notes": "Identifies the outcome of attaining the correct method."
+    },
+    {
+      "pattern": "(?:^|\\b)mass of suffering (?:aging & death, sorrow, lamentation, pain, distress, & despair)?\\b",
+      "category": "suffering_states",
+      "canonicalState": "mass of suffering (aging & death, etc.)",
+      "exampleQuotations": [
+        "birth causes aging & death, sorrow, lamentation, pain, distress, & despair, etc."
+      ],
+      "notes": "Identifies the full mass of suffering resulting from the cycle of existence."
+    },
+    {
+      "pattern": "(?:^|\\b)arising of joy|joy is born\\b",
+      "category": "meditative_progress",
+      "canonicalState": "arising of joy",
+      "exampleQuotations": [
+        "In him—sensitive to the meaning, sensitive to the Dhamma—joy is born."
+      ],
+      "notes": "Identifies the initial emergence of joy in meditation."
+    },
+    {
+      "pattern": "(?:^|\\b)arising of rapture|rapture is born\\b",
+      "category": "meditative_progress",
+      "canonicalState": "arising of rapture",
+      "exampleQuotations": [
+        "When he is joyful, rapture is born."
+      ],
+      "notes": "Identifies the emergence of rapture in meditation."
+    },
+    {
+      "pattern": "(?:^|\\b)body (?:grows )?calm\\b",
+      "category": "meditative_progress",
+      "canonicalState": "body calm",
+      "exampleQuotations": [
+        "In one whose mind is enraptured, the body grows calm."
+      ],
+      "notes": "Identifies physical tranquility during meditation."
+    },
+    {
+      "pattern": "(?:^|\\b)experiences ease|at ease\\b",
+      "category": "meditative_progress",
+      "canonicalState": "ease",
+      "exampleQuotations": [
+        "One whose body is calmed experiences ease."
+      ],
+      "notes": "Identifies a state of comfort and well-being during meditation."
+    },
+    {
+      "pattern": "(?:^|\\b)first opening to release\\b",
+      "category": "meditative_progress",
+      "canonicalState": "first opening to release",
+      "exampleQuotations": [
+        "This is the first opening to release."
+      ],
+      "notes": "Identifies an initial stage or doorway to liberation."
     }
   ]
 }
