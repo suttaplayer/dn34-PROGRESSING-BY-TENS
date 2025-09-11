@@ -56,7 +56,7 @@ class StatePlantUMLDiagramText <<(J, FF7700)>> {
 class ContextJson <<(J, FF7700)>> {
 }
 
-class CausalRelationJson <<(J, FF7700)>> {
+class ThisOrThatConditionalityJson <<(J, FF7700)>> {
 }
 
 class Problem <<(J, FF7700)>>
@@ -64,7 +64,7 @@ class Problem <<(J, FF7700)>>
 PatternBuildingBlocksJson *--> "Scope" ScopeJson: constrains the solution via >
 PatternBuildingBlocksJson *--> "State Transitions 1..*" StatePlantUMLDiagramText: models the solutions\nstate machine via >
 PatternBuildingBlocksJson *--> "Context" ContextJson: provides a solution for a >
-PatternBuildingBlocksJson *--> "Causal-Table" CausalRelationJson: rings fences a catchment of\ncausation with respect to the solution >
+PatternBuildingBlocksJson *--> "Causal-Table" ThisOrThatConditionalityJson: rings fences a catchment of\ncausation with respect to the solution >
 PatternBuildingBlocksJson *--> "Problem" Problem: addresses a >
 
 ScopeJson --> "subject 1..*" SubjectJson: its context has >
@@ -74,7 +74,7 @@ SubjectJson::enterState --> StatePlantUMLDiagramText::entryState: establishes th
 SubjectJson::exitState --> StatePlantUMLDiagramText::exitState: establishes the key ending state\nin the state transition diagram >
 
 SubjectJson --> "targetPractitioner 1..*" ContextJson
-SubjectJson --> "cause/effect 1..*" CausalRelationJson: is the centre of the catchment >
+SubjectJson --> "cause/effect 1..*" ThisOrThatConditionalityJson: is the centre of the catchment >
 SubjectJson --> Problem: How do you go\nfrom \nto
 
 @enduml

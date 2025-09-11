@@ -8,7 +8,7 @@ import { JsonForcesGenerationInstructions } from "./json-forces-generation-instr
 import { JsonProblemGenerationInstructions, ProblemWorkTaskResolvable } from "./json-problem-generation-instructions.ts";
 import { JsonScopeGenerationInstructions, ScopeWorkTaskResolvable } from "./json-scope-generation-instructions.ts";
 // **CHANGED**: Updated SubjectJson import to reflect array types for enterState/exitState
-import { CausalRelationJson, DeterminantQuotationString, PractitionerKey, SubjectJson, UserPatternRequestJson} from "./pattern-API.ts";
+import { ThisOrThatConditionalityJson, DeterminantQuotationString, PractitionerKey, SubjectJson, UserPatternRequestJson} from "./pattern-API.ts";
 import { WorkTaskResolver } from "./pattern-generation-API.ts";
 import { CausalTableWorkTaskResolvable, JsonCausalTableGenerationInstructions } from "./json-causal-table-generation-instructions.ts"; // Import the new interface
 import { JsonPatternGenerationInstructions } from "./json-pattern-generation-instructions.ts";
@@ -504,10 +504,10 @@ class ForcesCommandResolver extends CommandResolver {
 
 class CausalTableCommandResolver extends CommandResolver implements CausalTableWorkTaskResolvable {
 
-  public async generateCausalTable(subjects: SubjectJson[], existingCausalRelations?: CausalRelationJson[]): Promise<CausalRelationJson[]> {
+  public async generateCausalTable(subjects: SubjectJson[], existingCausalRelations?: ThisOrThatConditionalityJson[]): Promise<ThisOrThatConditionalityJson[]> {
     this.substantiationsStack.push("mocked generation of causal table for running example 'Heedful, ardent & resolute'");
 
-    const causalTable: CausalRelationJson[] = existingCausalRelations ? [...existingCausalRelations] : [];
+    const causalTable: ThisOrThatConditionalityJson[] = existingCausalRelations ? [...existingCausalRelations] : [];
     const visitedConcepts = new Set<string>();
     const conceptsToExplore: { name: string, type: 'this' | 'that' }[] = [];
 
@@ -563,7 +563,7 @@ class CausalTableCommandResolver extends CommandResolver implements CausalTableW
 
             this.substantiationsStack.push(`Found ${determinantQuotations.length} determinant quotations for '${conceptName}'`);
 
-            // --- Simplified processing of determinant quotations to extract CausalRelationJson ---
+            // --- Simplified processing of determinant quotations to extract ThisOrThatConditionalityJson ---
             // In a real implementation, this would use the CausalExpressionGuide (Artifact 3)
             // and perform sophisticated regex matching and transformation.
             // For this mock, we'll continue with predefined causal relations that are
@@ -576,7 +576,7 @@ class CausalTableCommandResolver extends CommandResolver implements CausalTableW
         }
     }
 
-    const mockCausalTable: CausalRelationJson[] = [
+    const mockCausalTable: ThisOrThatConditionalityJson[] = [
         // Causes leading to Heedfulness (as discussed in previous turn)
         { this: "shame", relation: 3, that: "heedful" },
         { this: "compunction", relation: 3, that: "heedful" },

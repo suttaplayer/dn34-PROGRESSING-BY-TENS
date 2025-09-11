@@ -80,7 +80,7 @@ export type ScopeJson = TopicJson &{
 }
 
 /*
-purpose: represents a causal relationship relationship
+purpose: represents a causal relationship (this or that conditionality)
 created by:
 1. notebooklm: for documenting the causal relationships applied in the patternBuildingBlocksJson["Causal-Table"] & patternBuildingBlocksJson["Cause-&-Effect"] sections
 2. user: to inject causal relationships that are to be applied in the userDirectExperienceJson["Causal-Table"] & userDirectExperienceJson["Cause-&-Effect"] sections
@@ -88,14 +88,20 @@ eg1 {this: "shame", relation: 2, that: "heedful"},
 => shame leads to heedful
 eg2. {notThis:true, this: "conviction", cannot: true, relation: 2, that: "remembers it"},
 => not [having] conviction cannot lead to remembers it
+eg3. {this:"ignorance", relation:3, that:"aging & death, sorrow, lamentation, pain, distress, & despair", intermediaries:["fabrications", "consciousness", "name-&-form", "six sense media", "contact", "feeling", "craving", "clinging or sustenance", "becoming", "birth"]},
+=> From ignorance as a requisite condition come ... then aging-&-death, sorrow, lamentation, pain, distress, & despair come into play
+eg4. {this: "conviction", relation: 3, that: "discernment", cyclic: true },
+=> conviction ... discernment -> conviction
 */
-export type CausalRelationJson = {
+export type ThisOrThatConditionalityJson = {
   notThis?: boolean /* boolean value indicating inverse of the causal reference (default: boolean|null)*/
   this: string /* string of the cause in lowercase (eg. "admirable friendship")*/
   relation: number /* 0|undefined = co-arises with, 1=requisite condition, 2=leads to, 3=causes */
   cannot?: boolean /* boolean value indicating an impossible causal relationship (default: boolean|null)*/
   notThat?: boolean /* boolean value indicating inverse of the effect reference (default: boolean|null)*/
   that: string /* string of the effect in lowercase (eg. "conviction")*/
+  intermediaries?: string[] /* array of string of the intermediate links in the causal chain */
+  cyclic?: boolean /* boolean value indicating "that" has a return causal influence on "this" */
   quotationIndicies?: number[] /* number[] of the array index position(s) of the directly associated quote where this/that relationships was derived from */
 }
 
@@ -121,10 +127,10 @@ created by: notebooklm
 export type PatternBuildingBlocksJson = {
   "Scope": ScopeJson /* object of the pattern's scope */
   "Problem": string[] /* single element string array of the problem statement */
-  "Causal-Table": CausalRelationJson[] /* array of CausalRelationJson objects (full table) */
+  "Causal-Table": ThisOrThatConditionalityJson[] /* array of ThisOrThatConditionalityJson objects (full table) */
   "Solution": {
     "Step-by-Step": string[] /* array of process step strings (this is a flattened representation of Process View) */
-    "Cause-&-Effect": CausalRelationJson[] /* array of CausalRelationJson objects (solution only) */
+    "Cause-&-Effect": ThisOrThatConditionalityJson[] /* array of ThisOrThatConditionalityJson objects (solution only) */
     "Process View": PlantUMLDiagramText[] /* array of PlantUML Activity Diagram strings */
     "Concepts & Relationships": PlantUMLDiagramText[] /* array of PlantUML Class Diagram strings */
     "State Transitions": PlantUMLDiagramText[] /* array of PlantUML State Diagram strings */
@@ -215,14 +221,14 @@ export type UserInfluentialFactorsJson = {
 /*
 purpose: represents the overall influential container of factors the expert wants to notebooklm to apply to specific pattern sections
 created by: user and submitted as part of the userPatternRequestJson in the initiating user query
-note: CausalRelationJson objects are only applied to work tasks "Causal-Table" and "Cause-&-Effect"
+note: ThisOrThatConditionalityJson objects are only applied to work tasks "Causal-Table" and "Cause-&-Effect"
 */
 export type UserDirectExperienceJson = {
   "Scope"?: UserInfluentialFactorsJson
   "Problem"?: UserInfluentialFactorsJson
-  "Causal-Table"?: CausalRelationJson[] /* full table additions */
+  "Causal-Table"?: ThisOrThatConditionalityJson[] /* full table additions */
   "Solution"?: {
-    "Cause-&-Effect"?: CausalRelationJson[] /* (solution only additions */
+    "Cause-&-Effect"?: ThisOrThatConditionalityJson[] /* (solution only additions */
     "Step-by-Step"?: UserInfluentialFactorsJson
     "Process View"?: UserInfluentialFactorsJson
     "Concepts & Relationships"?: UserInfluentialFactorsJson

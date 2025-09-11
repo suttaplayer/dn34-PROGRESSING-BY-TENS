@@ -1,7 +1,7 @@
-import { CausalRelationJson } from "./pattern-API.ts"; // Assuming pattern-API.ts is in the same directory or accessible
+import { ThisOrThatConditionalityJson } from "./pattern-API.ts"; // Assuming pattern-API.ts is in the same directory or accessible
 
 /**
- * Defines how to extract and transform captured groups from a regex match into CausalRelationJson properties.
+ * Defines how to extract and transform captured groups from a regex match into ThisOrThatConditionalityJson properties.
  */
 export type CausalParseTransform = {
     /** The index of the capture group for the 'this' (cause) term. (1-based index, 0 for inference from context). */
@@ -31,15 +31,15 @@ export interface CausalExpression {
     pattern: string;
     /** The category of this causal expression (e.g., 'Direct Causation'). */
     category: CausalCategory;
-    /** The strength of the causal relation, mapping to CausalRelationJson.relation. */
-    relation: CausalRelationJson['relation'];
+    /** The strength of the causal relation, mapping to ThisOrThatConditionalityJson.relation. */
+    relation: ThisOrThatConditionalityJson['relation'];
     /** True if the 'this' component (cause) is implicitly negated (e.g., "lack of _"). */
     notThis?: boolean;
     /** True if the 'that' component (effect) is implicitly negated (e.g., "_ prevents _"). */
     notThat?: boolean;
     /** True if the causal relationship itself is one of impossibility. */
     cannot?: boolean;
-    /** Defines how to extract and transform the captured groups into the 'this' and 'that' for CausalRelationJson.
+    /** Defines how to extract and transform the captured groups into the 'this' and 'that' for ThisOrThatConditionalityJson.
      *  `thisGroup` and `thatGroup` refer to the index of the regex capture groups (1-based). `0` means the value needs to be inferred from surrounding context by the resolver.
      */
     parseTransform: CausalParseTransform;
@@ -169,7 +169,7 @@ export const CausalExpressionGuide: CausalExpression[] = [
         relation: 3,
         parseTransform: { thisGroup: 1, thatGroup: 2 },
         example: "Being heedful, one is capable of abandoning apathy",
-        notes: "Captures direct causal link when one state/quality leads to another. Often appears in longer sequential chains. The 'that' group may contain multiple comma-separated items (e.g., 'apathy, hard to correct, & evil friendship') that need to be parsed into individual CausalRelationJson entries by the resolver.",
+        notes: "Captures direct causal link when one state/quality leads to another. Often appears in longer sequential chains. The 'that' group may contain multiple comma-separated items (e.g., 'apathy, hard to correct, & evil friendship') that need to be parsed into individual ThisOrThatConditionalityJson entries by the resolver.",
     },
 
     // 2. Conditions & Prerequisites (A enables B)
@@ -455,7 +455,7 @@ export const CausalExpressionGuide: CausalExpression[] = [
         cannot: true,
         parseTransform: { thisGroup: 1, thatGroup: 2, transformThat: "abandoning ${thatGroupText}" },
         example: "Being heedless, one is incapable of abandoning apathy",
-        notes: "Captures a cause (X) leading to an inability to achieve a cessation (abandoning Y). The 'that' refers to the action of abandoning, which is unachievable. The 'that' group may contain multiple comma-separated items that need to be parsed into individual CausalRelationJson entries.",
+        notes: "Captures a cause (X) leading to an inability to achieve a cessation (abandoning Y). The 'that' refers to the action of abandoning, which is unachievable. The 'that' group may contain multiple comma-separated items that need to be parsed into individual ThisOrThatConditionalityJson entries.",
     },
     // NEW: Sequential Conditional Link (e.g., "Being X, one is incapable of Y")
     {
@@ -465,7 +465,7 @@ export const CausalExpressionGuide: CausalExpression[] = [
         cannot: true,
         parseTransform: { thisGroup: 1, thatGroup: 2, transformThat: "achieving ${thatGroupText}" },
         example: "Being heedless, one is incapable of right practice",
-        notes: "Captures a cause (X) leading to an inability to achieve an outcome (Y). The 'that' group may contain multiple comma-separated items that need to be parsed into individual CausalRelationJson entries.",
+        notes: "Captures a cause (X) leading to an inability to achieve an outcome (Y). The 'that' group may contain multiple comma-separated items that need to be parsed into individual ThisOrThatConditionalityJson entries.",
     },
     // NEW: Sequential Conditional Link (e.g., "Without abandoning X, one is incapable of abandoning Y")
     {
@@ -476,7 +476,7 @@ export const CausalExpressionGuide: CausalExpression[] = [
         cannot: true,
         parseTransform: { thisGroup: 1, thatGroup: 2, transformThis: "abandoning ${thisGroupText}", transformThat: "abandoning ${thatGroupText}" },
         example: "Without abandoning restlessness, one is incapable of abandoning a lack of restraint",
-        notes: "Captures that a failure to abandon X makes it impossible to achieve abandoning Y. The 'that' group may contain multiple comma-separated items that need to be parsed into individual CausalRelationJson entries.",
+        notes: "Captures that a failure to abandon X makes it impossible to achieve abandoning Y. The 'that' group may contain multiple comma-separated items that need to be parsed into individual ThisOrThatConditionalityJson entries.",
     },
     // NEW: Sequential Conditional Link (e.g., "Without abandoning X, one is incapable of Y")
     {
@@ -487,7 +487,7 @@ export const CausalExpressionGuide: CausalExpression[] = [
         cannot: true,
         parseTransform: { thisGroup: 1, thatGroup: 2, transformThis: "abandoning ${thisGroupText}", transformThat: "achieving ${thatGroupText}" },
         example: "Without abandoning unskillful qualities, one is incapable of realizing unbinding",
-        notes: "Captures that a failure to abandon X makes it impossible to achieve Y. The 'that' group may contain multiple comma-separated items that need to be parsed into individual CausalRelationJson entries.",
+        notes: "Captures that a failure to abandon X makes it impossible to achieve Y. The 'that' group may contain multiple comma-separated items that need to be parsed into individual ThisOrThatConditionalityJson entries.",
     },
     {
         pattern: '(.*?) is not destined for future arising',
@@ -619,7 +619,7 @@ export const CausalExpressionGuide: CausalExpression[] = [
         relation: 3, // Assuming strong causal steps in a chain
         parseTransform: { thisGroup: 1, thatGroup: 2, transformThis: "${thisGroupText}", transformThat: "${thatGroupText}" }, // Placeholder transform, actual logic is in resolver
         example: "hearing Dhamma… remembering it… penetrating the meaning…",
-        notes: "This indicates a parsing strategy: identify segments between ellipses as causal steps (this -> that). The resolver needs to handle dynamic splitting and linking, often creating multiple CausalRelationJson entries. The 'this' and 'that' here are just two consecutive elements, but the full chain needs to be handled by the resolver.",
+        notes: "This indicates a parsing strategy: identify segments between ellipses as causal steps (this -> that). The resolver needs to handle dynamic splitting and linking, often creating multiple ThisOrThatConditionalityJson entries. The 'this' and 'that' here are just two consecutive elements, but the full chain needs to be handled by the resolver.",
     },
     {
         pattern: 'rhetorical question implying causation',
