@@ -79,6 +79,8 @@ export type ScopeJson = TopicJson &{
   subject: SubjectJson[]
 }
 
+export type RelationType = 0 | 1 | 2 | 3 | 4; // 0: is, 1: co-arises with, 2: requisite condition, 3: leads to, 4: causes
+
 /*
 purpose: represents a causal relationship (this or that conditionality)
 created by:
@@ -92,17 +94,73 @@ eg3. {this:"ignorance", relation:3, that:"aging & death, sorrow, lamentation, pa
 => From ignorance as a requisite condition come ... then aging-&-death, sorrow, lamentation, pain, distress, & despair come into play
 eg4. {this: "conviction", relation: 3, that: "discernment", cyclic: true },
 => conviction ... discernment -> conviction
+eg5.
+    {
+      "this": "conviction",
+      "relation": 3,
+      "intermediaries": [
+        "persistence",
+        "mindfulness",
+        "concentration"
+      ],
+      "that": "discernment",
+      "refKey": "five strengths",
+      "suttaRef": "AN 11:13"
+    }
+
+eg6.
+    {
+      "this": "five strengths",
+      "relation": 2,
+      "thatEnumerations": [
+        "recollecting the Tathāgata",
+        "recollect the Dhamma",
+        "recollect the Saṅgha",
+        "recollect your own virtues",
+        "recollect your own generosity",
+        "recollect the devas"
+      ],
+      "suttaRef": "AN 11:13"
+    }
+
+eg7.
+    {
+      "thisEnumerations": [
+        "recollecting the Tathāgata",
+        "recollect the Dhamma",
+        "recollect the Saṅgha",
+        "recollect your own virtues",
+        "recollect your own generosity",
+        "recollect the devas"
+      ],
+      "relation": 2,
+      "intermediaries": [
+        "mind free from passion, aversion, delusion",
+        "mind straight",
+        "joy in Dhamma",
+        "rapture",
+        "body calm",
+        "pleasure"
+      ],
+      "that": "concentration",
+      "suttaRef": "AN 11:13"
+    }
+
 */
 export type ThisOrThatConditionalityJson = {
   notThis?: boolean /* boolean value indicating inverse of the causal reference (default: boolean|null)*/
-  this: string /* string of the cause in lowercase (eg. "admirable friendship")*/
-  relation: number /* 0|undefined = co-arises with, 1=requisite condition, 2=leads to, 3=causes */
+  this?: string /* string of the cause in lowercase (eg. "admirable friendship")*/
+  thisEnumerations?: string[] /* array of string of enumerated causes in lowercase (eg. ["shame", "fear"])*/
+  relation: RelationType /* integer value indicating the type of causal relationship (default: 0)*/
   cannot?: boolean /* boolean value indicating an impossible causal relationship (default: boolean|null)*/
   notThat?: boolean /* boolean value indicating inverse of the effect reference (default: boolean|null)*/
-  that: string /* string of the effect in lowercase (eg. "conviction")*/
+  that?: string /* string of the effect in lowercase (eg. "conviction")*/
+  thatEnumerations?: string[] /* array of string of enumerated effects in lowercase (eg. ["conviction", "courage"])*/
   intermediaries?: string[] /* array of string of the intermediate links in the causal chain */
   cyclic?: boolean /* boolean value indicating "that" has a return causal influence on "this" */
   quotationIndicies?: number[] /* number[] of the array index position(s) of the directly associated quote where this/that relationships was derived from */
+  refKey?: string /* string of the reference key (eg. "five strengths") */
+  suttaRef?: string /* string of the sutta reference (eg. "AN 3.65") */
 }
 
 /*

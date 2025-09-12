@@ -1,9 +1,9 @@
 {
   "meta": {
     "artifactName": "Core Composite States Inventory Document",
-    "version": "1.1.0",
+    "version": "1.3.0",
     "purpose": "A canonical inventory of core concurrent composite mind states and external states for use in pattern generation, causal analysis, and state transitions.",
-    "generatedDate": "2024-03-01"
+    "generatedDate": "2024-03-08"
   },
   "mindStates": {
     "heedfulness": {
@@ -72,21 +72,11 @@
         {
           "name": "hindrances active",
           "definition": "One or more of the five hindrances (sensual desire, ill will, sloth & torpor, restlessness & anxiety, uncertainty) are present, obstructing mental clarity and concentration.",
-          "canonicalReferences": ["[AN_nblm.txt, 75]", "[MN_nblm.txt, 134, 135]"]
+          "canonicalReferences": ["..."]
         },
         {
-          "name": "hindrances subdued",
-          "definition": "The five hindrances have been temporarily overcome, allowing for the development of concentration.",
-          "canonicalReferences": ["[AN_nblm.txt, 471]"]
-        },
-        {
-          "name": "fetters active",
-          "definition": "One or more of the ten fetters (lower or higher) are present, binding beings to the cycle of rebirth.",
-          "canonicalReferences": ["[AN_nblm.txt, 471]", "[DN_nblm.txt, 179]"]
-        },
-        {
-          "name": "fetters abandoned",
-          "definition": "The fetters have been eradicated, leading to progress on the path of liberation.",
+          "name": "hindrances abandoned",
+          "definition": "The hindrances have been eradicated, leading to progress on the path of liberation.",
           "canonicalReferences": ["[KN_StNp_nblm.txt, 107]", "[MN_nblm.txt, 176]"]
         },
         {
@@ -117,28 +107,13 @@
         {
           "name": "impurities abandoned",
           "definition": "The impurities have been given up, leading to purification.",
-          "canonicalReferences": ["[KN_Dhp_nblm.txt, 98]"]
-        },
-        {
-          "name": "mental resistance active",
-          "definition": "A state of opposition or aversion in the mind, often in response to sensory experiences or ideas.",
-          "canonicalReferences": ["[AN_nblm.txt, 489]", "[SN_nblm.txt, 271]"]
-        },
-        {
-          "name": "wrong views",
-          "definition": "Mistaken understandings or theories about the nature of reality, often rooted in ignorance or delusion, leading to unskillful actions.",
-          "canonicalReferences": ["[AN_nblm.txt, 17, 18, 64]", "[DN_nblm.txt, 66]", "[MN_nblm.txt, 141, 142, 152, 190, 191, 192, 193, 252]", "[SN_nblm.txt, 252]"]
+          "canonicalReferences": ["..."]
         }
       ]
     },
     "factors_for_awakening": {
-      "description": "Seven skillful mental qualities that lead to enlightenment and unbinding.",
+      "description": "Qualities that contribute to the development of insight and liberation.",
       "states": [
-        {
-          "name": "mindfulness (active)",
-          "definition": "Active presence of mindfulness, remembering and able to call to mind, serving as a gatekeeper.",
-          "canonicalReferences": ["[AN_nblm.txt, 30, 49, 50, 57, 80, 84, 89, 90]", "[DN_nblm.txt, 63, 66, 76, 77, 81, 83]", "[KN_Khp_nblm.txt, 101]", "[MN_nblm.txt, 134, 148, 158, 159, 161, 164, 165, 168, 169, 177, 178, 181, 192, 197, 205, 208, 211, 218, 227]", "[SN_nblm.txt, 271, 273, 278, 282, 283, 286, 288]"]
-        },
         {
           "name": "analysis of qualities (active)",
           "definition": "Skillful investigation and discernment of mental qualities, distinguishing wholesome from unwholesome.",
@@ -147,27 +122,32 @@
         {
           "name": "persistence (active)",
           "definition": "Aroused and unflagging effort to abandon unskillful qualities and cultivate skillful ones.",
-          "canonicalReferences": ["[AN_nblm.txt, 6, 29, 48]", "[DN_nblm.txt, 81, 83]", "[KN_Khp_nblm.txt, 101]", "[MN_nblm.txt, 165, 169, 182, 208]", "[SN_nblm.txt, 282, 283, 285, 287, 288]"]
+          "canonicalReferences": ["[AN_nblm.txt, 6, 29, 44, 47, 50]", "[DN_nblm.txt, 81, 83]", "[KN_Khp_nblm.txt, 101]", "[MN_nblm.txt, 108, 165, 169, 182, 208]", "[SN_nblm.txt, 282, 283, 285, 287, 288]"]
         },
         {
           "name": "rapture (active)",
-          "definition": "Mental exhilaration or joy, typically arising from seclusion and the abandonment of hindrances, leading to calm.",
-          "canonicalReferences": ["[AN_nblm.txt, 23, 24, 25, 492, 66]", "[DN_nblm.txt, 79]", "[KN_Khp_nblm.txt, 101]", "[SN_nblm.txt, 273, 274, 276]"]
-        },
-        {
-          "name": "calm (active)",
-          "definition": "Tranquility and serenity of body and mind, a result of rapture and conducive to concentration.",
-          "canonicalReferences": ["[AN_nblm.txt, 23, 24, 25, 66]", "[DN_nblm.txt, 79]", "[KN_Khp_nblm.txt, 101]", "[SN_nblm.txt, 273, 276]"]
-        },
-        {
-          "name": "concentration (active)",
-          "definition": "Unified, single-pointed awareness, free from distraction, a foundation for insight.",
+          "definition": "A strong feeling of joy and delight, often arising from mental seclusion and leading to calm.",
           "canonicalReferences": ["[AN_nblm.txt, 27, 49, 50, 66]", "[DN_nblm.txt, 71, 74, 79]", "[KN_Khp_nblm.txt, 101]", "[MN_nblm.txt, 134, 161, 167, 168]", "[SN_nblm.txt, 273, 282, 283, 286, 288]"]
         },
         {
-          "name": "equanimity (active)",
-          "definition": "A state of balanced, impartial awareness, neither pleased nor displeased, especially profound in the higher Jhānas.",
+          "name": "calm (active)",
+          "definition": "Tranquility of body and mind, a prerequisite for concentration.",
           "canonicalReferences": ["[AN_nblm.txt, 27, 25, 65, 470]", "[DN_nblm.txt, 227]", "[KN_Khp_nblm.txt, 101]", "[KN_StNp_nblm.txt, 120]", "[MN_nblm.txt, 199, 201]"]
+        },
+        {
+          "name": "mindfulness (active)",
+          "definition": "A state of active mental vigilance, alertness, and conscientiousness, essential for cultivating skillful qualities and avoiding defilements.",
+          "canonicalReferences": ["[AN_nblm.txt, 6, 49, 50, 51]", "[KN_Dhp_nblm.txt, 98]", "[MN_nblm.txt, 107, 108, 134, 148, 159, 161, 182]", "[SN_nblm.txt, 272, 273, 285]"]
+        },
+        {
+          "name": "concentration (active)",
+          "definition": "A state of mental unification and absorption, a prerequisite for discernment and insight.",
+          "canonicalReferences": ["[AN_nblm.txt, 27, 303, 315]", "[DN_nblm.txt, 54]", "[MN_nblm.txt, 107, 147]", "[SN_nblm.txt, 273, 286, 288]"]
+        },
+        {
+          "name": "equanimity (active)",
+          "definition": "A state of balanced, even-minded awareness, free from attraction and aversion.",
+          "canonicalReferences": ["[AN_nblm.txt, 45, 46, 517, 518]", "[KN_Khp_nblm.txt, 101]", "[MN_nblm.txt, 165]", "[SN_nblm.txt, 282, 283, 286, 288, 289]"]
         }
       ]
     },
@@ -177,82 +157,17 @@
         {
           "name": "unconcentrated",
           "definition": "A mind that is scattered, ununified, or unpliant, often associated with unskillful states and leading to harm.",
-          "canonicalReferences": ["[AN_nblm.txt, 27, 303, 315]", "[DN_nblm.txt, 54]", "[MN_nblm.txt, 147]"]
-        },
-        {
-          "name": "in_stability (first jhana)",
-          "definition": "The first state of meditative absorption, characterized by seclusion from sensuality and unskillful qualities, with directed thought and evaluation, and born of seclusion and rapture.",
-          "canonicalReferences": ["[AN_nblm.txt, 471]"]
-        },
-        {
-          "name": "in_stability (second jhana)",
-          "definition": "The second state of meditative absorption, characterized by the cessation of directed thought and evaluation, with internal assurance and unification of mind, and born of concentration, rapture, and ease.",
-          "canonicalReferences": ["[AN_nblm.txt, 493]"]
-        },
-        {
-          "name": "in_stability (third jhana)",
-          "definition": "The third state of meditative absorption, characterized by the fading of rapture, dwelling in equanimity, mindful and alert, and experiencing ease in the body.",
-          "canonicalReferences": ["[AN_nblm.txt, 493]"]
-        },
-        {
-          "name": "in_stability (fourth jhana)",
-          "definition": "The fourth state of meditative absorption, characterized by the abandoning of pleasure and pain, purity of equanimity and mindfulness, with neither pleasure nor pain, and cessation of in-and-out breath.",
-          "canonicalReferences": ["[AN_nblm.txt, 471, 494]"]
+          "canonicalReferences": ["[AN_nblm.txt, 27, 303, 315]", "[DN_nblm.txt, 54]", "[MN_nblm.txt, 100, 147]"]
         },
         {
           "name": "in_distinction",
           "definition": "A state of heightened insight and knowledge, leading to a noble distinction in understanding phenomena.",
-          "canonicalReferences": ["[AN_nblm.txt, 316, 495]"]
+          "canonicalReferences": ["[AN_nblm.txt, 316, 495]", "[SN_nblm.txt, 518, 519]"]
         },
         {
           "name": "in_penetration",
           "definition": "A state of profound insight leading to the direct knowing and realization of unbinding and the ending of effluents.",
-          "canonicalReferences": ["[DN_nblm.txt, 72]", "[AN_nblm.txt, 316, 496]"]
-        },
-        {
-          "name": "first opening to release",
-          "definition": "An initial stage of liberation, characterized by concentrated mind and leading towards further release.",
-          "canonicalReferences": ["[DN_nblm.txt, 79]"]
-        }
-      ]
-    },
-    "perceptions": {
-      "description": "The mind's way of categorizing and interpreting sensory data and ideas.",
-      "states": [
-        {
-          "name": "perception of inconstancy",
-          "definition": "The clear awareness of the impermanent nature of all phenomena.",
-          "canonicalReferences": ["[DN_nblm.txt, 72]", "[SN_nblm.txt, 93]"]
-        },
-        {
-          "name": "perception of stress in inconstant",
-          "definition": "The clear awareness that what is impermanent is inherently unsatisfactory (stressful).",
-          "canonicalReferences": ["[DN_nblm.txt, 72]", "[AN_nblm.txt, 498]"]
-        },
-        {
-          "name": "perception of not-self in stressful",
-          "definition": "The clear awareness that what is stressful cannot be considered 'self' or 'mine'.",
-          "canonicalReferences": ["[DN_nblm.txt, 72]", "[AN_nblm.txt, 498]"]
-        },
-        {
-          "name": "perception of abandoning",
-          "definition": "The clear awareness of the need to relinquish defilements and attachments.",
-          "canonicalReferences": ["[DN_nblm.txt, 72]"]
-        },
-        {
-          "name": "perception of dispassion",
-          "definition": "The clear awareness of the benefits of detachment and non-attraction to phenomena.",
-          "canonicalReferences": ["[DN_nblm.txt, 72]"]
-        },
-        {
-          "name": "perception of cessation",
-          "definition": "The clear awareness of the ending of suffering and defilements (Nibbāna).",
-          "canonicalReferences": ["[DN_nblm.txt, 72]"]
-        },
-        {
-          "name": "perceptions & categories of objectification active",
-          "definition": "The mind's tendency to conceptualize, fabricate, and cling to ideas, assailing it with regard to past, present, & future.",
-          "canonicalReferences": ["[MN_nblm.txt, 132]", "[AN_nblm.txt, 317, 499]"]
+          "canonicalReferences": ["[DN_nblm.txt, 72]", "[AN_nblm.txt, 316, 496]", "[SN_nblm.txt, 519]"]
         }
       ]
     },
@@ -295,29 +210,19 @@
       "description": "The faculty of wisdom, understanding, and insight into the nature of reality.",
       "states": [
         {
-          "name": "undeveloped discernment",
-          "definition": "A state where the faculty of wisdom is weak or not yet cultivated, leading to a lack of clear understanding.",
-          "canonicalReferences": ["[AN_nblm.txt, 10, 504]"]
-        },
-        {
-          "name": "discernment developing",
-          "definition": "The process of cultivating and strengthening the faculty of wisdom and insight.",
-          "canonicalReferences": ["[AN_nblm.txt, 29, 505]"]
-        },
-        {
-          "name": "strong discernment",
-          "definition": "A well-developed faculty of wisdom, capable of penetrating the Dhamma.",
-          "canonicalReferences": ["[AN_nblm.txt, 45, 46, 52, 53, 54, 55, 56, 471, 506]", "[DN_nblm.txt, 61]", "[MN_nblm.txt, 165]", "[SN_nblm.txt, 236, 253, 254, 256, 257, 258, 259, 261, 281, 284]"]
+          "name": "discernment (active)",
+          "definition": "The active faculty of wisdom, understanding, and insight into the nature of reality, encompassing both a general quality and a specific faculty (indriya).",
+          "canonicalReferences": ["[AN_nblm.txt, 44, 45, 46, 50, 52, 53, 54, 55, 56, 471, 506, 525]", "[DN_nblm.txt, 61, 65, 66]", "[MN_nblm.txt, 108, 165]", "[SN_nblm.txt, 236, 253, 254, 256, 257, 258, 259, 261, 281, 284]"]
         },
         {
           "name": "knowledge & vision",
           "definition": "Direct, experiential insight and understanding, often referring to the higher knowledges attained in practice.",
-          "canonicalReferences": ["[AN_nblm.txt, 86]", "[DN_nblm.txt, 74, 185]", "[MN_nblm.txt, 150]", "[SN_nblm.txt, 262]"]
+          "canonicalReferences": ["[AN_nblm.txt, 86]", "[DN_nblm.txt, 74, 185, 186]", "[MN_nblm.txt, 150]", "[SN_nblm.txt, 262, 525, 526]"]
         },
         {
           "name": "clear knowing",
           "definition": "A state of unimpeded understanding and insight, free from confusion or muddle.",
-          "canonicalReferences": ["[SN_nblm.txt, 160, 270]", "[AN_nblm.txt, 507]"]
+          "canonicalReferences": ["[SN_nblm.txt, 160, 270]", "[AN_nblm.txt, 507, 527]"]
         }
       ]
     },
@@ -327,92 +232,57 @@
         {
           "name": "unvirtuous",
           "definition": "Engaging in unskillful or unethical bodily, verbal, or mental conduct.",
-          "canonicalReferences": ["[AN_nblm.txt, 488]", "[MN_nblm.txt, 126]", "[AN_nblm.txt, 508]"]
+          "canonicalReferences": ["[AN_nblm.txt, 488, 508]", "[MN_nblm.txt, 126]"]
         },
         {
           "name": "pure bodily conduct",
           "definition": "Skillful and ethical actions performed with the body, free from harm.",
-          "canonicalReferences": ["[AN_nblm.txt, 7]", "[MN_nblm.txt, 155, 172, 177]", "[AN_nblm.txt, 509]"]
+          "canonicalReferences": ["[AN_nblm.txt, 7, 509]", "[MN_nblm.txt, 155, 172, 177]"]
         },
         {
           "name": "pure verbal conduct",
           "definition": "Skillful and ethical speech, free from falsehood, harshness, or divisive words.",
-          "canonicalReferences": ["[AN_nblm.txt, 7, 63]", "[MN_nblm.txt, 156, 173, 174, 177]", "[AN_nblm.txt, 509]"]
+          "canonicalReferences": ["[AN_nblm.txt, 7, 63, 509]", "[MN_nblm.txt, 156, 173, 174, 177]"]
         },
         {
           "name": "pure mental conduct",
           "definition": "Skillful and ethical thoughts, free from covetousness, ill will, or wrong view.",
-          "canonicalReferences": ["[AN_nblm.txt, 7, 64]", "[MN_nblm.txt, 156, 175, 176, 177]", "[AN_nblm.txt, 510]"]
+          "canonicalReferences": ["[AN_nblm.txt, 7, 64, 510]", "[MN_nblm.txt, 156, 175, 176, 177]"]
+        },
+        {
+          "name": "virtuous",
+          "definition": "Endowed with ethical conduct, restraining from unskillful actions and cultivating skillful ones.",
+          "canonicalReferences": ["[AN_nblm.txt, 16, 22, 25, 29, 30, 45, 46, 50, 51, 52, 53, 55, 56, 57, 58, 62, 64, 84, 85, 90, 92, 95, 100, 108, 120, 121, 124, 125, 138, 140, 147, 158, 159, 168, 183, 185, 189, 191, 214, 216, 217, 252, 273, 274, 279, 281, 309, 313, 318, 319, 321, 354, 356, 358, 359, 360, 363, 364, 380, 420, 452, 453, 454, 455, 457, 460, 463, 473, 479, 484, 485, 519, 520, 521, 522, 524, 526, 528]"]
         }
       ]
     },
     "release_unbinding": {
-      "description": "The culmination of the holy life, involving freedom from defilements and suffering.",
+      "description": "The various stages and forms of liberation from suffering and the cycle of rebirth.",
       "states": [
         {
-          "name": "unreleased",
-          "definition": "A mind still bound by defilements, not yet liberated from suffering.",
-          "canonicalReferences": ["[AN_nblm.txt, 32, 163]", "[MN_nblm.txt, 182]", "[AN_nblm.txt, 510]"]
-        },
-        {
           "name": "awareness-release",
-          "definition": "A form of liberation attained through profound meditative states (Jhānas), where the mind is freed from mental defilements.",
-          "canonicalReferences": ["[AN_nblm.txt, 10, 27, 29, 31, 37, 67, 89]", "[DN_nblm.txt, 71, 74, 185]", "[KN_Ud_nblm.txt, 117]", "[MN_nblm.txt, 163, 185, 199, 205]", "[SN_nblm.txt, 277, 279]", "[AN_nblm.txt, 511]"]
+          "definition": "A form of liberation attained through the development of serene meditative states, leading to the ending of effluents.",
+          "canonicalReferences": ["[AN_nblm.txt, 10, 27, 29, 31, 37, 67, 89, 230]", "[DN_nblm.txt, 71, 74, 185]", "[KN_Ud_nblm.txt, 117]", "[MN_nblm.txt, 163, 185, 199, 205]", "[SN_nblm.txt, 277, 279]"]
         },
         {
           "name": "discernment-release",
           "definition": "A form of liberation attained through penetrating insight and wisdom, leading to the ending of effluents.",
-          "canonicalReferences": ["[AN_nblm.txt, 10, 27, 31]", "[DN_nblm.txt, 71, 74, 185]", "[KN_Ud_nblm.txt, 117]", "[MN_nblm.txt, 163, 185, 199, 205]", "[SN_nblm.txt, 277, 279]", "[AN_nblm.txt, 511, 512]"]
+          "canonicalReferences": ["[AN_nblm.txt, 10, 27, 31, 231]", "[DN_nblm.txt, 71, 74, 185]", "[KN_Ud_nblm.txt, 117]", "[MN_nblm.txt, 163, 185, 199, 205]", "[SN_nblm.txt, 277, 279]"]
         },
         {
-          "name": "total unbinding",
-          "definition": "The complete and final liberation from suffering, the end of the cycle of rebirth (Nibbāna).",
-          "canonicalReferences": ["[DN_nblm.txt, 61, 63, 72, 74, 76, 77, 82, 84, 86]", "[KN_Dhp_nblm.txt, 98]", "[KN_Khp_nblm.txt, 101]", "[KN_StNp_nblm.txt, 106, 107, 109, 110]", "[KN_Thag_nblm.txt, 112]", "[KN_Thig_nblm.txt, 113]", "[KN_Ud_nblm.txt, 116]", "[MN_nblm.txt, 127, 128, 141, 144, 185, 203, 218, 221, 222, 223, 225, 228, 243, 246, 249, 250, 251, 254, 256, 259]", "[SN_nblm.txt, 223, 238, 243, 246, 249, 250, 251, 254, 256, 259, 265]", "[AN_nblm.txt, 512, 513]"]
+          "name": "knowledge & vision of release",
+          "definition": "The ultimate direct knowledge and insight that confirms one's liberation.",
+          "canonicalReferences": ["[DN_nblm.txt, 76, 77, 188]", "[MN_nblm.txt, 127, 128, 180, 181, 203, 218, 221, 225]", "[SN_nblm.txt, 258, 262, 231]"]
+        },
+        {
+          "name": "unbinding",
+          "definition": "The ultimate goal of Buddhist practice: complete liberation from suffering and the cycle of rebirth (Nibbāna).",
+          "canonicalReferences": ["[AN_nblm.txt, 29, 31, 232]", "[DN_nblm.txt, 61, 71, 74, 187]", "[KN_Dhp_nblm.txt, 112]", "[KN_Iti_nblm.txt, 74, 105]", "[KN_Khp_nblm.txt, 101]", "[KN_Thag_nblm.txt, 89, 112, 232]", "[KN_Ud_nblm.txt, 117]", "[MN_nblm.txt, 99, 123, 125, 127, 128, 153, 154, 163, 182, 183, 185, 199, 203, 205, 225]", "[SN_nblm.txt, 176, 178, 179, 180, 238, 246, 249, 250, 251, 253, 254, 256, 258, 259, 262, 272]"]
         },
         {
           "name": "cooled state",
-          "definition": "A state of profound peace and freedom, free from the 'fires' of passion, aversion, and delusion.",
-          "canonicalReferences": ["[KN_StNp_nblm.txt, 104, 109]", "[AN_nblm.txt, 513, 514]"]
-        }
-      ]
-    },
-    "craving": {
-      "description": "The root of suffering, manifesting in various forms of desire and attachment.",
-      "states": [
-        {
-          "name": "sensuality-craving",
-          "definition": "Craving for sensory pleasures.",
-          "canonicalReferences": ["[AN_nblm.txt, 42, 513]", "[MN_nblm.txt, 132]"]
-        },
-        {
-          "name": "becoming-craving",
-          "definition": "Craving for continued existence or rebirth.",
-          "canonicalReferences": ["[AN_nblm.txt, 42, 514]", "[MN_nblm.txt, 132]"]
-        },
-        {
-          "name": "non-becoming-craving",
-          "definition": "Craving for annihilation or non-existence.",
-          "canonicalReferences": ["[AN_nblm.txt, 42, 514]", "[MN_nblm.txt, 132]"]
-        },
-        {
-          "name": "craving active",
-          "definition": "The active presence of craving in any of its forms, binding beings to the cycle of suffering.",
-          "canonicalReferences": ["[AN_nblm.txt, 42, 514]", "[MN_nblm.txt, 154, 202]", "[SN_nblm.txt, 233, 237, 240, 242]"]
-        }
-      ]
-    },
-    "clinging_sustenance": {
-      "description": "Grasping and holding onto phenomena, which fuels the cycle of becoming.",
-      "states": [
-        {
-          "name": "clinging to aggregates",
-          "definition": "Grasping at the five clinging-aggregates (form, feeling, perception, fabrications, consciousness) as 'self' or 'mine'.",
-          "canonicalReferences": ["[KN_Khp_nblm.txt, 105]", "[MN_nblm.txt, 132, 201, 203]", "[SN_nblm.txt, 231, 247, 257, 258]", "[AN_nblm.txt, 326]"]
-        },
-        {
-          "name": "lack of clinging/sustenance",
-          "definition": "The absence of grasping or holding onto phenomena, leading to freedom and non-agitation.",
-          "canonicalReferences": ["[DN_nblm.txt, 76, 77, 188]", "[MN_nblm.txt, 127, 128, 180, 181, 203, 218, 221, 225]", "[SN_nblm.txt, 258, 262]", "[AN_nblm.txt, 326, 515]"]
+          "definition": "A state of profound peace and freedom from the 'fires' of greed, aversion, and delusion.",
+          "canonicalReferences": ["[KN_Thig_nblm.txt, 77]", "[KN_Thag_nblm.txt, 87]", "[SN_nblm.txt, 532]"]
         }
       ]
     },
@@ -422,12 +292,12 @@
         {
           "name": "conviction",
           "definition": "A firm and unwavering faith or confidence in the Buddha, Dhamma, and Sangha, leading to effort and discernment.",
-          "canonicalReferences": ["[AN_nblm.txt, 25, 46, 47, 52, 56, 66]", "[DN_nblm.txt, 71, 90, 92]", "[MN_nblm.txt, 194]", "[SN_nblm.txt, 285, 286, 287, 288, 289]"]
+          "canonicalReferences": ["[AN_nblm.txt, 25, 46, 47, 52, 56, 66, 233]", "[DN_nblm.txt, 68, 71, 90, 92]", "[MN_nblm.txt, 116, 194]", "[SN_nblm.txt, 162, 137, 285, 286, 287, 288, 289]"]
         },
         {
           "name": "lack of conviction",
           "definition": "Absence of firm faith or confidence, which can hinder the development of skillful qualities and lead to ignorance.",
-          "canonicalReferences": ["[AN_nblm.txt, 75]"]
+          "canonicalReferences": ["[AN_nblm.txt, 75, 234, 535]"]
         }
       ]
     },
@@ -437,22 +307,17 @@
         {
           "name": "origination of kamma",
           "definition": "The arising or production of intentional actions (kamma), driven by roots like greed, aversion, and delusion.",
-          "canonicalReferences": ["[AN_nblm.txt, 6]"]
-        },
-        {
-          "name": "cessation of ignorance",
-          "definition": "The complete ending of ignorance, which initiates the reversal of the Dependent Co-arising chain.",
-          "canonicalReferences": ["[KN_StNp_nblm.txt, 105]", "[MN_nblm.txt, 153]"]
+          "canonicalReferences": ["[AN_nblm.txt, 6, 234]"]
         },
         {
           "name": "cessation of fabrications",
-          "definition": "The complete ending of mental, verbal, and bodily fabrications, a direct result of the cessation of ignorance.",
-          "canonicalReferences": ["[MN_nblm.txt, 153]"]
+          "definition": "The ending of volitional formations or mental activities.",
+          "canonicalReferences": ["[SN_nblm.txt, 51, 71, 74, 79, 139, 141, 142, 153, 154, 185, 196, 197, 235]"]
         },
         {
           "name": "cessation of effluents",
-          "definition": "The complete ending of the three effluents (sensuality, becoming, ignorance), which signifies total liberation.",
-          "canonicalReferences": ["[MN_nblm.txt, 71, 74, 153, 185]"]
+          "definition": "The ending of the mental defilements (sensuality, becoming, ignorance) that perpetuate suffering.",
+          "canonicalReferences": ["[SN_nblm.txt, 71, 74, 153, 185, 235, 536]"]
         }
       ]
     },
@@ -462,97 +327,87 @@
         {
           "name": "purification of beings",
           "definition": "The cleansing and refinement of individuals, leading to a higher state of being.",
-          "canonicalReferences": ["[DN_nblm.txt, 63, 77]"]
+          "canonicalReferences": ["[DN_nblm.txt, 63, 77]", "[AN_nblm.txt, 236, 537]"]
         },
         {
           "name": "overcoming of sorrow & lamentation",
           "definition": "The eradication of grief, sadness, and distress.",
-          "canonicalReferences": ["[DN_nblm.txt, 63, 77]"]
+          "canonicalReferences": ["[AN_nblm.txt, 49, 174, 175, 236, 537]"]
         },
         {
           "name": "disappearance of pain & distress",
-          "definition": "The cessation of physical and mental suffering.",
-          "canonicalReferences": ["[DN_nblm.txt, 63, 77]"]
+          "definition": "The cessation of physical and mental pain and suffering.",
+          "canonicalReferences": ["[AN_nblm.txt, 49, 174, 175, 238, 538]"]
         },
         {
           "name": "attainment of right method",
-          "definition": "Achieving the correct and effective approach to Dhamma practice.",
-          "canonicalReferences": ["[DN_nblm.txt, 63, 77]"]
+          "definition": "The achievement of the correct and effective approach or path to liberation.",
+          "canonicalReferences": ["[AN_nblm.txt, 49, 239, 538]"]
         }
       ]
     },
-    "suffering_states": {
-      "description": "Various manifestations of suffering, ranging from subtle dis-ease to intense pain and despair.",
-      "states": [
-        {
-          "name": "mass of suffering (aging & death, etc.)",
-          "definition": "The full culmination of the cycle of suffering, including aging, death, sorrow, lamentation, pain, distress, and despair.",
-          "canonicalReferences": ["[DN_nblm.txt, 66]", "[MN_nblm.txt, 151]"]
-        }
-      ]
-    },
-    "externalStates": {
-      "description": "External conditions or influences relevant to Dhamma practice.",
+    "external_factors": {
+      "description": "Environmental or social factors that influence spiritual development.",
       "states": [
         {
           "name": "admirable friendship",
-          "definition": "The external state of having wise, virtuous, and supportive companions on the spiritual path.",
-          "canonicalReferences": ["[AN_nblm.txt, 56]", "[DN_nblm.txt, 71]", "[MN_nblm.txt, 182, 183]", "[AN_nblm.txt, 515]"]
+          "definition": "Associating with virtuous, wise, and supportive individuals, crucial for spiritual progress.",
+          "canonicalReferences": ["[AN_nblm.txt, 56]", "[DN_nblm.txt, 71]", "[MN_nblm.txt, 182, 183]", "[AN_nblm.txt, 515, 236, 540]"]
         },
         {
           "name": "not admirable friendship",
           "definition": "The absence of admirable friendship, or associating with people of no integrity, which can lead to unskillful qualities.",
-          "canonicalReferences": ["[AN_nblm.txt, 75]"]
+          "canonicalReferences": ["[AN_nblm.txt, 75, 237, 540]"]
         },
         {
           "name": "suitable resting places",
           "definition": "External environments conducive to spiritual practice, such as secluded roots of trees or empty dwellings.",
-          "canonicalReferences": ["[AN_nblm.txt, 35, 49, 133, 197, 228, 274, 282, 283, 284]", "[MN_nblm.txt, 182, 183]", "[AN_nblm.txt, 516]"]
+          "canonicalReferences": ["[AN_nblm.txt, 35, 46, 118, 177, 178, 179, 180, 181, 182, 237, 540]"]
         },
         {
           "name": "worldly gains & offerings",
           "definition": "External acquirements such as material support or fame, which can be an obstacle if one becomes intoxicated or complacent.",
-          "canonicalReferences": ["[MN_nblm.txt, 150]", "[SN_nblm.txt, 240]", "[AN_nblm.txt, 327, 516]"]
+          "canonicalReferences": ["[MN_nblm.txt, 150]", "[SN_nblm.txt, 240]", "[AN_nblm.txt, 327, 516, 237]"]
         },
         {
           "name": "hearing true Dhamma",
           "definition": "The act of listening to and learning the authentic teachings of the Dhamma, a prerequisite for understanding and practice.",
-          "canonicalReferences": ["[DN_nblm.txt, 71]", "[AN_nblm.txt, 15, 36, 44, 48, 50, 57, 75, 471]", "[SN_nblm.txt, 244]", "[MN_nblm.txt, 209, 210]"]
-        },
-        {
-          "name": "not hearing true Dhamma",
-          "definition": "The absence of hearing the true Dhamma, which contributes to ignorance.",
-          "canonicalReferences": ["[AN_nblm.txt, 75]"]
-        },
-        {
-          "name": "Dhamma practice",
-          "definition": "Engaging in actions, verbal conduct, and mental cultivation in accordance with the Dhamma.",
-          "canonicalReferences": ["[DN_nblm.txt, 71]", "[AN_nblm.txt, 15]"]
+          "canonicalReferences": ["[AN_nblm.txt, 238, 541]", "[KN_Thag_nblm.txt, 86]"]
         }
       ]
     },
-    "meditative_progress": {
-      "description": "Sequential stages and experiences in the development of concentration and insight.",
+    "mental_states": {
+      "description": "Additional mental states that are significant in the Dhamma, including those that lead to specific outcomes.",
       "states": [
         {
-          "name": "arising of joy",
-          "definition": "The initial emergence of joy, often a precursor to rapture in meditative development.",
-          "canonicalReferences": ["[DN_nblm.txt, 79]"]
+          "name": "freedom from remorse",
+          "definition": "A state of mind free from regret or guilt, a beneficial outcome of virtuous conduct.",
+          "canonicalReferences": ["[AN_nblm.txt, 58, 183, 238, 541]", "[KN_Iti_nblm.txt, 267]"]
         },
         {
-          "name": "arising of rapture",
-          "definition": "A state of exhilaration and delight, typically following joy in meditative progression.",
-          "canonicalReferences": ["[DN_nblm.txt, 79]"]
+          "name": "joy (active)",
+          "definition": "A pleasurable mental state, often a precursor to rapture and calm, arising from positive mental states like freedom from remorse.",
+          "canonicalReferences": ["[AN_nblm.txt, 45, 46, 58, 183, 184, 185, 186, 187, 188, 189, 190, 191, 239, 542]", "[KN_Iti_nblm.txt, 262]"]
         },
         {
-          "name": "body calm",
-          "definition": "A state of physical tranquility and relaxation, often a result of rapture.",
-          "canonicalReferences": ["[DN_nblm.txt, 79]"]
+          "name": "pleasure (active)",
+          "definition": "A pleasant feeling, either physical or mental, often associated with jhāna states and leading to concentration.",
+          "canonicalReferences": ["[AN_nblm.txt, 183, 184, 185, 186, 187, 188, 189, 190, 191, 239, 543]", "[MN_nblm.txt, 374, 375, 376]", "[SN_nblm.txt, 490]"]
         },
         {
-          "name": "ease",
-          "definition": "A pleasant and comfortable mental and physical state, arising from a calmed body.",
-          "canonicalReferences": ["[DN_nblm.txt, 79]"]
+          "name": "disenchantment (active)",
+          "definition": "A sense of disillusionment or weariness with worldly phenomena, a step towards dispassion.",
+          "canonicalReferences": ["[AN_nblm.txt, 49, 183, 240, 543]", "[DN_nblm.txt, 61, 187]", "[KN_StNp_nblm.txt, 303]", "[MN_nblm.txt, 434, 435, 436, 437]", "[SN_nblm.txt, 139, 154, 166]"]
+        },
+        {
+          "name": "dispassion (active)",
+          "definition": "The absence of passion or attachment, leading to cessation and unbinding.",
+          "canonicalReferences": ["[AN_nblm.txt, 183, 240, 544]", "[DN_nblm.txt, 61, 187]", "[MN_nblm.txt, 372]", "[SN_nblm.txt, 139, 154, 166, 494, 495]"]
+        },
+        {
+          "name": "mind straight",
+          "definition": "A mind that is not crooked, not bent, not twisted; a mind of integrity and uprightness, leading to further wholesome states.",
+          "canonicalReferences": ["AN_nblm.txt > MAHĀNĀMA SUTTA  Aṅguttara Nikāya 11:13 (saved note)"]
         }
       ]
     }
