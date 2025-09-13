@@ -48,7 +48,7 @@ class CommandResolver extends WorkTaskResolver {
     // For simulation, I'll use a fixed set of relevant excerpts that cover the running example.
     // The actual NBLM environment would perform a semantic search over all designated sources.
     const relevantExcerpts: DeterminantQuotationString[] = [
-      // From AN_nblm.txt
+      // From sutta-AN.txt
       "'Develop what is skillful, monks. It is possible to develop what is skillful.",
       "'Investigating it, examining it, he shows skepticism toward a matter that merits skepticism.",
       "Greed is a cause for the origination of actions. Aversion is a cause for the origination of actions. Delusion is a cause for the origination of actions.",
@@ -63,30 +63,30 @@ class CommandResolver extends WorkTaskResolver {
       "Because of that gain, he becomes intoxicated, complacent, & falls into heedlessness.",
       "When one falls back on what was done in the past as being essential, monks, there is no desire, no effort (at the thought), 'This should be done. This shouldn't be done.'",
       "The Blessed One has compared sensual pleasures to a chain of bones: of much stress, much despair, & greater drawbacks.",
-      // From DN_nblm.txt
+      // From sutta-DN.txt
       "Deep is this dependent co-arising, and deep its appearance. It's because of not understanding and not penetrating this Dhamma that this generation is like a tangled skein, a knotted ball of string, like matted rushes and reeds, and does not go beyond transmigration, beyond the planes of deprivation, woe, & bad destinations.",
       "If he wants, then through the ending of the effluents, he enters & remains in the effluent-free awareness-release & discernment-release, having directly known and realized them for himself right in the here & now. He can witness this for himself whenever there is an opening.'",
       "Our bodily conduct will be pure, clear & open, unbroken & restrained.",
-      // From KN_Dhp_nblm.txt
+      // From sutta-KN.txt
       "Through initiative, heedfulness, restraint, & self-control, the wise would make an island no flood can submerge.",
       "Don't give way to heedlessness or to intimacy with sensual delight–for a heedful person, the End-Maker holds him under his sway.",
       "No recitation: the ruinous impurity. No heedfulness: the ruinous impurity.",
       "There's no fire like passion, no seizure like anger, no snare like delusion, no river like craving.",
       "But those whose mindfulness immersed in the body is constantly well-undertaken, —who don't engage in what shouldn't be done, who persevere in what should be done, mindful, alert—their effluents go to their end.",
-      // From KN_StNp_nblm.txt
+      // From sutta-KN.txt
       "The enlightened are makers of light.",
       "From acquisition as cause the many forms of stress come into being in the world.",
       "Whoever, unknowing, makes acquisitions —the dullard— comes to stress again & again.",
       "Therefore, discerning, you shouldn't create acquisitions as you stay focused on the birth & origin of stress.",
       "From the remainderless fading & cessation of that very ignorance, there is no coming into play of stress.",
-      // From KN_Thag_nblm.txt
+      // From sutta-KN.txt
       "The five aggregates, having been comprehended, stand with their root cut through. For me the ending of stress is reached; the ending of effluents, attained.",
       "Whoever wants to do later what he should have done first, falls away from the easeful state & later repents.",
       "One should speak as one would act, & not as one wouldn't.",
       "With effluents all totally ended, there is now no further becoming.",
-      // From KN_Thig_nblm.txt
+      // From sutta-KN.txt
       "For happy are sages, Vaḍḍha, unperturbed, with doubt cut through. Having become cool and self-controlled, they dwell effluent-free.",
-      // From MN_nblm.txt
+      // From sutta-MN.txt
       "I don't envision a single thing that, when undeveloped, is as unpliant as the mind. The mind, when undeveloped, is unpliant.",
       "I don't envision a single thing that, when undeveloped, leads to such great harm as the mind. The mind, when undeveloped, leads to great harm.",
       "Luminous, monks, is the mind. And it is defiled by incoming defilements. The uninstructed run-of-the-mill person doesn't discern that as it has come to be, which is why I tell you that—for the uninstructed run-of-the-mill person—there is no development of the mind.",
@@ -95,7 +95,7 @@ class CommandResolver extends WorkTaskResolver {
       "He is mindful, endowed with excellent proficiency in mindfulness, remembering & able to call to mind even things that were done & said long ago.",
       "My persistence is aroused & unsluggish. My mindfulness is established & unmuddled. My body is calm & unaroused. My mind is concentrated & gathered into singleness.",
       "They discern a mind with passion as 'a mind with passion,' and a mind without passion as 'a mind without passion.' ... They discern a concentrated mind as 'a concentrated mind,' and an unconcentrated mind as 'an unconcentrated mind.' They discern a released mind as 'a released mind,' and an unreleased mind as 'an unreleased mind.'",
-      // From SN_nblm.txt
+      // From sutta-SN.txt
       "From name & form as a requisite condition come the six sense media.",
       "From consciousness as a requisite condition comes name-&-form.",
       "From ignorance as a requisite condition come fabrications.",
@@ -347,14 +347,14 @@ class ScopeCommandResolver extends CommandResolver implements ScopeWorkTaskResol
 
     // The quotes below are specific to the "Heedfulness" running example as determined from sources
     if (boundaryType === "enter state") { // **CHANGED: "enter from" to "enter state"**
-      ret.push("Because of that gain, he becomes intoxicated, complacent, & falls into heedlessness."); // AN_nblm.txt source
-      ret.push("I don't envision a single thing that, when undeveloped, is as unpliant as the mind. The mind, when undeveloped, is unconcentrated."); // MN_nblm.txt source
-      ret.push("'Luminous, monks, is the mind. And it is defiled by incoming defilements.' [MN_nblm.txt]"); // General defilement context
+      ret.push("Because of that gain, he becomes intoxicated, complacent, & falls into heedlessness."); // sutta-AN.txt source
+      ret.push("I don't envision a single thing that, when undeveloped, is as unpliant as the mind. The mind, when undeveloped, is unconcentrated."); // sutta-MN.txt source
+      ret.push("'Luminous, monks, is the mind. And it is defiled by incoming defilements.' [sutta-MN.txt]"); // General defilement context
       substantiation = "Quotations directly describing 'complacent', 'intoxicated', and 'heedlessness' establish the initial entry states, alongside descriptions of an 'undeveloped' or 'unconcentrated' mind and general mental defilement.";
     } else { // boundaryType is "exit state" // **CHANGED: "exit to" to "exit state"**
-      ret.push("But those whose mindfulness immersed in the body is constantly well-undertaken, —who don't engage in what shouldn't be done, who persevere in what should be done, mindful, alert—their effluents go to their end."); // KN_Dhp_nblm.txt source
-      ret.push("If he wants, then through the ending of the effluents, he enters & remains in the effluent-free awareness-release & discernment-release."); // DN_nblm.txt source
-      ret.push("The well-instructed disciple of the noble ones discerns that as it has come to be, which is why I tell you that—for the well-instructed disciple of the noble ones—there is development of the mind.'"); // AN_nblm.txt source
+      ret.push("But those whose mindfulness immersed in the body is constantly well-undertaken, —who don't engage in what shouldn't be done, who persevere in what should be done, mindful, alert—their effluents go to their end."); // sutta-KN.txt source
+      ret.push("If he wants, then through the ending of the effluents, he enters & remains in the effluent-free awareness-release & discernment-release."); // sutta-DN.txt source
+      ret.push("The well-instructed disciple of the noble ones discerns that as it has come to be, which is why I tell you that—for the well-instructed disciple of the noble ones—there is development of the mind.'"); // sutta-AN.txt source
       substantiation = "Quotations describing the 'ending of effluents' and the development of the 'heedful' and 'developed mind' establish the desired exit states.";
     }
 
@@ -428,7 +428,7 @@ class ContextCommandResolver extends CommandResolver {
       commandType: "information_retrieval",
       parameters: {
         query: query,
-        sources: ["AN_nblm.txt", "DN_nblm.txt", "KN_Dhp_nblm.txt", "KN_Iti_nblm.txt", "KN_Khp_nblm.txt", "KN_StNp_nblm.txt", "KN_Thag_nblm.txt", "KN_Thig_nblm.txt", "KN_Ud_nblm.txt", "MN_nblm.txt", "SN_nblm.txt"],
+        sources: ["sutta-AN.txt", "sutta-DN.txt", "sutta-KN.txt", "sutta-MN.txt", "sutta-SN.txt"],
         contextHint: `Identify background conditions, symptoms, or prevailing circumstances necessitating the pattern's solution, related to the subjects' states and practitioners. Overall pattern context: ${this.executionContext}.`,
         resultType: "DeterminantQuotationString[]"
       }
@@ -473,7 +473,7 @@ class ForcesCommandResolver extends CommandResolver {
       commandType: "information_retrieval",
       parameters: {
         query: query,
-        sources: ["AN_nblm.txt", "DN_nblm.txt", "KN_Dhp_nblm.txt", "KN_Iti_nblm.txt", "KN_Khp_nblm.txt", "KN_StNp_nblm.txt", "KN_Thag_nblm.txt", "KN_Thig_nblm.txt", "KN_Ud_nblm.txt", "MN_nblm.txt", "SN_nblm.txt"],
+        sources: ["sutta-AN.txt", "sutta-DN.txt", "sutta-KN.txt", "sutta-MN.txt", "sutta-SN.txt"],
         contextHint: `Identify contradictory considerations, difficulties, or challenges that explain why a simple solution to the problem statement (from executionContext) is insufficient, related to the subjects' states and practitioners. Overall pattern context: ${this.executionContext}.`,
         resultType: "DeterminantQuotationString[]"
       }
@@ -555,7 +555,7 @@ class CausalTableCommandResolver extends CommandResolver implements CausalTableW
                 commandType: "information_retrieval",
                 parameters: {
                     query: searchKeywords,
-                    sources: ["AN_nblm.txt", "DN_nblm.txt", "KN_Dhp_nblm.txt", "KN_Iti_nblm.txt", "KN_Khp_nblm.txt", "KN_StNp_nblm.txt", "KN_Thag_nblm.txt", "KN_Thig_nblm.txt", "KN_Ud_nblm.txt", "MN_nblm.txt", "SN_nblm.txt"],
+                    sources: ["sutta-AN.txt", "sutta-DN.txt", "sutta-KN.txt", "sutta-MN.txt", "sutta-SN.txt"],
                     contextHint: `Identifying causal relations involving '${conceptName}' within the overall pattern context: ${this.executionContext}.`,
                     resultType: "DeterminantQuotationString[]"
                 }

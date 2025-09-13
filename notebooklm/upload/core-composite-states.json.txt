@@ -1,9 +1,9 @@
 {
   "meta": {
     "artifactName": "Core Composite States Inventory Document",
-    "version": "1.3.0",
+    "version": "1.3.1",
     "purpose": "A canonical inventory of core concurrent composite mind states and external states for use in pattern generation, causal analysis, and state transitions.",
-    "generatedDate": "2024-03-08"
+    "generatedDate": "2024-05-16"
   },
   "mindStates": {
     "heedfulness": {
@@ -12,17 +12,33 @@
         {
           "name": "heedless",
           "definition": "A state of carelessness, negligence, or lack of vigilance, often leading to unskillful actions and mental defilements.",
-          "canonicalReferences": ["[AN_nblm.txt, 303, 304]", "[KN_Dhp_nblm.txt, 98]", "[KN_Iti_nblm.txt, 100]", "[MN_nblm.txt, 182]", "[SN_nblm.txt, 272, 273]"]
+          "canonicalReferences": [
+            "sutta-AN.txt > AN5_73.txt",
+            "sutta-AN.txt > AN5_74.txt",
+            "sutta-KN.txt > thag1_119.txt",
+            "sutta-MN.txt > MN137.txt",
+            "sutta-SN.txt > SN2_25.txt",
+            "sutta-SN.txt > SN43.txt"
+          ]
         },
         {
           "name": "heedful",
           "definition": "A state of active mental vigilance, alertness, and conscientiousness, essential for cultivating skillful qualities and avoiding defilements.",
-          "canonicalReferences": ["[AN_nblm.txt, 6, 49, 50, 51]", "[KN_Dhp_nblm.txt, 98]", "[MN_nblm.txt, 134, 148, 159, 161, 182]", "[SN_nblm.txt, 272, 273, 285]"]
+          "canonicalReferences": [
+            "sutta-AN.txt > AN3_38.txt",
+            "sutta-KN.txt > StNp3_2.txt",
+            "sutta-KN.txt > StNp4_2.txt",
+            "sutta-SN.txt > SN2_25.txt",
+            "sutta-SN.txt > SN46_26.txt"
+          ]
         },
         {
           "name": "heedful (arahant)",
           "definition": "A perfected state of heedfulness where regression is impossible, characteristic of an Arahant.",
-          "canonicalReferences": ["[MN_nblm.txt, 182]", "[SN_nblm.txt, 272]"]
+          "canonicalReferences": [
+            "sutta-MN.txt > MN182.txt",
+            "sutta-SN.txt > SN35_134.txt"
+          ]
         }
       ]
     },
@@ -32,37 +48,71 @@
         {
           "name": "greed",
           "definition": "A root of unskillful action, manifesting as desire, passion, attachment, or sensuality.",
-          "canonicalReferences": ["[AN_nblm.txt, 6, 22]", "[DN_nblm.txt, 86]", "[KN_Dhp_nblm.txt, 98]", "[SN_nblm.txt, 236, 247, 249]"]
+          "canonicalReferences": [
+            "sutta-AN.txt > AN3_70.txt",
+            "sutta-KN.txt > iti50.txt",
+            "sutta-SN.txt > SN27_2.txt",
+            "sutta-SN.txt > SN43.txt"
+          ]
         },
         {
           "name": "aversion",
           "definition": "A root of unskillful action, manifesting as ill will, hatred, or resistance.",
-          "canonicalReferences": ["[AN_nblm.txt, 6, 22]", "[DN_nblm.txt, 86]", "[SN_nblm.txt, 236, 247, 249]"]
+          "canonicalReferences": [
+            "sutta-AN.txt > AN3_70.txt",
+            "sutta-KN.txt > iti2.txt",
+            "sutta-SN.txt > SN43.txt",
+            "sutta-SN.txt > SN35_205.txt"
+          ]
         },
         {
           "name": "delusion",
           "definition": "A root of unskillful action, manifesting as ignorance, confusion, or a lack of understanding.",
-          "canonicalReferences": ["[AN_nblm.txt, 6, 10, 22]", "[DN_nblm.txt, 86]", "[SN_nblm.txt, 236, 247, 249]"]
+          "canonicalReferences": [
+            "sutta-AN.txt > AN3_70.txt",
+            "sutta-KN.txt > iti3.txt",
+            "sutta-KN.txt > iti110.txt",
+            "sutta-SN.txt > SN43.txt",
+            "sutta-SN.txt > SN35_205.txt"
+          ]
         },
         {
           "name": "ignorance",
           "definition": "A lack of understanding, especially concerning the Four Noble Truths and Dependent Co-arising, often a manifestation of delusion.",
-          "canonicalReferences": ["[AN_nblm.txt, 10, 75]", "[DN_nblm.txt, 71, 74]", "[KN_StNp_nblm.txt, 105]", "[MN_nblm.txt, 123, 124, 223]", "[SN_nblm.txt, 202, 216]"]
+          "canonicalReferences": [
+            "sutta-AN.txt > AN3_77.txt",
+            "sutta-DN.txt > DN33_1_to_5.txt",
+            "sutta-KN.txt > StNp3_2.txt",
+            "sutta-KN.txt > StNp4_14.txt",
+            "sutta-KN.txt > iti85.txt",
+            "sutta-KN.txt > thag1_29.txt",
+            "sutta-MN.txt > MN123.txt",
+            "sutta-SN.txt > SN12_2.txt",
+            "sutta-SN.txt > SN15_3.txt",
+            "sutta-SN.txt > SN15_5.txt",
+            "sutta-SN.txt > SN15_6.txt",
+            "sutta-SN.txt > SN15_8.txt",
+            "sutta-SN.txt > SN15_10.txt",
+            "sutta-SN.txt > SN15_12.txt"
+          ]
         },
         {
           "name": "non-greed",
           "definition": "The absence or abandonment of greed, a root of skillful action.",
-          "canonicalReferences": ["[AN_nblm.txt, 7, 22]"]
+          "canonicalReferences": []
         },
         {
           "name": "non-aversion",
           "definition": "The absence or abandonment of aversion, a root of skillful action.",
-          "canonicalReferences": ["[AN_nblm.txt, 7, 22]"]
+          "canonicalReferences": [
+            "sutta-DN.txt > DN33_1_to_5.txt",
+            "sutta-MN.txt > MN117.txt"
+          ]
         },
         {
           "name": "non-delusion",
           "definition": "The absence or abandonment of delusion, a root of skillful action, characterized by clear knowing and wisdom.",
-          "canonicalReferences": ["[AN_nblm.txt, 7, 22]"]
+          "canonicalReferences": []
         }
       ]
     },
@@ -72,42 +122,67 @@
         {
           "name": "hindrances active",
           "definition": "One or more of the five hindrances (sensual desire, ill will, sloth & torpor, restlessness & anxiety, uncertainty) are present, obstructing mental clarity and concentration.",
-          "canonicalReferences": ["..."]
+          "canonicalReferences": []
         },
         {
           "name": "hindrances abandoned",
           "definition": "The hindrances have been eradicated, leading to progress on the path of liberation.",
-          "canonicalReferences": ["[KN_StNp_nblm.txt, 107]", "[MN_nblm.txt, 176]"]
+          "canonicalReferences": [
+            "sutta-KN.txt > thag2_26.txt"
+          ]
         },
         {
           "name": "effluents active",
           "definition": "One or more of the three effluents (sensuality, becoming, ignorance) are present, sustaining suffering and the cycle of rebirth.",
-          "canonicalReferences": ["[DN_nblm.txt, 71, 74, 185]", "[MN_nblm.txt, 123, 124, 125, 185]", "[SN_nblm.txt, 262, 272, 273]"]
+          "canonicalReferences": [
+            "sutta-MN.txt > MN105.txt",
+            "sutta-MN.txt > MN49.txt",
+            "sutta-KN.txt > iti56.txt"
+          ]
         },
         {
           "name": "effluents ended",
           "definition": "The three effluents have been completely eradicated, leading to full liberation (Arahantship).",
-          "canonicalReferences": ["[AN_nblm.txt, 27, 29, 31]", "[DN_nblm.txt, 71, 74, 93]", "[KN_Dhp_nblm.txt, 112]", "[KN_Thag_nblm.txt, 112]", "[KN_Ud_nblm.txt, 117]", "[MN_nblm.txt, 123, 125, 127, 128, 153, 154, 163, 182, 183, 185, 199, 203, 205, 225]", "[SN_nblm.txt, 238, 246, 249, 250, 251, 253, 254, 256, 258, 259, 262, 272]"]
+          "canonicalReferences": [
+            "sutta-AN.txt > AN3_70.txt",
+            "sutta-AN.txt > AN6_43.txt",
+            "sutta-DN.txt > DN33_1_to_5.txt",
+            "sutta-KN.txt > Ch06.txt",
+            "sutta-KN.txt > thag1_120.txt",
+            "sutta-KN.txt > iti96.txt",
+            "sutta-KN.txt > iti73.txt",
+            "sutta-MN.txt > MN105.txt",
+            "sutta-MN.txt > MN49.txt",
+            "sutta-SN.txt > SN56_1.txt",
+            "sutta-SN.txt > SN12_23.txt",
+            "sutta-SN.txt > SN5_4.txt"
+          ]
         },
         {
           "name": "obsessions active",
           "definition": "One or more of the seven obsessions (e.g., sensual passion, resistance, conceit) are present, assailing the mind.",
-          "canonicalReferences": ["[AN_nblm.txt, 47]", "[MN_nblm.txt, 132, 144, 177]"]
+          "canonicalReferences": [
+            "sutta-AN.txt > AN7_11.txt"
+          ]
         },
         {
           "name": "obsessions abandoned",
           "definition": "The obsessions have been abandoned, leading to mental release.",
-          "canonicalReferences": ["[MN_nblm.txt, 132, 144]"]
+          "canonicalReferences": []
         },
         {
           "name": "impurities active",
           "definition": "States like being unvirtuous, envious, or stingy are present, leading to unskillful outcomes.",
-          "canonicalReferences": ["[AN_nblm.txt, 488]", "[KN_Dhp_nblm.txt, 98]"]
+          "canonicalReferences": [
+            "sutta-KN.txt > Ch06.txt"
+          ]
         },
         {
           "name": "impurities abandoned",
           "definition": "The impurities have been given up, leading to purification.",
-          "canonicalReferences": ["..."]
+          "canonicalReferences": [
+            "sutta-KN.txt > Ch12.txt"
+          ]
         }
       ]
     },
@@ -117,37 +192,77 @@
         {
           "name": "analysis of qualities (active)",
           "definition": "Skillful investigation and discernment of mental qualities, distinguishing wholesome from unwholesome.",
-          "canonicalReferences": ["[DN_nblm.txt, 92]", "[KN_Khp_nblm.txt, 101]", "[SN_nblm.txt, 273, 274]"]
+          "canonicalReferences": [
+            "sutta-DN.txt > DN33_1_to_5.txt",
+            "sutta-KN.txt > StNp2_11.txt",
+            "sutta-SN.txt > SN46_26.txt"
+          ]
         },
         {
           "name": "persistence (active)",
           "definition": "Aroused and unflagging effort to abandon unskillful qualities and cultivate skillful ones.",
-          "canonicalReferences": ["[AN_nblm.txt, 6, 29, 44, 47, 50]", "[DN_nblm.txt, 81, 83]", "[KN_Khp_nblm.txt, 101]", "[MN_nblm.txt, 108, 165, 169, 182, 208]", "[SN_nblm.txt, 282, 283, 285, 287, 288]"]
+          "canonicalReferences": [
+            "sutta-AN.txt > AN3_38.txt",
+            "sutta-AN.txt > AN2_5.txt",
+            "sutta-KN.txt > StNp3_2.txt",
+            "sutta-KN.txt > thag2_24.txt",
+            "sutta-MN.txt > MN105.txt",
+            "sutta-SN.txt > SN46_26.txt"
+          ]
         },
         {
           "name": "rapture (active)",
           "definition": "A strong feeling of joy and delight, often arising from mental seclusion and leading to calm.",
-          "canonicalReferences": ["[AN_nblm.txt, 27, 49, 50, 66]", "[DN_nblm.txt, 71, 74, 79]", "[KN_Khp_nblm.txt, 101]", "[MN_nblm.txt, 134, 161, 167, 168]", "[SN_nblm.txt, 273, 282, 283, 286, 288]"]
+          "canonicalReferences": [
+            "sutta-AN.txt > AN3_71.txt",
+            "sutta-AN.txt > AN3_95.txt",
+            "sutta-KN.txt > thag6_2.txt",
+            "sutta-SN.txt > SN46_26.txt"
+          ]
         },
         {
           "name": "calm (active)",
           "definition": "Tranquility of body and mind, a prerequisite for concentration.",
-          "canonicalReferences": ["[AN_nblm.txt, 27, 25, 65, 470]", "[DN_nblm.txt, 227]", "[KN_Khp_nblm.txt, 101]", "[KN_StNp_nblm.txt, 120]", "[MN_nblm.txt, 199, 201]"]
+          "canonicalReferences": [
+            "sutta-AN.txt > AN3_38.txt",
+            "sutta-AN.txt > AN3_71.txt",
+            "sutta-KN.txt > thag1_2.txt",
+            "sutta-KN.txt > thag14_1.txt",
+            "sutta-KN.txt > StNp4_13.txt",
+            "sutta-SN.txt > SN46_26.txt",
+            "sutta-SN.txt > SN43.txt"
+          ]
         },
         {
           "name": "mindfulness (active)",
           "definition": "A state of active mental vigilance, alertness, and conscientiousness, essential for cultivating skillful qualities and avoiding defilements.",
-          "canonicalReferences": ["[AN_nblm.txt, 6, 49, 50, 51]", "[KN_Dhp_nblm.txt, 98]", "[MN_nblm.txt, 107, 108, 134, 148, 159, 161, 182]", "[SN_nblm.txt, 272, 273, 285]"]
+          "canonicalReferences": [
+            "sutta-AN.txt > AN3_38.txt",
+            "sutta-AN.txt > AN6_29.txt",
+            "sutta-KN.txt > StNp1_8.txt",
+            "sutta-KN.txt > thag1_31.txt",
+            "sutta-KN.txt > iti111.txt",
+            "sutta-SN.txt > SN46_26.txt",
+            "sutta-SN.txt > SN43.txt"
+          ]
         },
         {
           "name": "concentration (active)",
           "definition": "A state of mental unification and absorption, a prerequisite for discernment and insight.",
-          "canonicalReferences": ["[AN_nblm.txt, 27, 303, 315]", "[DN_nblm.txt, 54]", "[MN_nblm.txt, 107, 147]", "[SN_nblm.txt, 273, 286, 288]"]
+          "canonicalReferences": [
+            "sutta-AN.txt > AN3_38.txt",
+            "sutta-AN.txt > AN3_93.txt",
+            "sutta-DN.txt > DN34_1_to_5.txt",
+            "sutta-SN.txt > SN46_26.txt",
+            "sutta-SN.txt > SN56_1.txt"
+          ]
         },
         {
           "name": "equanimity (active)",
           "definition": "A state of balanced, even-minded awareness, free from attraction and aversion.",
-          "canonicalReferences": ["[AN_nblm.txt, 45, 46, 517, 518]", "[KN_Khp_nblm.txt, 101]", "[MN_nblm.txt, 165]", "[SN_nblm.txt, 282, 283, 286, 288, 289]"]
+          "canonicalReferences": [
+            "sutta-SN.txt > SN46_26.txt"
+          ]
         }
       ]
     },
@@ -157,17 +272,25 @@
         {
           "name": "unconcentrated",
           "definition": "A mind that is scattered, ununified, or unpliant, often associated with unskillful states and leading to harm.",
-          "canonicalReferences": ["[AN_nblm.txt, 27, 303, 315]", "[DN_nblm.txt, 54]", "[MN_nblm.txt, 100, 147]"]
+          "canonicalReferences": [
+            "sutta-AN.txt > AN1_21.txt",
+            "sutta-AN.txt > AN1_23.txt"
+          ]
         },
         {
           "name": "in_distinction",
           "definition": "A state of heightened insight and knowledge, leading to a noble distinction in understanding phenomena.",
-          "canonicalReferences": ["[AN_nblm.txt, 316, 495]", "[SN_nblm.txt, 518, 519]"]
+          "canonicalReferences": [
+            "sutta-DN.txt > DN34_1_to_5.txt"
+          ]
         },
         {
           "name": "in_penetration",
           "definition": "A state of profound insight leading to the direct knowing and realization of unbinding and the ending of effluents.",
-          "canonicalReferences": ["[DN_nblm.txt, 72]", "[AN_nblm.txt, 316, 496]", "[SN_nblm.txt, 519]"]
+          "canonicalReferences": [
+            "sutta-DN.txt > DN33_1_to_5.txt",
+            "sutta-SN.txt > SN12_23.txt"
+          ]
         }
       ]
     },
@@ -177,32 +300,47 @@
         {
           "name": "sensuality resolve (unskillful)",
           "definition": "A mental resolve or intention focused on sensual pleasures.",
-          "canonicalReferences": ["[AN_nblm.txt, 471, 500]", "[MN_nblm.txt, 134]"]
+          "canonicalReferences": [
+            "sutta-MN.txt > MN117.txt"
+          ]
         },
         {
           "name": "ill will resolve (unskillful)",
           "definition": "A mental resolve or intention focused on animosity or harm towards others.",
-          "canonicalReferences": ["[AN_nblm.txt, 471, 500]", "[MN_nblm.txt, 134]"]
+          "canonicalReferences": [
+            "sutta-MN.txt > MN117.txt"
+          ]
         },
         {
           "name": "harmfulness resolve (unskillful)",
           "definition": "A mental resolve or intention focused on causing harm.",
-          "canonicalReferences": ["[AN_nblm.txt, 471, 501]", "[MN_nblm.txt, 134]"]
+          "canonicalReferences": [
+            "sutta-MN.txt > MN117.txt"
+          ]
         },
         {
           "name": "renunciation resolve (skillful)",
           "definition": "A mental resolve or intention focused on giving up unskillful desires and worldly attachments.",
-          "canonicalReferences": ["[AN_nblm.txt, 502]", "[MN_nblm.txt, 204]"]
+          "canonicalReferences": [
+            "sutta-DN.txt > DN33_1_to_5.txt",
+            "sutta-MN.txt > MN117.txt"
+          ]
         },
         {
           "name": "non-ill will resolve (skillful)",
           "definition": "A mental resolve or intention focused on goodwill and freedom from animosity.",
-          "canonicalReferences": ["[AN_nblm.txt, 502]", "[MN_nblm.txt, 204]"]
+          "canonicalReferences": [
+            "sutta-DN.txt > DN33_1_to_5.txt",
+            "sutta-MN.txt > MN117.txt"
+          ]
         },
         {
           "name": "harmlessness resolve (skillful)",
           "definition": "A mental resolve or intention focused on causing no harm to oneself or others.",
-          "canonicalReferences": ["[AN_nblm.txt, 503]", "[MN_nblm.txt, 204]"]
+          "canonicalReferences": [
+            "sutta-DN.txt > DN33_1_to_5.txt",
+            "sutta-MN.txt > MN117.txt"
+          ]
         }
       ]
     },
@@ -212,17 +350,45 @@
         {
           "name": "discernment (active)",
           "definition": "The active faculty of wisdom, understanding, and insight into the nature of reality, encompassing both a general quality and a specific faculty (indriya).",
-          "canonicalReferences": ["[AN_nblm.txt, 44, 45, 46, 50, 52, 53, 54, 55, 56, 471, 506, 525]", "[DN_nblm.txt, 61, 65, 66]", "[MN_nblm.txt, 108, 165]", "[SN_nblm.txt, 236, 253, 254, 256, 257, 258, 259, 261, 281, 284]"]
+          "canonicalReferences": [
+            "sutta-AN.txt > AN3_93.txt",
+            "sutta-AN.txt > AN5_79.txt",
+            "sutta-AN.txt > AN10_73.txt",
+            "sutta-KN.txt > thig1_3.txt",
+            "sutta-KN.txt > thag1_3.txt",
+            "sutta-KN.txt > StNp2_10.txt",
+            "sutta-KN.txt > thag2_3.txt",
+            "sutta-KN.txt > iti85.txt",
+            "sutta-KN.txt > thag2_42.txt",
+            "sutta-MN.txt > MN105.txt",
+            "sutta-SN.txt > SN1_51.txt",
+            "sutta-SN.txt > SN1_73.txt",
+            "sutta-SN.txt > SN46_26.txt",
+            "sutta-SN.txt > SN12_61.txt"
+          ]
         },
         {
           "name": "knowledge & vision",
           "definition": "Direct, experiential insight and understanding, often referring to the higher knowledges attained in practice.",
-          "canonicalReferences": ["[AN_nblm.txt, 86]", "[DN_nblm.txt, 74, 185, 186]", "[MN_nblm.txt, 150]", "[SN_nblm.txt, 262, 525, 526]"]
+          "canonicalReferences": [
+            "sutta-DN.txt > DN34_1_to_5.txt",
+            "sutta-DN.txt > DN33_1_to_5.txt",
+            "sutta-KN.txt > StNp3_2.txt",
+            "sutta-KN.txt > thag2_26.txt",
+            "sutta-MN.txt > MN105.txt",
+            "sutta-MN.txt > MN49.txt",
+            "sutta-SN.txt > SN12_23.txt"
+          ]
         },
         {
           "name": "clear knowing",
           "definition": "A state of unimpeded understanding and insight, free from confusion or muddle.",
-          "canonicalReferences": ["[SN_nblm.txt, 160, 270]", "[AN_nblm.txt, 507, 527]"]
+          "canonicalReferences": [
+            "sutta-KN.txt > StNp2_10.txt",
+            "sutta-KN.txt > iti85.txt",
+            "sutta-KN.txt > StNp3_2.txt",
+            "sutta-SN.txt > SN22_132.txt"
+          ]
         }
       ]
     },
@@ -232,27 +398,48 @@
         {
           "name": "unvirtuous",
           "definition": "Engaging in unskillful or unethical bodily, verbal, or mental conduct.",
-          "canonicalReferences": ["[AN_nblm.txt, 488, 508]", "[MN_nblm.txt, 126]"]
+          "canonicalReferences": [
+            "sutta-KN.txt > ud2_8.txt"
+          ]
         },
         {
           "name": "pure bodily conduct",
           "definition": "Skillful and ethical actions performed with the body, free from harm.",
-          "canonicalReferences": ["[AN_nblm.txt, 7, 509]", "[MN_nblm.txt, 155, 172, 177]"]
+          "canonicalReferences": [
+            "sutta-MN.txt > MN105.txt"
+          ]
         },
         {
           "name": "pure verbal conduct",
           "definition": "Skillful and ethical speech, free from falsehood, harshness, or divisive words.",
-          "canonicalReferences": ["[AN_nblm.txt, 7, 63, 509]", "[MN_nblm.txt, 156, 173, 174, 177]"]
+          "canonicalReferences": [
+            "sutta-MN.txt > MN105.txt"
+          ]
         },
         {
           "name": "pure mental conduct",
           "definition": "Skillful and ethical thoughts, free from covetousness, ill will, or wrong view.",
-          "canonicalReferences": ["[AN_nblm.txt, 7, 64, 510]", "[MN_nblm.txt, 156, 175, 176, 177]"]
+          "canonicalReferences": [
+            "sutta-MN.txt > MN105.txt",
+            "sutta-MN.txt > MN49.txt"
+          ]
         },
         {
           "name": "virtuous",
           "definition": "Endowed with ethical conduct, restraining from unskillful actions and cultivating skillful ones.",
-          "canonicalReferences": ["[AN_nblm.txt, 16, 22, 25, 29, 30, 45, 46, 50, 51, 52, 53, 55, 56, 57, 58, 62, 64, 84, 85, 90, 92, 95, 100, 108, 120, 121, 124, 125, 138, 140, 147, 158, 159, 168, 183, 185, 189, 191, 214, 216, 217, 252, 273, 274, 279, 281, 309, 313, 318, 319, 321, 354, 356, 358, 359, 360, 363, 364, 380, 420, 452, 453, 454, 455, 457, 460, 463, 473, 479, 484, 485, 519, 520, 521, 522, 524, 526, 528]"]
+          "canonicalReferences": [
+            "sutta-AN.txt > AN3_93.txt",
+            "sutta-AN.txt > AN5_79.txt",
+            "sutta-KN.txt > iti76.txt",
+            "sutta-KN.txt > StNp1_8.txt",
+            "sutta-DN.txt > DN33_1_to_5.txt",
+            "sutta-DN.txt > DN34_1_to_5.txt",
+            "sutta-KN.txt > Ch20.txt",
+            "sutta-KN.txt > thag2_42.txt",
+            "sutta-KN.txt > iti111.txt",
+            "sutta-MN.txt > MN105.txt",
+            "sutta-SN.txt > SN11_14.txt"
+          ]
         }
       ]
     },
@@ -262,27 +449,54 @@
         {
           "name": "awareness-release",
           "definition": "A form of liberation attained through the development of serene meditative states, leading to the ending of effluents.",
-          "canonicalReferences": ["[AN_nblm.txt, 10, 27, 29, 31, 37, 67, 89, 230]", "[DN_nblm.txt, 71, 74, 185]", "[KN_Ud_nblm.txt, 117]", "[MN_nblm.txt, 163, 185, 199, 205]", "[SN_nblm.txt, 277, 279]"]
+          "canonicalReferences": [
+            "sutta-DN.txt > DN33_1_to_5.txt",
+            "sutta-SN.txt > SN20_4.txt"
+          ]
         },
         {
           "name": "discernment-release",
           "definition": "A form of liberation attained through penetrating insight and wisdom, leading to the ending of effluents.",
-          "canonicalReferences": ["[AN_nblm.txt, 10, 27, 31, 231]", "[DN_nblm.txt, 71, 74, 185]", "[KN_Ud_nblm.txt, 117]", "[MN_nblm.txt, 163, 185, 199, 205]", "[SN_nblm.txt, 277, 279]"]
+          "canonicalReferences": [
+            "sutta-DN.txt > DN33_1_to_5.txt"
+          ]
         },
         {
           "name": "knowledge & vision of release",
           "definition": "The ultimate direct knowledge and insight that confirms one's liberation.",
-          "canonicalReferences": ["[DN_nblm.txt, 76, 77, 188]", "[MN_nblm.txt, 127, 128, 180, 181, 203, 218, 221, 225]", "[SN_nblm.txt, 258, 262, 231]"]
+          "canonicalReferences": [
+            "sutta-DN.txt > DN34_1_to_5.txt"
+          ]
         },
         {
           "name": "unbinding",
           "definition": "The ultimate goal of Buddhist practice: complete liberation from suffering and the cycle of rebirth (Nibbāna).",
-          "canonicalReferences": ["[AN_nblm.txt, 29, 31, 232]", "[DN_nblm.txt, 61, 71, 74, 187]", "[KN_Dhp_nblm.txt, 112]", "[KN_Iti_nblm.txt, 74, 105]", "[KN_Khp_nblm.txt, 101]", "[KN_Thag_nblm.txt, 89, 112, 232]", "[KN_Ud_nblm.txt, 117]", "[MN_nblm.txt, 99, 123, 125, 127, 128, 153, 154, 163, 182, 183, 185, 199, 203, 205, 225]", "[SN_nblm.txt, 176, 178, 179, 180, 238, 246, 249, 250, 251, 253, 254, 256, 258, 259, 262, 272]"]
+          "canonicalReferences": [
+            "sutta-AN.txt > AN3_91.txt",
+            "sutta-AN.txt > AN6_102.txt",
+            "sutta-DN.txt > DN33_1_to_5.txt",
+            "sutta-KN.txt > Ch06.txt",
+            "sutta-KN.txt > Ch20.txt",
+            "sutta-KN.txt > thag1_32.txt",
+            "sutta-KN.txt > thag2_9.txt",
+            "sutta-KN.txt > thag2_32.txt",
+            "sutta-KN.txt > thag3_15.txt",
+            "sutta-KN.txt > thag10_5.txt",
+            "sutta-KN.txt > thag1_100.txt",
+            "sutta-KN.txt > thag18.txt",
+            "sutta-MN.txt > MN105.txt",
+            "sutta-MN.txt > MN138.txt",
+            "sutta-SN.txt > SN23_2.txt",
+            "sutta-KN.txt > ud8_10.txt"
+          ]
         },
         {
           "name": "cooled state",
           "definition": "A state of profound peace and freedom from the 'fires' of greed, aversion, and delusion.",
-          "canonicalReferences": ["[KN_Thig_nblm.txt, 77]", "[KN_Thag_nblm.txt, 87]", "[SN_nblm.txt, 532]"]
+          "canonicalReferences": [
+            "sutta-AN.txt > AN6_85.txt",
+            "sutta-KN.txt > thig9.txt"
+          ]
         }
       ]
     },
@@ -292,12 +506,25 @@
         {
           "name": "conviction",
           "definition": "A firm and unwavering faith or confidence in the Buddha, Dhamma, and Sangha, leading to effort and discernment.",
-          "canonicalReferences": ["[AN_nblm.txt, 25, 46, 47, 52, 56, 66, 233]", "[DN_nblm.txt, 68, 71, 90, 92]", "[MN_nblm.txt, 116, 194]", "[SN_nblm.txt, 162, 137, 285, 286, 287, 288, 289]"]
+          "canonicalReferences": [
+            "sutta-AN.txt > AN3_42.txt",
+            "sutta-DN.txt > DN34_1_to_5.txt",
+            "sutta-KN.txt > StNp2_11.txt",
+            "sutta-KN.txt > thag2_42.txt",
+            "sutta-KN.txt > thag6_2.txt",
+            "sutta-MN.txt > MN116.txt",
+            "sutta-SN.txt > SN1_51.txt",
+            "sutta-SN.txt > SN1_73.txt",
+            "sutta-SN.txt > SN11_14.txt",
+            "sutta-SN.txt > SN25_1.txt",
+            "sutta-SN.txt > SN25_8.txt",
+            "sutta-SN.txt > SN25_9.txt"
+          ]
         },
         {
           "name": "lack of conviction",
           "definition": "Absence of firm faith or confidence, which can hinder the development of skillful qualities and lead to ignorance.",
-          "canonicalReferences": ["[AN_nblm.txt, 75, 234, 535]"]
+          "canonicalReferences": []
         }
       ]
     },
@@ -307,17 +534,26 @@
         {
           "name": "origination of kamma",
           "definition": "The arising or production of intentional actions (kamma), driven by roots like greed, aversion, and delusion.",
-          "canonicalReferences": ["[AN_nblm.txt, 6, 234]"]
+          "canonicalReferences": [
+            "sutta-AN.txt > AN3_69.txt"
+          ]
         },
         {
           "name": "cessation of fabrications",
           "definition": "The ending of volitional formations or mental activities.",
-          "canonicalReferences": ["[SN_nblm.txt, 51, 71, 74, 79, 139, 141, 142, 153, 154, 185, 196, 197, 235]"]
+          "canonicalReferences": [
+            "sutta-DN.txt > DN33_1_to_5.txt",
+            "sutta-KN.txt > iti43.txt",
+            "sutta-KN.txt > StNp3_2.txt",
+            "sutta-SN.txt > SN12_2.txt"
+          ]
         },
         {
           "name": "cessation of effluents",
           "definition": "The ending of the mental defilements (sensuality, becoming, ignorance) that perpetuate suffering.",
-          "canonicalReferences": ["[SN_nblm.txt, 71, 74, 153, 185, 235, 536]"]
+          "canonicalReferences": [
+            "sutta-SN.txt > SN12_35.txt"
+          ]
         }
       ]
     },
@@ -327,22 +563,29 @@
         {
           "name": "purification of beings",
           "definition": "The cleansing and refinement of individuals, leading to a higher state of being.",
-          "canonicalReferences": ["[DN_nblm.txt, 63, 77]", "[AN_nblm.txt, 236, 537]"]
+          "canonicalReferences": [
+            "sutta-SN.txt > SN22_60.txt"
+          ]
         },
         {
           "name": "overcoming of sorrow & lamentation",
           "definition": "The eradication of grief, sadness, and distress.",
-          "canonicalReferences": ["[AN_nblm.txt, 49, 174, 175, 236, 537]"]
+          "canonicalReferences": [
+            "sutta-AN.txt > AN10_108.txt",
+            "sutta-KN.txt > StNp4_14.txt"
+          ]
         },
         {
           "name": "disappearance of pain & distress",
           "definition": "The cessation of physical and mental pain and suffering.",
-          "canonicalReferences": ["[AN_nblm.txt, 49, 174, 175, 238, 538]"]
+          "canonicalReferences": [
+            "sutta-AN.txt > AN10_108.txt"
+          ]
         },
         {
           "name": "attainment of right method",
           "definition": "The achievement of the correct and effective approach or path to liberation.",
-          "canonicalReferences": ["[AN_nblm.txt, 49, 239, 538]"]
+          "canonicalReferences": []
         }
       ]
     },
@@ -352,27 +595,47 @@
         {
           "name": "admirable friendship",
           "definition": "Associating with virtuous, wise, and supportive individuals, crucial for spiritual progress.",
-          "canonicalReferences": ["[AN_nblm.txt, 56]", "[DN_nblm.txt, 71]", "[MN_nblm.txt, 182, 183]", "[AN_nblm.txt, 515, 236, 540]"]
+          "canonicalReferences": [
+            "sutta-KN.txt > thag10_7.txt"
+          ]
         },
         {
           "name": "not admirable friendship",
           "definition": "The absence of admirable friendship, or associating with people of no integrity, which can lead to unskillful qualities.",
-          "canonicalReferences": ["[AN_nblm.txt, 75, 237, 540]"]
+          "canonicalReferences": [
+            "sutta-KN.txt > thag1_95.txt"
+          ]
         },
         {
           "name": "suitable resting places",
           "definition": "External environments conducive to spiritual practice, such as secluded roots of trees or empty dwellings.",
-          "canonicalReferences": ["[AN_nblm.txt, 35, 46, 118, 177, 178, 179, 180, 181, 182, 237, 540]"]
+          "canonicalReferences": [
+            "sutta-AN.txt > AN5_73.txt",
+            "sutta-AN.txt > AN5_74.txt",
+            "sutta-AN.txt > AN7_11.txt",
+            "sutta-KN.txt > thag1_119.txt",
+            "sutta-MN.txt > MN137.txt",
+            "sutta-MN.txt > MN108.txt",
+            "sutta-SN.txt > SN43.txt",
+            "sutta-SN.txt > SN46_26.txt"
+          ]
         },
         {
           "name": "worldly gains & offerings",
           "definition": "External acquirements such as material support or fame, which can be an obstacle if one becomes intoxicated or complacent.",
-          "canonicalReferences": ["[MN_nblm.txt, 150]", "[SN_nblm.txt, 240]", "[AN_nblm.txt, 327, 516, 237]"]
+          "canonicalReferences": [
+            "sutta-AN.txt > AN6_102.txt",
+            "sutta-SN.txt > SN17_5.txt",
+            "sutta-MN.txt > MN105.txt"
+          ]
         },
         {
           "name": "hearing true Dhamma",
           "definition": "The act of listening to and learning the authentic teachings of the Dhamma, a prerequisite for understanding and practice.",
-          "canonicalReferences": ["[AN_nblm.txt, 238, 541]", "[KN_Thag_nblm.txt, 86]"]
+          "canonicalReferences": [
+            "sutta-AN.txt > AN3_42.txt",
+            "sutta-KN.txt > thag2_30.txt"
+          ]
         }
       ]
     },
@@ -382,32 +645,58 @@
         {
           "name": "freedom from remorse",
           "definition": "A state of mind free from regret or guilt, a beneficial outcome of virtuous conduct.",
-          "canonicalReferences": ["[AN_nblm.txt, 58, 183, 238, 541]", "[KN_Iti_nblm.txt, 267]"]
+          "canonicalReferences": [
+            "causation-expression-API.ts.txt > causation-expression-API.ts.txt"
+          ]
         },
         {
           "name": "joy (active)",
           "definition": "A pleasurable mental state, often a precursor to rapture and calm, arising from positive mental states like freedom from remorse.",
-          "canonicalReferences": ["[AN_nblm.txt, 45, 46, 58, 183, 184, 185, 186, 187, 188, 189, 190, 191, 239, 542]", "[KN_Iti_nblm.txt, 262]"]
+          "canonicalReferences": [
+            "sutta-AN.txt > AN3_71.txt",
+            "sutta-KN.txt > Ch11.txt",
+            "sutta-KN.txt > thag6_2.txt"
+          ]
         },
         {
           "name": "pleasure (active)",
           "definition": "A pleasant feeling, either physical or mental, often associated with jhāna states and leading to concentration.",
-          "canonicalReferences": ["[AN_nblm.txt, 183, 184, 185, 186, 187, 188, 189, 190, 191, 239, 543]", "[MN_nblm.txt, 374, 375, 376]", "[SN_nblm.txt, 490]"]
+          "canonicalReferences": [
+            "sutta-AN.txt > AN3_95.txt",
+            "sutta-KN.txt > StNp2_2.txt"
+          ]
         },
         {
           "name": "disenchantment (active)",
           "definition": "A sense of disillusionment or weariness with worldly phenomena, a step towards dispassion.",
-          "canonicalReferences": ["[AN_nblm.txt, 49, 183, 240, 543]", "[DN_nblm.txt, 61, 187]", "[KN_StNp_nblm.txt, 303]", "[MN_nblm.txt, 434, 435, 436, 437]", "[SN_nblm.txt, 139, 154, 166]"]
+          "canonicalReferences": [
+            "sutta-AN.txt > AN10_29.txt",
+            "sutta-AN.txt > AN6_103.txt",
+            "sutta-KN.txt > Ch19.txt",
+            "sutta-SN.txt > SN15_3.txt",
+            "sutta-SN.txt > SN12_61.txt"
+          ]
         },
         {
           "name": "dispassion (active)",
           "definition": "The absence of passion or attachment, leading to cessation and unbinding.",
-          "canonicalReferences": ["[AN_nblm.txt, 183, 240, 544]", "[DN_nblm.txt, 61, 187]", "[MN_nblm.txt, 372]", "[SN_nblm.txt, 139, 154, 166, 494, 495]"]
+          "canonicalReferences": [
+            "sutta-AN.txt > AN10_29.txt",
+            "sutta-KN.txt > iti55.txt",
+            "sutta-KN.txt > thag2_36.txt",
+            "sutta-KN.txt > thag18.txt",
+            "sutta-SN.txt > SN15_3.txt",
+            "sutta-SN.txt > SN12_61.txt",
+            "sutta-SN.txt > SN43.txt"
+          ]
         },
         {
           "name": "mind straight",
           "definition": "A mind that is not crooked, not bent, not twisted; a mind of integrity and uprightness, leading to further wholesome states.",
-          "canonicalReferences": ["AN_nblm.txt > MAHĀNĀMA SUTTA  Aṅguttara Nikāya 11:13 (saved note)"]
+          "canonicalReferences": [
+            "sutta-KN.txt > thag1_29.txt",
+            "sutta-KN.txt > thag2_24.txt"
+          ]
         }
       ]
     }

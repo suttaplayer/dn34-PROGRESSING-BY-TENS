@@ -1,3 +1,4 @@
+--- BOF [MN1.txt] ---
 THE ROOT SEQUENCE
 MŪLAPARIYĀYA SUTTA  Majjhima Nikāya 1
 
@@ -67,9 +68,8 @@ THE TATHĀGATA
 'He directly knows unbinding as unbinding. Directly knowing unbinding as unbinding, he doesn't suppose things about unbinding, doesn't suppose things in unbinding, doesn't suppose things coming out of unbinding, doesn't suppose unbinding as 'mine,' doesn't delight in unbinding. Why is that? Because he has known that delight is the root of suffering & stress, that from coming-into-being there is birth, and that for what has come into being there is aging & death. Therefore, with the total ending, fading away, cessation, letting go, relinquishment of craving, the Tathāgata has totally awakened to the unexcelled right self-awakening, I tell you.'
 
 That is what the Blessed One said. Displeased, the monks did not delight in the Blessed One's words.
-
-
-
+--- EOF [MN1.txt] ---
+--- BOF [MN2.txt] ---
 ALL THE EFFLUENTS
 SABBĀSAVA SUTTA  Majjhima Nikāya 2
 
@@ -136,9 +136,8 @@ The Blessed One said, 'Monks, the ending of the effluents is for one who knows &
 'When a monk's effluents that should be abandoned by seeing have been abandoned by seeing, his effluents that should be abandoned by restraining have been abandoned by restraining, his effluents that should be abandoned by using have been abandoned by using, his effluents that should be abandoned by tolerating have been abandoned by tolerating, his effluents that should be abandoned by avoiding have been abandoned by avoiding, his effluents that should be abandoned by destroying have been abandoned by destroying, his effluents that should be abandoned by developing have been abandoned by developing, then he is called a monk who dwells restrained with the restraint of all the effluents. He has severed craving, thrown off the fetters, and—through the right penetration of conceit—has made an end of suffering & stress.'
 
 That is what the Blessed One said. Gratified, the monks delighted in the Blessed One's words.
-
-
-
+--- EOF [MN2.txt] ---
+--- BOF [MN4.txt] ---
 FEAR & TERROR
 BHAYA-BHERAVA SUTTA  Majjhima Nikāya 4
 
@@ -201,9 +200,8 @@ I have heard that on one occasion the Blessed One was staying near Sāvatthī in
 'Now, brahman, if the thought should occur to you, 'Perhaps Gotama the contemplative is even today not free of passion, not free of aversion, not free of delusion, which is why he resorts to isolated forest & wilderness dwellings,' it should not be seen in that way. It's through seeing two compelling reasons that I resort to isolated forest & wilderness dwellings: seeing a pleasant abiding for myself in the present, and feeling sympathy for future generations.'
 
 'How truly future generations have been shown sympathy by Master Gotama, as by one who is worthy & rightly self-awakened! Magnificent, Master Gotama! Magnificent! Just as if he were to place upright what was overturned, to reveal what was hidden, to show the way to one who was lost, or to carry a lamp into the dark so that those with eyes could see forms, in the same way has Master Gotama—through many lines of reasoning—made the Dhamma clear. I go to Master Gotama for refuge, to the Dhamma, and to the Saṅgha of monks. May Master Gotama remember me as a lay follower who has gone to him for refuge, from this day forward, for life.'
-
-
-
+--- EOF [MN4.txt] ---
+--- BOF [MN5.txt] ---
 UNBLEMISHED
 ANAṄGAṆA SUTTA  Majjhima Nikāya 5
 
@@ -306,9 +304,8 @@ When this was said, Venerable Moggallāna said to Venerable Sāriputta, 'A simil
 Thus did those two great beings [nāgas] rejoice in each other's well-spoken words.
 
 See also:
-
-
-
+--- EOF [MN5.txt] ---
+--- BOF [MN6.txt] ---
 IF ONE WOULD WISH
 ĀKAṄKHEYYA SUTTA  Majjhima Nikāya 6
 
@@ -355,9 +352,8 @@ The Blessed One said: 'Monks, dwell consummate in virtue, consummate in terms of
 'Monks, dwell consummate in virtue, consummate in terms of the Pāṭimokkha. Dwell restrained in accordance with the Pāṭimokkha, consummate in your behavior & sphere of activity. Train yourselves, having undertaken the training rules, seeing danger in the slightest faults.' Thus was it said. And in reference to this was it said.'
 
 That is what the Blessed One said. Gratified, the monks delighted in the Blessed One's words.
-
-
-
+--- EOF [MN6.txt] ---
+--- BOF [MN7.txt] ---
 THE SIMILE OF THE CLOTH
 VATTHŪPAMA SUTTA  Majjhima Nikāya 7
 
@@ -474,9 +470,8 @@ would be Gayā for you.'
 When this was said, Sundarika Bhāradvāja the brahman said to the Blessed One, 'Magnificent, Master Gotama! Magnificent! Just as if he were to place upright what was overturned, to reveal what was hidden, to show the way to one who was lost, or to carry a lamp into the dark so that those with eyes could see forms, in the same way has Master Gotama—through many lines of reasoning—made the Dhamma clear. I go to Master Gotama for refuge, to the Dhamma, & to the Saṅgha of monks. Let me obtain the Going-forth in Master Gotama's presence, let me obtain Acceptance (into the Saṅgha of monks).'
 
 Then Sundarika Bhāradvāja the brahman received the Going-forth in the Blessed One's presence, he gained the Acceptance. And not long after his Acceptance—dwelling alone, secluded, heedful, ardent, & resolute—he in no long time entered & remained in the supreme goal of the holy life, for which clansmen rightly go forth from home into homelessness, directly knowing & realizing it for himself in the here & now. He knew: 'Birth is ended, the holy life fulfilled, the task done. There is nothing further for the sake of this world.' And so Venerable Bhāradvāja became another one of the arahants.
-
-
-
+--- EOF [MN7.txt] ---
+--- BOF [MN9.txt] ---
 RIGHT VIEW
 SAMMĀDIṬṬHI SUTTA  Majjhima Nikāya 9
 
@@ -733,9 +728,8 @@ Saying 'Good, friend,' having delighted in and approved of Venerable Sāriputta'
 'Now, when a disciple of the noble ones discerns effluents, the origination of effluents, the cessation of effluents, and the way of practice leading to the cessation of effluents in this way, when—having entirely abandoned passion-obsession, having abolished aversion-obsession, having uprooted the view-&-conceit obsession 'I am'; having abandoned ignorance & given rise to clear knowing—he has put an end to suffering & stress right in the here & now, it is to this extent, too, that a disciple of the noble ones is a person of right view, one whose view is made straight, who is endowed with verified confidence in the Dhamma, and who has arrived at this true Dhamma.'
 
 That is what Venerable Sāriputta said. Gratified, the monks delighted in Venerable Sāriputta's words.
-
-
-
+--- EOF [MN9.txt] ---
+--- BOF [MN10.txt] ---
 THE ESTABLISHING OF MINDFULNESS DISCOURSE
 SATIPAṬṬHĀNA SUTTA  Majjhima Nikāya 10
 
@@ -943,9 +937,8 @@ E. CONCLUSION
 'This is the direct path for the purification of beings, for the overcoming of sorrow & lamentation, for the disappearance of pain & distress, for the attainment of the right method, & for the realization of unbinding—in other words, the four establishings of mindfulness.' Thus was it said, and in reference to this was it said.'
 
 That is what the Blessed One said. Gratified, the monks delighted in the Blessed One's words.
-
-
-
+--- EOF [MN10.txt] ---
+--- BOF [MN11.txt] ---
 THE SHORTER LION'S ROAR DISCOURSE
 CŪḶASĪHANĀDA SUTTA  Majjhima Nikāya 11
 
@@ -1018,9 +1011,8 @@ The Blessed One said, 'Monks, 'Right here there is the contemplative, here there
 'Now, when ignorance has been abandoned and clear-knowing has arisen in a monk, then from dispassion for ignorance and from the arising of clear-knowing, he clings neither to sensuality clinging, to view clinging, to habit-&-practice clinging, nor to doctrine-of-self clinging. Not clinging, he is not agitated. Not agitated, he fully unbinds right within. He discerns: 'Birth is ended, the holy life fulfilled, the task done. There is nothing further for the sake of this world.'
 
 That is what the Blessed One said. Gratified, the monks delighted in the Blessed One's words.
-
-
-
+--- EOF [MN11.txt] ---
+--- BOF [MN12.txt] ---
 THE GREAT LION'S ROAR DISCOURSE
 MAHĀSĪHANĀDA SUTTA  Majjhima Nikāya 12
 
@@ -1269,9 +1261,8 @@ Now, on that occasion Venerable Nāgasamala was standing behind the Blessed One,
 'Nāgasamala, because of that, remember this Dhamma-explanation as the 'Hair-raising Sequence.'
 
 That is what the Blessed One said. Gratified, Venerable Nāgasamala delighted in the Blessed One's words.
-
-
-
+--- EOF [MN12.txt] ---
+--- BOF [MN13.txt] ---
 THE GREAT MASS OF STRESS
 MAHĀ DUKKHAKKHANDHA SUTTA  Majjhima Nikāya 13
 
@@ -1363,9 +1354,8 @@ FEELING
 'That any contemplatives or brahmans who do not discern, as it has come to be, the allure of feelings as allure, the drawback of feelings as drawback, the escape from feelings as escape, would themselves comprehend feeling or would rouse another with the truth so that, in line with what he has practiced, he would comprehend feeling: That is impossible. But that any contemplatives or brahmans who discern, as it has come to be, the allure of feelings as allure, the drawback of feelings as drawback, the escape from feelings as escape, would themselves comprehend feeling or would rouse another with the truth so that, in line with what he has practiced, he would comprehend feeling: That is possible.'
 
 That is what the Blessed One said. Gratified, the monks delighted in the Blessed One's words.
-
-
-
+--- EOF [MN13.txt] ---
+--- BOF [MN14.txt] ---
 THE LESSER MASS OF STRESS
 CŪḶA DUKKHAKKHANDHA SUTTA  Majjhima Nikāya 14
 
@@ -1440,9 +1430,8 @@ I have heard that on one occasion the Blessed One was staying among the Sakyans 
 'That being the case, master Gotama dwells in greater pleasure than King Seniya Bimbisāra of Magadha.'
 
 That is what the Blessed One said. Gratified, Mahānāma the Sakyan delighted in the Blessed One's words.
-
-
-
+--- EOF [MN14.txt] ---
+--- BOF [MN17.txt] ---
 FOREST HINTERLANDS
 VANAPATTHA SUTTA  Majjhima Nikāya 17
 
@@ -1497,9 +1486,8 @@ The Blessed One said: 'Monks, there is the case where a monk lives in dependence
 'He should reflect on that: 'I live in dependence on this individual. As I am living in dependence on this individual, my unestablished mindfulness has become established, my unconcentrated mind has become concentrated, my unended effluents have come to an end, the unattained safety from the yoke is attained. And the requisites of life that should be obtained by one gone forth—robes, almsfood, lodging, or medicinal requisites used for curing the sick—are obtained without difficulty.' That monk should stay with that individual for life. He shouldn't leave, even if driven away.'
 
 That is what the Blessed One said. Gratified, the monks delighted in the Blessed One's words.
-
-
-
+--- EOF [MN17.txt] ---
+--- BOF [MN18.txt] ---
 THE BALL OF HONEY
 MADHUPIṆḌIKA SUTTA  Majjhima Nikāya 18
 
@@ -1589,9 +1577,8 @@ When this was said, Venerable Ānanda said to the Blessed One, 'Lord, it's as if
 'Then, Ānanda, you can remember this Dhamma discourse as the 'Ball of Honey Discourse.'
 
 That is what the Blessed One said. Gratified, Venerable Ānanda delighted in the Blessed One's words.
-
-
-
+--- EOF [MN18.txt] ---
+--- BOF [MN19.txt] ---
 TWO SORTS OF THINKING
 DVEDHĀVITAKKA SUTTA  Majjhima Nikāya 19
 
@@ -1648,9 +1635,8 @@ The Blessed One said, 'Monks, before my self-awakening, when I was still just an
 'So, monks, I have opened up the safe, restful path, closed off the false path, removed the male decoy, destroyed the female. Whatever a teacher should do—seeking the welfare of his disciples, out of sympathy for them—that have I done for you. Over there are (places to sit at) the roots of trees; over there, empty dwellings. Practice jhāna, monks. Don't be heedless. Don't later fall into remorse. This is our message to you.'
 
 That is what the Blessed One said. Gratified, the monks delighted in the Blessed One's words.
-
-
-
+--- EOF [MN19.txt] ---
+--- BOF [MN20.txt] ---
 THE RELAXATION OF THOUGHTS
 VITAKKASAṆṬHĀNA SUTTA  Majjhima Nikāya 20
 
@@ -1673,9 +1659,8 @@ The Blessed One said: 'When a monk is intent on the heightened mind, there are f
 'Now when a monk… attending to another theme… scrutinizing the drawbacks of those thoughts… paying no mind and paying no attention to those thoughts… attending to the relaxing of thought-fabrication with regard to those thoughts… beating down, constraining and crushing his mind with his awareness… steadies his mind right within, settles it, unifies it and concentrates it: He is then called a monk with mastery over the ways of thought sequences. He thinks whatever thought he wants to, and doesn't think whatever thought he doesn't. He has severed craving, thrown off the fetters, and—through the right penetration of conceit—has made an end of suffering & stress.'
 
 That is what the Blessed One said. Gratified, the monks delighted in the Blessed One's words.
-
-
-
+--- EOF [MN20.txt] ---
+--- BOF [MN21.txt] ---
 THE SIMILE OF THE SAW
 KAKACŪPAMA SUTTA  Majjhima Nikāya 21
 
@@ -1786,9 +1771,8 @@ Then Kālī the slave, with blood streaming from her cut-open head, went and den
 'Then attend constantly to this admonition on the simile of the saw. That will be for your long-term welfare & happiness.'
 
 That is what the Blessed One said. Gratified, the monks delighted in the Blessed One's words.
-
-
-
+--- EOF [MN21.txt] ---
+--- BOF [MN22.txt] ---
 THE WATER-SNAKE SIMILE
 ALAGADDŪPAMA SUTTA  Majjhima Nikāya 22
 
@@ -2001,9 +1985,8 @@ THE WELL-PROCLAIMED DHAMMA
 'In the Dhamma thus well-proclaimed by me—clear, open, evident, stripped of rags—those monks who have a (sufficient) measure of conviction in me, a (sufficient) measure of love for me, are all headed for heaven. This is how the Dhamma well-proclaimed by me is clear, open, evident, stripped of rags.'
 
 That is what the Blessed One said. Gratified, the monks delighted in the Blessed One's words.
-
-
-
+--- EOF [MN22.txt] ---
+--- BOF [MN24.txt] ---
 RELAY CHARIOTS
 RATHA-VINĪTA SUTTA  Majjhima Nikāya 24
 
@@ -2090,9 +2073,8 @@ When this was said, Venerable Puṇṇa said to Venerable Sāriputta: 'And what 
 'What? I've been talking with the disciple who is like the Teacher himself without knowing that it is Venerable Sāriputta? Had I known it was Venerable Sāriputta, I wouldn't have answered at such length. How amazing, my friend, how astounding, that Venerable Sāriputta has questioned point by point with profound, profound discernment in the manner of a learned disciple who has rightly understood the Teacher's message! It's a gain, a great gain, for any of his companions in the holy life who get to see him and visit with him. Even if they had to carry him around on a cushion placed on top of their heads in order to see him and visit with him, it would be a gain for them, a great gain. And the fact that I have gotten to see him and visit with him has been a gain, a great gain for me.'
 
 In this way did both great beings rejoice in each other's good words.
-
-
-
+--- EOF [MN24.txt] ---
+--- BOF [MN25.txt] ---
 POISON-GRASS
 NIVĀPA SUTTA  Majjhima Nikāya 25
 
@@ -2183,9 +2165,8 @@ The Blessed One said, 'The poison-grass sower doesn't sow poison-grass for a her
 'With the complete transcending of the dimension of neither perception nor non-perception, the monk enters & remains in the cessation of perception & feeling. And as he sees (that) with discernment, effluents are completely ended. This is said to be a monk who has blinded Māra, who has destroyed the path of Māra's eye and has gone where Māra the Evil One can't see him—and has crossed over attachment to the world.'
 
 That is what the Blessed One said. Gratified, the monks delighted in the Blessed One's words.
-
-
-
+--- EOF [MN25.txt] ---
+--- BOF [MN26.txt] ---
 THE NOBLE SEARCH
 ARIYAPARIYESANA SUTTA  Majjhima Nikāya 26
 
@@ -2464,9 +2445,8 @@ A second time.… A third time, the group of five monks said to me, 'By that pra
 'And further, the monk, with the complete transcending of the dimension of neither perception nor non-perception, enters & remains in the cessation of perception & feeling. And, having seen (that) with discernment, his mental effluents are completely ended. This monk is said to have blinded Māra. Trackless, he has destroyed Māra's vision and has become invisible to the Evil One. Having crossed over, he is unattached in the world. Carefree he walks, carefree he stands, carefree he sits, carefree he lies down. Why is that? Because he has gone beyond the Evil One's range.'
 
 That is what the Blessed One said. Gratified, the monks delighted in the Blessed One's words.
-
-
-
+--- EOF [MN26.txt] ---
+--- BOF [MN27.txt] ---
 THE SHORTER ELEPHANT FOOTPRINT SIMILE
 CŪḶA HATTHIPADOPAMA SUTTA  Majjhima Nikāya 27
 
@@ -2623,9 +2603,8 @@ THE THREE KNOWLEDGES
 'This, too, is called a footprint of the Tathāgata, a scratch mark of the Tathāgata, a tusk slash of the Tathāgata, and it is here that a disciple of the noble ones has come to conclusion: 'The Blessed One is rightly self-awakened; the Dhamma is well-taught by the Blessed One; the Saṅgha of the Blessed One's disciples has practiced rightly.'
 
 When this was said, Jāṇussoṇin the brahman said to the Blessed One: 'Magnificent, lord! Magnificent! Just as if he were to place upright what was overturned, to reveal what was hidden, to show the way to one who was lost, or to carry a lamp into the dark so that those with eyes could see forms, in the same way has the Blessed One—through many lines of reasoning—made the Dhamma clear. I go to the Blessed One for refuge, to the Dhamma, and to the Saṅgha of monks. May the Blessed One remember me as a lay follower who has gone to him for refuge, from this day forward, for life.'
-
-
-
+--- EOF [MN27.txt] ---
+--- BOF [MN28.txt] ---
 THE GREAT ELEPHANT FOOTPRINT SIMILE
 MAHĀ HATTHIPADOPAMA SUTTA  Majjhima Nikāya 28
 
@@ -2723,9 +2702,8 @@ DEPENDENT CO-ARISING
 'The form of what has thus come into being is gathered under the form clinging-aggregate. The feeling of what has thus come into being is gathered under the feeling clinging-aggregate. The perception of what has thus come into being is gathered under the perception clinging-aggregate. The fabrications of what has thus come into being are gathered under the fabrication clinging-aggregate. The consciousness of what has thus come into being is gathered under the consciousness clinging-aggregate. One discerns, 'This, it seems, is how there is the gathering, meeting, & convergence of these five clinging-aggregates. Now, the Blessed One has said, 'Whoever sees dependent co-arising sees the Dhamma; whoever sees the Dhamma sees dependent co-arising.' And these things—the five clinging-aggregates—are dependently co-arisen. Any desire, embracing, grasping, & holding-on to these five clinging-aggregates is the origination of stress. Any subduing of desire & passion, any abandoning of desire & passion for these five clinging-aggregates is the cessation of stress.' And even to this extent, friends, the monk has accomplished a great deal.'
 
 That is what Venerable Sāriputta said. Gratified, the monks delighted in Venerable Sāriputta's words.
-
-
-
+--- EOF [MN28.txt] ---
+--- BOF [MN29.txt] ---
 THE LONGER HEARTWOOD SIMILE DISCOURSE
 MAHĀ SĀROPAMA SUTTA  Majjhima Nikāya 29
 
@@ -2764,9 +2742,8 @@ I have heard that on one occasion the Blessed One was staying near Rājagaha on 
 'Monks, this holy life doesn't have as its reward gain, offerings, & fame, doesn't have as its reward consummation of virtue, doesn't have as its reward consummation of concentration, doesn't have as its reward knowledge & vision, but the unprovoked awareness-release: That is the purpose of this holy life, that is its heartwood, that its final end.'
 
 That is what the Blessed One said. Gratified, the monks delighted in the Blessed One's words.
-
-
-
+--- EOF [MN29.txt] ---
+--- BOF [MN30.txt] ---
 THE SHORTER HEARTWOOD SIMILE DISCOURSE
 CŪḶA SĀROPAMA SUTTA  Majjhima Nikāya 30
 
@@ -2831,9 +2808,8 @@ The Blessed One said, 'Brahman, it's as if a man in need of heartwood, seeking h
 'Brahman, this holy life doesn't have as its reward gain, offerings, & fame, doesn't have as its reward consummation of virtue, doesn't have as its reward consummation of concentration, doesn't have as its reward knowledge & vision, but the unprovoked awareness-release: That is the purpose of this holy life, that is its heartwood, that its final end.'
 
 When this was said, Piṅgalakoccha the brahman said to the Blessed One: 'Magnificent, lord! Magnificent! Just as if he were to place upright what was overturned, to reveal what was hidden, to show the way to one who was lost, or to carry a lamp into the dark so that those with eyes could see forms, in the same way has the Blessed One—through many lines of reasoning—made the Dhamma clear. I go to the Blessed One for refuge, to the Dhamma, and to the Saṅgha of monks. May the Blessed One remember me as a lay follower who has gone to him for refuge, from this day forward, for life.'
-
-
-
+--- EOF [MN30.txt] ---
+--- BOF [MN31.txt] ---
 THE SHORTER GOSIṄGA SĀLA-TREE DISCOURSE
 CŪḶAGOSIṄGASĀLA SUTTA  Majjhima Nikāya 31
 
@@ -2934,9 +2910,8 @@ So in that moment, that instant, the cries were known right up to the Brahmā wo
 'See, Dīgha, how those three sons of good family have practiced for the benefit of the many, for the happiness of the many, out of sympathy for the world, for the welfare, benefit, & happiness of devas & human beings.'
 
 That is what the Blessed One said. Gratified, the spirit Dīgha Parajana delighted in the Blessed One's words.
-
-
-
+--- EOF [MN31.txt] ---
+--- BOF [MN33.txt] ---
 THE GREATER COWHERD DISCOURSE
 MAHĀ GOPĀLAKA SUTTA  Majjhima Nikāya 33
 
@@ -2999,9 +2974,8 @@ The Blessed One said, 'Monks, a cowherd endowed with eleven factors is incapable
 'And how does a monk show extra respect for the elder monks with seniority, who have been ordained long, who are fathers & leaders of the Saṅgha? There is the case where a monk establishes himself in bodily acts of goodwill, in public & in private, toward the elder monks with seniority, who have been ordained long, who are fathers & leaders of the Saṅgha. He establishes himself in verbal acts of goodwill… in mental acts of goodwill, in public & in private, toward the elder monks with seniority, who have been ordained long, who are fathers & leaders of the Saṅgha.
 
 'A monk endowed with these eleven factors is capable of attaining growth, increase, & abundance in this Dhamma-Vinaya.'
-
-
-
+--- EOF [MN33.txt] ---
+--- BOF [MN35.txt] ---
 THE SHORTER DISCOURSE TO SACCAKA
 CŪḶA SACCAKA SUTTA  Majjhima Nikāya 35
 
@@ -3164,9 +3138,8 @@ Then, after the night had passed, the Licchavis offered to Saccaka the Nigaṇ�
 So the Blessed One early in the morning adjusted his lower robe and—taking his bowl & outer robe—went together with the Saṅgha of monks to Saccaka the Nigaṇṭha-son's monastery. On arrival, he sat down on a seat laid out. Saccaka the Nigaṇṭha-son, with his own hand, served & satisfied the Saṅgha of monks headed by the Blessed One with exquisite staple & non-staple food. Then, when the Blessed One had eaten and had rinsed his bowl & hands, Saccaka the Nigaṇṭha-son, taking a lower seat, sat down to one side. As he was sitting there, he said to the Blessed One, 'Master Gotama, may the merit and accoutrements of the merit of this gift be exclusively for the happiness of the donors.'
 
 'Aggivessana, whatever has come from (giving to) a recipient such as you—not without passion, not without aversion, not without delusion—that will be for the donors. Whatever has come from (giving to) a recipient such as me—without passion, without aversion, without delusion—that will be for you.'
-
-
-
+--- EOF [MN35.txt] ---
+--- BOF [MN36.txt] ---
 THE LONGER DISCOURSE TO SACCAKA
 MAHĀ SACCAKA SUTTA  Majjhima Nikāya 36
 
@@ -3315,9 +3288,8 @@ When this was said, Saccaka the Nigaṇṭha said to the Blessed One: 'It's amaz
 'Then do, Aggivessana, what you think it is now time to do.'
 
 So Saccaka the Nigaṇṭha, delighting in & approving of the Blessed One's words, got up from his seat and left.
-
-
-
+--- EOF [MN36.txt] ---
+--- BOF [MN38.txt] ---
 THE GREATER CRAVING-DESTRUCTION DISCOURSE
 MAHĀ TAṆHĀSAṄKHAYA SUTTA  Majjhima Nikāya 38
 
@@ -3759,9 +3731,8 @@ UNLIMITED AWARENESS
 'Monks, remember this, my brief (account of) release through the destruction of craving; and Sāti, the Fisherman's Son, as tied up in the great net of craving, the great tangle of craving.'
 
 That is what the Blessed One said. Gratified, the monks delighted in the Blessed One's words.
-
-
-
+--- EOF [MN38.txt] ---
+--- BOF [MN39.txt] ---
 THE GREATER DISCOURSE AT ASSAPURA
 MAHĀ ASSAPURA SUTTA  Majjhima Nikāya 39
 
@@ -3867,9 +3838,8 @@ THE THREE KNOWLEDGES
 'And how is a monk an arahant? His evil, unskillful qualities that are defiled, that lead to further becoming, create trouble, ripen in stress, and lead to future birth, aging, & death have gone far away [ārakā]. This is how a monk is an arahant.'
 
 That is what the Blessed One said. Gratified, the monks delighted in the Blessed One's words.
-
-
-
+--- EOF [MN39.txt] ---
+--- BOF [MN40.txt] ---
 THE SHORTER DISCOURSE AT ASSAPURA
 CŪḶA-ASSAPURA SUTTA  Majjhima Nikāya 40
 
@@ -3930,9 +3900,8 @@ The Blessed One said, 'Contemplatives, contemplatives': That is how people perce
 'If a person from any family at all goes forth and—through the ending of the effluents—enters & remains in the effluent-free awareness-release & discernment-release, having directly known & realized them for himself right in the here & now, then he, I tell you, is a contemplative through the ending of the effluents.'
 
 That is what the Blessed One said. Gratified, the monks delighted in the Blessed One's words.
-
-
-
+--- EOF [MN40.txt] ---
+--- BOF [MN41.txt] ---
 (BRAHMANS) OF SĀLA
 SĀLEYYAKA SUTTA  Majjhima Nikāya 41
 
@@ -4061,9 +4030,8 @@ SKILLFUL MENTAL ACTION
 'If one—a person of Dhamma conduct, harmonious conduct—should wish: 'O if I—with the ending of the effluents—were to enter & remain in the effluent-free awareness-release & discernment-release, having directly known and realized them for myself right in the here & now,' it is possible that one—with the ending of the effluents—would enter & remain in the effluent-free awareness-release & discernment-release, having directly known and realized them for oneself right in the here & now. Why is that? Because one is a person of Dhamma conduct, harmonious conduct.'
 
 When this was said, the brahman householders of Sāla said to the Blessed One: 'Magnificent, Master Gotama! Magnificent! Just as if he were to place upright what was overturned, to reveal what was hidden, to show the way to one who was lost, or to carry a lamp into the dark so that those with eyes could see forms, in the same way has Master Gotama—through many lines of reasoning—made the Dhamma clear. We go to Master Gotama for refuge, to the Dhamma, & to the Saṅgha of monks. May Master Gotama remember us as lay followers who have gone for refuge from this day forward, for life.'
-
-
-
+--- EOF [MN41.txt] ---
+--- BOF [MN43.txt] ---
 THE GREATER SET OF QUESTIONS & ANSWERS
 MAHĀ VEDALLA SUTTA  Majjhima Nikāya 43
 
@@ -4257,9 +4225,8 @@ AWARENESS-RELEASE
 'This, friend, is the way of explaining whereby these qualities are one in meaning and different only in name.'
 
 That is what Venerable Sāriputta said. Gratified, Venerable Mahā Koṭṭhita delighted in Venerable Sāriputta's words.
-
-
-
+--- EOF [MN43.txt] ---
+--- BOF [MN44.txt] ---
 THE SHORTER SET OF QUESTIONS & ANSWERS
 CŪḶA VEDALLA SUTTA  Majjhima Nikāya 44
 
@@ -4432,9 +4399,8 @@ FEELING
 Then Visākha the lay follower, delighting & rejoicing in what Dhammadinnā the nun had said, bowed down to her and, keeping her to his right, went to the Blessed One. On arrival, having bowed down to the Blessed One, he sat to one side. As he was sitting there he told the Blessed One the full extent of the conversation he had had with Dhammadinnā the nun. When this was said, the Blessed One said to him, 'Dhammadinnā the nun is wise, Visākha, a woman of great discernment. If you had asked me those things, I would have answered you in the same way she did. That is the meaning of those things. That is how you should remember it.'
 
 That is what the Blessed One said. Gratified, Visākha the lay follower delighted in the Blessed One's words.
-
-
-
+--- EOF [MN44.txt] ---
+--- BOF [MN45.txt] ---
 THE SHORTER DISCOURSE ON TAKING ON PRACTICES
 CŪḶA DHAMMASAMĀDĀNA SUTTA  Majjhima Nikāya 45
 
@@ -4479,9 +4445,8 @@ Thus they meet with their downfall through sensual pleasures. Then, having met w
 'And these are the four ways of taking on practices.'
 
 That is what the Blessed One said. Gratified, the monks delighted in the Blessed One's words.
-
-
-
+--- EOF [MN45.txt] ---
+--- BOF [MN48.txt] ---
 IN KOSAMBĪ
 KOSAMBIYĀ SUTTA  Majjhima Nikāya 48
 
@@ -4556,9 +4521,8 @@ Then the Blessed One addressed the monks: 'Monks, these six are conditions that 
 'A disciple of the noble ones thus endowed with seven factors has well examined the character for the realization of the fruit of stream entry. A disciple of the noble ones thus endowed with seven factors is endowed with the fruit of stream entry.'
 
 That is what the Blessed One said. Gratified, the monks delighted in the Blessed One's words.
-
-
-
+--- EOF [MN48.txt] ---
+--- BOF [MN49.txt] ---
 THE BRAHMĀ INVITATION
 BRAHMA-NIMANTANIKA SUTTA  Majjhima Nikāya 49
 
@@ -4693,9 +4657,8 @@ or cling to any delight.'
 'When this was said, I told Māra the Evil One, 'I know you, Evil One. Don't assume, 'He doesn't know me.' You are Māra, Evil One. And it's not sympathetic to welfare that you speak thus to me. It's sympathetic to what is not welfare that you speak thus to me. You think this, Evil One: 'Those to whom Gotama the contemplative will teach the Dhamma will defy my sovereignty'. Without being rightly self-awakened, Evil One, your contemplatives & brahmans claimed to be rightly self-awakened. I, however, being rightly self-awakened, claim to be rightly self-awakened. For when the Tathāgata is teaching the Dhamma to his disciples, he is Such. When he is not teaching the Dhamma to his disciples, he is Such. When leading his disciples he is Such. When not leading his disciples he is Such. Why is that? The effluents that defile, that lead to further becoming, that disturb, that ripen in stress, that tend to future birth, aging, & death: Those the Tathāgata has abandoned, their root destroyed, made like a palmyra stump, deprived of the conditions of development, not destined for future arising. Just as a palmyra tree with its crown cut off is incapable of growing again; so, too, the effluents that defile, that lead to further becoming, that disturb, that ripen in stress, that tend to future birth, aging, & death: Those the Tathāgata has abandoned, their root destroyed, made like a palmyra stump, deprived of the conditions of development, not destined for future arising.'
 
 Thus, because of the silencing of Māra, and because of the Brahmā's invitation, this discourse is entitled, 'The Brahmā Invitation.'
-
-
-
+--- EOF [MN49.txt] ---
+--- BOF [MN51.txt] ---
 TO KANDARAKA
 KANDARAKA SUTTA  Majjhima Nikāya 51
 
@@ -4830,9 +4793,8 @@ THE THREE KNOWLEDGES
 'This is called a person who neither torments himself nor is devoted to the practice of torturing himself, who neither torments others nor is devoted to the practice of torturing others. Neither tormenting himself nor tormenting others, he dwells in the here-&-now free of hunger, unbound, cooled, sensitive to pleasure, with a Brahmā-like mind.'
 
 That is what the Blessed One said. Gratified, the monks delighted in the Blessed One's words.
-
-
-
+--- EOF [MN51.txt] ---
+--- BOF [MN52.txt] ---
 TO THE MAN FROM AṬṬHAKANAGARA
 AṬṬHAKANĀGARA SUTTA  Majjhima Nikāya 52
 
@@ -4867,9 +4829,8 @@ Then Dasama the householder from Aṭṭhakanagara, on completing his business a
 When this was said, Dasama the householder from Aṭṭhakanagara said to Venerable Ānanda, 'Venerable Ānanda, just as if a man seeking a single opening onto treasure were all at once to come upon eleven openings onto treasure, in the same way I—seeking a single doorway to the deathless—have all at once come to hear of eleven doorways to the deathless. And just as if a man whose house had eleven doors could take himself to safety by means of any one of those doors, in the same way I can take myself to safety by means of any one of these eleven doors to the deathless. Venerable sir, when sectarians search for a teacher's fee for their teachers, why shouldn't I pay homage to Venerable Ānanda?'
 
 So Dasama the householder from Aṭṭhakanagara, having assembled the Saṅgha of monks from Vesālī and Pāṭaliputta, with his own hands served & satisfied them with refined staple & non-staple foods. He presented a pair of cloths to each monk, and a triple robe to Venerable Ānanda. And for Venerable Ānanda he had a dwelling built worth five hundred (kahāpanas).
-
-
-
+--- EOF [MN52.txt] ---
+--- BOF [MN53.txt] ---
 THE PRACTICE FOR ONE IN TRAINING
 SEKHA-PAṬIPADĀ SUTTA  Majjhima Nikāya 53
 
@@ -4956,9 +4917,8 @@ human & divine.'
 Then the Blessed One got up and said to Venerable Ānanda, 'Good, good, Ānanda. What you have said to the Kapilavatthu Sakyans about the person who follows the practice for one in training is good.'
 
 That is what Venerable Ānanda said, and the Teacher approved. Gratified, the Kapilavatthu Sakyans delighted in Venerable Ānanda's words.
-
-
-
+--- EOF [MN53.txt] ---
+--- BOF [MN54.txt] ---
 TO POTALIYA (EXCERPT)
 POTALIYA SUTTA  Majjhima Nikāya 54
 
@@ -5007,9 +4967,8 @@ POTALIYA SUTTA  Majjhima Nikāya 54
 'When the disciple of the noble ones has arrived at this purity of equanimity & mindfulness, he enters & remains in the effluent-free awareness-release & discernment-release, having directly known & realized them for himself right in the here & now.
 
 'It's to this extent, householder, that there is the all-around in-every-way cutting off of one's affairs in the discipline of a noble one'.…
-
-
-
+--- EOF [MN54.txt] ---
+--- BOF [MN55.txt] ---
 TO JĪVAKA
 JĪVAKA SUTTA  Majjhima Nikāya 55
 
@@ -5070,9 +5029,8 @@ I have heard that on one occasion the Blessed One was staying near Rājagaha, in
 When this was said, Jīvaka Komārabhacca said to the Blessed One, 'It's amazing, lord. It's astounding—how allowable is the food the monks eat! How blameless is the food the monks eat!
 
 'Magnificent, lord! Magnificent! Just as if he were to place upright what was overturned, to reveal what was hidden, to show the way to one who was lost, or to carry a lamp into the dark so that those with eyes could see forms, in the same way has the Blessed One—through many lines of reasoning—made the Dhamma clear. I go to the Blessed One for refuge, to the Dhamma, and to the Saṅgha of monks. May the Blessed One remember me as a lay follower who has gone to him for refuge, from this day forward, for life.'
-
-
-
+--- EOF [MN55.txt] ---
+--- BOF [MN56.txt] ---
 THE TEACHING TO UPĀLI
 UPĀLIVĀDA SUTTA  Majjhima Nikāya 56
 
@@ -5415,9 +5373,8 @@ Of that Blessed One, I'm a disciple.
 'Venerable sir, it's as if there were a great heap of flowers—many kinds of flowers—and from them a dexterous garland-maker or garland-maker's apprentice were to tie together a multi-colored garland. In the same way, the Blessed One has many splendors, many hundreds of splendors. Who wouldn't give praise to one deserving of praise?'
 
 Then, because the Nigaṇṭha Nāṭaputta could not bear the homage paid to the Blessed One, hot blood gushed out of his mouth right there.
-
-
-
+--- EOF [MN56.txt] ---
+--- BOF [MN58.txt] ---
 TO PRINCE ABHAYA
 ABHAYA RĀJA-KUMĀRA SUTTA  Majjhima Nikāya 58
 
@@ -5476,9 +5433,8 @@ Now at that time a baby boy was lying face-up on the prince's lap. So the Blesse
 'In the same way, prince, when wise nobles or brahmans, householders or contemplatives, having formulated questions, come to the Tathāgata and ask him, he comes up with the answer on the spot. Why is that? Because the property of the Dhamma is thoroughly penetrated by the Tathāgata. From his thorough penetration of the property of the Dhamma, he comes up with the answer on the spot.'
 
 When this was said, Prince Abhaya said to the Blessed One: 'Magnificent, lord! Magnificent! Just as if he were to place upright what was overturned, to reveal what was hidden, to show the way to one who was lost, or to carry a lamp into the dark so that those with eyes could see forms, in the same way has the Blessed One—through many lines of reasoning—made the Dhamma clear. I go to the Blessed One for refuge, to the Dhamma, and to the Saṅgha of monks. May the Blessed One remember me as a lay follower who has gone to him for refuge, from this day forward, for life.'
-
-
-
+--- EOF [MN58.txt] ---
+--- BOF [MN59.txt] ---
 MANY THINGS TO BE FELT
 BAHUVEDANĪYA SUTTA  Majjhima Nikāya 59
 
@@ -5545,9 +5501,8 @@ Thus I have taught the Dhamma by means of exposition. When I have taught the Dha
 'Now, it's possible, Ānanda, that some wanderers of other persuasions might say, 'Gotama the contemplative speaks of the cessation of perception & feeling and yet describes it as pleasure. What is this? How is this?' When they say that, they are to be told, 'It's not the case, friends, that the Blessed One describes only pleasant feeling as included under pleasure. Wherever pleasure is found, in whatever terms, the Blessed One describes it as pleasure.'
 
 That is what the Blessed One said. Gratified, Venerable Ānanda delighted in the Blessed One's words.
-
-
-
+--- EOF [MN59.txt] ---
+--- BOF [MN60.txt] ---
 A SAFE BET
 APAṆṆAKA SUTTA  Majjhima Nikāya 60
 
@@ -5752,9 +5707,8 @@ THE THREE KNOWLEDGES
 'This is called an individual who neither torments himself nor is devoted to the practice of torturing himself, who neither torments others nor is devoted to the practice of torturing others. Neither tormenting himself nor tormenting others, he dwells in the here & now free of hunger, unbound, cooled, sensitive to happiness, with a Brahmā-like mind.'
 
 When this was said, the brahman householders of Sāla said, 'Magnificent, master Gotama! Magnificent! Just as if he were to place upright what was overturned, to reveal what was hidden, to show the way to one who was lost, or to carry a lamp into the dark so that those with eyes could see forms, in the same way has master Gotama—through many lines of reasoning—made the Dhamma clear. We go to master Gotama for refuge, to the Dhamma, and to the Saṅgha of monks. May master Gotama remember us as lay followers who have gone to him for refuge, from this day forward, for life.'
-
-
-
+--- EOF [MN60.txt] ---
+--- BOF [MN61.txt] ---
 THE EXHORTATION TO RĀHULA AT MANGO STONE
 AMBALAṬṬHIKĀ RĀHULOVĀDA SUTTA  Majjhima Nikāya 61
 
@@ -5823,9 +5777,8 @@ Having turned the water dipper right-side up, the Blessed One said to Venerable 
 'Thus, Rāhula, you should train yourself: 'I will purify my bodily actions through repeated reflection. I will purify my verbal actions through repeated reflection. I will purify my mental actions through repeated reflection.' That's how you should train yourself.'
 
 That is what the Blessed One said. Gratified, Venerable Rāhula delighted in the Blessed One's words.
-
-
-
+--- EOF [MN61.txt] ---
+--- BOF [MN62.txt] ---
 THE GREATER EXHORTATION TO RĀHULA
 MAHĀ RĀHULOVĀDA SUTTA  Majjhima Nikāya 62
 
@@ -5894,9 +5847,8 @@ Then Venerable Rāhula, emerging from his seclusion in the evening, went to the 
 'When mindfulness of in-&-out breathing is developed & pursued in this way, even one's final in-breaths & out-breaths are known as they cease, not unknown.'
 
 That is what the Blessed One said. Gratified, Venerable Rāhula delighted in the Blessed One's words.
-
-
-
+--- EOF [MN62.txt] ---
+--- BOF [MN63.txt] ---
 THE SHORTER EXHORTATION TO MĀLUṄKYA
 CŪḶA MĀLUṄKYOVĀDA SUTTA  Majjhima Nikāya 63
 
@@ -5939,9 +5891,8 @@ Then, emerging from his seclusion in the evening, Venerable Māluṅkyaputta wen
 'So, Māluṅkyaputta, remember what is undisclosed by me as undisclosed, and what is disclosed by me as disclosed.'
 
 That is what the Blessed One said. Gratified, Venerable Māluṅkyaputta delighted in the Blessed One's words.
-
-
-
+--- EOF [MN63.txt] ---
+--- BOF [MN64.txt] ---
 THE LONGER EXHORTATION TO MĀLUṄKYA
 MAHĀ MĀLUṄKYOVĀDA SUTTA  Majjhima Nikāya 64
 
@@ -6014,9 +5965,8 @@ The Blessed One said, 'There is the case, Ānanda, where an uninstructed, run-of
 'I tell you, Ānanda: That is the difference in their faculties.'
 
 That is what the Blessed One said. Gratified, Venerable Ānanda delighted in the Blessed One's words.
-
-
-
+--- EOF [MN64.txt] ---
+--- BOF [MN66.txt] ---
 THE QUAIL SIMILE
 LAḌUKIKOPAMA SUTTA  Majjhima Nikāya 66
 
@@ -6103,9 +6053,8 @@ Then, Venerable Udāyin, emerging from his seclusion in the evening, went to the
 'No, lord.'
 
 That is what the Blessed One said. Gratified, Venerable Udāyin delighted in the Blessed One's words.
-
-
-
+--- EOF [MN66.txt] ---
+--- BOF [MN67.txt] ---
 NEAR CĀTUMĀ
 CĀTUMA SUTTA  Majjhima Nikāya 67
 
@@ -6180,9 +6129,8 @@ Then the Blessed One addressed the monks, 'Monks, there are these four dangers t
 'These, monks, are the four dangers to be expected by certain individuals who have gone forth from home life into homelessness in this Dhamma & Vinaya.'
 
 That is what the Blessed One said. Gratified, the monks delighted in the Blessed One's words.
-
-
-
+--- EOF [MN67.txt] ---
+--- BOF [MN69.txt] ---
 ABOUT GOLISSĀNI
 GOLISSĀNI SUTTA  Majjhima Nikāya 69
 
@@ -6225,9 +6173,8 @@ Then Venerable Sāriputta, with reference to the monk named Golissāni, addresse
 When this was said, Venerable Mahā Moggallāna said to Venerable Sāriputta, 'Sāriputta my friend, are these qualities to be undertaken & practiced only by a wilderness-dwelling monk, or also by a village-dwelling monk?'
 
 'Moggallāna my friend, these qualities are to be undertaken & practiced by a wilderness-dwelling monk, and even more so by a village-dwelling monk.'
-
-
-
+--- EOF [MN69.txt] ---
+--- BOF [MN70.txt] ---
 AT KĪṬĀGIRI
 KĪṬĀGIRI SUTTA  Majjhima Nikāya 70
 
@@ -6306,9 +6253,8 @@ Then the Blessed One told a certain monk, 'Come, monk. In my name, call the monk
 'For a disciple who has conviction in the Teacher's message & lives to penetrate it, what accords with the Dhamma is this: 'The Blessed One is the Teacher, I am a disciple. He is the one who knows, not I.' For a disciple who has conviction in the Teacher's message & lives to penetrate it, the Teacher's message is healing & nourishing. For a disciple who has conviction in the Teacher's message & lives to penetrate it, what accords with the Dhamma is this: 'Gladly would I let the flesh & blood in my body dry up, leaving just the skin, tendons, & bones, but if I have not attained what can be reached through manly firmness, manly persistence, manly striving, there will be no relaxing my persistence.' For a disciple who has conviction in the Teacher's message & lives to penetrate it, one of two fruits can be expected: either gnosis here & now, or—if there be any remnant of clinging-sustenance—non-return.'
 
 That is what the Blessed One said. Gratified, the monks delighted in the Blessed One's words.
-
-
-
+--- EOF [MN70.txt] ---
+--- BOF [MN72.txt] ---
 TO VACCHAGOTTA ON FIRE
 AGGI-VACCHAGOTTA SUTTA  Majjhima Nikāya 72
 
@@ -6421,9 +6367,8 @@ I have heard that on one occasion the Blessed One was staying near Sāvatthī in
 When this was said, Vacchagotta the wanderer said to the Blessed One: 'Master Gotama, it's as if there were a great Sal tree not far from a village or town: From inconstancy, its branches and leaves would wear away, its bark would wear away, its sapwood would wear away, so that on a later occasion—divested of branches, leaves, bark, & sapwood—it would stand as pure heartwood. In the same way, Master Gotama's words are divested of branches, leaves, bark, & sapwood and stand as pure heartwood.
 
 'Magnificent, Master Gotama! Magnificent! Just as if he were to place upright what was overturned, to reveal what was hidden, to show the way to one who was lost, or to carry a lamp into the dark so that those with eyes could see forms, in the same way has Master Gotama—through many lines of reasoning—made the Dhamma clear. I go to Master Gotama for refuge, to the Dhamma, and to the Saṅgha of monks. May Master Gotama remember me as a lay follower who has gone to him for refuge, from this day forward, for life.'
-
-
-
+--- EOF [MN72.txt] ---
+--- BOF [MN74.txt] ---
 TO LONGNAILS
 DĪGHANAKHA SUTTA  Majjhima Nikāya 74
 
@@ -6460,9 +6405,8 @@ When this was said, LongNails the wanderer said to the Blessed One, 'Master Gota
 Now at that time Venerable Sāriputta was sitting behind the Blessed One, fanning him. The thought occurred to him, 'Indeed, it seems that the Blessed One speaks to us of the abandoning of each of these qualities through direct knowledge. Indeed, it seems that the One Well-Gone speaks to us of the relinquishing of each of these qualities through direct knowledge.' As Venerable Sāriputta was reflecting thus, his mind was released from effluents through not-clinging. While in LongNails the wanderer there arose the dustless, stainless Dhamma eye: 'Whatever is subject to origination is all subject to cessation.'
 
 Then LongNails the wanderer—having seen the Dhamma, having attained the Dhamma, having known the Dhamma, having fathomed the Dhamma, having crossed over and beyond uncertainty, having no more perplexity, having gained fearlessness, having becoming independent of others with regard to the Teacher's message—said to the Blessed One: 'Magnificent, Master Gotama! Magnificent! Just as if he were to place upright what was overturned, to reveal what was hidden, to show the way to one who was lost, or to carry a lamp into the dark so that those with eyes could see forms, in the same way has Master Gotama—through many lines of reasoning—made the Dhamma clear. I go to Master Gotama for refuge, to the Dhamma, and to the Saṅgha of monks. May Master Gotama remember me as a lay follower who has gone to him for refuge, from this day forward, for life.'
-
-
-
+--- EOF [MN74.txt] ---
+--- BOF [MN75.txt] ---
 TO MĀGAṆḌIYA
 MĀGAṆḌIYA SUTTA  Majjhima Nikāya 75
 
@@ -6637,9 +6581,8 @@ When this was said, Māgaṇḍiya the wanderer said, 'Magnificent, Master Gotam
 'Master Gotama, if anyone who has previously belonged to another sect and desires the going forth & acceptance in this Dhamma & Vinaya must first undergo probation for four months; and if, at the end of four months, the monks feeling so moved, give him the going forth & accept him into the monk's state; then I am willing to undergo probation for four years. If, at the end of four years, the monks feel so moved, let them give me the going forth & accept me into the monk's state.'
 
 Then Māgaṇḍiya the wanderer received the going forth & the acceptance in the Blessed One's presence. And not long after his acceptance—dwelling alone, secluded, heedful, ardent, & resolute—he in no long time reached & remained in the supreme goal of the holy life, for which clansmen rightly go forth from home into homelessness, knowing & realizing it for himself in the here & now. He knew: 'Birth is ended, the holy life fulfilled, the task done. There is nothing further for the sake of this world.' And thus Venerable Māgaṇḍiya became another one of the arahants.
-
-
-
+--- EOF [MN75.txt] ---
+--- BOF [MN77.txt] ---
 THE GREATER DISCOURSE TO SAKULUDĀYIN
 MAHĀSAKULUDĀYI SUTTA  Majjhima Nikāya 77
 
@@ -6859,9 +6802,8 @@ THE ENDING OF EFFLUENTS
 'These, Udāyin, are the five qualities for which my disciples honor, respect, revere, & worship me and—honoring & respecting me—remain in dependence on me.'
 
 That is what the Blessed One said. Gratified, Sakuludāyin the wanderer delighted in the Blessed One's words.
-
-
-
+--- EOF [MN77.txt] ---
+--- BOF [MN78.txt] ---
 MUṆḌIKA THE CONTEMPLATIVE
 SAMAṆA-MUṆḌIKA SUTTA  Majjhima Nikāya 78
 
@@ -6898,9 +6840,8 @@ When this was said, the Blessed One said to Pañcakaṅga: 'In that case, carpen
 'Now, an individual endowed with which ten qualities is one whom I describe as being consummate in what is skillful, foremost in what is skillful, an invincible contemplative attained to the highest attainments? One endowed with the right view of one beyond training, the right resolve of one beyond training, the right speech… the right action… the right livelihood… the right effort… the right mindfulness… the right concentration… the right knowledge… the right release of one beyond training. An individual endowed with these ten qualities is one whom I describe as being consummate in what is skillful, foremost in what is skillful, an invincible contemplative attained to the highest attainments.'
 
 That is what the Blessed One said. Gratified, Pañcakaṅga the carpenter delighted in the Blessed One's words.
-
-
-
+--- EOF [MN78.txt] ---
+--- BOF [MN82.txt] ---
 ABOUT RAṬṬHAPĀLA
 RAṬṬHAPĀLA SUTTA  Majjhima Nikāya 82
 
@@ -7339,9 +7280,8 @@ I went forth.
 The contemplative life is better
 
 for sure.
-
-
-
+--- EOF [MN82.txt] ---
+--- BOF [MN85.txt] ---
 PRINCE BODHI
 BODHIRĀJAKUMĀRA SUTTA  Majjhima Nikāya 85
 
@@ -7637,9 +7577,8 @@ When this was said, the young brahman Sañjikāputta said to Prince Bodhi, 'Mast
 'Then there was one time when Blessed One was staying here among the Bhaggas at Suṁsumāri Hill in the Bhesakaḷa Forest Deer Park. Then my nurse, carrying me on her hip, went to the Blessed One and, on arrival, having bowed down to him, stood to one side. As she was standing there, she said to the Blessed One, 'This Prince Bodhi, lord, goes to the Blessed One, the Dhamma, & the Saṅgha of monks for refuge. May the Blessed One remember him as a lay follower who has gone for refuge from this day forward, for life.'
 
 'And now, dear Sañjikāputta, for a third time, I go to the Blessed One, the Dhamma, & the Saṅgha of monks for refuge. May the Blessed One remember me as a lay follower who has gone for refuge from this day forward, for life.'
-
-
-
+--- EOF [MN85.txt] ---
+--- BOF [MN86.txt] ---
 ABOUT AṄGULIMĀLA
 AṄGULIMĀLA SUTTA  Majjhima Nikāya 86
 
@@ -7958,9 +7897,8 @@ have been attained;
 the Buddha's bidding,
 
 done.
-
-
-
+--- EOF [MN86.txt] ---
+--- BOF [MN87.txt] ---
 FROM ONE WHO IS DEAR
 PIYAJĀTIKA SUTTA  Majjhima Nikāya 87
 
@@ -8047,9 +7985,8 @@ Then Queen Mallikā went to King Pasenadi Kosala and on arrival said to him, 'Wh
 Homage to the Blessed One, worthy & rightly self-awakened!
 
 Homage to the Blessed One, worthy & rightly self-awakened!'
-
-
-
+--- EOF [MN87.txt] ---
+--- BOF [MN90.txt] ---
 AT KAṆṆAKATTHALA
 KAṆṆAKATTHALA SUTTA  Majjhima Nikāya 90
 
@@ -8182,9 +8119,8 @@ So King Pasenadi Kosala said to the Blessed One, 'Lord, we have asked the Blesse
 'Then do, great king, what you think it is now time to do.'
 
 Then King Pasenadi Kosala, delighting in and approving of the Blessed One's words, got up from his seat, bowed down to the Blessed One and—keeping him to his right—departed.
-
-
-
+--- EOF [MN90.txt] ---
+--- BOF [MN91.txt] ---
 TO BRAHMĀYU (EXCERPT)
 BRAHMĀYU SUTTA  Majjhima Nikāya 91
 
@@ -8211,9 +8147,8 @@ BRAHMĀYU SUTTA  Majjhima Nikāya 91
 'Having gone to the monastery, he teaches Dhamma to the gathering. He neither flatters nor berates the gathering. He instructs, urges, rouses, & encourages the gathering with a talk purely on Dhamma. The voice that issues from his mouth is endowed with eight qualities: It is distinct, intelligible, melodious, audible, ringing, focused, deep, & resonant. But while his voice is intelligible to the gathering, the sound of his voice doesn't extend outside the gathering. Those who have been instructed, urged, roused, & encouraged by his Dhamma talk rise from their seats and depart, looking only at him and concerned with nothing else.
 
 'We have seen Master Gotama walking, sir, we have seen him standing, we have seen him entering indoors, we have seen him sitting in silence indoors, we have seen him eating indoors, we have seen him sitting in silence after eating, we have seen him giving the anumodanā after eating, we having seen him returning to the monastery, we have seen him sitting in silence after going to the monastery, we have seen him teaching the Dhamma to a gathering in the monastery. He is like that, like that—and more than that.'
-
-
-
+--- EOF [MN91.txt] ---
+--- BOF [MN93.txt] ---
 WITH ASSALĀYANA
 ASSALĀYANA SUTTA  Majjhima Nikāya 93
 
@@ -8354,9 +8289,8 @@ Then the Blessed One—seeing that the brahman student Assalāyana was sitting s
 'Now, Assalāyana, when those seven brahman seers couldn't defend their own birth-statement when interrogated, pressed, & rebuked by the seer Devala the Dark, how can you now defend your own birth-statement when interrogated, pressed, & rebuked by me—you, their lineage holder, but not (the equal of) Puṇṇa, their ladle holder?'
 
 When this was said, the brahman student Assalāyana said to the Blessed One: 'Magnificent, Master Gotama! Magnificent! Just as if he were to place upright what was overturned, to reveal what was hidden, to show the way to one who was lost, or to carry a lamp into the dark so that those with eyes could see forms, in the same way has Master Gotama—through many lines of reasoning—made the Dhamma clear. I go to Master Gotama for refuge, to the Dhamma, and to the Saṅgha of monks. May Master Gotama remember me as a lay follower who has gone to him for refuge, from this day forward, for life.'
-
-
-
+--- EOF [MN93.txt] ---
+--- BOF [MN95.txt] ---
 WITH CAṄKĪ
 CAṄKĪ SUTTA  Majjhima Nikāya 95
 
@@ -8543,9 +8477,8 @@ And so the Blessed One, encompassing Kāpadika's awareness with his awareness, m
 'We have asked Master Gotama about safeguarding the truth, and Master Gotama has answered about safeguarding the truth. We like that & agree with that, and so we are gratified. We have asked Master Gotama about awakening to the truth, and Master Gotama has answered about awakening to the truth. We like that & agree with that, and so we are gratified. We have asked Master Gotama about finally attaining the truth, and Master Gotama has answered about finally attaining the truth. We like that & agree with that, and so we are gratified. We have asked Master Gotama about the quality most helpful for finally attaining the truth, and Master Gotama has answered about the quality most helpful for finally attaining the truth. We like that & agree with that, and so we are gratified. Whatever we have asked Master Gotama, Master Gotama has answered it. We like that & agree with that, and so we are gratified.
 
 'We used to think, 'Who are these bald-headed 'contemplatives,' these menial, dark offspring of the Kinsman's [Brahmā's] feet? Who are they to know the Dhamma?' But now Master Gotama has inspired within me a contemplative-love for contemplatives, a contemplative-confidence in contemplatives, a contemplative-respect for contemplatives. Magnificent, Master Gotama! Magnificent! Just as if he were to place upright what was overturned, to reveal what was hidden, to show the way to one who was lost, or to carry a lamp into the dark so that those with eyes could see forms, in the same way has Master Gotama—through many lines of reasoning—made the Dhamma clear. I go to Master Gotama for refuge, to the Dhamma, & to the Saṅgha of monks. May Master Gotama remember me as a lay follower who has gone for refuge from this day forward, for life.'
-
-
-
+--- EOF [MN95.txt] ---
+--- BOF [MN97.txt] ---
 TO DHANAÑJĀNIN
 DHANAÑJĀNIN SUTTA  Majjhima Nikāya 97
 
@@ -8670,9 +8603,8 @@ Then Venerable Sāriputta went to the Blessed One and, on arrival, having bowed 
 'The thought occurred to me, lord, 'These brahmans are set on the Brahmā worlds. What if I were to teach Dhanañjānin the brahman the path to union with the Brahmās?'
 
 'Sāriputta, Dhanañjānin the brahman has died and reappeared in the Brahmā world.'
-
-
-
+--- EOF [MN97.txt] ---
+--- BOF [MN101.txt] ---
 AT DEVADAHA
 DEVADAHA SUTTA  Majjhima Nikāya 101
 
@@ -8919,9 +8851,8 @@ THE THREE KNOWLEDGES
 'Such is the teaching of the Tathāgata. And, such being the teaching of the Tathāgata, these ten legitimate deductions can be drawn that give grounds for praising him.'
 
 That is what the Blessed One said. Gratified, the monks delighted in the Blessed One's words.
-
-
-
+--- EOF [MN101.txt] ---
+--- BOF [MN102.txt] ---
 FIVE & THREE
 PAÑCATTAYA SUTTA  Majjhima Nikāya 102
 
@@ -8968,9 +8899,8 @@ The Blessed One said: 'Monks, there are some contemplatives & brahmans who theor
 'Thus, monks, the Tathāgata has awakened to the unexcelled state of foremost peace: liberation through lack of clinging or sustenance, having known, as they have come to be, the origination, passing away, allure, drawbacks of—and escape from—the six media of contact.'
 
 That is what the Blessed One said. Gratified, the monks delighted in the Blessed One's words.
-
-
-
+--- EOF [MN102.txt] ---
+--- BOF [MN105.txt] ---
 TO SUNAKKHATTA
 SUNAKKHATTA SUTTA  Majjhima Nikāya 105
 
@@ -9049,9 +8979,8 @@ The Blessed One said: 'Sunakkhatta, there are these five strands of sensuality. 
 'In the same way, when a monk—maintaining restraint over the six spheres of contact, knowing that 'Acquisition is the root of stress'—is free from acquisition, released in the total ending of acquisition, it's not possible that, with regard to acquisition, he would stir his body or arouse his mind.'
 
 That is what the Blessed One said. Gratified, Sunakkhatta the Licchavi delighted in the Blessed One's words.
-
-
-
+--- EOF [MN105.txt] ---
+--- BOF [MN106.txt] ---
 CONDUCIVE TO THE IMPERTURBABLE
 ĀNEÑJA-SAPPĀYA SUTTA  Majjhima Nikāya 106
 
@@ -9098,9 +9027,8 @@ When this was said, Venerable Ānanda said to the Blessed One: 'There is the cas
 'Now, Ānanda, I have taught the practice conducive to the imperturbable. I have taught the practice conducive to the dimension of nothingness. I have taught the practice conducive to the dimension of neither perception nor non-perception. I have taught the way to cross over the flood by going from one support to the next, the noble liberation. Whatever a teacher should do—seeking the welfare of his disciples, out of sympathy for them—that have I done for you. Over there are the roots of trees; over there, empty dwellings. Practice jhāna, Ānanda. Don't be heedless. Don't later fall into remorse. That is our message to you all.'
 
 That is what the Blessed One said. Gratified, Venerable Ānanda delighted in the Blessed One's words.
-
-
-
+--- EOF [MN106.txt] ---
+--- BOF [MN107.txt] ---
 TO GAṆAKA MOGGALLĀNA
 GAṆAKA MOGGALLĀNA SUTTA  Majjhima Nikāya 107
 
@@ -9161,9 +9089,8 @@ When this was said, Gaṇaka Moggallāna the brahman said to the Blessed One, 'T
 'Master Gotama, just as black orris root is reckoned as supreme among root scents, and red sandalwood is reckoned as supreme among heartwood scents, and jasmine is reckoned as supreme among floral scents, so too is Master Gotama's exhortation the foremost among today's teachings.
 
 'Magnificent, Master Gotama! Magnificent! Just as if he were to place upright what was overturned, to reveal what was hidden, to show the way to one who was lost, or to carry a lamp into the dark so that those with eyes could see forms, in the same way has Master Gotama—through many lines of reasoning—made the Dhamma clear. I go to Master Gotama for refuge, to the Dhamma, & to the Saṅgha of monks. May Master Gotama remember me as a lay follower who has gone for refuge from this day forward, for life.'
-
-
-
+--- EOF [MN107.txt] ---
+--- BOF [MN108.txt] ---
 MOGGALLĀNA THE GUARDSMAN
 GOPAKA MOGGALLĀNA SUTTA  Majjhima Nikāya 108
 
@@ -9274,9 +9201,8 @@ So the brahman Vassakāra, the Magadhan administrator, delighting & rejoicing in
 Then, not long after he had left, Moggallāna the Guardsman said to Venerable Ānanda, 'Master Ānanda, you still haven't answered what I asked you.'
 
 'Didn't I just tell you, brahman? There isn't any one monk endowed in each & every way with the qualities with which the Blessed One—worthy & rightly self-awakened—was endowed. For the Blessed One was the arouser of the unarisen path, the begetter of the unbegotten path, the expounder of the unexpounded path, the knower of the path, the expert with regard to the path, adept at the path. And now his disciples follow the path and become endowed with it after him.'
-
-
-
+--- EOF [MN108.txt] ---
+--- BOF [MN109.txt] ---
 THE GREAT FULL-MOON NIGHT DISCOURSE
 MAHĀ PUṆṆAMA SUTTA  Majjhima Nikāya 109
 
@@ -9375,9 +9301,8 @@ Then the Blessed One, realizing with his awareness the line of thinking in that 
 'Seeing thus, the instructed disciple of the noble ones grows disenchanted with form, disenchanted with feeling, disenchanted with perception, disenchanted with fabrications, disenchanted with consciousness. Disenchanted, he becomes dispassionate. Through dispassion, he is released. With release, there is the knowledge, 'Released.' He discerns that 'Birth is ended, the holy life fulfilled, the task done. There is nothing further for this world.'
 
 That is what the Blessed One said. Gratified, the monks delighted in the Blessed One's words. And while this explanation was being given, the minds of sixty monks, through lack of clinging or sustenance, were released from effluents.
-
-
-
+--- EOF [MN109.txt] ---
+--- BOF [MN110.txt] ---
 THE SHORTER FULL-MOON NIGHT DISCOURSE
 CŪḶA PUṆṆAMA SUTTA  Majjhima Nikāya 110
 
@@ -9446,9 +9371,8 @@ I have heard that on one occasion the Blessed One was staying near Sāvatthī in
 'This person of integrity—thus endowed with qualities of integrity; a person of integrity in his friendship, in the way he wills, the way he gives advice, the way he speaks, the way he acts, the views he holds, & the way he gives a gift—on the break-up of the body, after death, reappears in the destination of people of integrity. And what is the destination of people of integrity? Greatness among devas or among human beings.'
 
 That is what the Blessed One said. Gratified, the monks delighted in the Blessed One's words.
-
-
-
+--- EOF [MN110.txt] ---
+--- BOF [MN111.txt] ---
 ONE AFTER ANOTHER
 ANUPADA SUTTA  Majjhima Nikāya 111
 
@@ -9481,9 +9405,8 @@ The Blessed One said, 'Monks, Sāriputta is wise, of great discernment, deep dis
 'If a person, rightly saying it of anyone, were to say, 'He is the Blessed One's son, his offspring—born of his mouth, born of the Dhamma, created by the Dhamma, his heir in the Dhamma, not his heir in material things,' he would be rightly saying it of Sāriputta if he were to say: 'He is the Blessed One's son, his offspring—born of his mouth, born of the Dhamma, created by the Dhamma, his heir in the Dhamma, not his heir in material things.' Sāriputta, monks, takes the unexcelled wheel of Dhamma set rolling by the Tathāgata, and keeps it rolling rightly.'
 
 That is what the Blessed One said. Gratified, the monks delighted in the Blessed One's words.
-
-
-
+--- EOF [MN111.txt] ---
+--- BOF [MN113.txt] ---
 A PERSON OF INTEGRITY
 SAPPURISA SUTTA  Majjhima Nikāya 113
 
@@ -9536,9 +9459,8 @@ The Blessed One said: 'And which is the quality of a person of no integrity?
 'A person of integrity, completely transcending the dimension of neither perception nor non-perception, enters & remains in the cessation of perception & feeling. When he sees with discernment, his effluents are ended. This is a monk who does not suppose anything, does not suppose anywhere, does not suppose in any way.'
 
 That is what the Blessed One said. Gratified, the monks delighted in the Blessed One's words.
-
-
-
+--- EOF [MN113.txt] ---
+--- BOF [MN117.txt] ---
 THE GREAT FORTY
 MAHĀ CATTĀRĪSAKA SUTTA  Majjhima Nikāya 117
 
@@ -9615,9 +9537,8 @@ The Blessed One said: 'Now what, monks, is noble right concentration with its su
 'Even Vassa & Bhañña—those teachers from Ukkala who were proponents of no-causality, no-action, & no-existence—would not think that this Dhamma discourse on the Great Forty should be censured & rejected. Why is that? For fear of criticism, opposition, & reproach.'
 
 That is what the Blessed One said. Gratified, the monks delighted in the Blessed One's words.
-
-
-
+--- EOF [MN117.txt] ---
+--- BOF [MN118.txt] ---
 MINDFULNESS OF BREATHING
 ĀNĀPĀNASATI SUTTA  Majjhima Nikāya 118
 
@@ -9714,9 +9635,8 @@ CLEAR KNOWING & RELEASE
 'This is how the seven factors for awakening are developed & pursued so as to bring clear knowing & release to their culmination.'
 
 That is what the Blessed One said. Gratified, the monks delighted in the Blessed One's words.
-
-
-
+--- EOF [MN118.txt] ---
+--- BOF [MN119.txt] ---
 MINDFULNESS IMMERSED IN THE BODY
 KĀYAGATĀ-SATI SUTTA  Majjhima Nikāya 119
 
@@ -9847,9 +9767,8 @@ TEN BENEFITS
 'Monks, for one in whom mindfulness immersed in the body is cultivated, developed, pursued, given a means of transport, given a grounding, steadied, consolidated, & well-undertaken, these ten benefits can be expected.'
 
 That is what the Blessed One said. Gratified, the monks delighted in the Blessed One's words.
-
-
-
+--- EOF [MN119.txt] ---
+--- BOF [MN121.txt] ---
 THE SHORTER DISCOURSE ON EMPTINESS
 CŪḶA SUÑÑATA SUTTA  Majjhima Nikāya 121
 
@@ -9915,9 +9834,8 @@ RELEASE
 'Therefore, Ānanda, you should train yourselves: 'We will enter & remain in the emptiness that is pure, superior, & unsurpassed.'
 
 That is what the Blessed One said. Gratified, Venerable Ānanda delighted in the Blessed One's words.
-
-
-
+--- EOF [MN121.txt] ---
+--- BOF [MN122.txt] ---
 THE GREATER DISCOURSE ON EMPTINESS
 MAHĀ SUÑÑATA SUTTA  Majjhima Nikāya 122
 
@@ -10000,9 +9918,8 @@ Now at that time Venerable Ānanda, together with many other monks, was making r
 'I won't hover over you the way a potter hovers over damp, unbaked clay goods. Scolding again & again, I will speak. Encouraging again & again, I will speak. Whatever is of essential worth will remain.'
 
 That is what the Blessed One said. Gratified, Venerable Ānanda delighted in the Blessed One's words.
-
-
-
+--- EOF [MN122.txt] ---
+--- BOF [MN123.txt] ---
 AMAZING & ASTOUNDING QUALITIES
 ACCHARIY'ABBHŪTADHAMMA SUTTA  Majjhima Nikāya 123
 
@@ -10059,9 +9976,8 @@ Then the Blessed One said to Venerable Ānanda, 'That being the case, Ānanda, e
 'The fact, lord, that feelings are known to the Blessed One when they arise, known when they remain, known when they go to their end; perceptions are known to the Blessed One when they arise, known when they remain, known when they go to their end; thoughts are known to the Blessed One when they arise, known when they remain, known when they go to their end: I hold this, too, lord, to be an amazing & astounding quality of the Blessed One.'
 
 That is what Venerable Ānanda said. The Teacher approved. Gratified, the monks delighted in Venerable Ānanda's words.
-
-
-
+--- EOF [MN123.txt] ---
+--- BOF [MN125.txt] ---
 THE LEVEL OF THE TAMED
 DANTABHŪMI SUTTA  Majjhima Nikāya 125
 
@@ -10178,9 +10094,8 @@ When this was said, the Blessed One said to the novice Aciravata: 'What did you 
 'In the same way, if an elder monk dies with his effluents ended, he is reckoned as an elder monk who has died a tamed death. If a monk of middle standing dies with his effluents ended, he is reckoned as a monk of middle standing who has died a tamed death. If a newly-ordained monk dies with his effluents ended, he is reckoned as a newly-ordained monk who has died a tamed death.'
 
 That is what the Blessed One said. Gratified, the novice Aciravata delighted in the Blessed One's words.
-
-
-
+--- EOF [MN125.txt] ---
+--- BOF [MN126.txt] ---
 TO BHŪMIJA
 BHŪMIJA SUTTA  Majjhima Nikāya 126
 
@@ -10243,9 +10158,8 @@ Then Venerable Bhūmija, after his meal, returning from his almsround, went to t
 'But, lord, how could these four similes have occurred to me in the presence of Prince Jayasena, as they are natural to the Blessed One and have never before been heard from him?'
 
 That is what the Blessed One said. Gratified, Venerable Bhūmija delighted in the Blessed One's words.
-
-
-
+--- EOF [MN126.txt] ---
+--- BOF [MN128.txt] ---
 DEFILEMENTS
 UPAKKILESA SUTTA  Majjhima Nikāya 128
 
@@ -10462,9 +10376,8 @@ Venerable Nandiya & Venerable Kimbila said to the Blessed One, 'Here, lord, the 
 'When, in me, concentration with directed thought & evaluation was developed, concentration without directed thought but with a modicum of evaluation was developed, concentration without directed thought or evaluation was developed, concentration with rapture was developed, concentration without rapture was developed, concentration with enjoyment was developed, and concentration with equanimity was developed, knowledge & vision arose in me: 'Unprovoked is my release. This is the last birth. There is now no further becoming.'
 
 That is what the Blessed One said. Gratified, Venerable Anuruddha delighted in the Blessed One's words.
-
-
-
+--- EOF [MN128.txt] ---
+--- BOF [MN130.txt] ---
 THE DEVA MESSENGERS
 DEVADŪTA SUTTA  Majjhima Nikāya 130
 
@@ -10637,9 +10550,8 @@ all animosity & danger
 have escaped
 
 all suffering & stress.
-
-
-
+--- EOF [MN130.txt] ---
+--- BOF [MN131.txt] ---
 AN AUSPICIOUS DAY
 BHADDEKARATTA SUTTA  Majjhima Nikāya 131
 
@@ -10776,9 +10688,8 @@ So says the Peaceful Sage.
 'Monks, I will teach you the summary & exposition of one who has had an auspicious day': Thus it was said, and in reference to this was it said.'
 
 That is what the Blessed One said. Gratified, the monks delighted in the Blessed One's words.
-
-
-
+--- EOF [MN131.txt] ---
+--- BOF [MN133.txt] ---
 MAHĀ KACCĀNA & THE AUSPICIOUS DAY
 MAHĀKACCĀNA BHADDEKARATTA SUTTA  Majjhima Nikāya 133
 
@@ -10973,9 +10884,8 @@ Then the monks, delighting in & approving of Venerable Mahā Kaccāna's words, r
 'Mahā Kaccāna is wise, monks. He is a person of great discernment. If you had asked me about this matter, I too would have answered in the same way he did. That is its meaning, and that is how you should remember it.'
 
 That is what the Blessed One said. Gratified, the monks delighted in the Blessed One's words.
-
-
-
+--- EOF [MN133.txt] ---
+--- BOF [MN135.txt] ---
 THE SHORTER ANALYSIS OF ACTION
 CŪḶA KAMMA-VIBHAṄGA SUTTA  Majjhima Nikāya 135
 
@@ -11022,9 +10932,8 @@ The Blessed One said: 'There is the case, student, where a woman or man is a kil
 'Beings are owners of their actions, heirs of their actions, born of their actions, related through their actions, and have their actions as their arbitrator. Action is what differentiates beings in terms of baseness & excellence.'
 
 When this was said, Subha the student, Todeyya's son, said to the Blessed One: 'Magnificent, Master Gotama! Magnificent! Just as if he were to place upright what was overturned, to reveal what was hidden, to show the way to one who was lost, or to carry a lamp into the dark so that those with eyes could see forms, in the same way has Master Gotama—through many lines of reasoning—made the Dhamma clear. I go to Master Gotama for refuge, to the Dhamma, and to the Saṅgha of monks. May Master Gotama remember me as a lay follower who has gone to him for refuge, from this day forward, for life.'
-
-
-
+--- EOF [MN135.txt] ---
+--- BOF [MN136.txt] ---
 THE GREATER ANALYSIS OF ACTION
 MAHĀ KAMMA-VIBHAṄGA SUTTA  Majjhima Nikāya 136
 
@@ -11103,9 +11012,8 @@ The Blessed One said, 'Ānanda, there are four kinds of persons to be found in t
 'Thus, Ānanda, there is action that is ineffectual and apparently ineffectual. There is action that is ineffectual but apparently effectual. There is action that is both effectual and apparently effectual. There is action that is effectual but apparently ineffectual.'
 
 That is what the Blessed One said. Gratified, Venerable Ānanda delighted in the Blessed One's words.
-
-
-
+--- EOF [MN136.txt] ---
+--- BOF [MN137.txt] ---
 AN ANALYSIS OF THE SIX SENSE-MEDIA
 SAḶĀYATANA-VIBHAṄGA SUTTA  Majjhima Nikāya 137
 
@@ -11200,9 +11108,8 @@ The Blessed One said: 'The six internal sense-media should be known. The six ext
 'Among master trainers, he [the Tathāgata] is said to be the unexcelled trainer of people fit to be tamed': Thus was it said. And in reference to this was it said.'
 
 That is what the Blessed One said. Gratified, the monks delighted in the Blessed One's words.
-
-
-
+--- EOF [MN137.txt] ---
+--- BOF [MN138.txt] ---
 AN ANALYSIS OF THE STATEMENT
 UDDESA-VIBHAṄGA SUTTA  Majjhima Nikāya 138
 
@@ -11275,9 +11182,8 @@ Then the monks, delighting in & approving of Venerable Mahā Kaccāna's words, r
 'Mahā Kaccāna is wise, monks. He is a person of great discernment. If you had asked me about this matter, I too would have answered in the same way he did. That is its meaning, and that is how you should remember it.'
 
 That is what the Blessed One said. Gratified, the monks delighted in the Blessed One's words.
-
-
-
+--- EOF [MN138.txt] ---
+--- BOF [MN140.txt] ---
 AN ANALYSIS OF THE PROPERTIES
 DHĀTU-VIBHAṄGA SUTTA  Majjhima Nikāya 140
 
@@ -11372,9 +11278,8 @@ Then a large number of monks approached the Blessed One and, on arrival, having 
 'Monks, the clansman Pukkusāti was wise. He practiced the Dhamma in accordance with the Dhamma and did not pester me with issues related to the Dhamma. With the destruction of the five lower fetters, he has arisen spontaneously (in the Pure Abodes), there to be totally unbound, never again to return from that world.'
 
 That is what the Blessed One said. Gratified, the monks delighted in the Blessed One's words.
-
-
-
+--- EOF [MN140.txt] ---
+--- BOF [MN141.txt] ---
 AN ANALYSIS OF THE TRUTHS
 SACCA-VIBHAṄGA SUTTA  Majjhima Nikāya 141
 
@@ -11449,9 +11354,8 @@ Venerable Sāriputta said, 'Friends, near Bārāṇasī, in the Deer Park at Isi
 'Friends, near Bārāṇasī, in the Deer Park at Isipatana, the Tathāgata—the worthy & rightly self-awakened—set in motion the unexcelled Wheel of Dhamma that cannot be stopped by contemplative or brahman, deva, Māra, or Brahmā or anyone at all in the cosmos: in other words, the declaration, teaching, description, setting-forth, revelation, explanation, and making-plain of these four noble truths.'
 
 That is what Venerable Sāriputta said. Gratified, the monks delighted in Venerable Sāriputta's words.
-
-
-
+--- EOF [MN141.txt] ---
+--- BOF [MN143.txt] ---
 THE EXHORTATION TO ANĀTHAPIṆḌIKA
 ANĀTHAPIṆḌIKOVĀDA SUTTA  Majjhima Nikāya 143
 
@@ -11568,9 +11472,8 @@ When this was said, Venerable Ānanda said to the Blessed One, 'Lord, that must 
 'Very good, Ānanda. Very good, to the extent that you have deduced what can be arrived at through logic. That was Anāthapiṇḍika the deva's son, and no one else.'
 
 That is what the Blessed One said. Gratified, Venerable Ānanda delighted in the Blessed One's words.
-
-
-
+--- EOF [MN143.txt] ---
+--- BOF [MN146.txt] ---
 NANDAKA'S EXHORTATION
 NANDAKOVĀDA SUTTA  Majjhima Nikāya 146
 
@@ -11741,9 +11644,8 @@ Then not long after the nuns' departure the Blessed One addressed the monks: 'Mo
 Then not long after the nuns' departure the Blessed One addressed the monks: 'Monks, just as on the uposatha day of the fifteenth, people at large are not doubtful or perplexed as to whether the moon is lacking or full, for it is clearly full; in the same way, the nuns are gratified with Nandaka's Dhamma-teaching, and their resolves have been fulfilled. Of these 500 nuns, the most backward is a stream-winner, not destined for the planes of deprivation, headed to self-awakening for sure.'
 
 That is what the Blessed One said. Gratified, the monks delighted in the Blessed One's words.
-
-
-
+--- EOF [MN146.txt] ---
+--- BOF [MN147.txt] ---
 THE SHORTER EXHORTATION TO RĀHULA
 CŪḶA RĀHULOVĀDA SUTTA  Majjhima Nikāya 147
 
@@ -11904,9 +11806,8 @@ As he was sitting there, the Blessed One said to him, 'What do you think, Rāhul
 'He grows disenchanted with the intellect, disenchanted with ideas, disenchanted with consciousness at the intellect, disenchanted with contact at the intellect. And whatever there is that arises in dependence on contact at the intellect as a mode of feeling, a mode of perception, a mode of fabrication, or a mode of consciousness: With that, too, he grows disenchanted. Disenchanted, he becomes dispassionate. Through dispassion, he is released. With release, there is the knowledge, 'Released.' He discerns that 'Birth is ended, the holy life fulfilled, the task done. There is nothing further for this world.'
 
 That is what the Blessed One said. Gratified, Venerable Rāhula delighted in the Blessed One's words. And while this explanation was being given, Venerable Rāhula's mind, through lack of clinging or sustenance, was released from effluents. And to those many thousands of devas there arose the dustless, stainless Dhamma eye: 'Whatever is subject to origination is all subject to cessation.'
-
-
-
+--- EOF [MN147.txt] ---
+--- BOF [MN148.txt] ---
 THE SIX SEXTETS
 CHACHAKKA SUTTA  Majjhima Nikāya 148
 
@@ -12005,9 +11906,8 @@ The Blessed One said: 'The six internal media should be known. The six external 
 'He grows disenchanted with the intellect, disenchanted with ideas, disenchanted with consciousness at the intellect, disenchanted with contact at the intellect, disenchanted with feeling, disenchanted with craving. Disenchanted, he becomes dispassionate. Through dispassion, he is released. With release, there is the knowledge, 'Released.' He discerns that 'Birth is ended, the holy life fulfilled, the task done. There is nothing further for this world.'
 
 That is what the Blessed One said. Gratified, the monks delighted at his words. And while this explanation was being given, the hearts of sixty monks, through lack of clinging or sustenance, were released from effluents.
-
-
-
+--- EOF [MN148.txt] ---
+--- BOF [MN149.txt] ---
 THE GREAT SIX SENSE-MEDIA DISCOURSE
 MAHĀ SAḶĀYATANIKA SUTTA  Majjhima Nikāya 149
 
@@ -12070,9 +11970,8 @@ The Blessed One said: 'Not knowing, not seeing the eye as it has come to be; not
 'And which qualities are to be realized through direct knowledge? Clear knowing & release: these are the qualities that are to be realized through direct knowledge.'
 
 That is what the Blessed One said. Gratified, the monks delighted in the Blessed One's words.
-
-
-
+--- EOF [MN149.txt] ---
+--- BOF [MN151.txt] ---
 THE PURIFICATION OF ALMSFOOD
 PIṆḌAPĀTAPĀRISUDDHI SUTTA  Majjhima Nikāya 151
 
@@ -12111,9 +12010,8 @@ I have heard that on one occasion the Blessed One was staying near Rājagaha in 
 'Thus, Sāriputta, you should train yourselves: 'We will purify our almsfood through repeated reflection.' That's how you should train yourselves.'
 
 That is what the Blessed One said. Gratified, Venerable Sāriputta delighted in the Blessed One's words.
-
-
-
+--- EOF [MN151.txt] ---
+--- BOF [MN152.txt] ---
 THE DEVELOPMENT OF THE FACULTIES
 INDRIYA-BHĀVANĀ SUTTA  Majjhima Nikāya 152
 
@@ -12164,6 +12062,4 @@ The Blessed One said: 'Now how, Ānanda, in the discipline of a noble one is the
 'So, Ānanda, I have taught you the unexcelled development of the faculties in the discipline of a noble one; I have taught you how one is a person in training, someone following the way; I have taught you how one is a noble one with developed faculties. Whatever a teacher should do—seeking the welfare of his disciples, out of sympathy for them—that have I done for you. Over there are the roots of trees; over there, empty dwellings. Practice jhāna, Ānanda. Don't be heedless. Don't later fall into remorse. That is our message to you all.'
 
 That is what the Blessed One said. Gratified, Venerable Ānanda delighted in the Blessed One's words.
-
-
-
+--- EOF [MN152.txt] ---
