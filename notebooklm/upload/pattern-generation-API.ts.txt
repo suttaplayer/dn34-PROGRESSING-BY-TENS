@@ -1,4 +1,5 @@
-import { DeterminantQuotationString, PatternResponseJson, UserDirectExperienceJson, UserPatternRequestJson, WORK_TASK_ORDER, WorkTaskKey } from "./pattern-API.ts"
+import { DeterminantQuotationString, PatternResponseJson, ScopeJson, ThisOrThatConditionalityJson, UserDirectExperienceJson, UserPatternRequestJson, WORK_TASK_ORDER, WorkTaskKey } from "./pattern-API.ts"
+import { JsonUtils } from "./pbt-utils.ts";
 
 export interface WorkTaskResolvable {
     executionContext: string
@@ -11,22 +12,25 @@ export interface WorkTaskResolvable {
 
 export class WorkTaskResolver implements WorkTaskResolvable {
     public executionContext: string = "" 
-    public quotationSet: Set<DeterminantQuotationString>
+    public quotationSet: Set<DeterminantQuotationString> = new Set<DeterminantQuotationString>()
     public readonly substantiationsStack: string[] = []
 
     public popSubstantiationsFromLastCommand(): string[] {
-        let ret = [...this.substantiationsStack]
+        const ret = [...this.substantiationsStack]
         this.substantiationsStack.splice(0, this.substantiationsStack.length)
         return ret
     }
 
-    public generaliseAndAbstractToConcept(term: string): Promise<string> {
+    public generaliseAndAbstractToConcept(_term: string): Promise<string> {
         return (undefined as unknown) as Promise<string>
     }
 }
 
-export class BaseWorkTaskInstructions<B, R extends WorkTaskResolver> {
-    protected readonly key: string
+export class BaseWorkTaskInstructions<
+    B extends string | string[] | ScopeJson | ThisOrThatConditionalityJson[],
+    R extends WorkTaskResolver
+> {
+    protected readonly key: WorkTaskKey
 
     protected readonly request: UserPatternRequestJson
     protected readonly response: PatternResponseJson
@@ -38,7 +42,7 @@ export class BaseWorkTaskInstructions<B, R extends WorkTaskResolver> {
 
     protected responder: PatternGenerator
 
-    constructor(key: string, responder: PatternGenerator) {
+    constructor(key: WorkTaskKey, responder: PatternGenerator) {
         this.key = key
         this.responder = responder
         this.request = responder.request
@@ -46,12 +50,17 @@ export class BaseWorkTaskInstructions<B, R extends WorkTaskResolver> {
         this.resolver = this.constructResolver()
         if (this.resolver)
             this.resolver.quotationSet = this.quotationSet
-        this.buildingBlock = responder.response.buildingBlocks[this.key]
+        this.buildingBlock = responder.response.buildingBlocks[this.key] as B
         if (responder.response?.substantiations?.[this.key])
             this.substantiations = responder.response.substantiations[this.key]
         else
             this.substantiations = undefined
-        this.directExperience = responder.request.directExperience?.[this.key]
+        const directExp = responder.request.directExperience?.[this.key]
+        if (directExp && typeof directExp === "object" && !Array.isArray(directExp)) {
+            this.directExperience = directExp as UserDirectExperienceJson
+        } else {
+            this.directExperience = undefined
+        }
     }
 
     protected constructResolver(): R {
@@ -62,16 +71,16 @@ export class BaseWorkTaskInstructions<B, R extends WorkTaskResolver> {
         this.responder.response.quotationSheet[this.key] = [...this.quotationSet]
     }
 
-    protected assert(condition: any, message: string): asserts condition {
+    protected assert(condition: unknown, message: string): asserts condition {
         if (!condition)
             throw new Error(message)
     }
 
-    protected checkPreConditions(): any {
+    protected checkPreConditions(): unknown {
         return true
     }
 
-    protected checkPostConditions(): any {
+    protected checkPostConditions(): unknown {
         return true
     }
 
@@ -86,10 +95,13 @@ export class BaseWorkTaskInstructions<B, R extends WorkTaskResolver> {
     }
 }
 
-export type BaseWorkTaskInstructionsConstructor<T, R extends WorkTaskResolver> = new (key: string, responder: PatternGenerator) => BaseWorkTaskInstructions<T, R>
+export type BaseWorkTaskInstructionsConstructor<
+    T extends string | string[] | ScopeJson | ThisOrThatConditionalityJson[],
+    R extends WorkTaskResolver
+> = new (key: WorkTaskKey, responder: PatternGenerator) => BaseWorkTaskInstructions<T, R>
 
 export class PatternGenerator {
-    public static INSTRUCTIONS_REGISTRY = new Map<WorkTaskKey, BaseWorkTaskInstructionsConstructor<any, any>>()
+    public static INSTRUCTIONS_REGISTRY = new Map<WorkTaskKey, BaseWorkTaskInstructionsConstructor<string | string[] | ScopeJson | ThisOrThatConditionalityJson[], WorkTaskResolver>>()
 
     public verboseOutput = false
     public request: UserPatternRequestJson
@@ -103,13 +115,11 @@ export class PatternGenerator {
             },
             "Problem": [],
             "Causal-Table": [],
-            "Solution": {
-                "Step-by-Step": [],
-                "Cause-&-Effect": [],
-                "Process View": [],
-                "Concepts & Relationships": [],
-                "State Transitions": [],
-            },
+            "Sol.Step-by-Step": [],
+            "Sol.Cause-&-Effect": [],
+            "Sol.Process View": [],
+            "Sol.Concepts & Relationships": [],
+            "Sol.State Transitions": [],
             "Context": [],
             "Forces": [],
             "Rationale": "",
@@ -122,13 +132,11 @@ export class PatternGenerator {
             "Scope": [],
             "Problem": [],
             "Causal-Table": [],
-            "Solution": {
-                "Step-by-Step": [],
-                "Cause-&-Effect": [],
-                "Process View": [],
-                "Concepts & Relationships": [],
-                "State Transitions": []
-            },
+            "Sol.Step-by-Step": [],
+            "Sol.Cause-&-Effect": [],
+            "Sol.Process View": [],
+            "Sol.Concepts & Relationships": [],
+            "Sol.State Transitions": [],
             "Context": [],
             "Forces": [],
             "Rationale": [],
@@ -141,13 +149,11 @@ export class PatternGenerator {
             "Scope": [],
             "Problem": [],
             "Causal-Table": [],
-            "Solution": {
-                "Step-by-Step": [],
-                "Cause-&-Effect": [],
-                "Process View": [],
-                "Concepts & Relationships": [],
-                "State Transitions": []
-            },
+            "Sol.Step-by-Step": [],
+            "Sol.Cause-&-Effect": [],
+            "Sol.Process View": [],
+            "Sol.Concepts & Relationships": [],
+            "Sol.State Transitions": [],
             "Context": [], "Forces": [], "Rationale": [],
             "Resulting Context": [], "Related Patterns": [], "Case-studies": [], "Simile": []
         }
@@ -172,6 +178,8 @@ export class PatternGenerator {
             if (instructions)
                 await instructions.execute()
         }
+        if (this.response)
+            this.response = JsonUtils.minimise(this.response)
         return this.response
     }
 }

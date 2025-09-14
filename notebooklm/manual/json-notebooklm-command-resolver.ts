@@ -7,10 +7,9 @@ import { JsonContextGenerationInstructions } from "./json-context-generation-ins
 import { JsonForcesGenerationInstructions } from "./json-forces-generation-instructions.ts";
 import { JsonProblemGenerationInstructions, ProblemWorkTaskResolvable } from "./json-problem-generation-instructions.ts";
 import { JsonScopeGenerationInstructions, ScopeWorkTaskResolvable } from "./json-scope-generation-instructions.ts";
-import { ThisOrThatConditionalityJson, DeterminantQuotationString, PractitionerKey, SubjectJson, UserPatternRequestJson} from "./pattern-API.ts";
+import { ThisOrThatConditionalityJson, DeterminantQuotationString, PractitionerKey, SubjectJson} from "./pattern-API.ts";
 import { WorkTaskResolver } from "./pattern-generation-API.ts";
 import { CausalTableWorkTaskResolvable, JsonCausalTableGenerationInstructions } from "./json-causal-table-generation-instructions.ts"; // Import the new interface
-import { JsonPatternGenerationInstructions } from "./json-pattern-generation-instructions.ts";
 
 /*
 purpose: provide notebooklm with a base abstraction which must be specialised for individual work tasks that are assosciated with the notebooklm "**Command:** annotation"
@@ -21,17 +20,17 @@ class CommandResolver extends WorkTaskResolver {
   // This method now simulates NotebookLM's dynamic command execution.
   // It interprets 'cmd' and generates a plausible output based on the provided sources,
   // explicitly stating that this is a simulation of LLM behavior.
-  protected async executeQuery(cmd: { commandType: string, parameters: any }): Promise<any> {
+  protected async executeQuery(cmd: { commandType: string, parameters: any }): Promise<unknown> {
     this.substantiationsStack.push(`Simulating NotebookLM Command: ${cmd.commandType} with parameters: ${JSON.stringify(cmd.parameters)}`);
 
     if (cmd.commandType === "information_retrieval") {
-      return this.simulateInformationRetrieval(cmd.parameters);
+      return await this.simulateInformationRetrieval(cmd.parameters);
     } else if (cmd.commandType === "text_analysis") {
-      return this.simulateTextAnalysis(cmd.parameters);
+      return await this.simulateTextAnalysis(cmd.parameters);
     } else if (cmd.commandType === "conceptual_mapping") {
-      return this.simulateConceptualMapping(cmd.parameters);
+      return await this.simulateConceptualMapping(cmd.parameters);
     } else if (cmd.commandType === "structured_extraction") {
-      return this.simulateStructuredExtraction(cmd.parameters);
+      return await this.simulateStructuredExtraction(cmd.parameters);
     }
 
     this.substantiationsStack.push(`Simulated command '${cmd.commandType}' produced a generic result.`);
@@ -106,11 +105,11 @@ class CommandResolver extends WorkTaskResolver {
       "when goodwill has been developed, pursued, handed the reins, taken as a basis, steadied, consolidated, and well-undertaken as an awareness-release—ill will would still keep overpowering the mind. That possibility doesn't exist, for this is the escape from ill will: goodwill as an awareness-release."
     ];
 
-    const queryWords = query.split(' ').filter(word => word.length > 0);
+    const queryWords = query.split(' ').filter((word: string) => word.length > 0);
 
     for (const excerpt of relevantExcerpts) {
       // Simple keyword matching for demonstration. Real LLM is more sophisticated.
-      if (queryWords.every(keyword => excerpt.toLowerCase().includes(keyword))) {
+      if (queryWords.every((keyword: string) => excerpt.toLowerCase().includes(keyword))) {
         results.push(excerpt);
       }
     }
@@ -225,7 +224,7 @@ class CommandResolver extends WorkTaskResolver {
 
     } else if (extractionTarget === "enter state" || extractionTarget === "exit state") { // **CHANGED: "enter from" to "enter state", "exit to" to "exit state"**
       const extractedStates: Set<string> = new Set();
-      const quotations = textToParse.split('\n').filter(s => s.trim().length > 0);
+      const quotations = textToParse.split('\n').filter((s: string) => s.trim().length > 0);
 
       // Simplified mapping based on Artifact 3 and the running example's specific quotes
       // In a real implementation, this would iterate through Artifact 3's regex rules.
@@ -266,7 +265,7 @@ class CommandResolver extends WorkTaskResolver {
 
   // --- End of NEW/MODIFIED executeQuery implementation ---
 
-  public async generaliseAndAbstractToConcept(term: string): Promise<string> {
+  public override async generaliseAndAbstractToConcept(term: string): Promise<string> {
     /**
      * **Command:generalise & abstract to concept** the term if necessary. concepts play a key role in the causal-table. if the concept is too specific the causal-table will be small and of little benefit (due to simplicity) for the remaining work tasks. however, if the concept is over-generalised then the causal-table will be too large and again of little benefit (due to complexity). notebooklm needs to ensure that it can subsequently match on the concept as opposed to the specific term/expression for the benefit of down-stream work tasks
      */
@@ -304,7 +303,7 @@ class CommandResolver extends WorkTaskResolver {
         guidance: "Abstract the given term to a concept level that is neither too specific (resulting in small causal tables) nor too general (resulting in large causal tables). The abstracted concept must be suitable for subsequent matching in downstream work tasks. Justify the abstraction based on its utility for causal analysis within the 'progressing by tens' framework."
       }
     };
-    return await this.executeQuery(exeCommand);
+    return await this.executeQuery(exeCommand) as string;
   }
 
   public splitAndTrim(text: string, separator: string): string[] {
@@ -412,7 +411,7 @@ class ContextCommandResolver extends CommandResolver {
         resultType: "DeterminantQuotationString[]"
       }
     };
-    return await this.executeQuery(exeCommand);
+    return await this.executeQuery(exeCommand) as DeterminantQuotationString[];
   }
 
   public async composeContextStatement(subjects: SubjectJson[], determinantQuotations: DeterminantQuotationString[]): Promise<string[]> {
@@ -457,7 +456,7 @@ class ForcesCommandResolver extends CommandResolver {
         resultType: "DeterminantQuotationString[]"
       }
     };
-    return await this.executeQuery(exeCommand);
+    return await this.executeQuery(exeCommand) as DeterminantQuotationString[];
   }
 
   public async composeForcesStatement(subjects: SubjectJson[], determinantQuotations: DeterminantQuotationString[]): Promise<string[]> {
@@ -537,7 +536,7 @@ class CausalTableCommandResolver extends CommandResolver implements CausalTableW
                     contextHint: `Identifying causal relations involving '${conceptName}' within the overall pattern context: ${this.executionContext}.`,
                     resultType: "DeterminantQuotationString[]"
                 }
-            });
+            }) as DeterminantQuotationString[];
 
             this.substantiationsStack.push(`Found ${determinantQuotations.length} determinant quotations for '${conceptName}'`);
 

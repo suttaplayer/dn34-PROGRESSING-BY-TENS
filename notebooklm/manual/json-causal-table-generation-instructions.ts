@@ -1,5 +1,5 @@
-import { BaseWorkTaskInstructions, PatternGenerator, WorkTaskResolvable } from "./pattern-generation-API.ts";
-import { ThisOrThatConditionalityJson, SubjectJson } from "./pattern-API.ts"; // Ensure SubjectJson is imported correctly
+import { BaseWorkTaskInstructions, BaseWorkTaskInstructionsConstructor, PatternGenerator, WorkTaskResolvable } from "./pattern-generation-API.ts";
+import { ThisOrThatConditionalityJson, SubjectJson, WorkTaskKey } from "./pattern-API.ts"; // Ensure SubjectJson is imported correctly
 
 /**
  * Interface for the CausalTableCommandResolver, extending the base WorkTaskResolvable.
@@ -28,6 +28,10 @@ export type CausalTableCommandResolverConstructor = new () => CausalTableWorkTas
 export class JsonCausalTableGenerationInstructions extends BaseWorkTaskInstructions<ThisOrThatConditionalityJson[], CausalTableWorkTaskResolvable> {
   public static RESOLVER_CTR: CausalTableCommandResolverConstructor;
 
+  constructor(key: WorkTaskKey, responder: PatternGenerator) {
+    super(key, responder);
+  }
+
   visualiseSolutionSpace() {
     /*
 ```plantuml
@@ -52,7 +56,7 @@ class ThisOrThatConditionalityJson <<(J, FF7700)>> {
   cannot?: boolean
   notThat?: boolean
   that: string
-  quotationIndicies?: number[]
+  quotationReferences?: DeterminantQuotationString[]
 }
 
 class ScopeJson <<(J, FF7700)>> {
@@ -113,7 +117,7 @@ end note
     2.  **Recursive Expansion**: For each new concept found, recursively search for its causes and effects, building a network of `ThisOrThatConditionalityJson` objects. Limit the depth of recursion to avoid over-generalization (e.g., maximum 3-4 levels of indirection).
     3.  **Concept Abstraction**: Utilize the `generaliseAndAbstractToConcept` command to standardize and abstract terms for the `this` and `that` fields of `ThisOrThatConditionalityJson`, ensuring consistency with the Core Composite States Inventory (Artifact 1) where applicable, or to an optimal level for causal analysis otherwise.
     4.  **Canonical Relation Types**: Map identified causal phrases from sources to the canonical `relation` types defined in `causation-expression-API.ts.txt` (e.g., `co-arises with`, `requisite condition`, `leads to`, `causes`). Pay close attention to `notThis`, `notThat`, and `cannot` flags.
-    5.  **Quotation Referencing**: Store `quotationIndicies` to link each causal relation back to the determinant quotations.
+    5.  **Quotation Referencing**: Store `quotationReferences` to link each causal relation back to the determinant quotations.
     6.  **Integration Strategy**: Ensure that **all leaf causal-table nodes that link to `enterState` represent the pattern's initial `Context`**, **all `ThisOrThatConditionalityJson` entries that sit between the `enterState` and `exitState` nodes (and their direct causal chains) are part of the `Solution`**, and **all `exitState` nodes that link to leaf causal-table nodes are part of the `Resulting Context`**.
     **Guidance Followed:** I will use a systematic approach to traverse the causal graph, prioritizing direct and strong causal links, and abstracting concepts to a level that is useful for the overall pattern without becoming overly specific or too general. The `executionContext` (derived from the Problem statement) will guide the relevance of identified causal links. I will specifically leverage the predefined `CausalExpressionGuide` to interpret causal statements.
     **Substantiation (Example):** I will log the steps of the recursive search, the concepts being explored, the determinant quotations found, and the rationale for each `ThisOrThatConditionalityJson` added to the table, particularly how it relates to the `enterState`, `exitState`, and the subject's `name`.
@@ -134,7 +138,7 @@ end note
     this.buildingBlock.push(...causalTable);
   }
 
-  protected async executeInstructions(): Promise<void> {
+  protected override async executeInstructions(): Promise<void> {
     if (this.responder.verboseOutput) {
       console.log("starting [JsonCausalTableGenerationInstructions]");
     }
@@ -143,11 +147,11 @@ end note
     await this.prepareCausalTable();
   }
 
-  protected constructResolver(): CausalTableWorkTaskResolvable {
+  protected override constructResolver(): CausalTableWorkTaskResolvable {
     return new JsonCausalTableGenerationInstructions.RESOLVER_CTR();
   }
 
-  protected checkPreConditions(): any {
+  protected override checkPreConditions(): unknown {
     // Causal-Table is dependent on Scope (subjects) and Problem (context for relevance)
     let ret = false;
     if (this.response.buildingBlocks.Scope.subject.length > 0 && this.response.buildingBlocks.Problem.length > 0) {
@@ -156,7 +160,7 @@ end note
     return ret;
   }
 
-  protected checkPostConditions(): any {
+  protected override checkPostConditions(): unknown {
     let ret = false;
     if (this.buildingBlock.length > 0) {
       ret = true;
@@ -169,5 +173,8 @@ end note
  * Register function to link these instructions to the PatternGenerator.
  */
 export function register() {
-  PatternGenerator.INSTRUCTIONS_REGISTRY.set("Causal-Table", JsonCausalTableGenerationInstructions);
+  PatternGenerator.INSTRUCTIONS_REGISTRY.set(
+    "Causal-Table",
+    JsonCausalTableGenerationInstructions as unknown as BaseWorkTaskInstructionsConstructor<ThisOrThatConditionalityJson[], CausalTableWorkTaskResolvable>
+  );
 }

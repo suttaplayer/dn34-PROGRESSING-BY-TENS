@@ -158,9 +158,8 @@ export type ThisOrThatConditionalityJson = {
   thatEnumerations?: string[] /* array of string of enumerated effects in lowercase (eg. ["conviction", "courage"])*/
   intermediaries?: string[] /* array of string of the intermediate links in the causal chain */
   cyclic?: boolean /* boolean value indicating "that" has a return causal influence on "this" */
-  quotationIndicies?: number[] /* number[] of the array index position(s) of the directly associated quote where this/that relationships was derived from */
+  quotationReferences?: DeterminantQuotationString[] /* array of DeterminantQuotationString which are associated quotes where this/that relationships was derived from/substantiae */
   refKey?: string /* string of the reference key (eg. "five strengths") */
-  suttaRef?: string /* string of the sutta reference (eg. "AN 3.65") */
 }
 
 /*
@@ -172,11 +171,9 @@ export type PlantUMLDiagramText = string;
 /*
 purpose: represents a work task as the property name of the following types: PatternBuildingBlocksJson, PatternQuotationsJson, UserDirectExperienceJson
 */
-export type RootWorkTaskKey = "Scope" | "Problem" | "Causal-Table" | "Context" | "Forces" | "Rationale" | "Resulting Context" | "Related Patterns" | "Case-studies" | "Simile";
-export type SolutionWorkTaskKey = "Step-by-Step" | "Cause-&-Effect" | "Process View" | "Concepts & Relationships" | "State Transitions";
-export type WorkTaskKey = RootWorkTaskKey | SolutionWorkTaskKey;
+export type WorkTaskKey = "Scope" | "Problem" | "Causal-Table" | "Sol.Step-by-Step" | "Sol.Cause-&-Effect" | "Sol.Process View" | "Sol.Concepts & Relationships" | "Sol.State Transitions" | "Context" | "Forces" | "Rationale" | "Resulting Context" | "Related Patterns" | "Case-studies" | "Simile";
 
-export const WORK_TASK_ORDER: WorkTaskKey[] = ["Scope", "Problem", "Causal-Table", "Step-by-Step", "Cause-&-Effect", "Process View", "Concepts & Relationships", "State Transitions", "Context", "Forces", "Rationale", "Resulting Context", "Related Patterns", "Case-studies", "Simile"]
+export const WORK_TASK_ORDER: WorkTaskKey[] = ["Scope", "Problem", "Causal-Table", "Sol.Step-by-Step", "Sol.Cause-&-Effect", "Sol.Process View", "Sol.Concepts & Relationships", "Sol.State Transitions", "Context", "Forces", "Rationale", "Resulting Context", "Related Patterns", "Case-studies", "Simile"]
 
 /*
 purpose: represents all building blocks for the complete pattern devoid of quotations
@@ -186,13 +183,11 @@ export type PatternBuildingBlocksJson = {
   "Scope": ScopeJson /* object of the pattern's scope */
   "Problem": string[] /* single element string array of the problem statement */
   "Causal-Table": ThisOrThatConditionalityJson[] /* array of ThisOrThatConditionalityJson objects (full table) */
-  "Solution": {
-    "Step-by-Step": string[] /* array of process step strings (this is a flattened representation of Process View) */
-    "Cause-&-Effect": ThisOrThatConditionalityJson[] /* array of ThisOrThatConditionalityJson objects (solution only) */
-    "Process View": PlantUMLDiagramText[] /* array of PlantUML Activity Diagram strings */
-    "Concepts & Relationships": PlantUMLDiagramText[] /* array of PlantUML Class Diagram strings */
-    "State Transitions": PlantUMLDiagramText[] /* array of PlantUML State Diagram strings */
-  }
+  "Sol.Step-by-Step": string[] /* array of process step strings (this is a flattened representation of Process View) */
+  "Sol.Cause-&-Effect": ThisOrThatConditionalityJson[] /* array of ThisOrThatConditionalityJson objects (solution only) */
+  "Sol.Process View": PlantUMLDiagramText[] /* array of PlantUML Activity Diagram strings */
+  "Sol.Concepts & Relationships": PlantUMLDiagramText[] /* array of PlantUML Class Diagram strings */
+  "Sol.State Transitions": PlantUMLDiagramText[] /* array of PlantUML State Diagram strings */
   "Context": string[] /* array of requisite condition/invariant strings */
   "Forces": string[] /* array of design constraint/influence strings */
   "Rationale": string /* string of the rationale statement */
@@ -218,13 +213,11 @@ export type PatternQuotationsJson = {
   "Scope": DeterminantQuotationString[]
   "Problem": DeterminantQuotationString[]
   "Causal-Table": DeterminantQuotationString[]
-  "Solution": {
-    "Step-by-Step": DeterminantQuotationString[]
-    "Cause-&-Effect": DeterminantQuotationString[]
-    "Process View": DeterminantQuotationString[]
-    "Concepts & Relationships": DeterminantQuotationString[]
-    "State Transitions": DeterminantQuotationString[]
-  }
+  "Sol.Step-by-Step": DeterminantQuotationString[]
+  "Sol.Cause-&-Effect": DeterminantQuotationString[]
+  "Sol.Process View": DeterminantQuotationString[]
+  "Sol.Concepts & Relationships": DeterminantQuotationString[]
+  "Sol.State Transitions": DeterminantQuotationString[]
   "Context": DeterminantQuotationString[]
   "Forces": DeterminantQuotationString[]
   "Rationale": DeterminantQuotationString[]
@@ -241,13 +234,11 @@ export type PatternSubstantiationsJson = {
   "Scope": string[]
   "Problem": string[]
   "Causal-Table": string[]
-  "Solution": {
-    "Step-by-Step": string[]
-    "Cause-&-Effect": string[]
-    "Process View": string[]
-    "Concepts & Relationships": string[]
-    "State Transitions": string[]
-  }
+  "Sol.Step-by-Step": string[]
+  "Sol.Cause-&-Effect": string[]
+  "Sol.Process View": string[]
+  "Sol.Concepts & Relationships": string[]
+  "Sol.State Transitions": string[]
   "Context": string[]
   "Forces": string[]
   "Rationale": string[]
@@ -285,13 +276,11 @@ export type UserDirectExperienceJson = {
   "Scope"?: UserInfluentialFactorsJson
   "Problem"?: UserInfluentialFactorsJson
   "Causal-Table"?: ThisOrThatConditionalityJson[] /* full table additions */
-  "Solution"?: {
-    "Cause-&-Effect"?: ThisOrThatConditionalityJson[] /* (solution only additions */
-    "Step-by-Step"?: UserInfluentialFactorsJson
-    "Process View"?: UserInfluentialFactorsJson
-    "Concepts & Relationships"?: UserInfluentialFactorsJson
-    "State Transitions"?: UserInfluentialFactorsJson
-  }
+  "Sol.Cause-&-Effect"?: ThisOrThatConditionalityJson[] /* (solution only additions */
+  "Sol.Step-by-Step"?: UserInfluentialFactorsJson
+  "Sol.Process View"?: UserInfluentialFactorsJson
+  "Sol.Concepts & Relationships"?: UserInfluentialFactorsJson
+  "Sol.State Transitions"?: UserInfluentialFactorsJson
   "Context"?: UserInfluentialFactorsJson
   "Forces"?: UserInfluentialFactorsJson
   "Rationale"?: UserInfluentialFactorsJson
